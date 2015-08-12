@@ -1,0 +1,1787 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title></title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Courier New';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-family: 'Arial';
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-family: 'Arial';
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-family: 'Arial';
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ font-family: 'Arial';
+ color: #008000;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+--></style>
+</head>
+<body>
+<h1 style="text-align: center;">Single Domain Proteins</h1>
+<p><br></p>
+<div><table width="100%" border=1 cellpadding=1 cellspacing=2 style="background-color: #ffffff;">
+<tr valign=top>
+<td style="border-style: inset;">
+<p><span class=rvts1>No.</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>PDB</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Domains</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>CATH</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>K-Means</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1vq8</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; T&nbsp;&nbsp;&nbsp; 1 - T&nbsp; 119 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1w77</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 75 - A&nbsp; 300 -</p>
+</td>
+<td style="border-style: inset;">
+<p>75 - 87 95 - 223 230 - 260 262 - 300 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>1vmj</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 139 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 139 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>4</p>
+</td>
+<td style="border-style: inset;">
+<p>1rtm</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; 1&nbsp;&nbsp; 73 - 1&nbsp; 221 -</p>
+</td>
+<td style="border-style: inset;">
+<p>73 - 221 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1srv</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 192 - A&nbsp; 336 -</p>
+</td>
+<td style="border-style: inset;">
+<p>192 - 336 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>6</p>
+</td>
+<td style="border-style: inset;">
+<p>2esh</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 117 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 117 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>7</p>
+</td>
+<td style="border-style: inset;">
+<p>2ikk</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 83 - A&nbsp; 238 -</p>
+</td>
+<td style="border-style: inset;">
+<p>83 - 90 101 - 165 167 - 227 229 - 238 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>8</p>
+</td>
+<td style="border-style: inset;">
+<p>2boy</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; F&nbsp;&nbsp;&nbsp; 2 - F&nbsp; 254 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 167 167 - 235 241 - 254 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>9</p>
+</td>
+<td style="border-style: inset;">
+<p>3bix</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 52 - A&nbsp; 642 -</p>
+</td>
+<td style="border-style: inset;">
+<p>52 - 162 191 - 297 306 - 642 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>10</p>
+</td>
+<td style="border-style: inset;">
+<p>3bs0</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 5 - A&nbsp; 436 -</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 71 77 - 309 311 - 358 365 - 406 413 - 436 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>11</p>
+</td>
+<td style="border-style: inset;">
+<p>3d7j</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp; -2 - C&nbsp; 132 -</p>
+</td>
+<td style="border-style: inset;">
+<p>-2 - 0 2 - 10 12 - 132 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>12</p>
+</td>
+<td style="border-style: inset;">
+<p>1uxz</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 131 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>13</p>
+</td>
+<td style="border-style: inset;">
+<p>1jm1</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 49 - A&nbsp; 250 -</p>
+</td>
+<td style="border-style: inset;">
+<p>49 - 250 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>14</p>
+</td>
+<td style="border-style: inset;">
+<p>3nul</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 131 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 11 13 - 72 74 - 109 111 - 131 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>2if2</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 194 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 19 21 - 145 147 - 158 160 - 194 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>16</p>
+</td>
+<td style="border-style: inset;">
+<p>1v5s</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 126 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 126 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>17</p>
+</td>
+<td style="border-style: inset;">
+<p>1ryb</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 191 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 179 185 - 191 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>18</p>
+</td>
+<td style="border-style: inset;">
+<p>3f7l</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 151 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 151 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>19</p>
+</td>
+<td style="border-style: inset;">
+<p>1cdc</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp;&nbsp; 99 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 99 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>20</p>
+</td>
+<td style="border-style: inset;">
+<p>1nps</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 88 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 88 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>21</p>
+</td>
+<td style="border-style: inset;">
+<p>1pjz</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 201 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 201 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>22</p>
+</td>
+<td style="border-style: inset;">
+<p>1si2</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 224 - A&nbsp; 349 -</p>
+</td>
+<td style="border-style: inset;">
+<p>224 - 295 302 - 349 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>23</p>
+</td>
+<td style="border-style: inset;">
+<p>1imo</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 835 - A&nbsp; 922 -</p>
+</td>
+<td style="border-style: inset;">
+<p>835 - 922 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>24</p>
+</td>
+<td style="border-style: inset;">
+<p>2ibo</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp;&nbsp; 90 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 35 37 - 52 54 - 90 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>25</p>
+</td>
+<td style="border-style: inset;">
+<p>2w9h</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 158 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 11 11 - 23 23 - 49 49 - 50 50 - 96 96 - 103 103 - 127 127 - 129 129 - 135 135 - 157 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>26</p>
+</td>
+<td style="border-style: inset;">
+<p>2g3b</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 189 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 71 73 - 154 156 - 187 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>27</p>
+</td>
+<td style="border-style: inset;">
+<p>1llf</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 534 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 534 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>28</p>
+</td>
+<td style="border-style: inset;">
+<p>3pcv</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 146 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>29</p>
+</td>
+<td style="border-style: inset;">
+<p>1ha8</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 51 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 51 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>30</p>
+</td>
+<td style="border-style: inset;">
+<p>1uzv</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 114 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 31 31 - 41 41 - 46 46 - 60 60 - 62 62 - 68 68 - 77 77 - 81 81 - 114 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>31</p>
+</td>
+<td style="border-style: inset;">
+<p>2xb4</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 223 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 44 44 - 140 140 - 223 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>32</p>
+</td>
+<td style="border-style: inset;">
+<p>1nz8</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 120 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 120 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>33</p>
+</td>
+<td style="border-style: inset;">
+<p>1yox</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp;&nbsp; 5 - C&nbsp; 237 -</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 14 16 - 34 36 - 37 39 - 47 76 - 195 206 - 237 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>34</p>
+</td>
+<td style="border-style: inset;">
+<p>3b5o</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 0 - A&nbsp; 236 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 30 32 - 43 45 - 84 86 - 113 115 - 180 188 - 212 214 - 216 218 - 236 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>35</p>
+</td>
+<td style="border-style: inset;">
+<p>1cmb</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 104 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 104 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>36</p>
+</td>
+<td style="border-style: inset;">
+<p>1w0t</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 379 - A&nbsp; 430 -</p>
+</td>
+<td style="border-style: inset;">
+<p>379 - 430 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>37</p>
+</td>
+<td style="border-style: inset;">
+<p>2dnr</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 886 - A&nbsp; 976 -</p>
+</td>
+<td style="border-style: inset;">
+<p>886 - 976 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>38</p>
+</td>
+<td style="border-style: inset;">
+<p>1w53</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 84 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 16 16 - 49 49 - 68 68 - 84 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>39</p>
+</td>
+<td style="border-style: inset;">
+<p>1wka</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 195 - A&nbsp; 337 -</p>
+</td>
+<td style="border-style: inset;">
+<p>195 - 337 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>40</p>
+</td>
+<td style="border-style: inset;">
+<p>1ui0</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 193 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 193 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>41</p>
+</td>
+<td style="border-style: inset;">
+<p>1ute</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 3 - A&nbsp; 304 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 304 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>42</p>
+</td>
+<td style="border-style: inset;">
+<p>2xki</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 0 - A&nbsp; 109 -</p>
+</td>
+<td style="border-style: inset;">
+<p>0 - 11 11 - 76 76 - 109 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>43</p>
+</td>
+<td style="border-style: inset;">
+<p>1a6f</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 114 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 114 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>44</p>
+</td>
+<td style="border-style: inset;">
+<p>1jhs</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 31 - A&nbsp; 218 -</p>
+</td>
+<td style="border-style: inset;">
+<p>31 - 218 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>45</p>
+</td>
+<td style="border-style: inset;">
+<p>1zpv</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp; -1 - B&nbsp;&nbsp; 83 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 43 46 - 83 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>46</p>
+</td>
+<td style="border-style: inset;">
+<p>1fo0</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 1 - B&nbsp; 116 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 87 90 - 100 105 - 116 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>47</p>
+</td>
+<td style="border-style: inset;">
+<p>2vwr</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; -1 - A&nbsp; 428 -</p>
+</td>
+<td style="border-style: inset;">
+<p>-1 - 0 336 - 428 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>48</p>
+</td>
+<td style="border-style: inset;">
+<p>1ekj</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 120 - A&nbsp; 329 -</p>
+</td>
+<td style="border-style: inset;">
+<p>120 - 329 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>49</p>
+</td>
+<td style="border-style: inset;">
+<p>1dqz</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 3 - A&nbsp; 282 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 282 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>50</p>
+</td>
+<td style="border-style: inset;">
+<p>1pko</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 126 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 34 36 - 42 45 - 126 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>51</p>
+</td>
+<td style="border-style: inset;">
+<p>1ujt</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 120 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 120 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>52</p>
+</td>
+<td style="border-style: inset;">
+<p>1d2s</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 13 - A&nbsp; 188 -</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 129 136 - 188 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>53</p>
+</td>
+<td style="border-style: inset;">
+<p>2w3w</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 3 - A&nbsp; 167 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 8 8 - 14 14 - 32 32 - 40 40 - 49 49 - 57 57 - 163 163 - 166 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>54</p>
+</td>
+<td style="border-style: inset;">
+<p>2evv</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp;&nbsp;&nbsp; 2 - D&nbsp; 180 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 6 8 - 66 68 - 87 90 - 127 129 - 162 164 - 180 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>55</p>
+</td>
+<td style="border-style: inset;">
+<p>1lya</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp; 106 - B&nbsp; 346 -</p>
+</td>
+<td style="border-style: inset;">
+<p>106 - 346 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>56</p>
+</td>
+<td style="border-style: inset;">
+<p>2hi1</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 327 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 9 11 - 153 155 - 239 241 - 261 263 - 265 267 - 279 281 - 315 317 - 323 325 - 327 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>57</p>
+</td>
+<td style="border-style: inset;">
+<p>2r8b</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 43 - A&nbsp; 246 -</p>
+</td>
+<td style="border-style: inset;">
+<p>45 - 114 116 - 124 126 - 169 171 - 246 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>58</p>
+</td>
+<td style="border-style: inset;">
+<p>2pf5</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp;&nbsp;&nbsp; 1 - D&nbsp;&nbsp; 96 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 96 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>59</p>
+</td>
+<td style="border-style: inset;">
+<p>1gxe</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 130 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 130 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>60</p>
+</td>
+<td style="border-style: inset;">
+<p>2x19</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 8 - A&nbsp; 179 -</p>
+</td>
+<td style="border-style: inset;">
+<p>8 - 179 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>61</p>
+</td>
+<td style="border-style: inset;">
+<p>1eai</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp;&nbsp; 1 - C&nbsp;&nbsp; 61 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 61 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>62</p>
+</td>
+<td style="border-style: inset;">
+<p>2omz</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp; -3 - B&nbsp; 101 -</p>
+</td>
+<td style="border-style: inset;">
+<p>-3 - 100 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>63</p>
+</td>
+<td style="border-style: inset;">
+<p>2p97</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 0 - A&nbsp; 200 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 111 113 - 154 156 - 200 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>64</p>
+</td>
+<td style="border-style: inset;">
+<p>2bt6</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 5 - B&nbsp; 108 -</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 95 95 - 108 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>65</p>
+</td>
+<td style="border-style: inset;">
+<p>1wri</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 93 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 93 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>66</p>
+</td>
+<td style="border-style: inset;">
+<p>3g2s</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 6 - B&nbsp; 146 -</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 146 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>67</p>
+</td>
+<td style="border-style: inset;">
+<p>1pxz</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 346 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 346 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>68</p>
+</td>
+<td style="border-style: inset;">
+<p>1tue</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp; 428 - D&nbsp; 629 -</p>
+</td>
+<td style="border-style: inset;">
+<p>428 - 629 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>69</p>
+</td>
+<td style="border-style: inset;">
+<p>2k9x</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 102 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 102 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>70</p>
+</td>
+<td style="border-style: inset;">
+<p>1hpi</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 71 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 71 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>71</p>
+</td>
+<td style="border-style: inset;">
+<p>3npk</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 281 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 31 33 - 82 84 - 144 146 - 182 184 - 219 236 - 271 273 - 281 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>72</p>
+</td>
+<td style="border-style: inset;">
+<p>2k3d</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 12 - A&nbsp;&nbsp; 98 -</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 98 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>73</p>
+</td>
+<td style="border-style: inset;">
+<p>1te7</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 103 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 103 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>74</p>
+</td>
+<td style="border-style: inset;">
+<p>1f3v</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 8 - A&nbsp; 165 -</p>
+</td>
+<td style="border-style: inset;">
+<p>8 - 165 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>75</p>
+</td>
+<td style="border-style: inset;">
+<p>3ks0</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 6 - A&nbsp;&nbsp; 97 -</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 97 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>76</p>
+</td>
+<td style="border-style: inset;">
+<p>3cjk</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 3 - B&nbsp;&nbsp; 77 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 77 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>77</p>
+</td>
+<td style="border-style: inset;">
+<p>1dfm</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 2 - B&nbsp; 223 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 29 31 - 116 118 - 123 125 - 134 136 - 209 215 - 223 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>78</p>
+</td>
+<td style="border-style: inset;">
+<p>1ee6</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 197 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 197 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>79</p>
+</td>
+<td style="border-style: inset;">
+<p>1va9</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 122 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 122 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>80</p>
+</td>
+<td style="border-style: inset;">
+<p>1jdw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 64 - A&nbsp; 423 -</p>
+</td>
+<td style="border-style: inset;">
+<p>64 - 423 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>81</p>
+</td>
+<td style="border-style: inset;">
+<p>3can</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 7 - A&nbsp; 185 -</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 54 56 - 67 69 - 139 160 - 185 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>82</p>
+</td>
+<td style="border-style: inset;">
+<p>3f9u</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 525 - A&nbsp; 669 -</p>
+</td>
+<td style="border-style: inset;">
+<p>525 - 536 538 - 547 549 - 561 563 - 599 601 - 669 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>83</p>
+</td>
+<td style="border-style: inset;">
+<p>1gl2</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp; 139 - C&nbsp; 198 -</p>
+</td>
+<td style="border-style: inset;">
+<p>139 - 198 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>84</p>
+</td>
+<td style="border-style: inset;">
+<p>1sz7</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 13 - A&nbsp; 171 -</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 171 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>85</p>
+</td>
+<td style="border-style: inset;">
+<p>1cfa</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 71 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 71 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>86</p>
+</td>
+<td style="border-style: inset;">
+<p>3kqs</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 24 - A&nbsp; 280 -</p>
+</td>
+<td style="border-style: inset;">
+<p>24 - 280 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>87</p>
+</td>
+<td style="border-style: inset;">
+<p>1nd9</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp;&nbsp; 50 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 50 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>88</p>
+</td>
+<td style="border-style: inset;">
+<p>2wds</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 123 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 2 2 - 10 10 - 14 14 - 21 21 - 46 46 - 57 57 - 98 98 - 103 103 - 118 118 - 123 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>89</p>
+</td>
+<td style="border-style: inset;">
+<p>2vqe</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; K&nbsp;&nbsp; 11 - K&nbsp; 129 -</p>
+</td>
+<td style="border-style: inset;">
+<p>11 - 129 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>90</p>
+</td>
+<td style="border-style: inset;">
+<p>3emn</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; X&nbsp;&nbsp;&nbsp; 1 - X&nbsp; 283 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 283 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>91</p>
+</td>
+<td style="border-style: inset;">
+<p>1sby</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 254 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 254 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>92</p>
+</td>
+<td style="border-style: inset;">
+<p>1ehy</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 294 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 137 149 - 294 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>93</p>
+</td>
+<td style="border-style: inset;">
+<p>1yui</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 10 - A&nbsp;&nbsp; 63 -</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 63 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>94</p>
+</td>
+<td style="border-style: inset;">
+<p>1no1</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp;&nbsp; 67 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 45 47 - 67 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>95</p>
+</td>
+<td style="border-style: inset;">
+<p>2i9y</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 17 - A&nbsp; 173 -</p>
+</td>
+<td style="border-style: inset;">
+<p>17 - 173 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>96</p>
+</td>
+<td style="border-style: inset;">
+<p>2fv7</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 15 - A&nbsp; 322 -</p>
+</td>
+<td style="border-style: inset;">
+<p>15 - 322 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>97</p>
+</td>
+<td style="border-style: inset;">
+<p>2ifo</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 46 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 46 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>98</p>
+</td>
+<td style="border-style: inset;">
+<p>2i5b</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 3 - A&nbsp; 271 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 271 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>99</p>
+</td>
+<td style="border-style: inset;">
+<p>2hi2</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 158 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 158 --</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>100</p>
+</td>
+<td style="border-style: inset;">
+<p>2if5</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 8 - A&nbsp; 127 -</p>
+</td>
+<td style="border-style: inset;">
+<p>8 - 64 70 - 127 --</p>
+</td>
+</tr>
+</table>
+</div>
+
+</body></html>
