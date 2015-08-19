@@ -6,6 +6,7 @@ import numpy as np
 from collections import defaultdict
 import matplotlib.pyplot as plt
 import re
+from compiler.ast import flatten
 
 def value_finder(start_residue, array):
 
@@ -59,10 +60,7 @@ def getCordsList(fileRead, chain):
 	return cords_list,realId_list
 
 def domainBoundaries(matrix, realId_list, domains):
-
 	new_dict = {}
-
-
 	for y in range(len(matrix)):
 		if matrix[y] in new_dict:
 			new_dict[matrix[y]].append(realId_list[y])
@@ -75,7 +73,6 @@ def domainBoundaries(matrix, realId_list, domains):
 
 def makeReadable(boundaries):
 	# print boundaries
-
 	temp_list = []
 	flag = 0
 
@@ -123,6 +120,14 @@ def getInteractionEnergy(matrix, num_domains, cords_list):
 
 	return (energy/2)/len(matrix)
 
+def fillVoids(boundaries):
+	for key, value in boundaries.iteritems():
+		for x in range(min(value), max(value)+1):
+			if x not in value:
+				if x not in flatten(boundaries.values()):
+					value.append(x)
+		boundaries[key] = sorted(value)
+	return boundaries
 
 path = "../Output Data/Two Domain Proteins/"
 counter = 0
@@ -130,7 +135,7 @@ correct = 0
 
 for pdb_file in os.listdir(path):
 
-	if counter==100:
+	if counter==2:
 		break
 
 	pdb_path = pdb_file
@@ -152,7 +157,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!="1aak" and pdb_file!="1fnr" and pdb_file!="1ace" and pdb_file!="1adh":
+			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file=="1awf":
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -169,8 +174,6 @@ for pdb_file in os.listdir(path):
 					domain_boundary = pdb_id[14:].strip()
 
 					print str(counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
-
-
 					cords_list, realId_list = getCordsList(var_1,chain)
 
 					# print "====================================="+pdb_id[:4]+"==============================="
@@ -193,6 +196,9 @@ for pdb_file in os.listdir(path):
 					# print len(labels_km)
 
 					boundaries = domainBoundaries(labels_km, realId_list,domains)
+					boundaries = fillVoids(boundaries)
+					
+
 					for key, value in boundaries.iteritems():
 						makeReadable(value)
 					print
