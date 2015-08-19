@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pdb.name %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @pdb.string %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @pdb.content %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @pdb.text %>
+</p>
+
+<%= link_to 'Edit', edit_pdb_path(@pdb) %> |
+<%= link_to 'Back', pdbs_path %>

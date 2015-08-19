@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pdbs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>String</th>
+      <th>Content</th>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pdbs.each do |pdb| %>
+      <tr>
+        <td><%= pdb.name %></td>
+        <td><%= pdb.string %></td>
+        <td><%= pdb.content %></td>
+        <td><%= pdb.text %></td>
+        <td><%= link_to 'Show', pdb %></td>
+        <td><%= link_to 'Edit', edit_pdb_path(pdb) %></td>
+        <td><%= link_to 'Destroy', pdb, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pdb', new_pdb_path %>
