@@ -7,6 +7,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 import re
 from compiler.ast import flatten
+from operator import itemgetter
 
 def value_finder(start_residue, array):
 
@@ -151,10 +152,8 @@ def mapCorrectly(cath, k_means):
 
 
 def stitchPatches(k_means, patch_length):
-	# print k_means
+	island = []
 	for key, value in k_means.iteritems():
-		# print value
-		island = []
 		x=0
 		while x!=len(value):
 			counter=0
@@ -162,11 +161,12 @@ def stitchPatches(k_means, patch_length):
 				if value[y]-value[y-1]!=1:
 					if len(value[x:y])<= patch_length:
 						patch = value[x:y]
-						# print patch
 						island.append(patch)
 					break
 				counter+=1
 			x+=(counter+1)
+
+	island = internalStitch(island)
 
 	mean_list = []
 	for key, value in k_means.iteritems():
@@ -177,7 +177,6 @@ def stitchPatches(k_means, patch_length):
 					value.remove(x)
 
 	for patches in island:
-		# print patches
 		low = patches[0] - 1
 		high = patches[-1] + 1
 		for key, value in k_means.iteritems():
@@ -188,16 +187,26 @@ def stitchPatches(k_means, patch_length):
 			if low in value and high in value:
 				k_means[key] = sorted(list(set(k_means[key]  + patches)))
 
-
-		# mean = 1.0*sum(patches)/len(patches)
-		# key = mean_list.index(min(mean_list, key=lambda x:abs(x-mean)))
-		
 	return k_means
 
+def internalStitch(island):
+	remove = []
+	for x in range(len(island)-1):
+		island.sort(key=itemgetter(0))
+		high = max(island[x])+1
+
+		if high==island[x+1][0]:
+			remove.append(x)
+			island[x+1] = sorted(island[x] + island[x+1])
+
+	final = []
+	for x in range(len(island)):
+		if x not in remove:
+			final.append(island[x])
+
+	return final
+
 def compareResults(cath, k_means,domains):
-	# print cath
-	# print k_means
-	
 	domain_length = 0
 	for x in range(domains):
 		domain_length = domain_length + len(cath.get(x))
@@ -206,15 +215,10 @@ def compareResults(cath, k_means,domains):
 	for x in range(domains):
 		temp_list = []
 
-		# print cath.get(x)
-		# print k_means.get(x)
-
 		if len(cath.get(x)) < len(k_means.get(x)):
 			for y in cath.get(x):
 				if y in k_means.get(x):
 					temp_list.append(y)
-			# print temp_list
-
 			score =  ((100*len(temp_list))/len(k_means.get(x)))*(1.0*len(temp_list)/domain_length) + score
 
 		else:
@@ -222,11 +226,7 @@ def compareResults(cath, k_means,domains):
 				if y in cath.get(x):
 					temp_list.append(y)
 
-			# print temp_list
 			score = (100*len(temp_list))/len(cath.get(x))*(1.0*len(temp_list)/domain_length) + score
-
-
-
 	return score
 
 def getCathDict(cath_boundaries):
@@ -280,7 +280,7 @@ accuracy = 0.0
 print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
 
-	if file_counter>=200:
+	if file_counter==1:
 		break
 
 	pdb_path = pdb_file
@@ -303,7 +303,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk': #and pdb_file=='1b90':
+			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk' and pdb_file=='1b90':
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -335,7 +335,7 @@ for pdb_file in os.listdir(path):
 					# print "==============K-Means================"
 
 					
-					km = KMeans(n_clusters=domains).fit(x)
+					km = KMeans(n_clusters=domains,n_init=200, max_iter=1000).fit(x)
 
 					labels_km = km.labels_
 
