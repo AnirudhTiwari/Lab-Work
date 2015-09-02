@@ -280,7 +280,7 @@ accuracy = 0.0
 print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
 
-	if file_counter==200:
+	if file_counter>=200:
 		break
 
 	pdb_path = pdb_file
