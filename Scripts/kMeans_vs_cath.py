@@ -272,89 +272,87 @@ def fillVoids(boundaries):
 		boundaries[key] = sorted(value)
 	return boundaries
 
-path = "../Output Data/Two Domain Proteins/"
-file_counter = 0
-correct = 0
-accuracy = 0.0
+for frag_size in range(31):
+	path = "../Output Data/Two Domain Proteins/"
+	file_counter = 0
+	correct = 0
+	accuracy = 0.0
 
-print "No., PDB, Domains, CATH, K-Means, Accuracy"
-for pdb_file in os.listdir(path):
+	# print "No., PDB, Domains, CATH, K-Means, Accuracy"
+	for pdb_file in os.listdir(path):
 
-	if file_counter==1:
-		break
-
-	pdb_path = pdb_file
-	pdb_file = pdb_file.split(".")[0].lower()
-
-	flag = 0
-
-
-	var = open('../Input Files/CathDomall', 'r')
-
-
-	while 1:
-
-		# print "path", path+pdb_path		
-
-		pdb_id = var.readline()
-
-		if not pdb_id:
+		if file_counter>=200:
 			break
 
-		else:
+		pdb_path = pdb_file
+		pdb_file = pdb_file.split(".")[0].lower()
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk' and pdb_file=='1b90':
-				flag = 1
-
-				var_1 = open(path+pdb_path, 'r')
-
-				chain = pdb_id[18]
-
-				domains = int(pdb_id[7] + pdb_id[8])
-
-				frags = int(pdb_id[11] + pdb_id[12])
+		flag = 0
 
 
-
-				if domains==2 and frags==0:
-					domain_boundary = pdb_id[14:].strip()
-
-					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
-					cords_list, realId_list = getCordsList(var_1,chain)
-
-					# print "====================================="+pdb_id[:4]+"==============================="
+		var = open('../Input Files/CathDomall', 'r')
 
 
-					# print "Domains: " + str(domains)
+		while 1:
 
-					# print domain_boundary
+			# print "path", path+pdb_path		
 
-					x = np.asarray(cords_list)
-					file_counter+=1
+			pdb_id = var.readline()
 
-					# print "==============K-Means================"
+			if not pdb_id:
+				break
 
-					
-					km = KMeans(n_clusters=domains,n_init=200, max_iter=1000).fit(x)
+				if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk': #and pdb_file=='1b90':
+					flag = 1
 
-					labels_km = km.labels_
+					var_1 = open(path+pdb_path, 'r')
 
-					# print len(labels_km)
+					chain = pdb_id[18]
 
-					boundaries = domainBoundaries(labels_km, realId_list,domains)
-					boundaries = fillVoids(boundaries)
-					boundaries = stitchPatches(boundaries, 5)
-					cathDict = getCathDict(domain_boundary)
+					domains = int(pdb_id[7] + pdb_id[8])
 
-					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
+					frags = int(pdb_id[11] + pdb_id[12])
 
 
-					overlap = compareResults(cathDict, boundaries, domains)
 
-					accuracy = accuracy + overlap
+					if domains==2 and frags==0:
+						domain_boundary = pdb_id[14:].strip()
 
-					for key, value in boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(overlap)
+						# print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
+						cords_list, realId_list = getCordsList(var_1,chain)
 
-print "accuracy is", accuracy/file_counter
+						# print "====================================="+pdb_id[:4]+"==============================="
+
+
+						# print "Domains: " + str(domains)
+
+						# print domain_boundary
+
+						x = np.asarray(cords_list)
+						file_counter+=1
+
+						km = KMeans(n_clusters=domains,n_init=200, max_iter=1000).fit(x)
+						# print "==============K-Means================"
+
+						
+
+						labels_km = km.labels_
+
+						# print len(labels_km)
+
+						boundaries = domainBoundaries(labels_km, realId_list,domains)
+						boundaries = fillVoids(boundaries)
+						boundaries = stitchPatches(boundaries, frag_size)
+						cathDict = getCathDict(domain_boundary)
+
+						cathDict, boundaries = mapCorrectly(cathDict, boundaries)
+
+
+						overlap = compareResults(cathDict, boundaries, domains)
+
+						accuracy = accuracy + overlap
+
+						# for key, value in boundaries.iteritems():
+						# 	makeReadable(value)
+	mean_overlap = accuracy/file_counter
+	print "For frag size", frag_size, "overlap is ", ", " + "{0:.2f}".format(mean_overlap)
