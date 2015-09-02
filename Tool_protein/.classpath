@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Tool_Eclipse"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/J3D_lib">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/tiwari/home/tiwari/Java3D_lib/amd64"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/tiwari/home/tiwari/Java3D_lib/ext/j3dutils.jar"/>
+	<classpathentry kind="lib" path="/home/tiwari/home/tiwari/Java3D_lib/ext/j3dcore.jar"/>
+	<classpathentry kind="lib" path="/home/tiwari/home/tiwari/Java3D_lib/ext/vecmath.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

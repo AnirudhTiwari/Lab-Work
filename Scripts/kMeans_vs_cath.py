@@ -47,7 +47,7 @@ def getCordsList(fileRead, chain):
 			coord_x = float(value_finder(27, data))
 			coord_y = float(value_finder(39, data))
 			coord_z = float(value_finder(47, data))
-			val = value_finder(23, data)
+			val = value_finder(22, data)
 		
 			if not re.search('[a-zA-Z]+', val):
 				real_id = int(val)
@@ -120,6 +120,149 @@ def getInteractionEnergy(matrix, num_domains, cords_list):
 
 	return (energy/2)/len(matrix)
 
+def mapCorrectly(cath, k_means):
+
+	# print cath
+	# print k_means
+
+	for key, value in cath.iteritems():
+		
+		mean = 1.0*sum(value)/len(value)
+		closest = 1000000
+		# print "CATH Mean", mean
+
+		for key_1, value_1 in k_means.iteritems():
+			mean_1 = 1.0*sum(value_1)/len(value_1)
+			# print "closest", closest
+			# print "k-means", mean_1
+			if abs(mean_1-mean) < closest:
+				closest = abs(mean_1-mean)
+				temp = k_means.get(key)
+				k_means[key] = value_1
+				k_means[key_1] = temp
+				# print "changed k-means", k_means
+		break
+
+	return cath, k_means
+
+# def makeChunks(some_list):
+# 	island = []
+# 	x=0
+
+
+def stitchPatches(k_means, patch_length):
+	# print k_means
+	for key, value in k_means.iteritems():
+		# print value
+		island = []
+		x=0
+		while x!=len(value):
+			counter=0
+			for y in range(x+1,len(value)-1,1):
+				if value[y]-value[y-1]!=1:
+					if len(value[x:y])<= patch_length:
+						patch = value[x:y]
+						# print patch
+						island.append(patch)
+					break
+				counter+=1
+			x+=(counter+1)
+
+	mean_list = []
+	for key, value in k_means.iteritems():
+		# mean_list.append(1.0*sum(value)/len(value))
+		for patches in island:
+			for x in patches:
+				if x in value:
+					value.remove(x)
+
+	for patches in island:
+		# print patches
+		low = patches[0] - 1
+		high = patches[-1] + 1
+		for key, value in k_means.iteritems():
+			if low < 1:
+				if high in value:
+					k_means[key] = sorted(list(set(k_means[key]  + patches)))
+
+			if low in value and high in value:
+				k_means[key] = sorted(list(set(k_means[key]  + patches)))
+
+
+		# mean = 1.0*sum(patches)/len(patches)
+		# key = mean_list.index(min(mean_list, key=lambda x:abs(x-mean)))
+		
+	return k_means
+
+def compareResults(cath, k_means,domains):
+	# print cath
+	# print k_means
+	
+	domain_length = 0
+	for x in range(domains):
+		domain_length = domain_length + len(cath.get(x))
+
+	score = 0
+	for x in range(domains):
+		temp_list = []
+
+		# print cath.get(x)
+		# print k_means.get(x)
+
+		if len(cath.get(x)) < len(k_means.get(x)):
+			for y in cath.get(x):
+				if y in k_means.get(x):
+					temp_list.append(y)
+			# print temp_list
+
+			score =  ((100*len(temp_list))/len(k_means.get(x)))*(1.0*len(temp_list)/domain_length) + score
+
+		else:
+			for y in k_means.get(x):
+				if y in cath.get(x):
+					temp_list.append(y)
+
+			# print temp_list
+			score = (100*len(temp_list))/len(cath.get(x))*(1.0*len(temp_list)/domain_length) + score
+
+
+
+	return score
+
+def getCathDict(cath_boundaries):
+	cath_boundaries = cath_boundaries.split(" ")
+	cath_boundaries = filter(None, cath_boundaries)
+
+	numOFSegments = int(cath_boundaries[0])
+
+	firstDomain = cath_boundaries[:6*numOFSegments+1]
+	secondDomain = cath_boundaries[6*numOFSegments+1:]
+
+	firstDomain = makeList(firstDomain)
+	secondDomain = makeList(secondDomain)
+
+	return {0: firstDomain,1: secondDomain}
+
+
+def makeList(domain):
+	domainList = []
+	segments = domain[0]
+	chain = domain[1]
+	insert_character = domain[3]
+	domain = list(filter(lambda x: x!=chain and x!=insert_character, domain[1:]))
+
+	for x in xrange(0,len(domain)-1,2):
+		temp_list = []
+		# print x
+		lower_bound = int(domain[x])
+		upper_bound = int(domain[x+1])
+
+		for y in range(lower_bound, upper_bound+1):
+			temp_list.append(y)
+		domainList.append(temp_list)
+
+	return flatten(domainList)
+
 def fillVoids(boundaries):
 	for key, value in boundaries.iteritems():
 		for x in range(min(value), max(value)+1):
@@ -130,12 +273,14 @@ def fillVoids(boundaries):
 	return boundaries
 
 path = "../Output Data/Two Domain Proteins/"
-counter = 0
+file_counter = 0
 correct = 0
+accuracy = 0.0
 
+print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
 
-	if counter==2:
+	if file_counter==200:
 		break
 
 	pdb_path = pdb_file
@@ -145,6 +290,7 @@ for pdb_file in os.listdir(path):
 
 
 	var = open('../Input Files/CathDomall', 'r')
+
 
 	while 1:
 
@@ -157,7 +303,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file=="1awf":
+			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk': #and pdb_file=='1b90':
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -173,7 +319,7 @@ for pdb_file in os.listdir(path):
 				if domains==2 and frags==0:
 					domain_boundary = pdb_id[14:].strip()
 
-					print str(counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
+					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
 					cords_list, realId_list = getCordsList(var_1,chain)
 
 					# print "====================================="+pdb_id[:4]+"==============================="
@@ -184,7 +330,7 @@ for pdb_file in os.listdir(path):
 					# print domain_boundary
 
 					x = np.asarray(cords_list)
-					counter+=1
+					file_counter+=1
 
 					# print "==============K-Means================"
 
@@ -197,8 +343,18 @@ for pdb_file in os.listdir(path):
 
 					boundaries = domainBoundaries(labels_km, realId_list,domains)
 					boundaries = fillVoids(boundaries)
-					
+					boundaries = stitchPatches(boundaries, 5)
+					cathDict = getCathDict(domain_boundary)
+
+					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
+
+
+					overlap = compareResults(cathDict, boundaries, domains)
+
+					accuracy = accuracy + overlap
 
 					for key, value in boundaries.iteritems():
 						makeReadable(value)
-					print
+					print ", " + "{0:.2f}".format(overlap)
+
+print "accuracy is", accuracy/file_counter
