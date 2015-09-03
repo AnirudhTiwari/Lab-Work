@@ -222,15 +222,19 @@ def compareResults(cath, k_means,domains):
 			for y in cath.get(x):
 				if y in k_means.get(x):
 					temp_list.append(y)
-			score =  ((100*len(temp_list))/len(k_means.get(x)))*(1.0*len(temp_list)/domain_length) + score
+			# score =  ((100*len(temp_list))/len(k_means.get(x)))*(1.0*len(temp_list)/domain_length) + score
+			score = len(temp_list) + score
 
 		else:
 			for y in k_means.get(x):
 				if y in cath.get(x):
 					temp_list.append(y)
 
-			score = (100*len(temp_list))/len(cath.get(x))*(1.0*len(temp_list)/domain_length) + score
-	return score
+			# score = (100*len(temp_list))/len(cath.get(x))*(1.0*len(temp_list)/domain_length) + score
+			score = len(temp_list) + score
+
+
+	return (100.0*(1.0*score/domain_length))
 
 def getCathDict(cath_boundaries):
 	cath_boundaries = cath_boundaries.split(" ")
@@ -283,7 +287,7 @@ accuracy = 0.0
 print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
 
-	if file_counter>=200:
+	if file_counter>=300:
 		break
 
 	pdb_path = pdb_file
@@ -338,7 +342,7 @@ for pdb_file in os.listdir(path):
 					# print "==============K-Means================"
 
 					
-					km = KMeans(n_clusters=domains,n_init=200, max_iter=1000).fit(x)
+					km = KMeans(n_clusters=domains,n_init=20, max_iter=500).fit(x)
 
 					labels_km = km.labels_
 
@@ -346,7 +350,7 @@ for pdb_file in os.listdir(path):
 
 					boundaries = domainBoundaries(labels_km, realId_list,domains)
 					boundaries = fillVoids(boundaries)
-					boundaries = stitchPatches(boundaries, 10)
+					boundaries = stitchPatches(boundaries, 8)
 					cathDict = getCathDict(domain_boundary)
 
 					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
