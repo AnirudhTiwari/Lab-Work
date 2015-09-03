@@ -302,6 +302,7 @@ for frag_size in range(31):
 			if not pdb_id:
 				break
 
+			else:
 				if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk': #and pdb_file=='1b90':
 					flag = 1
 
@@ -331,7 +332,7 @@ for frag_size in range(31):
 						x = np.asarray(cords_list)
 						file_counter+=1
 
-						km = KMeans(n_clusters=domains,n_init=200, max_iter=1000).fit(x)
+						km = KMeans(n_clusters=domains).fit(x)
 						# print "==============K-Means================"
 
 						
@@ -354,5 +355,6 @@ for frag_size in range(31):
 
 						# for key, value in boundaries.iteritems():
 						# 	makeReadable(value)
+
 	mean_overlap = accuracy/file_counter
 	print "For frag size", frag_size, "overlap is ", ", " + "{0:.2f}".format(mean_overlap)
