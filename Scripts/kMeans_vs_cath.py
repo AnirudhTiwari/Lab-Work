@@ -146,11 +146,6 @@ def mapCorrectly(cath, k_means):
 
 	return cath, k_means
 
-# def makeChunks(some_list):
-# 	island = []
-# 	x=0
-
-
 def stitchPatches(k_means, patch_length):
 	island = []
 	for key, value in k_means.iteritems():
@@ -163,9 +158,14 @@ def stitchPatches(k_means, patch_length):
 						patch = value[x:y]
 						island.append(patch)
 					break
+
+				elif y==len(value)-2:
+					if len(value[x:y+2])<=patch_length:
+						patch = value[x:y+2]
+						island.append(patch)
+					break
 				counter+=1
 			x+=(counter+1)
-
 	island = internalStitch(island)
 
 	mean_list = []
@@ -185,6 +185,9 @@ def stitchPatches(k_means, patch_length):
 					k_means[key] = sorted(list(set(k_means[key]  + patches)))
 
 			if low in value and high in value:
+				k_means[key] = sorted(list(set(k_means[key]  + patches)))
+
+			if low in value and high not in value:
 				k_means[key] = sorted(list(set(k_means[key]  + patches)))
 
 	return k_means
@@ -280,7 +283,7 @@ accuracy = 0.0
 print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
 
-	if file_counter==1:
+	if file_counter>=200:
 		break
 
 	pdb_path = pdb_file
@@ -303,7 +306,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk' and pdb_file=='1b90':
+			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk': #and pdb_file=='1bto':
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -343,7 +346,7 @@ for pdb_file in os.listdir(path):
 
 					boundaries = domainBoundaries(labels_km, realId_list,domains)
 					boundaries = fillVoids(boundaries)
-					boundaries = stitchPatches(boundaries, 5)
+					boundaries = stitchPatches(boundaries, 10)
 					cathDict = getCathDict(domain_boundary)
 
 					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
