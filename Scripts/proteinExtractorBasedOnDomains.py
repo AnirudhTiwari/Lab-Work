@@ -8,7 +8,9 @@ file_path = os.path.join(path1, path3)
 
 var = open(file_path, 'r')
 
-twoDomainsList = []
+inputDomains = raw_input("Enter the number of domains: ")
+
+DomainsList = []
 
 while 1:
 
@@ -23,8 +25,8 @@ while 1:
 			domains = int(pdb[7] + pdb[8])
 			frags = int(pdb[11] + pdb[12])
 
-			if domains==2 and frags==0:
-				twoDomainsList.append(pdb[:4])
-
-for x in twoDomainsList:
+			if domains==int(inputDomains) and frags==0:
+				DomainsList.append(pdb[:4])
+DomainsList = list(set(DomainsList))
+for x in DomainsList:
 	print x

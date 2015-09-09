@@ -350,7 +350,7 @@ for pdb_file in os.listdir(path):
 
 					boundaries = domainBoundaries(labels_km, realId_list,domains)
 					boundaries = fillVoids(boundaries)
-					boundaries = stitchPatches(boundaries, 8)
+					boundaries = stitchPatches(boundaries, 15)
 					cathDict = getCathDict(domain_boundary)
 
 					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
