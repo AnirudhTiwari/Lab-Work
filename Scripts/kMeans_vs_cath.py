@@ -16,7 +16,6 @@ def value_finder(start_residue, array):
 	while(array[start_residue]==' '):
 		start_residue = start_residue+1
 
-
 	while(array[start_residue]!=' '):
 		coordinate = coordinate + array[start_residue];
 		start_residue = start_residue + 1
@@ -26,9 +25,7 @@ def value_finder(start_residue, array):
 
 	return coordinate
 
-
 def getCordsList(fileRead, chain):
-
 
 	cords_list = []
 	realId_list = []
@@ -71,7 +68,6 @@ def domainBoundaries(matrix, realId_list, domains):
 
 	return new_dict
 
-
 def makeReadable(boundaries):
 	# print boundaries
 	temp_list = []
@@ -93,7 +89,6 @@ def makeReadable(boundaries):
 		print  min(temp_list), "-", max(temp_list)+1,
 
 	print "--",
-
 
 def dist(a,b):
 	# print a, b
@@ -121,32 +116,35 @@ def getInteractionEnergy(matrix, num_domains, cords_list):
 
 	return (energy/2)/len(matrix)
 
+def maxOverlap(cath_domain, k_means):
+	overlap = -1000000000
+	for key, value in k_means.iteritems():
+		counter = 0
+		for x in value:
+			if x in cath_domain:
+				counter+=1
+		if counter > overlap:
+			kmeans_key = key
+			overlap = counter
+	return kmeans_key
+
 def mapCorrectly(cath, k_means):
 
-	# print cath
-	# print k_means
-
+	kmeans_keys = []
 	for key, value in cath.iteritems():
-		
-		mean = 1.0*sum(value)/len(value)
-		closest = 1000000
-		# print "CATH Mean", mean
+		kmeans_keys.append(maxOverlap(value,k_means))
 
-		for key_1, value_1 in k_means.iteritems():
-			mean_1 = 1.0*sum(value_1)/len(value_1)
-			# print "closest", closest
-			# print "k-means", mean_1
-			if abs(mean_1-mean) < closest:
-				closest = abs(mean_1-mean)
-				temp = k_means.get(key)
-				k_means[key] = value_1
-				k_means[key_1] = temp
-				# print "changed k-means", k_means
-		break
+	new_kmeans = {}
 
-	return cath, k_means
+	if len(list(set(kmeans_keys)))!=len(cath):
+		print "K-MEANS SCREWED IT UP", kmeans_keys,
 
-def stitchPatches(k_means, patch_length):
+	for x in range(len(kmeans_keys)):
+		new_kmeans[x] = k_means.get(kmeans_keys[x])
+
+	return cath, new_kmeans
+
+def stitchPatches(k_means, cluster_centers, coordinates, realId_list,patch_length):
 	island = []
 	for key, value in k_means.iteritems():
 		x=0
@@ -166,7 +164,8 @@ def stitchPatches(k_means, patch_length):
 					break
 				counter+=1
 			x+=(counter+1)
-	island = internalStitch(island)
+
+	island = internalStitch(island, patch_length)
 
 	mean_list = []
 	for key, value in k_means.iteritems():
@@ -176,11 +175,27 @@ def stitchPatches(k_means, patch_length):
 				if x in value:
 					value.remove(x)
 
+	k_means = sequenceStitch(k_means, island)
+	k_means_temp = centroidStitch(k_means, island, coordinates, realId_list, cluster_centers)
+
+
+	return k_means
+
+def centroidStitch(k_means, island, coordinates, realId_list, cluster_centers):
+	
+	return k_means
+
+def sequenceStitch(k_means, island):
+	minimum = 100000000
+	for key, values in k_means.iteritems():
+		if minimum > min(values):
+			minimum = min(values)
+
 	for patches in island:
 		low = patches[0] - 1
 		high = patches[-1] + 1
 		for key, value in k_means.iteritems():
-			if low < 1:
+			if low < minimum:
 				if high in value:
 					k_means[key] = sorted(list(set(k_means[key]  + patches)))
 
@@ -189,16 +204,15 @@ def stitchPatches(k_means, patch_length):
 
 			if low in value and high not in value:
 				k_means[key] = sorted(list(set(k_means[key]  + patches)))
-
 	return k_means
 
-def internalStitch(island):
+def internalStitch(island, patch_length):
 	remove = []
 	for x in range(len(island)-1):
 		island.sort(key=itemgetter(0))
 		high = max(island[x])+1
 
-		if high==island[x+1][0]:
+		if high==island[x+1][0] and (len(island[x]) + len(island[x+1]) <= patch_length):
 			remove.append(x)
 			island[x+1] = sorted(island[x] + island[x+1])
 
@@ -236,20 +250,24 @@ def compareResults(cath, k_means,domains):
 
 	return (100.0*(1.0*score/domain_length))
 
-def getCathDict(cath_boundaries):
+def getCathDict(cath_boundaries, domains):
 	cath_boundaries = cath_boundaries.split(" ")
 	cath_boundaries = filter(None, cath_boundaries)
-
-	numOFSegments = int(cath_boundaries[0])
-
-	firstDomain = cath_boundaries[:6*numOFSegments+1]
-	secondDomain = cath_boundaries[6*numOFSegments+1:]
-
-	firstDomain = makeList(firstDomain)
-	secondDomain = makeList(secondDomain)
-
-	return {0: firstDomain,1: secondDomain}
-
+	cathDict = {}
+	key = 0
+	numOFSegments = 1
+	x = 0
+	while 1:
+		if x >= len(cath_boundaries):
+			break
+		else:
+			numOFSegments = int(cath_boundaries[x])
+			dom = cath_boundaries[x:x+6*numOFSegments+1]
+			dom = makeList(dom)
+			cathDict[key] = dom
+			key+=1
+			x+=6*numOFSegments+1
+	return cathDict
 
 def makeList(domain):
 	domainList = []
@@ -260,7 +278,6 @@ def makeList(domain):
 
 	for x in xrange(0,len(domain)-1,2):
 		temp_list = []
-		# print x
 		lower_bound = int(domain[x])
 		upper_bound = int(domain[x+1])
 
@@ -279,7 +296,9 @@ def fillVoids(boundaries):
 		boundaries[key] = sorted(value)
 	return boundaries
 
-path = "../Output Data/Two Domain Proteins/"
+# path = "../Output Data/Two Domain Proteins/"
+path = "../Output Data/500_proteins/"
+
 file_counter = 0
 correct = 0
 accuracy = 0.0
@@ -287,7 +306,7 @@ accuracy = 0.0
 print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
 
-	if file_counter>=300:
+	if file_counter>=1:
 		break
 
 	pdb_path = pdb_file
@@ -301,8 +320,6 @@ for pdb_file in os.listdir(path):
 
 	while 1:
 
-		# print "path", path+pdb_path		
-
 		pdb_id = var.readline()
 
 		if not pdb_id:
@@ -310,7 +327,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk': #and pdb_file=='1bto':
+			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk' and pdb_file!='3g4s' and pdb_file=='1xf1':
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -321,40 +338,28 @@ for pdb_file in os.listdir(path):
 
 				frags = int(pdb_id[11] + pdb_id[12])
 
-
-
-				if domains==2 and frags==0:
+				if frags==0: #and domains==2:
 					domain_boundary = pdb_id[14:].strip()
 
 					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
 					cords_list, realId_list = getCordsList(var_1,chain)
 
-					# print "====================================="+pdb_id[:4]+"==============================="
-
-
-					# print "Domains: " + str(domains)
-
-					# print domain_boundary
-
 					x = np.asarray(cords_list)
 					file_counter+=1
 
-					# print "==============K-Means================"
-
-					
-					km = KMeans(n_clusters=domains,n_init=20, max_iter=500).fit(x)
+					km = KMeans(n_clusters=domains, max_iter=1000, n_init=30, init='random').fit(x)
 
 					labels_km = km.labels_
-
-					# print len(labels_km)
+					clusters_km = km.cluster_centers_
 
 					boundaries = domainBoundaries(labels_km, realId_list,domains)
+
 					boundaries = fillVoids(boundaries)
-					boundaries = stitchPatches(boundaries, 15)
-					cathDict = getCathDict(domain_boundary)
+					boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, 15)
+
+					cathDict = getCathDict(domain_boundary, domains)
 
 					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
-
 
 					overlap = compareResults(cathDict, boundaries, domains)
 
