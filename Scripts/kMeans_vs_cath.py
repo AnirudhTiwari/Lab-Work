@@ -10,7 +10,6 @@ from compiler.ast import flatten
 from operator import itemgetter
 
 def value_finder(start_residue, array):
-
 	coordinate = ''
 
 	while(array[start_residue]==' '):
@@ -26,7 +25,6 @@ def value_finder(start_residue, array):
 	return coordinate
 
 def getCordsList(fileRead, chain):
-
 	cords_list = []
 	realId_list = []
 
@@ -97,7 +95,6 @@ def dist(a,b):
 		return distance
 
 def getInteractionEnergy(matrix, num_domains, cords_list):
-
 	clusters_dict = defaultdict(list)
 
 	for x in range(len(matrix)):
@@ -175,14 +172,51 @@ def stitchPatches(k_means, cluster_centers, coordinates, realId_list,patch_lengt
 				if x in value:
 					value.remove(x)
 
-	k_means = sequenceStitch(k_means, island)
-	k_means_temp = centroidStitch(k_means, island, coordinates, realId_list, cluster_centers)
+	# k_means = sequenceStitch(k_means, island)
+	# k_means = centroidStitch(k_means, island, coordinates, realId_list, cluster_centers)
+	
+	k_means = interactionEnergyStitch(k_means, island, coordinates, realId_list)
+	return k_means
 
+def interactionEnergyStitch(k_means, island, coordinates, realId_list):
+
+	for patches in island:
+		energy_list = []
+		energy = 0
+		for key,value in k_means.iteritems():
+			for x in patches:
+				for y in value:
+					if y!=x:
+						if x in realId_list and y in realId_list:
+							a = coordinates[realId_list.index(x)]
+							b = coordinates[realId_list.index(y)]
+							val = math.pow((math.pow((a[0]-b[0]),2) + math.pow((a[1]-b[1]),2) + math.pow((a[2]-b[2]),2)), 0.5)
+							energy = energy + 1/1.0*val
+			energy_list.append(energy)
+
+		index = energy_list.index(max(energy_list))
+		k_means[index] = sorted(list(set(k_means[key] + patches)))
 
 	return k_means
 
 def centroidStitch(k_means, island, coordinates, realId_list, cluster_centers):
 	
+	for patch in island:
+		mean = [0, 0, 0]
+		distance_list = []
+		for residue in patch:
+			if residue in realId_list:
+				for x in range(len(mean)):
+					mean[x] = mean[x] + coordinates[realId_list.index(residue)][x]
+		for x in range(len(mean)):		
+			mean[x] = (1.0*mean[x])/len(patch)
+
+		for centers in cluster_centers:
+			distance =  math.pow((math.pow((centers[0]-mean[0]),2) + math.pow((centers[1]-mean[1]),2) + math.pow((centers[2]-mean[2]),2)), 0.5)
+			distance_list.append(distance)
+		key = distance_list.index(min(distance_list))
+		k_means[key] = sorted(list(set(k_means[key]  + patch)))
+
 	return k_means
 
 def sequenceStitch(k_means, island):
