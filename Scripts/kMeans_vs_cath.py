@@ -337,10 +337,10 @@ file_counter = 0
 correct = 0
 accuracy = 0.0
 
-print "No., PDB, Domains, CATH, K-Means, Accuracy"
+print "No., PDB, Domains, CATH, Interaction Energy for 1 Domain, Interaction Energy for 2 Domains, Interaction Energy for 3 Domains, Interaction Energy for 4 Domains, Interaction Energy for 5 Domain, Interaction Energy for 6 Domain"
 for pdb_file in os.listdir(path):
 
-	if file_counter>=1:
+	if file_counter>=50:
 		break
 
 	pdb_path = pdb_file
@@ -350,6 +350,7 @@ for pdb_file in os.listdir(path):
 
 
 	var = open('../Input Files/CathDomall', 'r')
+	not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk']
 
 
 	while 1:
@@ -361,7 +362,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk' and pdb_file!='3g4s' and pdb_file=='1xf1':
+			if pdb_id[:4].lower()==pdb_file[:4].lower()  and pdb_file not in not_list:
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -375,32 +376,52 @@ for pdb_file in os.listdir(path):
 				if frags==0: #and domains==2:
 					domain_boundary = pdb_id[14:].strip()
 
-					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
+					# print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
 					cords_list, realId_list = getCordsList(var_1,chain)
 
 					x = np.asarray(cords_list)
+					print str(file_counter + 1) + ", " + pdb_id[:4] + ", "+ str(domains) + ", " + domain_boundary, "," ,
+
 					file_counter+=1
 
-					km = KMeans(n_clusters=domains, max_iter=1000, n_init=30, init='random').fit(x)
 
-					labels_km = km.labels_
-					clusters_km = km.cluster_centers_
+					simulated_domains = 1
 
-					boundaries = domainBoundaries(labels_km, realId_list,domains)
 
-					boundaries = fillVoids(boundaries)
-					boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, 15)
 
-					cathDict = getCathDict(domain_boundary, domains)
+					while(simulated_domains!=7):
 
-					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
+						km = KMeans(n_clusters=simulated_domains).fit(x)
 
-					overlap = compareResults(cathDict, boundaries, domains)
+						labels_km = km.labels_
 
-					accuracy = accuracy + overlap
+						# print "Simulated Domains = " + str(simulated_domains),
+						if simulated_domains==6:
+							print "{0:.3f}".format(getInteractionEnergy(labels_km, simulated_domains, cords_list))
+						else:
+							print "{0:.3f}".format(getInteractionEnergy(labels_km, simulated_domains, cords_list)), ", ",
 
-					for key, value in boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(overlap)
+						simulated_domains+=1
 
-print "accuracy is", accuracy/file_counter
+
+
+# 					clusters_km = km.cluster_centers_
+
+# 					boundaries = domainBoundaries(labels_km, realId_list,domains)
+
+# 					boundaries = fillVoids(boundaries)
+# 					boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, 15)
+
+# 					cathDict = getCathDict(domain_boundary, domains)
+
+# 					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
+
+# 					overlap = compareResults(cathDict, boundaries, domains)
+
+# 					accuracy = accuracy + overlap
+
+# 					for key, value in boundaries.iteritems():
+# 						makeReadable(value)
+# 					print ", " + "{0:.2f}".format(overlap)
+
+# print "accuracy is", accuracy/file_counter
