@@ -56,10 +56,12 @@ def getCordsList(fileRead, chain):
 			if not re.search('[a-zA-Z]+', val):
 				real_id = int(val)
 
-				coordinates = [coord_x,coord_y,coord_z]
+				if real_id not in realId_list:
 
-				cords_list.append(coordinates)
-				realId_list.append(real_id)
+					coordinates = [coord_x,coord_y,coord_z]
+
+					cords_list.append(coordinates)
+					realId_list.append(real_id)
 
 	return cords_list,realId_list
 
@@ -341,9 +343,25 @@ def fillVoids(boundaries):
 		boundaries[key] = sorted(value)
 	return boundaries
 
+
+def isContiguous(cath_boundaries):
+	cath_boundaries = cath_boundaries.split(" ")
+	cath_boundaries = filter(None, cath_boundaries)
+	x = 0
+	while 1:
+		if x >= len(cath_boundaries):
+			break
+		else:
+			numOFSegments = int(cath_boundaries[x])
+			if numOFSegments > 1:
+				return False
+			else:
+				x+=6*numOFSegments+1
+	return True
+
 # path = "../Output Data/Two Domain Proteins/"
 # path = "../Output Data/500_proteins/"
-path = "../Input Files/Jones_Dataset/"
+path = "../Output Data/500_proteins/Contiguous/"
 
 file_counter = 0
 correct = 0
@@ -363,8 +381,8 @@ not_list = ['1adh','1baa', '1a4k', '1abk','3g4s', '1aak', '1ace', '1fnr']#'4gcr'
 print "No., PDB, Domains, CATH, K-Means, Overlap, Affinity Propagation, Overlap, Mean Shift, Overlap, Ward-Hierarchical, Overlap, Complete Agglomerative, Overlap, Avg. Agglomerative, Overlap, DBSCAN, Overlap, Birch, Overlap"
 for pdb_file in os.listdir(path):
 
-	# if file_counter>=1:
-	# 	break
+	if file_counter>=100:
+		break
 
 	pdb_path = pdb_file
 	pdb_file = pdb_file.split(".")[0].lower()
@@ -393,9 +411,10 @@ for pdb_file in os.listdir(path):
 				domains = int(pdb_id[7] + pdb_id[8])
 
 				frags = int(pdb_id[11] + pdb_id[12])
+			
+				domain_boundary = pdb_id[14:].strip()
 
-				if frags==0: #and domains==2:
-					domain_boundary = pdb_id[14:].strip()
+				if frags==0 and isContiguous(domain_boundary) and domains > 1:
 
 					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
 					cords_list, realId_list = getCordsList(var_1,chain)

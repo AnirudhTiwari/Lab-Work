@@ -1,0 +1,6743 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title></title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+body {
+  margin: 5px 5px 5px 5px;
+  background-color: #ffffff;
+}
+/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Courier New';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-family: 'Arial';
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-family: 'Arial';
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-family: 'Arial';
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ font-family: 'Arial';
+ color: #008000;
+ text-decoration: underline;
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+--></style>
+</head>
+<body>
+
+<p><br></p>
+<div><table width="100%" border=1 cellpadding=1 cellspacing=2 style="background-color: #ffffff;">
+<tr valign=top>
+<td style="border-style: inset;">
+<p><span class=rvts1>No.</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>PDB</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Domains</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>CATH</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>K-Means</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Overlap</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Affinity Propagation</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Overlap</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Mean Shift</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Overlap</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Ward-Hierarchical</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Overlap</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Complete Agglomerative</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Overlap</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Avg. Agglomerative</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Overlap</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>DBSCAN</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Overlap</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Birch</span></p>
+</td>
+<td style="border-style: inset;">
+<p><span class=rvts1>Overlap</span></p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>2pht</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 241 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>115 - 126 150 - 157 205 - 206 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>9.17</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>2pht</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 2 - B&nbsp; 241 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 24 48 - 50 88 - 90 214 - 217 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>7.08</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.58</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>2bb3</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; -2 - A&nbsp; 102 -&nbsp; 1&nbsp; A&nbsp; 103 - A&nbsp; 195 -</p>
+</td>
+<td style="border-style: inset;">
+<p>-2 - 23 23 - 32 32 - 47 47 - 55 55 - 63 63 - 66 66 - 79 81 - 101 &amp; 102 - 114 114 - 152 152 - 153 153 - 168 168 - 174 174 - 195 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.99</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 14 74 - 77 99 - 103 &amp; 150 - 152 152 - 153 153 - 160 174 - 181 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>19.70</p>
+</td>
+<td style="border-style: inset;">
+<p>-2 - 7 14 - 23 23 - 32 32 - 47 47 - 55 55 - 63 63 - 66 66 - 73 77 - 78 81 - 99 &amp; 8 - 13 74 - 76 79 - 80 100 - 114 114 - 152 152 - 153 153 - 168 168 - 174 174 - 195 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>95.96</p>
+</td>
+<td style="border-style: inset;">
+<p>-2 - 23 23 - 32 32 - 47 47 - 55 55 - 63 63 - 66 66 - 101 &amp; 102 - 114 114 - 152 152 - 153 153 - 168 168 - 174 174 - 195 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.49</p>
+</td>
+<td style="border-style: inset;">
+<p>-2 - 6 15 - 23 23 - 32 32 - 47 47 - 55 55 - 60 62 - 63 63 - 66 66 - 73 79 - 98 &amp; 7 - 14 74 - 78 99 - 114 114 - 152 152 - 153 153 - 168 168 - 174 174 - 195 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.94</p>
+</td>
+<td style="border-style: inset;">
+<p>-2 - 23 23 - 32 32 - 47 47 - 55 55 - 63 63 - 66 66 - 78 82 - 101 &amp; 79 - 81 102 - 114 114 - 152 152 - 153 153 - 168 168 - 174 174 - 195 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>97.98</p>
+</td>
+<td style="border-style: inset;">
+<p>-2 - 23 23 - 32 32 - 47 47 - 55 55 - 63 63 - 66 66 - 114 114 - 152 152 - 153 153 - 168 168 - 174 174 - 195 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>53.03</p>
+</td>
+<td style="border-style: inset;">
+<p>-2 - 6 15 - 23 23 - 32 32 - 47 47 - 55 55 - 60 62 - 63 63 - 66 66 - 72 82 - 98 &amp; 7 - 14 73 - 81 99 - 114 114 - 152 152 - 153 153 - 168 168 - 174 174 - 195 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>91.92</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>4</p>
+</td>
+<td style="border-style: inset;">
+<p>2bb3</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp; -1 - B&nbsp; 102 -&nbsp; 1&nbsp; B&nbsp; 103 - B&nbsp; 195 -</p>
+</td>
+<td style="border-style: inset;">
+<p>-1 - 16 16 - 24 24 - 59 59 - 79 81 - 84 84 - 97 97 - 101 &amp; 102 - 112 112 - 246 248 - 254 256 - 265 267 - 352 352 - 353 353 - 368 368 - 374 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.98</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 5 70 - 73 77 - 78 95 - 97 97 - 98 &amp; 118 - 119 130 - 141 191 - 195 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>18.78</p>
+</td>
+<td style="border-style: inset;">
+<p>-1 - 16 16 - 24 24 - 59 59 - 79 81 - 84 84 - 97 97 - 101 125 - 129 152 - 153 167 - 168 196 - 247 247 - 255 255 - 266 &amp; 102 - 112 112 - 124 130 - 151 154 - 166 169 - 173 175 - 195 267 - 352 352 - 353 353 - 368 368 - 374 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.91</p>
+</td>
+<td style="border-style: inset;">
+<p>-1 - 16 16 - 24 24 - 59 59 - 78 82 - 84 84 - 97 97 - 101 125 - 129 152 - 153 167 - 168 196 - 247 247 - 255 255 - 266 &amp; 79 - 81 102 - 112 112 - 124 130 - 151 154 - 166 169 - 173 175 - 195 267 - 352 352 - 353 353 - 368 368 - 374 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.89</p>
+</td>
+<td style="border-style: inset;">
+<p>-1 - 16 16 - 24 24 - 59 59 - 84 84 - 97 97 - 106 125 - 129 152 - 153 167 - 168 196 - 247 247 - 255 255 - 266 &amp; 107 - 112 112 - 124 130 - 151 154 - 166 169 - 173 175 - 195 267 - 352 352 - 353 353 - 368 368 - 374 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.89</p>
+</td>
+<td style="border-style: inset;">
+<p>-1 - 16 16 - 24 24 - 59 59 - 84 84 - 97 97 - 101 125 - 129 152 - 153 167 - 168 196 - 247 247 - 255 255 - 266 &amp; 102 - 112 112 - 124 130 - 151 154 - 166 169 - 173 175 - 195 267 - 352 352 - 353 353 - 368 368 - 374 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>94.42</p>
+</td>
+<td style="border-style: inset;">
+<p>-1 - 16 16 - 24 24 - 59 59 - 84 84 - 97 97 - 112 112 - 247 247 - 255 255 - 266 266 - 352 352 - 353 353 - 368 368 - 374 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>52.79</p>
+</td>
+<td style="border-style: inset;">
+<p>-1 - 16 16 - 24 24 - 59 59 - 78 82 - 84 84 - 97 97 - 101 125 - 129 152 - 153 167 - 168 196 - 247 247 - 255 255 - 266 &amp; 79 - 81 102 - 112 112 - 124 130 - 151 154 - 166 169 - 173 175 - 195 267 - 352 352 - 353 353 - 368 368 - 374 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.89</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1rwc</p>
+</td>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 372 -&nbsp; 1&nbsp; A&nbsp; 373 - A&nbsp; 643 -&nbsp; 1&nbsp; A&nbsp; 644 - A&nbsp; 757 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 216 222 - 224 232 - 233 241 - 277 302 - 303 307 - 336 346 - 369 &amp; 234 - 238 281 - 301 304 - 306 337 - 338 340 - 345 370 - 372 386 - 399 403 - 409 411 - 470 490 - 500 509 - 515 518 - 597 599 - 642 &amp; 217 - 221 225 - 229 278 - 279 373 - 383 400 - 402 471</p>
+</td>
+<td style="border-style: inset;">
+<p>86.74</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 21 40 - 49 76 - 88 91 - 100 102 - 103 &amp; 452 - 456 494 - 500 517 - 527 615 - 622 &amp; 501 - 503 649 - 657 668 - 677 679 - 684 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.60</p>
+</td>
+<td style="border-style: inset;">
+<p>219 - 220 226 - 229 235 - 237 282 - 286 290 - 293 371 - 408 413 - 464 466 - 591 594 - 595 603 - 757 &amp; 4 - 218 221 - 225 230 - 234 238 - 281 287 - 289 296 - 297 299 - 340 342 - 370 409 - 412 592 - 593 596 - 602 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>4.91</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 294 305 - 370 378 - 385 &amp; 295 - 304 371 - 377 386 - 647 659 - 666 687 - 690 697 - 701 749 - 750 &amp; 648 - 658 667 - 686 691 - 696 702 - 748 751 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>94.30</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 217 250 - 276 350 - 361 &amp; 239 - 249 277 - 349 362 - 377 386 - 475 487 - 502 512 - 513 516 - 623 626 - 647 &amp; 218 - 238 378 - 385 476 - 486 503 - 511 514 - 515 624 - 625 648 - 660 662 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>79.71</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 217 239 - 294 305 - 370 &amp; 218 - 238 295 - 304 378 - 385 395 - 426 429 - 477 487 - 502 512 - 645 &amp; 371 - 377 386 - 394 427 - 428 478 - 486 503 - 511 646 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>90.85</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>48.94</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 294 305 - 370 378 - 385 &amp; 295 - 304 371 - 377 386 - 647 659 - 666 687 - 690 697 - 701 749 - 750 &amp; 648 - 658 667 - 686 691 - 696 702 - 748 751 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>94.30</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>6</p>
+</td>
+<td style="border-style: inset;">
+<p>3b3d</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 280 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 145 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 23 44 - 49 78 - 81 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>6.43</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 145 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 145 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 145 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 145 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 145 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 145 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>7</p>
+</td>
+<td style="border-style: inset;">
+<p>3b3d</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 4 - B&nbsp; 280 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 140 140 - 145 145 - 156 156 - 193 193 - 236 236 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>41 - 42 64 - 78 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>6.50</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 140 140 - 145 145 - 156 156 - 193 193 - 236 236 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 140 140 - 145 145 - 156 156 - 193 193 - 236 236 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 140 140 - 145 145 - 156 156 - 193 193 - 236 236 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 140 140 - 145 145 - 156 156 - 193 193 - 236 236 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 140 140 - 145 145 - 156 156 - 193 193 - 236 236 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 140 140 - 145 145 - 156 156 - 193 193 - 236 236 - 248 248 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>8</p>
+</td>
+<td style="border-style: inset;">
+<p>3b3d</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp;&nbsp; 1 - C&nbsp; 280 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 32 32 - 145 145 - 193 193 - 197 197 - 236 236 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>84 - 98 125 - 126 128 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>7.14</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 32 32 - 145 145 - 193 193 - 197 197 - 236 236 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 32 32 - 145 145 - 193 193 - 197 197 - 236 236 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 32 32 - 145 145 - 193 193 - 197 197 - 236 236 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 32 32 - 145 145 - 193 193 - 197 197 - 236 236 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 32 32 - 145 145 - 193 193 - 197 197 - 236 236 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 32 32 - 145 145 - 193 193 - 197 197 - 236 236 - 280 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>9</p>
+</td>
+<td style="border-style: inset;">
+<p>1scu</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 122 -&nbsp; 1&nbsp; A&nbsp; 123 - A&nbsp; 288 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 128 130 - 139 &amp; 1 - 2 140 - 183 185 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.40</p>
+</td>
+<td style="border-style: inset;">
+<p>36 - 54 &amp; 209 - 212 237 - 245 247 - 258 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.62</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 127 131 - 139 182 - 184 &amp; 1 - 2 128 - 130 140 - 179 185 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.06</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 136 149 - 153 174 - 178 183 - 192 &amp; 137 - 148 154 - 173 179 - 182 193 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.19</p>
+</td>
+<td style="border-style: inset;">
+<p>8 - 21 33 - 123 178 - 186 247 - 248 &amp; 1 - 7 22 - 32 124 - 177 187 - 246 249 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.58</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 24 35 - 93 96 - 119 &amp; 1 - 9 25 - 34 94 - 95 120 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>91.67</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>42.36</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 136 149 - 153 174 - 178 183 - 192 &amp; 137 - 148 154 - 173 179 - 182 193 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.19</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>10</p>
+</td>
+<td style="border-style: inset;">
+<p>1scu</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp;&nbsp;&nbsp; 1 - D&nbsp; 122 -&nbsp; 1&nbsp; D&nbsp; 123 - D&nbsp; 288 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 128 130 - 139 183 - 184 &amp; 1 - 2 140 - 182 185 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.06</p>
+</td>
+<td style="border-style: inset;">
+<p>35 - 54 &amp; 210 - 211 239 - 255 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.54</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 127 131 - 137 182 - 185 &amp; 1 - 2 128 - 130 138 - 179 186 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.40</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 122 126 - 138 180 - 184 &amp; 123 - 125 139 - 179 185 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.75</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 93 98 - 119 126 - 142 &amp; 94 - 97 120 - 125 143 - 183 185 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>91.32</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 149 - 190 &amp; 146 - 148 191 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>77.43</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>42.36</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 122 126 - 138 180 - 184 &amp; 123 - 125 139 - 179 185 - 288 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.75</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>11</p>
+</td>
+<td style="border-style: inset;">
+<p>1y6p</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 131 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 8 10 - 15 77 - 82 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.69</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>12</p>
+</td>
+<td style="border-style: inset;">
+<p>1y6p</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 1 - B&nbsp; 131 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>33 - 36 120 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.69</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 131 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>13</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq2</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 218 -&nbsp; 1&nbsp; A&nbsp; 219 - A&nbsp; 311 -&nbsp; 1&nbsp; A&nbsp; 312 - A&nbsp; 608 -&nbsp; 1&nbsp; A&nbsp; 609 - A&nbsp; 723 -&nbsp; 1&nbsp; A&nbsp; 724 - A 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 19 33 - 99 103 - 129 140 - 199 202 - 214 336 - 346 371 - 373 411 - 420 558 - 581 &amp; 20 - 32 130 - 139 215 - 287 289 - 314 322 - 324 347 - 348 350 - 351 374 - 385 421 - 435 455 - 463 &amp; 100 - 102 200 - 201 315 - 321 325 - 335 353 - 354 362 - 370 386 - 39</p>
+</td>
+<td style="border-style: inset;">
+<p>79.02</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 6 44 - 66 117 - 118 &amp; 228 - 242 277 - 284 310 - 312 323 - 324 &amp; 317 - 319 326 - 329 479 - 481 489 - 490 492 - 495 515 - 519 536 - 549 &amp; 643 - 655 681 - 690 716 - 717 903 - 906 &amp; 882 - 893 907 - 915 933 - 944 959 - 960 1022 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.20</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 20 32 - 95 113 - 125 141 - 171 182 - 192 206 - 214 &amp; 21 - 31 126 - 140 172 - 181 215 - 312 372 - 384 415 - 438 452 - 466 &amp; 96 - 112 193 - 205 313 - 356 363 - 371 385 - 414 439 - 451 467 - 524 533 - 587 589 - 596 767 - 768 915 - 924 964 - 977 &amp; 357 - 3</p>
+</td>
+<td style="border-style: inset;">
+<p>82.25</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 220 304 - 305 372 - 377 388 - 431 436 - 461 464 - 480 556 - 587 &amp; 221 - 303 306 - 313 378 - 384 432 - 435 462 - 463 &amp; 314 - 371 385 - 387 481 - 555 588 - 609 692 - 693 707 - 710 769 - 800 993 - 1008 &amp; 610 - 691 694 - 706 711 - 723 886 - 906 928 - 933 </p>
+</td>
+<td style="border-style: inset;">
+<p>76.37</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 20 32 - 132 140 - 214 334 - 356 394 - 420 441 - 453 554 - 587 589 - 598 &amp; 21 - 31 133 - 139 215 - 317 319 - 327 367 - 384 390 - 393 421 - 440 454 - 466 &amp; 328 - 333 357 - 366 385 - 389 467 - 553 599 - 609 769 - 796 993 - 1008 &amp; 610 - 718 &amp; 719 - 768 79</p>
+</td>
+<td style="border-style: inset;">
+<p>75.59</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 20 32 - 95 113 - 125 141 - 171 182 - 192 206 - 214 &amp; 21 - 31 126 - 140 172 - 181 215 - 312 372 - 384 415 - 438 452 - 466 &amp; 96 - 112 193 - 205 313 - 356 363 - 371 385 - 414 439 - 451 467 - 524 533 - 587 589 - 596 767 - 768 915 - 924 964 - 977 &amp; 357 - 3</p>
+</td>
+<td style="border-style: inset;">
+<p>82.25</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>14</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq2</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 4 - B&nbsp; 218 -&nbsp; 1&nbsp; B&nbsp; 219 - B&nbsp; 311 -&nbsp; 1&nbsp; B&nbsp; 312 - B&nbsp; 608 -&nbsp; 1&nbsp; B&nbsp; 609 - B&nbsp; 723 -&nbsp; 1&nbsp; B&nbsp; 724 - B 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 19 33 - 99 103 - 129 140 - 199 202 - 214 336 - 346 371 - 373 411 - 420 558 - 581 &amp; 20 - 32 130 - 139 215 - 287 289 - 314 322 - 324 347 - 348 350 - 352 374 - 385 421 - 435 454 - 463 &amp; 100 - 102 200 - 201 315 - 321 325 - 335 353 - 354 362 - 370 386 - 39</p>
+</td>
+<td style="border-style: inset;">
+<p>79.51</p>
+</td>
+<td style="border-style: inset;">
+<p>67 - 71 124 - 125 151 - 160 171 - 173 175 - 177 181 - 186 &amp; 229 - 241 259 - 264 278 - 284 310 - 311 &amp; 317 - 319 326 - 330 479 - 481 489 - 490 492 - 495 515 - 519 536 - 549 &amp; 609 - 613 638 - 642 656 - 658 692 - 698 703 - 710 &amp; 882 - 886 908 - 915 932 - 944</p>
+</td>
+<td style="border-style: inset;">
+<p>15.29</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 25 32 - 219 334 - 354 367 - 376 389 - 427 436 - 477 573 - 582 &amp; 26 - 31 220 - 314 321 - 327 377 - 384 387 - 388 428 - 435 &amp; 315 - 320 328 - 333 355 - 366 385 - 386 478 - 572 583 - 608 765 - 801 894 - 899 916 - 926 965 - 977 992 - 1008 &amp; 609 - 722 &amp; 72</p>
+</td>
+<td style="border-style: inset;">
+<p>76.27</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 27 30 - 95 113 - 194 205 - 219 373 - 376 415 - 416 424 - 427 &amp; 28 - 29 220 - 327 330 - 335 363 - 372 377 - 390 428 - 438 452 - 466 473 - 479 511 - 516 &amp; 96 - 112 195 - 204 328 - 329 336 - 356 391 - 414 417 - 423 439 - 451 467 - 472 480 - 510 517 - 522</p>
+</td>
+<td style="border-style: inset;">
+<p>79.80</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 20 32 - 95 113 - 131 140 - 192 205 - 215 &amp; 26 - 31 132 - 139 216 - 283 293 - 308 &amp; 21 - 25 96 - 112 193 - 204 284 - 292 309 - 354 363 - 530 547 - 597 767 - 801 916 - 922 965 - 977 995 - 1002 &amp; 355 - 362 531 - 546 598 - 722 894 - 902 &amp; 723 - 766 802 - </p>
+</td>
+<td style="border-style: inset;">
+<p>83.24</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 25 32 - 219 334 - 354 367 - 376 389 - 427 436 - 477 573 - 582 &amp; 26 - 31 220 - 314 321 - 327 377 - 384 387 - 388 428 - 435 &amp; 315 - 320 328 - 333 355 - 366 385 - 386 478 - 572 583 - 608 765 - 801 894 - 899 916 - 926 965 - 977 992 - 1008 &amp; 609 - 722 &amp; 72</p>
+</td>
+<td style="border-style: inset;">
+<p>76.27</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>15</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq2</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp;&nbsp; 4 - C&nbsp; 218 -&nbsp; 1&nbsp; C&nbsp; 219 - C&nbsp; 311 -&nbsp; 1&nbsp; C&nbsp; 312 - C&nbsp; 608 -&nbsp; 1&nbsp; C&nbsp; 609 - C&nbsp; 723 -&nbsp; 1&nbsp; C&nbsp; 724 - C 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 19 33 - 99 103 - 129 140 - 199 203 - 214 336 - 346 371 - 373 411 - 420 558 - 581 &amp; 20 - 32 130 - 139 215 - 287 289 - 314 322 - 324 347 - 348 350 - 351 374 - 385 421 - 435 454 - 463 &amp; 100 - 102 200 - 202 315 - 321 325 - 335 353 - 354 362 - 370 386 - 39</p>
+</td>
+<td style="border-style: inset;">
+<p>78.92</p>
+</td>
+<td style="border-style: inset;">
+<p>17 - 19 67 - 71 124 - 125 151 - 160 171 - 173 175 - 177 181 - 186 &amp; 244 - 246 254 - 261 263 - 270 272 - 275 294 - 298 304 - 306 &amp; 317 - 319 325 - 329 479 - 481 489 - 490 492 - 495 515 - 519 536 - 549 &amp; 644 - 653 680 - 690 714 - 720 904 - 905 &amp; 882 - 893 9</p>
+</td>
+<td style="border-style: inset;">
+<p>16.86</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 11 15 - 22 32 - 82 113 - 190 206 - 219 &amp; 26 - 31 220 - 283 292 - 313 &amp; 12 - 14 23 - 25 83 - 112 191 - 205 284 - 291 314 - 528 532 - 601 916 - 921 963 - 981 &amp; 602 - 718 899 - 902 &amp; 529 - 531 719 - 898 903 - 915 922 - 962 982 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.02</p>
+</td>
+<td style="border-style: inset;">
+<p>355 - 361 485 - 488 525 - 535 554 - 555 588 - 683 686 - 716 759 - 763 767 - 797 873 - 882 888 - 906 916 - 927 959 - 987 991 - 1009 &amp; 8 - 14 21 - 29 101 - 112 142 - 144 162 - 169 191 - 200 223 - 247 253 - 297 304 - 354 362 - 484 489 - 524 536 - 553 &amp; 684 -</p>
+</td>
+<td style="border-style: inset;">
+<p>7.65</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 11 15 - 20 32 - 82 113 - 190 208 - 219 &amp; 26 - 31 220 - 283 292 - 311 &amp; 12 - 14 21 - 25 83 - 112 191 - 207 284 - 291 312 - 609 774 - 797 895 - 902 993 - 1007 &amp; 610 - 721 &amp; 722 - 773 798 - 894 903 - 992 1008 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.24</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 11 15 - 22 32 - 82 113 - 190 206 - 219 &amp; 26 - 31 220 - 283 292 - 313 &amp; 12 - 14 23 - 25 83 - 112 191 - 205 284 - 291 314 - 528 532 - 601 916 - 921 963 - 981 &amp; 602 - 718 899 - 902 &amp; 529 - 531 719 - 898 903 - 915 922 - 962 982 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.02</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>16</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq2</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp;&nbsp;&nbsp; 4 - D&nbsp; 218 -&nbsp; 1&nbsp; D&nbsp; 219 - D&nbsp; 311 -&nbsp; 1&nbsp; D&nbsp; 312 - D&nbsp; 608 -&nbsp; 1&nbsp; D&nbsp; 609 - D&nbsp; 723 -&nbsp; 1&nbsp; D&nbsp; 724 - D 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 19 33 - 99 103 - 129 140 - 199 202 - 214 336 - 346 371 - 373 411 - 420 558 - 581 &amp; 20 - 32 130 - 139 215 - 287 289 - 314 322 - 324 347 - 348 350 - 351 374 - 385 421 - 435 455 - 463 &amp; 100 - 102 200 - 201 315 - 321 325 - 335 353 - 354 362 - 370 386 - 39</p>
+</td>
+<td style="border-style: inset;">
+<p>79.61</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 7 44 - 66 117 - 118 &amp; 229 - 242 278 - 284 310 - 312 323 - 324 &amp; 317 - 319 326 - 330 479 - 482 489 - 490 492 - 495 515 - 519 536 - 549 &amp; 359 - 361 609 - 613 638 - 643 655 - 658 691 - 698 702 - 711 &amp; 882 - 888 907 - 915 932 - 944 958 - 960 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.59</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 862 862 - 863 863 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 22 30 - 82 113 - 194 206 - 219 415 - 416 &amp; 23 - 29 220 - 317 319 - 325 346 - 354 363 - 366 373 - 390 417 - 439 452 - 466 632 - 634 &amp; 83 - 112 195 - 205 326 - 345 367 - 372 391 - 414 440 - 451 467 - 522 532 - 587 589 - 596 &amp; 355 - 362 597 - 631 635 - 7</p>
+</td>
+<td style="border-style: inset;">
+<p>83.43</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 10 34 - 98 113 - 121 147 - 148 186 - 191 202 - 207 211 - 213 332 - 352 365 - 369 371 - 384 389 - 390 523 - 528 551 - 601 916 - 920 971 - 977 &amp; 15 - 33 122 - 146 149 - 185 208 - 210 214 - 315 319 - 326 329 - 331 363 - 364 385 - 388 425 - 439 456 - 465 </p>
+</td>
+<td style="border-style: inset;">
+<p>67.75</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 22 30 - 95 106 - 198 206 - 219 393 - 424 440 - 451 &amp; 23 - 29 220 - 315 321 - 328 334 - 335 363 - 392 425 - 439 452 - 466 632 - 634 &amp; 96 - 105 199 - 205 316 - 320 329 - 333 336 - 362 467 - 609 767 - 795 895 - 899 916 - 923 965 - 977 992 - 1008 &amp; 610 - </p>
+</td>
+<td style="border-style: inset;">
+<p>78.63</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 862 862 - 863 863 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 22 30 - 219 334 - 345 367 - 372 391 - 416 440 - 451 554 - 587 589 - 596 &amp; 23 - 29 220 - 317 319 - 325 346 - 354 363 - 366 373 - 390 417 - 439 452 - 466 632 - 634 &amp; 721 - 769 797 - 862 862 - 863 863 - 894 900 - 991 1009 - 1023 &amp; 355 - 362 597 - 631 635</p>
+</td>
+<td style="border-style: inset;">
+<p>40.10</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>17</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq2</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; E&nbsp;&nbsp;&nbsp; 4 - E&nbsp; 218 -&nbsp; 1&nbsp; E&nbsp; 219 - E&nbsp; 311 -&nbsp; 1&nbsp; E&nbsp; 312 - E&nbsp; 608 -&nbsp; 1&nbsp; E&nbsp; 609 - E&nbsp; 723 -&nbsp; 1&nbsp; E&nbsp; 724 - E 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 19 33 - 99 103 - 129 140 - 199 203 - 214 336 - 346 371 - 373 411 - 420 558 - 581 &amp; 20 - 32 130 - 139 215 - 287 289 - 314 322 - 324 347 - 348 350 - 351 374 - 385 421 - 435 455 - 463 &amp; 100 - 102 200 - 202 315 - 321 325 - 335 353 - 354 362 - 370 386 - 39</p>
+</td>
+<td style="border-style: inset;">
+<p>79.22</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 7 44 - 66 117 - 118 &amp; 244 - 245 254 - 261 263 - 275 294 - 298 305 - 306 &amp; 317 - 319 326 - 329 479 - 481 489 - 490 492 - 495 515 - 519 535 - 549 &amp; 644 - 654 680 - 690 714 - 718 904 - 905 &amp; 885 - 895 906 - 916 924 - 930 957 - 960 987 - 988 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.88</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 23 30 - 217 336 - 356 370 - 371 390 - 424 436 - 478 558 - 587 &amp; 24 - 29 218 - 335 357 - 369 372 - 389 425 - 435 515 - 516 547 - 548 &amp; 720 - 766 798 - 894 902 - 921 924 - 991 1009 - 1023 &amp; 609 - 719 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>40.39</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 23 26 - 95 113 - 194 205 - 219 222 - 225 246 - 247 302 - 305 336 - 344 &amp; 220 - 221 226 - 245 248 - 301 306 - 313 321 - 326 329 - 331 345 - 364 372 - 386 430 - 431 602 - 608 632 - 633 697 - 704 &amp; 24 - 25 96 - 112 195 - 204 314 - 320 327 - 328 332 - 335</p>
+</td>
+<td style="border-style: inset;">
+<p>80.49</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 84 113 - 146 150 - 188 207 - 217 372 - 379 425 - 431 &amp; 218 - 284 292 - 313 321 - 326 &amp; 85 - 112 147 - 149 189 - 206 285 - 291 314 - 320 327 - 371 380 - 424 432 - 608 764 - 808 865 - 871 895 - 901 916 - 923 965 - 977 992 - 1011 &amp; 609 - 719 &amp; 720 - 763 </p>
+</td>
+<td style="border-style: inset;">
+<p>81.96</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 23 30 - 217 336 - 356 370 - 371 390 - 424 436 - 478 558 - 587 &amp; 24 - 29 218 - 335 357 - 369 372 - 389 425 - 435 515 - 516 547 - 548 &amp; 720 - 766 798 - 894 902 - 921 924 - 991 1009 - 1023 &amp; 609 - 719 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>40.39</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>18</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq2</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; F&nbsp;&nbsp;&nbsp; 4 - F&nbsp; 218 -&nbsp; 1&nbsp; F&nbsp; 219 - F&nbsp; 311 -&nbsp; 1&nbsp; F&nbsp; 312 - F&nbsp; 608 -&nbsp; 1&nbsp; F&nbsp; 609 - F&nbsp; 723 -&nbsp; 1&nbsp; F&nbsp; 724 - F 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 19 33 - 99 103 - 129 140 - 199 202 - 214 336 - 346 371 - 373 411 - 420 558 - 581 &amp; 20 - 32 130 - 139 215 - 287 289 - 314 322 - 324 347 - 348 350 - 351 374 - 385 421 - 435 455 - 463 &amp; 100 - 102 200 - 201 315 - 321 325 - 335 353 - 354 362 - 370 386 - 39</p>
+</td>
+<td style="border-style: inset;">
+<p>79.31</p>
+</td>
+<td style="border-style: inset;">
+<p>14 - 25 140 - 146 161 - 172 212 - 213 423 - 424 426 - 427 &amp; 226 - 229 258 - 264 291 - 296 305 - 311 428 - 432 &amp; 317 - 319 325 - 329 489 - 490 492 - 495 515 - 517 536 - 548 &amp; 643 - 655 681 - 690 716 - 717 903 - 906 &amp; 882 - 892 907 - 915 932 - 944 959 - 960</p>
+</td>
+<td style="border-style: inset;">
+<p>15.20</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 25 32 - 83 103 - 199 207 - 220 333 - 334 366 - 378 389 - 431 437 - 440 444 - 463 &amp; 26 - 31 221 - 313 347 - 360 379 - 385 387 - 388 432 - 436 610 - 612 628 - 640 658 - 670 694 - 706 &amp; 84 - 102 200 - 206 314 - 332 335 - 346 361 - 365 441 - 443 464 - 609</p>
+</td>
+<td style="border-style: inset;">
+<p>72.25</p>
+</td>
+<td style="border-style: inset;">
+<p>16 - 38 80 - 83 122 - 146 152 - 161 164 - 185 207 - 285 291 - 311 335 - 352 372 - 378 426 - 434 460 - 463 &amp; 12 - 15 99 - 112 191 - 202 286 - 290 312 - 334 353 - 371 379 - 425 435 - 459 464 - 557 584 - 601 770 - 801 895 - 898 993 - 1008 &amp; 602 - 648 650 - 7</p>
+</td>
+<td style="border-style: inset;">
+<p>11.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 27 34 - 125 140 - 177 182 - 213 333 - 344 366 - 371 389 - 431 437 - 440 446 - 463 558 - 583 &amp; 28 - 33 126 - 139 178 - 181 214 - 327 345 - 365 372 - 388 432 - 436 694 - 706 &amp; 328 - 332 441 - 445 464 - 557 584 - 609 767 - 795 895 - 902 991 - 1008 &amp; 610 </p>
+</td>
+<td style="border-style: inset;">
+<p>70.10</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.08</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 25 32 - 83 103 - 199 207 - 220 333 - 334 366 - 378 389 - 431 437 - 440 444 - 463 &amp; 26 - 31 221 - 313 347 - 360 379 - 385 387 - 388 432 - 436 610 - 612 628 - 640 658 - 670 694 - 706 &amp; 84 - 102 200 - 206 314 - 332 335 - 346 361 - 365 441 - 443 464 - 609</p>
+</td>
+<td style="border-style: inset;">
+<p>72.25</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>19</p>
+</td>
+<td style="border-style: inset;">
+<p>1uiw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 141 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>85 - 92 137 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>9.22</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>20</p>
+</td>
+<td style="border-style: inset;">
+<p>1uiw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 1 - B&nbsp; 146 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>19 - 28 61 - 69 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.70</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>21</p>
+</td>
+<td style="border-style: inset;">
+<p>1uiw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp;&nbsp; 1 - C&nbsp; 141 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>84 - 92 137 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>9.93</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>22</p>
+</td>
+<td style="border-style: inset;">
+<p>1uiw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp;&nbsp;&nbsp; 1 - D&nbsp; 146 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>19 - 28 61 - 69 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.70</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>23</p>
+</td>
+<td style="border-style: inset;">
+<p>1uiw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; E&nbsp;&nbsp;&nbsp; 1 - E&nbsp; 141 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>22 - 27 56 - 64 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.35</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>24</p>
+</td>
+<td style="border-style: inset;">
+<p>1uiw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; F&nbsp;&nbsp;&nbsp; 1 - F&nbsp; 146 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>19 - 28 61 - 69 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.70</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>25</p>
+</td>
+<td style="border-style: inset;">
+<p>1uiw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; G&nbsp;&nbsp;&nbsp; 1 - G&nbsp; 141 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>85 - 92 136 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>9.93</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 141 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>26</p>
+</td>
+<td style="border-style: inset;">
+<p>1uiw</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; H&nbsp;&nbsp;&nbsp; 1 - H&nbsp; 146 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>19 - 28 61 - 69 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.70</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 146 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>27</p>
+</td>
+<td style="border-style: inset;">
+<p>1b8v</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 3 - A&nbsp; 157 -&nbsp; 1&nbsp; A&nbsp; 158 - A&nbsp; 329 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 158 237 - 254 256 - 258 291 - 293 320 - 329 &amp; 159 - 236 259 - 290 294 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.30</p>
+</td>
+<td style="border-style: inset;">
+<p>39 - 42 72 - 83 &amp; 180 - 184 199 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.70</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 329 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>47.40</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 158 318 - 329 &amp; 159 - 317 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.02</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 16 22 - 135 138 - 156 324 - 329 &amp; 17 - 21 136 - 137 157 - 323 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>95.72</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 158 318 - 329 &amp; 159 - 317 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.02</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 329 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>47.40</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 158 318 - 329 &amp; 159 - 317 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.02</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>28</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq3</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 6 - B&nbsp; 114 -&nbsp; 1&nbsp; B&nbsp; 115 - B&nbsp; 247 -</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 115 166 - 167 &amp; 116 - 160 164 - 165 168 - 223 227 - 247 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>97.11</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 12 35 - 39 91 - 94 &amp; 184 - 185 215 - 217 231 - 240 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.64</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 247 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>45.04</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 114 159 - 161 &amp; 115 - 158 162 - 247 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.76</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 16 31 - 60 63 - 73 76 - 80 83 - 99 &amp; 17 - 30 61 - 62 74 - 75 81 - 82 100 - 247 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>85.54</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 114 159 - 161 &amp; 115 - 158 162 - 247 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.76</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 247 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>45.04</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 114 159 - 161 &amp; 115 - 158 162 - 247 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.76</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>29</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq3</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp;&nbsp; 2 - C&nbsp;&nbsp; 32 -&nbsp; 1&nbsp; C&nbsp;&nbsp; 33 - C&nbsp; 141 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 31 &amp; 32 - 140 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.57</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 22 &amp; 92 - 93 96 - 101 125 - 136 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>22.14</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 32 &amp; 33 - 140 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.29</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 31 &amp; 32 - 140 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.57</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 46 93 - 128 &amp; 47 - 92 129 - 140 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>63.57</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 31 &amp; 32 - 140 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.57</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 140 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>22.14</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 31 &amp; 32 - 140 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.57</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>30</p>
+</td>
+<td style="border-style: inset;">
+<p>1yq3</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp;&nbsp;&nbsp; 2 - D&nbsp; 103 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 103 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>11 - 21 42 - 43 45 - 46 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.71</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 43 79 - 103 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>50.00</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 103 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 103 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 103 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 103 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 103 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>31</p>
+</td>
+<td style="border-style: inset;">
+<p>1b8a</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 105 -&nbsp; 1&nbsp; A&nbsp; 106 - A&nbsp; 438 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 139 260 - 271 &amp; 140 - 259 272 - 437 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.27</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 18 46 - 49 77 - 91 &amp; 164 - 169 172 - 188 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.56</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 139 260 - 271 &amp; 140 - 259 272 - 437 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.27</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 100 &amp; 101 - 438 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.86</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 145 216 - 225 252 - 275 409 - 438 &amp; 146 - 215 226 - 251 276 - 408 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>76.26</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 104 &amp; 105 - 438 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.77</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 438 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>23.97</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 100 &amp; 101 - 438 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.86</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>32</p>
+</td>
+<td style="border-style: inset;">
+<p>1b8a</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B 1001 - B 1105 -&nbsp; 1&nbsp; B 1106 - B 1438 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1001 - 1139 1260 - 1272 &amp; 1140 - 1259 1273 - 1427 1429 - 1437 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.81</p>
+</td>
+<td style="border-style: inset;">
+<p>1029 - 1037 1049 - 1065 &amp; 1104 - 1130 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.64</p>
+</td>
+<td style="border-style: inset;">
+<p>1001 - 1139 1260 - 1271 &amp; 1140 - 1259 1272 - 1427 1429 - 1437 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.04</p>
+</td>
+<td style="border-style: inset;">
+<p>1001 - 1142 1220 - 1222 1258 - 1273 1414 - 1431 1435 - 1438 &amp; 1143 - 1219 1223 - 1257 1274 - 1413 1432 - 1434 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>82.19</p>
+</td>
+<td style="border-style: inset;">
+<p>1001 - 1139 1217 - 1225 1262 - 1273 1408 - 1438 &amp; 1140 - 1216 1226 - 1261 1274 - 1361 1363 - 1407 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>80.14</p>
+</td>
+<td style="border-style: inset;">
+<p>1001 - 1102 &amp; 1103 - 1438 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.32</p>
+</td>
+<td style="border-style: inset;">
+<p>1001 - 1438 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>23.97</p>
+</td>
+<td style="border-style: inset;">
+<p>1001 - 1142 1220 - 1222 1258 - 1273 1414 - 1431 1435 - 1438 &amp; 1143 - 1219 1223 - 1257 1274 - 1413 1432 - 1434 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>82.19</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>33</p>
+</td>
+<td style="border-style: inset;">
+<p>1rwa</p>
+</td>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 372 -&nbsp; 1&nbsp; A&nbsp; 373 - A&nbsp; 643 -&nbsp; 1&nbsp; A&nbsp; 644 - A&nbsp; 757 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 24 24 - 216 222 - 224 232 - 233 241 - 276 302 - 303 307 - 336 346 - 369 &amp; 234 - 238 281 - 301 304 - 306 337 - 338 340 - 345 370 - 372 386 - 399 403 - 409 411 - 470 490 - 500 509 - 515 518 - 597 599 - 636 636 - 642 &amp; 217 - 221 225 - 229 277 - 279 373 -</p>
+</td>
+<td style="border-style: inset;">
+<p>86.87</p>
+</td>
+<td style="border-style: inset;">
+<p>43 - 49 78 - 87 92 - 100 102 - 103 &amp; 453 - 455 495 - 499 517 - 526 615 - 622 &amp; 690 - 698 719 - 726 728 - 729 753 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.74</p>
+</td>
+<td style="border-style: inset;">
+<p>219 - 220 225 - 229 235 - 237 282 - 286 290 - 293 371 - 408 413 - 591 594 - 595 603 - 636 636 - 757 &amp; 4 - 24 24 - 218 221 - 224 230 - 234 238 - 281 287 - 289 296 - 297 299 - 340 342 - 370 409 - 412 592 - 593 596 - 602 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>4.91</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 24 24 - 294 305 - 395 424 - 430 570 - 571 630 - 631 &amp; 295 - 304 396 - 423 431 - 473 489 - 502 507 - 569 572 - 629 632 - 636 636 - 666 &amp; 474 - 488 503 - 506 667 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.73</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 24 24 - 280 309 - 370 379 - 382 &amp; 281 - 308 371 - 378 383 - 475 479 - 484 487 - 502 505 - 636 636 - 647 659 - 666 &amp; 476 - 478 485 - 486 503 - 504 648 - 658 667 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.10</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 24 24 - 370 379 - 384 394 - 395 424 - 436 &amp; 396 - 423 437 - 475 487 - 502 510 - 636 636 - 643 &amp; 371 - 378 385 - 393 476 - 486 503 - 509 644 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.71</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 24 24 - 636 636 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>48.94</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 24 24 - 283 290 - 294 312 - 337 348 - 370 379 - 384 &amp; 284 - 289 295 - 311 338 - 347 371 - 378 385 - 473 489 - 502 516 - 574 580 - 622 628 - 636 636 - 639 &amp; 474 - 488 503 - 515 575 - 579 623 - 627 640 - 757 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.26</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>34</p>
+</td>
+<td style="border-style: inset;">
+<p>1j81</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp; 24 - B&nbsp; 124 -</p>
+</td>
+<td style="border-style: inset;">
+<p>24 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>24 - 29 43 - 44 84 - 85 97 - 99 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.87</p>
+</td>
+<td style="border-style: inset;">
+<p>46 - 81 102 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>58.42</p>
+</td>
+<td style="border-style: inset;">
+<p>24 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>24 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>24 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>24 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>24 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>35</p>
+</td>
+<td style="border-style: inset;">
+<p>2rdc</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 20 - A&nbsp; 152 -</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 52 52 - 77 77 - 92 92 - 93 93 - 99 99 - 119 119 - 144 144 - 151 151 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 29 122 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.03</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 51 92 - 93 93 - 99 99 - 119 119 - 144 144 - 151 151 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>75.94</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 52 52 - 77 77 - 92 92 - 93 93 - 99 99 - 119 119 - 144 144 - 151 151 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 52 52 - 77 77 - 92 92 - 93 93 - 99 99 - 119 119 - 144 144 - 151 151 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 52 52 - 77 77 - 92 92 - 93 93 - 99 99 - 119 119 - 144 144 - 151 151 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 52 52 - 77 77 - 92 92 - 93 93 - 99 99 - 119 119 - 144 144 - 151 151 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 52 52 - 77 77 - 92 92 - 93 93 - 99 99 - 119 119 - 144 144 - 151 151 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>36</p>
+</td>
+<td style="border-style: inset;">
+<p>2rdc</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp; 18 - B&nbsp; 152 -</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 20 20 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 20 20 - 29 122 - 124 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.07</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 20 20 - 51 92 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>72.59</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 20 20 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 20 20 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 20 20 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 20 20 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 20 20 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>37</p>
+</td>
+<td style="border-style: inset;">
+<p>3zv6</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 275 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>210 - 223 253 - 264 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>9.82</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>38</p>
+</td>
+<td style="border-style: inset;">
+<p>3zv6</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 1 - B&nbsp; 275 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 92 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>164 - 175 178 - 180 199 - 205 245 - 247 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>9.09</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 92 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 92 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 92 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 92 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 92 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 92 - 275 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>39</p>
+</td>
+<td style="border-style: inset;">
+<p>1b8p</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 3 - A&nbsp; 157 -&nbsp; 1&nbsp; A&nbsp; 158 - A&nbsp; 329 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 158 237 - 254 256 - 258 291 - 293 320 - 329 &amp; 159 - 236 259 - 290 294 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.30</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 6 27 - 29 31 - 38 66 - 70 &amp; 180 - 184 199 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.93</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 329 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>47.40</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 91 111 - 131 142 - 154 242 - 254 &amp; 92 - 110 132 - 141 155 - 241 255 - 329 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>86.24</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 159 242 - 247 249 - 254 267 - 268 320 - 329 &amp; 160 - 241 255 - 266 269 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.05</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 156 320 - 329 &amp; 157 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.64</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 329 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>47.40</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 91 111 - 131 142 - 154 242 - 254 &amp; 92 - 110 132 - 141 155 - 241 255 - 329 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>86.24</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>40</p>
+</td>
+<td style="border-style: inset;">
+<p>2af5</p>
+</td>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 28 - A&nbsp;&nbsp; 81 -&nbsp; 1&nbsp; A&nbsp;&nbsp; 82 - A&nbsp; 219 -&nbsp; 1&nbsp; A&nbsp; 220 - A&nbsp; 319 -</p>
+</td>
+<td style="border-style: inset;">
+<p>28 - 131 &amp; 132 - 139 141 - 207 216 - 222 238 - 241 &amp; 208 - 215 223 - 237 242 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>77.40</p>
+</td>
+<td style="border-style: inset;">
+<p>28 - 31 41 - 54 66 - 72 &amp; 169 - 181 193 - 200 &amp; 276 - 280 292 - 304 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>22.95</p>
+</td>
+<td style="border-style: inset;">
+<p>166 - 171 177 - 319 &amp; 28 - 163 174 - 176 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>29.79</p>
+</td>
+<td style="border-style: inset;">
+<p>28 - 119 122 - 133 135 - 136 &amp; 120 - 121 137 - 225 236 - 244 &amp; 226 - 235 245 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>77.05</p>
+</td>
+<td style="border-style: inset;">
+<p>28 - 119 123 - 124 &amp; 120 - 122 125 - 225 236 - 244 283 - 289 &amp; 226 - 235 245 - 282 290 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>78.77</p>
+</td>
+<td style="border-style: inset;">
+<p>28 - 119 122 - 124 135 - 136 &amp; 120 - 121 125 - 134 137 - 212 216 - 223 236 - 244 &amp; 213 - 215 224 - 235 245 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>79.79</p>
+</td>
+<td style="border-style: inset;">
+<p>28 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>18.49</p>
+</td>
+<td style="border-style: inset;">
+<p>28 - 119 122 - 133 135 - 136 &amp; 120 - 121 137 - 225 236 - 244 &amp; 226 - 235 245 - 319 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>77.05</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>41</p>
+</td>
+<td style="border-style: inset;">
+<p>1vyb</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 3 - A&nbsp; 238 -</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>63 - 65 88 - 93 95 - 100 111 - 114 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>8.47</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>3 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>42</p>
+</td>
+<td style="border-style: inset;">
+<p>1vyb</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 6 - B&nbsp; 238 -</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>63 - 65 75 - 76 88 - 93 95 - 100 111 - 113 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>8.58</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>43</p>
+</td>
+<td style="border-style: inset;">
+<p>1nen</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 1 - B&nbsp; 106 -&nbsp; 1&nbsp; B&nbsp; 107 - B&nbsp; 238 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 107 157 - 158 &amp; 108 - 151 155 - 156 159 - 214 218 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>97.06</p>
+</td>
+<td style="border-style: inset;">
+<p>33 - 37 53 - 63 73 - 78 &amp; 109 - 119 173 - 175 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.97</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>44.54</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 106 150 - 152 &amp; 107 - 149 153 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.74</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 52 65 - 70 78 - 106 &amp; 53 - 64 71 - 77 107 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.02</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 106 150 - 152 &amp; 107 - 149 153 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.74</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>44.54</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 106 150 - 152 &amp; 107 - 149 153 - 238 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.74</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>44</p>
+</td>
+<td style="border-style: inset;">
+<p>1nen</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp;&nbsp; 1 - C&nbsp; 129 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>46 - 63 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.95</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>85.27</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>45</p>
+</td>
+<td style="border-style: inset;">
+<p>1vyn</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 120 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 120 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>65 - 70 80 - 82 94 - 99 111 - 112 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.38</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 120 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 120 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 120 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 120 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 120 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 120 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>46</p>
+</td>
+<td style="border-style: inset;">
+<p>1vyx</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 60 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 60 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 21 34 - 39 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 60 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 60 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 60 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 60 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 60 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 60 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>47</p>
+</td>
+<td style="border-style: inset;">
+<p>2r5v</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 152 -&nbsp; 1&nbsp; A&nbsp; 153 - A&nbsp; 348 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 25 28 - 107 109 - 150 158 - 159 173 - 185 205 - 212 235 - 239 &amp; 26 - 27 151 - 157 160 - 172 186 - 204 213 - 234 240 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>90.49</p>
+</td>
+<td style="border-style: inset;">
+<p>8 - 10 30 - 35 42 - 46 51 - 55 136 - 137 140 - 146 &amp; 191 - 200 218 - 225 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.54</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>43.52</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 164 176 - 189 202 - 215 241 - 262 319 - 322 &amp; 165 - 175 190 - 201 216 - 240 263 - 318 323 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>80.98</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 20 31 - 45 51 - 107 109 - 147 176 - 185 204 - 212 &amp; 21 - 30 46 - 50 148 - 175 186 - 203 213 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.47</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 47 51 - 107 109 - 147 161 - 164 176 - 189 202 - 215 &amp; 48 - 50 148 - 160 165 - 175 190 - 201 216 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.18</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>43.52</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 164 176 - 189 202 - 215 241 - 262 319 - 322 &amp; 165 - 175 190 - 201 216 - 240 263 - 318 323 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>80.98</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>48</p>
+</td>
+<td style="border-style: inset;">
+<p>2r5v</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 2 - B&nbsp; 144 -&nbsp; 1&nbsp; B&nbsp; 154 - B&nbsp; 348 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 24 29 - 153 158 - 159 173 - 185 205 - 212 234 - 239 &amp; 25 - 28 154 - 157 160 - 169 171 - 172 186 - 204 213 - 233 240 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>89.94</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 10 49 - 53 77 - 81 107 - 109 130 - 135 &amp; 191 - 200 217 - 225 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.02</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>42.31</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 153 178 - 183 &amp; 154 - 177 184 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.22</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 9 13 - 19 31 - 44 52 - 72 77 - 106 110 - 129 135 - 144 170 - 185 204 - 211 &amp; 10 - 12 20 - 30 45 - 51 73 - 76 107 - 109 130 - 134 145 - 169 186 - 203 212 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>83.14</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 21 29 - 153 170 - 189 201 - 216 &amp; 22 - 28 154 - 169 190 - 200 217 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>87.28</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>42.31</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 153 178 - 183 &amp; 154 - 177 184 - 348 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.22</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>49</p>
+</td>
+<td style="border-style: inset;">
+<p>1hn0</p>
+</td>
+<td style="border-style: inset;">
+<p>4</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 25 - A&nbsp; 234 -&nbsp; 1&nbsp; A&nbsp; 235 - A&nbsp; 618 -&nbsp; 1&nbsp; A&nbsp; 619 - A&nbsp; 899 -&nbsp; 1&nbsp; A&nbsp; 900 - A 1021 -</p>
+</td>
+<td style="border-style: inset;">
+<p>25 - 236 291 - 336 371 - 388 &amp; 237 - 290 337 - 370 389 - 483 489 - 492 498 - 501 506 - 539 541 - 542 568 - 615 &amp; 549 - 567 636 - 645 650 - 718 739 - 756 763 - 895 &amp; 486 - 488 493 - 497 502 - 504 543 - 548 616 - 635 646 - 649 719 - 738 757 - 762 896 - 1021</p>
+</td>
+<td style="border-style: inset;">
+<p>84.05</p>
+</td>
+<td style="border-style: inset;">
+<p>26 - 36 88 - 93 166 - 191 &amp; 277 - 282 285 - 286 288 - 293 334 - 346 392 - 397 &amp; 628 - 631 642 - 646 649 - 651 664 - 670 717 - 719 723 - 726 734 - 739 &amp; 728 - 729 945 - 956 983 - 993 1013 - 1021 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.94</p>
+</td>
+<td style="border-style: inset;">
+<p>481 - 510 532 - 576 578 - 580 582 - 1021 &amp; 25 - 480 511 - 512 514 - 531 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>26.88</p>
+</td>
+<td style="border-style: inset;">
+<p>505 - 514 546 - 572 618 - 622 632 - 644 652 - 716 727 - 957 975 - 1005 1013 - 1021 &amp; 25 - 150 154 - 233 315 - 333 383 - 386 &amp; 234 - 266 426 - 504 515 - 545 573 - 617 623 - 631 645 - 651 717 - 726 958 - 974 1006 - 1012 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>4.91</p>
+</td>
+<td style="border-style: inset;">
+<p>25 - 240 296 - 307 310 - 333 379 - 389 424 - 433 &amp; 241 - 295 308 - 309 334 - 378 390 - 423 434 - 435 445 - 478 511 - 535 573 - 617 &amp; 643 - 669 674 - 722 733 - 734 737 - 760 765 - 921 924 - 925 945 - 946 &amp; 436 - 444 479 - 510 536 - 572 618 - 642 670 - 673 </p>
+</td>
+<td style="border-style: inset;">
+<p>78.74</p>
+</td>
+<td style="border-style: inset;">
+<p>25 - 222 291 - 307 315 - 333 374 - 378 &amp; 223 - 290 308 - 314 334 - 373 379 - 436 451 - 482 515 - 535 &amp; 554 - 566 643 - 669 678 - 726 735 - 758 767 - 899 &amp; 437 - 450 483 - 514 536 - 553 567 - 642 670 - 677 727 - 734 759 - 766 900 - 1021 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>76.93</p>
+</td>
+<td style="border-style: inset;">
+<p>25 - 1021 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>21.06</p>
+</td>
+<td style="border-style: inset;">
+<p>505 - 514 546 - 572 618 - 622 632 - 644 652 - 716 727 - 957 975 - 1005 1013 - 1021 &amp; 25 - 150 154 - 233 315 - 333 383 - 386 &amp; 234 - 266 426 - 504 515 - 545 573 - 617 623 - 631 645 - 651 717 - 726 958 - 974 1006 - 1012 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>4.91</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>50</p>
+</td>
+<td style="border-style: inset;">
+<p>1uia</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 129 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>62 - 67 72 - 80 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.40</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 129 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>51</p>
+</td>
+<td style="border-style: inset;">
+<p>1jz4</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp; 13 - A&nbsp; 218 -&nbsp; 1&nbsp; A&nbsp; 219 - A&nbsp; 333 -&nbsp; 1&nbsp; A&nbsp; 334 - A&nbsp; 624 -&nbsp; 1&nbsp; A&nbsp; 625 - A&nbsp; 730 -&nbsp; 1&nbsp; A&nbsp; 731 - A 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 27 52 - 100 105 - 131 139 - 198 203 - 214 358 - 371 393 - 395 431 - 439 575 - 585 590 - 596 &amp; 28 - 51 132 - 133 135 - 138 215 - 303 305 - 336 344 - 346 396 - 406 441 - 454 474 - 482 &amp; 101 - 104 199 - 202 337 - 343 347 - 357 372 - 376 384 - 392 407 - </p>
+</td>
+<td style="border-style: inset;">
+<p>79.62</p>
+</td>
+<td style="border-style: inset;">
+<p>127 - 132 134 - 136 153 - 158 173 - 184 &amp; 220 - 221 248 - 257 271 - 274 315 - 323 &amp; 354 - 361 541 - 542 567 - 574 603 - 616 &amp; 648 - 653 667 - 670 699 - 706 710 - 717 &amp; 742 - 748 757 - 766 779 - 782 820 - 827 836 - 841 852 - 854 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.64</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.38</p>
+</td>
+<td style="border-style: inset;">
+<p>540 - 552 613 - 624 727 - 1023 &amp; 13 - 32 53 - 136 139 - 214 355 - 384 388 - 400 410 - 449 456 - 478 488 - 490 570 - 603 605 - 612 &amp; 33 - 52 137 - 138 215 - 227 239 - 294 309 - 330 &amp; 625 - 726 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.09</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 28 57 - 122 143 - 150 161 - 170 188 - 211 357 - 366 414 - 441 459 - 468 488 - 489 573 - 599 &amp; 31 - 56 123 - 142 151 - 160 171 - 187 212 - 227 243 - 257 270 - 290 313 - 328 &amp; 29 - 30 228 - 242 258 - 269 291 - 312 329 - 356 367 - 413 442 - 458 469 - 48</p>
+</td>
+<td style="border-style: inset;">
+<p>75.96</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 34 53 - 126 143 - 170 182 - 212 300 - 308 331 - 353 357 - 500 505 - 534 553 - 565 573 - 599 &amp; 619 - 730 896 - 905 911 - 919 938 - 943 952 - 956 &amp; 35 - 52 127 - 142 171 - 181 213 - 299 309 - 330 &amp; 354 - 356 501 - 504 535 - 552 566 - 572 600 - 618 782 </p>
+</td>
+<td style="border-style: inset;">
+<p>15.33</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.38</p>
+</td>
+<td style="border-style: inset;">
+<p>540 - 552 613 - 624 727 - 1023 &amp; 13 - 32 53 - 136 139 - 214 355 - 384 388 - 400 410 - 449 456 - 478 488 - 490 570 - 603 605 - 612 &amp; 33 - 52 137 - 138 215 - 227 239 - 294 309 - 330 &amp; 625 - 726 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.09</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>52</p>
+</td>
+<td style="border-style: inset;">
+<p>1jz4</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp; 13 - B&nbsp; 218 -&nbsp; 1&nbsp; B&nbsp; 219 - B&nbsp; 333 -&nbsp; 1&nbsp; B&nbsp; 334 - B&nbsp; 624 -&nbsp; 1&nbsp; B&nbsp; 625 - B&nbsp; 730 -&nbsp; 1&nbsp; B&nbsp; 731 - B 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 27 52 - 99 106 - 131 139 - 198 203 - 214 360 - 371 394 - 395 431 - 439 575 - 585 591 - 595 &amp; 28 - 51 132 - 133 135 - 138 215 - 303 305 - 336 344 - 346 396 - 406 441 - 454 474 - 482 &amp; 100 - 105 199 - 202 337 - 343 347 - 359 372 - 376 384 - 393 407 - 4</p>
+</td>
+<td style="border-style: inset;">
+<p>79.72</p>
+</td>
+<td style="border-style: inset;">
+<p>126 - 136 138 - 141 154 - 155 157 - 160 171 - 184 &amp; 225 - 226 242 - 258 269 - 274 289 - 291 313 - 322 &amp; 336 - 343 347 - 351 524 - 525 530 - 534 555 - 564 &amp; 654 - 658 660 - 667 683 - 686 694 - 698 719 - 722 915 - 916 &amp; 812 - 821 841 - 851 871 - 879 1010 - </p>
+</td>
+<td style="border-style: inset;">
+<p>16.32</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.38</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 32 52 - 85 115 - 142 149 - 163 169 - 192 211 - 219 441 - 446 &amp; 33 - 51 220 - 333 394 - 406 409 - 411 447 - 455 &amp; 86 - 114 143 - 148 164 - 168 193 - 210 334 - 375 385 - 393 407 - 408 412 - 440 456 - 616 787 - 813 905 - 910 927 - 935 964 - 977 991 - 10</p>
+</td>
+<td style="border-style: inset;">
+<p>76.06</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 28 52 - 142 147 - 163 169 - 207 211 - 219 361 - 363 573 - 603 &amp; 33 - 51 220 - 299 308 - 331 &amp; 29 - 32 143 - 146 164 - 168 208 - 210 300 - 307 332 - 351 357 - 360 364 - 371 389 - 406 411 - 415 417 - 501 505 - 536 550 - 565 &amp; 352 - 356 372 - 388 407 - </p>
+</td>
+<td style="border-style: inset;">
+<p>84.57</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 29 52 - 96 109 - 201 206 - 219 416 - 440 461 - 462 465 - 470 &amp; 30 - 51 220 - 333 389 - 406 409 - 415 441 - 460 471 - 483 &amp; 97 - 108 202 - 205 334 - 388 407 - 408 463 - 464 484 - 624 994 - 997 &amp; 625 - 732 &amp; 733 - 993 998 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>86.55</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.38</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 32 52 - 85 115 - 142 149 - 163 169 - 192 211 - 219 441 - 446 &amp; 33 - 51 220 - 333 394 - 406 409 - 411 447 - 455 &amp; 86 - 114 143 - 148 164 - 168 193 - 210 334 - 375 385 - 393 407 - 408 412 - 440 456 - 616 787 - 813 905 - 910 927 - 935 964 - 977 991 - 10</p>
+</td>
+<td style="border-style: inset;">
+<p>76.06</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>53</p>
+</td>
+<td style="border-style: inset;">
+<p>1jz4</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp;&nbsp; 13 - C&nbsp; 218 -&nbsp; 1&nbsp; C&nbsp; 219 - C&nbsp; 333 -&nbsp; 1&nbsp; C&nbsp; 334 - C&nbsp; 624 -&nbsp; 1&nbsp; C&nbsp; 625 - C&nbsp; 730 -&nbsp; 1&nbsp; C&nbsp; 731 - C 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 27 52 - 99 106 - 131 139 - 198 203 - 214 360 - 371 394 - 395 431 - 432 434 - 439 575 - 585 591 - 595 &amp; 28 - 51 132 - 133 135 - 138 215 - 303 305 - 336 344 - 346 396 - 406 441 - 454 474 - 482 &amp; 100 - 105 199 - 202 337 - 343 347 - 359 372 - 376 384 - 3</p>
+</td>
+<td style="border-style: inset;">
+<p>80.02</p>
+</td>
+<td style="border-style: inset;">
+<p>126 - 132 134 - 136 154 - 155 157 - 160 173 - 184 &amp; 220 - 226 242 - 259 270 - 274 289 - 291 313 - 323 &amp; 351 - 355 384 - 390 534 - 539 564 - 568 623 - 624 &amp; 654 - 658 660 - 666 683 - 686 694 - 698 719 - 722 &amp; 812 - 821 840 - 851 871 - 877 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.53</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.38</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 29 52 - 136 139 - 216 359 - 366 415 - 436 465 - 467 572 - 603 &amp; 35 - 51 137 - 138 217 - 299 308 - 330 &amp; 30 - 34 300 - 307 331 - 358 367 - 414 437 - 464 468 - 538 553 - 567 &amp; 625 - 730 &amp; 539 - 552 568 - 571 604 - 624 731 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>86.05</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 29 48 - 105 115 - 190 200 - 218 352 - 388 539 - 542 566 - 617 &amp; 30 - 47 219 - 349 389 - 406 408 - 414 443 - 459 473 - 484 497 - 498 531 - 532 &amp; 106 - 114 191 - 199 350 - 351 415 - 442 460 - 472 485 - 496 499 - 530 533 - 538 548 - 565 996 - 997 &amp; 618 </p>
+</td>
+<td style="border-style: inset;">
+<p>76.36</p>
+</td>
+<td style="border-style: inset;">
+<p>300 - 307 331 - 355 377 - 414 417 - 538 553 - 567 625 - 630 636 - 655 666 - 680 697 - 719 &amp; 546 - 552 618 - 624 731 - 1023 &amp; 30 - 51 127 - 140 173 - 182 214 - 299 308 - 330 &amp; 13 - 29 52 - 126 141 - 172 183 - 213 356 - 376 415 - 416 539 - 545 568 - 617 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>0.00</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.38</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 29 52 - 136 139 - 216 359 - 366 415 - 436 465 - 467 572 - 603 &amp; 35 - 51 137 - 138 217 - 299 308 - 330 &amp; 30 - 34 300 - 307 331 - 358 367 - 414 437 - 464 468 - 538 553 - 567 &amp; 625 - 730 &amp; 539 - 552 568 - 571 604 - 624 731 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>86.05</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>54</p>
+</td>
+<td style="border-style: inset;">
+<p>1jz4</p>
+</td>
+<td style="border-style: inset;">
+<p>5</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp;&nbsp; 13 - D&nbsp; 218 -&nbsp; 1&nbsp; D&nbsp; 219 - D&nbsp; 333 -&nbsp; 1&nbsp; D&nbsp; 334 - D&nbsp; 624 -&nbsp; 1&nbsp; D&nbsp; 625 - D&nbsp; 730 -&nbsp; 1&nbsp; D&nbsp; 731 - D 1023 -</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 27 52 - 99 106 - 131 139 - 198 203 - 214 359 - 371 394 - 395 431 - 439 575 - 585 591 - 595 &amp; 28 - 51 132 - 133 135 - 138 215 - 303 305 - 336 344 - 346 396 - 406 441 - 454 474 - 482 &amp; 100 - 105 199 - 202 337 - 343 347 - 358 372 - 376 384 - 393 407 - 4</p>
+</td>
+<td style="border-style: inset;">
+<p>79.53</p>
+</td>
+<td style="border-style: inset;">
+<p>87 - 90 143 - 151 161 - 165 168 - 169 188 - 191 206 - 212 &amp; 220 - 221 248 - 257 271 - 274 315 - 324 &amp; 353 - 356 378 - 379 540 - 542 566 - 572 603 - 608 611 - 621 &amp; 648 - 653 667 - 670 699 - 706 709 - 717 &amp; 782 - 785 813 - 819 841 - 853 869 - 879 881 - 882</p>
+</td>
+<td style="border-style: inset;">
+<p>16.22</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.38</p>
+</td>
+<td style="border-style: inset;">
+<p>29 - 47 218 - 353 376 - 415 438 - 459 463 - 464 468 - 538 555 - 566 &amp; 13 - 28 48 - 97 108 - 198 206 - 217 416 - 437 460 - 462 465 - 467 &amp; 727 - 786 810 - 904 914 - 926 936 - 961 978 - 992 1003 - 1023 &amp; 626 - 726 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.97</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 28 53 - 136 139 - 216 359 - 367 416 - 425 460 - 462 573 - 602 &amp; 29 - 52 137 - 138 217 - 302 304 - 335 343 - 349 408 - 415 426 - 459 465 - 483 642 - 645 &amp; 336 - 342 350 - 358 368 - 391 393 - 407 463 - 464 484 - 572 603 - 629 638 - 641 646 - 651 669 - </p>
+</td>
+<td style="border-style: inset;">
+<p>76.46</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 28 53 - 217 359 - 367 570 - 613 &amp; 33 - 52 218 - 298 308 - 330 &amp; 29 - 32 299 - 307 331 - 358 368 - 569 614 - 625 702 - 713 905 - 913 993 - 996 &amp; 626 - 701 714 - 733 &amp; 734 - 904 914 - 992 997 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.23</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 1023 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.38</p>
+</td>
+<td style="border-style: inset;">
+<p>29 - 47 218 - 353 376 - 415 438 - 459 463 - 464 468 - 538 555 - 566 &amp; 13 - 28 48 - 97 108 - 198 206 - 217 416 - 437 460 - 462 465 - 467 &amp; 727 - 786 810 - 904 914 - 926 936 - 961 978 - 992 1003 - 1023 &amp; 626 - 726 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.97</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>55</p>
+</td>
+<td style="border-style: inset;">
+<p>1y6h</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 177 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>9 - 16 52 - 55 146 - 147 149 - 152 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.17</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>56</p>
+</td>
+<td style="border-style: inset;">
+<p>1y6h</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 1 - B&nbsp; 177 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>33 - 34 49 - 61 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>9.60</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 177 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>57</p>
+</td>
+<td style="border-style: inset;">
+<p>2ph1</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 250 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 250 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 13 118 - 119 121 - 122 150 - 151 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>8.50</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 250 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 250 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 250 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 250 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 250 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 250 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>58</p>
+</td>
+<td style="border-style: inset;">
+<p>2ph4</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp; 133 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 121 121 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 5 54 - 56 62 - 72 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.04</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 121 121 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 121 121 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 121 121 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 121 121 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 121 121 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 121 121 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>59</p>
+</td>
+<td style="border-style: inset;">
+<p>2ph4</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 1 - B&nbsp; 133 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 5 54 - 56 62 - 73 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.79</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 133 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>60</p>
+</td>
+<td style="border-style: inset;">
+<p>2we8</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 205 -&nbsp; 1&nbsp; A&nbsp; 206 - A&nbsp; 360 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 49 49 - 159 159 - 203 &amp; 204 - 349 349 - 360 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 21 84 - 95 106 - 115 &amp; 211 - 214 216 - 217 232 - 246 250 - 254 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>17.09</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 49 49 - 159 159 - 203 &amp; 204 - 349 349 - 360 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 49 49 - 159 159 - 204 204 - 205 &amp; 206 - 349 349 - 360 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 49 49 - 159 159 - 203 &amp; 204 - 349 349 - 360 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 49 49 - 159 159 - 204 204 - 205 &amp; 206 - 349 349 - 360 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 49 49 - 159 159 - 204 204 - 349 349 - 360 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>56.58</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 49 49 - 159 159 - 204 204 - 205 &amp; 206 - 349 349 - 360 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>61</p>
+</td>
+<td style="border-style: inset;">
+<p>2we8</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 5 - B&nbsp; 205 -&nbsp; 1&nbsp; B&nbsp; 206 - B&nbsp; 359 -</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 203 &amp; 204 - 359 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.44</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 8 24 - 27 31 - 42 52 - 54 82 - 95 &amp; 211 - 214 232 - 245 250 - 254 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>16.90</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 203 &amp; 204 - 359 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.44</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 202 &amp; 203 - 359 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.15</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 202 &amp; 203 - 359 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.15</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 202 &amp; 203 - 359 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.15</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 359 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>56.62</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 202 &amp; 203 - 359 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.15</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>62</p>
+</td>
+<td style="border-style: inset;">
+<p>1wve</p>
+</td>
+<td style="border-style: inset;">
+<p>4</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 7 - A&nbsp; 114 -&nbsp; 1&nbsp; A&nbsp; 115 - A&nbsp; 242 -&nbsp; 1&nbsp; A&nbsp; 243 - A&nbsp; 473 -&nbsp; 1&nbsp; A&nbsp; 474 - A&nbsp; 521 -</p>
+</td>
+<td style="border-style: inset;">
+<p>172 - 174 242 - 260 260 - 281 313 - 373 400 - 404 428 - 435 &amp; 7 - 42 42 - 46 53 - 65 67 - 87 96 - 110 188 - 193 225 - 230 480 - 481 489 - 521 &amp; 88 - 89 111 - 113 113 - 153 155 - 171 175 - 177 177 - 180 180 - 187 194 - 224 231 - 241 374 - 376 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>2.91</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 12 54 - 59 84 - 85 102 - 107 &amp; 184 - 185 196 - 208 211 - 218 &amp; 254 - 260 260 - 263 321 - 323 402 - 408 &amp; 481 - 485 487 - 498 513 - 515 519 - 521 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>17.48</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 42 42 - 113 113 - 177 177 - 180 180 - 260 260 - 412 412 - 459 459 - 521 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.97</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 42 42 - 61 77 - 85 90 - 107 220 - 229 475 - 521 &amp; 252 - 258 281 - 321 378 - 398 408 - 412 412 - 427 437 - 459 459 - 474 &amp; 62 - 76 86 - 89 108 - 113 113 - 177 177 - 180 180 - 219 230 - 241 276 - 277 376 - 377 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>16.70</p>
+</td>
+<td style="border-style: inset;">
+<p>119 - 126 137 - 151 154 - 156 172 - 177 238 - 260 260 - 280 318 - 380 399 - 411 428 - 436 &amp; 88 - 89 110 - 113 113 - 118 127 - 136 152 - 153 157 - 171 178 - 180 180 - 186 195 - 229 233 - 237 477 - 502 511 - 521 &amp; 7 - 41 58 - 87 104 - 109 187 - 194 230 - 23</p>
+</td>
+<td style="border-style: inset;">
+<p>15.73</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 42 42 - 63 74 - 87 90 - 109 475 - 521 &amp; 252 - 258 281 - 321 378 - 398 410 - 412 412 - 427 439 - 459 459 - 474 &amp; 64 - 73 88 - 89 110 - 113 113 - 177 177 - 180 180 - 241 276 - 277 371 - 377 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>19.42</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 42 42 - 113 113 - 177 177 - 180 180 - 260 260 - 412 412 - 459 459 - 521 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.97</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 42 42 - 46 58 - 61 77 - 85 104 - 107 220 - 229 480 - 521 &amp; 47 - 57 90 - 103 252 - 258 281 - 321 378 - 398 410 - 412 412 - 427 437 - 459 459 - 479 &amp; 62 - 76 86 - 89 108 - 113 113 - 177 177 - 180 180 - 219 230 - 241 276 - 277 376 - 377 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.84</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>63</p>
+</td>
+<td style="border-style: inset;">
+<p>1wve</p>
+</td>
+<td style="border-style: inset;">
+<p>4</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 7 - B&nbsp; 114 -&nbsp; 1&nbsp; B&nbsp; 115 - B&nbsp; 242 -&nbsp; 1&nbsp; B&nbsp; 243 - B&nbsp; 473 -&nbsp; 1&nbsp; B&nbsp; 474 - B&nbsp; 521 -</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 46 53 - 79 79 - 87 97 - 110 188 - 194 225 - 230 480 - 481 489 - 521 &amp; 172 - 174 242 - 270 270 - 281 313 - 358 358 - 373 400 - 402 402 - 404 428 - 435 &amp; 88 - 89 111 - 113 113 - 171 175 - 177 177 - 180 180 - 187 195 - 224 231 - 239 239 - 241 374 - 377 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>19.03</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 23 &amp; 184 - 185 196 - 208 211 - 218 &amp; 254 - 263 321 - 323 402 - 408 &amp; 488 - 504 515 - 521 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>17.09</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 79 79 - 113 113 - 177 177 - 180 180 - 239 239 - 270 270 - 358 358 - 402 402 - 412 412 - 415 415 - 466 466 - 521 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.97</p>
+</td>
+<td style="border-style: inset;">
+<p>43 - 57 90 - 103 252 - 264 281 - 321 378 - 402 402 - 412 412 - 415 415 - 431 433 - 466 466 - 479 &amp; 7 - 42 58 - 63 74 - 79 79 - 87 104 - 109 220 - 228 480 - 521 &amp; 64 - 73 88 - 89 110 - 113 113 - 177 177 - 180 180 - 219 229 - 239 239 - 241 276 - 277 367 - 3</p>
+</td>
+<td style="border-style: inset;">
+<p>9.90</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 46 53 - 61 76 - 79 79 - 85 90 - 92 96 - 107 480 - 521 &amp; 62 - 75 86 - 89 108 - 113 113 - 177 177 - 180 180 - 239 239 - 241 276 - 277 370 - 377 &amp; 47 - 52 93 - 95 281 - 317 378 - 397 408 - 412 412 - 415 415 - 427 438 - 466 466 - 479 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>61.55</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 46 51 - 79 79 - 94 96 - 113 113 - 114 129 - 132 161 - 169 185 - 196 220 - 233 480 - 521 &amp; 47 - 50 252 - 258 281 - 321 378 - 397 409 - 412 412 - 415 415 - 427 438 - 466 466 - 479 &amp; 115 - 128 133 - 160 170 - 177 177 - 180 180 - 184 197 - 219 234 - 239 2</p>
+</td>
+<td style="border-style: inset;">
+<p>22.52</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 79 79 - 113 113 - 177 177 - 180 180 - 239 239 - 270 270 - 358 358 - 402 402 - 412 412 - 415 415 - 466 466 - 521 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.97</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 79 79 - 87 90 - 109 388 - 392 442 - 460 475 - 521 &amp; 252 - 264 281 - 321 378 - 387 393 - 402 402 - 412 412 - 415 415 - 431 433 - 441 461 - 466 466 - 474 &amp; 88 - 89 110 - 113 113 - 177 177 - 180 180 - 239 239 - 241 276 - 277 376 - 377 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.39</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>64</p>
+</td>
+<td style="border-style: inset;">
+<p>1wve</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; C&nbsp; 602 - C&nbsp; 676 -</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>615 - 628 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>18.67</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>65</p>
+</td>
+<td style="border-style: inset;">
+<p>1wve</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; D&nbsp; 602 - D&nbsp; 676 -</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>616 - 628 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>17.33</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>602 - 676 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>66</p>
+</td>
+<td style="border-style: inset;">
+<p>1qmu</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 304 -&nbsp; 1&nbsp; A&nbsp; 305 - A&nbsp; 383 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 53 68 - 98 100 - 101 110 - 169 177 - 202 213 - 260 268 - 299 &amp; 54 - 67 102 - 109 170 - 176 203 - 210 261 - 267 300 - 383 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>86.58</p>
+</td>
+<td style="border-style: inset;">
+<p>189 - 202 245 - 252 &amp; 322 - 327 332 - 333 351 - 357 360 - 364 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.58</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 383 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>79.21</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 202 214 - 296 &amp; 203 - 213 297 - 383 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>95.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 59 65 - 303 &amp; 60 - 64 304 - 383 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.42</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 202 208 - 303 &amp; 203 - 207 304 - 383 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.42</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 383 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>79.21</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 202 214 - 296 &amp; 203 - 213 297 - 383 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>95.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>67</p>
+</td>
+<td style="border-style: inset;">
+<p>1djy</p>
+</td>
+<td style="border-style: inset;">
+<p>4</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp; 158 - B&nbsp; 209 -&nbsp; 1&nbsp; B&nbsp; 210 - B&nbsp; 292 -&nbsp; 1&nbsp; B&nbsp; 293 - B&nbsp; 625 -&nbsp; 1&nbsp; B&nbsp; 626 - B&nbsp; 756 -</p>
+</td>
+<td style="border-style: inset;">
+<p>309 - 419 431 - 503 518 - 519 554 - 559 578 - 581 &amp; 158 - 212 635 - 658 670 - 686 702 - 719 735 - 739 741 - 748 &amp; 213 - 292 630 - 634 687 - 689 725 - 734 749 - 756 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>0.50</p>
+</td>
+<td style="border-style: inset;">
+<p>158 - 162 183 - 204 &amp; 214 - 228 271 - 273 275 - 279 &amp; 314 - 324 356 - 362 446 - 483 553 - 560 &amp; 626 - 631 661 - 667 689 - 699 755 - 756 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>24.21</p>
+</td>
+<td style="border-style: inset;">
+<p>158 - 756 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>8.68</p>
+</td>
+<td style="border-style: inset;">
+<p>210 - 292 446 - 483 589 - 595 632 - 658 670 - 688 698 - 753 &amp; 293 - 445 484 - 505 515 - 522 543 - 546 553 - 560 577 - 588 596 - 603 &amp; 158 - 209 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>0.00</p>
+</td>
+<td style="border-style: inset;">
+<p>158 - 209 277 - 286 446 - 483 632 - 658 670 - 689 702 - 719 727 - 753 &amp; 308 - 382 387 - 417 436 - 445 484 - 499 553 - 564 577 - 588 &amp; 210 - 276 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>8.68</p>
+</td>
+<td style="border-style: inset;">
+<p>158 - 209 &amp; 210 - 288 727 - 732 749 - 751 &amp; 289 - 627 694 - 697 &amp; 628 - 693 698 - 726 733 - 748 752 - 756 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.83</p>
+</td>
+<td style="border-style: inset;">
+<p>158 - 756 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>8.68</p>
+</td>
+<td style="border-style: inset;">
+<p>210 - 292 446 - 483 589 - 595 632 - 658 670 - 688 698 - 753 &amp; 293 - 445 484 - 505 515 - 522 543 - 546 553 - 560 577 - 588 596 - 603 &amp; 158 - 209 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>0.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>68</p>
+</td>
+<td style="border-style: inset;">
+<p>1wio</p>
+</td>
+<td style="border-style: inset;">
+<p>4</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 98 -&nbsp; 1&nbsp; A&nbsp;&nbsp; 99 - A&nbsp; 180 -&nbsp; 1&nbsp; A&nbsp; 181 - A&nbsp; 291 -&nbsp; 1&nbsp; A&nbsp; 292 - A&nbsp; 363 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 6 10 - 96 &amp; 7 - 9 97 - 108 111 - 176 &amp; 109 - 110 177 - 186 194 - 217 220 - 260 268 - 289 &amp; 187 - 193 218 - 219 261 - 265 290 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.29</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 14 46 - 56 69 - 79 &amp; 96 - 98 119 - 128 141 - 142 160 - 169 &amp; 186 - 195 259 - 268 289 - 293 306 - 307 &amp; 308 - 316 327 - 332 346 - 356 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>29.20</p>
+</td>
+<td style="border-style: inset;">
+<p>179 - 200 209 - 275 282 - 363 &amp; 1 - 98 119 - 126 162 - 168 &amp; 99 - 118 127 - 161 169 - 178 201 - 208 276 - 281 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>7.99</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 99 119 - 125 &amp; 100 - 105 113 - 118 126 - 147 155 - 175 &amp; 106 - 112 148 - 154 176 - 185 194 - 259 269 - 287 &amp; 186 - 193 260 - 268 288 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>86.78</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 99 119 - 126 160 - 168 &amp; 100 - 105 113 - 118 127 - 147 150 - 159 169 - 175 &amp; 106 - 112 148 - 149 176 - 291 306 - 309 &amp; 292 - 305 310 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>90.08</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 4 12 - 71 80 - 94 &amp; 5 - 11 72 - 79 95 - 177 &amp; 178 - 291 306 - 309 &amp; 292 - 305 310 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.84</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>27.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 99 119 - 125 &amp; 100 - 105 113 - 118 126 - 147 155 - 175 &amp; 106 - 112 148 - 154 176 - 185 194 - 259 269 - 287 &amp; 186 - 193 260 - 268 288 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>86.78</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>69</p>
+</td>
+<td style="border-style: inset;">
+<p>1wio</p>
+</td>
+<td style="border-style: inset;">
+<p>4</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 1 - B&nbsp;&nbsp; 98 -&nbsp; 1&nbsp; B&nbsp;&nbsp; 99 - B&nbsp; 180 -&nbsp; 1&nbsp; B&nbsp; 181 - B&nbsp; 291 -&nbsp; 1&nbsp; B&nbsp; 292 - B&nbsp; 363 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 6 10 - 96 &amp; 7 - 9 97 - 108 111 - 176 &amp; 109 - 110 177 - 185 194 - 217 221 - 260 268 - 288 &amp; 186 - 193 218 - 220 261 - 267 289 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>91.18</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 14 46 - 56 69 - 79 &amp; 96 - 100 117 - 129 139 - 144 160 - 168 &amp; 186 - 195 259 - 268 289 - 293 306 - 307 &amp; 308 - 316 327 - 332 346 - 356 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>31.40</p>
+</td>
+<td style="border-style: inset;">
+<p>179 - 200 209 - 275 283 - 363 &amp; 1 - 98 119 - 126 162 - 168 &amp; 99 - 118 127 - 161 169 - 178 201 - 208 276 - 282 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>8.26</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 99 119 - 128 160 - 170 &amp; 100 - 105 110 - 118 129 - 159 171 - 175 &amp; 106 - 109 176 - 291 306 - 309 &amp; 292 - 305 310 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>90.36</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 4 12 - 72 80 - 95 &amp; 5 - 11 73 - 79 96 - 105 108 - 177 &amp; 106 - 107 178 - 291 306 - 309 &amp; 292 - 305 310 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.84</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 4 12 - 72 80 - 94 &amp; 5 - 11 73 - 79 95 - 105 110 - 175 &amp; 106 - 109 176 - 291 306 - 309 &amp; 292 - 305 310 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>91.46</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>27.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 99 119 - 128 160 - 170 &amp; 100 - 105 110 - 118 129 - 159 171 - 175 &amp; 106 - 109 176 - 291 306 - 309 &amp; 292 - 305 310 - 363 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>90.36</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>70</p>
+</td>
+<td style="border-style: inset;">
+<p>3b3k</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp; 207 - A&nbsp; 476 -</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>377 - 379 421 - 436 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>7.41</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>71</p>
+</td>
+<td style="border-style: inset;">
+<p>3b3k</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp; 207 - B&nbsp; 476 -</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>252 - 269 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>6.67</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>207 - 476 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>72</p>
+</td>
+<td style="border-style: inset;">
+<p>3ldq</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp; 150 - B&nbsp; 260 -</p>
+</td>
+<td style="border-style: inset;">
+<p>150 - 260 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>203 - 205 251 - 260 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.61</p>
+</td>
+<td style="border-style: inset;">
+<p>150 - 173 212 - 248 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>54.95</p>
+</td>
+<td style="border-style: inset;">
+<p>150 - 260 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>150 - 260 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>150 - 260 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>150 - 260 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>150 - 260 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>73</p>
+</td>
+<td style="border-style: inset;">
+<p>2r56</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 4 - A&nbsp; 162 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>25 - 33 117 - 119 144 - 148 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.32</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>74</p>
+</td>
+<td style="border-style: inset;">
+<p>2r56</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 4 - B&nbsp; 162 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>25 - 33 117 - 119 144 - 148 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.32</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 162 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>75</p>
+</td>
+<td style="border-style: inset;">
+<p>2r56</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; H&nbsp;&nbsp;&nbsp; 1 - H&nbsp; 121 -&nbsp; 1&nbsp; H&nbsp; 122 - H&nbsp; 221 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 121 &amp; 122 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 2 23 - 30 72 - 79 &amp; 134 - 145 191 - 197 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>16.74</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 8 15 - 40 44 - 87 89 - 90 93 - 115 &amp; 9 - 14 41 - 43 91 - 92 116 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>91.86</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 122 &amp; 123 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.55</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 8 14 - 119 &amp; 9 - 13 120 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.83</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 122 &amp; 123 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.55</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>54.75</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 122 &amp; 123 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.55</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>76</p>
+</td>
+<td style="border-style: inset;">
+<p>2r56</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; I&nbsp;&nbsp;&nbsp; 1 - I&nbsp; 121 -&nbsp; 1&nbsp; I&nbsp; 122 - I&nbsp; 221 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 122 &amp; 123 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.55</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 16 86 - 91 117 - 123 &amp; 160 - 173 188 - 190 203 - 205 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>17.65</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 8 17 - 39 44 - 85 94 - 114 &amp; 128 - 151 159 - 174 186 - 207 214 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>74.21</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp; 120 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.10</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 122 &amp; 123 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.55</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 124 &amp; 125 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.64</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>54.75</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp; 120 - 221 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.10</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>77</p>
+</td>
+<td style="border-style: inset;">
+<p>2r56</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; L&nbsp;&nbsp;&nbsp; 1 - L&nbsp; 107 -&nbsp; 1&nbsp; L&nbsp; 108 - L&nbsp; 211 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 108 165 - 171 &amp; 109 - 164 172 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.21</p>
+</td>
+<td style="border-style: inset;">
+<p>13 - 19 75 - 83 168 - 169 &amp; 117 - 119 148 - 154 188 - 193 208 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>18.48</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 9 18 - 38 43 - 78 85 - 103 &amp; 114 - 136 145 - 162 175 - 197 201 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>75.83</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 108 166 - 171 &amp; 109 - 165 172 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.68</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 108 166 - 171 &amp; 109 - 165 172 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.68</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 108 166 - 171 &amp; 109 - 165 172 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.68</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>50.71</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 108 166 - 171 &amp; 109 - 165 172 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.68</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>78</p>
+</td>
+<td style="border-style: inset;">
+<p>2r56</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; M&nbsp;&nbsp;&nbsp; 1 - M&nbsp; 107 -&nbsp; 1&nbsp; M&nbsp; 108 - M&nbsp; 211 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 108 168 - 169 &amp; 109 - 165 172 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>97.63</p>
+</td>
+<td style="border-style: inset;">
+<p>46 - 50 52 - 60 62 - 63 &amp; 148 - 154 188 - 193 208 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>17.06</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 9 17 - 38 42 - 78 84 - 103 &amp; 114 - 136 145 - 162 175 - 198 201 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>78.20</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 10 15 - 78 84 - 104 &amp; 11 - 14 79 - 83 105 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>94.31</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 115 133 - 146 159 - 178 196 - 205 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>50.71</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 108 166 - 171 &amp; 109 - 165 172 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>96.68</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>50.71</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 10 15 - 78 84 - 104 &amp; 11 - 14 79 - 83 105 - 211 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>94.31</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>79</p>
+</td>
+<td style="border-style: inset;">
+<p>2w8z</p>
+</td>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 2 - A&nbsp; 179 -&nbsp; 1&nbsp; A&nbsp; 180 - A&nbsp; 435 -&nbsp; 1&nbsp; A&nbsp; 436 - A&nbsp; 469 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 34 34 - 110 110 - 114 114 - 117 117 - 125 125 - 162 162 - 183 260 - 262 356 - 357 359 - 362 362 - 365 &amp; 189 - 216 216 - 220 220 - 259 282 - 298 298 - 308 308 - 330 366 - 370 370 - 371 400 - 423 &amp; 184 - 185 187 - 188 264 - 281 331 - 353 353 - 355 372 -</p>
+</td>
+<td style="border-style: inset;">
+<p>79.06</p>
+</td>
+<td style="border-style: inset;">
+<p>9 - 12 31 - 34 34 - 45 52 - 56 &amp; 327 - 328 331 - 332 389 - 390 392 - 395 395 - 400 400 - 403 405 - 406 &amp; 441 - 453 464 - 469 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.53</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 34 34 - 110 110 - 114 114 - 117 117 - 125 125 - 162 162 - 186 186 - 216 216 - 220 220 - 298 298 - 308 308 - 330 330 - 353 353 - 362 362 - 370 370 - 395 395 - 400 400 - 469 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>38.03</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 34 34 - 110 110 - 114 114 - 117 117 - 125 125 - 162 162 - 179 360 - 362 362 - 365 &amp; 192 - 216 216 - 220 220 - 259 276 - 298 298 - 308 308 - 330 330 - 337 366 - 370 370 - 372 398 - 400 400 - 437 &amp; 180 - 186 186 - 191 260 - 275 338 - 353 353 - 359 373 -</p>
+</td>
+<td style="border-style: inset;">
+<p>83.76</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 34 34 - 101 106 - 110 110 - 114 114 - 117 117 - 125 125 - 127 130 - 161 168 - 179 351 - 353 353 - 358 363 - 364 &amp; 102 - 105 128 - 129 162 - 167 180 - 186 186 - 216 216 - 220 220 - 298 298 - 308 308 - 330 330 - 350 359 - 362 365 - 370 370 - 395 395 - 4</p>
+</td>
+<td style="border-style: inset;">
+<p>94.87</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 34 34 - 110 110 - 114 114 - 117 117 - 125 125 - 162 162 - 181 343 - 353 353 - 362 362 - 370 370 - 377 &amp; 182 - 186 186 - 216 216 - 220 220 - 298 298 - 308 308 - 330 330 - 342 378 - 395 395 - 400 400 - 437 &amp; 438 - 469 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.38</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 34 34 - 110 110 - 114 114 - 117 117 - 125 125 - 162 162 - 186 186 - 216 216 - 220 220 - 298 298 - 308 308 - 330 330 - 353 353 - 362 362 - 370 370 - 395 395 - 400 400 - 469 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>38.03</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 34 34 - 110 110 - 114 114 - 117 117 - 124 128 - 140 145 - 162 162 - 169 363 - 365 &amp; 187 - 216 216 - 220 220 - 264 276 - 298 298 - 308 308 - 330 330 - 337 366 - 369 398 - 400 400 - 437 &amp; 125 - 127 141 - 144 170 - 186 265 - 275 338 - 353 353 - 362 370 -</p>
+</td>
+<td style="border-style: inset;">
+<p>82.69</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>80</p>
+</td>
+<td style="border-style: inset;">
+<p>2w8z</p>
+</td>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; B&nbsp;&nbsp;&nbsp; 2 - B&nbsp; 179 -&nbsp; 1&nbsp; B&nbsp; 180 - B&nbsp; 435 -&nbsp; 1&nbsp; B&nbsp; 436 - B&nbsp; 468 -</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 62 62 - 125 125 - 183 260 - 262 359 - 365 &amp; 189 - 210 210 - 216 216 - 220 220 - 244 244 - 259 282 - 302 302 - 330 366 - 370 370 - 371 400 - 423 &amp; 184 - 185 187 - 188 264 - 281 331 - 353 353 - 355 357 - 358 372 - 399 424 - 458 458 - 468 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>78.80</p>
+</td>
+<td style="border-style: inset;">
+<p>9 - 12 31 - 45 52 - 56 &amp; 188 - 201 279 - 280 325 - 327 329 - 330 333 - 334 419 - 423 &amp; 441 - 453 464 - 468 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>15.20</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 62 62 - 125 125 - 210 210 - 216 216 - 220 220 - 244 244 - 302 302 - 353 353 - 359 359 - 370 370 - 458 458 - 468 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>38.12</p>
+</td>
+<td style="border-style: inset;">
+<p>98 - 109 124 - 125 125 - 144 160 - 189 258 - 285 322 - 353 353 - 359 359 - 370 370 - 410 419 - 458 458 - 468 &amp; 2 - 62 62 - 97 110 - 123 145 - 159 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.35</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 62 62 - 125 125 - 189 265 - 278 334 - 353 353 - 359 359 - 370 370 - 394 &amp; 190 - 210 210 - 216 216 - 220 220 - 244 244 - 264 279 - 302 302 - 333 395 - 437 &amp; 438 - 458 458 - 468 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>82.66</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 62 62 - 125 125 - 127 140 - 152 171 - 180 &amp; 128 - 139 153 - 170 181 - 210 210 - 216 216 - 220 220 - 244 244 - 302 302 - 353 353 - 359 359 - 370 370 - 437 &amp; 438 - 458 458 - 468 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.58</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 62 62 - 125 125 - 210 210 - 216 216 - 220 220 - 244 244 - 302 302 - 353 353 - 359 359 - 370 370 - 458 458 - 468 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>38.12</p>
+</td>
+<td style="border-style: inset;">
+<p>2 - 62 62 - 97 110 - 121 128 - 139 145 - 168 364 - 365 &amp; 190 - 210 210 - 216 216 - 220 220 - 221 233 - 244 244 - 257 286 - 302 302 - 331 398 - 437 &amp; 98 - 109 122 - 125 125 - 127 140 - 144 169 - 189 222 - 232 258 - 285 332 - 353 353 - 359 359 - 363 366 - 3</p>
+</td>
+<td style="border-style: inset;">
+<p>68.95</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>81</p>
+</td>
+<td style="border-style: inset;">
+<p>2w86</p>
+</td>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; A&nbsp;&nbsp;&nbsp; 1 - A&nbsp;&nbsp; 45 -&nbsp; 1&nbsp; A&nbsp;&nbsp; 46 - A&nbsp; 105 -&nbsp; 1&nbsp; A&nbsp; 106 - A&nbsp; 147 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 9 9 - 16 16 - 29 33 - 42 89 - 92 98 - 100 100 - 104 &amp; 30 - 32 43 - 66 66 - 67 67 - 81 81 - 88 93 - 97 105 - 107 111 - 113 &amp; 108 - 110 114 - 147 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>85.03</p>
+</td>
+<td style="border-style: inset;">
+<p>5 - 9 9 - 11 16 - 19 24 - 25 &amp; 48 - 54 58 - 62 76 - 78 &amp; 117 - 119 139 - 147 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>28.57</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 9 9 - 16 16 - 43 43 - 66 66 - 67 67 - 81 81 - 100 100 - 147 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>30.61</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 9 9 - 16 16 - 43 43 - 44 88 - 100 100 - 106 &amp; 45 - 66 66 - 67 67 - 81 81 - 87 &amp; 107 - 147 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.44</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 9 9 - 16 16 - 19 25 - 43 43 - 66 66 - 67 67 - 81 81 - 100 100 - 107 112 - 116 &amp; 108 - 111 117 - 147 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>23.81</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 9 9 - 16 16 - 43 43 - 44 88 - 100 100 - 106 &amp; 45 - 66 66 - 67 67 - 81 81 - 87 &amp; 107 - 147 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>88.44</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 9 9 - 16 16 - 43 43 - 66 66 - 67 67 - 81 81 - 100 100 - 147 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>30.61</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 9 9 - 16 16 - 42 88 - 100 100 - 106 &amp; 43 - 66 66 - 67 67 - 81 81 - 87 &amp; 107 - 147 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>87.07</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>82</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; 1&nbsp;&nbsp; 10 - 1&nbsp;&nbsp; 82 -</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 82 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>49 - 55 64 - 68 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>17.81</p>
+</td>
+<td style="border-style: inset;">
+<p>32 - 82 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>69.86</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 82 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 82 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 82 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 82 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 82 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>83</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; 2&nbsp;&nbsp;&nbsp; 1 - 2&nbsp;&nbsp; 56 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>34 - 47 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>25.00</p>
+</td>
+<td style="border-style: inset;">
+<p>14 - 46 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>58.93</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>84</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; 3&nbsp;&nbsp;&nbsp; 1 - 3&nbsp;&nbsp; 49 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 49 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>6 - 14 32 - 34 48 - 49 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>28.57</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 18 32 - 34 38 - 49 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>67.35</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 49 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 49 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 49 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 49 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 49 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>85</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; 4&nbsp;&nbsp;&nbsp; 1 - 4&nbsp;&nbsp; 92 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>8 - 18 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.13</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 28 60 - 92 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>66.30</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 92 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>86</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; E&nbsp;&nbsp;&nbsp; 1 - E&nbsp; 246 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 246 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>25 - 35 113 - 115 220 - 221 223 - 229 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>9.76</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 35 103 - 173 187 - 246 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>67.48</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 246 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 246 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 246 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 246 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 246 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>87</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; F&nbsp;&nbsp; 10 - F&nbsp; 174 -</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 174 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 17 30 - 34 108 - 127 136 - 137 154 - 155 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>22.42</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 174 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 174 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 174 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 174 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 174 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>10 - 174 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>88</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>2</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; G&nbsp;&nbsp; 80 - G&nbsp; 172 -&nbsp; 1&nbsp; G&nbsp;&nbsp;&nbsp; 1 - G&nbsp;&nbsp; 79 -</p>
+</td>
+<td style="border-style: inset;">
+<p>81 - 135 140 - 172 &amp; 1 - 80 136 - 139 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>97.09</p>
+</td>
+<td style="border-style: inset;">
+<p>80 - 82 119 - 123 133 - 135 137 - 145 171 - 172 &amp; 8 - 12 22 - 29 72 - 79 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>25.00</p>
+</td>
+<td style="border-style: inset;">
+<p>81 - 135 140 - 172 &amp; 1 - 80 136 - 139 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>97.09</p>
+</td>
+<td style="border-style: inset;">
+<p>80 - 172 &amp; 1 - 79 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>80 - 172 &amp; 1 - 79 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>80 - 172 &amp; 1 - 79 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 172 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>54.07</p>
+</td>
+<td style="border-style: inset;">
+<p>80 - 172 &amp; 1 - 79 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>89</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; H&nbsp;&nbsp;&nbsp; 1 - H&nbsp; 119 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>19 - 29 100 - 103 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.45</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>90</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; I&nbsp;&nbsp; 12 - I&nbsp;&nbsp; 73 -</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 73 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 24 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.29</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 73 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 73 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 73 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 73 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 73 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>12 - 73 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>91</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; J&nbsp;&nbsp;&nbsp; 1 - J&nbsp; 167 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 167 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 10 54 - 55 98 - 108 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.37</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 167 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 167 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 167 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 167 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 167 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 167 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>92</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; K&nbsp;&nbsp;&nbsp; 4 - K&nbsp; 145 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 145 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>73 - 76 133 - 145 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.68</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 145 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 145 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 145 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 145 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 145 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 145 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>93</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; L&nbsp;&nbsp;&nbsp; 1 - L&nbsp; 132 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 132 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>20 - 25 95 - 96 106 - 110 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.61</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 132 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 132 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 132 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 132 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 132 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 132 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>94</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; N&nbsp;&nbsp;&nbsp; 1 - N&nbsp; 194 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 194 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>172 - 194 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>11.86</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 194 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 194 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 194 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 194 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 194 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 194 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>95</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; O&nbsp;&nbsp;&nbsp; 1 - O&nbsp; 186 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 186 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>45 - 46 81 - 88 118 - 125 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>10.22</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 186 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 186 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 186 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 186 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 186 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 186 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>96</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; P&nbsp;&nbsp;&nbsp; 1 - P&nbsp; 115 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 115 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>15 - 26 106 - 108 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.04</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 40 61 - 62 97 - 113 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>53.04</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 115 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 115 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 115 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 115 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 115 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>97</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>3</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; Q&nbsp;&nbsp;&nbsp; 1 - Q&nbsp;&nbsp; 55 -&nbsp; 1&nbsp; Q&nbsp;&nbsp; 89 - Q&nbsp; 143 -&nbsp; 1&nbsp; Q&nbsp;&nbsp; 56 - Q&nbsp;&nbsp; 88 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 55 &amp; 91 - 143 &amp; 56 - 90 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>98.60</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 22 36 - 38 40 - 41 44 - 45 49 - 51 &amp; 101 - 102 122 - 126 130 - 143 &amp; 59 - 74 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>46.15</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 57 &amp; 97 - 143 &amp; 58 - 96 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>93.01</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 54 &amp; 99 - 143 &amp; 55 - 98 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.31</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 58 &amp; 89 - 143 &amp; 59 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>97.90</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 54 &amp; 89 - 143 &amp; 55 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>99.30</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 143 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>38.46</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 54 &amp; 99 - 143 &amp; 55 - 98 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>92.31</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>98</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; R&nbsp;&nbsp;&nbsp; 1 - R&nbsp;&nbsp; 95 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 95 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>33 - 37 62 - 65 72 - 74 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.63</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 95 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 95 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 95 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 95 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 95 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 95 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>99</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; S&nbsp;&nbsp;&nbsp; 1 - S&nbsp; 150 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 150 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>58 - 79 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.67</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 150 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 150 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 150 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 150 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 150 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 150 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>100</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; T&nbsp;&nbsp;&nbsp; 1 - T&nbsp;&nbsp; 81 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 81 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>16 - 24 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>12.35</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 81 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 81 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 81 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 81 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 81 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 81 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>101</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; U&nbsp;&nbsp;&nbsp; 1 - U&nbsp; 119 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>43 - 48 60 - 63 99 - 104 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.45</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 119 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>102</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; V&nbsp;&nbsp;&nbsp; 4 - V&nbsp;&nbsp; 56 -</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>46 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>22.64</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>4 - 56 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>103</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; W&nbsp;&nbsp;&nbsp; 1 - W&nbsp;&nbsp; 65 -</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 65 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>9 - 21 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>20.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 23 51 - 65 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>58.46</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 65 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 65 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 65 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 65 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>1 - 65 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>104</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; Y&nbsp;&nbsp;&nbsp; 7 - Y&nbsp;&nbsp; 88 -</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>18 - 26 64 - 66 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>14.63</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 12 33 - 54 70 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>57.32</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>7 - 88 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;">
+<p>105</p>
+</td>
+<td style="border-style: inset;">
+<p>1nji</p>
+</td>
+<td style="border-style: inset;">
+<p>1</p>
+</td>
+<td style="border-style: inset;">
+<p>1&nbsp; Z&nbsp;&nbsp; 95 - Z&nbsp; 236 -</p>
+</td>
+<td style="border-style: inset;">
+<p>95 - 236 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>145 - 163 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>13.38</p>
+</td>
+<td style="border-style: inset;">
+<p>95 - 110 177 - 236 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>53.52</p>
+</td>
+<td style="border-style: inset;">
+<p>95 - 236 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>95 - 236 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>95 - 236 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>95 - 236 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+<td style="border-style: inset;">
+<p>95 - 236 &amp;</p>
+</td>
+<td style="border-style: inset;">
+<p>100.00</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>Avg. Overlap(K-Means)</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>Avg. Overlap(Affinity)</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>Avg. Overlap(Mean Shift)</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>Avg. Overlap(Ward)</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>Avg. Overlap(Complete Agglo)</p>
+</td>
+<td style="border-style: inset;">
+<p>Average Agglomerative(Avg. Agglo)</p>
+</td>
+<td style="border-style: inset;">
+<p>Avg. Overlap</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>Avg. Overlap(DBSCAN)</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>Avg. Overlap(Birch)</p>
+</td>
+</tr>
+<tr valign=top>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>93.0179576221</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>14.8357740455</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>73.4254717979</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>90.1739619736</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>90.4768850763</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>93.513914853</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>73.168181858</p>
+</td>
+<td style="border-style: inset;"><br>
+</td>
+<td style="border-style: inset;">
+<p>90.2732502956</p>
+</td>
+</tr>
+</table>
+</div>
+
+</body></html>
