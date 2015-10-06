@@ -361,7 +361,7 @@ def isContiguous(cath_boundaries):
 
 # path = "../Output Data/Two Domain Proteins/"
 # path = "../Output Data/500_proteins/"
-path = "../Output Data/500_proteins/Contiguous/"
+path = "../Output Data/500_proteins/Non Contiguous/"
 
 file_counter = 0
 correct = 0
@@ -414,7 +414,7 @@ for pdb_file in os.listdir(path):
 			
 				domain_boundary = pdb_id[14:].strip()
 
-				if frags==0 and isContiguous(domain_boundary) and domains > 1:
+				if frags==0 and isContiguous(domain_boundary)==False and domains > 1:
 
 					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
 					cords_list, realId_list = getCordsList(var_1,chain)
