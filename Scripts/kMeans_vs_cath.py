@@ -172,10 +172,10 @@ def stitchPatches(k_means, cluster_centers, coordinates, realId_list,patch_lengt
 				if x in value:
 					value.remove(x)
 
-	# k_means = sequenceStitch(k_means, island)
+	k_means = sequenceStitch(k_means, island)
 	# k_means = centroidStitch(k_means, island, coordinates, realId_list, cluster_centers)
 	
-	k_means = interactionEnergyStitch(k_means, island, coordinates, realId_list)
+	# k_means = interactionEnergyStitch(k_means, island, coordinates, realId_list)
 	return k_means
 
 def interactionEnergyStitch(k_means, island, coordinates, realId_list):
@@ -331,7 +331,7 @@ def fillVoids(boundaries):
 	return boundaries
 
 # path = "../Output Data/Two Domain Proteins/"
-path = "../Output Data/500_proteins/"
+path = "../Output Data/500_proteins/Non Contiguous/"
 
 file_counter = 0
 correct = 0
@@ -340,7 +340,7 @@ accuracy = 0.0
 print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
 
-	if file_counter>=1:
+	if file_counter>=100:
 		break
 
 	pdb_path = pdb_file
@@ -361,7 +361,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk' and pdb_file!='3g4s' and pdb_file=='1xf1':
+			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk' and pdb_file!='3g4s' and pdb_file!='2w86':
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -372,7 +372,7 @@ for pdb_file in os.listdir(path):
 
 				frags = int(pdb_id[11] + pdb_id[12])
 
-				if frags==0: #and domains==2:
+				if frags==0 and domains>1:
 					domain_boundary = pdb_id[14:].strip()
 
 					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
@@ -381,7 +381,7 @@ for pdb_file in os.listdir(path):
 					x = np.asarray(cords_list)
 					file_counter+=1
 
-					km = KMeans(n_clusters=domains, max_iter=1000, n_init=30, init='random').fit(x)
+					km = KMeans(n_clusters=domains).fit(x)
 
 					labels_km = km.labels_
 					clusters_km = km.cluster_centers_
