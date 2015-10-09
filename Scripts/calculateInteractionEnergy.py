@@ -172,10 +172,10 @@ def stitchPatches(k_means, cluster_centers, coordinates, realId_list,patch_lengt
 				if x in value:
 					value.remove(x)
 
-	# k_means = sequenceStitch(k_means, island)
+	k_means = sequenceStitch(k_means, island)
 	# k_means = centroidStitch(k_means, island, coordinates, realId_list, cluster_centers)
 	
-	k_means = interactionEnergyStitch(k_means, island, coordinates, realId_list)
+	# k_means = interactionEnergyStitch(k_means, island, coordinates, realId_list)
 	return k_means
 
 def interactionEnergyStitch(k_means, island, coordinates, realId_list):
@@ -331,17 +331,22 @@ def fillVoids(boundaries):
 	return boundaries
 
 # path = "../Output Data/Two Domain Proteins/"
-path = "../Output Data/500_proteins/"
+path = "../Output Data/500_proteins/Contiguous/"
 
 file_counter = 0
 correct = 0
 accuracy = 0.0
+length_list = []
+interactionEnergy_list = []
+length_list_2 = []
+interactionEnergy_list_2 = []
+visited_list = []
 
-print "No., PDB, Domains, CATH, Interaction Energy for 1 Domain, Interaction Energy for 2 Domains, Interaction Energy for 3 Domains, Interaction Energy for 4 Domains, Interaction Energy for 5 Domain, Interaction Energy for 6 Domain"
+# print "No., PDB, Domains, CATH, Interaction Energy for 1 Domain, Interaction Energy for 2 Domains, Interaction Energy for 3 Domains, Interaction Energy for 4 Domains, Interaction Energy for 5 Domain, Interaction Energy for 6 Domain"
 for pdb_file in os.listdir(path):
 
-	if file_counter>=50:
-		break
+	# if len(length_list) >= 100 and len(length_list_2) >= 100:
+	# 	break
 
 	pdb_path = pdb_file
 	pdb_file = pdb_file.split(".")[0].lower()
@@ -373,36 +378,79 @@ for pdb_file in os.listdir(path):
 
 				frags = int(pdb_id[11] + pdb_id[12])
 
-				if frags==0: #and domains==2:
+				# print pdb_id[:4], domains
+
+				if frags==0 and domains==1 and pdb_id[:4] not in visited_list:
+
 					domain_boundary = pdb_id[14:].strip()
+
+					visited_list.append(pdb_id[:4])
 
 					# print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
 					cords_list, realId_list = getCordsList(var_1,chain)
 
 					x = np.asarray(cords_list)
-					print str(file_counter + 1) + ", " + pdb_id[:4] + ", "+ str(domains) + ", " + domain_boundary, "," ,
+					# print str(file_counter + 1) + ", " + pdb_id[:4] + ", "+ str(domains) + ", " + domain_boundary, "," ,
 
 					file_counter+=1
 
 
 					simulated_domains = 1
 
+					while(simulated_domains!=3):
 
-
-					while(simulated_domains!=7):
 
 						km = KMeans(n_clusters=simulated_domains).fit(x)
 
 						labels_km = km.labels_
 
 						# print "Simulated Domains = " + str(simulated_domains),
-						if simulated_domains==6:
-							print "{0:.3f}".format(getInteractionEnergy(labels_km, simulated_domains, cords_list))
-						else:
-							print "{0:.3f}".format(getInteractionEnergy(labels_km, simulated_domains, cords_list)), ", ",
+
+						if simulated_domains==2:
+							length_list.append(len(cords_list))
+							interactionEnergy_list.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
+
+						# if simulated_domains==6:
+						# 	print "{0:.3f}".format(getInteractionEnergy(labels_km, simulated_domains, cords_list))
+						# else:
+						# 	print "{0:.3f}".format(getInteractionEnergy(labels_km, simulated_domains, cords_list)), ", ",
 
 						simulated_domains+=1
 
+				if frags==0 and domains==2 and pdb_id[:4] not in visited_list:
+					domain_boundary = pdb_id[14:].strip()
+
+					visited_list.append(pdb_id[:4])
+
+
+					cords_list, realId_list = getCordsList(var_1,chain)
+
+					x = np.asarray(cords_list)
+
+					simulated_domains = 1
+
+					while(simulated_domains!=3):
+
+						km = KMeans(n_clusters=simulated_domains).fit(x)
+
+						labels_km = km.labels_
+
+						if simulated_domains==2:
+							length_list_2.append(len(cords_list))
+							interactionEnergy_list_2.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
+
+						simulated_domains+=1	
+
+print len(length_list_2)
+print len(length_list)
+
+plt.plot(length_list, interactionEnergy_list,'ro')
+plt.plot(length_list_2, interactionEnergy_list_2, 'bo')
+
+plt.xlabel('Length')
+plt.ylabel('Interaction Energy')
+
+plt.show()
 
 
 # 					clusters_km = km.cluster_centers_
