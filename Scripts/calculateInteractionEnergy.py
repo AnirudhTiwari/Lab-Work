@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import re
 from compiler.ast import flatten
 from operator import itemgetter
+import radius_of_gyration
+from mpl_toolkits.mplot3d import Axes3D
 
 def value_finder(start_residue, array):
 	coordinate = ''
@@ -342,10 +344,14 @@ length_list_2 = []
 interactionEnergy_list_2 = []
 visited_list = []
 
+gyration_list = []
+gyration_list_2 = []
+
+
 # print "No., PDB, Domains, CATH, Interaction Energy for 1 Domain, Interaction Energy for 2 Domains, Interaction Energy for 3 Domains, Interaction Energy for 4 Domains, Interaction Energy for 5 Domain, Interaction Energy for 6 Domain"
 for pdb_file in os.listdir(path):
 
-	# if len(length_list) >= 100 and len(length_list_2) >= 100:
+	# if len(length_list) >= 15 and len(length_list_2) >= 15:
 	# 	break
 
 	pdb_path = pdb_file
@@ -367,12 +373,19 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower()  and pdb_file not in not_list:
+			if pdb_id[:4].lower()==pdb_file[:4].lower()  and pdb_file not in not_list and pdb_id[:4] not in visited_list:
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
 
+				var_2 = open(path+pdb_path, 'r')
+
+				# var_2 = var_1
+				# print pdb_id[:4]
+
 				chain = pdb_id[18]
+				
+
 
 				domains = int(pdb_id[7] + pdb_id[8])
 
@@ -380,8 +393,7 @@ for pdb_file in os.listdir(path):
 
 				# print pdb_id[:4], domains
 
-				if frags==0 and domains==1 and pdb_id[:4] not in visited_list:
-
+				if frags==0 and domains==1 and pdb_id[:4]:
 					domain_boundary = pdb_id[14:].strip()
 
 					visited_list.append(pdb_id[:4])
@@ -408,6 +420,7 @@ for pdb_file in os.listdir(path):
 
 						if simulated_domains==2:
 							length_list.append(len(cords_list))
+							gyration_list.append(radius_of_gyration.radius_of_gyration(var_2, chain))
 							interactionEnergy_list.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
 
 						# if simulated_domains==6:
@@ -417,7 +430,7 @@ for pdb_file in os.listdir(path):
 
 						simulated_domains+=1
 
-				if frags==0 and domains==2 and pdb_id[:4] not in visited_list:
+				if frags==0 and domains==2 and pdb_id[:4]:
 					domain_boundary = pdb_id[14:].strip()
 
 					visited_list.append(pdb_id[:4])
@@ -437,20 +450,51 @@ for pdb_file in os.listdir(path):
 
 						if simulated_domains==2:
 							length_list_2.append(len(cords_list))
+							gyration_list_2.append(radius_of_gyration.radius_of_gyration(var_2, chain))
 							interactionEnergy_list_2.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
 
 						simulated_domains+=1	
 
-print len(length_list_2)
+
+# print gyration_list[0]
+print "Single Domain Proteins"
+print len(gyration_list)
+print len(interactionEnergy_list)
 print len(length_list)
 
-plt.plot(length_list, interactionEnergy_list,'ro')
-plt.plot(length_list_2, interactionEnergy_list_2, 'bo')
 
-plt.xlabel('Length')
-plt.ylabel('Interaction Energy')
+print "Multi Domain Proteins"
+print len(gyration_list_2)
+print len(interactionEnergy_list_2)
+print len(length_list_2)
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+# ax1 = fig.add_subplot(111, projection='3d')
+
+
+ax.scatter(gyration_list, length_list, interactionEnergy_list, c='r')
+ax.scatter(gyration_list_2, length_list_2, interactionEnergy_list_2, c='b')
+
+ax.set_xlabel('Radius Of Gyration')
+ax.set_ylabel('Length')
+ax.set_zlabel('Interaction Energy')
 
 plt.show()
+
+
+# plt.plot(length_list, interactionEnergy_list,'ro')
+# plt.plot(length_list_2, interactionEnergy_list_2, 'bo')
+
+# plt.plot(gyration_list, interactionEnergy_list,'ro')
+# plt.plot(gyration_list_2, interactionEnergy_list_2, 'bo')
+
+# plt.xlabel('Length')
+# plt.xlabel('Radius Of Gyration')
+
+# plt.ylabel('Interaction Energy')
+
+# plt.show()
 
 
 # 					clusters_km = km.cluster_centers_
