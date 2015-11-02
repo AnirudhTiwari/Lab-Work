@@ -18,6 +18,18 @@ def getCathDict(cath_boundaries, domains):
 
 			if numOFSegments > 1:
 				flag=1
+				# temp = cath_boundaries[x:x+6*numOFSegments+1]
+	
+				# print temp
+				# print "size", len(temp)
+				# for y in range(numOFSegments):
+				# 	# print 6*y+5
+				# 	# print int(temp[6*y+5])-int(temp[6*y+2])
+				# 	if((int(temp[6*y+5])-int(temp[6*y+2])) <= 10):
+				# 		return cathDict, False
+
+					
+				
 				# return cathDict, False
 			dom = cath_boundaries[x:x+6*numOFSegments+1]
 			cathDict[key] = dom
@@ -51,14 +63,18 @@ with open(input_fileNames, 'r') as f:
 					domains = int(entries[7] + entries[8])
 					domain_boundary = entries[14:]
 
+					# if int(domains)!=2:
+					# 	continue
+
 					cathDict, contiguous = getCathDict(domain_boundary, domains)
 					if contiguous==False:
 						continue
 
 					
+					
 
 					for key, value in cathDict.iteritems():
-
+						# print value
 						print str(pdb) + ", ",
 						print str(chain) + ", ",
 
