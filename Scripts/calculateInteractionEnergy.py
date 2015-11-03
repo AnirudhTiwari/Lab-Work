@@ -10,6 +10,10 @@ from compiler.ast import flatten
 from operator import itemgetter
 import radius_of_gyration
 from mpl_toolkits.mplot3d import Axes3D
+import pickle
+max_rg = 45
+max_length = 610
+max_energy = 0.15
 
 def value_finder(start_residue, array):
 	coordinate = ''
@@ -457,16 +461,50 @@ for pdb_file in os.listdir(path):
 
 
 # print gyration_list[0]
-print "Single Domain Proteins"
-print len(gyration_list)
-print len(interactionEnergy_list)
-print len(length_list)
+# single_domain_length = "single_domain_length"
+# single_domain_rg = "single_domain_rg"
+# single_domain_interaction_energy  = "single_domain_interaction_energy"
+
+# two_domain_length = "two_domain_length"
+# two_domain_rg = "two_domain_rg"
+# two_domain_interaction_energy = "two_domain_interaction_energy"
 
 
-print "Multi Domain Proteins"
-print len(gyration_list_2)
-print len(interactionEnergy_list_2)
-print len(length_list_2)
+# fp1 = open(single_domain_length, 'wb')
+# pickle.dump(length_list, fp1)
+# fp1.close()
+
+# fp2 = open(single_domain_rg, 'wb')
+# pickle.dump(gyration_list, fp2)
+# fp2.close()
+
+# fp3 = open(single_domain_interaction_energy, 'wb')
+# pickle.dump(interactionEnergy_list, fp3)
+# fp3.close()
+
+# fp4 = open(two_domain_length, 'wb')
+# pickle.dump(length_list_2, fp4)
+# fp4.close()
+
+# fp5 = open(two_domain_rg, 'wb')
+# pickle.dump(gyration_list_2, fp5)
+# fp5.close()
+
+# fp6 = open(two_domain_interaction_energy, 'wb')
+# pickle.dump(interactionEnergy_list_2, fp6)
+# fp6.close()
+
+
+# print "Single Domain Proteins"
+# print len(gyration_list)
+# print len(interactionEnergy_list)
+# print len(length_list)
+
+
+# print "Multi Domain Proteins"
+# print len(gyration_list_2)
+# print len(interactionEnergy_list_2)
+# print len(length_list_2)
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
@@ -483,14 +521,39 @@ ax.set_zlabel('Interaction Energy')
 plt.show()
 
 
+# for i in range(0, max_length, 5):
+# 	j=0.0
+# 	while(j<=max_energy):
+# 		tp=0
+# 		fp=0		
+# 		for a in range(len(length_list_2)):
+# 			if length_list_2[a] >= i and float(interactionEnergy_list_2[a]) <= float(j):
+# 				tp+=1
+
+# 		for a in range(len(length_list)):
+# 			if length_list[a] >=i and float(interactionEnergy_list[a]) <= float(j):
+# 				fp+=1
+
+
+# 		print "For length greater than " + str(i) + " And interacton energy < " + str(float(j)) + " True positives " + str(tp) + "/" + str(len(length_list_2)) + " False positives " + str(fp) + "/" + str(len(length_list))
+# 		j+=0.2
+
+
+
+
+
+
 # plt.plot(length_list, interactionEnergy_list,'ro')
 # plt.plot(length_list_2, interactionEnergy_list_2, 'bo')
+# # plt.plot(length_list_2, y_line)
 
-# plt.plot(gyration_list, interactionEnergy_list,'ro')
-# plt.plot(gyration_list_2, interactionEnergy_list_2, 'bo')
+# # plt.plot(gyration_list, interactionEnergy_list,'ro')
+# # plt.plot(gyration_list_2, interactionEnergy_list_2, 'bo')
 
 # plt.xlabel('Length')
-# plt.xlabel('Radius Of Gyration')
+# # plt.xlabel('Radius Of Gyration')
+
+
 
 # plt.ylabel('Interaction Energy')
 
