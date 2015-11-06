@@ -291,6 +291,7 @@ def compareResults(cath, k_means,domains):
 	return (100.0*(1.0*score/domain_length))
 
 def getCathDict(cath_boundaries, domains):
+	# print cath_boundaries
 	cath_boundaries = cath_boundaries.split(" ")
 	cath_boundaries = filter(None, cath_boundaries)
 	cathDict = {}
@@ -302,12 +303,14 @@ def getCathDict(cath_boundaries, domains):
 			break
 		else:
 			numOFSegments = int(cath_boundaries[x])
+			if numOFSegments>1:
+				return cathDict, True
 			dom = cath_boundaries[x:x+6*numOFSegments+1]
 			dom = makeList(dom)
 			cathDict[key] = dom
 			key+=1
 			x+=6*numOFSegments+1
-	return cathDict
+	return cathDict, False
 
 def makeList(domain):
 	domainList = []
@@ -365,7 +368,7 @@ for pdb_file in os.listdir(path):
 
 
 	var = open('../Input Files/CathDomall', 'r')
-	not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk']
+	not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p']
 
 
 	while 1:
@@ -382,6 +385,8 @@ for pdb_file in os.listdir(path):
 
 				var_1 = open(path+pdb_path, 'r')
 
+				frags = int(pdb_id[11] + pdb_id[12])
+				# print "frags ", frags
 				var_2 = open(path+pdb_path, 'r')
 
 				# var_2 = var_1
@@ -393,7 +398,6 @@ for pdb_file in os.listdir(path):
 
 				domains = int(pdb_id[7] + pdb_id[8])
 
-				frags = int(pdb_id[11] + pdb_id[12])
 
 				# print pdb_id[:4], domains
 
@@ -425,7 +429,9 @@ for pdb_file in os.listdir(path):
 						if simulated_domains==2:
 							length_list.append(len(cords_list))
 							gyration_list.append(radius_of_gyration.radius_of_gyration(var_2, chain))
-							interactionEnergy_list.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
+							interaction_energy = getInteractionEnergy(labels_km, simulated_domains, cords_list)
+							interactionEnergy_list.append(interaction_energy)
+							# print pdb_id[:4], chain, len(cords_list), interaction_energy
 
 						# if simulated_domains==6:
 						# 	print "{0:.3f}".format(getInteractionEnergy(labels_km, simulated_domains, cords_list))
@@ -434,9 +440,20 @@ for pdb_file in os.listdir(path):
 
 						simulated_domains+=1
 
+				# bndries =  pdb_id[14:].strip()
+
+
+
 				if frags==0 and domains==2 and pdb_id[:4]:
+					# print pdb_id
 					domain_boundary = pdb_id[14:].strip()
 
+					val, segmented = getCathDict(domain_boundary, domains)
+
+					if segmented==True:
+						continue
+
+					# print pdb_id
 					visited_list.append(pdb_id[:4])
 
 
@@ -465,9 +482,13 @@ for pdb_file in os.listdir(path):
 # single_domain_rg = "single_domain_rg"
 # single_domain_interaction_energy  = "single_domain_interaction_energy"
 
-# two_domain_length = "two_domain_length"
-# two_domain_rg = "two_domain_rg"
-# two_domain_interaction_energy = "two_domain_interaction_energy"
+# two_domain_length_non_contiguous = "two_domain_length_non_contiguous"
+# two_domain_rg_non_contiguous = "two_domain_rg_non_contiguous"
+# two_domain_interaction_energy_non_contiguous = "two_domain_interaction_energy_non_contiguous"
+
+two_domain_length_contiguous = "two_domain_length_contiguous"
+two_domain_rg_contiguous = "two_domain_rg_contiguous"
+two_domain_interaction_energy_contiguous = "two_domain_interaction_energy_contiguous"
 
 
 # fp1 = open(single_domain_length, 'wb')
@@ -482,15 +503,15 @@ for pdb_file in os.listdir(path):
 # pickle.dump(interactionEnergy_list, fp3)
 # fp3.close()
 
-# fp4 = open(two_domain_length, 'wb')
+# fp4 = open(two_domain_length_contiguous, 'wb')
 # pickle.dump(length_list_2, fp4)
 # fp4.close()
 
-# fp5 = open(two_domain_rg, 'wb')
+# fp5 = open(two_domain_rg_contiguous, 'wb')
 # pickle.dump(gyration_list_2, fp5)
 # fp5.close()
 
-# fp6 = open(two_domain_interaction_energy, 'wb')
+# fp6 = open(two_domain_interaction_energy_contiguous, 'wb')
 # pickle.dump(interactionEnergy_list_2, fp6)
 # fp6.close()
 
@@ -506,19 +527,19 @@ for pdb_file in os.listdir(path):
 # print len(interactionEnergy_list_2)
 # print len(length_list_2)
 
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-# ax1 = fig.add_subplot(111, projection='3d')
+# fig = plt.figure()
+# ax = fig.add_subplot(111, projection='3d')
+# # ax1 = fig.add_subplot(111, projection='3d')
 
 
-ax.scatter(gyration_list, length_list, interactionEnergy_list, c='r')
-ax.scatter(gyration_list_2, length_list_2, interactionEnergy_list_2, c='b')
+# # ax.scatter(gyration_list, length_list, interactionEnergy_list, c='r')
+# ax.scatter(gyration_list_2, length_list_2, interactionEnergy_list_2, c='b')
 
-ax.set_xlabel('Radius Of Gyration')
-ax.set_ylabel('Length')
-ax.set_zlabel('Interaction Energy')
+# ax.set_xlabel('Radius Of Gyration')
+# ax.set_ylabel('Length')
+# ax.set_zlabel('Interaction Energy')
 
-plt.show()
+# plt.show()
 
 
 # for i in range(0, max_length, 5):
