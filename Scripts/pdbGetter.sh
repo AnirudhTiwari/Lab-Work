@@ -1,7 +1,7 @@
 files=0
-for line in $(cat ../Output\ Data/twoDomainProteins.txt) 
+for line in $(cat cath_scop_final_pdb) 
 do	
-	if [ $files -gt 500 ]
+	if [ $files -gt 920 ]
 	then
 		break
 	fi
@@ -10,6 +10,6 @@ do
 	a+=$line
 	a+=$b
 	wget $a	 
-	mv $line$b ../Output\ Data/One\ To\ Five\ Domains\ Proteins/
+	mv $line$b temp
 done
 

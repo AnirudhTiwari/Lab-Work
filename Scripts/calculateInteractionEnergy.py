@@ -114,8 +114,8 @@ def getInteractionEnergy(matrix, num_domains, cords_list):
 				for a in clusters_dict[y]:
 					for b in clusters_dict[z]:
 						distance = dist(cords_list[a],cords_list[b])
-						if distance < 7.0:
-							energy = energy + 1/distance
+						# if distance < 7.0:
+						energy = energy + 1/distance
 
 	return (energy/2)/len(matrix)
 
@@ -363,13 +363,19 @@ c = raw_input("Contiguous(C)/Non-Contiguous(N)/Both(B): ")
 # if c=='N':
 # 	path = "../Output Data/500_proteins/Non Contiguous/"
 
-path = "../Output Data/500_proteins/Both/"
+path = "temp2/"
+# path = "../Output Data/500_proteins/Both/"
 
 
 
 # print a, b, c
 
 # print "No., PDB, Domains, CATH, Interaction Energy for 1 Domain, Interaction Energy for 2 Domains, Interaction Energy for 3 Domains, Interaction Energy for 4 Domains, Interaction Energy for 5 Domain, Interaction Energy for 6 Domain"
+
+with open("../Output Data/cath_scop_intersection/cath_scop_intersection.txt") as f12:
+	req_chains = f12.readlines()
+
+
 for pdb_file in os.listdir(path):
 
 	pdb_path = pdb_file
@@ -379,7 +385,7 @@ for pdb_file in os.listdir(path):
 
 
 	var = open('../Input Files/CathDomall', 'r')
-	not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p', '1tj7', '1z5h']
+	not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p', '1tj7', '1z5h', '1p9h', '1dve', '1aon', '1fjg', '1jfw', '1nkq', '1byr', '1abz','1t6t','1c21', '1a18', '1bal', '1am4', '1vea', '1foe', '1t11']
 
 
 	while 1:
@@ -390,7 +396,9 @@ for pdb_file in os.listdir(path):
 			break
 
 		else:
+
 			if pdb_id[:4].lower()==pdb_file[:4].lower()  and pdb_file not in not_list and pdb_id[:4] not in visited_list:
+
 				flag = 1
 				var_1 = open(path+pdb_path, 'r')
 				frags = int(pdb_id[11] + pdb_id[12])
@@ -398,65 +406,73 @@ for pdb_file in os.listdir(path):
 				chain = pdb_id[18]
 				domains = int(pdb_id[7] + pdb_id[8])
 
-				if frags==0 and domains==a and pdb_id[:4]:
-					domain_boundary = pdb_id[14:].strip()
+				for x in req_chains:
+					if x[:4]==pdb_id[:4].lower() and chain.lower()==x[4].lower():					
+						if frags==0 and domains==a and pdb_id[:4]:
+							print pdb_id.strip()
+							domain_boundary = pdb_id[14:].strip()
 
-					visited_list.append(pdb_id[:4])
+							visited_list.append(pdb_id[:4])
 
-					cords_list, realId_list = getCordsList(var_1,chain)
+							cords_list, realId_list = getCordsList(var_1,chain)
 
-					x = np.asarray(cords_list)
+							x = np.asarray(cords_list)
 
-					file_counter+=1
+							file_counter+=1
 
-					simulated_domains = 1
+							simulated_domains = 1
 
-					while(simulated_domains!=b+1):
+							while(simulated_domains!=b+1):
 
-						km = KMeans(n_clusters=simulated_domains).fit(x)
-						labels_km = km.labels_
+								km = KMeans(n_clusters=simulated_domains).fit(x)
+								labels_km = km.labels_
 
-						if simulated_domains==b:
-							length_list_a.append(len(cords_list))
-							gyration_list_a.append(radius_of_gyration.radius_of_gyration(var_2, chain))
-							interaction_energy = getInteractionEnergy(labels_km, simulated_domains, cords_list)
-							interactionEnergy_list_a.append(interaction_energy)
-						simulated_domains+=1
-
-
-				if frags==0 and domains==b and pdb_id[:4]:
-					domain_boundary = pdb_id[14:].strip()
-
-					val, segmented = getCathDict(domain_boundary, domains)
-					
-					visited_list.append(pdb_id[:4])
+								if simulated_domains==b:
+									length_list_a.append(len(cords_list))
+									try:
+										gyration_list_a.append(radius_of_gyration.radius_of_gyration(var_2, chain))
+									except:
+										print "Error hai isme ", pdb_id
+									interaction_energy = getInteractionEnergy(labels_km, simulated_domains, cords_list)
+									interactionEnergy_list_a.append(interaction_energy)
+								simulated_domains+=1
 
 
-					if segmented==True and c=='C':
-						continue
+						if frags==0 and domains==b and pdb_id[:4]:
+							domain_boundary = pdb_id[14:].strip()
 
-					if segmented==False and c=='N':
-						continue
+							val, segmented = getCathDict(domain_boundary, domains)
+							
+							visited_list.append(pdb_id[:4])
 
-					print pdb_id
 
-					cords_list, realId_list = getCordsList(var_1,chain)
+							if segmented==True and c=='C':
+								continue
 
-					x = np.asarray(cords_list)
+							if segmented==False and c=='N':
+								continue
 
-					simulated_domains = 1
 
-					while(simulated_domains!=b+1):
+							cords_list, realId_list = getCordsList(var_1,chain)
 
-						km = KMeans(n_clusters=simulated_domains).fit(x)
-						labels_km = km.labels_
+							x = np.asarray(cords_list)
 
-						if simulated_domains==b:
-							length_list_b.append(len(cords_list))
-							gyration_list_b.append(radius_of_gyration.radius_of_gyration(var_2, chain))
-							interactionEnergy_list_b.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
+							simulated_domains = 1
 
-						simulated_domains+=1	
+							while(simulated_domains!=b+1):
+
+								km = KMeans(n_clusters=simulated_domains).fit(x)
+								labels_km = km.labels_
+
+								if simulated_domains==b:
+									length_list_b.append(len(cords_list))
+									try:
+										gyration_list_b.append(radius_of_gyration.radius_of_gyration(var_2, chain))
+									except:
+										print "Error hai isme ", pdb_id
+									interactionEnergy_list_b.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
+
+								simulated_domains+=1	
 
 
 domain_string_a=""

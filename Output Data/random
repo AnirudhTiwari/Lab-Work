@@ -1,0 +1,4161 @@
+For length >= 0 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 0 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 0 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 0 and energy <= 0.15 true positives:87 and false positives:36
+
+For length >= 0 and energy <= 0.2 true positives:79 and false positives:62
+
+For length >= 0 and energy <= 0.25 true positives:63 and false positives:111
+
+For length >= 0 and energy <= 0.3 true positives:45 and false positives:166
+
+For length >= 0 and energy <= 0.35 true positives:30 and false positives:211
+
+For length >= 0 and energy <= 0.4 true positives:17 and false positives:251
+
+For length >= 0 and energy <= 0.45 true positives:9 and false positives:276
+
+For length >= 0 and energy <= 0.5 true positives:5 and false positives:290
+
+For length >= 0 and energy <= 0.55 true positives:2 and false positives:298
+
+For length >= 0 and energy <= 0.6 true positives:1 and false positives:303
+
+For length >= 5 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 5 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 5 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 5 and energy <= 0.15 true positives:87 and false positives:36
+
+For length >= 5 and energy <= 0.2 true positives:79 and false positives:62
+
+For length >= 5 and energy <= 0.25 true positives:63 and false positives:111
+
+For length >= 5 and energy <= 0.3 true positives:45 and false positives:166
+
+For length >= 5 and energy <= 0.35 true positives:30 and false positives:211
+
+For length >= 5 and energy <= 0.4 true positives:17 and false positives:251
+
+For length >= 5 and energy <= 0.45 true positives:9 and false positives:276
+
+For length >= 5 and energy <= 0.5 true positives:5 and false positives:290
+
+For length >= 5 and energy <= 0.55 true positives:2 and false positives:298
+
+For length >= 5 and energy <= 0.6 true positives:1 and false positives:303
+
+For length >= 10 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 10 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 10 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 10 and energy <= 0.15 true positives:87 and false positives:36
+
+For length >= 10 and energy <= 0.2 true positives:79 and false positives:62
+
+For length >= 10 and energy <= 0.25 true positives:63 and false positives:111
+
+For length >= 10 and energy <= 0.3 true positives:45 and false positives:166
+
+For length >= 10 and energy <= 0.35 true positives:30 and false positives:211
+
+For length >= 10 and energy <= 0.4 true positives:17 and false positives:251
+
+For length >= 10 and energy <= 0.45 true positives:9 and false positives:276
+
+For length >= 10 and energy <= 0.5 true positives:5 and false positives:290
+
+For length >= 10 and energy <= 0.55 true positives:2 and false positives:298
+
+For length >= 10 and energy <= 0.6 true positives:1 and false positives:303
+
+For length >= 15 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 15 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 15 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 15 and energy <= 0.15 true positives:87 and false positives:36
+
+For length >= 15 and energy <= 0.2 true positives:79 and false positives:62
+
+For length >= 15 and energy <= 0.25 true positives:63 and false positives:111
+
+For length >= 15 and energy <= 0.3 true positives:45 and false positives:166
+
+For length >= 15 and energy <= 0.35 true positives:30 and false positives:211
+
+For length >= 15 and energy <= 0.4 true positives:17 and false positives:251
+
+For length >= 15 and energy <= 0.45 true positives:9 and false positives:276
+
+For length >= 15 and energy <= 0.5 true positives:5 and false positives:290
+
+For length >= 15 and energy <= 0.55 true positives:2 and false positives:298
+
+For length >= 15 and energy <= 0.6 true positives:1 and false positives:303
+
+For length >= 20 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 20 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 20 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 20 and energy <= 0.15 true positives:88 and false positives:36
+
+For length >= 20 and energy <= 0.2 true positives:79 and false positives:61
+
+For length >= 20 and energy <= 0.25 true positives:63 and false positives:111
+
+For length >= 20 and energy <= 0.3 true positives:45 and false positives:166
+
+For length >= 20 and energy <= 0.35 true positives:31 and false positives:211
+
+For length >= 20 and energy <= 0.4 true positives:18 and false positives:251
+
+For length >= 20 and energy <= 0.45 true positives:10 and false positives:275
+
+For length >= 20 and energy <= 0.5 true positives:5 and false positives:289
+
+For length >= 20 and energy <= 0.55 true positives:2 and false positives:297
+
+For length >= 20 and energy <= 0.6 true positives:1 and false positives:302
+
+For length >= 25 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 25 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 25 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 25 and energy <= 0.15 true positives:88 and false positives:36
+
+For length >= 25 and energy <= 0.2 true positives:79 and false positives:61
+
+For length >= 25 and energy <= 0.25 true positives:63 and false positives:111
+
+For length >= 25 and energy <= 0.3 true positives:45 and false positives:166
+
+For length >= 25 and energy <= 0.35 true positives:31 and false positives:211
+
+For length >= 25 and energy <= 0.4 true positives:18 and false positives:251
+
+For length >= 25 and energy <= 0.45 true positives:10 and false positives:275
+
+For length >= 25 and energy <= 0.5 true positives:5 and false positives:289
+
+For length >= 25 and energy <= 0.55 true positives:2 and false positives:297
+
+For length >= 25 and energy <= 0.6 true positives:1 and false positives:302
+
+For length >= 30 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 30 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 30 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 30 and energy <= 0.15 true positives:88 and false positives:36
+
+For length >= 30 and energy <= 0.2 true positives:80 and false positives:61
+
+For length >= 30 and energy <= 0.25 true positives:63 and false positives:110
+
+For length >= 30 and energy <= 0.3 true positives:45 and false positives:166
+
+For length >= 30 and energy <= 0.35 true positives:31 and false positives:211
+
+For length >= 30 and energy <= 0.4 true positives:18 and false positives:250
+
+For length >= 30 and energy <= 0.45 true positives:10 and false positives:275
+
+For length >= 30 and energy <= 0.5 true positives:5 and false positives:289
+
+For length >= 30 and energy <= 0.55 true positives:3 and false positives:297
+
+For length >= 30 and energy <= 0.6 true positives:1 and false positives:302
+
+For length >= 35 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 35 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 35 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 35 and energy <= 0.15 true positives:88 and false positives:36
+
+For length >= 35 and energy <= 0.2 true positives:80 and false positives:61
+
+For length >= 35 and energy <= 0.25 true positives:63 and false positives:110
+
+For length >= 35 and energy <= 0.3 true positives:45 and false positives:166
+
+For length >= 35 and energy <= 0.35 true positives:31 and false positives:211
+
+For length >= 35 and energy <= 0.4 true positives:18 and false positives:250
+
+For length >= 35 and energy <= 0.45 true positives:10 and false positives:275
+
+For length >= 35 and energy <= 0.5 true positives:5 and false positives:289
+
+For length >= 35 and energy <= 0.55 true positives:3 and false positives:297
+
+For length >= 35 and energy <= 0.6 true positives:1 and false positives:302
+
+For length >= 40 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 40 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 40 and energy <= 0.1 true positives:93 and false positives:19
+
+For length >= 40 and energy <= 0.15 true positives:88 and false positives:36
+
+For length >= 40 and energy <= 0.2 true positives:80 and false positives:60
+
+For length >= 40 and energy <= 0.25 true positives:64 and false positives:109
+
+For length >= 40 and energy <= 0.3 true positives:46 and false positives:165
+
+For length >= 40 and energy <= 0.35 true positives:31 and false positives:210
+
+For length >= 40 and energy <= 0.4 true positives:18 and false positives:249
+
+For length >= 40 and energy <= 0.45 true positives:10 and false positives:274
+
+For length >= 40 and energy <= 0.5 true positives:5 and false positives:288
+
+For length >= 40 and energy <= 0.55 true positives:3 and false positives:296
+
+For length >= 40 and energy <= 0.6 true positives:1 and false positives:301
+
+For length >= 45 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 45 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 45 and energy <= 0.1 true positives:93 and false positives:18
+
+For length >= 45 and energy <= 0.15 true positives:88 and false positives:35
+
+For length >= 45 and energy <= 0.2 true positives:80 and false positives:59
+
+For length >= 45 and energy <= 0.25 true positives:64 and false positives:108
+
+For length >= 45 and energy <= 0.3 true positives:47 and false positives:162
+
+For length >= 45 and energy <= 0.35 true positives:32 and false positives:206
+
+For length >= 45 and energy <= 0.4 true positives:20 and false positives:244
+
+For length >= 45 and energy <= 0.45 true positives:12 and false positives:267
+
+For length >= 45 and energy <= 0.5 true positives:7 and false positives:282
+
+For length >= 45 and energy <= 0.55 true positives:5 and false positives:289
+
+For length >= 45 and energy <= 0.6 true positives:4 and false positives:293
+
+For length >= 50 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 50 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 50 and energy <= 0.1 true positives:94 and false positives:18
+
+For length >= 50 and energy <= 0.15 true positives:88 and false positives:34
+
+For length >= 50 and energy <= 0.2 true positives:81 and false positives:56
+
+For length >= 50 and energy <= 0.25 true positives:65 and false positives:104
+
+For length >= 50 and energy <= 0.3 true positives:48 and false positives:158
+
+For length >= 50 and energy <= 0.35 true positives:34 and false positives:201
+
+For length >= 50 and energy <= 0.4 true positives:21 and false positives:239
+
+For length >= 50 and energy <= 0.45 true positives:14 and false positives:261
+
+For length >= 50 and energy <= 0.5 true positives:10 and false positives:275
+
+For length >= 50 and energy <= 0.55 true positives:7 and false positives:282
+
+For length >= 50 and energy <= 0.6 true positives:7 and false positives:285
+
+For length >= 55 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 55 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 55 and energy <= 0.1 true positives:94 and false positives:18
+
+For length >= 55 and energy <= 0.15 true positives:88 and false positives:34
+
+For length >= 55 and energy <= 0.2 true positives:82 and false positives:55
+
+For length >= 55 and energy <= 0.25 true positives:66 and false positives:101
+
+For length >= 55 and energy <= 0.3 true positives:49 and false positives:155
+
+For length >= 55 and energy <= 0.35 true positives:35 and false positives:197
+
+For length >= 55 and energy <= 0.4 true positives:23 and false positives:235
+
+For length >= 55 and energy <= 0.45 true positives:16 and false positives:257
+
+For length >= 55 and energy <= 0.5 true positives:11 and false positives:270
+
+For length >= 55 and energy <= 0.55 true positives:9 and false positives:277
+
+For length >= 55 and energy <= 0.6 true positives:8 and false positives:280
+
+For length >= 60 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 60 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 60 and energy <= 0.1 true positives:94 and false positives:17
+
+For length >= 60 and energy <= 0.15 true positives:89 and false positives:33
+
+For length >= 60 and energy <= 0.2 true positives:82 and false positives:53
+
+For length >= 60 and energy <= 0.25 true positives:67 and false positives:99
+
+For length >= 60 and energy <= 0.3 true positives:50 and false positives:151
+
+For length >= 60 and energy <= 0.35 true positives:37 and false positives:192
+
+For length >= 60 and energy <= 0.4 true positives:24 and false positives:230
+
+For length >= 60 and energy <= 0.45 true positives:18 and false positives:251
+
+For length >= 60 and energy <= 0.5 true positives:13 and false positives:264
+
+For length >= 60 and energy <= 0.55 true positives:11 and false positives:271
+
+For length >= 60 and energy <= 0.6 true positives:10 and false positives:273
+
+For length >= 65 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 65 and energy <= 0.05 true positives:97 and false positives:8
+
+For length >= 65 and energy <= 0.1 true positives:94 and false positives:16
+
+For length >= 65 and energy <= 0.15 true positives:89 and false positives:32
+
+For length >= 65 and energy <= 0.2 true positives:83 and false positives:51
+
+For length >= 65 and energy <= 0.25 true positives:68 and false positives:97
+
+For length >= 65 and energy <= 0.3 true positives:51 and false positives:148
+
+For length >= 65 and energy <= 0.35 true positives:38 and false positives:189
+
+For length >= 65 and energy <= 0.4 true positives:25 and false positives:227
+
+For length >= 65 and energy <= 0.45 true positives:19 and false positives:246
+
+For length >= 65 and energy <= 0.5 true positives:15 and false positives:258
+
+For length >= 65 and energy <= 0.55 true positives:13 and false positives:265
+
+For length >= 65 and energy <= 0.6 true positives:13 and false positives:266
+
+For length >= 70 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 70 and energy <= 0.05 true positives:97 and false positives:7
+
+For length >= 70 and energy <= 0.1 true positives:94 and false positives:15
+
+For length >= 70 and energy <= 0.15 true positives:90 and false positives:29
+
+For length >= 70 and energy <= 0.2 true positives:84 and false positives:48
+
+For length >= 70 and energy <= 0.25 true positives:69 and false positives:93
+
+For length >= 70 and energy <= 0.3 true positives:53 and false positives:144
+
+For length >= 70 and energy <= 0.35 true positives:39 and false positives:184
+
+For length >= 70 and energy <= 0.4 true positives:27 and false positives:221
+
+For length >= 70 and energy <= 0.45 true positives:21 and false positives:239
+
+For length >= 70 and energy <= 0.5 true positives:18 and false positives:250
+
+For length >= 70 and energy <= 0.55 true positives:16 and false positives:255
+
+For length >= 70 and energy <= 0.6 true positives:16 and false positives:256
+
+For length >= 75 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 75 and energy <= 0.05 true positives:97 and false positives:7
+
+For length >= 75 and energy <= 0.1 true positives:95 and false positives:15
+
+For length >= 75 and energy <= 0.15 true positives:90 and false positives:29
+
+For length >= 75 and energy <= 0.2 true positives:84 and false positives:47
+
+For length >= 75 and energy <= 0.25 true positives:70 and false positives:91
+
+For length >= 75 and energy <= 0.3 true positives:53 and false positives:141
+
+For length >= 75 and energy <= 0.35 true positives:40 and false positives:181
+
+For length >= 75 and energy <= 0.4 true positives:29 and false positives:217
+
+For length >= 75 and energy <= 0.45 true positives:23 and false positives:234
+
+For length >= 75 and energy <= 0.5 true positives:20 and false positives:242
+
+For length >= 75 and energy <= 0.55 true positives:19 and false positives:247
+
+For length >= 75 and energy <= 0.6 true positives:18 and false positives:248
+
+For length >= 80 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 80 and energy <= 0.05 true positives:97 and false positives:7
+
+For length >= 80 and energy <= 0.1 true positives:95 and false positives:15
+
+For length >= 80 and energy <= 0.15 true positives:91 and false positives:27
+
+For length >= 80 and energy <= 0.2 true positives:85 and false positives:44
+
+For length >= 80 and energy <= 0.25 true positives:71 and false positives:87
+
+For length >= 80 and energy <= 0.3 true positives:55 and false positives:135
+
+For length >= 80 and energy <= 0.35 true positives:42 and false positives:175
+
+For length >= 80 and energy <= 0.4 true positives:31 and false positives:208
+
+For length >= 80 and energy <= 0.45 true positives:26 and false positives:224
+
+For length >= 80 and energy <= 0.5 true positives:24 and false positives:233
+
+For length >= 80 and energy <= 0.55 true positives:22 and false positives:237
+
+For length >= 80 and energy <= 0.6 true positives:22 and false positives:238
+
+For length >= 85 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 85 and energy <= 0.05 true positives:97 and false positives:7
+
+For length >= 85 and energy <= 0.1 true positives:95 and false positives:14
+
+For length >= 85 and energy <= 0.15 true positives:91 and false positives:26
+
+For length >= 85 and energy <= 0.2 true positives:85 and false positives:43
+
+For length >= 85 and energy <= 0.25 true positives:72 and false positives:85
+
+For length >= 85 and energy <= 0.3 true positives:56 and false positives:132
+
+For length >= 85 and energy <= 0.35 true positives:44 and false positives:170
+
+For length >= 85 and energy <= 0.4 true positives:34 and false positives:201
+
+For length >= 85 and energy <= 0.45 true positives:29 and false positives:216
+
+For length >= 85 and energy <= 0.5 true positives:26 and false positives:224
+
+For length >= 85 and energy <= 0.55 true positives:25 and false positives:228
+
+For length >= 85 and energy <= 0.6 true positives:25 and false positives:229
+
+For length >= 90 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 90 and energy <= 0.05 true positives:98 and false positives:5
+
+For length >= 90 and energy <= 0.1 true positives:95 and false positives:12
+
+For length >= 90 and energy <= 0.15 true positives:92 and false positives:24
+
+For length >= 90 and energy <= 0.2 true positives:86 and false positives:40
+
+For length >= 90 and energy <= 0.25 true positives:73 and false positives:80
+
+For length >= 90 and energy <= 0.3 true positives:58 and false positives:126
+
+For length >= 90 and energy <= 0.35 true positives:46 and false positives:164
+
+For length >= 90 and energy <= 0.4 true positives:36 and false positives:194
+
+For length >= 90 and energy <= 0.45 true positives:32 and false positives:208
+
+For length >= 90 and energy <= 0.5 true positives:30 and false positives:213
+
+For length >= 90 and energy <= 0.55 true positives:29 and false positives:217
+
+For length >= 90 and energy <= 0.6 true positives:28 and false positives:218
+
+For length >= 95 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 95 and energy <= 0.05 true positives:98 and false positives:5
+
+For length >= 95 and energy <= 0.1 true positives:95 and false positives:12
+
+For length >= 95 and energy <= 0.15 true positives:92 and false positives:23
+
+For length >= 95 and energy <= 0.2 true positives:87 and false positives:39
+
+For length >= 95 and energy <= 0.25 true positives:74 and false positives:78
+
+For length >= 95 and energy <= 0.3 true positives:59 and false positives:124
+
+For length >= 95 and energy <= 0.35 true positives:47 and false positives:161
+
+For length >= 95 and energy <= 0.4 true positives:38 and false positives:189
+
+For length >= 95 and energy <= 0.45 true positives:34 and false positives:202
+
+For length >= 95 and energy <= 0.5 true positives:32 and false positives:207
+
+For length >= 95 and energy <= 0.55 true positives:31 and false positives:210
+
+For length >= 95 and energy <= 0.6 true positives:31 and false positives:211
+
+For length >= 100 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 100 and energy <= 0.05 true positives:98 and false positives:5
+
+For length >= 100 and energy <= 0.1 true positives:95 and false positives:12
+
+For length >= 100 and energy <= 0.15 true positives:92 and false positives:23
+
+For length >= 100 and energy <= 0.2 true positives:87 and false positives:39
+
+For length >= 100 and energy <= 0.25 true positives:74 and false positives:77
+
+For length >= 100 and energy <= 0.3 true positives:59 and false positives:122
+
+For length >= 100 and energy <= 0.35 true positives:48 and false positives:158
+
+For length >= 100 and energy <= 0.4 true positives:39 and false positives:185
+
+For length >= 100 and energy <= 0.45 true positives:35 and false positives:197
+
+For length >= 100 and energy <= 0.5 true positives:34 and false positives:201
+
+For length >= 100 and energy <= 0.55 true positives:33 and false positives:204
+
+For length >= 100 and energy <= 0.6 true positives:33 and false positives:204
+
+For length >= 105 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 105 and energy <= 0.05 true positives:98 and false positives:5
+
+For length >= 105 and energy <= 0.1 true positives:96 and false positives:11
+
+For length >= 105 and energy <= 0.15 true positives:92 and false positives:21
+
+For length >= 105 and energy <= 0.2 true positives:87 and false positives:36
+
+For length >= 105 and energy <= 0.25 true positives:75 and false positives:74
+
+For length >= 105 and energy <= 0.3 true positives:61 and false positives:118
+
+For length >= 105 and energy <= 0.35 true positives:50 and false positives:152
+
+For length >= 105 and energy <= 0.4 true positives:42 and false positives:177
+
+For length >= 105 and energy <= 0.45 true positives:38 and false positives:188
+
+For length >= 105 and energy <= 0.5 true positives:37 and false positives:192
+
+For length >= 105 and energy <= 0.55 true positives:36 and false positives:194
+
+For length >= 105 and energy <= 0.6 true positives:36 and false positives:194
+
+For length >= 110 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 110 and energy <= 0.05 true positives:98 and false positives:4
+
+For length >= 110 and energy <= 0.1 true positives:96 and false positives:10
+
+For length >= 110 and energy <= 0.15 true positives:93 and false positives:20
+
+For length >= 110 and energy <= 0.2 true positives:88 and false positives:35
+
+For length >= 110 and energy <= 0.25 true positives:76 and false positives:72
+
+For length >= 110 and energy <= 0.3 true positives:62 and false positives:114
+
+For length >= 110 and energy <= 0.35 true positives:51 and false positives:147
+
+For length >= 110 and energy <= 0.4 true positives:44 and false positives:169
+
+For length >= 110 and energy <= 0.45 true positives:41 and false positives:180
+
+For length >= 110 and energy <= 0.5 true positives:40 and false positives:183
+
+For length >= 110 and energy <= 0.55 true positives:39 and false positives:185
+
+For length >= 110 and energy <= 0.6 true positives:39 and false positives:185
+
+For length >= 115 and energy <= 0.0 true positives:99 and false positives:0
+
+For length >= 115 and energy <= 0.05 true positives:98 and false positives:3
+
+For length >= 115 and energy <= 0.1 true positives:96 and false positives:9
+
+For length >= 115 and energy <= 0.15 true positives:93 and false positives:19
+
+For length >= 115 and energy <= 0.2 true positives:88 and false positives:33
+
+For length >= 115 and energy <= 0.25 true positives:77 and false positives:70
+
+For length >= 115 and energy <= 0.3 true positives:63 and false positives:111
+
+For length >= 115 and energy <= 0.35 true positives:53 and false positives:143
+
+For length >= 115 and energy <= 0.4 true positives:46 and false positives:162
+
+For length >= 115 and energy <= 0.45 true positives:44 and false positives:171
+
+For length >= 115 and energy <= 0.5 true positives:43 and false positives:174
+
+For length >= 115 and energy <= 0.55 true positives:42 and false positives:175
+
+For length >= 115 and energy <= 0.6 true positives:42 and false positives:175
+
+For length >= 120 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 120 and energy <= 0.05 true positives:99 and false positives:2
+
+For length >= 120 and energy <= 0.1 true positives:97 and false positives:7
+
+For length >= 120 and energy <= 0.15 true positives:94 and false positives:17
+
+For length >= 120 and energy <= 0.2 true positives:89 and false positives:32
+
+For length >= 120 and energy <= 0.25 true positives:78 and false positives:66
+
+For length >= 120 and energy <= 0.3 true positives:64 and false positives:108
+
+For length >= 120 and energy <= 0.35 true positives:55 and false positives:137
+
+For length >= 120 and energy <= 0.4 true positives:48 and false positives:156
+
+For length >= 120 and energy <= 0.45 true positives:46 and false positives:163
+
+For length >= 120 and energy <= 0.5 true positives:46 and false positives:165
+
+For length >= 120 and energy <= 0.55 true positives:45 and false positives:166
+
+For length >= 120 and energy <= 0.6 true positives:45 and false positives:166
+
+For length >= 125 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 125 and energy <= 0.05 true positives:99 and false positives:2
+
+For length >= 125 and energy <= 0.1 true positives:97 and false positives:7
+
+For length >= 125 and energy <= 0.15 true positives:94 and false positives:16
+
+For length >= 125 and energy <= 0.2 true positives:89 and false positives:31
+
+For length >= 125 and energy <= 0.25 true positives:78 and false positives:65
+
+For length >= 125 and energy <= 0.3 true positives:66 and false positives:103
+
+For length >= 125 and energy <= 0.35 true positives:57 and false positives:131
+
+For length >= 125 and energy <= 0.4 true positives:51 and false positives:149
+
+For length >= 125 and energy <= 0.45 true positives:49 and false positives:155
+
+For length >= 125 and energy <= 0.5 true positives:48 and false positives:156
+
+For length >= 125 and energy <= 0.55 true positives:48 and false positives:157
+
+For length >= 125 and energy <= 0.6 true positives:48 and false positives:157
+
+For length >= 130 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 130 and energy <= 0.05 true positives:99 and false positives:2
+
+For length >= 130 and energy <= 0.1 true positives:97 and false positives:7
+
+For length >= 130 and energy <= 0.15 true positives:94 and false positives:15
+
+For length >= 130 and energy <= 0.2 true positives:90 and false positives:29
+
+For length >= 130 and energy <= 0.25 true positives:79 and false positives:63
+
+For length >= 130 and energy <= 0.3 true positives:67 and false positives:100
+
+For length >= 130 and energy <= 0.35 true positives:58 and false positives:125
+
+For length >= 130 and energy <= 0.4 true positives:53 and false positives:141
+
+For length >= 130 and energy <= 0.45 true positives:52 and false positives:146
+
+For length >= 130 and energy <= 0.5 true positives:51 and false positives:147
+
+For length >= 130 and energy <= 0.55 true positives:51 and false positives:149
+
+For length >= 130 and energy <= 0.6 true positives:51 and false positives:149
+
+For length >= 135 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 135 and energy <= 0.05 true positives:99 and false positives:2
+
+For length >= 135 and energy <= 0.1 true positives:97 and false positives:7
+
+For length >= 135 and energy <= 0.15 true positives:95 and false positives:15
+
+For length >= 135 and energy <= 0.2 true positives:90 and false positives:28
+
+For length >= 135 and energy <= 0.25 true positives:80 and false positives:61
+
+For length >= 135 and energy <= 0.3 true positives:68 and false positives:97
+
+For length >= 135 and energy <= 0.35 true positives:60 and false positives:122
+
+For length >= 135 and energy <= 0.4 true positives:55 and false positives:137
+
+For length >= 135 and energy <= 0.45 true positives:53 and false positives:141
+
+For length >= 135 and energy <= 0.5 true positives:53 and false positives:142
+
+For length >= 135 and energy <= 0.55 true positives:53 and false positives:144
+
+For length >= 135 and energy <= 0.6 true positives:53 and false positives:144
+
+For length >= 140 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 140 and energy <= 0.05 true positives:99 and false positives:2
+
+For length >= 140 and energy <= 0.1 true positives:97 and false positives:6
+
+For length >= 140 and energy <= 0.15 true positives:95 and false positives:13
+
+For length >= 140 and energy <= 0.2 true positives:91 and false positives:27
+
+For length >= 140 and energy <= 0.25 true positives:80 and false positives:58
+
+For length >= 140 and energy <= 0.3 true positives:69 and false positives:94
+
+For length >= 140 and energy <= 0.35 true positives:61 and false positives:117
+
+For length >= 140 and energy <= 0.4 true positives:56 and false positives:132
+
+For length >= 140 and energy <= 0.45 true positives:55 and false positives:136
+
+For length >= 140 and energy <= 0.5 true positives:55 and false positives:137
+
+For length >= 140 and energy <= 0.55 true positives:54 and false positives:138
+
+For length >= 140 and energy <= 0.6 true positives:54 and false positives:138
+
+For length >= 145 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 145 and energy <= 0.05 true positives:99 and false positives:1
+
+For length >= 145 and energy <= 0.1 true positives:98 and false positives:5
+
+For length >= 145 and energy <= 0.15 true positives:95 and false positives:12
+
+For length >= 145 and energy <= 0.2 true positives:91 and false positives:25
+
+For length >= 145 and energy <= 0.25 true positives:81 and false positives:55
+
+For length >= 145 and energy <= 0.3 true positives:70 and false positives:91
+
+For length >= 145 and energy <= 0.35 true positives:63 and false positives:113
+
+For length >= 145 and energy <= 0.4 true positives:58 and false positives:126
+
+For length >= 145 and energy <= 0.45 true positives:57 and false positives:130
+
+For length >= 145 and energy <= 0.5 true positives:57 and false positives:131
+
+For length >= 145 and energy <= 0.55 true positives:56 and false positives:132
+
+For length >= 145 and energy <= 0.6 true positives:56 and false positives:132
+
+For length >= 150 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 150 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 150 and energy <= 0.1 true positives:98 and false positives:5
+
+For length >= 150 and energy <= 0.15 true positives:95 and false positives:12
+
+For length >= 150 and energy <= 0.2 true positives:91 and false positives:25
+
+For length >= 150 and energy <= 0.25 true positives:82 and false positives:54
+
+For length >= 150 and energy <= 0.3 true positives:71 and false positives:88
+
+For length >= 150 and energy <= 0.35 true positives:64 and false positives:108
+
+For length >= 150 and energy <= 0.4 true positives:60 and false positives:121
+
+For length >= 150 and energy <= 0.45 true positives:59 and false positives:124
+
+For length >= 150 and energy <= 0.5 true positives:59 and false positives:124
+
+For length >= 150 and energy <= 0.55 true positives:58 and false positives:126
+
+For length >= 150 and energy <= 0.6 true positives:58 and false positives:126
+
+For length >= 155 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 155 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 155 and energy <= 0.1 true positives:98 and false positives:5
+
+For length >= 155 and energy <= 0.15 true positives:96 and false positives:11
+
+For length >= 155 and energy <= 0.2 true positives:92 and false positives:23
+
+For length >= 155 and energy <= 0.25 true positives:82 and false positives:52
+
+For length >= 155 and energy <= 0.3 true positives:72 and false positives:85
+
+For length >= 155 and energy <= 0.35 true positives:65 and false positives:104
+
+For length >= 155 and energy <= 0.4 true positives:62 and false positives:116
+
+For length >= 155 and energy <= 0.45 true positives:60 and false positives:119
+
+For length >= 155 and energy <= 0.5 true positives:60 and false positives:119
+
+For length >= 155 and energy <= 0.55 true positives:60 and false positives:120
+
+For length >= 155 and energy <= 0.6 true positives:60 and false positives:120
+
+For length >= 160 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 160 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 160 and energy <= 0.1 true positives:98 and false positives:3
+
+For length >= 160 and energy <= 0.15 true positives:96 and false positives:10
+
+For length >= 160 and energy <= 0.2 true positives:92 and false positives:21
+
+For length >= 160 and energy <= 0.25 true positives:84 and false positives:48
+
+For length >= 160 and energy <= 0.3 true positives:73 and false positives:80
+
+For length >= 160 and energy <= 0.35 true positives:67 and false positives:99
+
+For length >= 160 and energy <= 0.4 true positives:64 and false positives:110
+
+For length >= 160 and energy <= 0.45 true positives:63 and false positives:113
+
+For length >= 160 and energy <= 0.5 true positives:63 and false positives:113
+
+For length >= 160 and energy <= 0.55 true positives:62 and false positives:113
+
+For length >= 160 and energy <= 0.6 true positives:62 and false positives:113
+
+For length >= 165 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 165 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 165 and energy <= 0.1 true positives:98 and false positives:3
+
+For length >= 165 and energy <= 0.15 true positives:96 and false positives:9
+
+For length >= 165 and energy <= 0.2 true positives:93 and false positives:20
+
+For length >= 165 and energy <= 0.25 true positives:84 and false positives:46
+
+For length >= 165 and energy <= 0.3 true positives:75 and false positives:76
+
+For length >= 165 and energy <= 0.35 true positives:69 and false positives:93
+
+For length >= 165 and energy <= 0.4 true positives:66 and false positives:103
+
+For length >= 165 and energy <= 0.45 true positives:65 and false positives:106
+
+For length >= 165 and energy <= 0.5 true positives:65 and false positives:106
+
+For length >= 165 and energy <= 0.55 true positives:65 and false positives:106
+
+For length >= 165 and energy <= 0.6 true positives:65 and false positives:106
+
+For length >= 170 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 170 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 170 and energy <= 0.1 true positives:98 and false positives:3
+
+For length >= 170 and energy <= 0.15 true positives:96 and false positives:9
+
+For length >= 170 and energy <= 0.2 true positives:93 and false positives:20
+
+For length >= 170 and energy <= 0.25 true positives:85 and false positives:45
+
+For length >= 170 and energy <= 0.3 true positives:75 and false positives:74
+
+For length >= 170 and energy <= 0.35 true positives:70 and false positives:91
+
+For length >= 170 and energy <= 0.4 true positives:67 and false positives:100
+
+For length >= 170 and energy <= 0.45 true positives:66 and false positives:103
+
+For length >= 170 and energy <= 0.5 true positives:66 and false positives:103
+
+For length >= 170 and energy <= 0.55 true positives:66 and false positives:103
+
+For length >= 170 and energy <= 0.6 true positives:66 and false positives:103
+
+For length >= 175 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 175 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 175 and energy <= 0.1 true positives:98 and false positives:3
+
+For length >= 175 and energy <= 0.15 true positives:96 and false positives:9
+
+For length >= 175 and energy <= 0.2 true positives:93 and false positives:19
+
+For length >= 175 and energy <= 0.25 true positives:85 and false positives:44
+
+For length >= 175 and energy <= 0.3 true positives:76 and false positives:71
+
+For length >= 175 and energy <= 0.35 true positives:71 and false positives:87
+
+For length >= 175 and energy <= 0.4 true positives:68 and false positives:96
+
+For length >= 175 and energy <= 0.45 true positives:68 and false positives:97
+
+For length >= 175 and energy <= 0.5 true positives:68 and false positives:97
+
+For length >= 175 and energy <= 0.55 true positives:68 and false positives:97
+
+For length >= 175 and energy <= 0.6 true positives:68 and false positives:97
+
+For length >= 180 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 180 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 180 and energy <= 0.1 true positives:98 and false positives:3
+
+For length >= 180 and energy <= 0.15 true positives:97 and false positives:8
+
+For length >= 180 and energy <= 0.2 true positives:94 and false positives:18
+
+For length >= 180 and energy <= 0.25 true positives:86 and false positives:40
+
+For length >= 180 and energy <= 0.3 true positives:77 and false positives:67
+
+For length >= 180 and energy <= 0.35 true positives:73 and false positives:82
+
+For length >= 180 and energy <= 0.4 true positives:70 and false positives:90
+
+For length >= 180 and energy <= 0.45 true positives:70 and false positives:91
+
+For length >= 180 and energy <= 0.5 true positives:70 and false positives:91
+
+For length >= 180 and energy <= 0.55 true positives:70 and false positives:91
+
+For length >= 180 and energy <= 0.6 true positives:70 and false positives:91
+
+For length >= 185 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 185 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 185 and energy <= 0.1 true positives:98 and false positives:3
+
+For length >= 185 and energy <= 0.15 true positives:97 and false positives:7
+
+For length >= 185 and energy <= 0.2 true positives:94 and false positives:17
+
+For length >= 185 and energy <= 0.25 true positives:87 and false positives:39
+
+For length >= 185 and energy <= 0.3 true positives:78 and false positives:65
+
+For length >= 185 and energy <= 0.35 true positives:74 and false positives:78
+
+For length >= 185 and energy <= 0.4 true positives:71 and false positives:86
+
+For length >= 185 and energy <= 0.45 true positives:71 and false positives:87
+
+For length >= 185 and energy <= 0.5 true positives:71 and false positives:87
+
+For length >= 185 and energy <= 0.55 true positives:71 and false positives:87
+
+For length >= 185 and energy <= 0.6 true positives:71 and false positives:87
+
+For length >= 190 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 190 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 190 and energy <= 0.1 true positives:98 and false positives:3
+
+For length >= 190 and energy <= 0.15 true positives:97 and false positives:7
+
+For length >= 190 and energy <= 0.2 true positives:94 and false positives:16
+
+For length >= 190 and energy <= 0.25 true positives:87 and false positives:37
+
+For length >= 190 and energy <= 0.3 true positives:79 and false positives:62
+
+For length >= 190 and energy <= 0.35 true positives:75 and false positives:73
+
+For length >= 190 and energy <= 0.4 true positives:73 and false positives:79
+
+For length >= 190 and energy <= 0.45 true positives:73 and false positives:80
+
+For length >= 190 and energy <= 0.5 true positives:73 and false positives:80
+
+For length >= 190 and energy <= 0.55 true positives:73 and false positives:80
+
+For length >= 190 and energy <= 0.6 true positives:73 and false positives:80
+
+For length >= 195 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 195 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 195 and energy <= 0.1 true positives:98 and false positives:3
+
+For length >= 195 and energy <= 0.15 true positives:97 and false positives:7
+
+For length >= 195 and energy <= 0.2 true positives:94 and false positives:16
+
+For length >= 195 and energy <= 0.25 true positives:88 and false positives:36
+
+For length >= 195 and energy <= 0.3 true positives:80 and false positives:59
+
+For length >= 195 and energy <= 0.35 true positives:77 and false positives:70
+
+For length >= 195 and energy <= 0.4 true positives:75 and false positives:76
+
+For length >= 195 and energy <= 0.45 true positives:74 and false positives:77
+
+For length >= 195 and energy <= 0.5 true positives:74 and false positives:77
+
+For length >= 195 and energy <= 0.55 true positives:74 and false positives:77
+
+For length >= 195 and energy <= 0.6 true positives:74 and false positives:77
+
+For length >= 200 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 200 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 200 and energy <= 0.1 true positives:99 and false positives:2
+
+For length >= 200 and energy <= 0.15 true positives:97 and false positives:6
+
+For length >= 200 and energy <= 0.2 true positives:95 and false positives:15
+
+For length >= 200 and energy <= 0.25 true positives:88 and false positives:34
+
+For length >= 200 and energy <= 0.3 true positives:81 and false positives:57
+
+For length >= 200 and energy <= 0.35 true positives:77 and false positives:67
+
+For length >= 200 and energy <= 0.4 true positives:75 and false positives:73
+
+For length >= 200 and energy <= 0.45 true positives:75 and false positives:74
+
+For length >= 200 and energy <= 0.5 true positives:75 and false positives:74
+
+For length >= 200 and energy <= 0.55 true positives:75 and false positives:74
+
+For length >= 200 and energy <= 0.6 true positives:75 and false positives:74
+
+For length >= 205 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 205 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 205 and energy <= 0.1 true positives:99 and false positives:2
+
+For length >= 205 and energy <= 0.15 true positives:97 and false positives:6
+
+For length >= 205 and energy <= 0.2 true positives:95 and false positives:14
+
+For length >= 205 and energy <= 0.25 true positives:89 and false positives:33
+
+For length >= 205 and energy <= 0.3 true positives:81 and false positives:55
+
+For length >= 205 and energy <= 0.35 true positives:78 and false positives:65
+
+For length >= 205 and energy <= 0.4 true positives:77 and false positives:70
+
+For length >= 205 and energy <= 0.45 true positives:76 and false positives:71
+
+For length >= 205 and energy <= 0.5 true positives:76 and false positives:71
+
+For length >= 205 and energy <= 0.55 true positives:76 and false positives:71
+
+For length >= 205 and energy <= 0.6 true positives:76 and false positives:71
+
+For length >= 210 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 210 and energy <= 0.05 true positives:99 and false positives:0
+
+For length >= 210 and energy <= 0.1 true positives:99 and false positives:2
+
+For length >= 210 and energy <= 0.15 true positives:97 and false positives:6
+
+For length >= 210 and energy <= 0.2 true positives:95 and false positives:14
+
+For length >= 210 and energy <= 0.25 true positives:90 and false positives:30
+
+For length >= 210 and energy <= 0.3 true positives:82 and false positives:52
+
+For length >= 210 and energy <= 0.35 true positives:80 and false positives:61
+
+For length >= 210 and energy <= 0.4 true positives:78 and false positives:66
+
+For length >= 210 and energy <= 0.45 true positives:78 and false positives:66
+
+For length >= 210 and energy <= 0.5 true positives:78 and false positives:66
+
+For length >= 210 and energy <= 0.55 true positives:78 and false positives:66
+
+For length >= 210 and energy <= 0.6 true positives:78 and false positives:66
+
+For length >= 215 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 215 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 215 and energy <= 0.1 true positives:99 and false positives:2
+
+For length >= 215 and energy <= 0.15 true positives:98 and false positives:5
+
+For length >= 215 and energy <= 0.2 true positives:95 and false positives:13
+
+For length >= 215 and energy <= 0.25 true positives:90 and false positives:27
+
+For length >= 215 and energy <= 0.3 true positives:84 and false positives:47
+
+For length >= 215 and energy <= 0.35 true positives:81 and false positives:56
+
+For length >= 215 and energy <= 0.4 true positives:80 and false positives:61
+
+For length >= 215 and energy <= 0.45 true positives:79 and false positives:62
+
+For length >= 215 and energy <= 0.5 true positives:79 and false positives:62
+
+For length >= 215 and energy <= 0.55 true positives:79 and false positives:62
+
+For length >= 215 and energy <= 0.6 true positives:79 and false positives:62
+
+For length >= 220 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 220 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 220 and energy <= 0.1 true positives:99 and false positives:1
+
+For length >= 220 and energy <= 0.15 true positives:98 and false positives:5
+
+For length >= 220 and energy <= 0.2 true positives:95 and false positives:12
+
+For length >= 220 and energy <= 0.25 true positives:91 and false positives:26
+
+For length >= 220 and energy <= 0.3 true positives:85 and false positives:45
+
+For length >= 220 and energy <= 0.35 true positives:82 and false positives:53
+
+For length >= 220 and energy <= 0.4 true positives:81 and false positives:57
+
+For length >= 220 and energy <= 0.45 true positives:80 and false positives:58
+
+For length >= 220 and energy <= 0.5 true positives:80 and false positives:58
+
+For length >= 220 and energy <= 0.55 true positives:80 and false positives:58
+
+For length >= 220 and energy <= 0.6 true positives:80 and false positives:58
+
+For length >= 225 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 225 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 225 and energy <= 0.1 true positives:99 and false positives:1
+
+For length >= 225 and energy <= 0.15 true positives:98 and false positives:5
+
+For length >= 225 and energy <= 0.2 true positives:95 and false positives:12
+
+For length >= 225 and energy <= 0.25 true positives:91 and false positives:25
+
+For length >= 225 and energy <= 0.3 true positives:86 and false positives:41
+
+For length >= 225 and energy <= 0.35 true positives:83 and false positives:49
+
+For length >= 225 and energy <= 0.4 true positives:82 and false positives:53
+
+For length >= 225 and energy <= 0.45 true positives:82 and false positives:54
+
+For length >= 225 and energy <= 0.5 true positives:82 and false positives:54
+
+For length >= 225 and energy <= 0.55 true positives:82 and false positives:54
+
+For length >= 225 and energy <= 0.6 true positives:82 and false positives:54
+
+For length >= 230 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 230 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 230 and energy <= 0.1 true positives:99 and false positives:1
+
+For length >= 230 and energy <= 0.15 true positives:98 and false positives:4
+
+For length >= 230 and energy <= 0.2 true positives:96 and false positives:11
+
+For length >= 230 and energy <= 0.25 true positives:92 and false positives:24
+
+For length >= 230 and energy <= 0.3 true positives:87 and false positives:39
+
+For length >= 230 and energy <= 0.35 true positives:85 and false positives:45
+
+For length >= 230 and energy <= 0.4 true positives:83 and false positives:49
+
+For length >= 230 and energy <= 0.45 true positives:83 and false positives:50
+
+For length >= 230 and energy <= 0.5 true positives:83 and false positives:50
+
+For length >= 230 and energy <= 0.55 true positives:83 and false positives:50
+
+For length >= 230 and energy <= 0.6 true positives:83 and false positives:50
+
+For length >= 235 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 235 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 235 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 235 and energy <= 0.15 true positives:98 and false positives:4
+
+For length >= 235 and energy <= 0.2 true positives:96 and false positives:11
+
+For length >= 235 and energy <= 0.25 true positives:92 and false positives:23
+
+For length >= 235 and energy <= 0.3 true positives:87 and false positives:38
+
+For length >= 235 and energy <= 0.35 true positives:85 and false positives:45
+
+For length >= 235 and energy <= 0.4 true positives:84 and false positives:48
+
+For length >= 235 and energy <= 0.45 true positives:83 and false positives:49
+
+For length >= 235 and energy <= 0.5 true positives:83 and false positives:49
+
+For length >= 235 and energy <= 0.55 true positives:83 and false positives:49
+
+For length >= 235 and energy <= 0.6 true positives:83 and false positives:49
+
+For length >= 240 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 240 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 240 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 240 and energy <= 0.15 true positives:98 and false positives:3
+
+For length >= 240 and energy <= 0.2 true positives:96 and false positives:11
+
+For length >= 240 and energy <= 0.25 true positives:92 and false positives:22
+
+For length >= 240 and energy <= 0.3 true positives:87 and false positives:37
+
+For length >= 240 and energy <= 0.35 true positives:85 and false positives:44
+
+For length >= 240 and energy <= 0.4 true positives:84 and false positives:47
+
+For length >= 240 and energy <= 0.45 true positives:84 and false positives:47
+
+For length >= 240 and energy <= 0.5 true positives:84 and false positives:47
+
+For length >= 240 and energy <= 0.55 true positives:84 and false positives:47
+
+For length >= 240 and energy <= 0.6 true positives:84 and false positives:47
+
+For length >= 245 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 245 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 245 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 245 and energy <= 0.15 true positives:98 and false positives:3
+
+For length >= 245 and energy <= 0.2 true positives:96 and false positives:11
+
+For length >= 245 and energy <= 0.25 true positives:92 and false positives:22
+
+For length >= 245 and energy <= 0.3 true positives:88 and false positives:36
+
+For length >= 245 and energy <= 0.35 true positives:85 and false positives:43
+
+For length >= 245 and energy <= 0.4 true positives:85 and false positives:45
+
+For length >= 245 and energy <= 0.45 true positives:85 and false positives:45
+
+For length >= 245 and energy <= 0.5 true positives:85 and false positives:45
+
+For length >= 245 and energy <= 0.55 true positives:85 and false positives:45
+
+For length >= 245 and energy <= 0.6 true positives:85 and false positives:45
+
+For length >= 250 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 250 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 250 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 250 and energy <= 0.15 true positives:98 and false positives:3
+
+For length >= 250 and energy <= 0.2 true positives:96 and false positives:11
+
+For length >= 250 and energy <= 0.25 true positives:92 and false positives:22
+
+For length >= 250 and energy <= 0.3 true positives:88 and false positives:36
+
+For length >= 250 and energy <= 0.35 true positives:86 and false positives:42
+
+For length >= 250 and energy <= 0.4 true positives:85 and false positives:44
+
+For length >= 250 and energy <= 0.45 true positives:85 and false positives:44
+
+For length >= 250 and energy <= 0.5 true positives:85 and false positives:44
+
+For length >= 250 and energy <= 0.55 true positives:85 and false positives:44
+
+For length >= 250 and energy <= 0.6 true positives:85 and false positives:44
+
+For length >= 255 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 255 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 255 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 255 and energy <= 0.15 true positives:98 and false positives:3
+
+For length >= 255 and energy <= 0.2 true positives:96 and false positives:10
+
+For length >= 255 and energy <= 0.25 true positives:92 and false positives:22
+
+For length >= 255 and energy <= 0.3 true positives:88 and false positives:35
+
+For length >= 255 and energy <= 0.35 true positives:86 and false positives:41
+
+For length >= 255 and energy <= 0.4 true positives:85 and false positives:43
+
+For length >= 255 and energy <= 0.45 true positives:85 and false positives:43
+
+For length >= 255 and energy <= 0.5 true positives:85 and false positives:43
+
+For length >= 255 and energy <= 0.55 true positives:85 and false positives:43
+
+For length >= 255 and energy <= 0.6 true positives:85 and false positives:43
+
+For length >= 260 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 260 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 260 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 260 and energy <= 0.15 true positives:98 and false positives:3
+
+For length >= 260 and energy <= 0.2 true positives:96 and false positives:10
+
+For length >= 260 and energy <= 0.25 true positives:93 and false positives:21
+
+For length >= 260 and energy <= 0.3 true positives:88 and false positives:33
+
+For length >= 260 and energy <= 0.35 true positives:87 and false positives:39
+
+For length >= 260 and energy <= 0.4 true positives:86 and false positives:41
+
+For length >= 260 and energy <= 0.45 true positives:86 and false positives:41
+
+For length >= 260 and energy <= 0.5 true positives:86 and false positives:41
+
+For length >= 260 and energy <= 0.55 true positives:86 and false positives:41
+
+For length >= 260 and energy <= 0.6 true positives:86 and false positives:41
+
+For length >= 265 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 265 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 265 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 265 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 265 and energy <= 0.2 true positives:96 and false positives:9
+
+For length >= 265 and energy <= 0.25 true positives:93 and false positives:18
+
+For length >= 265 and energy <= 0.3 true positives:90 and false positives:30
+
+For length >= 265 and energy <= 0.35 true positives:88 and false positives:35
+
+For length >= 265 and energy <= 0.4 true positives:87 and false positives:37
+
+For length >= 265 and energy <= 0.45 true positives:87 and false positives:37
+
+For length >= 265 and energy <= 0.5 true positives:87 and false positives:37
+
+For length >= 265 and energy <= 0.55 true positives:87 and false positives:37
+
+For length >= 265 and energy <= 0.6 true positives:87 and false positives:37
+
+For length >= 270 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 270 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 270 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 270 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 270 and energy <= 0.2 true positives:96 and false positives:9
+
+For length >= 270 and energy <= 0.25 true positives:93 and false positives:18
+
+For length >= 270 and energy <= 0.3 true positives:90 and false positives:30
+
+For length >= 270 and energy <= 0.35 true positives:88 and false positives:34
+
+For length >= 270 and energy <= 0.4 true positives:87 and false positives:37
+
+For length >= 270 and energy <= 0.45 true positives:87 and false positives:37
+
+For length >= 270 and energy <= 0.5 true positives:87 and false positives:37
+
+For length >= 270 and energy <= 0.55 true positives:87 and false positives:37
+
+For length >= 270 and energy <= 0.6 true positives:87 and false positives:37
+
+For length >= 275 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 275 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 275 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 275 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 275 and energy <= 0.2 true positives:96 and false positives:9
+
+For length >= 275 and energy <= 0.25 true positives:94 and false positives:18
+
+For length >= 275 and energy <= 0.3 true positives:90 and false positives:29
+
+For length >= 275 and energy <= 0.35 true positives:89 and false positives:33
+
+For length >= 275 and energy <= 0.4 true positives:88 and false positives:35
+
+For length >= 275 and energy <= 0.45 true positives:88 and false positives:35
+
+For length >= 275 and energy <= 0.5 true positives:88 and false positives:35
+
+For length >= 275 and energy <= 0.55 true positives:88 and false positives:35
+
+For length >= 275 and energy <= 0.6 true positives:88 and false positives:35
+
+For length >= 280 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 280 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 280 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 280 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 280 and energy <= 0.2 true positives:96 and false positives:9
+
+For length >= 280 and energy <= 0.25 true positives:94 and false positives:17
+
+For length >= 280 and energy <= 0.3 true positives:90 and false positives:28
+
+For length >= 280 and energy <= 0.35 true positives:89 and false positives:33
+
+For length >= 280 and energy <= 0.4 true positives:88 and false positives:34
+
+For length >= 280 and energy <= 0.45 true positives:88 and false positives:34
+
+For length >= 280 and energy <= 0.5 true positives:88 and false positives:34
+
+For length >= 280 and energy <= 0.55 true positives:88 and false positives:34
+
+For length >= 280 and energy <= 0.6 true positives:88 and false positives:34
+
+For length >= 285 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 285 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 285 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 285 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 285 and energy <= 0.2 true positives:97 and false positives:9
+
+For length >= 285 and energy <= 0.25 true positives:94 and false positives:16
+
+For length >= 285 and energy <= 0.3 true positives:91 and false positives:27
+
+For length >= 285 and energy <= 0.35 true positives:89 and false positives:31
+
+For length >= 285 and energy <= 0.4 true positives:89 and false positives:32
+
+For length >= 285 and energy <= 0.45 true positives:89 and false positives:32
+
+For length >= 285 and energy <= 0.5 true positives:89 and false positives:32
+
+For length >= 285 and energy <= 0.55 true positives:89 and false positives:32
+
+For length >= 285 and energy <= 0.6 true positives:89 and false positives:32
+
+For length >= 290 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 290 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 290 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 290 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 290 and energy <= 0.2 true positives:97 and false positives:8
+
+For length >= 290 and energy <= 0.25 true positives:95 and false positives:15
+
+For length >= 290 and energy <= 0.3 true positives:91 and false positives:25
+
+For length >= 290 and energy <= 0.35 true positives:90 and false positives:29
+
+For length >= 290 and energy <= 0.4 true positives:90 and false positives:30
+
+For length >= 290 and energy <= 0.45 true positives:90 and false positives:30
+
+For length >= 290 and energy <= 0.5 true positives:90 and false positives:30
+
+For length >= 290 and energy <= 0.55 true positives:90 and false positives:30
+
+For length >= 290 and energy <= 0.6 true positives:90 and false positives:30
+
+For length >= 295 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 295 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 295 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 295 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 295 and energy <= 0.2 true positives:97 and false positives:8
+
+For length >= 295 and energy <= 0.25 true positives:95 and false positives:13
+
+For length >= 295 and energy <= 0.3 true positives:92 and false positives:23
+
+For length >= 295 and energy <= 0.35 true positives:91 and false positives:27
+
+For length >= 295 and energy <= 0.4 true positives:90 and false positives:28
+
+For length >= 295 and energy <= 0.45 true positives:90 and false positives:28
+
+For length >= 295 and energy <= 0.5 true positives:90 and false positives:28
+
+For length >= 295 and energy <= 0.55 true positives:90 and false positives:28
+
+For length >= 295 and energy <= 0.6 true positives:90 and false positives:28
+
+For length >= 300 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 300 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 300 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 300 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 300 and energy <= 0.2 true positives:97 and false positives:8
+
+For length >= 300 and energy <= 0.25 true positives:95 and false positives:13
+
+For length >= 300 and energy <= 0.3 true positives:92 and false positives:22
+
+For length >= 300 and energy <= 0.35 true positives:91 and false positives:26
+
+For length >= 300 and energy <= 0.4 true positives:90 and false positives:27
+
+For length >= 300 and energy <= 0.45 true positives:90 and false positives:27
+
+For length >= 300 and energy <= 0.5 true positives:90 and false positives:27
+
+For length >= 300 and energy <= 0.55 true positives:90 and false positives:27
+
+For length >= 300 and energy <= 0.6 true positives:90 and false positives:27
+
+For length >= 305 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 305 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 305 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 305 and energy <= 0.15 true positives:99 and false positives:2
+
+For length >= 305 and energy <= 0.2 true positives:97 and false positives:7
+
+For length >= 305 and energy <= 0.25 true positives:95 and false positives:13
+
+For length >= 305 and energy <= 0.3 true positives:92 and false positives:22
+
+For length >= 305 and energy <= 0.35 true positives:91 and false positives:25
+
+For length >= 305 and energy <= 0.4 true positives:91 and false positives:26
+
+For length >= 305 and energy <= 0.45 true positives:91 and false positives:26
+
+For length >= 305 and energy <= 0.5 true positives:91 and false positives:26
+
+For length >= 305 and energy <= 0.55 true positives:91 and false positives:26
+
+For length >= 305 and energy <= 0.6 true positives:91 and false positives:26
+
+For length >= 310 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 310 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 310 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 310 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 310 and energy <= 0.2 true positives:97 and false positives:6
+
+For length >= 310 and energy <= 0.25 true positives:95 and false positives:12
+
+For length >= 310 and energy <= 0.3 true positives:93 and false positives:21
+
+For length >= 310 and energy <= 0.35 true positives:92 and false positives:23
+
+For length >= 310 and energy <= 0.4 true positives:91 and false positives:24
+
+For length >= 310 and energy <= 0.45 true positives:91 and false positives:24
+
+For length >= 310 and energy <= 0.5 true positives:91 and false positives:24
+
+For length >= 310 and energy <= 0.55 true positives:91 and false positives:24
+
+For length >= 310 and energy <= 0.6 true positives:91 and false positives:24
+
+For length >= 315 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 315 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 315 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 315 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 315 and energy <= 0.2 true positives:97 and false positives:6
+
+For length >= 315 and energy <= 0.25 true positives:96 and false positives:11
+
+For length >= 315 and energy <= 0.3 true positives:93 and false positives:20
+
+For length >= 315 and energy <= 0.35 true positives:92 and false positives:22
+
+For length >= 315 and energy <= 0.4 true positives:92 and false positives:23
+
+For length >= 315 and energy <= 0.45 true positives:92 and false positives:23
+
+For length >= 315 and energy <= 0.5 true positives:92 and false positives:23
+
+For length >= 315 and energy <= 0.55 true positives:92 and false positives:23
+
+For length >= 315 and energy <= 0.6 true positives:92 and false positives:23
+
+For length >= 320 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 320 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 320 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 320 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 320 and energy <= 0.2 true positives:97 and false positives:6
+
+For length >= 320 and energy <= 0.25 true positives:96 and false positives:11
+
+For length >= 320 and energy <= 0.3 true positives:93 and false positives:19
+
+For length >= 320 and energy <= 0.35 true positives:92 and false positives:21
+
+For length >= 320 and energy <= 0.4 true positives:92 and false positives:22
+
+For length >= 320 and energy <= 0.45 true positives:92 and false positives:22
+
+For length >= 320 and energy <= 0.5 true positives:92 and false positives:22
+
+For length >= 320 and energy <= 0.55 true positives:92 and false positives:22
+
+For length >= 320 and energy <= 0.6 true positives:92 and false positives:22
+
+For length >= 325 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 325 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 325 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 325 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 325 and energy <= 0.2 true positives:97 and false positives:6
+
+For length >= 325 and energy <= 0.25 true positives:96 and false positives:11
+
+For length >= 325 and energy <= 0.3 true positives:93 and false positives:19
+
+For length >= 325 and energy <= 0.35 true positives:93 and false positives:21
+
+For length >= 325 and energy <= 0.4 true positives:92 and false positives:22
+
+For length >= 325 and energy <= 0.45 true positives:92 and false positives:22
+
+For length >= 325 and energy <= 0.5 true positives:92 and false positives:22
+
+For length >= 325 and energy <= 0.55 true positives:92 and false positives:22
+
+For length >= 325 and energy <= 0.6 true positives:92 and false positives:22
+
+For length >= 330 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 330 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 330 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 330 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 330 and energy <= 0.2 true positives:97 and false positives:6
+
+For length >= 330 and energy <= 0.25 true positives:96 and false positives:11
+
+For length >= 330 and energy <= 0.3 true positives:93 and false positives:19
+
+For length >= 330 and energy <= 0.35 true positives:93 and false positives:20
+
+For length >= 330 and energy <= 0.4 true positives:92 and false positives:21
+
+For length >= 330 and energy <= 0.45 true positives:92 and false positives:21
+
+For length >= 330 and energy <= 0.5 true positives:92 and false positives:21
+
+For length >= 330 and energy <= 0.55 true positives:92 and false positives:21
+
+For length >= 330 and energy <= 0.6 true positives:92 and false positives:21
+
+For length >= 335 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 335 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 335 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 335 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 335 and energy <= 0.2 true positives:98 and false positives:5
+
+For length >= 335 and energy <= 0.25 true positives:96 and false positives:11
+
+For length >= 335 and energy <= 0.3 true positives:94 and false positives:17
+
+For length >= 335 and energy <= 0.35 true positives:93 and false positives:19
+
+For length >= 335 and energy <= 0.4 true positives:93 and false positives:20
+
+For length >= 335 and energy <= 0.45 true positives:93 and false positives:20
+
+For length >= 335 and energy <= 0.5 true positives:93 and false positives:20
+
+For length >= 335 and energy <= 0.55 true positives:93 and false positives:20
+
+For length >= 335 and energy <= 0.6 true positives:93 and false positives:20
+
+For length >= 340 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 340 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 340 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 340 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 340 and energy <= 0.2 true positives:98 and false positives:5
+
+For length >= 340 and energy <= 0.25 true positives:96 and false positives:9
+
+For length >= 340 and energy <= 0.3 true positives:94 and false positives:16
+
+For length >= 340 and energy <= 0.35 true positives:94 and false positives:17
+
+For length >= 340 and energy <= 0.4 true positives:93 and false positives:18
+
+For length >= 340 and energy <= 0.45 true positives:93 and false positives:18
+
+For length >= 340 and energy <= 0.5 true positives:93 and false positives:18
+
+For length >= 340 and energy <= 0.55 true positives:93 and false positives:18
+
+For length >= 340 and energy <= 0.6 true positives:93 and false positives:18
+
+For length >= 345 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 345 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 345 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 345 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 345 and energy <= 0.2 true positives:98 and false positives:5
+
+For length >= 345 and energy <= 0.25 true positives:97 and false positives:9
+
+For length >= 345 and energy <= 0.3 true positives:94 and false positives:15
+
+For length >= 345 and energy <= 0.35 true positives:94 and false positives:17
+
+For length >= 345 and energy <= 0.4 true positives:94 and false positives:17
+
+For length >= 345 and energy <= 0.45 true positives:94 and false positives:17
+
+For length >= 345 and energy <= 0.5 true positives:94 and false positives:17
+
+For length >= 345 and energy <= 0.55 true positives:94 and false positives:17
+
+For length >= 345 and energy <= 0.6 true positives:94 and false positives:17
+
+For length >= 350 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 350 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 350 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 350 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 350 and energy <= 0.2 true positives:98 and false positives:5
+
+For length >= 350 and energy <= 0.25 true positives:97 and false positives:8
+
+For length >= 350 and energy <= 0.3 true positives:95 and false positives:15
+
+For length >= 350 and energy <= 0.35 true positives:94 and false positives:15
+
+For length >= 350 and energy <= 0.4 true positives:94 and false positives:16
+
+For length >= 350 and energy <= 0.45 true positives:94 and false positives:16
+
+For length >= 350 and energy <= 0.5 true positives:94 and false positives:16
+
+For length >= 350 and energy <= 0.55 true positives:94 and false positives:16
+
+For length >= 350 and energy <= 0.6 true positives:94 and false positives:16
+
+For length >= 355 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 355 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 355 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 355 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 355 and energy <= 0.2 true positives:98 and false positives:5
+
+For length >= 355 and energy <= 0.25 true positives:97 and false positives:8
+
+For length >= 355 and energy <= 0.3 true positives:95 and false positives:14
+
+For length >= 355 and energy <= 0.35 true positives:95 and false positives:14
+
+For length >= 355 and energy <= 0.4 true positives:95 and false positives:15
+
+For length >= 355 and energy <= 0.45 true positives:95 and false positives:15
+
+For length >= 355 and energy <= 0.5 true positives:95 and false positives:15
+
+For length >= 355 and energy <= 0.55 true positives:95 and false positives:15
+
+For length >= 355 and energy <= 0.6 true positives:95 and false positives:15
+
+For length >= 360 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 360 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 360 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 360 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 360 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 360 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 360 and energy <= 0.3 true positives:95 and false positives:13
+
+For length >= 360 and energy <= 0.35 true positives:95 and false positives:14
+
+For length >= 360 and energy <= 0.4 true positives:95 and false positives:14
+
+For length >= 360 and energy <= 0.45 true positives:95 and false positives:14
+
+For length >= 360 and energy <= 0.5 true positives:95 and false positives:14
+
+For length >= 360 and energy <= 0.55 true positives:95 and false positives:14
+
+For length >= 360 and energy <= 0.6 true positives:95 and false positives:14
+
+For length >= 365 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 365 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 365 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 365 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 365 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 365 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 365 and energy <= 0.3 true positives:95 and false positives:13
+
+For length >= 365 and energy <= 0.35 true positives:95 and false positives:13
+
+For length >= 365 and energy <= 0.4 true positives:95 and false positives:14
+
+For length >= 365 and energy <= 0.45 true positives:95 and false positives:14
+
+For length >= 365 and energy <= 0.5 true positives:95 and false positives:14
+
+For length >= 365 and energy <= 0.55 true positives:95 and false positives:14
+
+For length >= 365 and energy <= 0.6 true positives:95 and false positives:14
+
+For length >= 370 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 370 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 370 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 370 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 370 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 370 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 370 and energy <= 0.3 true positives:95 and false positives:12
+
+For length >= 370 and energy <= 0.35 true positives:95 and false positives:13
+
+For length >= 370 and energy <= 0.4 true positives:95 and false positives:13
+
+For length >= 370 and energy <= 0.45 true positives:95 and false positives:13
+
+For length >= 370 and energy <= 0.5 true positives:95 and false positives:13
+
+For length >= 370 and energy <= 0.55 true positives:95 and false positives:13
+
+For length >= 370 and energy <= 0.6 true positives:95 and false positives:13
+
+For length >= 375 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 375 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 375 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 375 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 375 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 375 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 375 and energy <= 0.3 true positives:95 and false positives:12
+
+For length >= 375 and energy <= 0.35 true positives:95 and false positives:12
+
+For length >= 375 and energy <= 0.4 true positives:95 and false positives:12
+
+For length >= 375 and energy <= 0.45 true positives:95 and false positives:12
+
+For length >= 375 and energy <= 0.5 true positives:95 and false positives:12
+
+For length >= 375 and energy <= 0.55 true positives:95 and false positives:12
+
+For length >= 375 and energy <= 0.6 true positives:95 and false positives:12
+
+For length >= 380 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 380 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 380 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 380 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 380 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 380 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 380 and energy <= 0.3 true positives:96 and false positives:11
+
+For length >= 380 and energy <= 0.35 true positives:95 and false positives:12
+
+For length >= 380 and energy <= 0.4 true positives:95 and false positives:12
+
+For length >= 380 and energy <= 0.45 true positives:95 and false positives:12
+
+For length >= 380 and energy <= 0.5 true positives:95 and false positives:12
+
+For length >= 380 and energy <= 0.55 true positives:95 and false positives:12
+
+For length >= 380 and energy <= 0.6 true positives:95 and false positives:12
+
+For length >= 385 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 385 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 385 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 385 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 385 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 385 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 385 and energy <= 0.3 true positives:96 and false positives:11
+
+For length >= 385 and energy <= 0.35 true positives:95 and false positives:12
+
+For length >= 385 and energy <= 0.4 true positives:95 and false positives:12
+
+For length >= 385 and energy <= 0.45 true positives:95 and false positives:12
+
+For length >= 385 and energy <= 0.5 true positives:95 and false positives:12
+
+For length >= 385 and energy <= 0.55 true positives:95 and false positives:12
+
+For length >= 385 and energy <= 0.6 true positives:95 and false positives:12
+
+For length >= 390 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 390 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 390 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 390 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 390 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 390 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 390 and energy <= 0.3 true positives:96 and false positives:11
+
+For length >= 390 and energy <= 0.35 true positives:95 and false positives:12
+
+For length >= 390 and energy <= 0.4 true positives:95 and false positives:12
+
+For length >= 390 and energy <= 0.45 true positives:95 and false positives:12
+
+For length >= 390 and energy <= 0.5 true positives:95 and false positives:12
+
+For length >= 390 and energy <= 0.55 true positives:95 and false positives:12
+
+For length >= 390 and energy <= 0.6 true positives:95 and false positives:12
+
+For length >= 395 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 395 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 395 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 395 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 395 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 395 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 395 and energy <= 0.3 true positives:96 and false positives:11
+
+For length >= 395 and energy <= 0.35 true positives:95 and false positives:12
+
+For length >= 395 and energy <= 0.4 true positives:95 and false positives:12
+
+For length >= 395 and energy <= 0.45 true positives:95 and false positives:12
+
+For length >= 395 and energy <= 0.5 true positives:95 and false positives:12
+
+For length >= 395 and energy <= 0.55 true positives:95 and false positives:12
+
+For length >= 395 and energy <= 0.6 true positives:95 and false positives:12
+
+For length >= 400 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 400 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 400 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 400 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 400 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 400 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 400 and energy <= 0.3 true positives:96 and false positives:11
+
+For length >= 400 and energy <= 0.35 true positives:95 and false positives:12
+
+For length >= 400 and energy <= 0.4 true positives:95 and false positives:12
+
+For length >= 400 and energy <= 0.45 true positives:95 and false positives:12
+
+For length >= 400 and energy <= 0.5 true positives:95 and false positives:12
+
+For length >= 400 and energy <= 0.55 true positives:95 and false positives:12
+
+For length >= 400 and energy <= 0.6 true positives:95 and false positives:12
+
+For length >= 405 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 405 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 405 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 405 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 405 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 405 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 405 and energy <= 0.3 true positives:96 and false positives:11
+
+For length >= 405 and energy <= 0.35 true positives:96 and false positives:11
+
+For length >= 405 and energy <= 0.4 true positives:96 and false positives:11
+
+For length >= 405 and energy <= 0.45 true positives:96 and false positives:11
+
+For length >= 405 and energy <= 0.5 true positives:96 and false positives:11
+
+For length >= 405 and energy <= 0.55 true positives:96 and false positives:11
+
+For length >= 405 and energy <= 0.6 true positives:96 and false positives:11
+
+For length >= 410 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 410 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 410 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 410 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 410 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 410 and energy <= 0.25 true positives:97 and false positives:7
+
+For length >= 410 and energy <= 0.3 true positives:96 and false positives:10
+
+For length >= 410 and energy <= 0.35 true positives:96 and false positives:11
+
+For length >= 410 and energy <= 0.4 true positives:96 and false positives:11
+
+For length >= 410 and energy <= 0.45 true positives:96 and false positives:11
+
+For length >= 410 and energy <= 0.5 true positives:96 and false positives:11
+
+For length >= 410 and energy <= 0.55 true positives:96 and false positives:11
+
+For length >= 410 and energy <= 0.6 true positives:96 and false positives:11
+
+For length >= 415 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 415 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 415 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 415 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 415 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 415 and energy <= 0.25 true positives:97 and false positives:6
+
+For length >= 415 and energy <= 0.3 true positives:96 and false positives:9
+
+For length >= 415 and energy <= 0.35 true positives:96 and false positives:10
+
+For length >= 415 and energy <= 0.4 true positives:96 and false positives:10
+
+For length >= 415 and energy <= 0.45 true positives:96 and false positives:10
+
+For length >= 415 and energy <= 0.5 true positives:96 and false positives:10
+
+For length >= 415 and energy <= 0.55 true positives:96 and false positives:10
+
+For length >= 415 and energy <= 0.6 true positives:96 and false positives:10
+
+For length >= 420 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 420 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 420 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 420 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 420 and energy <= 0.2 true positives:98 and false positives:4
+
+For length >= 420 and energy <= 0.25 true positives:97 and false positives:6
+
+For length >= 420 and energy <= 0.3 true positives:96 and false positives:9
+
+For length >= 420 and energy <= 0.35 true positives:96 and false positives:10
+
+For length >= 420 and energy <= 0.4 true positives:96 and false positives:10
+
+For length >= 420 and energy <= 0.45 true positives:96 and false positives:10
+
+For length >= 420 and energy <= 0.5 true positives:96 and false positives:10
+
+For length >= 420 and energy <= 0.55 true positives:96 and false positives:10
+
+For length >= 420 and energy <= 0.6 true positives:96 and false positives:10
+
+For length >= 425 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 425 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 425 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 425 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 425 and energy <= 0.2 true positives:98 and false positives:3
+
+For length >= 425 and energy <= 0.25 true positives:97 and false positives:6
+
+For length >= 425 and energy <= 0.3 true positives:97 and false positives:9
+
+For length >= 425 and energy <= 0.35 true positives:96 and false positives:9
+
+For length >= 425 and energy <= 0.4 true positives:96 and false positives:9
+
+For length >= 425 and energy <= 0.45 true positives:96 and false positives:9
+
+For length >= 425 and energy <= 0.5 true positives:96 and false positives:9
+
+For length >= 425 and energy <= 0.55 true positives:96 and false positives:9
+
+For length >= 425 and energy <= 0.6 true positives:96 and false positives:9
+
+For length >= 430 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 430 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 430 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 430 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 430 and energy <= 0.2 true positives:98 and false positives:3
+
+For length >= 430 and energy <= 0.25 true positives:97 and false positives:6
+
+For length >= 430 and energy <= 0.3 true positives:97 and false positives:9
+
+For length >= 430 and energy <= 0.35 true positives:96 and false positives:9
+
+For length >= 430 and energy <= 0.4 true positives:96 and false positives:9
+
+For length >= 430 and energy <= 0.45 true positives:96 and false positives:9
+
+For length >= 430 and energy <= 0.5 true positives:96 and false positives:9
+
+For length >= 430 and energy <= 0.55 true positives:96 and false positives:9
+
+For length >= 430 and energy <= 0.6 true positives:96 and false positives:9
+
+For length >= 435 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 435 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 435 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 435 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 435 and energy <= 0.2 true positives:98 and false positives:3
+
+For length >= 435 and energy <= 0.25 true positives:97 and false positives:6
+
+For length >= 435 and energy <= 0.3 true positives:97 and false positives:9
+
+For length >= 435 and energy <= 0.35 true positives:96 and false positives:9
+
+For length >= 435 and energy <= 0.4 true positives:96 and false positives:9
+
+For length >= 435 and energy <= 0.45 true positives:96 and false positives:9
+
+For length >= 435 and energy <= 0.5 true positives:96 and false positives:9
+
+For length >= 435 and energy <= 0.55 true positives:96 and false positives:9
+
+For length >= 435 and energy <= 0.6 true positives:96 and false positives:9
+
+For length >= 440 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 440 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 440 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 440 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 440 and energy <= 0.2 true positives:98 and false positives:3
+
+For length >= 440 and energy <= 0.25 true positives:98 and false positives:5
+
+For length >= 440 and energy <= 0.3 true positives:97 and false positives:7
+
+For length >= 440 and energy <= 0.35 true positives:97 and false positives:8
+
+For length >= 440 and energy <= 0.4 true positives:97 and false positives:8
+
+For length >= 440 and energy <= 0.45 true positives:97 and false positives:8
+
+For length >= 440 and energy <= 0.5 true positives:97 and false positives:8
+
+For length >= 440 and energy <= 0.55 true positives:97 and false positives:8
+
+For length >= 440 and energy <= 0.6 true positives:97 and false positives:8
+
+For length >= 445 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 445 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 445 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 445 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 445 and energy <= 0.2 true positives:98 and false positives:3
+
+For length >= 445 and energy <= 0.25 true positives:98 and false positives:5
+
+For length >= 445 and energy <= 0.3 true positives:97 and false positives:7
+
+For length >= 445 and energy <= 0.35 true positives:97 and false positives:8
+
+For length >= 445 and energy <= 0.4 true positives:97 and false positives:8
+
+For length >= 445 and energy <= 0.45 true positives:97 and false positives:8
+
+For length >= 445 and energy <= 0.5 true positives:97 and false positives:8
+
+For length >= 445 and energy <= 0.55 true positives:97 and false positives:8
+
+For length >= 445 and energy <= 0.6 true positives:97 and false positives:8
+
+For length >= 450 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 450 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 450 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 450 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 450 and energy <= 0.2 true positives:98 and false positives:3
+
+For length >= 450 and energy <= 0.25 true positives:98 and false positives:5
+
+For length >= 450 and energy <= 0.3 true positives:97 and false positives:7
+
+For length >= 450 and energy <= 0.35 true positives:97 and false positives:8
+
+For length >= 450 and energy <= 0.4 true positives:97 and false positives:8
+
+For length >= 450 and energy <= 0.45 true positives:97 and false positives:8
+
+For length >= 450 and energy <= 0.5 true positives:97 and false positives:8
+
+For length >= 450 and energy <= 0.55 true positives:97 and false positives:8
+
+For length >= 450 and energy <= 0.6 true positives:97 and false positives:8
+
+For length >= 455 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 455 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 455 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 455 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 455 and energy <= 0.2 true positives:98 and false positives:3
+
+For length >= 455 and energy <= 0.25 true positives:98 and false positives:4
+
+For length >= 455 and energy <= 0.3 true positives:97 and false positives:7
+
+For length >= 455 and energy <= 0.35 true positives:97 and false positives:7
+
+For length >= 455 and energy <= 0.4 true positives:97 and false positives:7
+
+For length >= 455 and energy <= 0.45 true positives:97 and false positives:7
+
+For length >= 455 and energy <= 0.5 true positives:97 and false positives:7
+
+For length >= 455 and energy <= 0.55 true positives:97 and false positives:7
+
+For length >= 455 and energy <= 0.6 true positives:97 and false positives:7
+
+For length >= 460 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 460 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 460 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 460 and energy <= 0.15 true positives:99 and false positives:1
+
+For length >= 460 and energy <= 0.2 true positives:98 and false positives:3
+
+For length >= 460 and energy <= 0.25 true positives:98 and false positives:4
+
+For length >= 460 and energy <= 0.3 true positives:97 and false positives:7
+
+For length >= 460 and energy <= 0.35 true positives:97 and false positives:7
+
+For length >= 460 and energy <= 0.4 true positives:97 and false positives:7
+
+For length >= 460 and energy <= 0.45 true positives:97 and false positives:7
+
+For length >= 460 and energy <= 0.5 true positives:97 and false positives:7
+
+For length >= 460 and energy <= 0.55 true positives:97 and false positives:7
+
+For length >= 460 and energy <= 0.6 true positives:97 and false positives:7
+
+For length >= 465 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 465 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 465 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 465 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 465 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 465 and energy <= 0.25 true positives:98 and false positives:4
+
+For length >= 465 and energy <= 0.3 true positives:97 and false positives:6
+
+For length >= 465 and energy <= 0.35 true positives:97 and false positives:7
+
+For length >= 465 and energy <= 0.4 true positives:97 and false positives:7
+
+For length >= 465 and energy <= 0.45 true positives:97 and false positives:7
+
+For length >= 465 and energy <= 0.5 true positives:97 and false positives:7
+
+For length >= 465 and energy <= 0.55 true positives:97 and false positives:7
+
+For length >= 465 and energy <= 0.6 true positives:97 and false positives:7
+
+For length >= 470 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 470 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 470 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 470 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 470 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 470 and energy <= 0.25 true positives:98 and false positives:4
+
+For length >= 470 and energy <= 0.3 true positives:97 and false positives:6
+
+For length >= 470 and energy <= 0.35 true positives:97 and false positives:7
+
+For length >= 470 and energy <= 0.4 true positives:97 and false positives:7
+
+For length >= 470 and energy <= 0.45 true positives:97 and false positives:7
+
+For length >= 470 and energy <= 0.5 true positives:97 and false positives:7
+
+For length >= 470 and energy <= 0.55 true positives:97 and false positives:7
+
+For length >= 470 and energy <= 0.6 true positives:97 and false positives:7
+
+For length >= 475 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 475 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 475 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 475 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 475 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 475 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 475 and energy <= 0.3 true positives:97 and false positives:6
+
+For length >= 475 and energy <= 0.35 true positives:97 and false positives:6
+
+For length >= 475 and energy <= 0.4 true positives:97 and false positives:6
+
+For length >= 475 and energy <= 0.45 true positives:97 and false positives:6
+
+For length >= 475 and energy <= 0.5 true positives:97 and false positives:6
+
+For length >= 475 and energy <= 0.55 true positives:97 and false positives:6
+
+For length >= 475 and energy <= 0.6 true positives:97 and false positives:6
+
+For length >= 480 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 480 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 480 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 480 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 480 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 480 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 480 and energy <= 0.3 true positives:97 and false positives:6
+
+For length >= 480 and energy <= 0.35 true positives:97 and false positives:6
+
+For length >= 480 and energy <= 0.4 true positives:97 and false positives:6
+
+For length >= 480 and energy <= 0.45 true positives:97 and false positives:6
+
+For length >= 480 and energy <= 0.5 true positives:97 and false positives:6
+
+For length >= 480 and energy <= 0.55 true positives:97 and false positives:6
+
+For length >= 480 and energy <= 0.6 true positives:97 and false positives:6
+
+For length >= 485 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 485 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 485 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 485 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 485 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 485 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 485 and energy <= 0.3 true positives:97 and false positives:6
+
+For length >= 485 and energy <= 0.35 true positives:97 and false positives:6
+
+For length >= 485 and energy <= 0.4 true positives:97 and false positives:6
+
+For length >= 485 and energy <= 0.45 true positives:97 and false positives:6
+
+For length >= 485 and energy <= 0.5 true positives:97 and false positives:6
+
+For length >= 485 and energy <= 0.55 true positives:97 and false positives:6
+
+For length >= 485 and energy <= 0.6 true positives:97 and false positives:6
+
+For length >= 490 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 490 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 490 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 490 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 490 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 490 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 490 and energy <= 0.3 true positives:98 and false positives:5
+
+For length >= 490 and energy <= 0.35 true positives:98 and false positives:5
+
+For length >= 490 and energy <= 0.4 true positives:98 and false positives:5
+
+For length >= 490 and energy <= 0.45 true positives:98 and false positives:5
+
+For length >= 490 and energy <= 0.5 true positives:98 and false positives:5
+
+For length >= 490 and energy <= 0.55 true positives:98 and false positives:5
+
+For length >= 490 and energy <= 0.6 true positives:98 and false positives:5
+
+For length >= 495 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 495 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 495 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 495 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 495 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 495 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 495 and energy <= 0.3 true positives:98 and false positives:5
+
+For length >= 495 and energy <= 0.35 true positives:98 and false positives:5
+
+For length >= 495 and energy <= 0.4 true positives:98 and false positives:5
+
+For length >= 495 and energy <= 0.45 true positives:98 and false positives:5
+
+For length >= 495 and energy <= 0.5 true positives:98 and false positives:5
+
+For length >= 495 and energy <= 0.55 true positives:98 and false positives:5
+
+For length >= 495 and energy <= 0.6 true positives:98 and false positives:5
+
+For length >= 500 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 500 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 500 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 500 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 500 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 500 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 500 and energy <= 0.3 true positives:98 and false positives:5
+
+For length >= 500 and energy <= 0.35 true positives:98 and false positives:5
+
+For length >= 500 and energy <= 0.4 true positives:98 and false positives:5
+
+For length >= 500 and energy <= 0.45 true positives:98 and false positives:5
+
+For length >= 500 and energy <= 0.5 true positives:98 and false positives:5
+
+For length >= 500 and energy <= 0.55 true positives:98 and false positives:5
+
+For length >= 500 and energy <= 0.6 true positives:98 and false positives:5
+
+For length >= 505 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 505 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 505 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 505 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 505 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 505 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 505 and energy <= 0.3 true positives:98 and false positives:5
+
+For length >= 505 and energy <= 0.35 true positives:98 and false positives:5
+
+For length >= 505 and energy <= 0.4 true positives:98 and false positives:5
+
+For length >= 505 and energy <= 0.45 true positives:98 and false positives:5
+
+For length >= 505 and energy <= 0.5 true positives:98 and false positives:5
+
+For length >= 505 and energy <= 0.55 true positives:98 and false positives:5
+
+For length >= 505 and energy <= 0.6 true positives:98 and false positives:5
+
+For length >= 510 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 510 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 510 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 510 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 510 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 510 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 510 and energy <= 0.3 true positives:98 and false positives:5
+
+For length >= 510 and energy <= 0.35 true positives:98 and false positives:5
+
+For length >= 510 and energy <= 0.4 true positives:98 and false positives:5
+
+For length >= 510 and energy <= 0.45 true positives:98 and false positives:5
+
+For length >= 510 and energy <= 0.5 true positives:98 and false positives:5
+
+For length >= 510 and energy <= 0.55 true positives:98 and false positives:5
+
+For length >= 510 and energy <= 0.6 true positives:98 and false positives:5
+
+For length >= 515 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 515 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 515 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 515 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 515 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 515 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 515 and energy <= 0.3 true positives:98 and false positives:4
+
+For length >= 515 and energy <= 0.35 true positives:98 and false positives:4
+
+For length >= 515 and energy <= 0.4 true positives:98 and false positives:4
+
+For length >= 515 and energy <= 0.45 true positives:98 and false positives:4
+
+For length >= 515 and energy <= 0.5 true positives:98 and false positives:4
+
+For length >= 515 and energy <= 0.55 true positives:98 and false positives:4
+
+For length >= 515 and energy <= 0.6 true positives:98 and false positives:4
+
+For length >= 520 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 520 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 520 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 520 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 520 and energy <= 0.2 true positives:99 and false positives:2
+
+For length >= 520 and energy <= 0.25 true positives:98 and false positives:3
+
+For length >= 520 and energy <= 0.3 true positives:98 and false positives:4
+
+For length >= 520 and energy <= 0.35 true positives:98 and false positives:4
+
+For length >= 520 and energy <= 0.4 true positives:98 and false positives:4
+
+For length >= 520 and energy <= 0.45 true positives:98 and false positives:4
+
+For length >= 520 and energy <= 0.5 true positives:98 and false positives:4
+
+For length >= 520 and energy <= 0.55 true positives:98 and false positives:4
+
+For length >= 520 and energy <= 0.6 true positives:98 and false positives:4
+
+For length >= 525 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 525 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 525 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 525 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 525 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 525 and energy <= 0.25 true positives:99 and false positives:2
+
+For length >= 525 and energy <= 0.3 true positives:98 and false positives:3
+
+For length >= 525 and energy <= 0.35 true positives:98 and false positives:3
+
+For length >= 525 and energy <= 0.4 true positives:98 and false positives:3
+
+For length >= 525 and energy <= 0.45 true positives:98 and false positives:3
+
+For length >= 525 and energy <= 0.5 true positives:98 and false positives:3
+
+For length >= 525 and energy <= 0.55 true positives:98 and false positives:3
+
+For length >= 525 and energy <= 0.6 true positives:98 and false positives:3
+
+For length >= 530 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 530 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 530 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 530 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 530 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 530 and energy <= 0.25 true positives:99 and false positives:2
+
+For length >= 530 and energy <= 0.3 true positives:98 and false positives:3
+
+For length >= 530 and energy <= 0.35 true positives:98 and false positives:3
+
+For length >= 530 and energy <= 0.4 true positives:98 and false positives:3
+
+For length >= 530 and energy <= 0.45 true positives:98 and false positives:3
+
+For length >= 530 and energy <= 0.5 true positives:98 and false positives:3
+
+For length >= 530 and energy <= 0.55 true positives:98 and false positives:3
+
+For length >= 530 and energy <= 0.6 true positives:98 and false positives:3
+
+For length >= 535 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 535 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 535 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 535 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 535 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 535 and energy <= 0.25 true positives:99 and false positives:2
+
+For length >= 535 and energy <= 0.3 true positives:98 and false positives:3
+
+For length >= 535 and energy <= 0.35 true positives:98 and false positives:3
+
+For length >= 535 and energy <= 0.4 true positives:98 and false positives:3
+
+For length >= 535 and energy <= 0.45 true positives:98 and false positives:3
+
+For length >= 535 and energy <= 0.5 true positives:98 and false positives:3
+
+For length >= 535 and energy <= 0.55 true positives:98 and false positives:3
+
+For length >= 535 and energy <= 0.6 true positives:98 and false positives:3
+
+For length >= 540 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 540 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 540 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 540 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 540 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 540 and energy <= 0.25 true positives:99 and false positives:2
+
+For length >= 540 and energy <= 0.3 true positives:98 and false positives:3
+
+For length >= 540 and energy <= 0.35 true positives:98 and false positives:3
+
+For length >= 540 and energy <= 0.4 true positives:98 and false positives:3
+
+For length >= 540 and energy <= 0.45 true positives:98 and false positives:3
+
+For length >= 540 and energy <= 0.5 true positives:98 and false positives:3
+
+For length >= 540 and energy <= 0.55 true positives:98 and false positives:3
+
+For length >= 540 and energy <= 0.6 true positives:98 and false positives:3
+
+For length >= 545 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 545 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 545 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 545 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 545 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 545 and energy <= 0.25 true positives:99 and false positives:2
+
+For length >= 545 and energy <= 0.3 true positives:99 and false positives:2
+
+For length >= 545 and energy <= 0.35 true positives:99 and false positives:2
+
+For length >= 545 and energy <= 0.4 true positives:99 and false positives:2
+
+For length >= 545 and energy <= 0.45 true positives:99 and false positives:2
+
+For length >= 545 and energy <= 0.5 true positives:99 and false positives:2
+
+For length >= 545 and energy <= 0.55 true positives:99 and false positives:2
+
+For length >= 545 and energy <= 0.6 true positives:99 and false positives:2
+
+For length >= 550 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 550 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 550 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 550 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 550 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 550 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 550 and energy <= 0.3 true positives:99 and false positives:2
+
+For length >= 550 and energy <= 0.35 true positives:99 and false positives:2
+
+For length >= 550 and energy <= 0.4 true positives:99 and false positives:2
+
+For length >= 550 and energy <= 0.45 true positives:99 and false positives:2
+
+For length >= 550 and energy <= 0.5 true positives:99 and false positives:2
+
+For length >= 550 and energy <= 0.55 true positives:99 and false positives:2
+
+For length >= 550 and energy <= 0.6 true positives:99 and false positives:2
+
+For length >= 555 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 555 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 555 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 555 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 555 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 555 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 555 and energy <= 0.3 true positives:99 and false positives:2
+
+For length >= 555 and energy <= 0.35 true positives:99 and false positives:2
+
+For length >= 555 and energy <= 0.4 true positives:99 and false positives:2
+
+For length >= 555 and energy <= 0.45 true positives:99 and false positives:2
+
+For length >= 555 and energy <= 0.5 true positives:99 and false positives:2
+
+For length >= 555 and energy <= 0.55 true positives:99 and false positives:2
+
+For length >= 555 and energy <= 0.6 true positives:99 and false positives:2
+
+For length >= 560 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 560 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 560 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 560 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 560 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 560 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 560 and energy <= 0.3 true positives:99 and false positives:2
+
+For length >= 560 and energy <= 0.35 true positives:99 and false positives:2
+
+For length >= 560 and energy <= 0.4 true positives:99 and false positives:2
+
+For length >= 560 and energy <= 0.45 true positives:99 and false positives:2
+
+For length >= 560 and energy <= 0.5 true positives:99 and false positives:2
+
+For length >= 560 and energy <= 0.55 true positives:99 and false positives:2
+
+For length >= 560 and energy <= 0.6 true positives:99 and false positives:2
+
+For length >= 565 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 565 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 565 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 565 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 565 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 565 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 565 and energy <= 0.3 true positives:99 and false positives:2
+
+For length >= 565 and energy <= 0.35 true positives:99 and false positives:2
+
+For length >= 565 and energy <= 0.4 true positives:99 and false positives:2
+
+For length >= 565 and energy <= 0.45 true positives:99 and false positives:2
+
+For length >= 565 and energy <= 0.5 true positives:99 and false positives:2
+
+For length >= 565 and energy <= 0.55 true positives:99 and false positives:2
+
+For length >= 565 and energy <= 0.6 true positives:99 and false positives:2
+
+For length >= 570 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 570 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 570 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 570 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 570 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 570 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 570 and energy <= 0.3 true positives:99 and false positives:2
+
+For length >= 570 and energy <= 0.35 true positives:99 and false positives:2
+
+For length >= 570 and energy <= 0.4 true positives:99 and false positives:2
+
+For length >= 570 and energy <= 0.45 true positives:99 and false positives:2
+
+For length >= 570 and energy <= 0.5 true positives:99 and false positives:2
+
+For length >= 570 and energy <= 0.55 true positives:99 and false positives:2
+
+For length >= 570 and energy <= 0.6 true positives:99 and false positives:2
+
+For length >= 575 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 575 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 575 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 575 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 575 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 575 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 575 and energy <= 0.3 true positives:99 and false positives:1
+
+For length >= 575 and energy <= 0.35 true positives:99 and false positives:1
+
+For length >= 575 and energy <= 0.4 true positives:99 and false positives:1
+
+For length >= 575 and energy <= 0.45 true positives:99 and false positives:1
+
+For length >= 575 and energy <= 0.5 true positives:99 and false positives:1
+
+For length >= 575 and energy <= 0.55 true positives:99 and false positives:1
+
+For length >= 575 and energy <= 0.6 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 580 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 580 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 580 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 580 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.3 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.35 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.4 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.45 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.5 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.55 true positives:99 and false positives:1
+
+For length >= 580 and energy <= 0.6 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 585 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 585 and energy <= 0.1 true positives:99 and false positives:0
+
+For length >= 585 and energy <= 0.15 true positives:99 and false positives:0
+
+For length >= 585 and energy <= 0.2 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.3 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.35 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.4 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.45 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.5 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.55 true positives:99 and false positives:1
+
+For length >= 585 and energy <= 0.6 true positives:99 and false positives:1
+
+For length >= 590 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 590 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 590 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 590 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 590 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 590 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 590 and energy <= 0.3 true positives:99 and false positives:1
+
+For length >= 590 and energy <= 0.35 true positives:99 and false positives:1
+
+For length >= 590 and energy <= 0.4 true positives:99 and false positives:1
+
+For length >= 590 and energy <= 0.45 true positives:99 and false positives:1
+
+For length >= 590 and energy <= 0.5 true positives:99 and false positives:1
+
+For length >= 590 and energy <= 0.55 true positives:99 and false positives:1
+
+For length >= 590 and energy <= 0.6 true positives:99 and false positives:1
+
+For length >= 595 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 595 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 595 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 595 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 595 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 595 and energy <= 0.25 true positives:99 and false positives:1
+
+For length >= 595 and energy <= 0.3 true positives:99 and false positives:1
+
+For length >= 595 and energy <= 0.35 true positives:99 and false positives:1
+
+For length >= 595 and energy <= 0.4 true positives:99 and false positives:1
+
+For length >= 595 and energy <= 0.45 true positives:99 and false positives:1
+
+For length >= 595 and energy <= 0.5 true positives:99 and false positives:1
+
+For length >= 595 and energy <= 0.55 true positives:99 and false positives:1
+
+For length >= 595 and energy <= 0.6 true positives:99 and false positives:1
+
+For length >= 600 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 600 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 600 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 600 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 600 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 600 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 600 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 600 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 600 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 600 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 600 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 600 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 600 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 605 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 605 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 605 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 605 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 605 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 610 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 610 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 610 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 610 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 610 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 615 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 615 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 615 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 615 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 615 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 620 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 620 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 620 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 620 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 620 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 625 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 625 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 625 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 625 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 625 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 630 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 630 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 630 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 630 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 630 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 635 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 635 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 635 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 635 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 635 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 640 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 640 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 640 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 640 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 640 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 645 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 645 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 645 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 645 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 645 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 650 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 650 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 650 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 650 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 650 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 655 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 655 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 655 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 655 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 655 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 660 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 660 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 660 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 660 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 660 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 665 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 665 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 665 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 665 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 665 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 670 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 670 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 670 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 670 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 670 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 675 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 675 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 675 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 675 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 675 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 680 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 680 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 680 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 680 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 680 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 685 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 685 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 685 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 685 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 685 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 690 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 690 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 690 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 690 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 690 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 695 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 695 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 695 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 695 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 695 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 700 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 700 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 700 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 700 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 700 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 705 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 705 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 705 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 705 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 705 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 710 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 710 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 710 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 710 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 710 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 715 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 715 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 715 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 715 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 715 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 720 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 720 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 720 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 720 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 720 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 725 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 725 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 725 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 725 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 725 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 730 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 730 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 730 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 730 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 730 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 735 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 735 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 735 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 735 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 735 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 740 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 740 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 740 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 740 and energy <= 0.2 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 740 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 745 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 745 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 745 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 745 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 745 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 745 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 745 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 745 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 745 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 745 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 745 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 745 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 745 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 750 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 750 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 750 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 750 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 750 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 750 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 750 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 750 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 750 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 750 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 750 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 750 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 750 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 755 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 755 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 755 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 755 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 755 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 755 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 755 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 755 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 755 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 755 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 755 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 755 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 755 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 760 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 760 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 760 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 760 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 760 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 760 and energy <= 0.25 true positives:99 and false positives:0
+
+For length >= 760 and energy <= 0.3 true positives:99 and false positives:0
+
+For length >= 760 and energy <= 0.35 true positives:99 and false positives:0
+
+For length >= 760 and energy <= 0.4 true positives:99 and false positives:0
+
+For length >= 760 and energy <= 0.45 true positives:99 and false positives:0
+
+For length >= 760 and energy <= 0.5 true positives:99 and false positives:0
+
+For length >= 760 and energy <= 0.55 true positives:99 and false positives:0
+
+For length >= 760 and energy <= 0.6 true positives:99 and false positives:0
+
+For length >= 765 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.25 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.3 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.35 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.4 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.45 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.5 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.55 true positives:100 and false positives:0
+
+For length >= 765 and energy <= 0.6 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.25 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.3 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.35 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.4 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.45 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.5 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.55 true positives:100 and false positives:0
+
+For length >= 770 and energy <= 0.6 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.25 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.3 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.35 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.4 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.45 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.5 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.55 true positives:100 and false positives:0
+
+For length >= 775 and energy <= 0.6 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.25 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.3 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.35 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.4 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.45 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.5 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.55 true positives:100 and false positives:0
+
+For length >= 780 and energy <= 0.6 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.25 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.3 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.35 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.4 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.45 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.5 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.55 true positives:100 and false positives:0
+
+For length >= 785 and energy <= 0.6 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.25 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.3 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.35 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.4 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.45 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.5 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.55 true positives:100 and false positives:0
+
+For length >= 790 and energy <= 0.6 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.0 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.05 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.1 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.15 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.2 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.25 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.3 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.35 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.4 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.45 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.5 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.55 true positives:100 and false positives:0
+
+For length >= 795 and energy <= 0.6 true positives:100 and false positives:0
+
+120 0.0 100 0
