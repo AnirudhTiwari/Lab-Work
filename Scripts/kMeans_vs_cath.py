@@ -331,17 +331,26 @@ def fillVoids(boundaries):
 	return boundaries
 
 # path = "../Output Data/Two Domain Proteins/"
-path = "../Output Data/500_proteins/Non Contiguous/"
+# path = "../Output Data/500_proteins/Non Contiguous/"
+path = "temp2/"
 
 file_counter = 0
 correct = 0
 accuracy = 0.0
 
+
+intersection_file = "../Output Data/cath_scop_intersection/cath_scop_intersection.txt"
+
+with open(intersection_file) as f23:
+	intersection_data = f23.readlines()
+
+
+
 print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
 
-	if file_counter>=100:
-		break
+	# if file_counter>=100:
+	# 	break
 
 	pdb_path = pdb_file
 	pdb_file = pdb_file.split(".")[0].lower()
@@ -367,40 +376,45 @@ for pdb_file in os.listdir(path):
 				var_1 = open(path+pdb_path, 'r')
 
 				chain = pdb_id[18]
-
+				frags = int(pdb_id[11] + pdb_id[12])
+				
 				domains = int(pdb_id[7] + pdb_id[8])
 
-				frags = int(pdb_id[11] + pdb_id[12])
+				for x in intersection_data:
+					x = x.split(" ")[0].strip()
+					if x==pdb_file[:4].lower() + chain.lower():
 
-				if frags==0 and domains>1:
-					domain_boundary = pdb_id[14:].strip()
 
-					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
-					cords_list, realId_list = getCordsList(var_1,chain)
 
-					x = np.asarray(cords_list)
-					file_counter+=1
+						if frags==0 and domains>1:
+							domain_boundary = pdb_id[14:].strip()
 
-					km = KMeans(n_clusters=domains).fit(x)
+							print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
+							cords_list, realId_list = getCordsList(var_1,chain)
 
-					labels_km = km.labels_
-					clusters_km = km.cluster_centers_
+							x = np.asarray(cords_list)
+							file_counter+=1
 
-					boundaries = domainBoundaries(labels_km, realId_list,domains)
+							km = KMeans(n_clusters=domains).fit(x)
 
-					boundaries = fillVoids(boundaries)
-					boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, 15)
+							labels_km = km.labels_
+							clusters_km = km.cluster_centers_
 
-					cathDict = getCathDict(domain_boundary, domains)
+							boundaries = domainBoundaries(labels_km, realId_list,domains)
 
-					cathDict, boundaries = mapCorrectly(cathDict, boundaries)
+							boundaries = fillVoids(boundaries)
+							boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, 15)
 
-					overlap = compareResults(cathDict, boundaries, domains)
+							cathDict = getCathDict(domain_boundary, domains)
 
-					accuracy = accuracy + overlap
+							cathDict, boundaries = mapCorrectly(cathDict, boundaries)
 
-					for key, value in boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(overlap)
+							overlap = compareResults(cathDict, boundaries, domains)
+
+							accuracy = accuracy + overlap
+
+							for key, value in boundaries.iteritems():
+								makeReadable(value)
+							print ", " + "{0:.2f}".format(overlap)
 
 print "accuracy is", accuracy/file_counter
