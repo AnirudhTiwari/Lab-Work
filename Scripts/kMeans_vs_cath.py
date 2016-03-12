@@ -134,7 +134,7 @@ def mapCorrectly(cath, k_means):
 	new_kmeans = {}
 
 	if len(list(set(kmeans_keys)))!=len(cath):
-		print "K-MEANS SCREWED IT UP", kmeans_keys,
+		print "K-MEANS SCREWED IT UP",
 
 	for x in range(len(kmeans_keys)):
 		new_kmeans[x] = k_means.get(kmeans_keys[x])
@@ -344,7 +344,9 @@ intersection_file = "../Output Data/cath_scop_intersection/cath_scop_intersectio
 with open(intersection_file) as f23:
 	intersection_data = f23.readlines()
 
+not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p', '1tj7', '1z5h', '1p9h', '1dve', '1aon', '1fjg', '1jfw', '1nkq', '1byr', '1abz','1t6t','1c21', '1a18', '1bal', '1am4', '1vea', '1foe', '1t11', '1hci', '3ci0', '1d0g', '1olz', '1bs2','3bzc','1c4a','2oce', '1m2o', '1g3p','1dkg','1f0i','1aye','3bzk', '1cjd', '1xi8']
 
+visited_list = []
 
 print "No., PDB, Domains, CATH, K-Means, Accuracy"
 for pdb_file in os.listdir(path):
@@ -370,7 +372,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file!='1adh' and pdb_file!='1baa' and pdb_file!='1a4k' and pdb_file!='1abk' and pdb_file!='3g4s' and pdb_file!='2w86':
+			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file[:4] not in not_list and pdb_file not in visited_list:
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -388,6 +390,7 @@ for pdb_file in os.listdir(path):
 
 						if frags==0 and domains>1:
 							domain_boundary = pdb_id[14:].strip()
+							visited_list.append(pdb_id[:4].lower())
 
 							print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
 							cords_list, realId_list = getCordsList(var_1,chain)
