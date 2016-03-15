@@ -368,9 +368,9 @@ def calculateDensity(coordinates):
 
 	radius = radius/len(coordinates)
 
-	# density = 1.0*len(coordinates)/(radius*radius*radius)
-	# return density
-	return radius
+	density = 1.0*len(coordinates)/(radius*radius*radius)
+	return density
+	# return radius
 
 file_counter = 0
 correct = 0
@@ -385,7 +385,7 @@ gyration_list_a = []
 gyration_list_b = []
 
 
-path = "temp2/"
+path = "../Output Data/temp2/"
 
 with open("../Output Data/cath_scop_intersection/cath_scop_intersection.txt") as f12:
 	req_chains = f12.readlines()
@@ -439,9 +439,9 @@ for pdb_file in os.listdir(path):
 									print "Error hai isme ", pdb_id
 							length = len(cords_list)
 
-							# density = calculateDensity(cords_list)
+							density = calculateDensity(cords_list)
 #								
-							radius_vish = calculateDensity(cords_list)
+							# radius_vish = calculateDensity(cords_list)
 
 							simulated_domains = 2
 
@@ -451,9 +451,9 @@ for pdb_file in os.listdir(path):
 							interaction_energy = getInteractionEnergy(labels_km, simulated_domains, cords_list)
 							# interaction_energy_count = getInteractionEnergy(labels_km, simulated_domains, cords_list)
 
-							if domains!=1:
-								# print pdb_id[:4], "," ,chain.upper(),", ", domains," ," ,length, ", ", '{0:.3f}'.format(interaction_energy_count), ", ", '{0:.3f}'.format(density), ", ", '{0:.3f}'.format(radius)
-								print pdb_id[:4], "," ,chain.upper(),", ", domains," ," ,length, ", ", '{0:.3f}'.format(interaction_energy)
+							if domains==1:
+								print pdb_id[:4], "," ,chain.upper(),", ", domains," ," ,length, ", ", '{0:.3f}'.format(interaction_energy_count), ", ", '{0:.3f}'.format(density)
+								# print pdb_id[:4], "," ,chain.upper(),", ", domains," ," ,length, ", ", '{0:.3f}'.format(interaction_energy)
 								# print pdb_id[:4], "," ,chain.upper(),", ", domains," ," ,length, ", ", '{0:.3f}'.format(radius_gy), ", ", '{0:.3f}'.format(radius_vish)
 
 
