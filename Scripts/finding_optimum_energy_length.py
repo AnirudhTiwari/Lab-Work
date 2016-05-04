@@ -4,10 +4,10 @@ multi_energy = []
 single_length = []
 multi_length = []
 
-with open("energy_single_radius_7.csv") as f1:
+with open("../Output Data/energy_single_radius_7.csv") as f1:
 	single = f1.readlines()
 
-with open("energy_multi_radius_7.csv") as f2:
+with open("../Output Data/energy_multi_radius_7.csv") as f2:
 	multi = f2.readlines()
 
 

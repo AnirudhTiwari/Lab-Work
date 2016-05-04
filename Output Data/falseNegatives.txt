@@ -1,0 +1,161 @@
+1jhdA D02 F00  1  A  194 - A  396 -  1  A    1 - A  193 -
+True
+
+1c2aA D02 F00  1  A    4 - A   63 -  1  A   64 - A  123 -
+True
+
+1dl5A D02 F00  1  A    1 - A  201 -  1  A  202 - A  317 -
+True
+
+1pcpA D02 F00  2  A    1 - A   59 -  A  100 - A  106 -  1  A   60 - A   99 -
+False
+
+1soxA D03 F00  1  A    3 - A   88 -  1  A   90 - A  343 -  1  A  344 - A  466 -
+True
+
+1a1fA D03 F00  1  A  103 - A  132 -  1  A  133 - A  159 -  1  A  160 - A  186 -
+True
+
+1nijA D02 F00  1  A    2 - A  202 -  1  A  203 - A  318 -
+True
+
+1d5yA D03 F00  1  A    3 - A   55 -  1  A   56 - A  121 -  1  A  122 - A  294 -
+True
+
+1dd3A D02 F00  1  A    1 - A   57 -  1  A   58 - A  128 -
+True
+
+1cklA D02 F00  1  A    1 - A   62 -  1  A   63 - A  126 -
+True
+
+1cjxA D02 F00  1  A    4 - A  153 -  1  A  154 - A  356 -
+True
+
+1ux6A D02 F00  1  A  813 - A  939 -  1  A  940 - A 1152 -
+True
+
+1yuaA D02 F00  1  A    1 - A   64 -  1  A   65 - A  122 -
+True
+
+1q5vA D02 F00  1  A    1 - A   46 -  1  A   48 - A  132 -
+True
+
+1biaA D03 F00  1  A    1 - A   64 -  1  A   65 - A  270 -  1  A  271 - A  317 -
+True
+
+1brwA D03 F00  1  A  331 - A  424 -  2  A   68 - A  330 -  A  425 - A  433 -  1  A    1 - A   67 -
+False
+
+1fybA D02 F00  1  A    1 - A   51 -  1  A   52 - A  111 -
+True
+
+1a71A D02 F00  2  A    1 - A  178 -  A  318 - A  374 -  1  A  179 - A  317 -
+False
+
+1ubdC D04 F00  1  C  295 - C  322 -  1  C  323 - C  349 -  1  C  350 - C  379 -  1  C  380 - C  408 -
+True
+
+1pprM D02 F00  1  M    1 - M  155 -  1  M  156 - M  312 -
+True
+
+1skzA D02 F00  1  A    7 - A   57 -  1  A   58 - A  110 -
+True
+
+1clcA D02 F00  1  A   35 - A  136 -  1  A  137 - A  575 -
+True
+
+1x9yA D02 F00  1  A   41 - A  210 -  1  A  211 - A  397 -
+True
+
+1lbuA D02 F00  1  A    1 - A   84 -  1  A   85 - A  213 -
+True
+
+2fefA D02 F00  1  A    6 - A  134 -  1  A  135 - A  293 -
+True
+
+1cjdA D02 F00  1  A   15 - A  243 -  1  A  244 - A  383 -
+True
+
+1d2kA D02 F00  2  A   36 - A  291 -  A  355 - A  427 -  1  A  292 - A  354 -
+False
+
+1g6lA D02 F00  1  A    1 - A   99 -  1  A 1001 - A 1099 -
+True
+
+1a3xA D03 F00  2  A    1 - A   18 -  A  356 - A  500 -  2  A   19 - A   87 -  A  190 - A  355 -  1  A   88 - A  189 -
+False
+
+1lslA D02 F00  1  A  416 - A  471 -  1  A  472 - A  528 -
+True
+
+1j4wA D02 F00  1  A    1 - A   74 -  1  A  104 - A  174 -
+True
+
+1auaA D02 F00  1  A   87 - A  299 -  1  A    4 - A   86 -
+True
+
+1a65A D03 F00  1  A    1 - A  132 -  1  A  133 - A  312 -  1  A  313 - A  504 -
+True
+
+1mlaA D02 F00  1  A  125 - A  197 -  2  A    3 - A  124 -  A  198 - A  307 -
+False
+
+1gofA D03 F00  1  A    1 - A  153 -  1  A  154 - A  541 -  1  A  542 - A  639 -
+True
+
+1ulkA D03 F00  1  A    1 - A   40 -  1  A   41 - A   81 -  1  A   82 - A  126 -
+True
+
+1sj8A D02 F00  1  A  486 - A  660 -  1  A  661 - A  782 -
+True
+
+1mmsA D02 F00  1  A    8 - A   71 -  1  A   72 - A  140 -
+True
+
+1an8A D02 F00  2  A    3 - A   18 -  A   94 - A  208 -  1  A   19 - A   93 -
+False
+
+1f0iA D02 F00  1  A   48 - A  263 -  2  A    6 - A   47 -  A  264 - A  514 -
+False
+
+1divA D02 F00  1  A    1 - A   59 -  1  A   60 - A  149 -
+True
+
+2qfiA D02 F00  1  A    5 - A  205 -  1  A  206 - A  290 -
+True
+
+1p42A D02 F00  1  A    2 - A  128 -  1  A  129 - A  280 -
+True
+
+1rc9A D02 F00  1  A    1 - A  180 -  1  A  181 - A  221 -
+True
+
+1h0mA D02 F00  1  A    2 - A  170 -  1  A  171 - A  234 -
+True
+
+1tvfA D02 F00  1  A   15 - A  314 -  1  A  315 - A  383 -
+True
+
+1dx5I D03 F00  1  I  345 - I  389 -  1  I  390 - I  422 -  1  I  423 - I  462 -
+True
+
+1f5yA D02 F00  1  A    1 - A   44 -  1  A   45 - A   85 -
+True
+
+1aqtA D02 F00  1  A    2 - A   89 -  1  A   90 - A  136 -
+True
+
+3hn4A D03 F00  1  A   34 - A  125 -  1  A  126 - A  209 -  1  A  210 - A  289 -
+True
+
+1ayeA D02 F00  1  A    4 A A    5 -  1  A    7 - A  309 -
+True
+
+1dfcA D04 F00  1  A 1262 - A 1386 -  1  A 1139 - A 1261 -  1  A 1008 - A 1138 -  1  A 1387 - A 1493 -
+True
+
+1bboA D02 F00  1  A    1 - A   26 -  1  A   27 - A   57 -
+True
+
+1js8A D02 F00  1  A 2503 - A 2786 -  1  A 2787 - A 2892 -
+True
