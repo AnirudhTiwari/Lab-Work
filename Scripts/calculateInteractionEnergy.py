@@ -363,7 +363,8 @@ c = raw_input("Contiguous(C)/Non-Contiguous(N)/Both(B): ")
 # if c=='N':
 # 	path = "../Output Data/500_proteins/Non Contiguous/"
 
-path = "temp2/"
+# path = "temp2/"
+path = "Second Dataset/"
 # path = "../Output Data/500_proteins/Both/"
 
 
@@ -372,7 +373,10 @@ path = "temp2/"
 
 # print "No., PDB, Domains, CATH, Interaction Energy for 1 Domain, Interaction Energy for 2 Domains, Interaction Energy for 3 Domains, Interaction Energy for 4 Domains, Interaction Energy for 5 Domain, Interaction Energy for 6 Domain"
 
-with open("../Output Data/cath_scop_intersection/cath_scop_intersection.txt") as f12:
+# with open("../Output Data/cath_scop_intersection/cath_scop_intersection.txt") as f12:
+# 	req_chains = f12.readlines()
+
+with open("cath_scop_chains_second_dataset") as f12:
 	req_chains = f12.readlines()
 
 
@@ -385,8 +389,8 @@ for pdb_file in os.listdir(path):
 
 
 	var = open('../Input Files/CathDomall', 'r')
-	not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p', '1tj7', '1z5h', '1p9h', '1dve', '1aon', '1fjg', '1jfw', '1nkq', '1byr', '1abz','1t6t','1c21', '1a18', '1bal', '1am4', '1vea', '1foe', '1t11']
-
+	# not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p', '1tj7', '1z5h', '1p9h', '1dve', '1aon', '1fjg', '1jfw', '1nkq', '1byr', '1abz','1t6t','1c21', '1a18', '1bal', '1am4', '1vea', '1foe', '1t11']
+	not_list = []
 
 	while 1:
 
