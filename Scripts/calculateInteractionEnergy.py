@@ -376,7 +376,8 @@ path = "Second Dataset/"
 # with open("../Output Data/cath_scop_intersection/cath_scop_intersection.txt") as f12:
 # 	req_chains = f12.readlines()
 
-with open("cath_scop_chains_second_dataset") as f12:
+# with open("cath_scop_chains_second_dataset") as f12:
+with open("Second Dataset Chains/two_domains") as f12:
 	req_chains = f12.readlines()
 
 
@@ -442,41 +443,41 @@ for pdb_file in os.listdir(path):
 								simulated_domains+=1
 
 
-						if frags==0 and domains==b and pdb_id[:4]:
-							domain_boundary = pdb_id[14:].strip()
+						# if frags==0 and domains==b and pdb_id[:4]:
+						# 	domain_boundary = pdb_id[14:].strip()
 
-							val, segmented = getCathDict(domain_boundary, domains)
+						# 	val, segmented = getCathDict(domain_boundary, domains)
 							
-							visited_list.append(pdb_id[:4])
+						# 	visited_list.append(pdb_id[:4])
 
 
-							if segmented==True and c=='C':
-								continue
+						# 	if segmented==True and c=='C':
+						# 		continue
 
-							if segmented==False and c=='N':
-								continue
+						# 	if segmented==False and c=='N':
+						# 		continue
 
 
-							cords_list, realId_list = getCordsList(var_1,chain)
+						# 	cords_list, realId_list = getCordsList(var_1,chain)
 
-							x = np.asarray(cords_list)
+						# 	x = np.asarray(cords_list)
 
-							simulated_domains = 1
+						# 	simulated_domains = 1
 
-							while(simulated_domains!=b+1):
+						# 	while(simulated_domains!=b+1):
 
-								km = KMeans(n_clusters=simulated_domains).fit(x)
-								labels_km = km.labels_
+						# 		km = KMeans(n_clusters=simulated_domains).fit(x)
+						# 		labels_km = km.labels_
 
-								if simulated_domains==b:
-									length_list_b.append(len(cords_list))
-									try:
-										gyration_list_b.append(radius_of_gyration.radius_of_gyration(var_2, chain))
-									except:
-										print "Error hai isme ", pdb_id
-									interactionEnergy_list_b.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
+						# 		if simulated_domains==b:
+						# 			length_list_b.append(len(cords_list))
+						# 			try:
+						# 				gyration_list_b.append(radius_of_gyration.radius_of_gyration(var_2, chain))
+						# 			except:
+						# 				print "Error hai isme ", pdb_id
+						# 			interactionEnergy_list_b.append(getInteractionEnergy(labels_km, simulated_domains, cords_list))
 
-								simulated_domains+=1	
+						# 		simulated_domains+=1	
 
 
 domain_string_a=""

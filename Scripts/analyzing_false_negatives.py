@@ -19,13 +19,16 @@ def isContiguous(cath_boundaries, domains):
 			x+=6*numOFSegments+1
 	return True
 
-with open('../Output Data/false_negatives_entries', 'r') as f1:
+with open('Second Dataset Chains/three_domains', 'r') as f1:
 	neg_entries = f1.readlines()
 
 
 with open('../Input Files/CathDomall', 'r') as f2:
 	cath_entries = f2.readlines()
 
+
+cont = 0
+non_cont = 0
 
 for x in neg_entries:
 	neg_pdb = x[:4].strip()
@@ -40,11 +43,16 @@ for x in neg_entries:
 			cath_domains = int(y[7] + y[8])
 
 			if cath_pdb==neg_pdb and cath_chain==neg_chain:
-				print y,
+				# print y,
 				if isContiguous(y[15:], cath_domains):
-					print "Contiguous"
+					# print "Contiguous"
+					cont+=1
 				else:
-					print "Non Contiguous"
-				print
+					# print "Non Contiguous"
+					non_cont+=1
+				# print
 
+
+print cont
+print non_cont
 

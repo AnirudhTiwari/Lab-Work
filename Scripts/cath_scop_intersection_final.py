@@ -10,6 +10,15 @@ with open("../Input Files/CathDomall") as f3:
 cath_dict = {}
 domains_dict = {}
 
+def delete_keys(cath_dict, chain, removed_keys):
+	for key in cath_dict.keys():
+		for x in cath_dict[key]:
+			if x[:5]==chain:
+				removed_keys.append(key)
+
+	return removed_keys
+
+
 for x in cath_chains:
 	if x[0]!='#':
 		data = x.split(" ")
@@ -29,22 +38,21 @@ for x in cath_chains:
 
 ans_chains = []
 
-
-
-
 for domains in cath_domains:
 	if domains[0]!='#' and int(domains[11] + domains[12])==0:
 		domains_dict[domains[:5].lower()] = int(domains[7] + domains[8])
 
 
-
+removed_keys = []
 
 for key, value in cath_dict.iteritems():
-	for chain in value:
-		if chain[:5] in domains_dict:
-			if domains_dict[chain[:5]]==4 and chain[:5] not in ans_chains:
-				ans_chains.append(chain[:5])
-				break
+	if key not in removed_keys:
+		for chain in value:
+			if chain[:5] in domains_dict:
+				if domains_dict[chain[:5]]==4 and chain[:5] not in ans_chains:
+					ans_chains.append(chain[:5])
+					removed_keys = delete_keys(cath_dict, chain[:5], removed_keys)
+					break
 
 # print len(ans_chains)			
 

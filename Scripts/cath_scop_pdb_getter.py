@@ -1,7 +1,7 @@
 import shutil
 
 
-with open("cath_scop_chains_May") as f1:
+with open("cath_scop_chains_second_dataset") as f1:
 	pdb = f1.readlines()
 
 src = "/run/media/Tiwari/Storage/pdb/data/structures/divided/"
