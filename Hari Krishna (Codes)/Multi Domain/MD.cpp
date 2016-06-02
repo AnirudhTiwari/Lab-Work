@@ -1,7 +1,7 @@
 #include<iostream>
 #include <stdlib.h>
 #include<fstream>
-#include "/usr/local/include/igraph/igraph.h"
+#include<igraph.h>
 using namespace std;
 int main(int argc, char* argv[]) 
 {
@@ -41,11 +41,13 @@ igraph_read_graph_edgelist(&graph, fp, n, directed);
 //Number of Edges//
 igraph_real_t totedj=igraph_ecount(&graph); // Number of edges
 
+
 //Getting ADJ matrix//
 igraph_get_adjacency(&graph,&am,IGRAPH_GET_ADJACENCY_BOTH,1);
 
 //Creating Inter Graph From AM//
 igraph_adjacency(&igraph,&am,IGRAPH_ADJ_UNDIRECTED);
+
 
 //Phase #1 MEJ Newman: Finding community structure using the eigenvectors of matrices//
 //Divisive algorithm: each split is done by maximizing the modularity //
@@ -54,11 +56,16 @@ igraph_real_t mmodularity;
 igraph_vector_t mmembership;
 igraph_vector_init(&mmembership,0);
 int maxstep;
+
 for(int i=1;i<=8;i++)
 {
+	
 	steps=i;
-	igraph_community_leading_eigenvector(&graph,&merges,&membership,steps,&co); //Spliting the Graph based on the Lev vector step times
+
+	igraph_community_leading_eigenvector(&graph,0,&merges,&membership,steps,&co,0,0,0,0,0,0,0); //Spliting the Graph based on the Lev vector step times
+
 	igraph_modularity(&graph,&membership,&modularity,NULL);
+
 	//cout<<"********************************************\n";
 	//cout<<"For Split #"<<i<<" Modularity is: "<<modularity<<endl;
 	//cout<<"********************************************\n";	
@@ -66,6 +73,7 @@ for(int i=1;i<=8;i++)
 	//{
 		//cout<<(j+1)<<"\t"<<(VECTOR(membership)[j]+1)<<endl;
 	//}
+
 	if(max < modularity)
 	{
 		max=modularity;
@@ -191,7 +199,7 @@ igraph_vector_set(&weights,wc,igraph_matrix_e(&rm,igraph_vector_e(&el,i),igraph_
 wc++;
 }
 
-igraph_community_fastgreedy(&wgraph,&weights,&gmerges,&gmodularity);
+igraph_community_fastgreedy(&wgraph,&weights,&gmerges,&gmodularity,0);
 //cout<<"MODULARITY SIZE: "<<(igraph_vector_size(&gmodularity))<<endl;
 //cout<<"MERGES SIZE: "<<igraph_matrix_size(&gmerges)<<endl;
 //cout<<"Merges rows: "<<igraph_matrix_nrow(&gmerges)<<endl;

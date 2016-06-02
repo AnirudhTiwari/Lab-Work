@@ -1,0 +1,47 @@
+For length 115 and energy 0.25 Single correct 601 and Single Wrong 161
+For length 115 and energy 0.25 Multi correct 555 and Multi Wrong 68
+83
+
+For length 120 and energy 0.25 Single correct 605 and Single Wrong 157
+For length 120 and energy 0.25 Multi correct 551 and Multi Wrong 72
+83
+
+For length 125 and energy 0.2 Single correct 691 and Single Wrong 71
+For length 125 and energy 0.2 Multi correct 452 and Multi Wrong 171
+82
+
+For length 125 and energy 0.25 Single correct 609 and Single Wrong 153
+For length 125 and energy 0.25 Multi correct 546 and Multi Wrong 77
+83
+
+For length 130 and energy 0.2 Single correct 694 and Single Wrong 68
+For length 130 and energy 0.2 Multi correct 449 and Multi Wrong 174
+82
+
+For length 130 and energy 0.25 Single correct 613 and Single Wrong 149
+For length 130 and energy 0.25 Multi correct 541 and Multi Wrong 82
+83
+
+For length 135 and energy 0.2 Single correct 697 and Single Wrong 65
+For length 135 and energy 0.2 Multi correct 444 and Multi Wrong 179
+82
+
+For length 135 and energy 0.25 Single correct 619 and Single Wrong 143
+For length 135 and energy 0.25 Multi correct 536 and Multi Wrong 87
+83
+
+For length 140 and energy 0.2 Single correct 699 and Single Wrong 63
+For length 140 and energy 0.2 Multi correct 439 and Multi Wrong 184
+82
+
+For length 140 and energy 0.25 Single correct 623 and Single Wrong 139
+For length 140 and energy 0.25 Multi correct 530 and Multi Wrong 93
+83
+
+For length 145 and energy 0.25 Single correct 629 and Single Wrong 133
+For length 145 and energy 0.25 Multi correct 522 and Multi Wrong 101
+83
+
+For length 150 and energy 0.25 Single correct 632 and Single Wrong 130
+For length 150 and energy 0.25 Multi correct 518 and Multi Wrong 105
+83

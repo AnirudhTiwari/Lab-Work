@@ -1,0 +1,8 @@
+0	55	
+55	0	
+
+0	29.5699	
+29.5699	0	
+Clustering coefficient:	0.535034
+Graph Density:	0.109137
+Graph Diameter:	11

@@ -10,21 +10,21 @@ multi_length = []
 multi_density = []
 multi_energy = []
 
-with open("single_length_density_energy.csv") as f1:
+with open("single_length_energy_density.csv") as f1:
 	single = f1.readlines()
 
-with open("multi_length_density_energy.csv") as f2:
+with open("multi_length_energy_density.csv") as f2:
 	multi = f2.readlines()
 
 for x in single:
-	single_length.append(int(x.split(",")[2].strip()))
-	single_energy.append(float(x.split(",")[3].strip()))
-	single_density.append(float(x.split(",")[4].strip()))
+	single_length.append(int(x.split(",")[3].strip()))
+	single_energy.append(float(x.split(",")[4].strip()))
+	single_density.append(float(x.split(",")[5].strip()))
 
 for x in multi:
-	multi_length.append(int(x.split(",")[2].strip()))
-	multi_energy.append(float(x.split(",")[3].strip()))
-	multi_density.append(float(x.split(",")[4].strip()))
+	multi_length.append(int(x.split(",")[3].strip()))
+	multi_energy.append(float(x.split(",")[4].strip()))
+	multi_density.append(float(x.split(",")[5].strip()))
 
 
 fig = plt.figure()
@@ -56,7 +56,7 @@ while(density <= 0.08):
 
 	for a,b,c in zip(single_length, single_energy,single_density):
 		
-		if int(a) >= 150 and float(b) <= 0.2 and float(c) <= density:
+		if int(a) >= 150 and float(b) <= 0.25 and float(c) <= density:
 			single_wrong+=1
 
 		else:
@@ -65,7 +65,7 @@ while(density <= 0.08):
 
 
 	for a,b,c in zip(multi_length, multi_energy, multi_density):
-		if int(a) >= 150 and float(b) <= 0.2 and float(c) <= density:
+		if int(a) >= 150 and float(b) <= 0.25 and float(c) <= density:
 			multi_correct+=1
 		else:
 			multi_wrong+=1
@@ -83,7 +83,7 @@ while(density <= 0.08):
 		best_val = accuracy
 	
 		ans[0] = 150
-		ans[1] = 0.2
+		ans[1] = 0.25
 		ans[2] = density
 		ans[3] = (single_correct*100)/len(single_length)
 		ans[4] = (single_wrong*100)/len(single_length)

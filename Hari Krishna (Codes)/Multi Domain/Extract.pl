@@ -100,4 +100,5 @@ push(@c9,$b[0]);
 }
 }
 close(FR);
+print "END OF EXTRACTION PROGRAM"."\n";
 }

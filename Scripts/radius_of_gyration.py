@@ -1,7 +1,7 @@
 import math
 import sys
 
-def value_finder(start_value, array):
+def value_finder(start_value, end_value, array):
 
 	coordinate = ''
 
@@ -10,7 +10,7 @@ def value_finder(start_value, array):
 
 
 
-	while(array[start_value]!=' '):
+	while(int(start_value)!=int(end_value)):
 		coordinate = coordinate + array[start_value];
 		start_value = start_value + 1
 
@@ -49,9 +49,9 @@ def radius_of_gyration(file_read, chain):
 
 			totalAtoms = totalAtoms + 1
 
-			coord_x = float(value_finder(27, data))
-			coord_y = float(value_finder(39, data))
-			coord_z = float(value_finder(47, data))
+			coord_x = float(value_finder(31, 38, data))
+			coord_y = float(value_finder(39, 46, data))
+			coord_z = float(value_finder(47, 54, data))
 
 			atom = pdb_atom(coord_x,coord_y,coord_z)
 

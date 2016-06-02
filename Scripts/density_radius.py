@@ -16,7 +16,7 @@ import radius_of_gyration
 from mpl_toolkits.mplot3d import Axes3D
 import pickle
 
-def value_finder(start_residue, array):
+def value_finder(start_residue, end_value, array):
 	coordinate = ''
 
 	while(array[start_residue]==' '):
@@ -47,10 +47,11 @@ def getCordsList(fileRead, chain):
 
 		if(data[0]=='A' and data[1]=='T' and data[2]=='O' and data[21]==chain and data[13]=='C' and data[14]=='A'):
 
-			coord_x = float(value_finder(27, data))
-			coord_y = float(value_finder(39, data))
-			coord_z = float(value_finder(47, data))
-			val = value_finder(22, data)
+			coord_x = float(value_finder(31, 38, data))
+			coord_y = float(value_finder(39, 46, data))
+			coord_z = float(value_finder(47, 54, data))
+
+			val = value_finder(22,23, data)
 		
 			if not re.search('[a-zA-Z]+', val):
 				real_id = int(val)
@@ -390,9 +391,11 @@ gyration_list_a = []
 gyration_list_b = []
 
 
-path = "temp2/"
+# path = "temp2/"
+path = "Second Dataset/"
 
-with open("../Output Data/cath_scop_intersection/cath_scop_intersection.txt") as f12:
+# with open("../Output Data/cath_scop_intersection/cath_scop_intersection.txt") as f12:
+with open("Second Dataset Chains/four_domains") as f12:
 	req_chains = f12.readlines()
 
 for pdb_file in os.listdir(path):
@@ -404,8 +407,8 @@ for pdb_file in os.listdir(path):
 
 
 	var = open('../Input Files/CathDomall', 'r')
-	not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p', '1tj7', '1z5h', '1p9h', '1dve', '1aon', '1fjg', '1jfw', '1nkq', '1byr', '1abz','1t6t','1c21', '1a18', '1bal', '1am4', '1vea', '1foe', '1t11', '1hci']
-
+	# not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p', '1tj7', '1z5h', '1p9h', '1dve', '1aon', '1fjg', '1jfw', '1nkq', '1byr', '1abz','1t6t','1c21', '1a18', '1bal', '1am4', '1vea', '1foe', '1t11', '1hci']
+	not_list = [] 
 
 	while 1:
 
@@ -416,7 +419,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower()  and pdb_file not in not_list and pdb_file not in visited_list:
+			if pdb_id[:4].lower()==pdb_file[:4].lower(): #and pdb_file not in not_list: #and pdb_file not in visited_list:
 
 				flag = 1
 				var_1 = open(path+pdb_path, 'r')
@@ -440,8 +443,8 @@ for pdb_file in os.listdir(path):
 
 							try:
 								radius_gy = radius_of_gyration.radius_of_gyration(var_2, chain)
-							except:
-									print "Error hai isme ", pdb_id
+							except Exception, e:
+									print "Error hai isme ", pdb_id, e
 							length = len(cords_list)
 
 							density = calculateDensity(cords_list)
@@ -460,7 +463,7 @@ for pdb_file in os.listdir(path):
 								length_list_a.append(length)
 								interactionEnergy_list_a.append(interaction_energy)
 								density_list_a.append(density)
-								print pdb_id[:4], chain, "," ,domains, "," ,length, ", ", '{0:.3f}'.format(interaction_energy), ", ", '{0:.3f}'.format(density)  
+								print pdb_id[:4], ",", chain, "," ,domains, "," ,length, ", ", '{0:.3f}'.format(interaction_energy),", ", '{0:.3f}'.format(density),", ", '{0:.3f}'.format(radius_gy)  
 
 								# print 
 
