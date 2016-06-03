@@ -14,6 +14,9 @@ from sklearn.cluster import spectral_clustering
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.cluster import DBSCAN
 from sklearn import mixture
+from pyxmeans import XMeans
+from pyxmeans import _minibatch
+
 # from sklearn import Birch
 
 
@@ -359,6 +362,13 @@ def isContiguous(cath_boundaries):
 				x+=6*numOFSegments+1
 	return True
 
+def TimerBlock(name):
+    start = time.time()
+    yield
+    end = time.time()
+    print "%s took %fs" % (name, end-start)
+
+
 # path = "../Output Data/Two Domain Proteins/"
 # path = "../Output Data/500_proteins/"
 path = "../Output Data/500_proteins/Non Contiguous/"
@@ -378,10 +388,10 @@ birch_accuracy = 0.0
 
 not_list = ['1adh','1baa', '1a4k', '1abk','3g4s', '1aak', '1ace', '1fnr']#'4gcr', '2pmg', '1vsg', '8atc', '8adh', '1wsy', '3grs', '1gky','1rhd','1ezm', '1sgt']
 
-print "No., PDB, Domains, CATH, K-Means, Overlap, Affinity Propagation, Overlap, Mean Shift, Overlap, Ward-Hierarchical, Overlap, Complete Agglomerative, Overlap, Avg. Agglomerative, Overlap, DBSCAN, Overlap, Birch, Overlap"
+# print "No., PDB, Domains, CATH, K-Means, Overlap, Affinity Propagation, Overlap, Mean Shift, Overlap, Ward-Hierarchical, Overlap, Complete Agglomerative, Overlap, Avg. Agglomerative, Overlap, DBSCAN, Overlap, Birch, Overlap"
 for pdb_file in os.listdir(path):
 
-	if file_counter>=100:
+	if file_counter>=10:
 		break
 
 	pdb_path = pdb_file
@@ -417,6 +427,7 @@ for pdb_file in os.listdir(path):
 				if frags==0 and isContiguous(domain_boundary)==False and domains > 1:
 
 					print str(file_counter + 1) + "," + pdb_id[:4] + ", " + str(domains) + ", " + domain_boundary, "," ,
+					print
 					cords_list, realId_list = getCordsList(var_1,chain)
 
 					x = np.asarray(cords_list)
@@ -426,73 +437,73 @@ for pdb_file in os.listdir(path):
 
 					#======================K-MEANS================================================
 
-					km = KMeans(n_clusters=domains).fit(x)
+					# km = KMeans(n_clusters=domains).fit(x)
 
-					labels_km = km.labels_
-					clusters_km = km.cluster_centers_
+					# labels_km = km.labels_
+					# clusters_km = km.cluster_centers_
 
-					km_boundaries = domainBoundaries(labels_km, realId_list,domains)
+					# km_boundaries = domainBoundaries(labels_km, realId_list,domains)
 
-					km_boundaries = fillVoids(km_boundaries)
-					# boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, 15)
+					# km_boundaries = fillVoids(km_boundaries)
+					# # boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, 15)
 
 
-					cathDict, km_boundaries = mapCorrectly(cathDict, km_boundaries)
+					# cathDict, km_boundaries = mapCorrectly(cathDict, km_boundaries)
 
-					km_overlap = compareResults(cathDict, km_boundaries, domains)
+					# km_overlap = compareResults(cathDict, km_boundaries, domains)
 
-					km_accuracy = km_accuracy + km_overlap
+					# km_accuracy = km_accuracy + km_overlap
 
-					for key, value in km_boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(km_overlap)+", ",
+					# for key, value in km_boundaries.iteritems():
+					# 	makeReadable(value)
+					# print ", " + "{0:.2f}".format(km_overlap)+", ",
 
 					#======================AFFINITY-PROPAGATION=================================================
 
 
-					ap = AffinityPropagation().fit(x)
+					# ap = AffinityPropagation().fit(x)
 
-					labels_ap = ap.labels_
-					clusters_ap = ap.cluster_centers_
+					# labels_ap = ap.labels_
+					# clusters_ap = ap.cluster_centers_
 
-					ap_boundaries = domainBoundaries(labels_ap, realId_list,domains)
+					# ap_boundaries = domainBoundaries(labels_ap, realId_list,domains)
 
-					ap_boundaries = fillVoids(ap_boundaries)
+					# ap_boundaries = fillVoids(ap_boundaries)
 
-					# ap_boundaries = stitchPatches(ap_boundaries, clusters_ap, cords_list, realId_list, 15)
+					# # ap_boundaries = stitchPatches(ap_boundaries, clusters_ap, cords_list, realId_list, 15)
 
-					cathDict, ap_boundaries = mapCorrectly(cathDict, ap_boundaries)
+					# cathDict, ap_boundaries = mapCorrectly(cathDict, ap_boundaries)
 
-					ap_overlap = compareResults(cathDict, ap_boundaries, domains)
+					# ap_overlap = compareResults(cathDict, ap_boundaries, domains)
 
-					ap_accuracy = ap_accuracy + ap_overlap
+					# ap_accuracy = ap_accuracy + ap_overlap
 
-					for key, value in ap_boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(ap_overlap)+", ",
+					# for key, value in ap_boundaries.iteritems():
+					# 	makeReadable(value)
+					# print ", " + "{0:.2f}".format(ap_overlap)+", ",
 
 					#==============================MEAN-SHIFT================================================
 
-					ms = MeanShift().fit(x)
+					# ms = MeanShift().fit(x)
 
-					labels_ms = ms.labels_
-					clusters_ms = ms.cluster_centers_
+					# labels_ms = ms.labels_
+					# clusters_ms = ms.cluster_centers_
 
-					ms_boundaries = domainBoundaries(labels_ms, realId_list,domains)
+					# ms_boundaries = domainBoundaries(labels_ms, realId_list,domains)
 
-					ms_boundaries = fillVoids(ms_boundaries)
+					# ms_boundaries = fillVoids(ms_boundaries)
 
-					# ms_boundaries = stitchPatches(ms_boundaries, clusters_ms, cords_list, realId_list, 15)
+					# # ms_boundaries = stitchPatches(ms_boundaries, clusters_ms, cords_list, realId_list, 15)
 
-					cathDict, ms_boundaries = mapCorrectly(cathDict, ms_boundaries)
+					# cathDict, ms_boundaries = mapCorrectly(cathDict, ms_boundaries)
 
-					ms_overlap = compareResults(cathDict, ms_boundaries, domains)
+					# ms_overlap = compareResults(cathDict, ms_boundaries, domains)
 
-					ms_accuracy = ms_accuracy + ms_overlap
+					# ms_accuracy = ms_accuracy + ms_overlap
 
-					for key, value in ms_boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(ms_overlap)+", ",
+					# for key, value in ms_boundaries.iteritems():
+					# 	makeReadable(value)
+					# print ", " + "{0:.2f}".format(ms_overlap)+", ",
 
 					#==============================SPECTRAL-CLUSTERING================================================
 
@@ -519,103 +530,103 @@ for pdb_file in os.listdir(path):
 
 					#==============================WARD-HIERARCHICAL================================================
 
-					wh = AgglomerativeClustering(n_clusters=domains).fit(x)
+					# wh = AgglomerativeClustering(n_clusters=domains).fit(x)
 
-					labels_wh = wh.labels_
+					# labels_wh = wh.labels_
 
-					# clusters_wh = wh.cluster_centers_
+					# # clusters_wh = wh.cluster_centers_
 
-					wh_boundaries = domainBoundaries(labels_wh, realId_list,domains)
+					# wh_boundaries = domainBoundaries(labels_wh, realId_list,domains)
 
-					wh_boundaries = fillVoids(wh_boundaries)
+					# wh_boundaries = fillVoids(wh_boundaries)
 
-					# wh_boundaries = stitchPatches(wh_boundaries, clusters_wh, cords_list, realId_list, 15)
+					# # wh_boundaries = stitchPatches(wh_boundaries, clusters_wh, cords_list, realId_list, 15)
 
-					cathDict, wh_boundaries = mapCorrectly(cathDict, wh_boundaries)
+					# cathDict, wh_boundaries = mapCorrectly(cathDict, wh_boundaries)
 
-					wh_overlap = compareResults(cathDict, wh_boundaries, domains)
+					# wh_overlap = compareResults(cathDict, wh_boundaries, domains)
 
-					wh_accuracy = wh_accuracy + wh_overlap
+					# wh_accuracy = wh_accuracy + wh_overlap
 
-					for key, value in wh_boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(wh_overlap)+", ",
+					# for key, value in wh_boundaries.iteritems():
+					# 	makeReadable(value)
+					# print ", " + "{0:.2f}".format(wh_overlap)+", ",
 
 					
 
 					#==============================COMPLETE-AGGLOMERATIVE================================================
 
-					ca = AgglomerativeClustering(n_clusters=domains, linkage="complete").fit(x)
+					# ca = AgglomerativeClustering(n_clusters=domains, linkage="complete").fit(x)
 
-					labels_ca = ca.labels_
+					# labels_ca = ca.labels_
 
-					# clusters_ca = ca.cluster_centers_
+					# # clusters_ca = ca.cluster_centers_
 
-					ca_boundaries = domainBoundaries(labels_ca, realId_list,domains)
+					# ca_boundaries = domainBoundaries(labels_ca, realId_list,domains)
 
-					ca_boundaries = fillVoids(ca_boundaries)
+					# ca_boundaries = fillVoids(ca_boundaries)
 
-					# ca_boundaries = stitchPatches(ca_boundaries, clusters_ca, cords_list, realId_list, 15)
+					# # ca_boundaries = stitchPatches(ca_boundaries, clusters_ca, cords_list, realId_list, 15)
 
-					cathDict, ca_boundaries = mapCorrectly(cathDict, ca_boundaries)
+					# cathDict, ca_boundaries = mapCorrectly(cathDict, ca_boundaries)
 
-					ca_overlap = compareResults(cathDict, ca_boundaries, domains)
+					# ca_overlap = compareResults(cathDict, ca_boundaries, domains)
 
-					ca_accuracy = ca_accuracy + ca_overlap
+					# ca_accuracy = ca_accuracy + ca_overlap
 
-					for key, value in ca_boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(ca_overlap)+", ",
+					# for key, value in ca_boundaries.iteritems():
+					# 	makeReadable(value)
+					# print ", " + "{0:.2f}".format(ca_overlap)+", ",
 
 
 					#==============================AVERAGE-AGGLOMERATIVE================================================
 
-					aa = AgglomerativeClustering(n_clusters=domains, linkage="average").fit(x)
+					# aa = AgglomerativeClustering(n_clusters=domains, linkage="average").fit(x)
 
-					labels_aa = aa.labels_
+					# labels_aa = aa.labels_
 
-					# clusters_aa = aa.cluster_centers_
+					# # clusters_aa = aa.cluster_centers_
 
-					aa_boundaries = domainBoundaries(labels_aa, realId_list,domains)
+					# aa_boundaries = domainBoundaries(labels_aa, realId_list,domains)
 
-					aa_boundaries = fillVoids(aa_boundaries)
+					# aa_boundaries = fillVoids(aa_boundaries)
 
-					# aa_boundaries = stitchPatches(aa_boundaries, clusters_aa, cords_list, realId_list, 15)
+					# # aa_boundaries = stitchPatches(aa_boundaries, clusters_aa, cords_list, realId_list, 15)
 
-					aathDict, aa_boundaries = mapCorrectly(cathDict, aa_boundaries)
+					# aathDict, aa_boundaries = mapCorrectly(cathDict, aa_boundaries)
 
-					aa_overlap = compareResults(aathDict, aa_boundaries, domains)
+					# aa_overlap = compareResults(aathDict, aa_boundaries, domains)
 
-					aa_accuracy = aa_accuracy + aa_overlap
+					# aa_accuracy = aa_accuracy + aa_overlap
 
-					for key, value in aa_boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(aa_overlap)+", ",
+					# for key, value in aa_boundaries.iteritems():
+					# 	makeReadable(value)
+					# print ", " + "{0:.2f}".format(aa_overlap)+", ",
 
 					
 					#==============================DBSCAN================================================
 
-					dbscan = DBSCAN().fit(x)
+					# dbscan = DBSCAN().fit(x)
 
-					labels_dbscan = dbscan.labels_
+					# labels_dbscan = dbscan.labels_
 
-					# clusters_dbscan = dbscan.cluster_centers_
+					# # clusters_dbscan = dbscan.cluster_centers_
 
-					dbscan_boundaries = domainBoundaries(labels_dbscan, realId_list,domains)
+					# dbscan_boundaries = domainBoundaries(labels_dbscan, realId_list,domains)
 
-					dbscan_boundaries = fillVoids(dbscan_boundaries)
+					# dbscan_boundaries = fillVoids(dbscan_boundaries)
 
-					# dbscan_boundaries = stitchPatches(dbscan_boundaries, clusters_dbscan, cords_list, realId_list, 15)
+					# # dbscan_boundaries = stitchPatches(dbscan_boundaries, clusters_dbscan, cords_list, realId_list, 15)
 
-					cathDict, dbscan_boundaries = mapCorrectly(cathDict, dbscan_boundaries)
+					# cathDict, dbscan_boundaries = mapCorrectly(cathDict, dbscan_boundaries)
 
-					dbscan_overlap = compareResults(cathDict, dbscan_boundaries, domains)
+					# dbscan_overlap = compareResults(cathDict, dbscan_boundaries, domains)
 
-					dbscan_accuracy = dbscan_accuracy + dbscan_overlap
+					# dbscan_accuracy = dbscan_accuracy + dbscan_overlap
 
-					for key, value in dbscan_boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(dbscan_overlap)+", ",
+					# for key, value in dbscan_boundaries.iteritems():
+					# 	makeReadable(value)
+					# print ", " + "{0:.2f}".format(dbscan_overlap)+", ",
 
 					#==============================Gaussian Mixture================================================
 
@@ -643,29 +654,96 @@ for pdb_file in os.listdir(path):
 
 					#==============================BIRCH================================================
 
-					birch = Birch(n_clusters=domains).fit(x)
+					# birch = Birch(n_clusters=domains).fit(x)
 
-					labels_birch = birch.labels_
+					# labels_birch = birch.labels_
 
-					# clusters_birch = birch.cluster_centers_
+					# # clusters_birch = birch.cluster_centers_
 
-					birch_boundaries = domainBoundaries(labels_birch, realId_list,domains)
+					# birch_boundaries = domainBoundaries(labels_birch, realId_list,domains)
 
-					birch_boundaries = fillVoids(birch_boundaries)
+					# birch_boundaries = fillVoids(birch_boundaries)
 
-					# birch_boundaries = stitchPatches(birch_boundaries, clusters_birch, cords_list, realId_list, 15)
+					# # birch_boundaries = stitchPatches(birch_boundaries, clusters_birch, cords_list, realId_list, 15)
 
-					cathDict, birch_boundaries = mapCorrectly(cathDict, birch_boundaries)
+					# cathDict, birch_boundaries = mapCorrectly(cathDict, birch_boundaries)
 
-					birch_overlap = compareResults(cathDict, birch_boundaries, domains)
+					# birch_overlap = compareResults(cathDict, birch_boundaries, domains)
 
-					birch_accuracy = birch_accuracy + birch_overlap
+					# birch_accuracy = birch_accuracy + birch_overlap
 
-					for key, value in birch_boundaries.iteritems():
-						makeReadable(value)
-					print ", " + "{0:.2f}".format(birch_overlap)
+					# for key, value in birch_boundaries.iteritems():
+					# 	makeReadable(value)
+					# print ", " + "{0:.2f}".format(birch_overlap)
 
-print "No., PDB, Domains, CATH, K-Means, Avg. Overlap(K-Means), Affinity Propagation, Avg. Overlap(Affinity), Mean Shift, Avg. Overlap(Mean Shift), Ward-Hierarchical, Avg. Overlap(Ward), Complete Agglomerative, Avg. Overlap(Complete Agglo), Average Agglomerative(Avg. Agglo), Avg. Overlap, DBSCAN, Avg. Overlap(DBSCAN), Birch, Avg. Overlap(Birch)"
-print ",,,,,",km_accuracy/file_counter,",,",ap_accuracy/file_counter,",,",ms_accuracy/file_counter,",,",wh_accuracy/file_counter,",,",ca_accuracy/file_counter,",,",aa_accuracy/file_counter,",,",dbscan_accuracy/file_counter,",,",birch_accuracy/file_counter
+					print
+					print "================================Xmeans================================================="
+					
+					# k=5
+    				# k_init = int(k * 0.65)
+    				# N = len(x)
+    				# D = 3
+    				# k = 32
+    				# max_iter = 100
+    				# n_samples = k * 10
+
+    				# clusters = _minibatch.kmeanspp_multi(x, np.empty((k, D), dtype=np.double), N / 100, 20, 4)
+    				# print clusters
+    				k=32
+
+    				k_init = int(k * 0.65)
+    				print "Clustering with multi-threaded pyxmeans (starting k at {})".format(k_init)
+
+    				with TimerBlock("multithreaded pyxmeans"):
+    					mxmt = XMeans(k_init, verbose=False).fit(x)
+				        clusters_xmeans = mxmt.cluster_centers_
+
+			        print "Num Clusters: ", len(clusters_xmeans)
+			        print "BIC: ", _minibatch.bic(data, clusters_xmeans)
+			        print "Variance: ", _minibatch.model_variance(data, clusters_xmeans)
+			        print "RMS Error: ", error(actual_data, clusters_xmeans)
+			        print
+				  	
+
+				    
+
+
+
+				    
+
+    				# print len(x)
+    				# try:
+    				# 	mxmt = XMeans(3, verbose=False).fit(x)
+    				# 	clusters_xmeans = mxmt.cluster_centers_
+
+    				# 	print "Num Clusters: ", len(clusters_xmeans)
+
+    				# except RuntimeError, e:
+    				# 	print e
+    					
+    				print "===============================END OF XMEANS============================================"
+    				print
+
+    				# with TimerBlock("multithreaded pyxmeans"):
+    					
+        # 				clusters_xmeans = mxmt.cluster_centers_
+    				# 	print "Num Clusters: ", len(clusters_xmeans)
+
+
+					
+        				
+
+				    # clusters_xmeans = mxmt.cluster_centers_
+				    # print "Num Clusters: ", len(clusters_xmeans)
+				    # print
+
+					# k_init = int(k * 0.65)
+				 #    print "Clustering with multi-threaded pyxmeans (starting k at {})".format(k_init)
+
+			        
+				    # with TimerBlock("multithreaded pyxmeans"):
+
+# print "No., PDB, Domains, CATH, K-Means, Avg. Overlap(K-Means), Affinity Propagation, Avg. Overlap(Affinity), Mean Shift, Avg. Overlap(Mean Shift), Ward-Hierarchical, Avg. Overlap(Ward), Complete Agglomerative, Avg. Overlap(Complete Agglo), Average Agglomerative(Avg. Agglo), Avg. Overlap, DBSCAN, Avg. Overlap(DBSCAN), Birch, Avg. Overlap(Birch)"
+# print ",,,,,",km_accuracy/file_counter,",,",ap_accuracy/file_counter,",,",ms_accuracy/file_counter,",,",wh_accuracy/file_counter,",,",ca_accuracy/file_counter,",,",aa_accuracy/file_counter,",,",dbscan_accuracy/file_counter,",,",birch_accuracy/file_counter
 
 # print "accuracy is", accuracy/file_counter
