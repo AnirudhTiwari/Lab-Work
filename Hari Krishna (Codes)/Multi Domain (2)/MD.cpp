@@ -133,35 +133,35 @@ igraph_matrix_init(&sm,cn,cn);
 //Phase #2 Reducing the Graph ang Using Fast Greedy Algo of Newman and Moore//
 
 //Setting-Normalising-Printingnormal Reduced Matrix//
-	for(int i=0;i<cn;i++)
-	{
-		for(int j=0;j<cn;j++)
-		{
-			cout<<ra[i][j]<<"\t";
-			if(ra[i][j] > 0)
-			{
-				igraph_matrix_set(&rm,i,j,(ra[i][j]/(cl[i]+cl[j]))*100);
-				igraph_matrix_set(&sm,i,j,1);
-			}
-		}
-		cout<<endl;
-	}
+	// for(int i=0;i<cn;i++)
+	// {
+	// 	for(int j=0;j<cn;j++)
+	// 	{
+	// 		cout<<ra[i][j]<<"\t";
+	// 		if(ra[i][j] > 0)
+	// 		{
+	// 			igraph_matrix_set(&rm,i,j,(ra[i][j]/(cl[i]+cl[j]))*100);
+	// 			igraph_matrix_set(&sm,i,j,1);
+	// 		}
+	// 	}
+	// 	cout<<endl;
+	// }
 //Printing Normalised Reduced Matrix//
-cout<<endl;
-	for(int i=0;i<cn;i++)
-	{
-		for(int j=0;j<cn;j++)
-		{
-			cout<<igraph_matrix_e(&rm,i,j)<<"\t";
-		}
-		cout<<endl;
-	}
+// cout<<endl;
+// 	for(int i=0;i<cn;i++)
+// 	{
+// 		for(int j=0;j<cn;j++)
+// 		{
+// 			cout<<igraph_matrix_e(&rm,i,j)<<"\t";
+// 		}
+// 		cout<<endl;
+// 	}
 //Creating Reduced Graph//
 igraph_adjacency(&wgraph,&sm,IGRAPH_ADJ_UNDIRECTED);
-cout<<"\n********************************************\n";
-cout<<"Number of Nodes: "<<igraph_vcount(&wgraph)<<endl; // Number of nodes
-cout<<"Number of Edges: "<<igraph_ecount(&wgraph)<<endl; // Number of edges
-cout<<"********************************************\n\n";
+// cout<<"\n********************************************\n";
+// cout<<"Number of Nodes: "<<igraph_vcount(&wgraph)<<endl; // Number of nodes
+// cout<<"Number of Edges: "<<igraph_ecount(&wgraph)<<endl; // Number of edges
+// cout<<"********************************************\n\n";
 
 //Fast Greedy Modularity Optimisation by Moore , Newman//
 
@@ -201,11 +201,11 @@ igraph_community_fastgreedy(&wgraph,&weights,&gmerges,&gmodularity,0);
 for(long int j=0;j<igraph_matrix_nrow(&gmerges)-1;j++)
 	{
 	igraph_community_to_membership(&gmerges,cn,(j+1),&gmembership,NULL);
-	//cout<<"MODULARITY: "<<(VECTOR(gmodularity)[(j)])<<endl;
-	//cout<<"********************************"<<endl;
+	cout<<"MODULARITY: "<<(VECTOR(gmodularity)[(j)])<<endl;
+	cout<<"********************************"<<endl;
 	for(long int k=0;k<igraph_vector_size(&gmembership);k++)
 	{
-	//cout<<(k+1)<<"\t"<<(VECTOR(gmembership)[k]+1)<<endl;
+	cout<<(k+1)<<"\t"<<(VECTOR(gmembership)[k]+1)<<endl;
 	}
 	}
 

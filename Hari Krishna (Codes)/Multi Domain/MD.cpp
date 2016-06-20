@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
 //Code for loading adj matrix from file//
 FILE *fp;
 fp=fopen(argv[1], "r");
-cout<<"PDB ID:"<<argv[1]<<endl;
+// cout<<"PDB ID:"<<argv[1]<<endl;
 //Declaring//
 igraph_bool_t directed=false;
 igraph_t graph; // Graph Object
@@ -66,13 +66,13 @@ for(int i=1;i<=8;i++)
 
 	igraph_modularity(&graph,&membership,&modularity,NULL);
 
-	//cout<<"********************************************\n";
-	//cout<<"For Split #"<<i<<" Modularity is: "<<modularity<<endl;
-	//cout<<"********************************************\n";	
-	//for(long int j=0;j<igraph_vector_size(&membership);j++)
-	//{
-		//cout<<(j+1)<<"\t"<<(VECTOR(membership)[j]+1)<<endl;
-	//}
+	// cout<<"********************************************\n";
+	// cout<<"For Split #"<<i<<" Modularity is: "<<modularity<<endl;
+	// cout<<"********************************************\n";	
+	// for(long int j=0;j<igraph_vector_size(&membership);j++)
+	// {
+	// 	cout<<(j+1)<<"\t"<<(VECTOR(membership)[j]+1)<<endl;
+	// }
 
 	if(max < modularity)
 	{
@@ -84,9 +84,9 @@ for(int i=1;i<=8;i++)
 }
 
 //Printing Maximum Modularity Membership vector//
-cout<<"********************************************\n";
-cout<<"For Split #"<<maxstep<<" Modularity is: "<<mmodularity<<endl;
-cout<<"********************************************\n";
+// cout<<"********************************************\n";
+// cout<<"For Split #"<<maxstep<<" Modularity is: "<<mmodularity<<endl;
+// cout<<"********************************************\n";
 for(long int j=0;j<igraph_vector_size(&mmembership);j++)
 	{
 		cout<<(j+1)<<"\t"<<(VECTOR(mmembership)[j]+1)<<endl;
@@ -144,32 +144,30 @@ igraph_matrix_init(&sm,cn,cn);
 	{
 		for(int j=0;j<cn;j++)
 		{
-			cout<<ra[i][j]<<"\t";
+			// cout<<ra[i][j]<<"\t";
 			if(ra[i][j] > 0)
 			{
 				igraph_matrix_set(&rm,i,j,(ra[i][j]/(cl[i]+cl[j]))*100);
 				igraph_matrix_set(&sm,i,j,1);
 			}
 		}
-		cout<<endl;
+		// cout<<endl;
 	}
 //Printing Normalised Reduced Matrix//
-cout<<endl;
-	for(int i=0;i<cn;i++)
-	{
-		for(int j=0;j<cn;j++)
-		{
-			cout<<igraph_matrix_e(&rm,i,j)<<"\t";
-		}
-		cout<<endl;
-	}
+	// for(int i=0;i<cn;i++)
+	// {
+	// 	for(int j=0;j<cn;j++)
+	// 	{
+	// 		cout<<igraph_matrix_e(&rm,i,j)<<"\t";
+	// 	}
+	// 	cout<<endl;
+	// }
 //Creating Reduced Graph//
 igraph_adjacency(&wgraph,&sm,IGRAPH_ADJ_UNDIRECTED);
-cout<<"\n********************************************\n";
-cout<<"Number of Nodes: "<<igraph_vcount(&wgraph)<<endl; // Number of nodes
-cout<<"Number of Edges: "<<igraph_ecount(&wgraph)<<endl; // Number of edges
-cout<<"********************************************\n\n";
-
+// cout<<"\n********************************************\n";
+// cout<<"Number of Nodes: "<<igraph_vcount(&wgraph)<<endl; // Number of nodes
+// cout<<"Number of Edges: "<<igraph_ecount(&wgraph)<<endl; // Number of edges
+// cout<<"********************************************\n\n";
 //Fast Greedy Modularity Optimisation by Moore , Newman//
 
 //Declaring//
@@ -199,21 +197,33 @@ igraph_vector_set(&weights,wc,igraph_matrix_e(&rm,igraph_vector_e(&el,i),igraph_
 wc++;
 }
 
-igraph_community_fastgreedy(&wgraph,&weights,&gmerges,&gmodularity,0);
-//cout<<"MODULARITY SIZE: "<<(igraph_vector_size(&gmodularity))<<endl;
-//cout<<"MERGES SIZE: "<<igraph_matrix_size(&gmerges)<<endl;
-//cout<<"Merges rows: "<<igraph_matrix_nrow(&gmerges)<<endl;
-for(long int j=0;j<igraph_matrix_nrow(&gmerges)-1;j++)
-	{
-	igraph_community_to_membership(&gmerges,cn,(j+1),&gmembership,NULL);
-	//cout<<"MODULARITY: "<<(VECTOR(gmodularity)[(j)])<<endl;
-	//cout<<"********************************"<<endl;
-	for(long int k=0;k<igraph_vector_size(&gmembership);k++)
-	{
-	//cout<<(k+1)<<"\t"<<(VECTOR(gmembership)[k]+1)<<endl;
-	}
-	}
 
+igraph_vector_t best_split;
+
+igraph_vector_init(&best_split, 0);
+
+
+igraph_community_fastgreedy(&wgraph,&weights,&gmerges,&gmodularity,&best_split);
+// cout<<"MODULARITY SIZE: "<<(igraph_vector_size(&gmodularity))<<endl;
+// cout<<"MERGES SIZE: "<<igraph_matrix_size(&gmerges)<<endl;
+// cout<<"Merges rows: "<<igraph_matrix_nrow(&gmerges)<<endl;
+
+// for(long int j=0;j<igraph_matrix_nrow(&gmerges);j++){
+	
+// 	igraph_community_to_membership(&gmerges,cn,(j+1),&gmembership,NULL);
+// 	cout<<"MODULARITY: "<<(VECTOR(gmodularity)[(j)])<<endl;
+// 	cout<<"********************************"<<endl;
+
+// 	for(long int k=0;k<igraph_vector_size(&gmembership);k++)
+// 		cout<<(k+1)<<"\t"<<(VECTOR(gmembership)[k]+1)<<endl;
+		
+// }
+
+cout<<"***"<<endl;
+// cout<<"BEST MODULARITY"<<endl;
+for(long int i=0; i<igraph_vector_size(&best_split);i++){
+	cout<<(i+1)<<"\t"<<(VECTOR(best_split)[i]+1)<<endl;
+}
 
 return 0;
 }

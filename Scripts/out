@@ -1,0 +1,747 @@
+length <= 100 criteria -->  correct single -> 265 wrong single -> 0 correct multi ->  0 wrong multi -> 5
+
+For length >=300 criteria -->  correct single -> 292 wrong single -> 31 correct multi ->  316 wrong multi -> 31
+
+
+290 0.045 0.4
+Classified as correct multi
+
+271 0.125 0.41
+
+208 0.24 0.51
+
+159 0.258 0.44
+Classified as wrong multi
+
+230 0.248 0.51
+
+198 0.066 0.1
+Classified as correct multi
+
+299 0.241 0.56
+
+299 0.007 0.2
+Classified as correct multi
+
+267 0.169 0.43
+
+252 0.19 0.48
+
+136 0.074 0.14
+Classified as correct multi
+
+152 0.039 0.29
+Classified as correct multi
+
+298 0.107 0.34
+Classified as correct multi
+
+265 0.181 0.32
+Classified as correct multi
+
+287 0.108 0.39
+Classified as correct multi
+
+238 0.197 0.49
+
+208 0.154 0.43
+
+125 0.08 0.15
+Classified as correct multi
+
+135 0.081 0.31
+Classified as correct multi
+
+244 0.164 0.51
+
+142 0.169 0.36
+Classified as correct multi
+
+154 0.221 0.55
+
+166 0.127 0.51
+
+293 0.201 0.52
+
+281 0.096 0.2
+Classified as correct multi
+
+272 0.011 0.21
+Classified as correct multi
+
+219 0.064 0.34
+Classified as correct multi
+
+201 0.149 0.26
+Classified as correct multi
+
+184 0.043 0.15
+Classified as correct multi
+
+249 0.096 0.45
+
+122 0.164 0.19
+Classified as correct multi
+
+251 0.052 0.21
+Classified as correct multi
+
+289 0.194 0.36
+Classified as correct multi
+
+274 0.117 0.37
+Classified as correct multi
+
+271 0.177 0.55
+
+293 0.177 0.52
+
+260 0.119 0.4
+Classified as correct multi
+
+130 0.146 0.49
+
+160 0.081 0.16
+Classified as correct multi
+
+167 0.138 0.32
+Classified as correct multi
+
+191 0.131 0.3
+Classified as correct multi
+
+206 0.165 0.45
+
+164 0.165 0.53
+
+259 0.162 0.23
+Classified as correct multi
+
+273 0.271 0.57
+Classified as wrong multi
+
+219 0.292 0.42
+Classified as wrong multi
+
+146 0.192 0.47
+
+238 0.16 0.43
+
+142 0.035 0.18
+Classified as correct multi
+
+148 0.108 0.33
+Classified as correct multi
+
+258 0.163 0.22
+Classified as correct multi
+
+253 0.178 0.47
+
+295 0.112 0.44
+
+191 0.251 0.32
+
+270 0.263 0.54
+Classified as wrong multi
+
+221 0.09 0.36
+Classified as correct multi
+
+283 0.117 0.35
+Classified as correct multi
+
+221 0.258 0.46
+Classified as wrong multi
+
+264 0.045 0.18
+Classified as correct multi
+
+283 0.081 0.38
+Classified as correct multi
+
+196 0.117 0.38
+Classified as correct multi
+
+272 0.11 0.28
+Classified as correct multi
+
+219 0.32 0.45
+Classified as wrong multi
+
+212 0.307 0.57
+Classified as wrong multi
+
+122 0.23 0.44
+
+262 0.237 0.42
+
+270 0.081 0.29
+Classified as correct multi
+
+229 0.017 0.29
+Classified as correct multi
+
+143 0.399 0.52
+Classified as wrong multi
+
+128 0.039 0.2
+Classified as correct multi
+
+129 0.078 0.25
+Classified as correct multi
+
+223 0.161 0.3
+Classified as correct multi
+
+189 0.032 0.27
+Classified as correct multi
+
+266 0.188 0.22
+Classified as correct multi
+
+243 0.0 0.01
+Classified as correct multi
+
+203 0.054 0.22
+Classified as correct multi
+
+120 0.117 0.36
+Classified as correct multi
+
+285 0.025 0.27
+Classified as correct multi
+
+171 0.058 0.41
+
+298 0.272 0.54
+Classified as wrong multi
+
+239 0.163 0.33
+Classified as correct multi
+
+139 0.23 0.15
+Classified as correct multi
+
+190 0.237 0.39
+Classified as correct multi
+
+200 0.165 0.37
+Classified as correct multi
+
+290 0.179 0.57
+
+104 0.231 0.39
+Classified as correct multi
+
+131 0.015 0.18
+Classified as correct multi
+
+246 0.093 0.35
+Classified as correct multi
+
+162 0.019 0.31
+Classified as correct multi
+
+213 0.07 0.23
+Classified as correct multi
+
+233 0.21 0.37
+Classified as correct multi
+
+251 0.219 0.52
+
+291 0.079 0.37
+Classified as correct multi
+
+133 0.143 0.42
+
+200 0.495 0.5
+Classified as wrong multi
+
+198 0.222 0.41
+
+115 0.113 0.45
+
+294 0.238 0.56
+
+273 0.158 0.48
+
+204 0.123 0.36
+Classified as correct multi
+
+214 0.285 0.53
+Classified as wrong multi
+
+283 0.237 0.49
+
+202 0.218 0.29
+Classified as correct multi
+
+141 0.021 0.2
+Classified as correct multi
+
+242 0.211 0.51
+
+156 0.135 0.31
+Classified as correct multi
+
+173 0.058 0.17
+Classified as correct multi
+
+276 0.17 0.29
+Classified as correct multi
+
+136 0.184 0.41
+
+185 0.151 0.3
+Classified as correct multi
+
+220 0.127 0.24
+Classified as correct multi
+
+201 0.104 0.42
+
+174 0.121 0.44
+
+179 0.028 0.4
+Classified as correct multi
+
+113 0.035 0.05
+Classified as correct multi
+
+144 0.215 0.44
+
+244 0.414 0.68
+Classified as wrong multi
+
+145 0.021 0.08
+Classified as correct multi
+
+182 0.093 0.4
+Classified as correct multi
+
+129 0.271 0.45
+Classified as wrong multi
+
+180 0.094 0.27
+Classified as correct multi
+
+165 0.127 0.31
+Classified as correct multi
+
+264 0.186 0.42
+
+165 0.248 0.44
+
+189 0.069 0.37
+Classified as correct multi
+
+235 0.089 0.43
+
+266 0.211 0.51
+
+188 0.165 0.45
+
+174 0.052 0.49
+
+133 0.03 0.19
+Classified as correct multi
+
+283 0.028 0.32
+Classified as correct multi
+
+212 0.066 0.36
+Classified as correct multi
+
+264 0.095 0.4
+Classified as correct multi
+
+288 0.153 0.45
+
+299 0.301 0.61
+Classified as wrong multi
+
+263 0.194 0.36
+Classified as correct multi
+
+260 0.192 0.41
+
+185 0.119 0.26
+Classified as correct multi
+
+267 0.079 0.36
+Classified as correct multi
+
+200 0.285 0.37
+
+118 0.102 0.3
+Classified as correct multi
+
+182 0.055 0.3
+Classified as correct multi
+
+283 0.23 0.22
+Classified as correct multi
+
+216 0.046 0.3
+Classified as correct multi
+
+297 0.31 0.34
+
+221 0.167 0.4
+Classified as correct multi
+
+295 0.064 0.3
+Classified as correct multi
+
+198 0.106 0.39
+Classified as correct multi
+
+265 0.132 0.44
+
+227 0.154 0.44
+
+289 0.0 0.21
+Classified as correct multi
+
+211 0.137 0.4
+Classified as correct multi
+
+222 0.203 0.4
+Classified as correct multi
+
+140 0.093 0.13
+Classified as correct multi
+
+193 0.238 0.46
+
+238 0.084 0.43
+
+158 0.063 0.07
+Classified as correct multi
+
+157 0.076 0.42
+
+250 0.224 0.57
+
+275 0.182 0.52
+
+241 0.203 0.49
+
+146 0.308 0.54
+Classified as wrong multi
+
+228 0.175 0.41
+
+119 0.059 0.22
+Classified as correct multi
+
+149 0.067 0.12
+Classified as correct multi
+
+244 0.213 0.47
+
+245 0.09 0.25
+Classified as correct multi
+
+273 0.37 0.59
+Classified as wrong multi
+
+185 0.216 0.32
+Classified as correct multi
+
+223 0.179 0.41
+
+294 0.265 0.54
+Classified as wrong multi
+
+226 0.133 0.27
+Classified as correct multi
+
+164 0.067 0.3
+Classified as correct multi
+
+244 0.164 0.45
+
+273 0.059 0.47
+
+196 0.148 0.35
+Classified as correct multi
+
+168 0.018 0.18
+Classified as correct multi
+
+136 0.081 0.38
+Classified as correct multi
+
+249 0.1 0.31
+Classified as correct multi
+
+179 0.212 0.42
+
+260 0.062 0.47
+
+229 0.288 0.53
+Classified as wrong multi
+
+214 0.121 0.43
+
+284 0.042 0.34
+Classified as correct multi
+
+247 0.166 0.35
+Classified as correct multi
+
+101 0.069 0.37
+Classified as correct multi
+
+254 0.11 0.51
+
+142 0.204 0.59
+
+252 0.198 0.52
+
+219 0.274 0.33
+
+181 0.238 0.44
+
+250 0.152 0.41
+
+190 0.216 0.51
+
+184 0.049 0.11
+Classified as correct multi
+
+234 0.419 0.62
+Classified as wrong multi
+
+151 0.411 0.49
+Classified as wrong multi
+
+123 0.081 0.05
+Classified as correct multi
+
+267 0.221 0.46
+
+142 0.141 0.32
+Classified as correct multi
+
+212 0.028 0.17
+Classified as correct multi
+
+105 0.143 0.37
+Classified as correct multi
+
+278 0.176 0.34
+Classified as correct multi
+
+120 0.017 0.06
+Classified as correct multi
+
+265 0.094 0.38
+Classified as correct multi
+
+164 0.116 0.33
+Classified as correct multi
+
+181 0.166 0.47
+
+258 0.097 0.18
+Classified as correct multi
+
+258 0.112 0.42
+
+129 0.217 0.41
+
+171 0.14 0.24
+Classified as correct multi
+
+255 0.106 0.1
+Classified as correct multi
+
+289 0.104 0.28
+Classified as correct multi
+
+184 0.174 0.23
+Classified as correct multi
+
+239 0.163 0.48
+
+138 0.058 0.32
+Classified as correct multi
+
+241 0.224 0.42
+
+123 0.309 0.63
+Classified as wrong multi
+
+221 0.145 0.45
+
+218 0.142 0.5
+
+198 0.071 0.13
+Classified as correct multi
+
+161 0.18 0.47
+
+262 0.145 0.44
+
+201 0.104 0.48
+
+244 0.176 0.52
+
+208 0.087 0.17
+Classified as correct multi
+
+190 0.084 0.33
+Classified as correct multi
+
+221 0.312 0.45
+Classified as wrong multi
+
+282 0.135 0.41
+
+151 0.238 0.36
+Classified as correct multi
+
+297 0.162 0.38
+Classified as correct multi
+
+272 0.371 0.57
+Classified as wrong multi
+
+251 0.263 0.5
+Classified as wrong multi
+
+289 0.024 0.25
+Classified as correct multi
+
+143 0.049 0.05
+Classified as correct multi
+
+195 0.256 0.49
+Classified as wrong multi
+
+230 0.183 0.43
+
+117 0.103 0.14
+Classified as correct multi
+
+280 0.093 0.39
+Classified as correct multi
+
+278 0.209 0.37
+Classified as correct multi
+
+233 0.15 0.45
+
+268 0.306 0.53
+Classified as wrong multi
+
+173 0.15 0.49
+
+213 0.07 0.24
+Classified as correct multi
+
+282 0.149 0.34
+Classified as correct multi
+
+228 0.105 0.1
+Classified as correct multi
+
+256 0.066 0.29
+Classified as correct multi
+
+295 0.041 0.28
+Classified as correct multi
+
+266 0.124 0.35
+Classified as correct multi
+
+186 0.183 0.39
+Classified as correct multi
+
+239 0.234 0.38
+Classified as correct multi
+
+199 0.186 0.14
+Classified as correct multi
+
+285 0.253 0.46
+Classified as wrong multi
+
+286 0.161 0.44
+
+266 0.169 0.41
+
+260 0.162 0.36
+Classified as correct multi
+
+239 0.013 0.2
+Classified as correct multi
+
+257 0.16 0.31
+Classified as correct multi
+
+282 0.089 0.13
+Classified as correct multi
+
+224 0.277 0.43
+Classified as wrong multi
+
+160 0.062 0.36
+Classified as correct multi
+
+126 0.206 0.26
+Classified as correct multi
+
+151 0.02 0.05
+Classified as correct multi
+
+253 0.016 0.27
+Classified as correct multi
+
+251 0.048 0.36
+Classified as correct multi
+
+275 0.036 0.12
+Classified as correct multi
+
+269 0.093 0.37
+Classified as correct multi
+
+195 0.215 0.3
+Classified as correct multi
+
+246 0.24 0.35
+Classified as correct multi
+
+236 0.169 0.28
+Classified as correct multi
+
+259 0.208 0.4
+Classified as correct multi
+
+275 0.258 0.52
+Classified as wrong multi
+
+244 0.135 0.32
+Classified as correct multi
+
+256 0.086 0.2
+Classified as correct multi
+
+282 0.301 0.5
+Classified as wrong multi
+
+260 0.296 0.48
+Classified as wrong multi
+
+133 0.098 0.14
+Classified as correct multi
+
+172 0.017 0.33
+Classified as correct multi
+For 100 < length criteria < 300 -->  correct single -> 560 wrong single -> 107 correct multi ->  472 wrong multi -> 62
+

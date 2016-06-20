@@ -47,23 +47,23 @@ for length in range(0, 1600, 5):
 	density = 0.0
 	radius = 0.0
 	
-	# while(energy <= 0.8):
+	while(energy <= 0.8):
 	# while density <= 0.1:
-	while radius <= 180.0:
+	# while radius <= 180.0:
 		single_correct = 0
 		single_wrong = 0
 
 		multi_correct = 0
 		multi_wrong = 0
 
-		# for a,b in zip(single_length, single_energy):
+		for a,b in zip(single_length, single_energy):
 		# for a,b in zip(single_length, single_density):
-		for a,b in zip(single_length, single_radius):
+		# for a,b in zip(single_length, single_radius):
 
 			
-			# if int(a) >= length and float(b) <= float(energy):
+			if int(a) >= length and float(b) <= float(energy):
 			# if int(a) >= length and float(b) <= float(density):
-			if int(a) >= length and float(b) <= float(radius):
+			# if int(a) >= length and float(b) >= float(radius):
 
 				single_wrong+=1
 
@@ -72,27 +72,27 @@ for length in range(0, 1600, 5):
 
 
 
-		# for a,b in zip(multi_length, multi_energy):
+		for a,b in zip(multi_length, multi_energy):
 		# for a,b in zip(multi_length, multi_density):
-		for a,b in zip(multi_length, multi_radius):
+		# for a,b in zip(multi_length, multi_radius):
 
 
-			# if int(a) >= length and float(b) <= float(energy):
+			# if int(a) >= length and float(b) = float(energy):
 			# if int(a) >= length and float(b) <= float(density):
-			if int(a) >= length and float(b) <= float(radius):
+			if int(a) >= length and float(b) >= float(radius):
 				multi_correct+=1
 			else:
 				multi_wrong+=1
 
 
-		# print "For length " + str(length) + " and energy " + str(energy) + " Single correct " + str(single_correct) + " and Single Wrong " + str(single_wrong) + str(single_wrong) + " Single Accuracy " + str(100*single_correct/(len(single_length)))
-		# print "For length " + str(length) + " and energy " + str(energy) + " Multi correct " + str(multi_correct) + " and Multi Wrong " + str(multi_wrong) + " Multi Accuracy " + str(100*multi_correct/(len(multi_length)))
+		print "For length " + str(length) + " and energy " + str(energy) + " Single correct " + str(single_correct) + " and Single Wrong " + str(single_wrong)  + " Single Accuracy " + str(100*single_correct/(len(single_length)))
+		print "For length " + str(length) + " and energy " + str(energy) + " Multi correct " + str(multi_correct) + " and Multi Wrong " + str(multi_wrong) + " Multi Accuracy " + str(100*multi_correct/(len(multi_length)))
 
 		# print "For length " + str(length) + " and density " + str(density) + " Single correct " + str(single_correct) + " and Single Wrong " + str(single_wrong) + " Single Accuracy " + str(100*single_correct/(len(single_length)))
 		# print "For length " + str(length) + " and density " + str(density) + " Multi correct " + str(multi_correct) + " and Multi Wrong " + str(multi_wrong) + " Multi Accuracy " + str(100*multi_correct/(len(multi_length)))
 
-		print "For length " + str(length) + " and radius " + str(radius) + " Single correct " + str(single_correct) + " and Single Wrong " + str(single_wrong) + " Single Accuracy " + str(100*single_correct/(len(single_length)))
-		print "For length " + str(length) + " and radius " + str(radius) + " Multi correct " + str(multi_correct) + " and Multi Wrong " + str(multi_wrong) + " Multi Accuracy " + str(100*multi_correct/(len(multi_length)))
+		# print "For length " + str(length) + " and radius " + str(radius) + " Single correct " + str(single_correct) + " and Single Wrong " + str(single_wrong) + " Single Accuracy " + str(100*single_correct/(len(single_length)))
+		# print "For length " + str(length) + " and radius " + str(radius) + " Multi correct " + str(multi_correct) + " and Multi Wrong " + str(multi_wrong) + " Multi Accuracy " + str(100*multi_correct/(len(multi_length)))
 
 
 		accuracy = (single_correct+multi_correct)*100/(len(single_length) + len(multi_length))
@@ -103,9 +103,9 @@ for length in range(0, 1600, 5):
 			best_val = accuracy
 		
 			ans[0] = length
-			# ans[1] = energy
+			ans[1] = energy
 			# ans[1] = density
-			ans[1] = radius
+			# ans[1] = radius
 
 			ans[2] = (single_correct*100)/len(single_length)
 			ans[3] = (single_wrong*100)/len(single_length)
@@ -116,9 +116,9 @@ for length in range(0, 1600, 5):
 			ans[6] = best_val
 
 
-		# energy = energy + 0.05
+		energy = energy + 0.05
 		# density = density + 0.01
-		radius = radius + 1.0
+		# radius = radius + 1.0
 
 print ans[0], ans[1], ans[2], ans[3], ans[4], ans[5], ans[6]
 
