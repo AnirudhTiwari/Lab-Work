@@ -1,7 +1,8 @@
 import shutil
 
 
-with open("sample_input_hk_thesis.txt") as f1:
+# with open("sample_input_hk_thesis.txt") as f1:
+with open("multi_domain_second_dataset") as f1:
 	pdb = f1.readlines()
 
 src = "/run/media/Tiwari/Storage/pdb/data/structures/divided/"

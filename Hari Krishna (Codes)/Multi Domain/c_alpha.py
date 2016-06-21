@@ -34,7 +34,8 @@ def value_finder(start_value, end_value, array):
 
 # pdb_chain = raw_input("Enter chain name/number: ")
 
-input_file_name = "sample_input_hk_thesis"
+# input_file_name = "sample_input_hk_thesis"
+input_file_name = "multi_domain_second_dataset"
 
 
 
@@ -72,7 +73,7 @@ for x in data:
 		if data[0]=='A' and data[1]=='T':
 			if data[13]=='C' and data[14]=='A':
 				chain = data[21]
-				if chain==pdb_chain:
+				if chain.lower()==pdb_chain:
 
 					residue_name = data[17] + data[18] + data[19]
 					
