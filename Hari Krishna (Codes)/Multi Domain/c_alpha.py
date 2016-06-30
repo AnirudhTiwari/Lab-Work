@@ -35,7 +35,9 @@ def value_finder(start_value, end_value, array):
 # pdb_chain = raw_input("Enter chain name/number: ")
 
 # input_file_name = "sample_input_hk_thesis"
-input_file_name = "multi_domain_second_dataset"
+# input_file_name = "multi_domain_second_dataset"
+
+input_file_name = "2hbw_a_input"
 
 
 
@@ -60,7 +62,7 @@ for x in data:
 
 	file_write = open(output_file_name, 'w')
 
-	file_read = open(pdb_name + ".pdb",'r')
+	file_read = open("Second Dataset Multi/" + pdb_name + ".pdb",'r')
 
 	alpha_atoms_data = []
 
@@ -97,7 +99,15 @@ for x in data:
 
 					# write_coordinates =  str(residue_no) + ' ' + coord_x + ' ' + coord_y + ' ' + coord_z + ' ' + str(hydrophobic) + '\n'
 
-					alpha_atoms_data.append(alpha)		
+					add_flag = 0
+
+					for x in alpha_atoms_data:
+						if int(residue_no)==x.residue_no:
+							add_flag=1
+							break
+
+					if add_flag == 0:
+						alpha_atoms_data.append(alpha)		
 
 					# print residue_no, coord_x, coord_y, coord_z			
 
@@ -105,7 +115,12 @@ for x in data:
 
 	size = len(alpha_atoms_data)
 
-	adjacency_matrix = [[0 for x in range(size)] for x in range(size)] 
+	adjacency_matrix = [[0 for x in range(size)] for x in range(size)]
+
+
+	# for x in alpha_atoms_data:
+
+	#  	print x.name, x.residue_no, x.coordinate_x, x.coordinate_y, x.coordinate_z
 
 	edge_ticker = 0
 
@@ -126,13 +141,14 @@ for x in data:
 
 
 			adjacency_matrix[a][b] = math.sqrt(math.pow((target_x-ref_x),2) + math.pow((target_y-ref_y),2) + math.pow((target_z-ref_z),2))
-			if (adjacency_matrix[a][b] < cutoff and adjacency_matrix[a][b] > 0.0):
+			if adjacency_matrix[a][b] <= cutoff: #and adjacency_matrix[a][b] > 0.0):
 				weight = 1/adjacency_matrix[a][b]
 				adjacency_matrix[a][b]=1
 				write_edges = str(a) + ' ' + str(b) + ' ' + str(weight) + '\n'
 				# print alpha_atoms_data[a].residue_no, alpha_atoms_data[b].residue_no
 				# print a,b
 				edges = str(a) + "\t" + str(b) + "\n"
+				# print edges.strip()
 				file_write.write(edges)
 			else:
 				adjacency_matrix[a][b]=0
