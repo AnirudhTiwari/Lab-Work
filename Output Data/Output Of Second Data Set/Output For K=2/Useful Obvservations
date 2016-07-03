@@ -1,0 +1,47 @@
+===================================Length vs Energy======================================
+
+
+For length 115 and energy 0.25 Single correct 605 and Single Wrong 162 Single Accuracy 78
+For length 115 and energy 0.25 Multi correct 554 and Multi Wrong 70 Multi Accuracy 88
+83
+
+For length 150 and energy 0.25 Single correct 637 and Single Wrong 130 Single Accuracy 83
+For length 150 and energy 0.25 Multi correct 517 and Multi Wrong 107 Multi Accuracy 82
+82
+
+For length 200 and energy 0.25 Single correct 688 and Single Wrong 79 Single Accuracy 89
+For length 200 and energy 0.25 Multi correct 461 and Multi Wrong 163 Multi Accuracy 73
+82
+
+For length 210 and energy 0.25 Single correct 697 and Single Wrong 70 Single Accuracy 90
+For length 210 and energy 0.25 Multi correct 450 and Multi Wrong 174 Multi Accuracy 72
+82
+
+==========================================================================================
+
+
+====================================Length vs Density=====================================
+
+For length 115 and density 0.05 Single correct 548 and Single Wrong 219 Single Accuracy 71
+For length 115 and density 0.05 Multi correct 532 and Multi Wrong 92 Multi Accuracy 85
+77
+
+For length 150 and density 0.05 Single correct 617 and Single Wrong 150 Single Accuracy 80
+For length 150 and density 0.05 Multi correct 495 and Multi Wrong 129 Multi Accuracy 79
+79
+
+For length 200 and density 0.06 Single correct 611 and Single Wrong 156 Single Accuracy 79
+For length 200 and density 0.06 Multi correct 511 and Multi Wrong 113 Multi Accuracy 81
+80
+
+For length 210 and density 0.06 Single correct 631 and Single Wrong 136 Single Accuracy 82
+For length 210 and density 0.06 Multi correct 498 and Multi Wrong 126 Multi Accuracy 79
+81
+
+===========================================================================================
+
+For length 115 and radius 20.0 Single correct 641 and Single Wrong 126 Single Accuracy 83
+For length 115 and radius 20.0 Multi correct 486 and Multi Wrong 138 Multi Accuracy 77
+81
+
+

@@ -16,20 +16,21 @@ import radius_of_gyration
 from mpl_toolkits.mplot3d import Axes3D
 import pickle
 
-def value_finder(start_residue, end_value, array):
+def value_finder(start_value, end_value, array):
+
 	coordinate = ''
 
-	while(array[start_residue]==' '):
-		start_residue = start_residue+1
+	while array[start_value]==' ':
+		start_value = start_value+1
 
-	while(array[start_residue]!=' '):
-		coordinate = coordinate + array[start_residue];
-		start_residue = start_residue + 1
 
-		if(array[start_residue]=='-'):
-			break
+
+	while int(start_value)!=int(end_value):
+		coordinate = coordinate + array[start_value];
+		start_value = start_value + 1
 
 	return coordinate
+
 
 def getCordsList(fileRead, chain):
 	cords_list = []
@@ -47,11 +48,14 @@ def getCordsList(fileRead, chain):
 
 		if(data[0]=='A' and data[1]=='T' and data[2]=='O' and data[21]==chain and data[13]=='C' and data[14]=='A'):
 
-			coord_x = float(value_finder(31, 38, data))
-			coord_y = float(value_finder(39, 46, data))
-			coord_z = float(value_finder(47, 54, data))
+			val = value_finder(22, 26, data)	
+						
+			coord_x = float(value_finder(30, 38, data))
 
-			val = value_finder(22,23, data)
+			coord_y = float(value_finder(38, 46, data))
+
+			coord_z = float(value_finder(46, 54, data))
+
 		
 			if not re.search('[a-zA-Z]+', val):
 				real_id = int(val)
@@ -103,6 +107,7 @@ def dist(a,b):
 		return distance
 
 def getInteractionEnergy(matrix, num_domains, cords_list):
+
 	clusters_dict = defaultdict(list)
 
 	for x in range(len(matrix)):
@@ -118,9 +123,10 @@ def getInteractionEnergy(matrix, num_domains, cords_list):
 					for b in clusters_dict[z]:
 						total_interaction+=1
 						distance = dist(cords_list[a],cords_list[b])
+						# print cords_list[a], cords_list[b]
 						if distance < 7.0:
 							energy+=1
-						# energy = energy + 1/distance
+							# energy = energy + 1/distance
 
 	return (1.0*energy/2)/len(matrix)
 	# return (1.0*energy)/(total_interaction)
@@ -395,7 +401,8 @@ gyration_list_b = []
 path = "Second Dataset/"
 
 # with open("../Output Data/cath_scop_intersection/cath_scop_intersection.txt") as f12:
-with open("Second Dataset Chains/four_domains") as f12:
+with open("Second Dataset Chains/multi_domain") as f12:
+# with open("test_input") as f12:
 	req_chains = f12.readlines()
 
 for pdb_file in os.listdir(path):
@@ -429,6 +436,7 @@ for pdb_file in os.listdir(path):
 				domains = int(pdb_id[7] + pdb_id[8])
 
 				for r in req_chains:
+					# print pdb_id[:4].lower()
 					if r[:4]==pdb_id[:4].lower() and chain.lower()==r[4].lower():					
 						if frags==0:
 							# print pdb_id.strip()
@@ -451,7 +459,7 @@ for pdb_file in os.listdir(path):
 #								
 							# radius_vish = calculateDensity(cords_list)
 
-							simulated_domains = 2
+							simulated_domains = 3
 
 							km = KMeans(n_clusters=simulated_domains).fit(x)
 							labels_km = km.labels_
@@ -464,50 +472,7 @@ for pdb_file in os.listdir(path):
 								interactionEnergy_list_a.append(interaction_energy)
 								density_list_a.append(density)
 								print pdb_id[:4], ",", chain, "," ,domains, "," ,length, ", ", '{0:.3f}'.format(interaction_energy),", ", '{0:.3f}'.format(density),", ", '{0:.3f}'.format(radius_gy)  
+								# print pdb_id[:4], ",", chain, "," ,domains, "," ,length, ", ", interaction_energy,", ", density,", ", '{0:.3f}'.format(radius_gy)  
+			
 
-								# print 
-
-							# else:
-							# 	length_list_b.append(length)
-							# 	interactionEnergy_list_b.append(interaction_energy)
-							# 	density_list_b.append(density)
-
-
-								# print pdb_id[:4], "," ,chain.upper(),", ", domains," ," ,length, ", ", '{0:.3f}'.format(density)
-							# print pdb_id[:4], "," ,chain.upper(),", ", domains," ," ,length, ", ", '{0:.3f}'.format(interaction_energy)
-
-								# print pdb_id[:4], "," ,chain.upper(),", ", domains," ," ,length, ", ", '{0:.3f}'.format(radius_gy), ", ", '{0:.3f}'.format(radius_vish)
-
-
-# fig = plt.figure()
-# ax = fig.add_subplot(111, projection='3d')
-# # ax1 = fig.add_subplot(111, projection='3d')
-
-
-# # print len(length_list_a)
-# # print len(interactionEnergy_list_a)
-# # print len(density_list_a)
-
-# # print len(length_list_b)
-# # print len(interactionEnergy_list_b)
-# # print len(density_list_b)
-
-
-
-# ax.scatter(length_list_a, interactionEnergy_list_a, density_list_a, c='r')
-# ax.scatter(length_list_b, interactionEnergy_list_b, density_list_b, c='b')
-
-# ax.set_xlabel('Length')
-# ax.set_ylabel('Interaction Energy')
-# ax.set_zlabel('Density')
-
-# plt.show()
-
-
-
-
-
-
-
-						
 
