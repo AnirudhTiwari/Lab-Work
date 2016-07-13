@@ -127,5 +127,6 @@ for x in data:
 	graph.add_edges(edge_list)
 
 	newman_output = graph.community_leading_eigenvector()
+	print "check"
 
 	
