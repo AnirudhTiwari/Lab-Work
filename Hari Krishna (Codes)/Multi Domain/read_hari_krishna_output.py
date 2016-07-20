@@ -58,6 +58,10 @@ def makeReadable(boundaries):
 		# print temp_list
 		print  min(temp_list), "-", max(temp_list)+1,
 
+	# print "After internal Stitch"
+	# print k_means
+	# print "ISLANDS"
+	# print island
 	print "--",
 
 def stitchPatches(k_means, patch_length):
@@ -83,10 +87,6 @@ def stitchPatches(k_means, patch_length):
 
 	island = internalStitch(island, patch_length)
 
-	# print "After internal Stitch"
-	# print k_means
-	# print "ISLANDS"
-	# print island
 
 
 	mean_list = []
@@ -197,24 +197,17 @@ def calculateEnergy(atoms_data, clusters):
 		# for target_cluster in range(int(base_cluster)+1, len(clusters)+1):
 
 		for target_cluster in sorted(clusters):
-<<<<<<< HEAD
 			# if int(target_cluster) > int(base_cluster):
 			if target_cluster!=base_cluster:
 
-=======
-			if int(target_cluster) > int(base_cluster):
+			# if int(target_cluster) > int(base_cluster):
 
-				energy = 0.0
->>>>>>> 5a0f2797cc7739a51b795a98f8370672ac4c8a6d
 
 				# print clusters[base_cluster]
 				# print
 				# print clusters[str(target_cluster)]
 
-<<<<<<< HEAD
 				energy = 0
-=======
->>>>>>> 5a0f2797cc7739a51b795a98f8370672ac4c8a6d
 
 				for res_a in clusters[base_cluster]:
 					for res_b in clusters[str(target_cluster)]:
@@ -224,28 +217,19 @@ def calculateEnergy(atoms_data, clusters):
 						except KeyError:
 							continue
 
-<<<<<<< HEAD
 						if distance <= 7.0:
 							energy+=1
-=======
-						if distance < 7.0:
-							energy = energy + 1/distance
->>>>>>> 5a0f2797cc7739a51b795a98f8370672ac4c8a6d
 
 				base_length = len(clusters[base_cluster])
 				target_length = len(clusters[str(target_cluster)])
 
-<<<<<<< HEAD
 				# final_energy = energy/( base_length + target_length )
 				final_energy = energy
 
 				# print base_cluster, target_cluster, "{0:.2f}".format(final_energy)
-=======
-				final_energy = energy/( base_length + target_length )
 				# final_energy = energy
 
 				# print base_cluster, target_cluster, "{0:.2f}".format(final_energy),
->>>>>>> 5a0f2797cc7739a51b795a98f8370672ac4c8a6d
 
 				# print base_length, target_length
 
@@ -433,10 +417,6 @@ for output in file_names:
 
 		for key in sorted(clusters_energy):
 			
-<<<<<<< HEAD
-			
-=======
->>>>>>> 5a0f2797cc7739a51b795a98f8370672ac4c8a6d
 			print key, 
 			for energy in clusters_energy[key]:
 				print "{0:.3f}".format(energy),
