@@ -1,0 +1,339 @@
+No., PDB, Chain, Domains, CATH, K-Means
+1,1acc, A, 4,  " Domain 1 : 14 - 258
+
+Domain 2 : 259 - 485
+
+Domain 3 : 486 - 604
+
+Domain 4 : 605 - 735 ", " Domain 1 :  14 - 210
+
+Domain 2 :  211 - 235    459 - 603
+
+Domain 3 :  236 - 458
+
+Domain 4 :  604 - 735 "
+2,1ggt, A, 4,  " Domain 1 : 8 - 192
+
+Domain 2 : 193 - 515
+
+Domain 3 : 516 - 630
+
+Domain 4 : 631 - 729 ", " Domain 1 :  8 - 185
+
+Domain 2 :  186 - 273    314 - 348    372 - 437    461 - 504
+
+Domain 3 :  274 - 313    628 - 729
+
+Domain 4 :  349 - 371    438 - 460    505 - 627 "
+3,1hn0, A, 4,  " Domain 1 : 25 - 234
+
+Domain 2 : 235 - 618
+
+Domain 3 : 619 - 899
+
+Domain 4 : 900 - 1021 ", " Domain 1 :  25 - 236    291 - 336
+
+Domain 2 :  237 - 290    337 - 504    506 - 615
+
+Domain 3 :  616 - 895
+
+Domain 4 :  896 - 1021 "
+4,1iq8, A, 4,  " Domain 1 : 6 - 360
+
+Domain 2 : 361 - 430
+
+Domain 3 : 431 - 504
+
+Domain 4 : 505 - 582 ", " Domain 1 :  6 - 249
+
+Domain 2 :  250 - 323
+
+Domain 3 :  324 - 489
+
+Domain 4 :  490 - 582 "
+5,1kfi, A, 4,  " Domain 1 : 3 - 212
+
+Domain 2 : 213 - 321
+
+Domain 3 : 322 - 447
+
+Domain 4 : 448 - 572 ", " Domain 1 :  3 - 205    268 - 269
+
+Domain 2 :  206 - 267    270 - 323    406 - 445
+
+Domain 3 :  324 - 405
+
+Domain 4 :  446 - 572 "
+6,1mje, A, 4,  " Domain 1 : 2399 - 2589
+
+Domain 2 : 2590 - 2719
+
+Domain 3 : 2720 - 2971
+
+Domain 4 : 2972 - 3110 ", " Domain 1 :  2399 - 2451    2453 - 2591
+
+Domain 2 :  2592 - 2743   
+
+Domain 3 :  2744 - 2792    2882 - 2962
+
+Domain 4 :  2793 - 2881    2964 - 3110 "
+7,1ord, A, 4,  " Domain 1 : 1 - 107
+
+Domain 2 : 108 - 420
+
+Domain 3 : 421 - 600
+
+Domain 4 : 601 - 730 ", " Domain 1 :  1 - 105
+
+Domain 2 :  106 - 201    318 - 421
+
+Domain 3 :  202 - 317    613 - 730
+
+Domain 4 :  422 - 612 "
+8,1pfx, L, 4,  " Domain 1 : 1 - 46
+
+Domain 2 : 47 - 86
+
+Domain 3 : 87 - 127
+
+Domain 4 : 128 - 146 ", " Domain 1 :  1 - 42    45 - 46
+
+Domain 2 :  43 - 44
+
+Domain 3 :  47 - 83
+
+Domain 4 :  84 - 146 "
+9,1pxy, A, 4,  " Domain 1 : 124 - 248
+
+Domain 2 : 266 - 374
+
+Domain 3 : 388 - 507
+
+Domain 4 : 513 - 623 ", " Domain 1 :  124 - 239
+
+Domain 2 :  240 - 374
+
+Domain 3 :  375 - 511
+
+Domain 4 :  512 - 623 "
+10,1sqg, A, 4,  " Domain 1 : 5 - 145
+
+Domain 2 : 146 - 172
+
+Domain 3 : 173 - 230
+
+Domain 4 : 231 - 428 ", " Domain 1 :  5 - 26
+
+Domain 2 :  27 - 172
+
+Domain 3 :  173 - 237
+
+Domain 4 :  238 - 428 "
+11,1t5h, X, 4,  " Domain 1 : 2 - 174
+
+Domain 2 : 175 - 321
+
+Domain 3 : 322 - 401
+
+Domain 4 : 402 - 503 ", " Domain 1 :  2 - 32    161 - 324
+
+Domain 2 :  33 - 160
+
+Domain 3 :  325 - 402
+
+Domain 4 :  403 - 503 "
+12,1wvf, A, 4,  " Domain 1 : 7 - 114
+
+Domain 2 : 115 - 242
+
+Domain 3 : 243 - 473
+
+Domain 4 : 474 - 521 ", " Domain 1 :  7 - 112    489 - 521
+
+Domain 2 :  113 - 241
+
+Domain 3 :  242 - 281    313 - 377
+
+Domain 4 :  282 - 312    378 - 488 "
+13,2ahx, A, 4,  " Domain 1 : 1 - 194
+
+Domain 2 : 195 - 305
+
+Domain 3 : 306 - 476
+
+Domain 4 : 477 - 616 ", " Domain 1 :  1 - 223
+
+Domain 2 :  224 - 303    557 - 616
+
+Domain 3 :  304 - 499
+
+Domain 4 :  500 - 556 "
+14,2au3, A, 4,  " Domain 1 : 1 - 97
+
+Domain 2 : 98 - 224
+
+Domain 3 : 225 - 348
+
+Domain 4 : 349 - 403 ", " Domain 1 :  1 - 98    195 - 196
+
+Domain 2 :  99 - 194    197 - 225
+
+Domain 3 :  226 - 346
+
+Domain 4 :  347 - 403 "
+15,2b5e, A, 4,  " Domain 1 : 22 - 140
+
+Domain 2 : 141 - 237
+
+Domain 3 : 238 - 364
+
+Domain 4 : 365 - 504 ", " Domain 1 :  22 - 139
+
+Domain 2 :  140 - 239
+
+Domain 3 :  240 - 366
+
+Domain 4 :  367 - 504 "
+16,2fmp, A, 4,  " Domain 1 : 10 - 91
+
+Domain 2 : 92 - 148
+
+Domain 3 : 149 - 271
+
+Domain 4 : 272 - 335 ", " Domain 1 :  10 - 89   
+
+Domain 2 :  90 - 147
+
+Domain 3 :  148 - 259
+
+Domain 4 :  260 - 334 "
+17,2fo0, A, 4,  " Domain 1 : 65 - 142
+
+Domain 2 : 143 - 252
+
+Domain 3 : 253 - 336
+
+Domain 4 : 337 - 530 ", " Domain 1 :  65 - 143
+
+Domain 2 :  144 - 239   
+
+Domain 3 :  240 - 340
+
+Domain 4 :  341 - 392    394 - 530 "
+18,2gy5, A, 4,  " Domain 1 : 23 - 121
+
+Domain 2 : 122 - 211
+
+Domain 3 : 212 - 346
+
+Domain 4 : 347 - 445 ", " Domain 1 :  23 - 117
+
+Domain 2 :  118 - 210
+
+Domain 3 :  211 - 349
+
+Domain 4 :  350 - 445 "
+19,2ioq, A, 4,  " Domain 1 : 15 - 229
+
+Domain 2 : 230 - 400
+
+Domain 3 : 401 - 490
+
+Domain 4 : 491 - 624 ", " Domain 1 :  15 - 230
+
+Domain 2 :  231 - 363
+
+Domain 3 :  364 - 500
+
+Domain 4 :  501 - 624 "
+20,2uvo, A, 4,  " Domain 1 : 2 - 42
+
+Domain 2 : 43 - 85
+
+Domain 3 : 86 - 128
+
+Domain 4 : 129 - 170 ", " Domain 1 :  2 - 57
+
+Domain 2 :  58 - 85
+
+Domain 3 :  86 - 127
+
+Domain 4 :  128 - 170 "
+21,2uzy, B, 4,  " Domain 1 : 42 - 516
+
+Domain 2 : 517 - 561
+
+Domain 3 : 562 - 654
+
+Domain 4 : 655 - 741 ", " Domain 1 :  42 - 229
+
+Domain 2 :  230 - 458
+
+Domain 3 :  459 - 649
+
+Domain 4 :  650 - 741 "
+22,2z1q, A, 4,  " Domain 1 : 5 - 143
+
+Domain 2 : 144 - 249
+
+Domain 3 : 250 - 415
+
+Domain 4 : 443 - 577 ", " Domain 1 :  5 - 116    319 - 357
+
+Domain 2 :  117 - 273
+
+Domain 3 :  274 - 318    358 - 442    554 - 577
+
+Domain 4 :  443 - 553 "
+23,3a21, A, 4,  " Domain 1 : 45 - 339
+
+Domain 2 : 340 - 430
+
+Domain 3 : 431 - 531
+
+Domain 4 : 532 - 658 ", " Domain 1 :  45 - 283
+
+Domain 2 :  284 - 430
+
+Domain 3 :  431 - 453    455 - 530
+
+Domain 4 :  531 - 658 "
+24,3cvr, A, 4,  " Domain 1 : 25 - 279
+
+Domain 2 : 280 - 386
+
+Domain 3 : 387 - 482
+
+Domain 4 : 483 - 561 ", " Domain 1 :  25 - 150
+
+Domain 2 :  151 - 278
+
+Domain 3 :  279 - 378
+
+Domain 4 :  379 - 561 "
+25,3hu3, A, 4,  " Domain 1 : 17 - 107
+
+Domain 2 : 108 - 200
+
+Domain 3 : 201 - 370
+
+Domain 4 : 371 - 469 ", " Domain 1 :  17 - 108
+
+Domain 2 :  109 - 198
+
+Domain 3 :  199 - 370
+
+Domain 4 :  371 - 469 "
+26,3owa, A, 4,  " Domain 1 : 8 - 145
+
+Domain 2 : 146 - 251
+
+Domain 3 : 252 - 422
+
+Domain 4 : 423 - 594 ", " Domain 1 :  8 - 121
+
+Domain 2 :  122 - 259
+
+Domain 3 :  260 - 407    509 - 532    573 - 594
+
+Domain 4 :  408 - 508    533 - 572 "
