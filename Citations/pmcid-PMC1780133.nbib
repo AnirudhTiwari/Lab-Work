@@ -1,0 +1,23 @@
+LA  - eng
+AID - 1471-2105-7-S4-S17 [pii]
+AID - 10.1186/1471-2105-7-S4-S17 [doi]
+PMC - PMC1780133
+PMID- 17217509
+VI  - 7
+IP  - Suppl 4
+PG  - S17
+DP  - 2006
+DEP - 20061212
+IS  - 1471-2105 (Electronic)
+TI  - Evaluation of clustering algorithms for gene expression data
+AB  - BACKGROUND: Cluster analysis is an integral part of high dimensional data analysis. In the context of large scale gene expression data, a filtered set of genes are grouped together according to their expression profiles using one of numerous clustering algorithms that exist in the statistics and machine learning literature. A closely related problem is that of selecting a clustering algorithm that is "optimal" in some sense from a rather impressive list of clustering algorithms that currently exist. RESULTS: In this paper, we propose two validation measures each with two parts: one measuring the statistical consistency (stability) of the clusters produced and the other representing their biological functional congruence. Smaller values of these indices indicate better performance for a clustering algorithm. We illustrate this approach using two case studies with publicly available gene expression data sets: one involving a SAGE data of breast cancer patients and the other involving a time course cDNA microarray data on yeast. Six well known clustering algorithms UPGMA, K-Means, Diana, Fanny, Model-Based and SOM were evaluated. CONCLUSION: No single clustering algorithm may be best suited for clustering genes into functional groups via expression profiles for all data sets. The validation measures introduced in this paper can aid in the selection of an optimal algorithm, for a given data set, from a collection of available clustering algorithms. 
+AU  - Datta S
+FAU - Datta, Susmita
+AD  - Department of Bioinformatics and Biostatistics, University of Louisville, Louisville, KY 40202, USA
+AU  - Datta S
+FAU - Datta, Somnath
+AD  - Department of Bioinformatics and Biostatistics, University of Louisville, Louisville, KY 40202, USA
+TA  - BMC Bioinformatics
+JT  - BMC Bioinformatics
+PL  - London
+SO  - BMC Bioinformatics. 2006;7(Suppl 4):S17. doi:10.1186/1471-2105-7-S4-S17.

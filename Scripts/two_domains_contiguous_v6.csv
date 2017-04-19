@@ -1,0 +1,1028 @@
+No., PDB, Chain, Domains, CATH, K-Means, p-value
+1,1a41, A, 2,  " Domain 1 :  81 - 216
+
+Domain 2 :  217 - 310 " ,  " Domain 1 :  81 - 219
+
+Domain 2 :  220 - 310 " ,  0.99
+2,1a6q, A, 2,  " Domain 1 :  2 - 295
+
+Domain 2 :  296 - 368 " ,  " Domain 1 :  2 - 239
+
+Domain 2 :  240 - 368 " ,  0.85
+3,1a79, A, 2,  " Domain 1 :  9 - 79
+
+Domain 2 :  80 - 179 " ,  " Domain 1 :  9 - 82
+
+Domain 2 :  83 - 179 " ,  0.98
+4,1a8v, A, 2,  " Domain 1 :  -1 - 47
+
+Domain 2 :  48 - 118 " ,  " Domain 1 :  -1 - 49
+
+Domain 2 :  50 - 118 " ,  0.98
+5,1af7, A, 2,  " Domain 1 :  11 - 90
+
+Domain 2 :  91 - 284 " ,  " Domain 1 :  11 - 91
+
+Domain 2 :  92 - 284 " ,  1.00
+6,1b8f, A, 2,  " Domain 1 :  1 - 196
+
+Domain 2 :  197 - 509 " ,  " Domain 1 :  1 - 206    299 - 339    401 - 426
+
+Domain 2 :  207 - 298    340 - 400    427 - 509 " ,  0.85
+7,1c0m, A, 2,  " Domain 1 :  49 - 215
+
+Domain 2 :  216 - 269 " ,  " Domain 1 :  49 - 214
+
+Domain 2 :  215 - 269 " ,  1.00
+8,1c7c, A, 2,  " Domain 1 :  1 - 140
+
+Domain 2 :  141 - 283 " ,  " Domain 1 :  1 - 140
+
+Domain 2 :  141 - 283 " ,  1.00
+9,1ccw, B, 2,  " Domain 1 :  1 - 417
+
+Domain 2 :  418 - 483 " ,  " Domain 1 :  1 - 215
+
+Domain 2 :  216 - 483 " ,  0.58
+10,1clc, A, 2,  " Domain 1 :  35 - 136
+
+Domain 2 :  137 - 575 " ,  " Domain 1 :  35 - 146    432 - 575
+
+Domain 2 :  147 - 431 " ,  0.72
+11,1ctu, A, 2,  " Domain 1 :  1 - 179
+
+Domain 2 :  180 - 294 " ,  " Domain 1 :  1 - 164
+
+Domain 2 :  165 - 294 " ,  0.95
+12,1d3y, A, 2,  " Domain 1 :  72 - 142
+
+Domain 2 :  143 - 369 " ,  " Domain 1 :  72 - 145
+
+Domain 2 :  146 - 369 " ,  0.99
+13,1div, A, 2,  " Domain 1 :  1 - 59
+
+Domain 2 :  60 - 149 " ,  " Domain 1 :  1 - 59
+
+Domain 2 :  60 - 149 " ,  1.00
+14,1dkg, A, 2,  " Domain 1 :  34 - 137
+
+Domain 2 :  138 - 197 " ,  " Domain 1 :  34 - 76
+
+Domain 2 :  77 - 197 " ,  0.63
+15,1dl5, A, 2,  " Domain 1 :  1 - 201
+
+Domain 2 :  202 - 317 " ,  " Domain 1 :  1 - 153
+
+Domain 2 :  154 - 317 " ,  0.85
+16,1dw9, A, 2,  " Domain 1 :  2 - 88
+
+Domain 2 :  89 - 156 " ,  " Domain 1 :  2 - 85
+
+Domain 2 :  86 - 156 " ,  0.98
+17,1dzf, A, 2,  " Domain 1 :  5 - 142
+
+Domain 2 :  143 - 215 " ,  " Domain 1 :  5 - 143
+
+Domain 2 :  144 - 215 " ,  1.00
+18,1e3a, A, 2,  " Domain 1 :  3 - 149
+
+Domain 2 :  150 - 260 " ,  " Domain 1 :  3 - 144
+
+Domain 2 :  145 - 260 " ,  0.98
+19,1e3d, A, 2,  " Domain 1 :  5 - 181
+
+Domain 2 :  182 - 266 " ,  " Domain 1 :  5 - 178
+
+Domain 2 :  179 - 266 " ,  0.99
+20,1ev7, A, 2,  " Domain 1 :  10 - 176
+
+Domain 2 :  177 - 311 " ,  " Domain 1 :  10 - 169
+
+Domain 2 :  170 - 311 " ,  0.98
+21,1evl, A, 2,  " Domain 1 :  242 - 530
+
+Domain 2 :  531 - 642 " ,  " Domain 1 :  242 - 524
+
+Domain 2 :  525 - 642 " ,  0.99
+22,1feu, A, 2,  " Domain 1 :  1 - 91
+
+Domain 2 :  92 - 185 " ,  " Domain 1 :  1 - 98
+
+Domain 2 :  99 - 185 " ,  0.96
+23,1fjr, A, 2,  " Domain 1 :  1 - 63
+
+Domain 2 :  64 - 188 " ,  " Domain 1 :  1 - 66
+
+Domain 2 :  67 - 188 " ,  0.98
+24,1fpo, A, 2,  " Domain 1 :  1 - 79
+
+Domain 2 :  80 - 171 " ,  " Domain 1 :  1 - 78
+
+Domain 2 :  79 - 171 " ,  0.99
+25,1g1t, A, 2,  " Domain 1 :  1 - 119
+
+Domain 2 :  120 - 157 " ,  " Domain 1 :  1 - 119
+
+Domain 2 :  120 - 157 " ,  1.00
+26,1g38, A, 2,  " Domain 1 :  21 - 243
+
+Domain 2 :  244 - 413 " ,  " Domain 1 :  21 - 246
+
+Domain 2 :  247 - 413 " ,  0.99
+27,1gkg, A, 2,  " Domain 1 :  957 - 1023
+
+Domain 2 :  1024 - 1092 " ,  " Domain 1 :  957 - 1021
+
+Domain 2 :  1022 - 1092 " ,  0.99
+28,1gmu, A, 2,  " Domain 1 :  1 - 71
+
+Domain 2 :  72 - 138 " ,  " Domain 1 :  1 - 70
+
+Domain 2 :  71 - 138 " ,  0.99
+29,1h4a, X, 2,  " Domain 1 :  1 - 83
+
+Domain 2 :  84 - 174 " ,  " Domain 1 :  1 - 83
+
+Domain 2 :  84 - 174 " ,  1.00
+30,1hdh, A, 2,  " Domain 1 :  3 - 450
+
+Domain 2 :  451 - 527 " ,  " Domain 1 :  3 - 137    163 - 207    293 - 317    387 - 461
+
+Domain 2 :  138 - 162    208 - 292    318 - 386    462 - 527 " ,  0.64
+31,1hnj, A, 2,  " Domain 1 :  1 - 171
+
+Domain 2 :  172 - 317 " ,  " Domain 1 :  1 - 54    139 - 219
+
+Domain 2 :  55 - 138    220 - 317 " ,  0.58
+32,1hv9, A, 2,  " Domain 1 :  4 - 227
+
+Domain 2 :  228 - 452 " ,  " Domain 1 :  4 - 249
+
+Domain 2 :  250 - 452 " ,  0.95
+33,1i7o, A, 2,  " Domain 1 :  1 - 211
+
+Domain 2 :  212 - 429 " ,  " Domain 1 :  1 - 215
+
+Domain 2 :  216 - 429 " ,  0.99
+34,1iak, B, 2,  " Domain 1 :  5 - 92
+
+Domain 2 :  93 - 190 " ,  " Domain 1 :  5 - 91
+
+Domain 2 :  92 - 190 " ,  0.99
+35,1inl, C, 2,  " Domain 1 :  4 - 67
+
+Domain 2 :  68 - 296 " ,  " Domain 1 :  4 - 73
+
+Domain 2 :  74 - 296 " ,  0.98
+36,1j5q, A, 2,  " Domain 1 :  25 - 222
+
+Domain 2 :  223 - 437 " ,  " Domain 1 :  25 - 74    148 - 178    201 - 232
+
+Domain 2 :  75 - 147    179 - 200    233 - 437 " ,  0.75
+37,1j5y, A, 2,  " Domain 1 :  4 - 67
+
+Domain 2 :  68 - 174 " ,  " Domain 1 :  4 - 71
+
+Domain 2 :  72 - 174 " ,  0.98
+38,1jaj, A, 2,  " Domain 1 :  1 - 105
+
+Domain 2 :  106 - 174 " ,  " Domain 1 :  1 - 106
+
+Domain 2 :  107 - 174 " ,  0.99
+39,1jgt, A, 2,  " Domain 1 :  4 - 210
+
+Domain 2 :  211 - 508 " ,  " Domain 1 :  4 - 209
+
+Domain 2 :  210 - 508 " ,  1.00
+40,1jhd, A, 2,  " Domain 1 :  1 - 193
+
+Domain 2 :  194 - 396 " ,  " Domain 1 :  1 - 172
+
+Domain 2 :  173 - 396 " ,  0.95
+41,1jj2, K, 2,  " Domain 1 :  1 - 50
+
+Domain 2 :  51 - 150 " ,  " Domain 1 :  1 - 49
+
+Domain 2 :  50 - 150 " ,  0.99
+42,1joc, A, 2,  " Domain 1 :  1289 - 1348
+
+Domain 2 :  1349 - 1411 " ,  " Domain 1 :  1289 - 1328
+
+Domain 2 :  1329 - 1411 " ,  0.84
+43,1js8, A, 2,  " Domain 1 :  2503 - 2786
+
+Domain 2 :  2787 - 2892 " ,  " Domain 1 :  2503 - 2631    2675 - 2772
+
+Domain 2 :  2632 - 2674    2773 - 2892 " ,  0.85
+44,1k2f, A, 2,  " Domain 1 :  93 - 148
+
+Domain 2 :  149 - 282 " ,  " Domain 1 :  93 - 129
+
+Domain 2 :  130 - 282 " ,  0.90
+45,1k30, A, 2,  " Domain 1 :  3 - 78
+
+Domain 2 :  79 - 368 " ,  " Domain 1 :  3 - 110    280 - 301
+
+Domain 2 :  111 - 279    302 - 368 " ,  0.85
+46,1k5n, A, 2,  " Domain 1 :  1 - 181
+
+Domain 2 :  182 - 276 " ,  " Domain 1 :  1 - 180
+
+Domain 2 :  181 - 276 " ,  1.00
+47,1k82, B, 2,  " Domain 1 :  1 - 127
+
+Domain 2 :  128 - 268 " ,  " Domain 1 :  1 - 126
+
+Domain 2 :  127 - 268 " ,  1.00
+48,1kb0, A, 2,  " Domain 1 :  1 - 580
+
+Domain 2 :  581 - 675 " ,  " Domain 1 :  1 - 106    311 - 334    457 - 573
+
+Domain 2 :  107 - 310    335 - 456    574 - 675 " ,  0.51
+49,1knx, B, 2,  " Domain 1 :  1 - 133
+
+Domain 2 :  134 - 308 " ,  " Domain 1 :  1 - 133
+
+Domain 2 :  134 - 308 " ,  1.00
+50,1kq3, A, 2,  " Domain 1 :  0 - 157
+
+Domain 2 :  158 - 363 " ,  " Domain 1 :  0 - 159
+
+Domain 2 :  160 - 363 " ,  0.99
+51,1lbu, A, 2,  " Domain 1 :  1 - 84
+
+Domain 2 :  85 - 213 " ,  " Domain 1 :  1 - 84
+
+Domain 2 :  85 - 213 " ,  1.00
+52,1lck, A, 2,  " Domain 1 :  63 - 121
+
+Domain 2 :  122 - 226 " ,  " Domain 1 :  63 - 121
+
+Domain 2 :  122 - 226 " ,  1.00
+53,1lko, A, 2,  " Domain 1 :  2 - 146
+
+Domain 2 :  147 - 191 " ,  " Domain 1 :  2 - 26    50 - 129
+
+Domain 2 :  27 - 49    130 - 191 " ,  0.79
+54,1lnz, A, 2,  " Domain 1 :  2 - 157
+
+Domain 2 :  158 - 342 " ,  " Domain 1 :  2 - 152
+
+Domain 2 :  153 - 342 " ,  0.99
+55,1lqs, L, 2,  " Domain 1 :  8 - 114
+
+Domain 2 :  116 - 157 " ,  " Domain 1 :  8 - 114
+
+Domain 2 :  116 - 157 " ,  1.00
+56,1lsl, A, 2,  " Domain 1 :  416 - 471
+
+Domain 2 :  472 - 528 " ,  " Domain 1 :  416 - 471
+
+Domain 2 :  472 - 528 " ,  1.00
+57,1m70, A, 2,  " Domain 1 :  1 - 91
+
+Domain 2 :  92 - 190 " ,  " Domain 1 :  1 - 90
+
+Domain 2 :  91 - 190 " ,  0.99
+58,1mgp, A, 2,  " Domain 1 :  25 - 179
+
+Domain 2 :  180 - 309 " ,  " Domain 1 :  25 - 179
+
+Domain 2 :  180 - 309 " ,  1.00
+59,1mow, G, 2,  " Domain 1 :  1007 - 1117
+
+Domain 2 :  1118 - 1250 " ,  " Domain 1 :  1007 - 1118
+
+Domain 2 :  1119 - 1250 " ,  1.00
+60,1n6c, A, 2,  " Domain 1 :  79 - 193
+
+Domain 2 :  194 - 363 " ,  " Domain 1 :  79 - 194
+
+Domain 2 :  195 - 363 " ,  1.00
+61,1n93, X, 2,  " Domain 1 :  28 - 235
+
+Domain 2 :  236 - 370 " ,  " Domain 1 :  28 - 230
+
+Domain 2 :  231 - 370 " ,  0.99
+62,1ncf, A, 2,  " Domain 1 :  11 - 97
+
+Domain 2 :  98 - 150 " ,  " Domain 1 :  11 - 74
+
+Domain 2 :  75 - 150 " ,  0.84
+63,1ng6, A, 2,  " Domain 1 :  1 - 91
+
+Domain 2 :  92 - 148 " ,  " Domain 1 :  1 - 94
+
+Domain 2 :  95 - 148 " ,  0.98
+64,1nij, A, 2,  " Domain 1 :  2 - 202
+
+Domain 2 :  203 - 318 " ,  " Domain 1 :  2 - 199
+
+Domain 2 :  200 - 318 " ,  0.99
+65,1now, A, 2,  " Domain 1 :  55 - 197
+
+Domain 2 :  198 - 552 " ,  " Domain 1 :  55 - 233    496 - 552
+
+Domain 2 :  234 - 495 " ,  0.81
+66,1nty, A, 2,  " Domain 1 :  1231 - 1411
+
+Domain 2 :  1412 - 1535 " ,  " Domain 1 :  1231 - 1406
+
+Domain 2 :  1407 - 1535 " ,  0.98
+67,1o9i, A, 2,  " Domain 1 :  1 - 203
+
+Domain 2 :  204 - 266 " ,  " Domain 1 :  1 - 184
+
+Domain 2 :  185 - 266 " ,  0.93
+68,1on2, A, 2,  " Domain 1 :  2 - 73
+
+Domain 2 :  74 - 136 " ,  " Domain 1 :  2 - 74
+
+Domain 2 :  75 - 136 " ,  0.99
+69,1orb, A, 2,  " Domain 1 :  1 - 156
+
+Domain 2 :  157 - 293 " ,  " Domain 1 :  1 - 156
+
+Domain 2 :  157 - 293 " ,  1.00
+70,1p42, A, 2,  " Domain 1 :  2 - 128
+
+Domain 2 :  129 - 280 " ,  " Domain 1 :  2 - 101
+
+Domain 2 :  102 - 280 " ,  0.90
+71,1p5q, A, 2,  " Domain 1 :  145 - 260
+
+Domain 2 :  262 - 427 " ,  " Domain 1 :  145 - 328
+
+Domain 2 :  329 - 427 " ,  0.76
+72,1po3, A, 2,  " Domain 1 :  95 - 222
+
+Domain 2 :  223 - 741 " ,  " Domain 1 :  95 - 130    184 - 303    339 - 360    385 - 411    447 - 469    491 - 513    538 - 559    585 - 612    684 - 706
+
+Domain 2 :  131 - 183    304 - 338    361 - 384    412 - 446    470 - 490    514 - 537    560 - 584    613 - 683    707 - 741 " ,  0.53
+73,1ppr, M, 2,  " Domain 1 :  1 - 155
+
+Domain 2 :  156 - 312 " ,  " Domain 1 :  1 - 155
+
+Domain 2 :  156 - 312 " ,  1.00
+74,1prt, B, 2,  " Domain 1 :  4 - 89
+
+Domain 2 :  90 - 199 " ,  " Domain 1 :  4 - 90
+
+Domain 2 :  91 - 199 " ,  0.99
+75,1qd1, A, 2,  " Domain 1 :  2 - 181
+
+Domain 2 :  182 - 326 " ,  " Domain 1 :  2 - 180
+
+Domain 2 :  181 - 326 " ,  1.00
+76,1qiu, A, 2,  " Domain 1 :  319 - 392
+
+Domain 2 :  393 - 582 " ,  " Domain 1 :  319 - 390
+
+Domain 2 :  391 - 582 " ,  0.99
+77,1qnt, A, 2,  " Domain 1 :  6 - 85
+
+Domain 2 :  86 - 176 " ,  " Domain 1 :  6 - 87
+
+Domain 2 :  88 - 176 " ,  0.99
+78,1qo6, A, 2,  " Domain 1 :  1 - 43
+
+Domain 2 :  44 - 101 " ,  " Domain 1 :  1 - 41
+
+Domain 2 :  42 - 101 " ,  0.98
+79,1qs2, A, 2,  " Domain 1 :  62 - 264
+
+Domain 2 :  265 - 462 " ,  " Domain 1 :  62 - 265
+
+Domain 2 :  266 - 462 " ,  1.00
+80,1rqu, A, 2,  " Domain 1 :  1 - 52
+
+Domain 2 :  53 - 120 " ,  " Domain 1 :  1 - 42
+
+Domain 2 :  43 - 120 " ,  0.92
+81,1rzh, M, 2,  " Domain 1 :  1 - 143
+
+Domain 2 :  144 - 301 " ,  " Domain 1 :  55 - 207    276 - 301
+
+Domain 2 :  1 - 54    208 - 275 " ,  0.52
+82,1sau, A, 2,  " Domain 1 :  2 - 45
+
+Domain 2 :  46 - 115 " ,  " Domain 1 :  2 - 46
+
+Domain 2 :  47 - 115 " ,  0.99
+83,1sei, A, 2,  " Domain 1 :  1 - 72
+
+Domain 2 :  73 - 130 " ,  " Domain 1 :  1 - 75
+
+Domain 2 :  76 - 130 " ,  0.98
+84,1sj8, A, 2,  " Domain 1 :  486 - 660
+
+Domain 2 :  661 - 782 " ,  " Domain 1 :  486 - 666
+
+Domain 2 :  667 - 782 " ,  0.98
+85,1skz, A, 2,  " Domain 1 :  7 - 57
+
+Domain 2 :  58 - 110 " ,  " Domain 1 :  7 - 61
+
+Domain 2 :  62 - 110 " ,  0.96
+86,1ssq, A, 2,  " Domain 1 :  1 - 138
+
+Domain 2 :  139 - 241 " ,  " Domain 1 :  1 - 137
+
+Domain 2 :  138 - 241 " ,  1.00
+87,1su3, A, 2,  " Domain 1 :  32 - 269
+
+Domain 2 :  270 - 466 " ,  " Domain 1 :  32 - 274
+
+Domain 2 :  275 - 466 " ,  0.99
+88,1t2d, A, 2,  " Domain 1 :  1 - 148
+
+Domain 2 :  149 - 315 " ,  " Domain 1 :  1 - 149    232 - 254
+
+Domain 2 :  150 - 231    255 - 315 " ,  0.92
+89,1tua, A, 2,  " Domain 1 :  0 - 83
+
+Domain 2 :  84 - 188 " ,  " Domain 1 :  0 - 84
+
+Domain 2 :  85 - 188 " ,  0.99
+90,1txg, A, 2,  " Domain 1 :  1 - 180
+
+Domain 2 :  181 - 335 " ,  " Domain 1 :  1 - 182
+
+Domain 2 :  183 - 335 " ,  0.99
+91,1u4g, A, 2,  " Domain 1 :  1 - 152
+
+Domain 2 :  153 - 298 " ,  " Domain 1 :  1 - 142
+
+Domain 2 :  143 - 298 " ,  0.97
+92,1u8b, A, 2,  " Domain 1 :  2 - 77
+
+Domain 2 :  78 - 138 " ,  " Domain 1 :  2 - 79
+
+Domain 2 :  80 - 138 " ,  0.99
+93,1ual, A, 2,  " Domain 1 :  -1 - 160
+
+Domain 2 :  170 - 250 " ,  " Domain 1 :  -1 - 160
+
+Domain 2 :  170 - 250 " ,  1.00
+94,1uha, A, 2,  " Domain 1 :  1 - 40
+
+Domain 2 :  41 - 82 " ,  " Domain 1 :  1 - 42
+
+Domain 2 :  43 - 82 " ,  0.98
+95,1uly, A, 2,  " Domain 1 :  2 - 90
+
+Domain 2 :  91 - 191 " ,  " Domain 1 :  2 - 88
+
+Domain 2 :  89 - 191 " ,  0.99
+96,1ush, A, 2,  " Domain 1 :  26 - 362
+
+Domain 2 :  363 - 550 " ,  " Domain 1 :  26 - 356
+
+Domain 2 :  357 - 550 " ,  0.99
+97,1ux6, A, 2,  " Domain 1 :  813 - 939
+
+Domain 2 :  940 - 1152 " ,  " Domain 1 :  813 - 938
+
+Domain 2 :  939 - 1152 " ,  1.00
+98,1vcb, C, 2,  " Domain 1 :  63 - 152
+
+Domain 2 :  153 - 204 " ,  " Domain 1 :  63 - 154
+
+Domain 2 :  155 - 204 " ,  0.99
+99,1vfg, A, 2,  " Domain 1 :  1 - 134
+
+Domain 2 :  135 - 351 " ,  " Domain 1 :  1 - 195
+
+Domain 2 :  196 - 351 " ,  0.83
+100,1vl2, D, 2,  " Domain 1 :  2 - 176
+
+Domain 2 :  177 - 404 " ,  " Domain 1 :  2 - 66    88 - 207
+
+Domain 2 :  67 - 87    208 - 404 " ,  0.87
+101,1vme, B, 2,  " Domain 1 :  -1 - 249
+
+Domain 2 :  250 - 398 " ,  " Domain 1 :  -1 - 245
+
+Domain 2 :  246 - 398 " ,  0.99
+102,1vqz, A, 2,  " Domain 1 :  0 - 241
+
+Domain 2 :  242 - 329 " ,  " Domain 1 :  0 - 235
+
+Domain 2 :  236 - 329 " ,  0.98
+103,1vzy, A, 2,  " Domain 1 :  1 - 234
+
+Domain 2 :  235 - 290 " ,  " Domain 1 :  1 - 234
+
+Domain 2 :  235 - 290 " ,  1.00
+104,1w3f, A, 2,  " Domain 1 :  3 - 149
+
+Domain 2 :  150 - 315 " ,  " Domain 1 :  3 - 154
+
+Domain 2 :  155 - 314 " ,  0.98
+105,1whe, A, 2,  " Domain 1 :  1 - 46
+
+Domain 2 :  47 - 86 " ,  " Domain 1 :  1 - 46
+
+Domain 2 :  47 - 86 " ,  1.00
+106,1wku, B, 2,  " Domain 1 :  42 - 153
+
+Domain 2 :  154 - 268 " ,  " Domain 1 :  42 - 149
+
+Domain 2 :  150 - 268 " ,  0.98
+107,1wlf, A, 2,  " Domain 1 :  13 - 99
+
+Domain 2 :  100 - 179 " ,  " Domain 1 :  13 - 100
+
+Domain 2 :  101 - 179 " ,  0.99
+108,1wpb, O, 2,  " Domain 1 :  3 - 57
+
+Domain 2 :  58 - 170 " ,  " Domain 1 :  3 - 59
+
+Domain 2 :  60 - 170 " ,  0.99
+109,1wur, A, 2,  " Domain 1 :  32 - 85
+
+Domain 2 :  86 - 216 " ,  " Domain 1 :  32 - 77
+
+Domain 2 :  78 - 216 " ,  0.96
+110,1x9y, A, 2,  " Domain 1 :  41 - 210
+
+Domain 2 :  211 - 397 " ,  " Domain 1 :  41 - 222
+
+Domain 2 :  223 - 397 " ,  0.97
+111,1xr4, A, 2,  " Domain 1 :  0 - 236
+
+Domain 2 :  237 - 505 " ,  " Domain 1 :  0 - 235
+
+Domain 2 :  236 - 505 " ,  1.00
+112,1xt0, B, 2,  " Domain 1 :  -1 - 79
+
+Domain 2 :  81 - 201 " ,  " Domain 1 :  -1 - 80
+
+Domain 2 :  81 - 201 " ,  1.00
+113,1xta, B, 2,  " Domain 1 :  3 - 180
+
+Domain 2 :  181 - 221 " ,  " Domain 1 :  3 - 147
+
+Domain 2 :  148 - 221 " ,  0.85
+114,1y7m, A, 2,  " Domain 1 :  2 - 47
+
+Domain 2 :  48 - 164 " ,  " Domain 1 :  2 - 53
+
+Domain 2 :  54 - 164 " ,  0.96
+115,1ybi, A, 2,  " Domain 1 :  10 - 152
+
+Domain 2 :  153 - 293 " ,  " Domain 1 :  10 - 148
+
+Domain 2 :  149 - 293 " ,  0.99
+116,1ytf, D, 2,  " Domain 1 :  5 - 57
+
+Domain 2 :  58 - 119 " ,  " Domain 1 :  5 - 51
+
+Domain 2 :  52 - 119 " ,  0.95
+117,1yua, A, 2,  " Domain 1 :  1 - 64
+
+Domain 2 :  65 - 122 " ,  " Domain 1 :  1 - 65
+
+Domain 2 :  66 - 122 " ,  0.99
+118,1yz9, A, 2,  " Domain 1 :  1 - 149
+
+Domain 2 :  150 - 220 " ,  " Domain 1 :  1 - 144
+
+Domain 2 :  145 - 220 " ,  0.98
+119,1zcn, A, 2,  " Domain 1 :  7 - 38
+
+Domain 2 :  51 - 163 " ,  " Domain 1 :  7 - 57
+
+Domain 2 :  58 - 163 " ,  0.88
+120,2a06, B, 2,  " Domain 1 :  12 - 235
+
+Domain 2 :  236 - 439 " ,  " Domain 1 :  12 - 236    372 - 395
+
+Domain 2 :  237 - 371    396 - 439 " ,  0.94
+121,2a25, A, 2,  " Domain 1 :  125 - 154
+
+Domain 2 :  155 - 282 " ,  " Domain 1 :  125 - 161
+
+Domain 2 :  162 - 282 " ,  0.96
+122,2a9d, A, 2,  " Domain 1 :  95 - 343
+
+Domain 2 :  344 - 466 " ,  " Domain 1 :  95 - 183    212 - 323
+
+Domain 2 :  184 - 211    324 - 466 " ,  0.87
+123,2ahr, C, 2,  " Domain 1 :  2 - 150
+
+Domain 2 :  151 - 256 " ,  " Domain 1 :  2 - 160
+
+Domain 2 :  161 - 256 " ,  0.96
+124,2arz, A, 2,  " Domain 1 :  2 - 151
+
+Domain 2 :  152 - 239 " ,  " Domain 1 :  2 - 152
+
+Domain 2 :  153 - 239 " ,  1.00
+125,2auw, A, 2,  " Domain 1 :  4 - 85
+
+Domain 2 :  86 - 154 " ,  " Domain 1 :  4 - 86
+
+Domain 2 :  87 - 154 " ,  0.99
+126,2bgh, A, 2,  " Domain 1 :  4 - 210
+
+Domain 2 :  211 - 421 " ,  " Domain 1 :  4 - 205
+
+Domain 2 :  206 - 421 " ,  0.99
+127,2bw0, A, 2,  " Domain 1 :  -2 - 205
+
+Domain 2 :  206 - 307 " ,  " Domain 1 :  -2 - 203
+
+Domain 2 :  204 - 307 " ,  0.99
+128,2c0g, A, 2,  " Domain 1 :  1024 - 1145
+
+Domain 2 :  1146 - 1251 " ,  " Domain 1 :  1024 - 1144
+
+Domain 2 :  1145 - 1251 " ,  1.00
+129,2cnd, A, 2,  " Domain 1 :  11 - 116
+
+Domain 2 :  117 - 270 " ,  " Domain 1 :  11 - 117
+
+Domain 2 :  118 - 270 " ,  1.00
+130,2d1c, A, 2,  " Domain 1 :  2 - 385
+
+Domain 2 :  386 - 496 " ,  " Domain 1 :  2 - 379
+
+Domain 2 :  380 - 496 " ,  0.99
+131,2e5y, A, 2,  " Domain 1 :  1 - 88
+
+Domain 2 :  89 - 133 " ,  " Domain 1 :  1 - 88
+
+Domain 2 :  89 - 133 " ,  1.00
+132,2ehz, A, 2,  " Domain 1 :  4 - 138
+
+Domain 2 :  139 - 302 " ,  " Domain 1 :  4 - 173
+
+Domain 2 :  174 - 302 " ,  0.88
+133,2elc, A, 2,  " Domain 1 :  1 - 67
+
+Domain 2 :  68 - 329 " ,  " Domain 1 :  1 - 65    150 - 182
+
+Domain 2 :  66 - 149    183 - 329 " ,  0.89
+134,2ess, A, 2,  " Domain 1 :  2 - 148
+
+Domain 2 :  149 - 247 " ,  " Domain 1 :  2 - 148
+
+Domain 2 :  149 - 247 " ,  1.00
+135,2fb5, A, 2,  " Domain 1 :  2 - 73
+
+Domain 2 :  74 - 205 " ,  " Domain 1 :  2 - 61
+
+Domain 2 :  62 - 205 " ,  0.94
+136,2fcw, B, 2,  " Domain 1 :  86 - 121
+
+Domain 2 :  122 - 163 " ,  " Domain 1 :  86 - 122
+
+Domain 2 :  123 - 163 " ,  0.99
+137,2fef, A, 2,  " Domain 1 :  6 - 134
+
+Domain 2 :  135 - 293 " ,  " Domain 1 :  6 - 140
+
+Domain 2 :  141 - 293 " ,  0.98
+138,2fj8, A, 2,  " Domain 1 :  4 - 63
+
+Domain 2 :  64 - 123 " ,  " Domain 1 :  4 - 63
+
+Domain 2 :  64 - 123 " ,  1.00
+139,2fpn, A, 2,  " Domain 1 :  1 - 140
+
+Domain 2 :  141 - 214 " ,  " Domain 1 :  1 - 134
+
+Domain 2 :  135 - 214 " ,  0.97
+140,2ghj, B, 2,  " Domain 1 :  27 - 52
+
+Domain 2 :  53 - 118 " ,  " Domain 1 :  27 - 53
+
+Domain 2 :  54 - 118 " ,  0.99
+141,2h88, B, 2,  " Domain 1 :  8 - 114
+
+Domain 2 :  115 - 246 " ,  " Domain 1 :  8 - 115
+
+Domain 2 :  116 - 246 " ,  1.00
+142,2h88, C, 2,  " Domain 1 :  2 - 32
+
+Domain 2 :  33 - 140 " ,  " Domain 1 :  2 - 43    104 - 140
+
+Domain 2 :  44 - 103 " ,  0.65
+143,2haw, A, 2,  " Domain 1 :  2 - 189
+
+Domain 2 :  190 - 308 " ,  " Domain 1 :  2 - 187
+
+Domain 2 :  188 - 308 " ,  0.99
+144,2hbw, A, 2,  " Domain 1 :  14 - 86
+
+Domain 2 :  87 - 234 " ,  " Domain 1 :  15 - 87
+
+Domain 2 :  88 - 234 " ,  1.00
+145,2hxv, A, 2,  " Domain 1 :  -3 - 147
+
+Domain 2 :  148 - 345 " ,  " Domain 1 :  -3 - 144
+
+Domain 2 :  145 - 345 " ,  0.99
+146,2hza, A, 2,  " Domain 1 :  2 - 47
+
+Domain 2 :  48 - 131 " ,  " Domain 1 :  2 - 41
+
+Domain 2 :  42 - 131 " ,  0.95
+147,2i15, A, 2,  " Domain 1 :  1 - 38
+
+Domain 2 :  39 - 129 " ,  " Domain 1 :  1 - 53
+
+Domain 2 :  54 - 129 " ,  0.88
+148,2i5v, O, 2,  " Domain 1 :  28 - 127
+
+Domain 2 :  128 - 273 " ,  " Domain 1 :  28 - 138
+
+Domain 2 :  139 - 273 " ,  0.96
+149,2ibd, A, 2,  " Domain 1 :  11 - 55
+
+Domain 2 :  56 - 202 " ,  " Domain 1 :  11 - 72    103 - 129
+
+Domain 2 :  73 - 102    130 - 202 " ,  0.77
+150,2jz4, A, 2,  " Domain 1 :  1 - 148
+
+Domain 2 :  149 - 299 " ,  " Domain 1 :  1 - 148
+
+Domain 2 :  149 - 299 " ,  1.00
+151,2nnu, A, 2,  " Domain 1 :  0 - 101
+
+Domain 2 :  102 - 200 " ,  " Domain 1 :  0 - 103
+
+Domain 2 :  104 - 200 " ,  0.99
+152,2o62, A, 2,  " Domain 1 :  2 - 132
+
+Domain 2 :  133 - 269 " ,  " Domain 1 :  2 - 82
+
+Domain 2 :  83 - 269 " ,  0.81
+153,2oux, A, 2,  " Domain 1 :  6 - 133
+
+Domain 2 :  134 - 262 " ,  " Domain 1 :  6 - 124
+
+Domain 2 :  125 - 262 " ,  0.96
+154,2p84, A, 2,  " Domain 1 :  3 - 62
+
+Domain 2 :  63 - 135 " ,  " Domain 1 :  3 - 60
+
+Domain 2 :  61 - 135 " ,  0.98
+155,2ph7, A, 2,  " Domain 1 :  0 - 130
+
+Domain 2 :  131 - 226 " ,  " Domain 1 :  0 - 103
+
+Domain 2 :  104 - 226 " ,  0.88
+156,2phc, B, 2,  " Domain 1 :  2 - 84
+
+Domain 2 :  85 - 217 " ,  " Domain 1 :  2 - 83
+
+Domain 2 :  84 - 217 " ,  1.00
+157,2pv7, A, 2,  " Domain 1 :  92 - 250
+
+Domain 2 :  251 - 371 " ,  " Domain 1 :  92 - 250
+
+Domain 2 :  251 - 371 " ,  1.00
+158,2qbw, A, 2,  " Domain 1 :  1 - 97
+
+Domain 2 :  104 - 195 " ,  " Domain 1 :  1 - 103
+
+Domain 2 :  104 - 195 " ,  0.97
+159,2qia, A, 2,  " Domain 1 :  1 - 196
+
+Domain 2 :  197 - 262 " ,  " Domain 1 :  1 - 144
+
+Domain 2 :  145 - 262 " ,  0.80
+160,2qik, A, 2,  " Domain 1 :  2 - 120
+
+Domain 2 :  122 - 278 " ,  " Domain 1 :  2 - 124
+
+Domain 2 :  125 - 278 " ,  0.99
+161,2qj2, A, 2,  " Domain 1 :  36 - 125
+
+Domain 2 :  126 - 209 " ,  " Domain 1 :  36 - 125
+
+Domain 2 :  126 - 209 " ,  1.00
+162,2r01, A, 2,  " Domain 1 :  13 - 165
+
+Domain 2 :  166 - 207 " ,  " Domain 1 :  13 - 164
+
+Domain 2 :  165 - 207 " ,  0.99
+163,2r6i, A, 2,  " Domain 1 :  -6 - 89
+
+Domain 2 :  90 - 261 " ,  " Domain 1 :  -6 - 108
+
+Domain 2 :  109 - 261 " ,  0.93
+164,2r9q, A, 2,  " Domain 1 :  9 - 173
+
+Domain 2 :  174 - 346 " ,  " Domain 1 :  9 - 151
+
+Domain 2 :  152 - 346 " ,  0.93
+165,2ra8, A, 2,  " Domain 1 :  2 - 75
+
+Domain 2 :  77 - 357 " ,  " Domain 1 :  2 - 75
+
+Domain 2 :  76 - 357 " ,  1.00
+166,2ra9, A, 2,  " Domain 1 :  29 - 82
+
+Domain 2 :  83 - 155 " ,  " Domain 1 :  29 - 86
+
+Domain 2 :  87 - 155 " ,  0.97
+167,2trc, P, 2,  " Domain 1 :  14 - 96
+
+Domain 2 :  97 - 230 " ,  " Domain 1 :  14 - 104
+
+Domain 2 :  105 - 230 " ,  0.96
+168,2v2g, D, 2,  " Domain 1 :  2 - 151
+
+Domain 2 :  152 - 220 " ,  " Domain 1 :  2 - 160
+
+Domain 2 :  161 - 220 " ,  0.96
+169,2v3z, A, 2,  " Domain 1 :  1 - 173
+
+Domain 2 :  174 - 440 " ,  " Domain 1 :  1 - 180
+
+Domain 2 :  181 - 440 " ,  0.98
+170,2vqe, M, 2,  " Domain 1 :  2 - 72
+
+Domain 2 :  73 - 126 " ,  " Domain 1 :  2 - 73
+
+Domain 2 :  74 - 126 " ,  0.99
+171,2wxu, A, 2,  " Domain 1 :  1 - 250
+
+Domain 2 :  251 - 370 " ,  " Domain 1 :  1 - 249
+
+Domain 2 :  250 - 370 " ,  1.00
+172,2z6r, A, 2,  " Domain 1 :  2 - 114
+
+Domain 2 :  115 - 265 " ,  " Domain 1 :  2 - 115
+
+Domain 2 :  116 - 265 " ,  1.00
+173,2zp1, A, 2,  " Domain 1 :  1 - 196
+
+Domain 2 :  197 - 308 " ,  " Domain 1 :  1 - 193
+
+Domain 2 :  194 - 308 " ,  0.99
+174,3b4n, A, 2,  " Domain 1 :  20 - 107
+
+Domain 2 :  119 - 344 " ,  " Domain 1 :  20 - 139
+
+Domain 2 :  140 - 344 " ,  0.90
+175,3bb0, A, 2,  " Domain 1 :  4 - 178
+
+Domain 2 :  179 - 579 " ,  " Domain 1 :  4 - 180    301 - 347    559 - 579
+
+Domain 2 :  181 - 300    348 - 558 " ,  0.88
+176,3bl4, A, 2,  " Domain 1 :  4 - 75
+
+Domain 2 :  76 - 123 " ,  " Domain 1 :  4 - 71
+
+Domain 2 :  72 - 123 " ,  0.97
+177,3bt3, A, 2,  " Domain 1 :  134 - 207
+
+Domain 2 :  208 - 264 " ,  " Domain 1 :  134 - 208
+
+Domain 2 :  209 - 264 " ,  0.99
+178,3bwh, A, 2,  " Domain 1 :  1 - 160
+
+Domain 2 :  161 - 244 " ,  " Domain 1 :  1 - 179
+
+Domain 2 :  180 - 244 " ,  0.92
+179,3c24, A, 2,  " Domain 1 :  5 - 181
+
+Domain 2 :  182 - 284 " ,  " Domain 1 :  5 - 191
+
+Domain 2 :  192 - 284 " ,  0.96
+180,3c2u, A, 2,  " Domain 1 :  1 - 328
+
+Domain 2 :  329 - 538 " ,  " Domain 1 :  1 - 326
+
+Domain 2 :  327 - 538 " ,  1.00
+181,3c9u, A, 2,  " Domain 1 :  -1 - 140
+
+Domain 2 :  141 - 306 " ,  " Domain 1 :  42 - 132    159 - 190
+
+Domain 2 :  -1 - 41    133 - 158    191 - 306 " ,  0.73
+182,3ci0, J, 2,  " Domain 1 :  39 - 142
+
+Domain 2 :  143 - 192 " ,  " Domain 1 :  39 - 136
+
+Domain 2 :  137 - 192 " ,  0.96
+183,3cjr, B, 2,  " Domain 1 :  1 - 70
+
+Domain 2 :  71 - 137 " ,  " Domain 1 :  1 - 70
+
+Domain 2 :  71 - 137 " ,  1.00
+184,3cov, A, 2,  " Domain 1 :  3 - 185
+
+Domain 2 :  186 - 288 " ,  " Domain 1 :  3 - 184
+
+Domain 2 :  185 - 288 " ,  1.00
+185,3cwv, A, 2,  " Domain 1 :  8 - 205
+
+Domain 2 :  206 - 356 " ,  " Domain 1 :  8 - 203
+
+Domain 2 :  204 - 356 " ,  0.99
+186,3dpo, A, 2,  " Domain 1 :  389 - 523
+
+Domain 2 :  524 - 601 " ,  " Domain 1 :  389 - 530
+
+Domain 2 :  531 - 601 " ,  0.97
+187,3e00, A, 2,  " Domain 1 :  132 - 211
+
+Domain 2 :  226 - 455 " ,  " Domain 1 :  132 - 211
+
+Domain 2 :  226 - 455 " ,  1.00
+188,3eam, A, 2,  " Domain 1 :  5 - 196
+
+Domain 2 :  197 - 315 " ,  " Domain 1 :  5 - 191
+
+Domain 2 :  192 - 315 " ,  0.98
+189,3edp, A, 2,  " Domain 1 :  4 - 81
+
+Domain 2 :  83 - 233 " ,  " Domain 1 :  4 - 78
+
+Domain 2 :  79 - 233 " ,  0.98
+190,3fmt, E, 2,  " Domain 1 :  1 - 60
+
+Domain 2 :  60 - 181 " ,  " Domain 1 :  1 - 40
+
+Domain 2 :  60 - 181 " ,  1.00
+191,3h47, A, 2,  " Domain 1 :  1 - 149
+
+Domain 2 :  150 - 219 " ,  " Domain 1 :  1 - 145
+
+Domain 2 :  146 - 219 " ,  0.98
+192,3h90, A, 2,  " Domain 1 :  8 - 206
+
+Domain 2 :  207 - 290 " ,  " Domain 1 :  8 - 59    82 - 199
+
+Domain 2 :  60 - 81    200 - 290 " ,  0.90
+193,3i4d, H, 2,  " Domain 1 :  10 - 116
+
+Domain 2 :  117 - 248 " ,  " Domain 1 :  10 - 98
+
+Domain 2 :  99 - 248 " ,  0.92
+194,3jyu, B, 2,  " Domain 1 :  12 - 138
+
+Domain 2 :  139 - 227 " ,  " Domain 1 :  12 - 138
+
+Domain 2 :  139 - 227 " ,  1.00
+195,3k9o, A, 2,  " Domain 1 :  3 - 157
+
+Domain 2 :  158 - 200 " ,  " Domain 1 :  3 - 116
+
+Domain 2 :  117 - 200 " ,  0.79
+196,3ka2, A, 2,  " Domain 1 :  1 - 102
+
+Domain 2 :  103 - 203 " ,  " Domain 1 :  1 - 94
+
+Domain 2 :  95 - 203 " ,  0.96
+197,3kjd, B, 2,  " Domain 1 :  223 - 365
+
+Domain 2 :  366 - 579 " ,  " Domain 1 :  248 - 345
+
+Domain 2 :  223 - 247    346 - 579 " ,  0.87
+198,3md2, A, 2,  " Domain 1 :  4 - 79
+
+Domain 2 :  80 - 157 " ,  " Domain 1 :  4 - 83
+
+Domain 2 :  84 - 157 " ,  0.97
+199,3n4i, B, 2,  " Domain 1 :  1 - 74
+
+Domain 2 :  75 - 165 " ,  " Domain 1 :  1 - 75
+
+Domain 2 :  76 - 165 " ,  0.99
+200,3nt1, A, 2,  " Domain 1 :  33 - 73
+
+Domain 2 :  74 - 583 " ,  " Domain 1 :  33 - 192    352 - 389    432 - 533
+
+Domain 2 :  193 - 351    390 - 431    534 - 583 " ,  0.53
+201,3p0b, A, 2,  " Domain 1 :  -1 - 413
+
+Domain 2 :  414 - 517 " ,  " Domain 1 :  -1 - 139    233 - 389
+
+Domain 2 :  140 - 232    390 - 517 " ,  0.77
+202,3q8g, A, 2,  " Domain 1 :  4 - 82
+
+Domain 2 :  83 - 309 " ,  " Domain 1 :  4 - 90    153 - 174
+
+Domain 2 :  91 - 152    175 - 309 " ,  0.90
+203,3qxz, A, 2,  " Domain 1 :  2 - 200
+
+Domain 2 :  201 - 260 " ,  " Domain 1 :  2 - 189
+
+Domain 2 :  190 - 260 " ,  0.96
+204,3rf3, B, 2,  " Domain 1 :  1 - 129
+
+Domain 2 :  130 - 258 " ,  " Domain 1 :  1 - 129
+
+Domain 2 :  130 - 258 " ,  1.00
+205,3rk1, B, 2,  " Domain 1 :  4 - 141
+
+Domain 2 :  142 - 230 " ,  " Domain 1 :  4 - 122
+
+Domain 2 :  123 - 230 " ,  0.92
+94.1463414634
+205

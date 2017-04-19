@@ -7,6 +7,8 @@ from collections import defaultdict
 import re
 from compiler.ast import flatten
 from operator import itemgetter
+import itertools
+import copy
 
 patch_size = 20 #Defines the min length a segment of a non-contiguous domain can be. Any segment less than this should be merged to the contiguous part.
 
@@ -220,6 +222,9 @@ def stitchPatches(k_means, cluster_centers, coordinates, realId_list,patch_lengt
 	# print island 
 	if len(island)!=0:
 		k_means = centroidStitch(k_means, island, coordinates, realId_list)
+ 		# k_means = singleLinkage(k_means, island, coordinates, realId_list)
+		# k_means = completeLinkage(k_means, island, coordinates, realId_list)
+		# k_means = UPGMA(k_means, island, coordinates, realId_list)
 
 	# k_means = centroidStitch(k_means, island, coordinates, realId_list, cluster_centers)
 	
@@ -234,6 +239,71 @@ def stitchPatches(k_means, cluster_centers, coordinates, realId_list,patch_lengt
 	# 	print
 
 	return k_means
+
+def UPGMA(k_means, island, coordinates, realId_list):
+	for patches in island:
+		min_dist = 1000000
+
+		for key, value in k_means.iteritems():
+			distance = 0
+			for a in value:
+				for b in patches:
+					if a in realId_list and b in realId_list:
+						cords_a = coordinates[realId_list.index(a)]
+						cords_b = coordinates[realId_list.index(b)]
+						distance += dist(cords_a, cords_b)
+			
+			upgma_distance = 1.0*distance/(len(value)*len(patches))
+
+			if upgma_distance < min_dist:
+				min_dist = upgma_distance
+				merging_cluster = key
+
+		k_means[merging_cluster] = sorted(k_means[merging_cluster] + patches)
+	return k_means
+
+def singleLinkage(k_means, island, coordinates, realId_list):
+	for patches in island:
+		min_dist = 1000000
+
+		for key, value in k_means.iteritems():
+			for a in value:
+				for b in patches:
+					if a in realId_list and b in realId_list:
+						cords_a = coordinates[realId_list.index(a)]
+						cords_b = coordinates[realId_list.index(b)]
+						distance = dist(cords_a, cords_b)
+						if distance < min_dist:
+							min_dist = distance
+							merging_cluster = key
+
+		k_means[merging_cluster] = sorted(k_means[merging_cluster] + patches)
+	return k_means
+
+def completeLinkage(k_means, island, coordinates, realId_list):
+	for patches in island:
+		min_dist = 10000000
+
+		for key, value in k_means.iteritems():
+			max_distance = -10000000
+			for a in value:
+				for b in patches:
+					if a in realId_list and b in realId_list:
+						cords_a = coordinates[realId_list.index(a)]
+						cords_b = coordinates[realId_list.index(b)]
+						distance = dist(cords_a, cords_b)
+						if distance > max_distance:
+							max_distance = distance
+
+			if max_distance < min_dist:
+				min_dist = max_distance
+				merging_cluster = key
+
+		k_means[merging_cluster] = sorted(k_means[merging_cluster] + patches)
+	return k_means
+
+
+
 
 def interactionEnergyStitch(k_means, island, coordinates, realId_list):
 
@@ -543,39 +613,88 @@ def getCathDict(cath_boundaries, domains):
 			break
 		else:
 			numOFSegments = int(cath_boundaries[x])
+			# print "Num of segments", numOFSegments
+
 			dom = cath_boundaries[x:x+6*numOFSegments+1]
+			# print "domain: ", dom
+
 			dom = makeList(dom)
 			cathDict[key] = dom
 			key+=1
 			x+=6*numOFSegments+1
+
+	# print "FINAL DICT"
+	# for key, value in cathDict.iteritems():
+	# 	print key, value
 	return cathDict
 
 def makeList(domain):
+	# print "Received domain to be made into a list"
+	# print domain
 	domainList = []
 	segments = domain[0]
 	chain = domain[1]
 	insert_character = domain[3]
+	copy_domain = domain
 	domain = list(filter(lambda x: x!=chain and x!=insert_character, domain[1:]))
+
+	if chain==copy_domain[2]:
+		domain = [copy_domain[2]] + domain
 
 	for x in xrange(0,len(domain)-1,2):
 		temp_list = []
 		lower_bound = int(domain[x])
 		upper_bound = int(domain[x+1])
 
+		# print "lower bound", lower_bound
+		# print "upper bound", upper_bound
 		for y in range(lower_bound, upper_bound+1):
 			temp_list.append(y)
+		# print "PRINTING TEMP LIST"
+		# print temp_list
 		domainList.append(temp_list)
 
 	return flatten(domainList)
 
 def fillVoids(boundaries):
+	# copy_boundaries = copy.copy(boundaries)
+	# counter = 0
+	# artificially_added = []
 	for key, value in boundaries.iteritems():
 		for x in range(min(value), max(value)+1):
 			if x not in value:
 				if x not in flatten(boundaries.values()):
+					# counter+=1
 					value.append(x)
+					# artificially_added.append(x)
 		boundaries[key] = sorted(value)
+
+	# if len(artificially_added) > 200:
+	# 	print "CHECK"
+	# 	print makeReadable(artificially_added)
+	# 	boundaries = copy_boundaries
+		
 	return boundaries
+
+
+def TooManyMissingResidues(boundaries):
+	counter = 0
+	artificially_added = []
+	for key, value in boundaries.iteritems():
+		for x in range(min(value), max(value)+1):
+			if x not in value:
+				if x not in flatten(boundaries.values()):
+					counter+=1
+					# value.append(x)
+					artificially_added.append(x)
+
+	if len(artificially_added) > 25:
+		print len(artificially_added)
+		# print "BHBHBH"
+		# makeReadable(artificially_added)
+		return True
+		
+	return False
 
 # path = "../Output Data/Two Domain Proteins/"
 # path = "../Output Data/500_proteins/Non Contiguous/"
@@ -584,6 +703,41 @@ path = "Second Dataset/"
 file_counter = 0
 correct = 0
 accuracy = 0.0
+
+def matchDicts(cath, k_means): #Function to map k-means to best match as per overlap
+	perm_base_list = []
+
+	for key, value in k_means.iteritems():
+		perm_base_list.append(key)
+
+	final_list = perm_base_list
+	max_overlap = -1000
+
+	permutations_list = list(itertools.permutations(perm_base_list))
+
+	#Now for every permutation of k_means, compute overlap and compare
+
+	for permutation in permutations_list:
+		overlap = 0
+		perm_iter = 0
+
+		for key,value in cath.iteritems():
+			set_a = set(value)
+			set_b = set(k_means[permutation[perm_iter]])
+			overlap+=len(set_a.intersection(set_b))
+			perm_iter+=1
+
+		if overlap > max_overlap:
+			max_overlap = overlap
+			final_list = list(permutation)
+
+	final_kmeans_dict = {}
+	domain_counter = 1
+	for key in final_list:
+		final_kmeans_dict[domain_counter] = k_means[key]
+		domain_counter+=1
+
+	return final_kmeans_dict
 
 def printCATHDomains(cath_boundaries,domains):
 	cath_dict = {}
@@ -620,43 +774,51 @@ def printCATHDomains(cath_boundaries,domains):
 			print
 		domain_counter+=1
 
+def printDicts(dictionary):
+	domain_counter = 1
+	print "\"",
+	domains=len(dictionary)
+	# for key, value in boundaries.iteritems():
+	for key in sorted(dictionary, key=dictionary.get):
+		value = dictionary[key]
+		print "Domain", domain_counter,": ",
+		makeReadable(sorted(value))
+		if domain_counter!=domains:
+			print
+			print
+		domain_counter+=1
+	# print ", " + "{0:.2f}".format(overlap)
+	print "\"",
 
-	# for key,value in cath_dict.iteritems():
-	# 	print key, value
+def printKMeansDict(k_means):
+	print "\"",
+	domain_counter = 1
+	domains = len(k_means)
+	for key,value in k_means.iteritems():
+		print "Domain", key, ": ",
+		makeReadable(sorted(value))
+		if domain_counter!=domains:
+			print
+			print
+		domain_counter+=1
 
+	print "\"",
 
-	# domain_counter = 1
-	# print "\"",
-	# for key in sorted(cath_dict, key=cath_dict.get, reverse=True):
-	# 	value = cath_dict[key]
-	# 	print "Domain", domain_counter,": ",
-	# 	print value,
-	# 	# makeReadable(sorted(value))
-	# 	if domain_counter!=domains:
-	# 		print
-	# 		print
-	# 	domain_counter+=1
-	# # print ", " + "{0:.2f}".format(overlap)
-	# print "\",",
-
-	print "\",",
-		# for x in range(len(cath_boundaries)):
 
 # intersection_file = "../Output Data/cath_scop_intersection/cath_scop_intersection.txt"
 
-input_file = "Second Dataset Chains/two_domains"
+input_file = "Second Dataset Chains/four_domains"
 with open(input_file) as f23:
 	intersection_data = f23.readlines()
 
 # not_list = ['3g4s', '1adh', '1baa', '1a4k', '1abk','2w8p', '1tj7', '1z5h', '1p9h', '1dve', '1aon', '1fjg', '1jfw', '1nkq', '1byr', '1abz','1t6t','1c21', '1a18', '1bal', '1am4', '1vea', '1foe', '1t11', '1hci', '3ci0', '1d0g', '1olz', '1bs2','3bzc','1c4a','2oce', '1m2o', '1g3p','1dkg','1f0i','1aye','3bzk', '1cjd', '1xi8']
 # not_list = ["3doa", "1d4v", "3lie", "2hyv"];
-
-# not_list = ["1aye"]
+# not_list = ["1bvp"]
 
 visited_list = []
-
+overall = 0
 # print "No., PDB, Domains, CATH, K-Means, Accuracy"
-print "No., PDB, Chain, Domains, CATH, K-Means"
+print "No., PDB, Chain, Domains, CATH, K-Means, p-value"
 
 for pdb_file in os.listdir(path):
 
@@ -681,7 +843,7 @@ for pdb_file in os.listdir(path):
 
 		else:
 
-			if pdb_id[:4].lower()==pdb_file[:4].lower() and pdb_file[:4].lower():#in not_list:#and pdb_file not in visited_list:
+			if pdb_id[:4].lower()==pdb_file[:4].lower():# and pdb_file[:4].lower() in not_list:#and pdb_file not in visited_list:
 				flag = 1
 
 				var_1 = open(path+pdb_path, 'r')
@@ -696,18 +858,20 @@ for pdb_file in os.listdir(path):
 					if x==pdb_file[:4].lower() + chain.lower():
 
 						domain_boundary = pdb_id[14:].strip()
-						if frags==0 and domains == 2 and isContiguous(domain_boundary, domains):
+						if frags==0 and domains == 4 and not isContiguous(domain_boundary, domains):
 							
 							# visited_list.append(pdb_id[:4].lower())
 
-							print str(file_counter + 1) + "," + pdb_id[:4] + ", " + chain + ", "+ str(domains)+ ", ", #\" ",# + domain_boundary, "," ,
 
-							printCATHDomains(domain_boundary, domains)
+							# printCATHDomains(domain_boundary, domains)
 
 							cords_list, realId_list = getCordsList(var_1,chain)
 
 							x = np.asarray(cords_list)
 							file_counter+=1
+
+							print str(file_counter) + "," + pdb_id[:4] + ", " + chain + ", "+ str(domains)+ ", ", 
+
 
 							km = KMeans(n_clusters=domains).fit(x)
 
@@ -716,59 +880,72 @@ for pdb_file in os.listdir(path):
 
 							boundaries = domainBoundaries(labels_km, realId_list,domains)
 
-							# print boundaries
-
-							boundaries = fillVoids(boundaries)
-
-							# print "Boundaries after fillings voids"
-							# print boundaries
-
+							#REMOVING DUPLICATES
 							for key,value in boundaries.iteritems():
 								boundaries[key] = list(set(value))
 
+							if not TooManyMissingResidues(boundaries):
+								boundaries = fillVoids(boundaries)
+							else:
+								print "CHECK"
 
-							# print "Boundaries after removing duplicates"
-							# for key, value in boundaries.iteritems():
-							# 	print key, value
-							# 	print
+								# for key,value in boundaries.iteritems():
+								# 	makeReadable(sorted(value))
+								# 	print
 
-
-							# print "STICTHCADFA"
-							boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, patch_size)
-
-							# print "CHIGA CHIGA"
-							# print boundaries
+							new_boundaries = stitchPatches(boundaries, clusters_km, cords_list, realId_list, patch_size)
 
 							cathDict = getCathDict(domain_boundary, domains)
 
-							# cathDict, boundaries = mapCorrectly(cathDict, boundaries)
+							for key,value in new_boundaries.iteritems():
+								new_boundaries[key] = list(set(value))
 
-							# print "MAPPED CORRECTLY"
 
-							# print boundaries
-
-							# print boundaries
-
-							# overlap = compareResults(cathDict, boundaries, domains)
-
-							# accuracy = accuracy + overlap
-
-							for key,value in boundaries.iteritems():
-								boundaries[key] = list(set(value))
-
+							
+							sorted_cathDict = {}
+							sorted_kMeansDict = {}
 
 							domain_counter = 1
-							print "\"",
-							# for key, value in boundaries.iteritems():
-							for key in sorted(boundaries, key=boundaries.get):
-								value = boundaries[key]
-								print "Domain", domain_counter,": ",
-								makeReadable(sorted(value))
-								if domain_counter!=domains:
-									print
-									print
-								domain_counter+=1
-							# print ", " + "{0:.2f}".format(overlap)
-							print "\""
 
-# print "accuracy is", accuracy/file_counter
+							for key in sorted(new_boundaries, key=new_boundaries.get):
+								value = new_boundaries[key]
+								sorted_kMeansDict[domain_counter] = value
+								domain_counter+=1
+
+							domain_counter = 1
+
+							for key in sorted(cathDict, key=cathDict.get):
+								value = cathDict[key]
+								sorted_cathDict[domain_counter] = value
+								domain_counter+=1
+
+
+							sorted_kMeansDict = matchDicts(sorted_cathDict, sorted_kMeansDict)
+
+							# for key,value in sorted_kMeansDict.iteritems():
+							# 	print key, value
+							domain_counter = 1
+							overlap = 0
+							total_residues = 0
+							while domain_counter<=domains:
+								total_residues += len(sorted_kMeansDict[domain_counter])
+								overlap+=len(set(sorted_cathDict[domain_counter]).intersection(sorted_kMeansDict[domain_counter]))
+								domain_counter+=1
+
+
+							printDicts(cathDict)
+							print ", ",
+							printKMeansDict(sorted_kMeansDict)
+							print ", ",
+							print "{0:.2f}".format((1.0*overlap)/total_residues)
+
+							if (1.0*overlap)/total_residues >= 0.75:
+								overall+=1
+
+
+print (overall*100.0)/file_counter
+print file_counter
+
+
+							# print "Overlap is ", overlap, "Total residues are", total_residues, "p =", (1.0*overlap)/total_residues
+

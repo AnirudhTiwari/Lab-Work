@@ -1,16 +1,37 @@
 from sklearn import svm
 import numpy as np
 from random import randint
+from sklearn.feature_extraction.text import CountVectorizer
 
 single_data = []
 multi_data = []
-desired_chains = 60
+
+single_ss = []
+two_ss = []
+three_ss = []
+four_ss = []
+
+desired_chains = 45
 
 with open("single_length_energy_density_radius_correct.csv") as f:
 	single_data = f.readlines()
 
 with open("multi_length_energy_density_radius_correct.csv") as f:
 	multi_data = f.readlines()
+
+
+with open("single_SS.csv") as f:
+	single_ss = f.readlines()
+
+with open("two_SS.csv") as f:
+	two_ss = f.readlines()
+
+with open("three_SS.csv") as f:
+	three_ss = f.readlines()
+
+with open("four_SS.csv") as f:
+	four_ss = f.readlines()
+
 
 
 X = []
@@ -40,6 +61,12 @@ for x in multi_data:
 	if domains==4:
 		four_domains.append(x)
 
+def getSS(ss_list, pdb, chain):
+	for x in ss_list:
+		x = x.split(",")
+		# print x[0], pdb, x[1], chain
+		if x[0]==pdb.strip() and x[1].lower()==chain.lower().strip():
+			return x[3]
 
 while len(single_chains)!=desired_chains:
 	num = randint(0, len(single_data)-1)
@@ -71,6 +98,10 @@ for chain in range(0, len(single_chains)):
 	energy = float(x[4].strip())
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
+	# ss = getSS(single_ss, x[0], x[1])
+
+	# if ss=="None":
+	# 	print x[0]
 
 	X.append([length, energy, density, radius])
 
@@ -84,6 +115,12 @@ for chain in range(0, len(two_chains)):
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
 
+	# ss = getSS(two_ss, x[0], x[1])
+
+	# if ss=="None":
+	# 	print x[0]
+
+
 	X.append([length, energy, density, radius])
 
 for chain in range(0, len(three_chains)):
@@ -95,6 +132,12 @@ for chain in range(0, len(three_chains)):
 	energy = float(x[4].strip())
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
+
+	# ss = getSS(three_ss, x[0], x[1])
+
+	# if ss=="None":
+	# 	print x[0]
+
 
 	X.append([length, energy, density, radius])
 
@@ -109,7 +152,13 @@ for chain in range(0, len(four_chains)):
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
 
+	# ss = getSS(four_ss, x[0], x[1])
+
+	# if ss=="None":
+	# 	print x[0]
+
 	X.append([length, energy, density, radius])
+
 
 Y = ["Single"]*desired_chains + ["Two"]*desired_chains + ["Three"]*desired_chains + ["Four"]*desired_chains
 
@@ -144,6 +193,13 @@ for x in single_data:
 	energy = float(x[4].strip())
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
+
+	# ss = getSS(single_ss, x[0], x[1])
+
+	# if ss=="None":
+	# 	print x[0]
+
+
 	test_single.append([length, energy, density, radius])
 
 
@@ -161,7 +217,16 @@ for x in two_domains:
 	energy = float(x[4].strip())
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
+
+	# ss = getSS(two_ss, x[0], x[1])
+
+	# if ss=="None":
+	# 	print x[0]
+
+
 	test_two.append([length, energy, density, radius])
+
+	
 
 for x in clf.predict(test_two):
 	if x=="Two":
@@ -179,7 +244,14 @@ for x in three_domains:
 	energy = float(x[4].strip())
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
+	# ss = getSS(three_ss, x[0], x[1])
+
+	# if ss=="None":
+	# 	print x[0]
+
+
 	test_three.append([length, energy, density, radius])
+
 
 for x in clf.predict(test_three):
 	if x=="Three":
@@ -196,7 +268,14 @@ for x in four_domains:
 	energy = float(x[4].strip())
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
+	# ss = getSS(four_ss, x[0], x[1])
+
+	# if ss=="None":
+	# 	print x[0]
+
+
 	test_four.append([length, energy, density, radius])
+
 
 for x in clf.predict(test_four):
 	if x=="Four":

@@ -1,0 +1,224 @@
+No., PDB, Chain, Domains, CATH, K-Means, p-value
+1,1ggt, A, 4,  " Domain 1 :  8 - 192
+
+Domain 2 :  193 - 515
+
+Domain 3 :  516 - 630
+
+Domain 4 :  631 - 729 " ,  " Domain 1 :  8 - 185
+
+Domain 2 :  186 - 273    314 - 348    372 - 437    461 - 504
+
+Domain 3 :  349 - 371    438 - 460    505 - 627
+
+Domain 4 :  274 - 313    628 - 729 " ,  0.85
+2,1iq8, A, 4,  " Domain 1 :  6 - 360
+
+Domain 2 :  361 - 430
+
+Domain 3 :  431 - 504
+
+Domain 4 :  505 - 582 " ,  " Domain 1 :  6 - 249
+
+Domain 2 :  324 - 489
+
+Domain 3 :  250 - 323
+
+Domain 4 :  490 - 582 " ,  0.68
+3,1kfi, A, 4,  " Domain 1 :  3 - 212
+
+Domain 2 :  213 - 321
+
+Domain 3 :  322 - 447
+
+Domain 4 :  448 - 572 " ,  " Domain 1 :  3 - 205
+
+Domain 2 :  206 - 323    406 - 445
+
+Domain 3 :  324 - 405
+
+Domain 4 :  446 - 572 " ,  0.91
+4,1ord, A, 4,  " Domain 1 :  1 - 107
+
+Domain 2 :  108 - 420
+
+Domain 3 :  421 - 600
+
+Domain 4 :  601 - 730 " ,  " Domain 1 :  1 - 106
+
+Domain 2 :  107 - 201    318 - 421
+
+Domain 3 :  422 - 612
+
+Domain 4 :  202 - 317    613 - 730 " ,  0.82
+5,1pfx, L, 4,  " Domain 1 :  1 - 46
+
+Domain 2 :  47 - 86
+
+Domain 3 :  87 - 127
+
+Domain 4 :  128 - 146 " ,  " Domain 1 :  1 - 42
+
+Domain 2 :  43 - 73
+
+Domain 3 :  74 - 123
+
+Domain 4 :  124 - 146 " ,  0.86
+6,1sqg, A, 4,  " Domain 1 :  5 - 145
+
+Domain 2 :  146 - 172
+
+Domain 3 :  173 - 230
+
+Domain 4 :  231 - 428 " ,  " Domain 1 :  5 - 136
+
+Domain 2 :  137 - 172    325 - 349
+
+Domain 3 :  173 - 237
+
+Domain 4 :  238 - 324    350 - 428 " ,  0.90
+7,1wvf, A, 4,  " Domain 1 :  7 - 114
+
+Domain 2 :  115 - 242
+
+Domain 3 :  243 - 473
+
+Domain 4 :  474 - 521 " ,  " Domain 1 :  7 - 112    489 - 521
+
+Domain 2 :  113 - 241
+
+Domain 3 :  282 - 312    378 - 488
+
+Domain 4 :  242 - 281    313 - 377 " ,  0.70
+8,2ahx, A, 4,  " Domain 1 :  1 - 194
+
+Domain 2 :  195 - 305
+
+Domain 3 :  306 - 476
+
+Domain 4 :  477 - 616 " ,  " Domain 1 :  1 - 188
+
+Domain 2 :  189 - 300
+
+Domain 3 :  301 - 509
+
+Domain 4 :  510 - 616 " ,  0.93
+9,2au3, A, 4,  " Domain 1 :  1 - 97
+
+Domain 2 :  98 - 224
+
+Domain 3 :  225 - 348
+
+Domain 4 :  349 - 403 " ,  " Domain 1 :  1 - 98
+
+Domain 2 :  99 - 225
+
+Domain 3 :  226 - 346
+
+Domain 4 :  347 - 403 " ,  0.99
+10,2b5e, A, 4,  " Domain 1 :  22 - 140
+
+Domain 2 :  141 - 237
+
+Domain 3 :  238 - 364
+
+Domain 4 :  365 - 504 " ,  " Domain 1 :  22 - 139
+
+Domain 2 :  140 - 239
+
+Domain 3 :  240 - 366
+
+Domain 4 :  367 - 504 " ,  0.99
+11,2fmp, A, 4,  " Domain 1 :  10 - 91
+
+Domain 2 :  92 - 148
+
+Domain 3 :  149 - 271
+
+Domain 4 :  272 - 335 " ,  " Domain 1 :  10 - 89
+
+Domain 2 :  90 - 147
+
+Domain 3 :  148 - 259
+
+Domain 4 :  260 - 335 " ,  0.95
+12,2fo0, A, 4,  " Domain 1 :  65 - 142
+
+Domain 2 :  143 - 252
+
+Domain 3 :  253 - 336
+
+Domain 4 :  337 - 530 " ,  " Domain 1 :  65 - 143
+
+Domain 2 :  144 - 239
+
+Domain 3 :  240 - 340
+
+Domain 4 :  341 - 530 " ,  0.96
+13,2gy5, A, 4,  " Domain 1 :  23 - 121
+
+Domain 2 :  122 - 211
+
+Domain 3 :  212 - 346
+
+Domain 4 :  347 - 445 " ,  " Domain 1 :  23 - 117
+
+Domain 2 :  118 - 210
+
+Domain 3 :  211 - 349
+
+Domain 4 :  350 - 445 " ,  0.98
+14,2hyv, A, 4,  " Domain 1 :  31 - 103
+
+Domain 2 :  104 - 183
+
+Domain 3 :  184 - 264
+
+Domain 4 :  265 - 338 " ,  " Domain 1 :  31 - 92
+
+Domain 2 :  105 - 177
+
+Domain 3 :  178 - 264
+
+Domain 4 :  93 - 104    265 - 338 " ,  0.94
+15,2uvo, A, 4,  " Domain 1 :  2 - 42
+
+Domain 2 :  43 - 85
+
+Domain 3 :  86 - 128
+
+Domain 4 :  129 - 170 " ,  " Domain 1 :  2 - 42
+
+Domain 2 :  43 - 85
+
+Domain 3 :  86 - 128
+
+Domain 4 :  129 - 170 " ,  1.00
+16,3a21, A, 4,  " Domain 1 :  45 - 339
+
+Domain 2 :  340 - 430
+
+Domain 3 :  431 - 531
+
+Domain 4 :  532 - 658 " ,  " Domain 1 :  45 - 283
+
+Domain 2 :  284 - 430
+
+Domain 3 :  431 - 530
+
+Domain 4 :  531 - 658 " ,  0.91
+17,3hu3, A, 4,  " Domain 1 :  17 - 107
+
+Domain 2 :  108 - 200
+
+Domain 3 :  201 - 370
+
+Domain 4 :  371 - 469 " ,  " Domain 1 :  17 - 108
+
+Domain 2 :  109 - 198
+
+Domain 3 :  199 - 370
+
+Domain 4 :  371 - 469 " ,  0.99
+88.2352941176
+17

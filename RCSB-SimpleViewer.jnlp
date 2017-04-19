@@ -1,0 +1,54 @@
+
+
+
+
+<jnlp spec="1.0+" codebase="http://www.rcsb.org">
+    <information>
+        <title>Simple Viewer</title>
+        <vendor>RCSB PDB</vendor>
+        <homepage href="http://www.rcsb.org"/>
+        <description>An application for viewing structures.</description>
+        <offline-allowed/>
+        <description kind="short">An application for viewing structures.</description>
+        <icon href="/pdb/img/icon_128_SV.gif"/>
+        <icon kind="splash" href="/pdb/img/pdbws_splash.gif"/>
+        <shortcut online="false">
+            <desktop/>
+            <menu submenu="RCSB Structure Viewers"/>
+        </shortcut>
+    </information>
+    <security>
+        <all-permissions/>
+    </security>
+
+    
+    <resources>
+        <j2se version="1.8+" initial-heap-size="512M" max-heap-size="1024M"
+              java-vm-args="-Xdock:name='Simple Viewer'"/>
+
+        
+        <jar href="/pdb/Viewers/RCSBViewers/Signed-RCSBviewers-applications.jar"/>
+        <jar href="/pdb/Viewers/RCSBViewers/Signed-RCSBviewers-framework.jar"/>
+        <jar href="/pdb/Viewers/RCSBViewers/Signed-RCSBviewers-molecular-biology-toolkit.jar"/>
+
+        
+        <jar href="/pdb/Viewers/RCSBViewers/3rdParty/jcolorbrewer-5.3.jar" />
+        <jar href="/pdb/Viewers/RCSBViewers/3rdParty/xercesImpl-2.11.0.jar" />
+        <jar href="/pdb/Viewers/RCSBViewers/3rdParty/jai_core-1.1.3.jar" />
+        <jar href="/pdb/Viewers/RCSBViewers/3rdParty/jai_codec-1.1.3.jar" />
+        <jar href="/pdb/Viewers/RCSBViewers/3rdParty/signed-vecmath-1.5.3.jar" />
+
+        
+        <extension name="gluegen-rt" href="/pdb/Viewers/RCSBViewers/GetGLUEGEN.jsp" />
+        <extension name="jogl-all" href="/pdb/Viewers/RCSBViewers/GetJOGL.jsp" />
+    </resources>
+
+    <application-desc main-class="org.rcsb.sv.controllers.app.SimpleViewer">
+         <argument>-structure_url</argument>
+<argument>http://www.rcsb.org/pdb/files/1C7C.xml.gz</argument>
+	<argument>-unit_id</argument>
+<argument>1</argument>
+
+        <argument>-standalone</argument>
+    </application-desc>
+</jnlp>
