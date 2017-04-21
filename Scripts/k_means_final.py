@@ -1,6 +1,5 @@
 import os
 import math
-from igraph import *
 from sklearn.cluster import *
 import numpy as np
 from collections import defaultdict

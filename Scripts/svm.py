@@ -11,26 +11,26 @@ two_ss = []
 three_ss = []
 four_ss = []
 
-desired_chains = 45
+desired_chains = 0.9
 
 with open("single_length_energy_density_radius_correct.csv") as f:
 	single_data = f.readlines()
 
-with open("multi_length_energy_density_radius_correct.csv") as f:
+with open("multi_non_contiguous_length_energy_density_radius_correct.csv") as f:
 	multi_data = f.readlines()
 
 
-with open("single_SS.csv") as f:
-	single_ss = f.readlines()
+# with open("single_SS.csv") as f:
+# 	single_ss = f.readlines()
 
-with open("two_SS.csv") as f:
-	two_ss = f.readlines()
+# with open("two_SS.csv") as f:
+# 	two_ss = f.readlines()
 
-with open("three_SS.csv") as f:
-	three_ss = f.readlines()
+# with open("three_SS.csv") as f:
+# 	three_ss = f.readlines()
 
-with open("four_SS.csv") as f:
-	four_ss = f.readlines()
+# with open("four_SS.csv") as f:
+# 	four_ss = f.readlines()
 
 
 
@@ -61,29 +61,29 @@ for x in multi_data:
 	if domains==4:
 		four_domains.append(x)
 
-def getSS(ss_list, pdb, chain):
-	for x in ss_list:
-		x = x.split(",")
-		# print x[0], pdb, x[1], chain
-		if x[0]==pdb.strip() and x[1].lower()==chain.lower().strip():
-			return x[3]
+# def getSS(ss_list, pdb, chain):
+# 	for x in ss_list:
+# 		x = x.split(",")
+# 		# print x[0], pdb, x[1], chain
+# 		if x[0]==pdb.strip() and x[1].lower()==chain.lower().strip():
+# 			return x[3]
 
-while len(single_chains)!=desired_chains:
+while len(single_chains)!=int(desired_chains*len(single_data)):
 	num = randint(0, len(single_data)-1)
 	if num not in single_chains:
 		single_chains.append(num)
 
-while len(two_chains)!=desired_chains:
+while len(two_chains)!=int(desired_chains*len(two_domains)):
 	num = randint(0, len(two_domains)-1)
 	if num not in two_chains:
 		two_chains.append(num)
 
-while len(three_chains)!=desired_chains:
+while len(three_chains)!=int(desired_chains*len(three_domains)):
 	num = randint(0, len(three_domains)-1)
 	if num not in three_chains:
 		three_chains.append(num)
 
-while len(four_chains)!=desired_chains:
+while len(four_chains)!=int(desired_chains*len(four_domains)):
 	num = randint(0, len(four_domains)-1)
 	if num not in four_chains:
 		four_chains.append(num)
@@ -159,8 +159,16 @@ for chain in range(0, len(four_chains)):
 
 	X.append([length, energy, density, radius])
 
+print "Single domain training data-set => ", int(desired_chains*len(single_data)), "Total single data => ", len(single_data)
+print
+print "Two domain training data-set => ", int(desired_chains*len(two_domains)), "Total two domain data => ", len(two_domains)
+print
+print "Three domain training data-set => ", int(desired_chains*len(three_domains)), "Total three domain data => ", len(three_domains)
+print
+print "Four domain training data-set => ", int(desired_chains*len(four_domains)), "Total four domain data => ", len(four_domains)
 
-Y = ["Single"]*desired_chains + ["Two"]*desired_chains + ["Three"]*desired_chains + ["Four"]*desired_chains
+
+Y = ["Single"]*int(desired_chains*len(single_data)) + ["Two"]*int(desired_chains*len(two_domains)) + ["Three"]*int(desired_chains*len(three_domains)) + ["Four"]*int(desired_chains*len(four_domains))
 
 
 clf = svm.SVC()
@@ -209,7 +217,7 @@ for x in clf.predict(test_single):
 	else:
 		single_wrong+=1
 
-print "single_correct", "{0:.2f}".format(single_correct*100.0/len(single_data))
+print "single_correct", single_correct,len(single_data),"{0:.2f}".format(single_correct*100.0/len(single_data))
 
 for x in two_domains:
 	x = x.split(",")
