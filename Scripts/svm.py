@@ -171,7 +171,7 @@ print "Four domain training data-set => ", int(desired_chains*len(four_domains))
 Y = ["Single"]*int(desired_chains*len(single_data)) + ["Two"]*int(desired_chains*len(two_domains)) + ["Three"]*int(desired_chains*len(three_domains)) + ["Four"]*int(desired_chains*len(four_domains))
 
 
-clf = svm.SVC()
+clf = svm.SVC(decision_function_shape='ovo')
 clf.fit(X,Y)
 
 
@@ -201,6 +201,8 @@ for x in single_data:
 	energy = float(x[4].strip())
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
+	pdb = x[0].strip()
+	chain = x[1].strip()
 
 	# ss = getSS(single_ss, x[0], x[1])
 
@@ -212,6 +214,7 @@ for x in single_data:
 
 
 for x in clf.predict(test_single):
+	
 	if x=="Single":
 		single_correct+=1
 	else:

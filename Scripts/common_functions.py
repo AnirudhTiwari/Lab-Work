@@ -1,3 +1,5 @@
+import math
+
 def value_finder(start_value, end_value, array):
 
 	coordinate = ''
@@ -45,3 +47,9 @@ def isContiguous(cath_boundaries, domains):
 			key+=1
 			x+=6*numOFSegments+1
 	return True
+
+def dist(a,b):
+	# print a, b
+	for x in range(3):
+		distance = math.pow((math.pow((a[0]-b[0]),2) + math.pow((a[1]-b[1]),2) + math.pow((a[2]-b[2]),2)), 0.5)
+		return distance

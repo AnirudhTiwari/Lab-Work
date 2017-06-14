@@ -30,15 +30,17 @@ max_ASA = {
 'ASX' : 187.0 #As ASX can be either of ASN or ASP, so I have taken the mean of it.
 } 
 
+core_threshold = 15.0
+RSA_cutoff = 20
 
 with open('../Input Files/CathDomall', 'r') as f:
 	cath_data = f.readlines()
 
-# with open('Final_dataset.txt', 'r') as f:
-# 	input_pdb = f.readlines()
-
-with open('test_dataset.txt', 'r') as f:
+with open('Final_dataset.txt', 'r') as f:
 	input_pdb = f.readlines()
+
+# with open('test_dataset.txt', 'r') as f:
+# 	input_pdb = f.readlines()
 
 
 def getDomainsFromCATH(pdb, chain):
@@ -69,13 +71,13 @@ def getResidueData(fileRead, chain):
 
 		if(data[0]=='A' and data[1]=='T' and data[2]=='O' and data[21]==chain and data[13]=='C' and data[14]=='A'):
 
-			val = value_finder(22, 26, data)	
+			val = utils.value_finder(22, 26, data)	
 						
-			coord_x = float(value_finder(30, 38, data))
+			coord_x = float(utils.value_finder(30, 38, data))
 
-			coord_y = float(value_finder(38, 46, data))
+			coord_y = float(utils.value_finder(38, 46, data))
 
-			coord_z = float(value_finder(46, 54, data))
+			coord_z = float(utils.value_finder(46, 54, data))
 		
 			if not re.search('[a-zA-Z]+', val):
 				real_id = int(val)
@@ -88,33 +90,38 @@ def getResidueData(fileRead, chain):
 
 	return cords_list,realId_list, aminoAcid_list
 
-def value_finder(start_value, end_value, array):
+def getHydrophobicCoreDict(centroid_list, cords_list, realId_list, buried_residues_list, k):
+	hydrophobicCoreDict = dict.fromkeys(list(xrange(k)))
 
-	coordinate = ''
+	for coordinates in centroid_list:
+		for buried_residue in buried_residues_list:
+			buried_residue_coordinates = cords_list[realId_list.index(buried_residue)]
+			distance = utils.dist(coordinates, buried_residue_coordinates)
 
-	while array[start_value]==' ':
-		start_value = start_value+1
+			if distance <= core_threshold:
+				cluster = centroid_list.index(coordinates)
+				if hydrophobicCoreDict[cluster] == None:
+					hydrophobicCoreDict[cluster] = set()
+
+				hydrophobicCoreDict[cluster].add(buried_residue)
+
+	return hydrophobicCoreDict
 
 
 
-	while int(start_value)!=int(end_value):
-		coordinate = coordinate + array[start_value];
-		start_value = start_value + 1
-
-	return coordinate
-
+print "PDB", ", ", "Chain", ", ", "Domains", ", ", "Length", ", ", "No. of buried residues", ", ","Pairwise intersection with k=1", ", ", "k=2", ", ", "k=3", ", ", "k=4"
 for entry in input_pdb:
 	pdb = entry[:4].strip()
 	chain = entry[4].strip().upper()
 	domains = int(getDomainsFromCATH(pdb, chain))
 	cath_boundary = getDomainBoundary(pdb, chain)
-	# if not utils.isContiguous(cath_boundary, domains) or utils.isContiguous(cath_boundary, domains):
-	if 1:
+	if utils.isContiguous(cath_boundary, domains) and pdb=='1m70':
+	# if 1:
 
 		buried_residues_id = []
 
-		# path_to_pdb_file = "Second Dataset/" + pdb + ".pdb"
-		path_to_pdb_file = "Test Dataset/" + pdb + ".pdb"
+		path_to_pdb_file = "Second Dataset/" + pdb + ".pdb"
+		# path_to_pdb_file = "Test Dataset/" + pdb + ".pdb"
 
 		path_to_dssp_file = "DSSP/" + pdb + ".dssp"
 
@@ -126,8 +133,8 @@ for entry in input_pdb:
 
 		cords_list, realId_list, aminoAcid_list = getResidueData(pdb_data,chain) #Just to maintain legacy getCordsList from k_means_final.py
 
-		# print pdb,",", chain,",", domains,",",
-		print pdb,chain,domains
+		print pdb,",", chain,",", domains,",", len(cords_list),", ",
+		# print pdb,chain,domains
 
 
 		for data in dssp_data:
@@ -135,47 +142,77 @@ for entry in input_pdb:
 			if data[-2]!='.' and data[2]!='#' and data[11]==chain:
 				
 				ACC = float(utils.value_finder(35, 40, data))
-				residue_number = int(value_finder(7,10,data))
+				residue_number = int(utils.value_finder(7,10,data))
 				try:
 					aminoAcid = aminoAcid_list[realId_list.index(residue_number)]
 					RSA = ACC*100/max_ASA[aminoAcid]
 				
-					if RSA < 20.0:
+					if RSA < RSA_cutoff:
 						buried_residues_id.append(residue_number)
 				except ValueError as e:
 					pass
-
-				
-
-
-		for k in range(1,5):
+		print len(buried_residues_id),", ",
+		# print
+		# print sorted(buried_residues_id)
+ 		for k in range(1,5):
 		# for k in range(1,2):
+			intersection_set = set ()
+			common_residues = 0
 			x = np.asarray(cords_list)
 			km = KMeans(n_clusters = k).fit(x)
 
 			labels_km = km.labels_
 			clusters_km = km.cluster_centers_
 
-			boundaries = utils.domainBoundaries(labels_km, realId_list, k)
+			hydrophobic_core_dict = getHydrophobicCoreDict(clusters_km.tolist()
+				, cords_list, realId_list, buried_residues_id, k)
+			
+			for key, value in hydrophobic_core_dict.iteritems():
+				print key, sorted(value)
+				# print key, value
+				print
+			print
 
-			for key,value in boundaries.iteritems():
-				temp_buried_list = []
-				buried_residues = 0
-				for x in value:
-					if x in buried_residues_id:
-						# temp_buried_list.append(x)
-						buried_residues+=1
+			for key, value in hydrophobic_core_dict.iteritems():
+				# print key, sorted(value)
+				# print len(value)
+				for key_1, value_1 in hydrophobic_core_dict.iteritems():
+					if key_1!=key:
+						# print key_1, sorted(value_1)
+						# print len(value_1)
+						try:
+							temp = set.intersection(value, value_1)
+							# print temp,
+							# print len(temp)
+						except TypeError as e:
+							pass
+
+						common_residues+=len(temp)
+			if k<4:
+				print common_residues/2, ", ",
+			else:
+				print common_residues/2
+
+			# boundaries = utils.domainBoundaries(labels_km, realId_list, k)
+
+			# for key,value in boundaries.iteritems():
+			# 	temp_buried_list = []
+			# 	buried_residues = 0
+			# 	for x in value:
+			# 		if x in buried_residues_id:
+			# 			# temp_buried_list.append(x)
+			# 			buried_residues+=1
 				
-				# print '+'.join(str(i) for i in temp_buried_list)
-				# print
+			# 	# print '+'.join(str(i) for i in temp_buried_list)
+			# 	# print
 
 
-				print "{0:.2f}".format(buried_residues*100.0/len(value)),"(", buried_residues,"/",len(value),")"," ",
+			# 	print "{0:.2f}".format(buried_residues*100.0/len(value)),"(", buried_residues,"/",len(value),")"," ",
 				# print "{0:.2f}".format(buried_residues*100.0/len(value))," ",
 
 
-			if k<=3:
-				print ",",
+			# if k<=3:
+			# 	print ",",
 
-			else:
-				print
+			# else:
+			# 	print

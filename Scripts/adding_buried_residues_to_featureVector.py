@@ -3,10 +3,10 @@
 with open('single_length_energy_density_radius_correct.csv', 'r') as f:
 	single_data = f.readlines()
 
-with open('RSA_KMeans_contiguous_out.csv', 'r') as f:
+with open('RSA_KMeans_contiguous_out_vAlternate.csv', 'r') as f:
 	contiguous_RSA = f.readlines()
 
-with open('RSA_KMeans_non_contiguous_out.csv', 'r') as f:
+with open('RSA_KMeans_non_contiguous_out_vAlternate.csv', 'r') as f:
 	non_contiguous_RSA = f.readlines()
 
 
