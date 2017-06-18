@@ -11,7 +11,7 @@ two_ss = []
 three_ss = []
 four_ss = []
 
-desired_chains = 0.9
+desired_chains = 0.75
 
 with open("single_length_energy_density_radius_correct.csv") as f:
 	single_data = f.readlines()
@@ -171,7 +171,7 @@ print "Four domain training data-set => ", int(desired_chains*len(four_domains))
 Y = ["Single"]*int(desired_chains*len(single_data)) + ["Two"]*int(desired_chains*len(two_domains)) + ["Three"]*int(desired_chains*len(three_domains)) + ["Four"]*int(desired_chains*len(four_domains))
 
 
-clf = svm.SVC(decision_function_shape='ovo')
+clf = svm.SVC(decision_function_shape='ovr', probability=True)
 clf.fit(X,Y)
 
 
@@ -201,9 +201,7 @@ for x in single_data:
 	energy = float(x[4].strip())
 	density = float(x[5].strip())
 	radius = float(x[6].strip())
-	pdb = x[0].strip()
-	chain = x[1].strip()
-
+	
 	# ss = getSS(single_ss, x[0], x[1])
 
 	# if ss=="None":
@@ -213,8 +211,15 @@ for x in single_data:
 	test_single.append([length, energy, density, radius])
 
 
-for x in clf.predict(test_single):
-	
+for z in test_single:
+	x = clf.predict([z])
+	print single_data[test_single.index(z)].split(",")[0],
+	print ",",
+	print single_data[test_single.index(z)].split(",")[1],
+	print ",",
+	print x[0]
+
+	# print single_data[test_single[z].index()].split(", ")[0]
 	if x=="Single":
 		single_correct+=1
 	else:
@@ -239,11 +244,14 @@ for x in two_domains:
 
 	
 
-for x in clf.predict(test_two):
-	if x=="Two":
-		two_correct+=1
-	else:
-		two_wrong+=1
+for x in clf.decision_function(test_two):
+	for y in x:
+		print("%.2f" % round(y*100,2)),
+	print
+	# if x=="Two":
+	# 	two_correct+=1
+	# else:
+	# 	two_wrong+=1
 
 
 print "Two_correct", two_correct, len(two_domains), "{0:.2f}".format(two_correct*100.0/len(two_domains))
