@@ -36,7 +36,8 @@ RSA_cutoff = 20
 with open('../Input Files/CathDomall', 'r') as f:
 	cath_data = f.readlines()
 
-with open('Final_dataset.txt', 'r') as f:
+# with open('Final_dataset.txt', 'r') as f:
+with open('final_dataset_with_chains_v2.txt') as f:
 	input_pdb = f.readlines()
 
 # with open('test_dataset.txt', 'r') as f:
@@ -110,12 +111,13 @@ def getHydrophobicCoreDict(centroid_list, cords_list, realId_list, buried_residu
 
 
 print "PDB", ", ", "Chain", ", ", "Domains", ", ", "Length", ", ", "No. of buried residues", ", ","Pairwise intersection with k=1", ", ", "k=2", ", ", "k=3", ", ", "k=4"
+missing_list = []
 for entry in input_pdb:
 	pdb = entry[:4].strip()
 	chain = entry[4].strip().upper()
 	domains = int(getDomainsFromCATH(pdb, chain))
 	cath_boundary = getDomainBoundary(pdb, chain)
-	if utils.isContiguous(cath_boundary, domains) and pdb=='1m70':
+	if not utils.isContiguous(cath_boundary, domains):
 	# if 1:
 
 		buried_residues_id = []
@@ -127,8 +129,20 @@ for entry in input_pdb:
 
 		pdb_data = open(path_to_pdb_file, 'r');
 
-		with open(path_to_dssp_file, 'r') as f:
-			dssp_data = f.readlines()
+		exception_flag = 0
+		try:
+			with open(path_to_dssp_file, 'r') as f:
+				dssp_data = f.readlines()
+		except IOError:
+			missing_list.append(pdb+chain)
+			exception_flag=1
+
+
+		if exception_flag==1:
+			print pdb,",", chain,",", domains,",", len(cords_list),", ", "DSSP Data unavailable", ", ", 0, ", ", 0, ", ", 0, ", ", 0
+			continue
+
+		
 
 
 		cords_list, realId_list, aminoAcid_list = getResidueData(pdb_data,chain) #Just to maintain legacy getCordsList from k_means_final.py
@@ -167,11 +181,11 @@ for entry in input_pdb:
 			hydrophobic_core_dict = getHydrophobicCoreDict(clusters_km.tolist()
 				, cords_list, realId_list, buried_residues_id, k)
 			
-			for key, value in hydrophobic_core_dict.iteritems():
-				print key, sorted(value)
-				# print key, value
-				print
-			print
+			# for key, value in hydrophobic_core_dict.iteritems():
+			# 	# print key, sorted(value)
+			# 	# print key, value
+			# 	print
+			# print
 
 			for key, value in hydrophobic_core_dict.iteritems():
 				# print key, sorted(value)
@@ -215,4 +229,5 @@ for entry in input_pdb:
 			# 	print ",",
 
 			# else:
-			# 	print
+			# 	print	
+
