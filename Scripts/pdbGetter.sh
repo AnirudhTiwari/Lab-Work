@@ -1,15 +1,28 @@
+#!/bin/bash
 files=0
-for line in $(cat cath_scop_final_pdb) 
+# for line in $(cat cath_scop_final_pdb)
+for line in $(cat multi_domain_balanced_classes_chains.txt) 
 do	
-	if [ $files -gt 920 ]
+	if [ $files -gt 1500 ]
 	then
 		break
 	fi
-	a="http://rcsb.org/pdb/files/"
-	b=".pdb"
+	line=${line:0:4}
+	a="https://files.rcsb.org/download/"
+	b=".pdb.gz"
 	a+=$line
 	a+=$b
-	wget $a	 
-	mv $line$b temp
-done
+	c=".pdb"
+	d="trainingDataset/"$line$c
+	
+	if [ -f $d ]
+	then
+		echo $d
+	else
+		wget --no-check-certificate $a
+		fileName=$line$b
+		gunzip $fileName
+		mv $line".pdb" trainingDataset_balanced/
+	fi
 
+done
