@@ -1,3 +1,7 @@
+# This file takes as an input chain+pdb in lowercase and outputs the result of k-means after reading k from CATH.
+# The output is in a .csv format fine tuned to be human readable when imported as an excel sheet. Also, it evaluates the
+# cluster output and deems is to be correct if more than 75% of the residues are correctly assigned to the correct cluster as per CATH. 
+
 import os
 import math
 from sklearn.cluster import *
@@ -806,7 +810,17 @@ def printKMeansDict(k_means):
 
 # intersection_file = "../Output Data/cath_scop_intersection/cath_scop_intersection.txt"
 
-input_file = "Second Dataset Chains/four_domains"
+# input_file = "Second Dataset Chains/four_domains"
+input_file = "multi_testing_dataset_post_phaseTwo.txt"
+
+two_correct = 0
+three_correct = 0
+four_correct = 0
+
+two_total = 0
+three_total = 0
+four_total = 0
+
 with open(input_file) as f23:
 	intersection_data = f23.readlines()
 
@@ -938,12 +952,32 @@ for pdb_file in os.listdir(path):
 							print ", ",
 							print "{0:.2f}".format((1.0*overlap)/total_residues)
 
+							if domains==2:
+								two_total+=1
+							
+							elif domains==3:
+								three_total+=1
+
+							elif domains==4:
+								four_total+=1
+
+
 							if (1.0*overlap)/total_residues >= 0.75:
+								if domains==2:
+									two_correct+=1
+								elif domains==3:
+									three_correct+=1
+								elif domains==4:
+									four_correct+=1
+
 								overall+=1
 
 
-print (overall*100.0)/file_counter
-print file_counter
+print "Two correct => ", two_correct, "Two total => ", two_total, "Two domain boundary prediction accuracy => ", '{0:.2f}'.format(two_correct*100.0/two_total)
+print "Three correct => ", three_correct, "Three total => ", three_total, "Three domain boundary prediction accuracy => ", '{0:.2f}'.format(three_correct*100.0/three_total)
+print "Four correct => ", four_correct, "Four total => ", four_total, "Four domain boundary prediction accuracy => ", '{0:.2f}'.format(four_correct*100.0/four_total)
+print "Total correct => ", overall, "Total => ", file_counter, "Overall boundary prediction accuracy => ", '{0:.2f}'.format(overall*100.0/file_counter)
+# print file_counter
 
 
 							# print "Overlap is ", overlap, "Total residues are", total_residues, "p =", (1.0*overlap)/total_residues

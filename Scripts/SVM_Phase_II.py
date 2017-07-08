@@ -1,3 +1,7 @@
+# This is the final file which is used to traing the SVM on the given training dataset. The training dataset needs to be in a .csv format.
+# Please look at the file multi_balanced_training_dataset_energy_length_radius_density.csv for the format. Upon learning from the input training
+# dataset, it tests on the given input test dataset which is to be in the same format as above.
+
 from sklearn import svm
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -21,7 +25,6 @@ test_data_dict = {} # A dictionary to hold (PDB,chain,domains)  => [length, ener
 
 
 def resampleData(final_data, data_type):
-	
 	resampling_factor = 1
 	single_data = []
 	two_data = []
@@ -82,27 +85,26 @@ def resampleData(final_data, data_type):
 
 	return X,Y
 
+# with open("single_length_energy_density_radius_correct.csv") as f:
+# 	single_test_data = f.readlines()
 
+# with open("multi_non_contiguous_length_energy_density_radius_correct.csv") as f:
+# 	multi_test_data_non_contiguous = f.readlines()
 
+# with open("multi_contiguous_length_energy_density_radius_correct.csv") as f:
+# 	multi_test_data_contiguous = f.readlines()
 
+# with open("training_multi_domain_dataset.csv") as f:
+# 	multi_train_data = f.readlines()
 
-
-
-with open("single_length_energy_density_radius_correct.csv") as f:
-	single_test_data = f.readlines()
-
-with open("multi_non_contiguous_length_energy_density_radius_correct.csv") as f:
-	multi_test_data_non_contiguous = f.readlines()
-
-with open("multi_contiguous_length_energy_density_radius_correct.csv") as f:
-	multi_test_data_contiguous = f.readlines()
-
-with open("training_multi_domain_dataset.csv") as f:
-	multi_train_data = f.readlines()
+with open("multi_testing_dataset_post_phaseOne.csv") as f:
+	final_test_data = f.readlines()
+with open("multi_balanced_training_dataset_length_energy_density_radius.csv") as f:
+	final_train_data = f.readlines()
 
 # final_test_data = single_test_data + multi_test_data_contiguous + multi_test_data_non_contiguous
-final_test_data = multi_test_data_non_contiguous + multi_test_data_contiguous
-final_train_data = multi_train_data
+# final_test_data = multi_test_data_non_contiguous + multi_test_data_contiguous
+# final_train_data = multi_train_data
 
 X_train, y_train = resampleData(final_train_data, "train")
 X_test, y_test = resampleData(final_test_data, "test")
@@ -142,7 +144,6 @@ for y in y_test:
 # print single_chains, two_chains, three_chains, four_chains
 
 for x in range(0, len(X_test)):
-	
 
 	value = X_test[x]
 	predicted_label = clf.predict([value])[0]
@@ -150,7 +151,7 @@ for x in range(0, len(X_test)):
 	actual_label = int(y_test[x])
 	dict_key = test_data_dict.keys()[test_data_dict.values().index(value)]
 
-	print dict_key[0],",",dict_key[1],",",actual_label, ",", predicted_label	
+	# print dict_key[0],",",dict_key[1],",",actual_label, ",", predicted_label	
 	if predicted_label==actual_label:
 		if actual_label==1:
 			single_correct+=1
@@ -158,21 +159,18 @@ for x in range(0, len(X_test)):
 			two_correct+=1
 		elif actual_label==3:
 			three_correct+=1
-		else:
+		elif actual_label==4:
 			four_correct+=1
-
 		total_correct+=1
+		print (dict_key[0]+dict_key[1]).lower()
+
+
 	
-			
-
-		
-
-
 # print "FINAL ACCURACY", total_correct*100/len(X)
-print "Accuracy of test dataset", total_correct*100/len(X_test)
+# print "Accuracy of test dataset", '{0:.2f}'.format(total_correct*100.0/len(X_test))
 
 # print "Single Correct", single_correct, single_chains, single_correct*100/single_chains
-print "Two Correct", two_correct, two_chains, two_correct*100/two_chains
-print "Three Correct", three_correct, three_chains, three_correct*100/three_chains
-print "Four Correct", four_correct, four_chains, four_correct*100/four_chains
+# print "Two Correct", two_correct, two_chains, '{0:.2f}'.format(two_correct*100.0/two_chains)
+# print "Three Correct", three_correct, three_chains, '{0:.2f}'.format(three_correct*100.0/three_chains)
+# print "Four Correct", four_correct, four_chains, '{0:.2f}'.format(four_correct*100.0/four_chains)
 
