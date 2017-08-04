@@ -11,10 +11,22 @@ import common_functions as utils
 import re
 from collections import defaultdict
 
-with open('multi_domain_balanced_classes_chains.txt', 'r') as f:
+# with open('multi_domain_balanced_classes_chains.txt', 'r') as f:
+# 	input_chains = f.readlines()
+
+# with open('multi_testing_dataset.txt', 'r') as f:
+# 	input_chains = f.readlines()
+
+# with open('Benchmark_2_chains', 'r') as f:
+# 	input_chains = f.readlines()
+
+# with open('Benchmark_3_chains', 'r') as f:
+# 	input_chains = f.readlines()
+
+with open('single_domain_training_dataset.txt', 'r') as f:
 	input_chains = f.readlines()
 
-with open('../Input Files/CathDomall', 'r') as f:
+with open('CathDomall', 'r') as f:
 	cath_data = f.readlines()
 
 def getCordsList(fileRead, chain):
@@ -51,7 +63,13 @@ def getCordsList(fileRead, chain):
 				realId_list.append(real_id)
 
 	return cords_list,realId_list
-path_to_pdb_files = 'trainingDataset_balanced/'
+# path_to_pdb_files = 'trainingDataset_balanced/'
+# path_to_pdb_files = 'Second Dataset/'
+# path_to_pdb_files = 'BenchmarkTwoDataset/'
+# path_to_pdb_files = 'BenchmarkThreeDataset/'
+path_to_pdb_files = 'TrainingDataset/'
+
+
 cath_dict = {} # A dictionary to hold cath pdb+chain and corresponding number of domains
 
 def calculateDensity(coordinates):
@@ -118,7 +136,7 @@ for input_chain in input_chains:
 	domains = cath_dict[pdb+chain]
 
 	open_pdb = open(path_to_pdb_files+pdb+'.pdb','r')
-	open_pdb_v2 = open(path_to_pdb_files+pdb+'.pdb','r') #Separate instances for calculating radiugs of gyration and coordinates
+	open_pdb_v2 = open(path_to_pdb_files+pdb+'.pdb','r') #Separate instances for calculating radiuss of gyration and coordinates
 
 	cords_list, realId_list = getCordsList(open_pdb,chain.upper())
 

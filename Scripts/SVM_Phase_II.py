@@ -58,79 +58,35 @@ def resampleData(final_data, data_type):
 		X.append(value)
 		Y.append(domains)
 
-	# print len(single_data), len(two_data), len(three_data), len(four_data)
-
-	# print len(single_data), resampling_factor*len(two_data), resampling_factor*len(three_data), resampling_factor*len(four_data)
-	# X = single_data + resampling_factor*two_data + resampling_factor*three_data + resampling_factor*four_data
-	# Y = len(single_data)*[1] + resampling_factor*len(two_data)*[2] + resampling_factor*len(three_data)*[3] + resampling_factor*len(four_data)*[4]
-
-	#When resampling factor = 2
-
-	# print len(single_data), resampling_factor*len(two_data), (3+resampling_factor)*len(three_data), (8+resampling_factor)*len(four_data)
-	# X = single_data + (resampling_factor)*two_data + (3+resampling_factor)*three_data + (8+resampling_factor)*four_data
-	# Y = len(single_data)*[1] + resampling_factor*len(two_data)*[2] + (3+resampling_factor)*len(three_data)*[3] + (8+resampling_factor)*len(four_data)*[4]
-
-	# X = three_data + four_data
-	# Y = len(three_data)*[3] + len(four_data)*[4]
-
-	# X = two_data + three_data + four_data		
-	# Y = len(two_data)*[2] + len(three_data)*[3] + len(four_data)*[4]
-
-	# X = two_data + three_data
-	# Y = len(two_data)*[2] + len(three_data)*[3]
-
-	# X = single_data + two_data + three_data + four_data
-	# Y = len(single_data)*[1] + len(three_data+two_data+four_data)*[2]
-
-
 	return X,Y
 
-# with open("single_length_energy_density_radius_correct.csv") as f:
-# 	single_test_data = f.readlines()
-
-# with open("multi_non_contiguous_length_energy_density_radius_correct.csv") as f:
-# 	multi_test_data_non_contiguous = f.readlines()
-
-# with open("multi_contiguous_length_energy_density_radius_correct.csv") as f:
-# 	multi_test_data_contiguous = f.readlines()
-
-# with open("training_multi_domain_dataset.csv") as f:
-# 	multi_train_data = f.readlines()
-
-with open("multi_testing_dataset_post_phaseOne.csv") as f:
+# Self created dataset
+with open("self_dataset_multi_non_contiguous.csv") as f:
 	final_test_data = f.readlines()
+
+
+#Benchmark 2 to be used as test
+# with open("correct_Benchmark2_Dataset_PostPhaseOne.csv") as f:
+# 	final_test_data = f.readlines()
+	
+#Benchmark 3 to be used as test
+# with open("correct_Benchmark3_Dataset_PostPhaseOne.csv") as f:
+# 	final_test_data = f.readlines()
+
 with open("multi_balanced_training_dataset_length_energy_density_radius.csv") as f:
 	final_train_data = f.readlines()
-
-# final_test_data = single_test_data + multi_test_data_contiguous + multi_test_data_non_contiguous
-# final_test_data = multi_test_data_non_contiguous + multi_test_data_contiguous
-# final_train_data = multi_train_data
 
 X_train, y_train = resampleData(final_train_data, "train")
 X_test, y_test = resampleData(final_test_data, "test")
 
-# X_train, X_test, y_train, y_test = train_test_split(X,Y,test_size=0.25,random_state=0)
-
-skf = StratifiedKFold(n_splits=10)
 kernel = 'linear'
-# class_weights_dict = {1:1, 2:2, 3:20, 4:11}
-
-# clf = svm.SVC(kernel=kernel, class_weight=class_weights_dict)
 clf = svm.SVC(kernel=kernel, class_weight='balanced')
 
-# predicted = cross_val_predict(clf, X, Y, cv=skf)
-
-
-print "Training data => ", len(X_train), len(y_train)
-print "Testing data => ", len(X_test), len(y_test)
+# print "Training data => ", len(X_train), len(y_train)
+# print "Testing data => ", len(X_test), len(y_test)
 clf = svm.SVC().fit(X_train,y_train)
 
-
-
-# for x in range(0, len(X)):
-# print len(y_test)
 for y in y_test:
-	# print y
 	label = int(y)
 	if label==1:
 		single_chains+=1
@@ -140,18 +96,18 @@ for y in y_test:
 		three_chains+=1
 	if label==4:
 		four_chains+=1
-
-# print single_chains, two_chains, three_chains, four_chains
+	if label==5:
+		five_chains+=1
+	if label==6:
+		six_chains+=1
 
 for x in range(0, len(X_test)):
 
 	value = X_test[x]
 	predicted_label = clf.predict([value])[0]
-	# predicted_label = int(predicted[x])
 	actual_label = int(y_test[x])
 	dict_key = test_data_dict.keys()[test_data_dict.values().index(value)]
 
-	# print dict_key[0],",",dict_key[1],",",actual_label, ",", predicted_label	
 	if predicted_label==actual_label:
 		if actual_label==1:
 			single_correct+=1
@@ -164,13 +120,8 @@ for x in range(0, len(X_test)):
 		total_correct+=1
 		print (dict_key[0]+dict_key[1]).lower()
 
-
+print "Two Correct => ", two_correct, "Total => ", two_chains, "Accuracy => ", '{0:.2f}'.format(two_correct*100.0/two_chains)
+print "Three Correct => ", three_correct, "Total => ", three_chains, "Accuracy => ", '{0:.2f}'.format(three_correct*100.0/three_chains)
+print "Four Correct => ", four_correct, "Total => ", four_chains, "Accuracy => ", '{0:.2f}'.format(four_correct*100.0/four_chains)
 	
-# print "FINAL ACCURACY", total_correct*100/len(X)
-# print "Accuracy of test dataset", '{0:.2f}'.format(total_correct*100.0/len(X_test))
-
-# print "Single Correct", single_correct, single_chains, single_correct*100/single_chains
-# print "Two Correct", two_correct, two_chains, '{0:.2f}'.format(two_correct*100.0/two_chains)
-# print "Three Correct", three_correct, three_chains, '{0:.2f}'.format(three_correct*100.0/three_chains)
-# print "Four Correct", four_correct, four_chains, '{0:.2f}'.format(four_correct*100.0/four_chains)
-
+print "Total Correct => ", total_correct, "Overall Accuracy =>", '{0:.2f}'.format(total_correct*100.0/len(X_test))

@@ -35,10 +35,14 @@ def isContiguous(cath_boundaries, domains):
 	key = 0
 	numOFSegments = 1
 	x = 0
+	counter=0
+
 	while 1:
 		if x >= len(cath_boundaries):
 			break
 		else:
+			if counter==domains:
+				break
 			numOFSegments = int(cath_boundaries[x])
 			if numOFSegments > 1:
 				return False
@@ -46,6 +50,7 @@ def isContiguous(cath_boundaries, domains):
 			cathDict[key] = dom
 			key+=1
 			x+=6*numOFSegments+1
+			counter+=1
 	return True
 
 def dist(a,b):

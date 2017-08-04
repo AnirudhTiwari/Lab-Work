@@ -1,9 +1,9 @@
 #!/bin/bash
 files=0
 # for line in $(cat cath_scop_final_pdb)
-for line in $(cat multi_domain_balanced_classes_chains.txt) 
+for line in $(cat single_domain_training_dataset.txt) 
 do	
-	if [ $files -gt 1500 ]
+	if [ $files -gt 156 ]
 	then
 		break
 	fi
@@ -13,7 +13,7 @@ do
 	a+=$line
 	a+=$b
 	c=".pdb"
-	d="trainingDataset/"$line$c
+	d="TrainingDataset/"$line$c
 	
 	if [ -f $d ]
 	then
@@ -22,7 +22,7 @@ do
 		wget --no-check-certificate $a
 		fileName=$line$b
 		gunzip $fileName
-		mv $line".pdb" trainingDataset_balanced/
+		mv $line".pdb" TrainingDataset/
 	fi
 
 done

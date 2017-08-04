@@ -1,6 +1,4 @@
-# This file takes as an input chain+pdb in lowercase and outputs the result of k-means after reading k from CATH.
-# The output is in a .csv format fine tuned to be human readable when imported as an excel sheet. Also, it evaluates the
-# cluster output and deems is to be correct if more than 75% of the residues are correctly assigned to the correct cluster as per CATH. 
+# K_Means.py is the main file
 
 import os
 import math
@@ -844,7 +842,7 @@ for pdb_file in os.listdir(path):
 	flag = 0
 
 
-	var = open('../Input Files/CathDomall', 'r')
+	var = open('CathDomall', 'r')
 
 
 	while 1:
@@ -871,7 +869,7 @@ for pdb_file in os.listdir(path):
 					if x==pdb_file[:4].lower() + chain.lower():
 
 						domain_boundary = pdb_id[14:].strip()
-						if frags==0 and domains == 4 and not isContiguous(domain_boundary, domains):
+						if frags==0 and domains == 2:
 							
 							# visited_list.append(pdb_id[:4].lower())
 
@@ -901,6 +899,7 @@ for pdb_file in os.listdir(path):
 								boundaries = fillVoids(boundaries)
 							else:
 								print "CHECK"
+								continue
 
 								# for key,value in boundaries.iteritems():
 								# 	makeReadable(sorted(value))
