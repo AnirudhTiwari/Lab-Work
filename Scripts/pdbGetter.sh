@@ -1,9 +1,9 @@
 #!/bin/bash
 files=0
 # for line in $(cat cath_scop_final_pdb)
-for line in $(cat single_domain_training_dataset.txt) 
+for line in $(cat multi_domain_balanced_classes_chains.txt) 
 do	
-	if [ $files -gt 156 ]
+	if [ $files -gt 1500 ]
 	then
 		break
 	fi

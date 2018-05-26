@@ -58,3 +58,23 @@ def dist(a,b):
 	for x in range(3):
 		distance = math.pow((math.pow((a[0]-b[0]),2) + math.pow((a[1]-b[1]),2) + math.pow((a[2]-b[2]),2)), 0.5)
 		return distance
+
+with open("is_Chain_Contiguous_NonContiguous.csv") as f:
+	chain_contiguous_or_not_data = f.readlines()
+
+chain_contiguous_or_not_dict = {}
+
+for x in chain_contiguous_or_not_data:
+	x = x.split(",")
+	chain_contiguous_or_not_dict[x[0].strip()] = x[1].strip();
+
+#This method just takes the chain as input as outputs whether it is contiguous or not. It takes its values from is_Chain_Contiguous_NonContiguous.csv
+#chain should be in the format pdb+chain, for example 1norA as input would return 1.
+
+def isChainContigous(chain):
+	if chain_contiguous_or_not_dict[chain]=="Contiguous":
+		return True
+	else:
+		return False
+
+

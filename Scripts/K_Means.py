@@ -8,6 +8,8 @@ import common_functions as utils
 import re
 from compiler.ast import flatten
 import itertools
+import common_functions as utils
+
 
 #Following are the Methods used within the program
 def getCordsList(fileRead, chain):
@@ -66,7 +68,7 @@ def TooManyMissingResidues(boundaries):
 					artificially_added.append(x)
 
 	if len(artificially_added) > 25:
-		print len(artificially_added)
+		# print len(artificially_added)
 		return True
 		
 	return False
@@ -381,29 +383,62 @@ def printKMeansDict(k_means):
 
 #Initialization etc
 
+#For running the program on the training dataset itself
+# with open('multi_domain_balanced_classes_chains.txt', 'r') as f:
+	# input_chains = f.readlines()
+
+
 #For our own constructed dataset
 # with open('multi_testing_dataset_post_phaseTwo.txt', 'r') as f:
 # 	input_chains = f.readlines()
 
+#v2 is the one which is more precise. Use this all the time
+# with open('multi_selfDataset__testing_dataset_post_phaseTwo_v2.txt', 'r') as f:
+# 	input_chains = f.readlines()
+
+# For the entire own constructed dataset 
+with open('Second Dataset Chains/multi_domain', 'r') as f:
+	input_chains = f.readlines()
+
+
 #For Benchmark 2
 # with open('correct_Benchmark2_Dataset_PostPhaseTwo.txt', 'r') as f:
 # 	input_chains = f.readlines()
+
+# #For the entire Benchmark 2 dataset
+# with open('Benchmark_2_chains', 'r') as f:
+# 	input_chains = f.readlines()
+
+# with open('correct_Benchmark2_Dataset_PostPhaseTwo_v2.txt', 'r') as f:
+# 	input_chains = f.readlines()
 	
 #For Benchmark 3
-with open('correct_Benchmark3_Dataset_PostPhaseTwo.txt', 'r') as f:
-	input_chains = f.readlines()
+# with open('correct_Benchmark3_Dataset_PostPhaseTwo.txt', 'r') as f:
+	# input_chains = f.readlines()
+
+#For the entire Benchmark 3 dataset
+# with open('Benchmark_3_chains', 'r') as f:
+# 	input_chains = f.readlines()
+
+# with open('correct_Benchmark3_Dataset_PostPhaseTwo_v2.txt', 'r') as f:
+# 	input_chains = f.readlines()
+
 
 with open('CathDomall', 'r') as f:
 	cath_data = f.readlines()
 
-# #For our own dataset
-# path_to_pdb_files = 'Second Dataset/'
+# For our own dataset
+path_to_pdb_files = 'Second Dataset/'
 
-# #For Bennchmark2 dataset
+# For Bennchmark2 dataset
 # path_to_pdb_files = 'BenchmarkTwoDataset/'
 
-#For Bennchmark3 dataset
-path_to_pdb_files = 'BenchmarkThreeDataset/'
+# For Bennchmark3 dataset
+# path_to_pdb_files = 'BenchmarkThreeDataset/'
+
+# For the training dataset
+# path_to_pdb_files = 'trainingDataset_balanced/'
+# path_to_pdb_files = 'TrainingDataset/'
 
 cath_dict = {} # A dictionary to hold cath pdb+chain and corresponding entry in CATH
 
@@ -414,19 +449,48 @@ for x in cath_data:
 two_correct = 0
 three_correct = 0
 four_correct = 0
+five_correct = 0
+six_correct = 0
 
 two_total = 0
 three_total = 0
 four_total = 0
+five_total = 0
+six_total = 0
 
 total_correct = 0
 counter = 0
+
+two_contiguous = 0
+two_non_contiguous = 0
+two_contiguous_correct = 0
+two_non_contiguous_correct = 0
+
+three_contiguous = 0
+three_non_contiguous = 0
+three_contiguous_correct = 0
+three_non_contiguous_correct = 0
+
+four_contiguous = 0
+four_non_contiguous = 0
+four_contiguous_correct = 0
+four_non_contiguous_correct = 0
+
+five_contiguous = 0
+five_non_contiguous = 0
+five_contiguous_correct = 0
+five_non_contiguous_correct = 0
+
+six_contiguous = 0
+six_non_contiguous = 0
+six_contiguous_correct = 0
+six_non_contiguous_correct = 0
 
 missingPDB = []
 
 #Main loop of the program which calculates the boundaries and outputs the final results.
 for input_chain in input_chains:
-	counter+=1
+	
 	
 	pdb = input_chain[:4]
 	chain = input_chain[4]
@@ -435,7 +499,10 @@ for input_chain in input_chains:
 	cath_entry = cath_dict[pdb+chain]
 
 	domains = int(cath_entry[7] + cath_entry[8])
+	if domains==1:
+		continue
 
+	counter+=1
 	domain_boundary = cath_entry[14:].strip()
 
 	print str(counter) + "," + pdb + ", " + chain.upper() + ", "+ str(domains)+ ", ",
@@ -464,8 +531,8 @@ for input_chain in input_chains:
 		boundaries = fillVoids(boundaries)
 	else:
 		boundaries = fillVoids(boundaries) #Comment this out if you are not testing benchmark 2/3
-		print "THIS PDB IS MISSED!!", pdb+chain
-		missingPDB.append(pdb+chain)
+		# print "THIS PDB IS MISSED!!", pdb+chain
+		# missingPDB.append(pdb+chain+str(domains)+','+str(utils.isChainContigous(pdb+chain.upper())))
 		# continue
 
 	patch_size = 20 #Defines the min length a segment of a non-contiguous domain can be. Any segment less than this should be merged to the contiguous part.
@@ -513,29 +580,92 @@ for input_chain in input_chains:
 		domain_counter+=1
 
 	#Print CATH and K-Means boundaries in a human readable format for Excel.
-	printDicts(cathBoundaries)
+	# printDicts(cathBoundaries)
+	# print ", ",
+	# printKMeansDict(sorted_kMeansBoundaries)
+	# print ", ",
+	print "{0:.2f}".format((1.0*overlap)/total_residues),
 	print ", ",
-	printKMeansDict(sorted_kMeansBoundaries)
-	print ", ",
-	print "{0:.2f}".format((1.0*overlap)/total_residues)
+
+	chain = chain.upper()
+	if utils.isChainContigous(pdb+chain):
+		print "Contiguous"
+	else:
+		print "Non-Contiguous"
 
 	if domains==2:
 		two_total+=1
+		if utils.isChainContigous(pdb+chain):
+			two_contiguous+=1
+		else:
+			two_non_contiguous+=1
+
 	
 	elif domains==3:
 		three_total+=1
+		if utils.isChainContigous(pdb+chain):
+			three_contiguous+=1
+		else:
+			three_non_contiguous+=1
 
 	elif domains==4:
 		four_total+=1
+		if utils.isChainContigous(pdb+chain):
+			four_contiguous+=1
+		else:
+			four_non_contiguous+=1
+
+	elif domains==5:
+		five_total+=1
+		if utils.isChainContigous(pdb+chain):
+			five_contiguous+=1
+		else:
+			five_non_contiguous+=1
+
+	elif domains==6:
+		six_total+=1
+		if utils.isChainContigous(pdb+chain):
+			six_contiguous+=1
+		else:
+			six_non_contiguous+=1
+
 
 
 	if (1.0*overlap)/total_residues >= 0.75:
 		if domains==2:
 			two_correct+=1
+			if utils.isChainContigous(pdb+chain):
+				two_contiguous_correct+=1
+			else:
+				two_non_contiguous_correct+=1
+
 		elif domains==3:
 			three_correct+=1
+			if utils.isChainContigous(pdb+chain):
+				three_contiguous_correct+=1
+			else:
+				three_non_contiguous_correct+=1
 		elif domains==4:
 			four_correct+=1
+			if utils.isChainContigous(pdb+chain):
+				four_contiguous_correct+=1
+			else:
+				four_non_contiguous_correct+=1
+
+		elif domains==5:
+			five_correct+=1
+			if utils.isChainContigous(pdb+chain):
+				five_contiguous_correct+=1
+			else:
+				five_non_contiguous_correct+=1
+
+		elif domains==6:
+			six_correct+=1
+			if utils.isChainContigous(pdb+chain):
+				six_contiguous_correct+=1
+			else:
+				six_non_contiguous_correct+=1
+
 
 		total_correct+=1
 
@@ -543,7 +673,31 @@ for input_chain in input_chains:
 print "Two correct => ", two_correct, "Two total => ", two_total, "Two domain boundary prediction accuracy => ", '{0:.2f}'.format(two_correct*100.0/two_total)
 print "Three correct => ", three_correct, "Three total => ", three_total, "Three domain boundary prediction accuracy => ", '{0:.2f}'.format(three_correct*100.0/three_total)
 print "Four correct => ", four_correct, "Four total => ", four_total, "Four domain boundary prediction accuracy => ", '{0:.2f}'.format(four_correct*100.0/four_total)
+# print "Five correct => ", five_correct, "Five total => ", five_total, "Five domain boundary prediction accuracy => ", '{0:.2f}'.format(five_correct*100.0/five_total)
+# print "Six correct => ", six_correct, "Six total => ", six_total, "Six domain boundary prediction accuracy => ", '{0:.2f}'.format(six_correct*100.0/six_total)
+print
 print "Total correct => ", total_correct, "Total => ", counter, "Overall boundary prediction accuracy => ", '{0:.2f}'.format(total_correct*100.0/counter)
+print
+
+print "Two Contiguous Correct => ", two_contiguous_correct, "Total Two Contiguous => ", two_contiguous, "Accuracy => ", '{0:.2f}'.format(two_contiguous_correct*100.0/two_contiguous)
+print "Three Contiguous Correct => ", three_contiguous_correct, "Total Three Contiguous => ", three_contiguous, "Accuracy => ", '{0:.2f}'.format(three_contiguous_correct*100.0/three_contiguous)
+print "Four Contiguous Correct => ", four_contiguous_correct, "Total Four Contiguous => ", four_contiguous, "Accuracy => ", '{0:.2f}'.format(four_contiguous_correct*100.0/four_contiguous)
+# print "Five Contiguous Correct => ", five_contiguous_correct, "Total Five Contiguous => ", five_contiguous, "Accuracy => ", '{0:.2f}'.format(five_contiguous_correct*100.0/five_contiguous)
+# print "Six Contiguous Correct => ", six_contiguous_correct, "Total Six Contiguous => ", six_contiguous, "Accuracy => ", '{0:.2f}'.format(six_contiguous_correct*100.0/six_contiguous)
+
+
+print
+print "Total Contiguous Correct => ", two_contiguous_correct+three_contiguous_correct+four_contiguous_correct+five_contiguous_correct+six_contiguous_correct, "Total Contiguous", two_contiguous+three_contiguous+four_contiguous+five_contiguous+six_contiguous, "Accuracy => ", '{0:.2f}'.format((two_contiguous_correct+three_contiguous_correct+four_contiguous_correct+five_contiguous_correct+six_contiguous_correct)*100.0/(two_contiguous+three_contiguous+four_contiguous+five_contiguous+six_contiguous))
+print
+print "Two Non-Contiguous Correct => ", two_non_contiguous_correct, "Total Two Non-Contiguous => ", two_non_contiguous, "Accuracy => ", '{0:.2f}'.format(two_non_contiguous_correct*100.0/two_non_contiguous)
+print "Three Non-Contiguous Correct => ", three_non_contiguous_correct, "Total Three Non-Contiguous => ", three_non_contiguous, "Accuracy => ", '{0:.2f}'.format(three_non_contiguous_correct*100.0/three_non_contiguous)
+print "Four Non-Contiguous Correct => ", four_non_contiguous_correct, "Total Four Non-Contiguous => ", four_non_contiguous, "Accuracy => ", '{0:.2f}'.format(four_non_contiguous_correct*100.0/four_non_contiguous)
+# print "Five Non-Contiguous Correct => ", five_non_contiguous_correct, "Total Five Non-Contiguous => ", five_non_contiguous, "Accuracy => ", '{0:.2f}'.format(five_non_contiguous_correct*100.0/five_non_contiguous)
+# print "Six Non-Contiguous Correct => ", six_non_contiguous_correct, "Total Six Non-Contiguous => ", six_non_contiguous, "Accuracy => ", '{0:.2f}'.format(six_non_contiguous_correct*100.0/six_non_contiguous)
+
+print
+print "Total Non-Contiguous Correct => ", two_non_contiguous_correct+three_non_contiguous_correct+four_non_contiguous_correct+five_non_contiguous_correct+six_non_contiguous_correct, "Total Non-Contiguous", two_non_contiguous+three_non_contiguous+four_non_contiguous+five_non_contiguous+six_non_contiguous, "Accuracy => ", '{0:.2f}'.format((two_non_contiguous_correct+three_non_contiguous_correct+four_non_contiguous_correct+five_non_contiguous_correct+six_non_contiguous_correct)*100.0/(two_non_contiguous+three_non_contiguous+four_non_contiguous+five_non_contiguous+six_non_contiguous))
+print
 
 for x in missingPDB:
 	print x

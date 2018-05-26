@@ -23,8 +23,8 @@ from collections import defaultdict
 # with open('Benchmark_3_chains', 'r') as f:
 # 	input_chains = f.readlines()
 
-with open('single_domain_training_dataset.txt', 'r') as f:
-	input_chains = f.readlines()
+# with open('single_domain_training_dataset.txt', 'r') as f:
+# 	input_chains = f.readlines()
 
 with open('CathDomall', 'r') as f:
 	cath_data = f.readlines()
@@ -67,7 +67,7 @@ def getCordsList(fileRead, chain):
 # path_to_pdb_files = 'Second Dataset/'
 # path_to_pdb_files = 'BenchmarkTwoDataset/'
 # path_to_pdb_files = 'BenchmarkThreeDataset/'
-path_to_pdb_files = 'TrainingDataset/'
+# path_to_pdb_files = 'TrainingDataset/'
 
 
 cath_dict = {} # A dictionary to hold cath pdb+chain and corresponding number of domains
