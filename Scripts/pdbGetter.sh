@@ -1,9 +1,11 @@
 #!/bin/bash
 files=0
 # for line in $(cat cath_scop_final_pdb)
-for line in $(cat multi_domain_balanced_classes_chains.txt) 
+# for line in $(cat multi_domain_balanced_classes_chains.txt) 
+for line in $(cat ASTRAL_SCOP30_CHAINS) 
+# for line in $(cat hari_krishna_dataset.txt) 
 do	
-	if [ $files -gt 1500 ]
+	if [ $files -gt 8000 ]
 	then
 		break
 	fi
@@ -13,7 +15,7 @@ do
 	a+=$line
 	a+=$b
 	c=".pdb"
-	d="TrainingDataset/"$line$c
+	d="ASTRAL_SCOP30_DATASET/"$line$c
 	
 	if [ -f $d ]
 	then
@@ -22,7 +24,6 @@ do
 		wget --no-check-certificate $a
 		fileName=$line$b
 		gunzip $fileName
-		mv $line".pdb" TrainingDataset/
+		mv $line".pdb" ASTRAL_SCOP30_DATASET/
 	fi
-
 done

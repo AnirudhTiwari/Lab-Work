@@ -4,7 +4,6 @@
 
 from sklearn.cluster import *
 import numpy as np
-import common_functions as utils
 import re
 from compiler.ast import flatten
 import itertools
@@ -397,8 +396,8 @@ def printKMeansDict(k_means):
 # 	input_chains = f.readlines()
 
 # For the entire own constructed dataset 
-with open('Second Dataset Chains/multi_domain', 'r') as f:
-	input_chains = f.readlines()
+# with open('Second Dataset Chains/multi_domain', 'r') as f:
+# 	input_chains = f.readlines()
 
 
 #For Benchmark 2
@@ -423,12 +422,17 @@ with open('Second Dataset Chains/multi_domain', 'r') as f:
 # with open('correct_Benchmark3_Dataset_PostPhaseTwo_v2.txt', 'r') as f:
 # 	input_chains = f.readlines()
 
+#  For the entire ASTRAL SCOP30 dataset
+with open('ASTRAL_SCOP30_CHAINS', 'r') as f:
+	input_chains = f.readlines()
+
+
 
 with open('CathDomall', 'r') as f:
 	cath_data = f.readlines()
 
 # For our own dataset
-path_to_pdb_files = 'Second Dataset/'
+# path_to_pdb_files = 'Second Dataset/'
 
 # For Bennchmark2 dataset
 # path_to_pdb_files = 'BenchmarkTwoDataset/'
@@ -439,6 +443,10 @@ path_to_pdb_files = 'Second Dataset/'
 # For the training dataset
 # path_to_pdb_files = 'trainingDataset_balanced/'
 # path_to_pdb_files = 'TrainingDataset/'
+
+# For ASTRAL_SCOP30 dataset
+path_to_pdb_files = 'ASTRAL_SCOP30_DATASET/'
+
 
 cath_dict = {} # A dictionary to hold cath pdb+chain and corresponding entry in CATH
 
@@ -492,8 +500,8 @@ missingPDB = []
 for input_chain in input_chains:
 	
 	
-	pdb = input_chain[:4]
-	chain = input_chain[4]
+	pdb = input_chain[:4].lower()
+	chain = input_chain[4].lower()
 	
 
 	cath_entry = cath_dict[pdb+chain]

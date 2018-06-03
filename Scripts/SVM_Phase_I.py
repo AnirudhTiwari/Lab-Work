@@ -32,21 +32,25 @@ with open("multi_balanced_training_dataset_length_energy_density_radius.csv") as
 # 	multi_train_data = f.readlines()
 
 # Testing on BenchmarkTwo Dataset
-# with open("BenchmarkTwo_Features.csv") as f:
-# 	final_test_data = f.readlines()
+with open("BenchmarkTwo_Features.csv") as f:
+	final_test_data = f.readlines()
 
 # Testing on BenchmarkThree Dataset
 # with open("BenchmarkThree_Features.csv") as f:
 # 	final_test_data = f.readlines()
 
+# Testing on ASTRAL_SCOP30 Dataset
+# with open("Astral_Scop30_features.csv") as f:
+# 	final_test_data = f.readlines()
+
 # Testing on self created dataset
-with open("single_test_length_energy_density_radius.csv") as f:
-	single_test_data = f.readlines()
+# with open("single_test_length_energy_density_radius.csv") as f:
+# 	single_test_data = f.readlines()
 
-with open("multi_test_length_energy_density_radius.csv") as f:
-	multi_test_data = f.readlines()
+# with open("multi_test_length_energy_density_radius.csv") as f:
+# 	multi_test_data = f.readlines()
 
-final_test_data = single_test_data + multi_test_data
+# final_test_data = single_test_data + multi_test_data
 
 # with open("multi_non_contiguous_length_energy_density_radius_correct.csv") as f:
 # 	multi_test_data_non_contiguous = f.readlines()
@@ -96,7 +100,17 @@ def prepareData(final_data, data_type):
 		density = float(x[5].strip())
 		radius = float(x[6].strip())
 
-		value = [length,energy,density,radius]
+		# value = [length]
+		# value = [length, energy]
+		# value = [length, energy, density]
+		# value = [length, energy, density, radius]
+
+		# value = [energy]
+		# value = [energy, density]
+		value = [energy, density, radius]
+
+		# value = [density]
+		# value = [density, radius]
 
 		if data_type=="test":
 			data_dict[(pdb,chain,domains)] = value
@@ -117,7 +131,7 @@ def prepareData(final_data, data_type):
 
 
 
-		# data_dict[(pdb,chain,domains)] = value
+		data_dict[(pdb,chain,domains)] = value
 
 		X.append(value)
 
@@ -153,10 +167,10 @@ def prepareData(final_data, data_type):
 					training_contiguous_counter+=1
 				
 
-	print "Total Chains", single_chains, two_chains, three_chains, four_chains, five_chains, six_chains
-	print "Contiguous Chains", two_contiguous, three_contiguous, four_contiguous
-	print "NonContigu Chains", two_non_contiguous, three_non_contiguous, four_non_contiguous
-	print "Contiguous training chains", training_contiguous_counter
+	# print "Total Chains", single_chains, two_chains, three_chains, four_chains, five_chains, six_chains
+	# print "Contiguous Chains", two_contiguous, three_contiguous, four_contiguous
+	# print "NonContigu Chains", two_non_contiguous, three_non_contiguous, four_non_contiguous
+	# print "Contiguous training chains", training_contiguous_counter
 	return X,Y
 
 def printDictionaryData(key):
@@ -171,7 +185,7 @@ final_train_data = single_train_data+multi_train_data
 X_train, y_train = prepareData(final_train_data, "train")
 X_test, y_test = prepareData(final_test_data, "test")
 kernel = 'linear'
-clf = svm.SVC(kernel=kernel, class_weight='balanced')
+# clf = svm.SVC(kernel=kernel, class_weight='balanced')
 
 print "Training data => ", len(X_train), len(y_train)
 print "Testing data => ", len(X_test), len(y_test)
@@ -217,6 +231,7 @@ for x in range(0, len(X_test)):
 			multi_non_contiguous_total+=1
 
 	if predicted_label==actual_label:
+		# print pdb, chain
 		if actual_label=='Single':
 			single_correct+=1
 		else:
@@ -227,11 +242,7 @@ for x in range(0, len(X_test)):
 			# printDictionaryData(dict_key)
 			multi_correct+=1
 		total_correct+=1
-	else:
-		if actual_label=='Single':
-			printDictionaryData(dict_key)
-			# print pdb, chain, value
-
+	
 
 
 print "Single Correct => ", single_correct, "Total => ", single_chains_total, "Accuracy => ", '{0:.2f}'.format(single_correct*100.0/single_chains_total)+"%"
@@ -240,9 +251,8 @@ print "Multi Correct => ", multi_correct, "Total => ", multi_chains_total, "Accu
 print "Multi Contiguous Correct => ", multi_contiguous_correct, "Total Multi Contiguous => ", multi_contiguous_total, "Accuracy => ", '{0:.2f}'.format(multi_contiguous_correct*100.0/multi_contiguous_total)+"%"
 print "Multi Non Contiguous Correct => ", multi_non_contiguous_correct, "Total Multi Non Contiguous => ", multi_non_contiguous_total, "Accuracy => ", '{0:.2f}'.format(multi_non_contiguous_correct*100.0/multi_non_contiguous_total)+"%"
 
-# print "Total Correct => ", total_correct, "Total => ", len(X_test), "Accuracy => ",  '{0:.2f}'.format(total_correct*100.0/len(X_test))+"%"
-
-
+print "Total Correct => ", total_correct, "Total => ", len(X_test), "Accuracy => ",  '{0:.2f}'.format(total_correct*100.0/len(X_test))+"%"
+	
 
 
 

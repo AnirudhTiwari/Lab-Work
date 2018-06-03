@@ -26,6 +26,12 @@ from collections import defaultdict
 # with open('single_domain_training_dataset.txt', 'r') as f:
 # 	input_chains = f.readlines()
 
+with open('hari_krishna_dataset.txt', 'r') as f:
+	input_chains = f.readlines()
+
+# with open('ASTRAL_SCOP30_CHAINS', 'r') as f:
+# 	input_chains = f.readlines()
+
 with open('CathDomall', 'r') as f:
 	cath_data = f.readlines()
 
@@ -68,9 +74,13 @@ def getCordsList(fileRead, chain):
 # path_to_pdb_files = 'BenchmarkTwoDataset/'
 # path_to_pdb_files = 'BenchmarkThreeDataset/'
 # path_to_pdb_files = 'TrainingDataset/'
+path_to_pdb_files = 'HariKrishnaDataset/'
+# path_to_pdb_files = 'ASTRAL_SCOP30_DATASET/'
 
 
 cath_dict = {} # A dictionary to hold cath pdb+chain and corresponding number of domains
+chains_not_in_cath = [] #A list to hold all those chains whose annotations are not present in CATH but those chains are present in the input dataset
+chains_rg_failed_to_calculate = [] #A list to hold all those chains for which the radius of gyration was not calculated due to whatever reason
 
 def calculateDensity(coordinates):
 	
@@ -131,9 +141,15 @@ for x in cath_data:
 
 
 for input_chain in input_chains:
-	pdb = input_chain[:4]
-	chain = input_chain[4]
-	domains = cath_dict[pdb+chain]
+	pdb = input_chain[:4].lower()
+	chain = input_chain[4].lower()
+
+	try:
+		domains = cath_dict[pdb+chain]
+	except Exception, e:
+		# print "Chain not in CATH" + pdb + chain, e
+		chains_not_in_cath.append(pdb+chain)
+		continue
 
 	open_pdb = open(path_to_pdb_files+pdb+'.pdb','r')
 	open_pdb_v2 = open(path_to_pdb_files+pdb+'.pdb','r') #Separate instances for calculating radiuss of gyration and coordinates
@@ -145,7 +161,10 @@ for input_chain in input_chains:
 	try:
 		radius_gy = radius_of_gyration.radius_of_gyration(open_pdb_v2, chain.upper())
 	except Exception, e:
-			print "Unable to calculte Radius of gyration", pdb+chain, e
+			# print "Unable to calculte Radius of gyration", pdb+chain, e
+			chains_rg_failed_to_calculate.append(pdb+chain)
+			continue
+
 	length = len(cords_list)
 
 	density = calculateDensity(cords_list)
@@ -157,6 +176,15 @@ for input_chain in input_chains:
 	print pdb, ",", chain.upper(), "," ,domains, "," ,length, ", ", '{0:.3f}'.format(interaction_energy),", ", '{0:.3f}'.format(density),", ", '{0:.3f}'.format(radius_gy)
 
 
+print "No. of chains not in CATH", len(chains_not_in_cath)
+
+for x in chains_not_in_cath:
+	print x
+
+print "No. of chains for which Rg failed to calculte", len(chains_rg_failed_to_calculate)
+
+for x in chains_rg_failed_to_calculate:
+	print x
 
 
 
