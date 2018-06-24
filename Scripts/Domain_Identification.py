@@ -19,10 +19,10 @@ def get_input_feature_name(x):
 
 def get_input_dataset_features_file(x):
 	return {
-		"Benchmark_2" : "BenchmarkTwo_Features.csv",
-		"Benchmark_3" : "BenchmarkThree_Features.csv",
-		"ASTRAL SCOP30" : "Astral_Scop30_features.csv",
-		"Self-Created" : "self_created_dataset_features.csv"
+		"Benchmark_2" : "BenchmarkTwo_Features_v2.csv",
+		"Benchmark_3" : "BenchmarkThree_Features_v2.csv",
+		"ASTRAL SCOP30" : "Astral_Scop30_features_v2.csv",
+		"Self-Created" : "self_created_dataset_features_v2.csv"
 	}[x]
 
 def get_input_classifier(x):
@@ -73,7 +73,7 @@ while 1:
 		print "Invalid input!!"
 
 if classifier=="single vs multi-domain":
-	file_training_dataset_features = "self_created_training_dataset_features.csv"
+	file_training_dataset_features = "self_created_training_dataset_features_v3.csv"
 else:
 	file_training_dataset_features = "self_created_multi_training_dataset_features.csv"
 
@@ -82,6 +82,13 @@ with open(file_training_dataset_features) as f:
 
 correct_chains, incorrect_chains = SVM_v2.classify(SVM_train_data, SVM_test_data, feature_set, classifier)
 
+print "INCORRECTLY PREDICTED CHAINS"
+for x in incorrect_chains:
+	print x.strip()
+
+print "CORRECTLY PREDICTED CHAINS"
+for x in correct_chains:
+	print x.strip()
 
 utils.SVM_Performance_Analyser(correct_chains, SVM_test_data, classifier)
 

@@ -258,7 +258,7 @@ def SVM_Performance_Analyser(correctly_labelled_chains, test_dataset, classifica
 					new_dict[key]["Total"]["Correct"]+=SVM_performance_dictionary[key][key1]["Correct"]
 					new_dict[key]["Total"]["Total"]+=SVM_performance_dictionary[key][key1]["Total"]
 					if new_dict[key]["Total"]["Total"]!=0:
-						new_dict[key]["Total"]["Accuracy"] = "{0:.2f}".format((new_dict[key]["Multi"]["Correct"]*100.0)/new_dict[key]["Multi"]["Total"])
+						new_dict[key]["Total"]["Accuracy"] = "{0:.2f}".format((new_dict[key]["Total"]["Correct"]*100.0)/new_dict[key]["Total"]["Total"])
 
 
 

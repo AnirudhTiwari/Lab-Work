@@ -10,6 +10,7 @@ import radius_of_gyration
 import common_functions as utils
 import re
 from collections import defaultdict
+import InteractionEnergy
 
 # with open('multi_domain_balanced_classes_chains.txt', 'r') as f:
 # 	input_chains = f.readlines()
@@ -26,11 +27,18 @@ from collections import defaultdict
 # with open('single_domain_training_dataset.txt', 'r') as f:
 # 	input_chains = f.readlines()
 
-with open('hari_krishna_dataset.txt', 'r') as f:
-	input_chains = f.readlines()
+# with open('hari_krishna_dataset.txt', 'r') as f:
+# 	input_chains = f.readlines()
 
 # with open('ASTRAL_SCOP30_CHAINS', 'r') as f:
 # 	input_chains = f.readlines()
+
+with open('Training_dataset_chains_complete_v2.txt', 'r') as f:
+	input_chains = f.readlines()
+
+# with open('self_created_test_dataset_chains.txt', 'r') as f:
+# 	input_chains = f.readlines()
+
 
 with open('CathDomall', 'r') as f:
 	cath_data = f.readlines()
@@ -73,8 +81,8 @@ def getCordsList(fileRead, chain):
 # path_to_pdb_files = 'Second Dataset/'
 # path_to_pdb_files = 'BenchmarkTwoDataset/'
 # path_to_pdb_files = 'BenchmarkThreeDataset/'
-# path_to_pdb_files = 'TrainingDataset/'
-path_to_pdb_files = 'HariKrishnaDataset/'
+path_to_pdb_files = 'TrainingDataset/'
+# path_to_pdb_files = 'HariKrishnaDataset/'
 # path_to_pdb_files = 'ASTRAL_SCOP30_DATASET/'
 
 
@@ -88,11 +96,13 @@ def calculateDensity(coordinates):
 	centroid_y=0
 	centroid_z=0
 
+	#Sum of all points along X, Y & Z axis independently
 	for x in coordinates:
 		centroid_x=x[0]+centroid_x
 		centroid_y=x[1]+centroid_y
 		centroid_z=x[2]+centroid_z
 
+	#Finding centroid by dividing the sum of all points along each axis by the total number of points.
 	try:
 		centroid_x = 1.0*centroid_x/len(coordinates)
 		centroid_y = 1.0*centroid_y/len(coordinates)
@@ -104,11 +114,13 @@ def calculateDensity(coordinates):
 
 	radius = 0.0
 
+	#Distance of all points from the centroid
 	for a in coordinates:
 		radius = radius + utils.dist(a, centroid)	
 
 
 
+	#Average over the size of cluster, to give an avg. radius of the cluster.
 	radius = radius/len(coordinates)
 
 	density = 1.0*len(coordinates)/(radius*radius*radius)
@@ -172,7 +184,9 @@ for input_chain in input_chains:
 	km = KMeans(n_clusters=2).fit(x) #Only splitting into two to find the interaction energy between two portions
 	labels_km = km.labels_
 		
-	interaction_energy = getInteractionEnergy(labels_km, 2, cords_list)
+	# interaction_energy = getInteractionEnergy(labels_km, 2, cords_list)
+	interaction_energy = InteractionEnergy.calculateInteractionEnergy(labels_km, cords_list)
+
 	print pdb, ",", chain.upper(), "," ,domains, "," ,length, ", ", '{0:.3f}'.format(interaction_energy),", ", '{0:.3f}'.format(density),", ", '{0:.3f}'.format(radius_gy)
 
 
