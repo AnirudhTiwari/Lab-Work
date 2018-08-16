@@ -203,14 +203,3 @@ for x in chains_rg_failed_to_calculate:
 
 
 
-
-
-
-
-
-
-
-
-
-
-

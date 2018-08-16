@@ -1,5 +1,6 @@
 import common_functions as utils
 from sklearn import svm
+import calculateFeatures
 
 def classify(training_data, testing_data, feature_set, classification_type):
 	X_train, y_train = utils.extractFeaturesAndLabelsForSVM(training_data, feature_set, classification_type)
@@ -23,4 +24,57 @@ def classify(training_data, testing_data, feature_set, classification_type):
 			incorrect_chains.append(testing_data[i])
 
 	return correct_chains, incorrect_chains
+
+
+'''
+This method tries to find the number of domains for a multi-domain protein by executing the following steps:
+1. The SVM is trained for the given features
+2. For each k=2 to 4 for each entry in the test data set, features are calculated. Density Sum and Interaction Energy will vary 
+for various values of k.
+3. Then, for each set of features, test the SVM and get the confidence score. Pick the k with the max confidence.
+'''
+
+def classifyMultiDomainProteins(training_data, testing_data, feature_set, classification_type):
+	X_train, y_train = utils.extractFeaturesAndLabelsForSVMFromJson(training_data, feature_set, classification_type)
+
+	print "Training Data => ", len(X_train), len(y_train)
+
+	clf = svm.SVC(probability=True).fit(X_train, y_train)
+
+	for chain in testing_data:
+
+		print chain, utils.findNumberOfDomains(chain, None)
+
+		max_probablity = -1000000000
+
+		for k in range (2,5):
+			feature_map = calculateFeatures.calculateFeatures_v2([chain], feature_set, k)
+
+			print  k, feature_map[chain],
+
+			probablities = clf.predict_proba([feature_map[chain]])[0]
+
+			for x in probablities:
+				print "{0:.2f}".format(x), 
+			print
+
+
+
+
+
+			# prediction_confidence = clf.predict_proba([feature_map[chain]])[0][k-2]
+
+			# if  prediction_confidence > max_probablity:
+			# 	max_probablity = prediction_confidence
+			# 	assigned_domain = k
+
+		# print chain, feature_map[chain], assigned_domain
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,7 @@
 import math
+import re
+
+path_to_pdb_files = 'All PDBs/'
 
 # This map is very tightly coupled to feature file which has pdb, chain, domains, length, energy, density, radius 
 # and it takes that as an input. Example feature file: BenchmarkTwo_Features.csv. This function only returns the index of a
@@ -13,6 +16,42 @@ def feature_parser(x):
 		"Density" : 5,
 		"Radius_Of_Gyration" : 6,
 	}[x]
+
+'''
+This method opens a given PDB file, reads coordinates for a given chain and returns the coordinates in a list format as follows
+[coordinate_residue_1, coordinate_residue_2.....]
+where cooredinate_residue_1 is itself a list of x, y & z coordinates as follows: [coordinates_x, coordinates_y, coordinates_z]
+'''
+def getCoordinatesListFromPDB(pdb, chain):
+	pdb_file = open(path_to_pdb_files+pdb+'.pdb','r')
+	coordinates_list = []
+
+
+	while 1:
+		data = pdb_file.readline()
+
+		if not data:
+			break
+
+		if(data[0]=='E' and data[1]=='N' and data[2]=='D'):
+			break
+
+		if(data[0]=='A' and data[1]=='T' and data[2]=='O' and data[21].lower()==chain.lower() and data[13]=='C' and data[14]=='A'):
+
+			val = value_finder(22, 26, data)	
+						
+			coord_x = float(value_finder(30, 38, data))
+
+			coord_y = float(value_finder(38, 46, data))
+
+			coord_z = float(value_finder(46, 54, data))
+		
+			if not re.search('[a-zA-Z]+', val):
+				coordinates = [coord_x,coord_y,coord_z]
+				coordinates_list.append(coordinates)
+
+	return coordinates_list
+
 
 def value_finder(start_value, end_value, array):
 
@@ -73,6 +112,18 @@ def dist(a,b):
 		distance = math.pow((math.pow((a[0]-b[0]),2) + math.pow((a[1]-b[1]),2) + math.pow((a[2]-b[2]),2)), 0.5)
 		return distance
 
+def findNumberOfDomains(pdb, chain=None):
+	with open('CathDomall', 'r') as f:
+		cath_data = f.readlines()
+	for x in cath_data:
+		if chain!=None:
+			if x[0]!='#' and x[:5].lower()==(pdb+chain).lower():
+				return int(x[7]+x[8])
+		else:
+			if x[0]!='#' and x[:5].lower()==pdb.lower():
+				return int(x[7]+x[8])
+
+
 with open("is_Chain_Contiguous_NonContiguous.csv") as f:
 	chain_contiguous_or_not_data = f.readlines()
 
@@ -89,6 +140,40 @@ def isChainContigous(chain):
 		return True
 	else:
 		return False
+
+
+'''
+This method parses a feature file in JSON format and extract the required features (X) and its corresponding label (Y) which can
+be used by a SVM to train/test on. 
+features_dictionary => A dictionary which is obtained by reading from a JSON file. 
+feature_set => Feature set to be used for training/testing SVM
+classification_type => two_class: Single vs multiDomain, multi_class: multiDomain 
+'''
+
+def extractFeaturesAndLabelsForSVMFromJson(features_dictionary, feature_set, classification_type):
+	X = []
+	Y = []
+
+	for key, value in features_dictionary.iteritems():
+		pdb = key
+		
+		label = features_dictionary[key]["Domains"]
+
+		data = []
+
+		for feature in feature_set:
+			data.append(features_dictionary[key][feature])
+
+		print pdb, label, data
+
+		X.append(data)
+		Y.append(label)
+
+	return X, Y
+
+
+
+
 
 '''
 This method parses a feature file and extracts the required features (X) and its corresponding label (Y) which can be used
@@ -210,28 +295,6 @@ def SVM_Performance_Analyser(correctly_labelled_chains, test_dataset, classifica
 		non_contiguous_performance_dict[key]["Total"] = test_dataset_dictionary[key]["Non-Contiguous"]
 		if non_contiguous_performance_dict[key]["Total"]!=0:
 			non_contiguous_performance_dict[key]["Accuracy"] = "{0:.2f}".format((non_contiguous_performance_dict[key]["Correct"]*100)/non_contiguous_performance_dict[key]["Total"])
-
-
-	# print 
-	# for key, value in sorted(correctly_labelled_chains_dictionary.iteritems()):
-	# 	print key, value
-	
-	# print
-
-	# print
-	# for key, value in sorted(test_dataset_dictionary.iteritems()):
-	# 	print key, value
-
-	# print 
-
-	# print
-	# for key, value in sorted(SVM_performance_dictionary.iteritems()):
-	# 	print key
-	# 	for a, b in sorted(value.iteritems()):
-	# 		print a, b
-	# 	print
-	# print
-
 
 	if classification_type=="single vs multi-domain":
 		new_dict = {"Contiguous":{}, "Non-Contiguous":{}, "Total":{}}

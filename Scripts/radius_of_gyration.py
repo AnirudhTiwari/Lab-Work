@@ -1,6 +1,13 @@
 import math
 import sys
 
+path_to_pdb_files = 'All PDBs/'
+
+def calculateRadiusOfGyration(pdb, chain):
+	pdb_file = open(path_to_pdb_files+pdb+'.pdb','r')
+	return radius_of_gyration(pdb_file, chain)
+
+
 def value_finder(start_value, end_value, array):
 
 	coordinate = ''

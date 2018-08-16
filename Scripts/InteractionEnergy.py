@@ -1,22 +1,57 @@
 from itertools import combinations
 import common_functions as utils
 from collections import defaultdict
-
+import numpy as np
+from sklearn.cluster import KMeans
 
 cutoff_distance = 7.0; #The maximum distance between two residues for them to be considered interacting
+
+'''
+This method assumes that the number of domains is as per CATH and fetches the
+same from CATH and performs k-means based on that number of domains.
+'''
+# def calculateInteractionEnergy(pdb, chain):
+# 	domains = utils.findNumberOfDomains(pdb, chain)
+
+# 	coordinates_list = utils.getCoordinatesListFromPDB(pdb, chain)
+
+# 	numpy_array = np.asarray(coordinates_list)
+# 	kMeans = KMeans(n_clusters=domains).fit(numpy_array)
+
+# 	labels_kMeans = kMeans.labels_
+
+# 	return calculateInteractionEnergyForAGivenSplit(labels_kMeans, coordinates_list)
+
+
+'''
+This method calculates the pairwise interactionEnergy for a given pdb, chain and the number of clusters.
+'''
+def calculateInteractionEnergy(pdb, chain, number_of_clusters=None):
+	if number_of_clusters==None:
+		number_of_clusters = utils.findNumberOfDomains(pdb, chain)
+
+	coordinates_list = utils.getCoordinatesListFromPDB(pdb, chain)
+
+	numpy_array = np.asarray(coordinates_list)
+	kMeans = KMeans(n_clusters=number_of_clusters).fit(numpy_array)
+
+	labels_kMeans = kMeans.labels_
+
+	return calculateInteractionEnergyForAGivenSplit(labels_kMeans, coordinates_list)
+
 
 '''
 Those residues which are closer than the cutoff_distance are said to be interacting. The interaction energy is the total number of 
 such inter-cluster residues divided by total number of intra-cluster residues. 
 Formally, IE = Nxy/Nx+Ny => Nxy: Number of inter-cluster interactions, Nx: Intra-cluster interaction in cluster X, Ny: Intra-cluster interactions in cluster Y
 '''
-def calculateInteractionEnergy(cluster_labels, coordinates_list):
+def calculateInteractionEnergyForAGivenSplit(cluster_labels, coordinates_list):
+
 	#A dictionary of cluster label as key and the corresponding residue indices as values
 	clusters_dict = defaultdict(list)
 	
 	for x in range(len(cluster_labels)):
 		clusters_dict[cluster_labels[x]].append(x)
-
 
 	intra_cluster_interaction_energy_dict = {}
 

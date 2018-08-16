@@ -1,0 +1,18 @@
+Final list of programs:
+
+1. Main orchestrator program performing the three phases of domain identification - WIP
+2. Program which performs the first phase of Domain identification i.e. single vs multi-domain classification - DONE
+3. A program which computes features for a given chain/input file containing chains
+4. Module for Density - DONE
+5. Module for Interaction Energy - DONE
+6. Module for Radius Of Gyration - PARTIALLY DONE, NEEDS REFACTORING
+7. Module for Cluster Density Sum - DONE
+8. Module which runs SVM 
+9. SVM results analyzer wchich takes in the output labels and provides analysis of correct predictions, incorrect predictions for both contiguous and non-contiguous proteins in comparison to CATH and generates a report
+10. Program which performs the second phase of Domain identification i.e. multi-domain classification
+11. Module which decides the best SVM prediction based on SVM confidence
+12. Module for k-means
+13. 2,3 modules for other clustering algorithms - Optional and might not do it
+14. Module for performing post-processing on k-means output
+15. clustering result analyzer which takes in the output boundaries and evaluates the performance as compared to CATH and generates a report
+16. Final Result analyzer which gives the overall result and generates a report
