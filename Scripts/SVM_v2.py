@@ -37,36 +37,50 @@ for various values of k.
 def classifyMultiDomainProteins(training_data, testing_data, feature_set, classification_type):
 	X_train, y_train = utils.extractFeaturesAndLabelsForSVMFromJson(training_data, feature_set, classification_type)
 
+	correct_chains = []
+	incorrect_chains = []
+
 	print "Training Data => ", len(X_train), len(y_train)
+	print "Testing Data => ", len(testing_data)
 
 	clf = svm.SVC(probability=True).fit(X_train, y_train)
 
+
 	for chain in testing_data:
 
-		print chain, utils.findNumberOfDomains(chain, None)
+		domains = utils.findNumberOfDomains(chain, None)
 
 		max_probablity = -1000000000
 
 		for k in range (2,5):
 			feature_map = calculateFeatures.calculateFeatures_v2([chain], feature_set, k)
 
-			print  k, feature_map[chain],
+			# print  k, feature_map[chain],
 
-			probablities = clf.predict_proba([feature_map[chain]])[0]
+			# probablities = clf.predict_proba([feature_map[chain]])[0]
 
-			for x in probablities:
-				print "{0:.2f}".format(x), 
-			print
-
-
+			# for x in probablities:
+			# 	print "{0:.2f}".format(x), 
+			# print
 
 
 
-			# prediction_confidence = clf.predict_proba([feature_map[chain]])[0][k-2]
 
-			# if  prediction_confidence > max_probablity:
-			# 	max_probablity = prediction_confidence
-			# 	assigned_domain = k
+
+			prediction_confidence = clf.predict_proba([feature_map[chain]])[0][k-2]
+
+			if  prediction_confidence > max_probablity:
+				max_probablity = prediction_confidence
+				assigned_domains = k
+
+		print assigned_domains, domains
+
+		if assigned_domains == domains:
+			correct_chains.append(chain)
+		else:
+			incorrect_chains.append(chain)
+
+	return correct_chains, incorrect_chains
 
 		# print chain, feature_map[chain], assigned_domain
 

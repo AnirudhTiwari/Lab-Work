@@ -121,7 +121,13 @@ with open('self_created_multi_training_dataset_features_v3.json', 'r') as f:
 
 classifier = "multi-domain"
 
-correct_chains_with_features, incorrect_chains_with_features = SVM_v2.classifyMultiDomainProteins(SVM_multi_train_data, multi_correct_chains, feature_set, classifier)
+correct_chains, incorrect_chains = SVM_v2.classifyMultiDomainProteins(SVM_multi_train_data, multi_correct_chains, feature_set, classifier)
+
+print len(correct_chains), len(incorrect_chains)
+
+print "Accuracy =>", "{0:.2f}".format((100.0*len(correct_chains))/len(multi_correct_chains))
+
+utils.SVM_Multi_Domain_Performance_Analyser(correct_chains, multi_correct_chains)
 
 
 

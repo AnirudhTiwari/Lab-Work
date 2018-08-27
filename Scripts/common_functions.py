@@ -3,6 +3,12 @@ import re
 
 path_to_pdb_files = 'All PDBs/'
 
+CONTIGUOUS = "Contiguous"
+NON_CONTIGUOUS = "Non-Contiguous"
+TOTAL = "Total"
+CORRECT_CHAINS = "Correct Chains"
+TOTAL_CHAINS = "Total Chains"
+
 # This map is very tightly coupled to feature file which has pdb, chain, domains, length, energy, density, radius 
 # and it takes that as an input. Example feature file: BenchmarkTwo_Features.csv. This function only returns the index of a
 # particular value of interest.
@@ -164,7 +170,7 @@ def extractFeaturesAndLabelsForSVMFromJson(features_dictionary, feature_set, cla
 		for feature in feature_set:
 			data.append(features_dictionary[key][feature])
 
-		print pdb, label, data
+		# print pdb, label, data
 
 		X.append(data)
 		Y.append(label)
@@ -333,25 +339,101 @@ def SVM_Performance_Analyser(correctly_labelled_chains, test_dataset, classifica
 		print
 	print
 
+'''
+This method evaluates the performance of multi-domain classification done by the SVM. 
+This method invokes the underlying method multi_domain_dataset_analyzer which creates a dictionary in the following format
+{
+	{1} : {
+		{Contiguous}" : <no. of contiguous chains>
+		{Non-Contiguous} : <no. of non-contiguous chains>
+		{Total} : <no. of total chanis>
+	}
+	{2} : {
+		{Contiguous}" : <no. of contiguous chains>
+		{Non-Contiguous} : <no. of non-contiguous chains>
+		{Total} : <no. of total chanis>
+	}
+	.
+	.
+	.
+}
+The same is done for both test dataset and correctly labelled chains to get the overall accuracy 
+for each n-domain protein across all contiguous/non-contiguous/total factors.
+'''
+def SVM_Multi_Domain_Performance_Analyser(correctly_labelled_chains, test_dataset_chains):
+	analyzed_test_dataset =  multi_domain_dataset_analyzer(test_dataset_chains)
+	analyzed_correctly_labelled_chains = multi_domain_dataset_analyzer(correctly_labelled_chains)
+
+	results_dict = {}
+	overall_results_dict = {CORRECT_CHAINS : {CONTIGUOUS : 0, NON_CONTIGUOUS : 0, TOTAL : 0}, TOTAL_CHAINS : {CONTIGUOUS : 0, NON_CONTIGUOUS : 0, TOTAL : 0}}
+
+
+
+
+	for key, value in analyzed_correctly_labelled_chains.iteritems():
+		results_dict[key] = {}
+
+		for key_1, value_1 in value.iteritems():
+			data_test = analyzed_test_dataset[key][key_1]
+			data_correctly_labelled =  analyzed_correctly_labelled_chains[key][key_1]
+			accuracy = "{0:.2f}".format((100.0*data_correctly_labelled)/data_test)
+
+			results_dict[key][key_1] = "(" + str(data_correctly_labelled) + "/" + str(data_test) + ")" + " " + accuracy + "%"
+
+			overall_results_dict[CORRECT_CHAINS][key_1]+=data_correctly_labelled
+			overall_results_dict[TOTAL_CHAINS][key_1]+=data_test
+
+
+	for key, value in sorted(results_dict.iteritems()):
+		print key
+		for key_1, value_1 in sorted(value.iteritems()):
+			print key_1, value_1
+		print
+
+	print 
+	print "Overall Results"
+
+	for value_1 in overall_results_dict.values():
+		for key, value in value_1.iteritems():
+			print key,
+			data_correctly_labelled = overall_results_dict[CORRECT_CHAINS][key]
+			data_test = overall_results_dict[TOTAL_CHAINS][key]
+			accuracy = "{0:.2f}".format((100.0*data_correctly_labelled)/data_test)
+			print "(" + str(data_correctly_labelled) + "/" + str(data_test) + ")" + " " + accuracy + "%"
+		break
 
 
 
 
 
+def multi_domain_dataset_analyzer(dataset):
+	analyzed_data_dict = {}
 
-		
+	for chain in dataset:
+		domains = findNumberOfDomains(chain)
 
+		if domains not in analyzed_data_dict:
+			analyzed_data_dict[domains] = {}
 
+		isContiguous = isChainContigous(chain)
 
+		if isContiguous:
+			if CONTIGUOUS not in analyzed_data_dict[domains]:
+				analyzed_data_dict[domains][CONTIGUOUS] = 1
+			else:
+				analyzed_data_dict[domains][CONTIGUOUS]+=1
+		else:
+			if NON_CONTIGUOUS not in analyzed_data_dict[domains]:
+				analyzed_data_dict[domains][NON_CONTIGUOUS] = 1
+			else:
+				analyzed_data_dict[domains][NON_CONTIGUOUS]+=1
 
+		if TOTAL not in analyzed_data_dict[domains]:
+			analyzed_data_dict[domains][TOTAL] = 1
+		else:
+			analyzed_data_dict[domains][TOTAL]+=1
 
-
-
-
-
-
-
-
+	return analyzed_data_dict
 
 
 
