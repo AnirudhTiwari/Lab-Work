@@ -73,7 +73,6 @@ def classifyMultiDomainProteins(training_data, testing_data, feature_set, classi
 				max_probablity = prediction_confidence
 				assigned_domains = k
 
-		print assigned_domains, domains
 
 		if assigned_domains == domains:
 			correct_chains.append(chain)

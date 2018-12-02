@@ -399,7 +399,9 @@ def SVM_Multi_Domain_Performance_Analyser(correctly_labelled_chains, test_datase
 			data_correctly_labelled = overall_results_dict[CORRECT_CHAINS][key]
 			data_test = overall_results_dict[TOTAL_CHAINS][key]
 			accuracy = "{0:.2f}".format((100.0*data_correctly_labelled)/data_test)
+
 			print "(" + str(data_correctly_labelled) + "/" + str(data_test) + ")" + " " + accuracy + "%"
+
 		break
 
 
