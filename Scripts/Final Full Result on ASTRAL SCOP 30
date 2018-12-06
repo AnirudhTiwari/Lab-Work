@@ -1,0 +1,148 @@
+Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created
+C
+You selected ASTRAL SCOP30 for testing the SVM
+
+Identifying single-domain vs multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type R for Radius_of_Gyration
+Type D for Density
+For multiple features, give space sepearated input. For ex. L D for Length & Density
+L I D
+You selected:  Length Interaction_Energy Density
+Training data =>  2992 2992
+Testing data =>  6290 6290
+
+Contiguous
+Multi {'Total': 1286, 'Correct': 973, 'Accuracy': '75.66'}
+Single {'Total': 4048, 'Correct': 3477, 'Accuracy': '85.89'}
+Total {'Total': 5334, 'Correct': 4450, 'Accuracy': '83.43'}
+
+Non-Contiguous
+Multi {'Total': 956, 'Correct': 806, 'Accuracy': '84.31'}
+Single {'Total': 0, 'Correct': 0}
+Total {'Total': 956, 'Correct': 806, 'Accuracy': '84.31'}
+
+Total
+Multi {'Total': 2242, 'Correct': 1779, 'Accuracy': '79.35'}
+Single {'Total': 4048, 'Correct': 3477, 'Accuracy': '85.89'}
+Total {'Total': 6290, 'Correct': 5256, 'Accuracy': '83.56'}
+
+
+Saved correctly labelled chains to:  output_correct_ASTRAL SCOP30_single vs multi-domain.txt 
+
+Identifying multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type S for Density Sum
+For multiple features, give space sepearated input. For ex. L S for Length & DensitySum
+L I
+You selected:  Length Interaction_Energy
+Training Data =>  1498 1498
+Testing Data =>  1779
+Performance of multi-domin identification
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 490, 'Contiguous': 695, 'Total': 1185}, 3: {'Non-Contiguous': 229, 'Contiguous': 212, 'Total': 441}, 4: {'Non-Contiguous': 87, 'Contiguous': 66, 'Total': 153}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 366, 'Contiguous': 532, 'Total': 898}, 3: {'Non-Contiguous': 81, 'Contiguous': 70, 'Total': 151}, 4: {'Non-Contiguous': 64, 'Contiguous': 38, 'Total': 102}}
+
+
+2
+Contiguous (532/695) 76.55%
+Non-Contiguous (366/490) 74.69%
+Total (898/1185) 75.78%
+
+3
+Contiguous (70/212) 33.02%
+Non-Contiguous (81/229) 35.37%
+Total (151/441) 34.24%
+
+4
+Contiguous (38/66) 57.58%
+Non-Contiguous (64/87) 73.56%
+Total (102/153) 66.67%
+
+
+Overall Results
+Non-Contiguous (511/806) 63.40%
+Contiguous (640/973) 65.78%
+Total (1151/1779) 64.70%
+
+K-means Performance
+
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 366, 'Contiguous': 532, 'Total': 898}, 3: {'Non-Contiguous': 81, 'Contiguous': 70, 'Total': 151}, 4: {'Non-Contiguous': 64, 'Contiguous': 38, 'Total': 102}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 337, 'Contiguous': 490, 'Total': 827}, 3: {'Non-Contiguous': 61, 'Contiguous': 52, 'Total': 113}, 4: {'Non-Contiguous': 36, 'Contiguous': 26, 'Total': 62}}
+
+
+2
+Contiguous (490/532) 92.11%
+Non-Contiguous (337/366) 92.08%
+Total (827/898) 92.09%
+
+3
+Contiguous (52/70) 74.29%
+Non-Contiguous (61/81) 75.31%
+Total (113/151) 74.83%
+
+4
+Contiguous (26/38) 68.42%
+Non-Contiguous (36/64) 56.25%
+Total (62/102) 60.78%
+
+
+Overall Results
+Non-Contiguous (434/511) 84.93%
+Contiguous (568/640) 88.75%
+Total (1002/1151) 87.05%
+
+Overall Performance
+
+
+
+Analyzed Test Dataset
+{1: {'Non-Contiguous': 6, 'Contiguous': 4042, 'Total': 4048}, 2: {'Non-Contiguous': 618, 'Contiguous': 981, 'Total': 1599}, 3: {'Non-Contiguous': 251, 'Contiguous': 238, 'Total': 489}, 4: {'Non-Contiguous': 87, 'Contiguous': 67, 'Total': 154}}
+
+
+Analyzed Correctly Predicted Data
+{1: {'Non-Contiguous': 3, 'Contiguous': 3474, 'Total': 3477}, 2: {'Non-Contiguous': 337, 'Contiguous': 490, 'Total': 827}, 3: {'Non-Contiguous': 61, 'Contiguous': 52, 'Total': 113}, 4: {'Non-Contiguous': 36, 'Contiguous': 26, 'Total': 62}}
+
+
+1
+Contiguous (3474/4042) 85.95%
+Non-Contiguous (3/6) 50.00%
+Total (3477/4048) 85.89%
+
+2
+Contiguous (490/981) 49.95%
+Non-Contiguous (337/618) 54.53%
+Total (827/1599) 51.72%
+
+3
+Contiguous (52/238) 21.85%
+Non-Contiguous (61/251) 24.30%
+Total (113/489) 23.11%
+
+4
+Contiguous (26/67) 38.81%
+Non-Contiguous (36/87) 41.38%
+Total (62/154) 40.26%
+
+
+Overall Results
+Non-Contiguous (437/962) 45.43%
+Contiguous (4042/5328) 75.86%
+Total (4479/6290) 71.21%

@@ -1,0 +1,146 @@
+You selected Self-Created for testing the SVM
+
+Identifying single-domain vs multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type R for Radius_of_Gyration
+Type D for Density
+For multiple features, give space sepearated input. For ex. L D for Length & Density
+L I D
+You selected:  Length Interaction_Energy Density
+Training data =>  2992 2992
+Testing data =>  1284 1284
+
+Contiguous
+Multi {'Total': 292, 'Correct': 218, 'Accuracy': '74.66'}
+Single {'Total': 767, 'Correct': 715, 'Accuracy': '93.22'}
+Total {'Total': 1059, 'Correct': 933, 'Accuracy': '88.10'}
+
+Non-Contiguous
+Multi {'Total': 225, 'Correct': 193, 'Accuracy': '85.78'}
+Single {'Total': 0, 'Correct': 0}
+Total {'Total': 225, 'Correct': 193, 'Accuracy': '85.78'}
+
+Total
+Multi {'Total': 517, 'Correct': 411, 'Accuracy': '79.50'}
+Single {'Total': 767, 'Correct': 715, 'Accuracy': '93.22'}
+Total {'Total': 1284, 'Correct': 1126, 'Accuracy': '87.69'}
+
+
+Saved correctly labelled chains to:  output_correct_Self-Created_single vs multi-domain.txt 
+
+Identifying multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type S for Density Sum
+For multiple features, give space sepearated input. For ex. L S for Length & DensitySum
+L I
+You selected:  Length Interaction_Energy
+Training Data =>  1498 1498
+Testing Data =>  411
+Performance of multi-domin identification
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 102, 'Contiguous': 140, 'Total': 242}, 3: {'Non-Contiguous': 61, 'Contiguous': 61, 'Total': 122}, 4: {'Non-Contiguous': 30, 'Contiguous': 17, 'Total': 47}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 86, 'Contiguous': 115, 'Total': 201}, 3: {'Non-Contiguous': 27, 'Contiguous': 26, 'Total': 53}, 4: {'Non-Contiguous': 23, 'Contiguous': 12, 'Total': 35}}
+
+
+2
+Contiguous (115/140) 82.14%
+Non-Contiguous (86/102) 84.31%
+Total (201/242) 83.06%
+
+3
+Contiguous (26/61) 42.62%
+Non-Contiguous (27/61) 44.26%
+Total (53/122) 43.44%
+
+4
+Contiguous (12/17) 70.59%
+Non-Contiguous (23/30) 76.67%
+Total (35/47) 74.47%
+
+
+Overall Results
+Non-Contiguous (136/193) 70.47%
+Contiguous (153/218) 70.18%
+Total (289/411) 70.32%
+
+K-means Performance
+
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 86, 'Contiguous': 115, 'Total': 201}, 3: {'Non-Contiguous': 27, 'Contiguous': 26, 'Total': 53}, 4: {'Non-Contiguous': 23, 'Contiguous': 12, 'Total': 35}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 78, 'Contiguous': 110, 'Total': 188}, 3: {'Non-Contiguous': 22, 'Contiguous': 20, 'Total': 42}, 4: {'Non-Contiguous': 20, 'Contiguous': 10, 'Total': 30}}
+
+
+2
+Contiguous (110/115) 95.65%
+Non-Contiguous (78/86) 90.70%
+Total (188/201) 93.53%
+
+3
+Contiguous (20/26) 76.92%
+Non-Contiguous (22/27) 81.48%
+Total (42/53) 79.25%
+
+4
+Contiguous (10/12) 83.33%
+Non-Contiguous (20/23) 86.96%
+Total (30/35) 85.71%
+
+
+Overall Results
+Non-Contiguous (120/136) 88.24%
+Contiguous (140/153) 91.50%
+Total (260/289) 89.97%
+
+Overall Performance
+
+
+
+Analyzed Test Dataset
+{1: {'Non-Contiguous': 0, 'Contiguous': 767, 'Total': 767}, 2: {'Non-Contiguous': 126, 'Contiguous': 205, 'Total': 331}, 3: {'Non-Contiguous': 69, 'Contiguous': 70, 'Total': 139}, 4: {'Non-Contiguous': 30, 'Contiguous': 17, 'Total': 47}}
+
+
+Analyzed Correctly Predicted Data
+{1: {'Non-Contiguous': 0, 'Contiguous': 715, 'Total': 715}, 2: {'Non-Contiguous': 78, 'Contiguous': 110, 'Total': 188}, 3: {'Non-Contiguous': 22, 'Contiguous': 20, 'Total': 42}, 4: {'Non-Contiguous': 20, 'Contiguous': 10, 'Total': 30}}
+
+
+1
+Contiguous (715/767) 93.22%
+Total (715/767) 93.22%
+
+2
+Contiguous (110/205) 53.66%
+Non-Contiguous (78/126) 61.90%
+Total (188/331) 56.80%
+
+3
+Contiguous (20/70) 28.57%
+Non-Contiguous (22/69) 31.88%
+Total (42/139) 30.22%
+
+4
+Contiguous (10/17) 58.82%
+Non-Contiguous (20/30) 66.67%
+Total (30/47) 63.83%
+
+
+Overall Results
+Non-Contiguous (120/225) 53.33%
+Contiguous (855/1059) 80.74%
+Total (975/1284) 75.93%
+Anirudhs-MacBook-Pro:Scripts anirudhtiwari$ 

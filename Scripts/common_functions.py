@@ -364,6 +364,22 @@ def SVM_Multi_Domain_Performance_Analyser(correctly_labelled_chains, test_datase
 	analyzed_test_dataset =  multi_domain_dataset_analyzer(test_dataset_chains)
 	analyzed_correctly_labelled_chains = multi_domain_dataset_analyzer(correctly_labelled_chains)
 
+
+	print
+	print
+
+
+	print "Analyzed Test Dataset"
+	print analyzed_test_dataset
+	print
+	print
+
+	print "Analyzed Correctly Predicted Data"
+	print analyzed_correctly_labelled_chains
+
+	print
+	print
+
 	results_dict = {}
 	overall_results_dict = {CORRECT_CHAINS : {CONTIGUOUS : 0, NON_CONTIGUOUS : 0, TOTAL : 0}, TOTAL_CHAINS : {CONTIGUOUS : 0, NON_CONTIGUOUS : 0, TOTAL : 0}}
 
@@ -376,12 +392,14 @@ def SVM_Multi_Domain_Performance_Analyser(correctly_labelled_chains, test_datase
 		for key_1, value_1 in value.iteritems():
 			data_test = analyzed_test_dataset[key][key_1]
 			data_correctly_labelled =  analyzed_correctly_labelled_chains[key][key_1]
-			accuracy = "{0:.2f}".format((100.0*data_correctly_labelled)/data_test)
 
-			results_dict[key][key_1] = "(" + str(data_correctly_labelled) + "/" + str(data_test) + ")" + " " + accuracy + "%"
+			if (data_test) != 0:
+				accuracy = "{0:.2f}".format((100.0*data_correctly_labelled)/data_test)
 
-			overall_results_dict[CORRECT_CHAINS][key_1]+=data_correctly_labelled
-			overall_results_dict[TOTAL_CHAINS][key_1]+=data_test
+				results_dict[key][key_1] = "(" + str(data_correctly_labelled) + "/" + str(data_test) + ")" + " " + accuracy + "%"
+
+				overall_results_dict[CORRECT_CHAINS][key_1]+=data_correctly_labelled
+				overall_results_dict[TOTAL_CHAINS][key_1]+=data_test
 
 
 	for key, value in sorted(results_dict.iteritems()):
@@ -415,25 +433,25 @@ def multi_domain_dataset_analyzer(dataset):
 		domains = findNumberOfDomains(chain)
 
 		if domains not in analyzed_data_dict:
-			analyzed_data_dict[domains] = {}
+			analyzed_data_dict[domains] = {CONTIGUOUS : 0, NON_CONTIGUOUS : 0, TOTAL : 0}
 
 		isContiguous = isChainContigous(chain)
 
 		if isContiguous:
-			if CONTIGUOUS not in analyzed_data_dict[domains]:
-				analyzed_data_dict[domains][CONTIGUOUS] = 1
-			else:
-				analyzed_data_dict[domains][CONTIGUOUS]+=1
+			# if CONTIGUOUS not in analyzed_data_dict[domains]:
+				# analyzed_data_dict[domains][CONTIGUOUS] = 1
+			# else:
+			analyzed_data_dict[domains][CONTIGUOUS]+=1
 		else:
-			if NON_CONTIGUOUS not in analyzed_data_dict[domains]:
-				analyzed_data_dict[domains][NON_CONTIGUOUS] = 1
-			else:
-				analyzed_data_dict[domains][NON_CONTIGUOUS]+=1
+			# if NON_CONTIGUOUS not in analyzed_data_dict[domains]:
+				# analyzed_data_dict[domains][NON_CONTIGUOUS] = 1
+			# else:
+			analyzed_data_dict[domains][NON_CONTIGUOUS]+=1
 
-		if TOTAL not in analyzed_data_dict[domains]:
-			analyzed_data_dict[domains][TOTAL] = 1
-		else:
-			analyzed_data_dict[domains][TOTAL]+=1
+		# if TOTAL not in analyzed_data_dict[domains]:
+			# analyzed_data_dict[domains][TOTAL] = 1
+		# else:
+		analyzed_data_dict[domains][TOTAL]+=1
 
 	return analyzed_data_dict
 

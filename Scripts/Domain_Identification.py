@@ -4,7 +4,7 @@ import multiDomainIdentifier
 import calculateFeatures
 import csv
 import json
-
+import K_Means
 
 def get_input_dataset_name(x):
 	return {
@@ -84,6 +84,15 @@ name_output_file = "output_correct"+"_"+testing_dataset+"_"+classifier+".txt"
 f = open(name_output_file,"w+")
 
 multi_correct_chains = []
+single_correct_chains = []
+total_test_chains = []
+
+for x in SVM_test_data:
+	x = x.split(",")
+	pdb = x[0].strip()
+	chain = x[1].strip()
+  	total_test_chains.append(pdb+chain)
+
 for chain_with_features in correct_chains_with_features:
   f.write("%s\n" % chain_with_features.strip())
   chain_with_features = chain_with_features.split(",")
@@ -93,6 +102,10 @@ for chain_with_features in correct_chains_with_features:
 
   if domains > 1:
   	multi_correct_chains.append(pdb+chain)
+  else:
+  	single_correct_chains.append(pdb+chain)
+
+  
 
 
 
@@ -123,16 +136,23 @@ classifier = "multi-domain"
 
 correct_chains, incorrect_chains = SVM_v2.classifyMultiDomainProteins(SVM_multi_train_data, multi_correct_chains, feature_set, classifier)
 
-print len(correct_chains), len(incorrect_chains)
-
-print "Accuracy =>", "{0:.2f}".format((100.0*len(correct_chains))/len(multi_correct_chains))
+print "Performance of multi-domin identification"
 
 utils.SVM_Multi_Domain_Performance_Analyser(correct_chains, multi_correct_chains)
 
 
+correct_chains_post_kmeans, incorrect_chains_post_kmeans = K_Means.applyKMeans(correct_chains)
+
+print
+print "K-means Performance"
+print
+utils.SVM_Multi_Domain_Performance_Analyser(correct_chains_post_kmeans, correct_chains)
 
 
-
+print
+print "Overall Performance"
+print
+utils.SVM_Multi_Domain_Performance_Analyser(correct_chains_post_kmeans + single_correct_chains, total_test_chains)
 
 # utils.SVM_Performance_Analyser(correct_chains_with_features, SVM_test_data, classifier)
 
