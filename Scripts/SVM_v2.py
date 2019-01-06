@@ -54,19 +54,6 @@ def classifyMultiDomainProteins(training_data, testing_data, feature_set, classi
 
 		for k in range (2,5):
 			feature_map = calculateFeatures.calculateFeatures_v2([chain], feature_set, k)
-
-			# print  k, feature_map[chain],
-
-			# probablities = clf.predict_proba([feature_map[chain]])[0]
-
-			# for x in probablities:
-			# 	print "{0:.2f}".format(x), 
-			# print
-
-
-
-
-
 			prediction_confidence = clf.predict_proba([feature_map[chain]])[0][k-2]
 
 			if  prediction_confidence > max_probablity:
@@ -80,14 +67,4 @@ def classifyMultiDomainProteins(training_data, testing_data, feature_set, classi
 			incorrect_chains.append(chain)
 
 	return correct_chains, incorrect_chains
-
-		# print chain, feature_map[chain], assigned_domain
-
-
-
-
-
-
-
-
 

@@ -11,7 +11,8 @@ def get_input_dataset_name(x):
 		'A' : "Benchmark_2",
 		'B' : "Benchmark_3",
 		'C' : "ASTRAL SCOP30",
-		'D' : "Self-Created"
+		'D' : "Self-Created",
+		'E' : "Your own Chain"
 	}[x]
 
 def get_input_feature_name(x):
@@ -38,25 +39,21 @@ def get_multi_domain_identification_method(x):
 
 #Taking user input for test dataset
 while 1:
-	testing_dataset_input = raw_input("Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created\n")
+	testing_dataset_input = raw_input("Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created, E for your own Protein Chain\n")
 	try:
 		testing_dataset = get_input_dataset_name(testing_dataset_input)
+		if testing_dataset_input == 'E':
+			testing_dataset = raw_input("Enter your chain for example: 1utgA\n")
 		print "You selected " + testing_dataset + " for testing the SVM\n"
 		break
 	except KeyError:
 		print "Invalid input!!"
 
-file_testing_dataset_features = get_input_dataset_features_file(testing_dataset)
-
-
 print "Identifying single-domain vs multi-domain proteins\n"
-
-with open(file_testing_dataset_features) as f:
-	SVM_test_data = f.readlines()
 
 feature_set = []
 while 1:
-	featureSet_input = raw_input("Select features to be used for training and testing:\nType L for Length\nType I for Interaction_Energy\nType R for Radius_of_Gyration\nType D for Density\nFor multiple features, give space sepearated input. For ex. L D for Length & Density\n").split()
+	featureSet_input = raw_input("Select features to be used for training and testing:\nType L for Length\nType I for Interaction_Energy\nType R for Radius_of_Gyration\nType D for Density\nFor multiple features, give space sepearated input. For eg. L D for Length & Density\n").split()
 	print "You selected: ",
 
 	try:
@@ -75,13 +72,26 @@ with open(file_training_dataset_features) as f:
 
 classifier = "single vs multi-domain"
 
+if testing_dataset_input != 'E':
+	file_testing_dataset_features = get_input_dataset_features_file(testing_dataset)
+
+	with open(file_testing_dataset_features) as f:
+		SVM_test_data = f.readlines()
+
+else:
+	SVM_test_data = calculateFeatures.calculateFeatures_v2([testing_dataset], feature_set, 2)[testing_dataset]
+	print SVM_test_data
+
 correct_chains_with_features, incorrect_chains_with_features = SVM_v2.classify(SVM_train_data, SVM_test_data, feature_set, classifier)
 
 utils.SVM_Performance_Analyser(correct_chains_with_features, SVM_test_data, classifier)
 
-name_output_file = "output_correct"+"_"+testing_dataset+"_"+classifier+".txt"
+correct_chains_output_file_name = "output_correct"+"_"+testing_dataset+"_"+classifier+".txt"
+inccorect_chains_with_features_output_file_name = "output_incorrect"+"_"+testing_dataset+"_"+classifier+".txt"
 
-f = open(name_output_file,"w+")
+
+f = open(correct_chains_output_file_name,"w+")
+f1 = open(inccorect_chains_with_features_output_file_name, "w+")
 
 multi_correct_chains = []
 single_correct_chains = []
@@ -92,6 +102,13 @@ for x in SVM_test_data:
 	pdb = x[0].strip()
 	chain = x[1].strip()
   	total_test_chains.append(pdb+chain)
+
+
+for chain_with_features in incorrect_chains_with_features:
+	f1.write("%s\n" % chain_with_features.strip())
+
+print "Saved incorrectly labelled chains to: ", inccorect_chains_with_features_output_file_name, "\n"
+
 
 for chain_with_features in correct_chains_with_features:
   f.write("%s\n" % chain_with_features.strip())
@@ -105,11 +122,8 @@ for chain_with_features in correct_chains_with_features:
   else:
   	single_correct_chains.append(pdb+chain)
 
-  
 
-
-
-print "Saved correctly labelled chains to: ", name_output_file, "\n"
+print "Saved correctly labelled chains to: ", correct_chains_output_file_name, "\n"
 
 print "Identifying multi-domain proteins\n"
 
