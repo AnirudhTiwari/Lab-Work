@@ -109,7 +109,9 @@ def calculateFeatures_v2(input_chains, feature_set, num_of_clusters):
 		pdb = ''.join(input_chain[:4])
 		chain = input_chain[4]
 
-		# print pdb, chain, num_of_clusters
+		# feature_map[pdb+chain.upper()] = {}
+
+		# feature_map[pdb+chain.upper()]["Domains"] = utils.findNumberOfDomains(pdb, chain)
 
 		for feature in feature_set:
 			feature_calculator = features.get(feature, "Invalid input feature") 
@@ -121,9 +123,10 @@ def calculateFeatures_v2(input_chains, feature_set, num_of_clusters):
 
 			if isinstance(feature_value, float):
 				feature_values.append('{0:.3}'.format(feature_value))
+				# feature_map[pdb+chain.upper()][feature] = '{0:.3}'.format(feature_value)
 			else:
 				feature_values.append(feature_value)
-
+				# feature_map[pdb+chain.upper()][feature] = feature_value
 		feature_map[pdb+chain] = feature_values
 
 	return feature_map

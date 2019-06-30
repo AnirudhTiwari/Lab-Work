@@ -1,0 +1,7492 @@
+{
+    "2wr1A": {
+        "Domains": 2, 
+        "Length": 490, 
+        "Interaction_Energy": "2.49"
+    }, 
+    "1p5gX": {
+        "Domains": 4, 
+        "Length": 465, 
+        "Interaction_Energy": "13.6"
+    }, 
+    "1s0fA": {
+        "Domains": 4, 
+        "Length": 1276, 
+        "Interaction_Energy": "16.4"
+    }, 
+    "1epwA": {
+        "Domains": 4, 
+        "Length": 1287, 
+        "Interaction_Energy": "16.0"
+    }, 
+    "1n1bB": {
+        "Domains": 2, 
+        "Length": 520, 
+        "Interaction_Energy": "4.52"
+    }, 
+    "1z40A": {
+        "Domains": 3, 
+        "Length": 311, 
+        "Interaction_Energy": "23.3"
+    }, 
+    "1a31A": {
+        "Domains": 4, 
+        "Length": 457, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1dw9B": {
+        "Domains": 2, 
+        "Length": 152, 
+        "Interaction_Energy": "2.1"
+    }, 
+    "1efuB": {
+        "Domains": 4, 
+        "Length": 282, 
+        "Interaction_Energy": "23.2"
+    }, 
+    "1hh2P": {
+        "Domains": 4, 
+        "Length": 344, 
+        "Interaction_Energy": "15.4"
+    }, 
+    "2p0mA": {
+        "Domains": 3, 
+        "Length": 662, 
+        "Interaction_Energy": "11.5"
+    }, 
+    "2p0mB": {
+        "Domains": 3, 
+        "Length": 662, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "3g0qA": {
+        "Domains": 3, 
+        "Length": 344, 
+        "Interaction_Energy": "4.86"
+    }, 
+    "3eagA": {
+        "Domains": 2, 
+        "Length": 316, 
+        "Interaction_Energy": "6.12"
+    }, 
+    "1gndA": {
+        "Domains": 3, 
+        "Length": 430, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "1jg9A": {
+        "Domains": 4, 
+        "Length": 628, 
+        "Interaction_Energy": "27.5"
+    }, 
+    "1tl8A": {
+        "Domains": 4, 
+        "Length": 564, 
+        "Interaction_Energy": "15.4"
+    }, 
+    "1ofdB": {
+        "Domains": 4, 
+        "Length": 1491, 
+        "Interaction_Energy": "15.3"
+    }, 
+    "1ofdA": {
+        "Domains": 4, 
+        "Length": 1491, 
+        "Interaction_Energy": "15.5"
+    }, 
+    "5acnA": {
+        "Domains": 4, 
+        "Length": 753, 
+        "Interaction_Energy": "18.8"
+    }, 
+    "2j01I": {
+        "Domains": 2, 
+        "Length": 145, 
+        "Interaction_Energy": "2.23"
+    }, 
+    "1su7A": {
+        "Domains": 3, 
+        "Length": 633, 
+        "Interaction_Energy": "17.1"
+    }, 
+    "1k4tA": {
+        "Domains": 4, 
+        "Length": 564, 
+        "Interaction_Energy": "15.3"
+    }, 
+    "1c89A": {
+        "Domains": 2, 
+        "Length": 134, 
+        "Interaction_Energy": "2.94"
+    }, 
+    "1ddeA": {
+        "Domains": 3, 
+        "Length": 310, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "2a6hA": {
+        "Domains": 2, 
+        "Length": 229, 
+        "Interaction_Energy": "4.61"
+    }, 
+    "3bz1O": {
+        "Domains": 2, 
+        "Length": 243, 
+        "Interaction_Energy": "7.81"
+    }, 
+    "1k92A": {
+        "Domains": 3, 
+        "Length": 467, 
+        "Interaction_Energy": "5.98"
+    }, 
+    "1z53A": {
+        "Domains": 2, 
+        "Length": 299, 
+        "Interaction_Energy": "7.85"
+    }, 
+    "1jh8A": {
+        "Domains": 2, 
+        "Length": 348, 
+        "Interaction_Energy": "9.74"
+    }, 
+    "1t8sB": {
+        "Domains": 2, 
+        "Length": 440, 
+        "Interaction_Energy": "3.57"
+    }, 
+    "1ordB": {
+        "Domains": 4, 
+        "Length": 730, 
+        "Interaction_Energy": "16.3"
+    }, 
+    "1ordA": {
+        "Domains": 4, 
+        "Length": 730, 
+        "Interaction_Energy": "16.5"
+    }, 
+    "2e2dC": {
+        "Domains": 2, 
+        "Length": 180, 
+        "Interaction_Energy": "3.58"
+    }, 
+    "1k0rA": {
+        "Domains": 4, 
+        "Length": 326, 
+        "Interaction_Energy": "7.65"
+    }, 
+    "3b55A": {
+        "Domains": 3, 
+        "Length": 400, 
+        "Interaction_Energy": "11.2"
+    }, 
+    "1m9nA": {
+        "Domains": 4, 
+        "Length": 590, 
+        "Interaction_Energy": "18.5"
+    }, 
+    "1m9nB": {
+        "Domains": 4, 
+        "Length": 590, 
+        "Interaction_Energy": "18.1"
+    }, 
+    "3b39A": {
+        "Domains": 3, 
+        "Length": 317, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "3b39B": {
+        "Domains": 3, 
+        "Length": 310, 
+        "Interaction_Energy": "13.3"
+    }, 
+    "3lnmB": {
+        "Domains": 3, 
+        "Length": 389, 
+        "Interaction_Energy": "3.89"
+    }, 
+    "2px6B": {
+        "Domains": 2, 
+        "Length": 263, 
+        "Interaction_Energy": "5.86"
+    }, 
+    "2v6oA": {
+        "Domains": 4, 
+        "Length": 602, 
+        "Interaction_Energy": "12.9"
+    }, 
+    "1m1nD": {
+        "Domains": 4, 
+        "Length": 522, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "1kyqA": {
+        "Domains": 3, 
+        "Length": 256, 
+        "Interaction_Energy": "3.4"
+    }, 
+    "3mfiA": {
+        "Domains": 4, 
+        "Length": 526, 
+        "Interaction_Energy": "15.4"
+    }, 
+    "1a5tA": {
+        "Domains": 3, 
+        "Length": 324, 
+        "Interaction_Energy": "10.1"
+    }, 
+    "1de4C": {
+        "Domains": 3, 
+        "Length": 635, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "2ii0A": {
+        "Domains": 2, 
+        "Length": 463, 
+        "Interaction_Energy": "3.75"
+    }, 
+    "1mcoH": {
+        "Domains": 4, 
+        "Length": 428, 
+        "Interaction_Energy": "4.13"
+    }, 
+    "1oplA": {
+        "Domains": 4, 
+        "Length": 451, 
+        "Interaction_Energy": "16.3"
+    }, 
+    "1oplB": {
+        "Domains": 3, 
+        "Length": 365, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "2ibdB": {
+        "Domains": 2, 
+        "Length": 195, 
+        "Interaction_Energy": "7.03"
+    }, 
+    "2ka9A": {
+        "Domains": 2, 
+        "Length": 189, 
+        "Interaction_Energy": "1.06"
+    }, 
+    "2re3A": {
+        "Domains": 3, 
+        "Length": 186, 
+        "Interaction_Energy": "20.9"
+    }, 
+    "2zydA": {
+        "Domains": 3, 
+        "Length": 464, 
+        "Interaction_Energy": "13.2"
+    }, 
+    "1sc7A": {
+        "Domains": 4, 
+        "Length": 566, 
+        "Interaction_Energy": "15.3"
+    }, 
+    "2re3B": {
+        "Domains": 3, 
+        "Length": 182, 
+        "Interaction_Energy": "20.4"
+    }, 
+    "2uzyD": {
+        "Domains": 4, 
+        "Length": 618, 
+        "Interaction_Energy": "21.0"
+    }, 
+    "2uzyB": {
+        "Domains": 4, 
+        "Length": 630, 
+        "Interaction_Energy": "20.6"
+    }, 
+    "2oqaA": {
+        "Domains": 2, 
+        "Length": 241, 
+        "Interaction_Energy": "7.18"
+    }, 
+    "1g9jA": {
+        "Domains": 3, 
+        "Length": 639, 
+        "Interaction_Energy": "15.8"
+    }, 
+    "1musA": {
+        "Domains": 3, 
+        "Length": 458, 
+        "Interaction_Energy": "10.7"
+    }, 
+    "1ewrB": {
+        "Domains": 3, 
+        "Length": 522, 
+        "Interaction_Energy": "8.96"
+    }, 
+    "1tolA": {
+        "Domains": 2, 
+        "Length": 156, 
+        "Interaction_Energy": "10.7"
+    }, 
+    "1ewrA": {
+        "Domains": 3, 
+        "Length": 440, 
+        "Interaction_Energy": "9.44"
+    }, 
+    "3c2qB": {
+        "Domains": 2, 
+        "Length": 323, 
+        "Interaction_Energy": "4.36"
+    }, 
+    "1w07A": {
+        "Domains": 4, 
+        "Length": 658, 
+        "Interaction_Energy": "18.5"
+    }, 
+    "1qnaA": {
+        "Domains": 2, 
+        "Length": 182, 
+        "Interaction_Energy": "2.8"
+    }, 
+    "1lc0A": {
+        "Domains": 2, 
+        "Length": 290, 
+        "Interaction_Energy": "6.27"
+    }, 
+    "1pwvA": {
+        "Domains": 4, 
+        "Length": 733, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1pwvB": {
+        "Domains": 4, 
+        "Length": 736, 
+        "Interaction_Energy": "10.7"
+    }, 
+    "3a8kA": {
+        "Domains": 4, 
+        "Length": 365, 
+        "Interaction_Energy": "24.7"
+    }, 
+    "3iacB": {
+        "Domains": 2, 
+        "Length": 458, 
+        "Interaction_Energy": "5.46"
+    }, 
+    "2c0iA": {
+        "Domains": 4, 
+        "Length": 434, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "2ww3A": {
+        "Domains": 4, 
+        "Length": 736, 
+        "Interaction_Energy": "22.8"
+    }, 
+    "2ww3B": {
+        "Domains": 4, 
+        "Length": 736, 
+        "Interaction_Energy": "22.6"
+    }, 
+    "2c0iB": {
+        "Domains": 4, 
+        "Length": 435, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1mdbA": {
+        "Domains": 4, 
+        "Length": 536, 
+        "Interaction_Energy": "23.6"
+    }, 
+    "2ww3E": {
+        "Domains": 4, 
+        "Length": 737, 
+        "Interaction_Energy": "22.7"
+    }, 
+    "2ww3F": {
+        "Domains": 4, 
+        "Length": 738, 
+        "Interaction_Energy": "22.5"
+    }, 
+    "3lq3A": {
+        "Domains": 2, 
+        "Length": 358, 
+        "Interaction_Energy": "1.62"
+    }, 
+    "3px2A": {
+        "Domains": 2, 
+        "Length": 241, 
+        "Interaction_Energy": "7.04"
+    }, 
+    "1mjeA": {
+        "Domains": 4, 
+        "Length": 600, 
+        "Interaction_Energy": "12.1"
+    }, 
+    "1n8wB": {
+        "Domains": 4, 
+        "Length": 715, 
+        "Interaction_Energy": "21.7"
+    }, 
+    "1n8wA": {
+        "Domains": 4, 
+        "Length": 718, 
+        "Interaction_Energy": "21.5"
+    }, 
+    "3hu1A": {
+        "Domains": 4, 
+        "Length": 451, 
+        "Interaction_Energy": "9.71"
+    }, 
+    "1rwaA": {
+        "Domains": 3, 
+        "Length": 756, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "1ogoX": {
+        "Domains": 2, 
+        "Length": 573, 
+        "Interaction_Energy": "4.94"
+    }, 
+    "3bnjA": {
+        "Domains": 2, 
+        "Length": 477, 
+        "Interaction_Energy": "5.81"
+    }, 
+    "3c6kA": {
+        "Domains": 3, 
+        "Length": 335, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "2pfnA": {
+        "Domains": 4, 
+        "Length": 325, 
+        "Interaction_Energy": "12.3"
+    }, 
+    "3rh4A": {
+        "Domains": 4, 
+        "Length": 337, 
+        "Interaction_Energy": "18.2"
+    }, 
+    "1bf5A": {
+        "Domains": 4, 
+        "Length": 544, 
+        "Interaction_Energy": "19.8"
+    }, 
+    "1ex0B": {
+        "Domains": 4, 
+        "Length": 718, 
+        "Interaction_Energy": "23.7"
+    }, 
+    "1ex0A": {
+        "Domains": 4, 
+        "Length": 707, 
+        "Interaction_Energy": "21.2"
+    }, 
+    "1dlpD": {
+        "Domains": 2, 
+        "Length": 223, 
+        "Interaction_Energy": "4.08"
+    }, 
+    "1elvA": {
+        "Domains": 3, 
+        "Length": 303, 
+        "Interaction_Energy": "20.3"
+    }, 
+    "1gwsA": {
+        "Domains": 4, 
+        "Length": 503, 
+        "Interaction_Energy": "11.2"
+    }, 
+    "2r9rB": {
+        "Domains": 3, 
+        "Length": 386, 
+        "Interaction_Energy": "3.8"
+    }, 
+    "1hk0X": {
+        "Domains": 2, 
+        "Length": 173, 
+        "Interaction_Energy": "1.29"
+    }, 
+    "2r9rH": {
+        "Domains": 3, 
+        "Length": 363, 
+        "Interaction_Energy": "4.03"
+    }, 
+    "2w8hB": {
+        "Domains": 3, 
+        "Length": 323, 
+        "Interaction_Energy": "5.8"
+    }, 
+    "2w8hC": {
+        "Domains": 3, 
+        "Length": 323, 
+        "Interaction_Energy": "5.81"
+    }, 
+    "2h88P": {
+        "Domains": 2, 
+        "Length": 139, 
+        "Interaction_Energy": "8.0"
+    }, 
+    "2h88O": {
+        "Domains": 2, 
+        "Length": 239, 
+        "Interaction_Energy": "7.18"
+    }, 
+    "2h88N": {
+        "Domains": 4, 
+        "Length": 612, 
+        "Interaction_Energy": "28.4"
+    }, 
+    "1wmkA": {
+        "Domains": 3, 
+        "Length": 303, 
+        "Interaction_Energy": "14.6"
+    }, 
+    "1ofeA": {
+        "Domains": 4, 
+        "Length": 1485, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "2o36A": {
+        "Domains": 3, 
+        "Length": 654, 
+        "Interaction_Energy": "11.1"
+    }, 
+    "2r4fD": {
+        "Domains": 3, 
+        "Length": 394, 
+        "Interaction_Energy": "8.45"
+    }, 
+    "2r4fA": {
+        "Domains": 3, 
+        "Length": 420, 
+        "Interaction_Energy": "8.12"
+    }, 
+    "1m3iC": {
+        "Domains": 4, 
+        "Length": 465, 
+        "Interaction_Energy": "21.8"
+    }, 
+    "1m3iB": {
+        "Domains": 4, 
+        "Length": 465, 
+        "Interaction_Energy": "21.6"
+    }, 
+    "1m3iA": {
+        "Domains": 4, 
+        "Length": 465, 
+        "Interaction_Energy": "21.3"
+    }, 
+    "1inpA": {
+        "Domains": 3, 
+        "Length": 400, 
+        "Interaction_Energy": "18.5"
+    }, 
+    "1b4nA": {
+        "Domains": 3, 
+        "Length": 611, 
+        "Interaction_Energy": "19.6"
+    }, 
+    "1b4nB": {
+        "Domains": 3, 
+        "Length": 611, 
+        "Interaction_Energy": "19.4"
+    }, 
+    "1b4nC": {
+        "Domains": 3, 
+        "Length": 611, 
+        "Interaction_Energy": "19.4"
+    }, 
+    "1dhxA": {
+        "Domains": 4, 
+        "Length": 905, 
+        "Interaction_Energy": "16.8"
+    }, 
+    "3bjdA": {
+        "Domains": 2, 
+        "Length": 335, 
+        "Interaction_Energy": "4.83"
+    }, 
+    "3gitB": {
+        "Domains": 3, 
+        "Length": 421, 
+        "Interaction_Energy": "11.8"
+    }, 
+    "3gitC": {
+        "Domains": 3, 
+        "Length": 421, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "3gitA": {
+        "Domains": 3, 
+        "Length": 422, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "3gitF": {
+        "Domains": 3, 
+        "Length": 421, 
+        "Interaction_Energy": "11.4"
+    }, 
+    "3gitD": {
+        "Domains": 3, 
+        "Length": 422, 
+        "Interaction_Energy": "12.3"
+    }, 
+    "3gitE": {
+        "Domains": 3, 
+        "Length": 421, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "1udxA": {
+        "Domains": 3, 
+        "Length": 412, 
+        "Interaction_Energy": "8.74"
+    }, 
+    "1ig8A": {
+        "Domains": 3, 
+        "Length": 469, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "1qcsA": {
+        "Domains": 2, 
+        "Length": 190, 
+        "Interaction_Energy": "5.35"
+    }, 
+    "3bkbA": {
+        "Domains": 3, 
+        "Length": 373, 
+        "Interaction_Energy": "8.97"
+    }, 
+    "3i07B": {
+        "Domains": 2, 
+        "Length": 157, 
+        "Interaction_Energy": "6.25"
+    }, 
+    "1z6fA": {
+        "Domains": 2, 
+        "Length": 359, 
+        "Interaction_Energy": "3.05"
+    }, 
+    "1zr4A": {
+        "Domains": 3, 
+        "Length": 183, 
+        "Interaction_Energy": "7.67"
+    }, 
+    "1mu5A": {
+        "Domains": 3, 
+        "Length": 460, 
+        "Interaction_Energy": "9.6"
+    }, 
+    "3b96A": {
+        "Domains": 4, 
+        "Length": 554, 
+        "Interaction_Energy": "20.5"
+    }, 
+    "1jeuA": {
+        "Domains": 3, 
+        "Length": 517, 
+        "Interaction_Energy": "16.6"
+    }, 
+    "1vq8B": {
+        "Domains": 3, 
+        "Length": 337, 
+        "Interaction_Energy": "8.34"
+    }, 
+    "1fzcC": {
+        "Domains": 3, 
+        "Length": 301, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "2ptrA": {
+        "Domains": 3, 
+        "Length": 454, 
+        "Interaction_Energy": "9.78"
+    }, 
+    "1fzcF": {
+        "Domains": 3, 
+        "Length": 301, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1ruxA": {
+        "Domains": 4, 
+        "Length": 884, 
+        "Interaction_Energy": "16.6"
+    }, 
+    "1vq8L": {
+        "Domains": 2, 
+        "Length": 145, 
+        "Interaction_Energy": "1.03"
+    }, 
+    "1vq8P": {
+        "Domains": 3, 
+        "Length": 143, 
+        "Interaction_Energy": "3.71"
+    }, 
+    "2j00D": {
+        "Domains": 2, 
+        "Length": 208, 
+        "Interaction_Energy": "5.22"
+    }, 
+    "3ohaA": {
+        "Domains": 4, 
+        "Length": 534, 
+        "Interaction_Energy": "14.9"
+    }, 
+    "1hyuA": {
+        "Domains": 4, 
+        "Length": 521, 
+        "Interaction_Energy": "15.7"
+    }, 
+    "1p7tB": {
+        "Domains": 4, 
+        "Length": 703, 
+        "Interaction_Energy": "19.4"
+    }, 
+    "1p7tA": {
+        "Domains": 4, 
+        "Length": 705, 
+        "Interaction_Energy": "20.2"
+    }, 
+    "1a0rP": {
+        "Domains": 2, 
+        "Length": 188, 
+        "Interaction_Energy": "1.47"
+    }, 
+    "1ssqD": {
+        "Domains": 2, 
+        "Length": 257, 
+        "Interaction_Energy": "6.77"
+    }, 
+    "2idjD": {
+        "Domains": 2, 
+        "Length": 287, 
+        "Interaction_Energy": "7.1"
+    }, 
+    "2b5uA": {
+        "Domains": 3, 
+        "Length": 470, 
+        "Interaction_Energy": "4.75"
+    }, 
+    "1d3yB": {
+        "Domains": 2, 
+        "Length": 290, 
+        "Interaction_Energy": "6.8"
+    }, 
+    "1gk3A": {
+        "Domains": 2, 
+        "Length": 509, 
+        "Interaction_Energy": "2.92"
+    }, 
+    "1idqA": {
+        "Domains": 2, 
+        "Length": 574, 
+        "Interaction_Energy": "7.86"
+    }, 
+    "3frhA": {
+        "Domains": 2, 
+        "Length": 241, 
+        "Interaction_Energy": "7.57"
+    }, 
+    "1iphC": {
+        "Domains": 3, 
+        "Length": 727, 
+        "Interaction_Energy": "13.2"
+    }, 
+    "1olzB": {
+        "Domains": 3, 
+        "Length": 621, 
+        "Interaction_Energy": "9.8"
+    }, 
+    "1olzA": {
+        "Domains": 3, 
+        "Length": 621, 
+        "Interaction_Energy": "9.84"
+    }, 
+    "2hoxC": {
+        "Domains": 3, 
+        "Length": 428, 
+        "Interaction_Energy": "16.9"
+    }, 
+    "2xn7A": {
+        "Domains": 2, 
+        "Length": 353, 
+        "Interaction_Energy": "7.62"
+    }, 
+    "3cj8A": {
+        "Domains": 3, 
+        "Length": 216, 
+        "Interaction_Energy": "15.6"
+    }, 
+    "2hhvA": {
+        "Domains": 4, 
+        "Length": 580, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1xdpB": {
+        "Domains": 4, 
+        "Length": 687, 
+        "Interaction_Energy": "24.0"
+    }, 
+    "3cj8B": {
+        "Domains": 3, 
+        "Length": 213, 
+        "Interaction_Energy": "16.5"
+    }, 
+    "1qd1B": {
+        "Domains": 2, 
+        "Length": 339, 
+        "Interaction_Energy": "3.19"
+    }, 
+    "3bq9A": {
+        "Domains": 2, 
+        "Length": 479, 
+        "Interaction_Energy": "6.46"
+    }, 
+    "1dn1A": {
+        "Domains": 4, 
+        "Length": 556, 
+        "Interaction_Energy": "10.9"
+    }, 
+    "2ddhA": {
+        "Domains": 4, 
+        "Length": 622, 
+        "Interaction_Energy": "17.5"
+    }, 
+    "2wb0X": {
+        "Domains": 2, 
+        "Length": 315, 
+        "Interaction_Energy": "9.73"
+    }, 
+    "3h5qA": {
+        "Domains": 3, 
+        "Length": 425, 
+        "Interaction_Energy": "13.6"
+    }, 
+    "1b0jA": {
+        "Domains": 4, 
+        "Length": 753, 
+        "Interaction_Energy": "18.6"
+    }, 
+    "1lmlA": {
+        "Domains": 4, 
+        "Length": 465, 
+        "Interaction_Energy": "22.8"
+    }, 
+    "3gb8A": {
+        "Domains": 3, 
+        "Length": 958, 
+        "Interaction_Energy": "7.07"
+    }, 
+    "2fo0A": {
+        "Domains": 4, 
+        "Length": 465, 
+        "Interaction_Energy": "15.3"
+    }, 
+    "3neyF": {
+        "Domains": 2, 
+        "Length": 177, 
+        "Interaction_Energy": "3.66"
+    }, 
+    "3ck7A": {
+        "Domains": 3, 
+        "Length": 496, 
+        "Interaction_Energy": "16.7"
+    }, 
+    "1o9iB": {
+        "Domains": 2, 
+        "Length": 266, 
+        "Interaction_Energy": "6.17"
+    }, 
+    "1t5dX": {
+        "Domains": 4, 
+        "Length": 502, 
+        "Interaction_Energy": "20.3"
+    }, 
+    "2pv7B": {
+        "Domains": 2, 
+        "Length": 279, 
+        "Interaction_Energy": "3.44"
+    }, 
+    "1jv2A": {
+        "Domains": 4, 
+        "Length": 927, 
+        "Interaction_Energy": "11.2"
+    }, 
+    "3czfA": {
+        "Domains": 2, 
+        "Length": 308, 
+        "Interaction_Energy": "0.881"
+    }, 
+    "1ufaA": {
+        "Domains": 2, 
+        "Length": 501, 
+        "Interaction_Energy": "6.34"
+    }, 
+    "1ra6A": {
+        "Domains": 3, 
+        "Length": 457, 
+        "Interaction_Energy": "11.8"
+    }, 
+    "1ulkA": {
+        "Domains": 3, 
+        "Length": 126, 
+        "Interaction_Energy": "5.88"
+    }, 
+    "3ku6A": {
+        "Domains": 2, 
+        "Length": 323, 
+        "Interaction_Energy": "1.57"
+    }, 
+    "2q8mA": {
+        "Domains": 2, 
+        "Length": 304, 
+        "Interaction_Energy": "9.79"
+    }, 
+    "3buxB": {
+        "Domains": 3, 
+        "Length": 305, 
+        "Interaction_Energy": "9.32"
+    }, 
+    "3buxD": {
+        "Domains": 3, 
+        "Length": 305, 
+        "Interaction_Energy": "12.1"
+    }, 
+    "3k6mC": {
+        "Domains": 2, 
+        "Length": 482, 
+        "Interaction_Energy": "6.87"
+    }, 
+    "3k6mA": {
+        "Domains": 2, 
+        "Length": 476, 
+        "Interaction_Energy": "6.18"
+    }, 
+    "1nktA": {
+        "Domains": 4, 
+        "Length": 836, 
+        "Interaction_Energy": "13.7"
+    }, 
+    "1eyqB": {
+        "Domains": 2, 
+        "Length": 212, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "2ph7B": {
+        "Domains": 2, 
+        "Length": 213, 
+        "Interaction_Energy": "4.53"
+    }, 
+    "3l00A": {
+        "Domains": 2, 
+        "Length": 162, 
+        "Interaction_Energy": "3.89"
+    }, 
+    "2g2uB": {
+        "Domains": 2, 
+        "Length": 165, 
+        "Interaction_Energy": "7.1"
+    }, 
+    "2bghB": {
+        "Domains": 2, 
+        "Length": 412, 
+        "Interaction_Energy": "5.09"
+    }, 
+    "2yw2A": {
+        "Domains": 4, 
+        "Length": 423, 
+        "Interaction_Energy": "23.3"
+    }, 
+    "2yw2B": {
+        "Domains": 4, 
+        "Length": 423, 
+        "Interaction_Energy": "22.4"
+    }, 
+    "2p02A": {
+        "Domains": 3, 
+        "Length": 401, 
+        "Interaction_Energy": "20.2"
+    }, 
+    "1jmxA": {
+        "Domains": 4, 
+        "Length": 493, 
+        "Interaction_Energy": "21.8"
+    }, 
+    "3gvjA": {
+        "Domains": 4, 
+        "Length": 698, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "1efuD": {
+        "Domains": 4, 
+        "Length": 282, 
+        "Interaction_Energy": "16.0"
+    }, 
+    "3ialA": {
+        "Domains": 3, 
+        "Length": 497, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1obhA": {
+        "Domains": 4, 
+        "Length": 762, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1tueG": {
+        "Domains": 2, 
+        "Length": 196, 
+        "Interaction_Energy": "2.84"
+    }, 
+    "1djwB": {
+        "Domains": 4, 
+        "Length": 561, 
+        "Interaction_Energy": "20.4"
+    }, 
+    "1fvfB": {
+        "Domains": 4, 
+        "Length": 543, 
+        "Interaction_Energy": "12.1"
+    }, 
+    "1r6xA": {
+        "Domains": 2, 
+        "Length": 386, 
+        "Interaction_Energy": "8.35"
+    }, 
+    "1e3oC": {
+        "Domains": 2, 
+        "Length": 132, 
+        "Interaction_Energy": "2.28"
+    }, 
+    "1fvfA": {
+        "Domains": 4, 
+        "Length": 543, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "1m6bB": {
+        "Domains": 4, 
+        "Length": 584, 
+        "Interaction_Energy": "15.8"
+    }, 
+    "1m6bA": {
+        "Domains": 4, 
+        "Length": 549, 
+        "Interaction_Energy": "10.5"
+    }, 
+    "2gy7B": {
+        "Domains": 4, 
+        "Length": 423, 
+        "Interaction_Energy": "23.3"
+    }, 
+    "1zarA": {
+        "Domains": 3, 
+        "Length": 267, 
+        "Interaction_Energy": "11.9"
+    }, 
+    "1pwwB": {
+        "Domains": 4, 
+        "Length": 734, 
+        "Interaction_Energy": "12.5"
+    }, 
+    "3glmA": {
+        "Domains": 3, 
+        "Length": 562, 
+        "Interaction_Energy": "14.3"
+    }, 
+    "1hpmA": {
+        "Domains": 4, 
+        "Length": 378, 
+        "Interaction_Energy": "23.6"
+    }, 
+    "1nyrB": {
+        "Domains": 4, 
+        "Length": 637, 
+        "Interaction_Energy": "16.1"
+    }, 
+    "3mudB": {
+        "Domains": 2, 
+        "Length": 173, 
+        "Interaction_Energy": "2.15"
+    }, 
+    "1diiB": {
+        "Domains": 4, 
+        "Length": 521, 
+        "Interaction_Energy": "29.6"
+    }, 
+    "1diiA": {
+        "Domains": 4, 
+        "Length": 515, 
+        "Interaction_Energy": "26.0"
+    }, 
+    "1cxsA": {
+        "Domains": 4, 
+        "Length": 769, 
+        "Interaction_Energy": "16.7"
+    }, 
+    "3b7nA": {
+        "Domains": 2, 
+        "Length": 307, 
+        "Interaction_Energy": "8.79"
+    }, 
+    "2hawB": {
+        "Domains": 2, 
+        "Length": 324, 
+        "Interaction_Energy": "3.64"
+    }, 
+    "2r6gF": {
+        "Domains": 4, 
+        "Length": 490, 
+        "Interaction_Energy": "8.79"
+    }, 
+    "1vk3A": {
+        "Domains": 4, 
+        "Length": 570, 
+        "Interaction_Energy": "24.5"
+    }, 
+    "1epuA": {
+        "Domains": 4, 
+        "Length": 527, 
+        "Interaction_Energy": "11.7"
+    }, 
+    "3gkuB": {
+        "Domains": 3, 
+        "Length": 187, 
+        "Interaction_Energy": "3.77"
+    }, 
+    "3gkuA": {
+        "Domains": 3, 
+        "Length": 199, 
+        "Interaction_Energy": "4.53"
+    }, 
+    "1r8eA": {
+        "Domains": 3, 
+        "Length": 275, 
+        "Interaction_Energy": "13.3"
+    }, 
+    "1as0A": {
+        "Domains": 2, 
+        "Length": 313, 
+        "Interaction_Energy": "1.4"
+    }, 
+    "2arrA": {
+        "Domains": 2, 
+        "Length": 372, 
+        "Interaction_Energy": "7.12"
+    }, 
+    "1soxB": {
+        "Domains": 3, 
+        "Length": 458, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "1soxA": {
+        "Domains": 3, 
+        "Length": 463, 
+        "Interaction_Energy": "13.5"
+    }, 
+    "2fmlB": {
+        "Domains": 3, 
+        "Length": 255, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "2a9dB": {
+        "Domains": 2, 
+        "Length": 359, 
+        "Interaction_Energy": "9.1"
+    }, 
+    "1bc5A": {
+        "Domains": 2, 
+        "Length": 269, 
+        "Interaction_Energy": "5.86"
+    }, 
+    "1y8qB": {
+        "Domains": 3, 
+        "Length": 510, 
+        "Interaction_Energy": "3.75"
+    }, 
+    "1jqrA": {
+        "Domains": 2, 
+        "Length": 174, 
+        "Interaction_Energy": "7.18"
+    }, 
+    "1krhB": {
+        "Domains": 3, 
+        "Length": 337, 
+        "Interaction_Energy": "9.14"
+    }, 
+    "1krhA": {
+        "Domains": 3, 
+        "Length": 337, 
+        "Interaction_Energy": "8.88"
+    }, 
+    "1xtaA": {
+        "Domains": 2, 
+        "Length": 220, 
+        "Interaction_Energy": "11.6"
+    }, 
+    "1w27B": {
+        "Domains": 3, 
+        "Length": 689, 
+        "Interaction_Energy": "7.51"
+    }, 
+    "3hn7A": {
+        "Domains": 3, 
+        "Length": 488, 
+        "Interaction_Energy": "9.45"
+    }, 
+    "3c0nA": {
+        "Domains": 3, 
+        "Length": 450, 
+        "Interaction_Energy": "5.61"
+    }, 
+    "1qzeA": {
+        "Domains": 4, 
+        "Length": 214, 
+        "Interaction_Energy": "4.29"
+    }, 
+    "2b9bC": {
+        "Domains": 4, 
+        "Length": 481, 
+        "Interaction_Energy": "14.4"
+    }, 
+    "2pifB": {
+        "Domains": 2, 
+        "Length": 245, 
+        "Interaction_Energy": "5.52"
+    }, 
+    "1rr8C": {
+        "Domains": 4, 
+        "Length": 493, 
+        "Interaction_Energy": "12.3"
+    }, 
+    "3d4sA": {
+        "Domains": 2, 
+        "Length": 439, 
+        "Interaction_Energy": "2.89"
+    }, 
+    "4aopA": {
+        "Domains": 3, 
+        "Length": 453, 
+        "Interaction_Energy": "9.53"
+    }, 
+    "1z1bA": {
+        "Domains": 3, 
+        "Length": 348, 
+        "Interaction_Energy": "2.35"
+    }, 
+    "1z1bB": {
+        "Domains": 3, 
+        "Length": 349, 
+        "Interaction_Energy": "2.2"
+    }, 
+    "1k2fB": {
+        "Domains": 2, 
+        "Length": 190, 
+        "Interaction_Energy": "8.5"
+    }, 
+    "1mw8X": {
+        "Domains": 4, 
+        "Length": 580, 
+        "Interaction_Energy": "15.4"
+    }, 
+    "2j8fA": {
+        "Domains": 3, 
+        "Length": 338, 
+        "Interaction_Energy": "10.5"
+    }, 
+    "1lm8V": {
+        "Domains": 2, 
+        "Length": 150, 
+        "Interaction_Energy": "4.17"
+    }, 
+    "3qvrA": {
+        "Domains": 3, 
+        "Length": 586, 
+        "Interaction_Energy": "18.9"
+    }, 
+    "1z8gA": {
+        "Domains": 3, 
+        "Length": 366, 
+        "Interaction_Energy": "17.1"
+    }, 
+    "2qtsD": {
+        "Domains": 4, 
+        "Length": 415, 
+        "Interaction_Energy": "20.4"
+    }, 
+    "2qtsA": {
+        "Domains": 4, 
+        "Length": 417, 
+        "Interaction_Energy": "20.5"
+    }, 
+    "2qtsC": {
+        "Domains": 4, 
+        "Length": 418, 
+        "Interaction_Energy": "20.0"
+    }, 
+    "2qtsB": {
+        "Domains": 4, 
+        "Length": 420, 
+        "Interaction_Energy": "21.5"
+    }, 
+    "3cblA": {
+        "Domains": 3, 
+        "Length": 356, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "1it8B": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "22.2"
+    }, 
+    "1it8A": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "19.6"
+    }, 
+    "1pn0B": {
+        "Domains": 3, 
+        "Length": 652, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "1pn0A": {
+        "Domains": 3, 
+        "Length": 652, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "2r7jA": {
+        "Domains": 2, 
+        "Length": 307, 
+        "Interaction_Energy": "4.63"
+    }, 
+    "1k0rB": {
+        "Domains": 4, 
+        "Length": 326, 
+        "Interaction_Energy": "5.88"
+    }, 
+    "3dbkA": {
+        "Domains": 2, 
+        "Length": 298, 
+        "Interaction_Energy": "8.37"
+    }, 
+    "1y88A": {
+        "Domains": 2, 
+        "Length": 186, 
+        "Interaction_Energy": "2.73"
+    }, 
+    "2ahrA": {
+        "Domains": 2, 
+        "Length": 250, 
+        "Interaction_Energy": "3.17"
+    }, 
+    "1nf1A": {
+        "Domains": 2, 
+        "Length": 260, 
+        "Interaction_Energy": "5.0"
+    }, 
+    "2cx1A": {
+        "Domains": 2, 
+        "Length": 181, 
+        "Interaction_Energy": "5.73"
+    }, 
+    "1lkmA": {
+        "Domains": 2, 
+        "Length": 191, 
+        "Interaction_Energy": "7.84"
+    }, 
+    "1bhtA": {
+        "Domains": 2, 
+        "Length": 176, 
+        "Interaction_Energy": "0.93"
+    }, 
+    "2cweA": {
+        "Domains": 2, 
+        "Length": 191, 
+        "Interaction_Energy": "5.78"
+    }, 
+    "2qsdD": {
+        "Domains": 2, 
+        "Length": 145, 
+        "Interaction_Energy": "7.87"
+    }, 
+    "2qsdA": {
+        "Domains": 2, 
+        "Length": 145, 
+        "Interaction_Energy": "9.07"
+    }, 
+    "3fxkA": {
+        "Domains": 2, 
+        "Length": 364, 
+        "Interaction_Energy": "4.56"
+    }, 
+    "3gvkA": {
+        "Domains": 4, 
+        "Length": 661, 
+        "Interaction_Energy": "15.2"
+    }, 
+    "3gvkB": {
+        "Domains": 4, 
+        "Length": 680, 
+        "Interaction_Energy": "15.7"
+    }, 
+    "3gvkC": {
+        "Domains": 4, 
+        "Length": 678, 
+        "Interaction_Energy": "14.1"
+    }, 
+    "2nqsA": {
+        "Domains": 4, 
+        "Length": 403, 
+        "Interaction_Energy": "14.3"
+    }, 
+    "2nqsB": {
+        "Domains": 4, 
+        "Length": 403, 
+        "Interaction_Energy": "14.5"
+    }, 
+    "1t11B": {
+        "Domains": 3, 
+        "Length": 374, 
+        "Interaction_Energy": "6.85"
+    }, 
+    "1oamA": {
+        "Domains": 4, 
+        "Length": 394, 
+        "Interaction_Energy": "17.3"
+    }, 
+    "1korC": {
+        "Domains": 2, 
+        "Length": 386, 
+        "Interaction_Energy": "5.22"
+    }, 
+    "1l0wA": {
+        "Domains": 3, 
+        "Length": 580, 
+        "Interaction_Energy": "6.15"
+    }, 
+    "3cwcB": {
+        "Domains": 2, 
+        "Length": 367, 
+        "Interaction_Energy": "2.94"
+    }, 
+    "1cy2A": {
+        "Domains": 4, 
+        "Length": 557, 
+        "Interaction_Energy": "16.4"
+    }, 
+    "1vqpP": {
+        "Domains": 3, 
+        "Length": 143, 
+        "Interaction_Energy": "3.72"
+    }, 
+    "1eg7A": {
+        "Domains": 3, 
+        "Length": 549, 
+        "Interaction_Energy": "16.7"
+    }, 
+    "3g5cA": {
+        "Domains": 3, 
+        "Length": 486, 
+        "Interaction_Energy": "8.36"
+    }, 
+    "2jhmF": {
+        "Domains": 2, 
+        "Length": 234, 
+        "Interaction_Energy": "15.3"
+    }, 
+    "2gk9D": {
+        "Domains": 2, 
+        "Length": 250, 
+        "Interaction_Energy": "4.37"
+    }, 
+    "1vloA": {
+        "Domains": 4, 
+        "Length": 354, 
+        "Interaction_Energy": "28.2"
+    }, 
+    "1zjbA": {
+        "Domains": 3, 
+        "Length": 563, 
+        "Interaction_Energy": "14.5"
+    }, 
+    "1vqpB": {
+        "Domains": 3, 
+        "Length": 337, 
+        "Interaction_Energy": "7.68"
+    }, 
+    "1vqpA": {
+        "Domains": 3, 
+        "Length": 237, 
+        "Interaction_Energy": "10.1"
+    }, 
+    "1uz5A": {
+        "Domains": 4, 
+        "Length": 391, 
+        "Interaction_Energy": "15.9"
+    }, 
+    "1vprA": {
+        "Domains": 3, 
+        "Length": 344, 
+        "Interaction_Energy": "20.1"
+    }, 
+    "1y0pA": {
+        "Domains": 3, 
+        "Length": 568, 
+        "Interaction_Energy": "11.9"
+    }, 
+    "1murA": {
+        "Domains": 3, 
+        "Length": 455, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "1n62F": {
+        "Domains": 3, 
+        "Length": 286, 
+        "Interaction_Energy": "20.0"
+    }, 
+    "1n62C": {
+        "Domains": 3, 
+        "Length": 288, 
+        "Interaction_Energy": "19.0"
+    }, 
+    "1hciA": {
+        "Domains": 4, 
+        "Length": 475, 
+        "Interaction_Energy": "8.86"
+    }, 
+    "1hciB": {
+        "Domains": 4, 
+        "Length": 475, 
+        "Interaction_Energy": "8.86"
+    }, 
+    "1cxtA": {
+        "Domains": 4, 
+        "Length": 767, 
+        "Interaction_Energy": "17.6"
+    }, 
+    "1d8cA": {
+        "Domains": 4, 
+        "Length": 688, 
+        "Interaction_Energy": "18.2"
+    }, 
+    "1ad5A": {
+        "Domains": 4, 
+        "Length": 437, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1ad5B": {
+        "Domains": 4, 
+        "Length": 437, 
+        "Interaction_Energy": "12.6"
+    }, 
+    "2havA": {
+        "Domains": 4, 
+        "Length": 676, 
+        "Interaction_Energy": "6.0"
+    }, 
+    "2elcB": {
+        "Domains": 2, 
+        "Length": 329, 
+        "Interaction_Energy": "5.95"
+    }, 
+    "2ozgA": {
+        "Domains": 3, 
+        "Length": 389, 
+        "Interaction_Energy": "12.1"
+    }, 
+    "2dfyC": {
+        "Domains": 2, 
+        "Length": 159, 
+        "Interaction_Energy": "2.38"
+    }, 
+    "1d4vA": {
+        "Domains": 3, 
+        "Length": 117, 
+        "Interaction_Energy": "21.7"
+    }, 
+    "1x27A": {
+        "Domains": 2, 
+        "Length": 163, 
+        "Interaction_Energy": "4.15"
+    }, 
+    "1wqfA": {
+        "Domains": 2, 
+        "Length": 183, 
+        "Interaction_Energy": "5.4"
+    }, 
+    "2o2kB": {
+        "Domains": 2, 
+        "Length": 342, 
+        "Interaction_Energy": "8.06"
+    }, 
+    "1wvfA": {
+        "Domains": 4, 
+        "Length": 539, 
+        "Interaction_Energy": "28.0"
+    }, 
+    "1o04A": {
+        "Domains": 2, 
+        "Length": 497, 
+        "Interaction_Energy": "6.11"
+    }, 
+    "3h90B": {
+        "Domains": 2, 
+        "Length": 283, 
+        "Interaction_Energy": "6.16"
+    }, 
+    "2fokB": {
+        "Domains": 3, 
+        "Length": 560, 
+        "Interaction_Energy": "7.89"
+    }, 
+    "2fokA": {
+        "Domains": 3, 
+        "Length": 558, 
+        "Interaction_Energy": "8.26"
+    }, 
+    "3hhsB": {
+        "Domains": 3, 
+        "Length": 657, 
+        "Interaction_Energy": "9.14"
+    }, 
+    "1gqiB": {
+        "Domains": 3, 
+        "Length": 708, 
+        "Interaction_Energy": "13.5"
+    }, 
+    "1gqiA": {
+        "Domains": 3, 
+        "Length": 708, 
+        "Interaction_Energy": "13.3"
+    }, 
+    "2nz8B": {
+        "Domains": 2, 
+        "Length": 279, 
+        "Interaction_Energy": "2.24"
+    }, 
+    "1eu1A": {
+        "Domains": 4, 
+        "Length": 766, 
+        "Interaction_Energy": "17.7"
+    }, 
+    "3h52A": {
+        "Domains": 2, 
+        "Length": 247, 
+        "Interaction_Energy": "5.34"
+    }, 
+    "2b5eA": {
+        "Domains": 4, 
+        "Length": 483, 
+        "Interaction_Energy": "3.06"
+    }, 
+    "2ijrA": {
+        "Domains": 2, 
+        "Length": 276, 
+        "Interaction_Energy": "2.57"
+    }, 
+    "3be1A": {
+        "Domains": 4, 
+        "Length": 583, 
+        "Interaction_Energy": "7.3"
+    }, 
+    "2zy9B": {
+        "Domains": 3, 
+        "Length": 429, 
+        "Interaction_Energy": "7.9"
+    }, 
+    "3cjqB": {
+        "Domains": 2, 
+        "Length": 121, 
+        "Interaction_Energy": "2.95"
+    }, 
+    "3dclD": {
+        "Domains": 3, 
+        "Length": 273, 
+        "Interaction_Energy": "24.6"
+    }, 
+    "3rjzA": {
+        "Domains": 2, 
+        "Length": 206, 
+        "Interaction_Energy": "7.71"
+    }, 
+    "2axqA": {
+        "Domains": 3, 
+        "Length": 445, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "3dclB": {
+        "Domains": 3, 
+        "Length": 271, 
+        "Interaction_Energy": "24.6"
+    }, 
+    "1g5aA": {
+        "Domains": 4, 
+        "Length": 628, 
+        "Interaction_Energy": "24.2"
+    }, 
+    "3sf6A": {
+        "Domains": 3, 
+        "Length": 401, 
+        "Interaction_Energy": "19.3"
+    }, 
+    "2v3yA": {
+        "Domains": 2, 
+        "Length": 466, 
+        "Interaction_Energy": "2.94"
+    }, 
+    "1cttA": {
+        "Domains": 2, 
+        "Length": 294, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "3c24B": {
+        "Domains": 2, 
+        "Length": 273, 
+        "Interaction_Energy": "5.7"
+    }, 
+    "2y1eB": {
+        "Domains": 3, 
+        "Length": 380, 
+        "Interaction_Energy": "13.6"
+    }, 
+    "2y1eA": {
+        "Domains": 3, 
+        "Length": 374, 
+        "Interaction_Energy": "14.9"
+    }, 
+    "2xd4A": {
+        "Domains": 4, 
+        "Length": 421, 
+        "Interaction_Energy": "22.0"
+    }, 
+    "3abqC": {
+        "Domains": 3, 
+        "Length": 459, 
+        "Interaction_Energy": "18.7"
+    }, 
+    "2j8gA": {
+        "Domains": 3, 
+        "Length": 338, 
+        "Interaction_Energy": "9.76"
+    }, 
+    "1umkA": {
+        "Domains": 2, 
+        "Length": 271, 
+        "Interaction_Energy": "3.47"
+    }, 
+    "1i19A": {
+        "Domains": 4, 
+        "Length": 541, 
+        "Interaction_Energy": "32.0"
+    }, 
+    "3oguA": {
+        "Domains": 4, 
+        "Length": 326, 
+        "Interaction_Energy": "16.6"
+    }, 
+    "1i19B": {
+        "Domains": 4, 
+        "Length": 538, 
+        "Interaction_Energy": "34.0"
+    }, 
+    "1it7B": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "21.6"
+    }, 
+    "1it7A": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "22.9"
+    }, 
+    "1ciyA": {
+        "Domains": 3, 
+        "Length": 577, 
+        "Interaction_Energy": "8.7"
+    }, 
+    "1k2yX": {
+        "Domains": 4, 
+        "Length": 459, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "2q66A": {
+        "Domains": 3, 
+        "Length": 551, 
+        "Interaction_Energy": "6.58"
+    }, 
+    "2j02D": {
+        "Domains": 2, 
+        "Length": 208, 
+        "Interaction_Energy": "5.21"
+    }, 
+    "1eclA": {
+        "Domains": 4, 
+        "Length": 552, 
+        "Interaction_Energy": "14.6"
+    }, 
+    "1iweB": {
+        "Domains": 3, 
+        "Length": 431, 
+        "Interaction_Energy": "12.6"
+    }, 
+    "2wbmA": {
+        "Domains": 3, 
+        "Length": 243, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "2oyoA": {
+        "Domains": 2, 
+        "Length": 184, 
+        "Interaction_Energy": "8.6"
+    }, 
+    "2h88A": {
+        "Domains": 4, 
+        "Length": 612, 
+        "Interaction_Energy": "28.7"
+    }, 
+    "3b7sA": {
+        "Domains": 4, 
+        "Length": 610, 
+        "Interaction_Energy": "20.7"
+    }, 
+    "1sh0A": {
+        "Domains": 4, 
+        "Length": 502, 
+        "Interaction_Energy": "20.9"
+    }, 
+    "2qpjA": {
+        "Domains": 2, 
+        "Length": 696, 
+        "Interaction_Energy": "4.57"
+    }, 
+    "1gdtB": {
+        "Domains": 3, 
+        "Length": 183, 
+        "Interaction_Energy": "3.7"
+    }, 
+    "2zydB": {
+        "Domains": 3, 
+        "Length": 466, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1sh0B": {
+        "Domains": 4, 
+        "Length": 503, 
+        "Interaction_Energy": "19.9"
+    }, 
+    "2qocA": {
+        "Domains": 2, 
+        "Length": 319, 
+        "Interaction_Energy": "5.95"
+    }, 
+    "1rk6A": {
+        "Domains": 3, 
+        "Length": 475, 
+        "Interaction_Energy": "16.4"
+    }, 
+    "1galA": {
+        "Domains": 3, 
+        "Length": 581, 
+        "Interaction_Energy": "19.3"
+    }, 
+    "3fh5A": {
+        "Domains": 4, 
+        "Length": 607, 
+        "Interaction_Energy": "19.8"
+    }, 
+    "1g9gA": {
+        "Domains": 3, 
+        "Length": 640, 
+        "Interaction_Energy": "15.7"
+    }, 
+    "1ki0A": {
+        "Domains": 3, 
+        "Length": 253, 
+        "Interaction_Energy": "4.71"
+    }, 
+    "2bcrA": {
+        "Domains": 4, 
+        "Length": 331, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "1is2B": {
+        "Domains": 4, 
+        "Length": 629, 
+        "Interaction_Energy": "17.5"
+    }, 
+    "3gyjA": {
+        "Domains": 2, 
+        "Length": 618, 
+        "Interaction_Energy": "6.9"
+    }, 
+    "1zjaB": {
+        "Domains": 3, 
+        "Length": 565, 
+        "Interaction_Energy": "14.9"
+    }, 
+    "1zjaA": {
+        "Domains": 3, 
+        "Length": 568, 
+        "Interaction_Energy": "14.8"
+    }, 
+    "1fcdA": {
+        "Domains": 3, 
+        "Length": 401, 
+        "Interaction_Energy": "18.2"
+    }, 
+    "1h5wA": {
+        "Domains": 3, 
+        "Length": 249, 
+        "Interaction_Energy": "8.4"
+    }, 
+    "1h5wB": {
+        "Domains": 3, 
+        "Length": 255, 
+        "Interaction_Energy": "8.08"
+    }, 
+    "1h5wC": {
+        "Domains": 3, 
+        "Length": 251, 
+        "Interaction_Energy": "8.3"
+    }, 
+    "1gm9B": {
+        "Domains": 3, 
+        "Length": 559, 
+        "Interaction_Energy": "9.11"
+    }, 
+    "3jyuA": {
+        "Domains": 2, 
+        "Length": 217, 
+        "Interaction_Energy": "3.78"
+    }, 
+    "1wtdA": {
+        "Domains": 2, 
+        "Length": 264, 
+        "Interaction_Energy": "3.65"
+    }, 
+    "3a5xA": {
+        "Domains": 4, 
+        "Length": 494, 
+        "Interaction_Energy": "8.59"
+    }, 
+    "1lonA": {
+        "Domains": 3, 
+        "Length": 431, 
+        "Interaction_Energy": "14.5"
+    }, 
+    "1qzfC": {
+        "Domains": 3, 
+        "Length": 519, 
+        "Interaction_Energy": "11.6"
+    }, 
+    "1qzfB": {
+        "Domains": 3, 
+        "Length": 519, 
+        "Interaction_Energy": "11.4"
+    }, 
+    "1cqxA": {
+        "Domains": 3, 
+        "Length": 403, 
+        "Interaction_Energy": "8.82"
+    }, 
+    "1cqxB": {
+        "Domains": 3, 
+        "Length": 403, 
+        "Interaction_Energy": "8.34"
+    }, 
+    "3nvsA": {
+        "Domains": 2, 
+        "Length": 473, 
+        "Interaction_Energy": "2.68"
+    }, 
+    "1ytkA": {
+        "Domains": 3, 
+        "Length": 389, 
+        "Interaction_Energy": "15.8"
+    }, 
+    "1po0A": {
+        "Domains": 2, 
+        "Length": 661, 
+        "Interaction_Energy": "10.0"
+    }, 
+    "1uzpA": {
+        "Domains": 3, 
+        "Length": 152, 
+        "Interaction_Energy": "24.5"
+    }, 
+    "2nyaA": {
+        "Domains": 4, 
+        "Length": 791, 
+        "Interaction_Energy": "24.5"
+    }, 
+    "2nyaF": {
+        "Domains": 4, 
+        "Length": 791, 
+        "Interaction_Energy": "25.9"
+    }, 
+    "1pfxL": {
+        "Domains": 4, 
+        "Length": 133, 
+        "Interaction_Energy": "30.2"
+    }, 
+    "1lv0A": {
+        "Domains": 3, 
+        "Length": 433, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "2ehlA": {
+        "Domains": 2, 
+        "Length": 265, 
+        "Interaction_Energy": "3.12"
+    }, 
+    "1jeyA": {
+        "Domains": 4, 
+        "Length": 493, 
+        "Interaction_Energy": "5.92"
+    }, 
+    "1e8cB": {
+        "Domains": 3, 
+        "Length": 484, 
+        "Interaction_Energy": "7.83"
+    }, 
+    "1e8cA": {
+        "Domains": 3, 
+        "Length": 482, 
+        "Interaction_Energy": "9.38"
+    }, 
+    "3ojsA": {
+        "Domains": 4, 
+        "Length": 541, 
+        "Interaction_Energy": "16.0"
+    }, 
+    "2auwB": {
+        "Domains": 2, 
+        "Length": 162, 
+        "Interaction_Energy": "4.24"
+    }, 
+    "1twfE": {
+        "Domains": 2, 
+        "Length": 215, 
+        "Interaction_Energy": "7.4"
+    }, 
+    "1twfC": {
+        "Domains": 2, 
+        "Length": 266, 
+        "Interaction_Energy": "4.39"
+    }, 
+    "1hjpA": {
+        "Domains": 3, 
+        "Length": 186, 
+        "Interaction_Energy": "9.43"
+    }, 
+    "1i1iP": {
+        "Domains": 3, 
+        "Length": 665, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "3mzfA": {
+        "Domains": 2, 
+        "Length": 365, 
+        "Interaction_Energy": "3.06"
+    }, 
+    "2wfpA": {
+        "Domains": 3, 
+        "Length": 399, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "2bcqA": {
+        "Domains": 4, 
+        "Length": 329, 
+        "Interaction_Energy": "12.2"
+    }, 
+    "1cjyB": {
+        "Domains": 2, 
+        "Length": 614, 
+        "Interaction_Energy": "3.54"
+    }, 
+    "1vqqA": {
+        "Domains": 4, 
+        "Length": 635, 
+        "Interaction_Energy": "17.7"
+    }, 
+    "1vqqB": {
+        "Domains": 4, 
+        "Length": 625, 
+        "Interaction_Energy": "18.4"
+    }, 
+    "1yc9A": {
+        "Domains": 2, 
+        "Length": 416, 
+        "Interaction_Energy": "3.28"
+    }, 
+    "1xviB": {
+        "Domains": 2, 
+        "Length": 242, 
+        "Interaction_Energy": "7.61"
+    }, 
+    "2mbrA": {
+        "Domains": 3, 
+        "Length": 340, 
+        "Interaction_Energy": "18.5"
+    }, 
+    "1p42B": {
+        "Domains": 2, 
+        "Length": 270, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "2nqrB": {
+        "Domains": 4, 
+        "Length": 403, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "1kv9A": {
+        "Domains": 2, 
+        "Length": 664, 
+        "Interaction_Energy": "9.86"
+    }, 
+    "1fjrB": {
+        "Domains": 2, 
+        "Length": 188, 
+        "Interaction_Energy": "7.18"
+    }, 
+    "1ok3A": {
+        "Domains": 4, 
+        "Length": 252, 
+        "Interaction_Energy": "11.8"
+    }, 
+    "1y8aA": {
+        "Domains": 3, 
+        "Length": 324, 
+        "Interaction_Energy": "20.0"
+    }, 
+    "1r6vA": {
+        "Domains": 4, 
+        "Length": 671, 
+        "Interaction_Energy": "24.0"
+    }, 
+    "3i2kA": {
+        "Domains": 3, 
+        "Length": 637, 
+        "Interaction_Energy": "15.4"
+    }, 
+    "1f0lB": {
+        "Domains": 3, 
+        "Length": 536, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "2gy5A": {
+        "Domains": 4, 
+        "Length": 423, 
+        "Interaction_Energy": "23.9"
+    }, 
+    "1f0lA": {
+        "Domains": 3, 
+        "Length": 531, 
+        "Interaction_Energy": "13.0"
+    }, 
+    "1r0vA": {
+        "Domains": 3, 
+        "Length": 244, 
+        "Interaction_Energy": "9.83"
+    }, 
+    "1r0vB": {
+        "Domains": 3, 
+        "Length": 244, 
+        "Interaction_Energy": "9.42"
+    }, 
+    "1r0vC": {
+        "Domains": 3, 
+        "Length": 244, 
+        "Interaction_Energy": "9.34"
+    }, 
+    "1r0vD": {
+        "Domains": 3, 
+        "Length": 243, 
+        "Interaction_Energy": "9.46"
+    }, 
+    "2d29B": {
+        "Domains": 3, 
+        "Length": 386, 
+        "Interaction_Energy": "16.9"
+    }, 
+    "2d29A": {
+        "Domains": 3, 
+        "Length": 386, 
+        "Interaction_Energy": "16.5"
+    }, 
+    "2pgsA": {
+        "Domains": 3, 
+        "Length": 382, 
+        "Interaction_Energy": "19.8"
+    }, 
+    "1i7dA": {
+        "Domains": 4, 
+        "Length": 620, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "1pwuB": {
+        "Domains": 4, 
+        "Length": 736, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "1muhA": {
+        "Domains": 3, 
+        "Length": 455, 
+        "Interaction_Energy": "10.1"
+    }, 
+    "1kmoA": {
+        "Domains": 2, 
+        "Length": 661, 
+        "Interaction_Energy": "9.78"
+    }, 
+    "3dsdA": {
+        "Domains": 2, 
+        "Length": 333, 
+        "Interaction_Energy": "4.17"
+    }, 
+    "3cddA": {
+        "Domains": 3, 
+        "Length": 329, 
+        "Interaction_Energy": "15.5"
+    }, 
+    "3cddF": {
+        "Domains": 3, 
+        "Length": 323, 
+        "Interaction_Energy": "16.4"
+    }, 
+    "2qriA": {
+        "Domains": 3, 
+        "Length": 398, 
+        "Interaction_Energy": "19.9"
+    }, 
+    "2qriB": {
+        "Domains": 3, 
+        "Length": 398, 
+        "Interaction_Energy": "17.2"
+    }, 
+    "1bg5A": {
+        "Domains": 3, 
+        "Length": 254, 
+        "Interaction_Energy": "8.66"
+    }, 
+    "1ezmA": {
+        "Domains": 2, 
+        "Length": 298, 
+        "Interaction_Energy": "8.74"
+    }, 
+    "2hv2C": {
+        "Domains": 3, 
+        "Length": 379, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "2e6fB": {
+        "Domains": 2, 
+        "Length": 312, 
+        "Interaction_Energy": "8.23"
+    }, 
+    "1u5eA": {
+        "Domains": 2, 
+        "Length": 170, 
+        "Interaction_Energy": "1.42"
+    }, 
+    "1kjwA": {
+        "Domains": 3, 
+        "Length": 292, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "2j58D": {
+        "Domains": 4, 
+        "Length": 345, 
+        "Interaction_Energy": "7.11"
+    }, 
+    "3ml1A": {
+        "Domains": 4, 
+        "Length": 808, 
+        "Interaction_Energy": "27.4"
+    }, 
+    "1a8rA": {
+        "Domains": 2, 
+        "Length": 221, 
+        "Interaction_Energy": "7.46"
+    }, 
+    "2gq3B": {
+        "Domains": 4, 
+        "Length": 714, 
+        "Interaction_Energy": "21.0"
+    }, 
+    "2gq3A": {
+        "Domains": 4, 
+        "Length": 720, 
+        "Interaction_Energy": "19.2"
+    }, 
+    "2jhkF": {
+        "Domains": 2, 
+        "Length": 229, 
+        "Interaction_Energy": "14.9"
+    }, 
+    "1dgkN": {
+        "Domains": 4, 
+        "Length": 898, 
+        "Interaction_Energy": "9.42"
+    }, 
+    "1gkfB": {
+        "Domains": 3, 
+        "Length": 575, 
+        "Interaction_Energy": "8.87"
+    }, 
+    "1juhA": {
+        "Domains": 2, 
+        "Length": 334, 
+        "Interaction_Energy": "7.52"
+    }, 
+    "1h29A": {
+        "Domains": 4, 
+        "Length": 501, 
+        "Interaction_Energy": "11.3"
+    }, 
+    "2cxnA": {
+        "Domains": 3, 
+        "Length": 557, 
+        "Interaction_Energy": "11.2"
+    }, 
+    "1oqzB": {
+        "Domains": 4, 
+        "Length": 686, 
+        "Interaction_Energy": "22.1"
+    }, 
+    "1oqzA": {
+        "Domains": 4, 
+        "Length": 684, 
+        "Interaction_Energy": "22.2"
+    }, 
+    "2v40A": {
+        "Domains": 3, 
+        "Length": 433, 
+        "Interaction_Energy": "12.6"
+    }, 
+    "3ar6A": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.98"
+    }, 
+    "1wuiS": {
+        "Domains": 2, 
+        "Length": 267, 
+        "Interaction_Energy": "5.69"
+    }, 
+    "1sx3A": {
+        "Domains": 3, 
+        "Length": 525, 
+        "Interaction_Energy": "7.56"
+    }, 
+    "1sx3B": {
+        "Domains": 3, 
+        "Length": 525, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "1sx3C": {
+        "Domains": 3, 
+        "Length": 525, 
+        "Interaction_Energy": "9.99"
+    }, 
+    "1jqpA": {
+        "Domains": 2, 
+        "Length": 348, 
+        "Interaction_Energy": "7.44"
+    }, 
+    "1wteA": {
+        "Domains": 2, 
+        "Length": 272, 
+        "Interaction_Energy": "3.62"
+    }, 
+    "1zymB": {
+        "Domains": 2, 
+        "Length": 248, 
+        "Interaction_Energy": "4.83"
+    }, 
+    "3c9uB": {
+        "Domains": 2, 
+        "Length": 312, 
+        "Interaction_Energy": "9.46"
+    }, 
+    "1sezB": {
+        "Domains": 3, 
+        "Length": 456, 
+        "Interaction_Energy": "13.4"
+    }, 
+    "1sezA": {
+        "Domains": 3, 
+        "Length": 456, 
+        "Interaction_Energy": "12.2"
+    }, 
+    "1ko7A": {
+        "Domains": 2, 
+        "Length": 286, 
+        "Interaction_Energy": "1.24"
+    }, 
+    "1rerA": {
+        "Domains": 3, 
+        "Length": 391, 
+        "Interaction_Energy": "9.78"
+    }, 
+    "2xhiA": {
+        "Domains": 3, 
+        "Length": 316, 
+        "Interaction_Energy": "17.8"
+    }, 
+    "1iipA": {
+        "Domains": 2, 
+        "Length": 297, 
+        "Interaction_Energy": "1.19"
+    }, 
+    "2h5aX": {
+        "Domains": 4, 
+        "Length": 459, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "3do6B": {
+        "Domains": 3, 
+        "Length": 543, 
+        "Interaction_Energy": "14.4"
+    }, 
+    "3do6A": {
+        "Domains": 3, 
+        "Length": 547, 
+        "Interaction_Energy": "15.5"
+    }, 
+    "1hbnA": {
+        "Domains": 3, 
+        "Length": 543, 
+        "Interaction_Energy": "14.1"
+    }, 
+    "1hm9A": {
+        "Domains": 2, 
+        "Length": 463, 
+        "Interaction_Energy": "2.21"
+    }, 
+    "1hbnD": {
+        "Domains": 3, 
+        "Length": 543, 
+        "Interaction_Energy": "14.3"
+    }, 
+    "1hbnE": {
+        "Domains": 2, 
+        "Length": 442, 
+        "Interaction_Energy": "3.93"
+    }, 
+    "3qvpA": {
+        "Domains": 3, 
+        "Length": 581, 
+        "Interaction_Energy": "18.8"
+    }, 
+    "1pinA": {
+        "Domains": 2, 
+        "Length": 153, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "1xd4A": {
+        "Domains": 4, 
+        "Length": 824, 
+        "Interaction_Energy": "10.1"
+    }, 
+    "1xd4B": {
+        "Domains": 4, 
+        "Length": 824, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "1ldkA": {
+        "Domains": 3, 
+        "Length": 358, 
+        "Interaction_Energy": "9.05"
+    }, 
+    "2p3yB": {
+        "Domains": 4, 
+        "Length": 447, 
+        "Interaction_Energy": "14.6"
+    }, 
+    "2p3yA": {
+        "Domains": 4, 
+        "Length": 447, 
+        "Interaction_Energy": "14.5"
+    }, 
+    "2ptqA": {
+        "Domains": 3, 
+        "Length": 459, 
+        "Interaction_Energy": "9.65"
+    }, 
+    "3gf3A": {
+        "Domains": 3, 
+        "Length": 563, 
+        "Interaction_Energy": "13.2"
+    }, 
+    "1a79B": {
+        "Domains": 2, 
+        "Length": 171, 
+        "Interaction_Energy": "2.8"
+    }, 
+    "1pp1X": {
+        "Domains": 2, 
+        "Length": 326, 
+        "Interaction_Energy": "2.9"
+    }, 
+    "3bu2B": {
+        "Domains": 2, 
+        "Length": 189, 
+        "Interaction_Energy": "1.05"
+    }, 
+    "3doaA": {
+        "Domains": 3, 
+        "Length": 266, 
+        "Interaction_Energy": "18.9"
+    }, 
+    "2ww3C": {
+        "Domains": 4, 
+        "Length": 736, 
+        "Interaction_Energy": "22.0"
+    }, 
+    "3n5kB": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.01"
+    }, 
+    "2ww3D": {
+        "Domains": 4, 
+        "Length": 738, 
+        "Interaction_Energy": "23.6"
+    }, 
+    "3bp1B": {
+        "Domains": 2, 
+        "Length": 272, 
+        "Interaction_Energy": "6.45"
+    }, 
+    "1m4uA": {
+        "Domains": 2, 
+        "Length": 199, 
+        "Interaction_Energy": "4.74"
+    }, 
+    "3d6wB": {
+        "Domains": 2, 
+        "Length": 107, 
+        "Interaction_Energy": "5.35"
+    }, 
+    "1qsaA": {
+        "Domains": 3, 
+        "Length": 618, 
+        "Interaction_Energy": "10.1"
+    }, 
+    "3s8rA": {
+        "Domains": 4, 
+        "Length": 684, 
+        "Interaction_Energy": "22.8"
+    }, 
+    "1gupA": {
+        "Domains": 2, 
+        "Length": 347, 
+        "Interaction_Energy": "8.88"
+    }, 
+    "3s8rB": {
+        "Domains": 4, 
+        "Length": 686, 
+        "Interaction_Energy": "22.2"
+    }, 
+    "2nqqB": {
+        "Domains": 4, 
+        "Length": 403, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "2nqqA": {
+        "Domains": 4, 
+        "Length": 403, 
+        "Interaction_Energy": "13.8"
+    }, 
+    "1kaxA": {
+        "Domains": 4, 
+        "Length": 378, 
+        "Interaction_Energy": "22.9"
+    }, 
+    "1vkwA": {
+        "Domains": 2, 
+        "Length": 213, 
+        "Interaction_Energy": "8.32"
+    }, 
+    "2dsjB": {
+        "Domains": 3, 
+        "Length": 423, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "1ucuA": {
+        "Domains": 4, 
+        "Length": 494, 
+        "Interaction_Energy": "8.28"
+    }, 
+    "1c97A": {
+        "Domains": 4, 
+        "Length": 753, 
+        "Interaction_Energy": "18.0"
+    }, 
+    "3i5dA": {
+        "Domains": 2, 
+        "Length": 324, 
+        "Interaction_Energy": "7.28"
+    }, 
+    "1n7vA": {
+        "Domains": 3, 
+        "Length": 533, 
+        "Interaction_Energy": "8.84"
+    }, 
+    "1bcpB": {
+        "Domains": 2, 
+        "Length": 197, 
+        "Interaction_Energy": "4.83"
+    }, 
+    "1sr8A": {
+        "Domains": 3, 
+        "Length": 282, 
+        "Interaction_Energy": "9.21"
+    }, 
+    "1df0A": {
+        "Domains": 4, 
+        "Length": 624, 
+        "Interaction_Energy": "22.3"
+    }, 
+    "2kn6A": {
+        "Domains": 2, 
+        "Length": 195, 
+        "Interaction_Energy": "0.877"
+    }, 
+    "2i71B": {
+        "Domains": 2, 
+        "Length": 371, 
+        "Interaction_Energy": "3.74"
+    }, 
+    "3gzuC": {
+        "Domains": 2, 
+        "Length": 397, 
+        "Interaction_Energy": "3.03"
+    }, 
+    "1z5bA": {
+        "Domains": 3, 
+        "Length": 466, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "1z5bB": {
+        "Domains": 3, 
+        "Length": 460, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "1or7A": {
+        "Domains": 2, 
+        "Length": 181, 
+        "Interaction_Energy": "2.56"
+    }, 
+    "1mpgB": {
+        "Domains": 3, 
+        "Length": 282, 
+        "Interaction_Energy": "15.9"
+    }, 
+    "1mpgA": {
+        "Domains": 3, 
+        "Length": 282, 
+        "Interaction_Energy": "16.2"
+    }, 
+    "1mqsA": {
+        "Domains": 4, 
+        "Length": 578, 
+        "Interaction_Energy": "13.7"
+    }, 
+    "2o3sA": {
+        "Domains": 2, 
+        "Length": 252, 
+        "Interaction_Energy": "3.39"
+    }, 
+    "1e7lA": {
+        "Domains": 2, 
+        "Length": 166, 
+        "Interaction_Energy": "1.43"
+    }, 
+    "1b37B": {
+        "Domains": 2, 
+        "Length": 462, 
+        "Interaction_Energy": "6.42"
+    }, 
+    "1ulnA": {
+        "Domains": 2, 
+        "Length": 82, 
+        "Interaction_Energy": "3.74"
+    }, 
+    "3f9mA": {
+        "Domains": 2, 
+        "Length": 458, 
+        "Interaction_Energy": "5.2"
+    }, 
+    "3dzuA": {
+        "Domains": 2, 
+        "Length": 289, 
+        "Interaction_Energy": "0.459"
+    }, 
+    "2o3eA": {
+        "Domains": 3, 
+        "Length": 665, 
+        "Interaction_Energy": "12.3"
+    }, 
+    "1jhfA": {
+        "Domains": 2, 
+        "Length": 197, 
+        "Interaction_Energy": "2.48"
+    }, 
+    "1g87A": {
+        "Domains": 2, 
+        "Length": 615, 
+        "Interaction_Energy": "2.14"
+    }, 
+    "1oqyA": {
+        "Domains": 4, 
+        "Length": 363, 
+        "Interaction_Energy": "2.35"
+    }, 
+    "1wao4": {
+        "Domains": 2, 
+        "Length": 466, 
+        "Interaction_Energy": "4.25"
+    }, 
+    "3ar7A": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "9.26"
+    }, 
+    "1qbaA": {
+        "Domains": 4, 
+        "Length": 858, 
+        "Interaction_Energy": "17.5"
+    }, 
+    "3mtyA": {
+        "Domains": 2, 
+        "Length": 262, 
+        "Interaction_Energy": "13.3"
+    }, 
+    "1amiA": {
+        "Domains": 4, 
+        "Length": 753, 
+        "Interaction_Energy": "18.6"
+    }, 
+    "1xgkA": {
+        "Domains": 2, 
+        "Length": 325, 
+        "Interaction_Energy": "5.71"
+    }, 
+    "3bf5A": {
+        "Domains": 2, 
+        "Length": 278, 
+        "Interaction_Energy": "7.9"
+    }, 
+    "1q16B": {
+        "Domains": 3, 
+        "Length": 509, 
+        "Interaction_Energy": "17.5"
+    }, 
+    "1hfeL": {
+        "Domains": 3, 
+        "Length": 412, 
+        "Interaction_Energy": "19.2"
+    }, 
+    "1vj7B": {
+        "Domains": 2, 
+        "Length": 310, 
+        "Interaction_Energy": "4.45"
+    }, 
+    "1r49A": {
+        "Domains": 4, 
+        "Length": 548, 
+        "Interaction_Energy": "14.7"
+    }, 
+    "2i06A": {
+        "Domains": 2, 
+        "Length": 305, 
+        "Interaction_Energy": "5.01"
+    }, 
+    "1e3pA": {
+        "Domains": 4, 
+        "Length": 645, 
+        "Interaction_Energy": "21.3"
+    }, 
+    "1pprN": {
+        "Domains": 2, 
+        "Length": 312, 
+        "Interaction_Energy": "8.23"
+    }, 
+    "3clqA": {
+        "Domains": 4, 
+        "Length": 400, 
+        "Interaction_Energy": "36.5"
+    }, 
+    "3clqB": {
+        "Domains": 4, 
+        "Length": 401, 
+        "Interaction_Energy": "34.4"
+    }, 
+    "3clqC": {
+        "Domains": 4, 
+        "Length": 401, 
+        "Interaction_Energy": "33.7"
+    }, 
+    "3clqD": {
+        "Domains": 4, 
+        "Length": 399, 
+        "Interaction_Energy": "36.1"
+    }, 
+    "1iq8B": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "23.8"
+    }, 
+    "1iq8A": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "24.8"
+    }, 
+    "1ddzA": {
+        "Domains": 2, 
+        "Length": 481, 
+        "Interaction_Energy": "4.87"
+    }, 
+    "1zq7B": {
+        "Domains": 2, 
+        "Length": 200, 
+        "Interaction_Energy": "5.71"
+    }, 
+    "2an6A": {
+        "Domains": 2, 
+        "Length": 191, 
+        "Interaction_Energy": "9.92"
+    }, 
+    "3hu3B": {
+        "Domains": 4, 
+        "Length": 446, 
+        "Interaction_Energy": "7.68"
+    }, 
+    "3hu3A": {
+        "Domains": 4, 
+        "Length": 453, 
+        "Interaction_Energy": "7.48"
+    }, 
+    "1d5tA": {
+        "Domains": 3, 
+        "Length": 433, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "1pg0A": {
+        "Domains": 2, 
+        "Length": 492, 
+        "Interaction_Energy": "5.59"
+    }, 
+    "1yc5A": {
+        "Domains": 2, 
+        "Length": 234, 
+        "Interaction_Energy": "4.7"
+    }, 
+    "1ckmA": {
+        "Domains": 3, 
+        "Length": 317, 
+        "Interaction_Energy": "10.9"
+    }, 
+    "1ckmB": {
+        "Domains": 3, 
+        "Length": 317, 
+        "Interaction_Energy": "11.4"
+    }, 
+    "1iweA": {
+        "Domains": 3, 
+        "Length": 430, 
+        "Interaction_Energy": "15.7"
+    }, 
+    "1jvaB": {
+        "Domains": 3, 
+        "Length": 430, 
+        "Interaction_Energy": "6.41"
+    }, 
+    "1gqeA": {
+        "Domains": 3, 
+        "Length": 354, 
+        "Interaction_Energy": "11.7"
+    }, 
+    "2qrtA": {
+        "Domains": 3, 
+        "Length": 398, 
+        "Interaction_Energy": "16.9"
+    }, 
+    "2olsA": {
+        "Domains": 4, 
+        "Length": 725, 
+        "Interaction_Energy": "13.5"
+    }, 
+    "1rkqB": {
+        "Domains": 2, 
+        "Length": 271, 
+        "Interaction_Energy": "5.9"
+    }, 
+    "2z1qA": {
+        "Domains": 4, 
+        "Length": 546, 
+        "Interaction_Energy": "20.7"
+    }, 
+    "2glfB": {
+        "Domains": 2, 
+        "Length": 437, 
+        "Interaction_Energy": "2.56"
+    }, 
+    "1cy7A": {
+        "Domains": 4, 
+        "Length": 563, 
+        "Interaction_Energy": "17.2"
+    }, 
+    "1wthD": {
+        "Domains": 4, 
+        "Length": 361, 
+        "Interaction_Energy": "27.8"
+    }, 
+    "1c96A": {
+        "Domains": 4, 
+        "Length": 753, 
+        "Interaction_Energy": "19.4"
+    }, 
+    "1wthA": {
+        "Domains": 4, 
+        "Length": 571, 
+        "Interaction_Energy": "5.1"
+    }, 
+    "3kczA": {
+        "Domains": 2, 
+        "Length": 357, 
+        "Interaction_Energy": "4.85"
+    }, 
+    "1fcfA": {
+        "Domains": 3, 
+        "Length": 387, 
+        "Interaction_Energy": "7.34"
+    }, 
+    "1eg4A": {
+        "Domains": 4, 
+        "Length": 260, 
+        "Interaction_Energy": "31.7"
+    }, 
+    "1qzrA": {
+        "Domains": 2, 
+        "Length": 382, 
+        "Interaction_Energy": "7.01"
+    }, 
+    "1qnfA": {
+        "Domains": 3, 
+        "Length": 475, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "2jhfB": {
+        "Domains": 2, 
+        "Length": 388, 
+        "Interaction_Energy": "5.44"
+    }, 
+    "3n5kA": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.17"
+    }, 
+    "1m1gA": {
+        "Domains": 3, 
+        "Length": 240, 
+        "Interaction_Energy": "4.91"
+    }, 
+    "1vr5A": {
+        "Domains": 3, 
+        "Length": 527, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "1t5hX": {
+        "Domains": 4, 
+        "Length": 488, 
+        "Interaction_Energy": "18.9"
+    }, 
+    "2shpB": {
+        "Domains": 3, 
+        "Length": 491, 
+        "Interaction_Energy": "11.1"
+    }, 
+    "1dk8A": {
+        "Domains": 2, 
+        "Length": 147, 
+        "Interaction_Energy": "3.35"
+    }, 
+    "1rl9A": {
+        "Domains": 2, 
+        "Length": 356, 
+        "Interaction_Energy": "7.31"
+    }, 
+    "1js8B": {
+        "Domains": 2, 
+        "Length": 382, 
+        "Interaction_Energy": "8.25"
+    }, 
+    "2wjnC": {
+        "Domains": 2, 
+        "Length": 332, 
+        "Interaction_Energy": "8.98"
+    }, 
+    "1vz6A": {
+        "Domains": 2, 
+        "Length": 376, 
+        "Interaction_Energy": "4.76"
+    }, 
+    "1pu6A": {
+        "Domains": 2, 
+        "Length": 216, 
+        "Interaction_Energy": "4.41"
+    }, 
+    "1s9rB": {
+        "Domains": 2, 
+        "Length": 409, 
+        "Interaction_Energy": "8.03"
+    }, 
+    "1s9rA": {
+        "Domains": 2, 
+        "Length": 409, 
+        "Interaction_Energy": "8.19"
+    }, 
+    "1lqtA": {
+        "Domains": 2, 
+        "Length": 473, 
+        "Interaction_Energy": "4.99"
+    }, 
+    "1xa6A": {
+        "Domains": 3, 
+        "Length": 399, 
+        "Interaction_Energy": "9.74"
+    }, 
+    "1lkpA": {
+        "Domains": 2, 
+        "Length": 191, 
+        "Interaction_Energy": "7.78"
+    }, 
+    "2qgqE": {
+        "Domains": 2, 
+        "Length": 264, 
+        "Interaction_Energy": "5.34"
+    }, 
+    "1x9nA": {
+        "Domains": 4, 
+        "Length": 626, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "1r9zA": {
+        "Domains": 2, 
+        "Length": 423, 
+        "Interaction_Energy": "6.56"
+    }, 
+    "2fh7A": {
+        "Domains": 2, 
+        "Length": 576, 
+        "Interaction_Energy": "1.17"
+    }, 
+    "1vsgA": {
+        "Domains": 2, 
+        "Length": 362, 
+        "Interaction_Energy": "2.32"
+    }, 
+    "1dyuB": {
+        "Domains": 4, 
+        "Length": 719, 
+        "Interaction_Energy": "24.4"
+    }, 
+    "1dyuA": {
+        "Domains": 4, 
+        "Length": 717, 
+        "Interaction_Energy": "25.3"
+    }, 
+    "1whfA": {
+        "Domains": 2, 
+        "Length": 73, 
+        "Interaction_Energy": "13.7"
+    }, 
+    "2w8hD": {
+        "Domains": 3, 
+        "Length": 323, 
+        "Interaction_Energy": "5.82"
+    }, 
+    "1fgjB": {
+        "Domains": 2, 
+        "Length": 499, 
+        "Interaction_Energy": "6.17"
+    }, 
+    "1fgjA": {
+        "Domains": 2, 
+        "Length": 499, 
+        "Interaction_Energy": "6.28"
+    }, 
+    "1bo1A": {
+        "Domains": 2, 
+        "Length": 326, 
+        "Interaction_Energy": "5.36"
+    }, 
+    "2qzuA": {
+        "Domains": 2, 
+        "Length": 450, 
+        "Interaction_Energy": "10.9"
+    }, 
+    "1lnzB": {
+        "Domains": 2, 
+        "Length": 310, 
+        "Interaction_Energy": "5.21"
+    }, 
+    "1s4bP": {
+        "Domains": 3, 
+        "Length": 654, 
+        "Interaction_Energy": "11.4"
+    }, 
+    "3bxjB": {
+        "Domains": 3, 
+        "Length": 358, 
+        "Interaction_Energy": "14.5"
+    }, 
+    "2w8hA": {
+        "Domains": 3, 
+        "Length": 323, 
+        "Interaction_Energy": "5.8"
+    }, 
+    "3gosA": {
+        "Domains": 2, 
+        "Length": 270, 
+        "Interaction_Energy": "8.82"
+    }, 
+    "3gosB": {
+        "Domains": 2, 
+        "Length": 276, 
+        "Interaction_Energy": "8.59"
+    }, 
+    "1r6tA": {
+        "Domains": 3, 
+        "Length": 428, 
+        "Interaction_Energy": "17.6"
+    }, 
+    "1e88A": {
+        "Domains": 3, 
+        "Length": 160, 
+        "Interaction_Energy": "11.4"
+    }, 
+    "2i05A": {
+        "Domains": 2, 
+        "Length": 305, 
+        "Interaction_Energy": "4.16"
+    }, 
+    "1wpkA": {
+        "Domains": 2, 
+        "Length": 145, 
+        "Interaction_Energy": "1.36"
+    }, 
+    "3gzhA": {
+        "Domains": 3, 
+        "Length": 474, 
+        "Interaction_Energy": "10.0"
+    }, 
+    "5reqB": {
+        "Domains": 3, 
+        "Length": 619, 
+        "Interaction_Energy": "6.41"
+    }, 
+    "5reqD": {
+        "Domains": 3, 
+        "Length": 619, 
+        "Interaction_Energy": "7.74"
+    }, 
+    "1vclB": {
+        "Domains": 3, 
+        "Length": 431, 
+        "Interaction_Energy": "7.61"
+    }, 
+    "1aipG": {
+        "Domains": 3, 
+        "Length": 195, 
+        "Interaction_Energy": "9.69"
+    }, 
+    "1aipD": {
+        "Domains": 3, 
+        "Length": 195, 
+        "Interaction_Energy": "9.39"
+    }, 
+    "1xo0A": {
+        "Domains": 2, 
+        "Length": 322, 
+        "Interaction_Energy": "0.493"
+    }, 
+    "2fb5B": {
+        "Domains": 2, 
+        "Length": 204, 
+        "Interaction_Energy": "3.58"
+    }, 
+    "3kflA": {
+        "Domains": 3, 
+        "Length": 535, 
+        "Interaction_Energy": "12.5"
+    }, 
+    "1jrpA": {
+        "Domains": 4, 
+        "Length": 450, 
+        "Interaction_Energy": "28.2"
+    }, 
+    "1rwhA": {
+        "Domains": 3, 
+        "Length": 755, 
+        "Interaction_Energy": "15.0"
+    }, 
+    "1hn0A": {
+        "Domains": 4, 
+        "Length": 971, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "3i33A": {
+        "Domains": 4, 
+        "Length": 385, 
+        "Interaction_Energy": "23.8"
+    }, 
+    "1x0cA": {
+        "Domains": 2, 
+        "Length": 549, 
+        "Interaction_Energy": "6.11"
+    }, 
+    "1cy1A": {
+        "Domains": 4, 
+        "Length": 557, 
+        "Interaction_Energy": "16.1"
+    }, 
+    "1svbA": {
+        "Domains": 4, 
+        "Length": 395, 
+        "Interaction_Energy": "13.6"
+    }, 
+    "1dq3A": {
+        "Domains": 4, 
+        "Length": 454, 
+        "Interaction_Energy": "22.2"
+    }, 
+    "1exrA": {
+        "Domains": 2, 
+        "Length": 183, 
+        "Interaction_Energy": "3.67"
+    }, 
+    "1w1qA": {
+        "Domains": 3, 
+        "Length": 479, 
+        "Interaction_Energy": "15.2"
+    }, 
+    "2h12A": {
+        "Domains": 3, 
+        "Length": 418, 
+        "Interaction_Energy": "11.7"
+    }, 
+    "2h12B": {
+        "Domains": 3, 
+        "Length": 426, 
+        "Interaction_Energy": "11.7"
+    }, 
+    "2h12C": {
+        "Domains": 3, 
+        "Length": 426, 
+        "Interaction_Energy": "11.9"
+    }, 
+    "2r31A": {
+        "Domains": 2, 
+        "Length": 285, 
+        "Interaction_Energy": "3.71"
+    }, 
+    "2h8hA": {
+        "Domains": 4, 
+        "Length": 446, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "1jjuA": {
+        "Domains": 4, 
+        "Length": 490, 
+        "Interaction_Energy": "22.7"
+    }, 
+    "3ar4A": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.94"
+    }, 
+    "1y8bA": {
+        "Domains": 4, 
+        "Length": 723, 
+        "Interaction_Energy": "18.0"
+    }, 
+    "1e3aB": {
+        "Domains": 3, 
+        "Length": 562, 
+        "Interaction_Energy": "9.23"
+    }, 
+    "1m1nB": {
+        "Domains": 4, 
+        "Length": 522, 
+        "Interaction_Energy": "15.8"
+    }, 
+    "3fsyD": {
+        "Domains": 3, 
+        "Length": 312, 
+        "Interaction_Energy": "13.6"
+    }, 
+    "1woyA": {
+        "Domains": 3, 
+        "Length": 500, 
+        "Interaction_Energy": "13.0"
+    }, 
+    "1fvhA": {
+        "Domains": 4, 
+        "Length": 546, 
+        "Interaction_Energy": "11.1"
+    }, 
+    "1zsqA": {
+        "Domains": 3, 
+        "Length": 513, 
+        "Interaction_Energy": "10.5"
+    }, 
+    "1m3iD": {
+        "Domains": 4, 
+        "Length": 465, 
+        "Interaction_Energy": "21.4"
+    }, 
+    "1yz9B": {
+        "Domains": 2, 
+        "Length": 218, 
+        "Interaction_Energy": "4.41"
+    }, 
+    "3lfuA": {
+        "Domains": 4, 
+        "Length": 633, 
+        "Interaction_Energy": "15.8"
+    }, 
+    "1hf2A": {
+        "Domains": 2, 
+        "Length": 196, 
+        "Interaction_Energy": "3.61"
+    }, 
+    "1mbmB": {
+        "Domains": 3, 
+        "Length": 192, 
+        "Interaction_Energy": "15.5"
+    }, 
+    "1oa0A": {
+        "Domains": 4, 
+        "Length": 544, 
+        "Interaction_Energy": "26.7"
+    }, 
+    "1oa0B": {
+        "Domains": 4, 
+        "Length": 544, 
+        "Interaction_Energy": "28.2"
+    }, 
+    "2q14F": {
+        "Domains": 2, 
+        "Length": 397, 
+        "Interaction_Energy": "4.17"
+    }, 
+    "1pnkB": {
+        "Domains": 3, 
+        "Length": 557, 
+        "Interaction_Energy": "9.23"
+    }, 
+    "1seiB": {
+        "Domains": 2, 
+        "Length": 130, 
+        "Interaction_Energy": "3.57"
+    }, 
+    "2v52B": {
+        "Domains": 3, 
+        "Length": 395, 
+        "Interaction_Energy": "15.7"
+    }, 
+    "1igtB": {
+        "Domains": 4, 
+        "Length": 444, 
+        "Interaction_Energy": "3.56"
+    }, 
+    "1fcdB": {
+        "Domains": 3, 
+        "Length": 401, 
+        "Interaction_Energy": "18.1"
+    }, 
+    "1igtD": {
+        "Domains": 4, 
+        "Length": 444, 
+        "Interaction_Energy": "6.92"
+    }, 
+    "1io1A": {
+        "Domains": 3, 
+        "Length": 395, 
+        "Interaction_Energy": "5.99"
+    }, 
+    "2vsgB": {
+        "Domains": 2, 
+        "Length": 358, 
+        "Interaction_Energy": "2.49"
+    }, 
+    "2bo9B": {
+        "Domains": 2, 
+        "Length": 217, 
+        "Interaction_Energy": "11.3"
+    }, 
+    "2vw2A": {
+        "Domains": 3, 
+        "Length": 658, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "1vdeA": {
+        "Domains": 3, 
+        "Length": 429, 
+        "Interaction_Energy": "8.57"
+    }, 
+    "2qj2B": {
+        "Domains": 2, 
+        "Length": 180, 
+        "Interaction_Energy": "1.36"
+    }, 
+    "1vdeB": {
+        "Domains": 3, 
+        "Length": 428, 
+        "Interaction_Energy": "6.67"
+    }, 
+    "1bp1A": {
+        "Domains": 2, 
+        "Length": 456, 
+        "Interaction_Energy": "5.4"
+    }, 
+    "1ileA": {
+        "Domains": 3, 
+        "Length": 821, 
+        "Interaction_Energy": "7.13"
+    }, 
+    "1c2aA": {
+        "Domains": 2, 
+        "Length": 120, 
+        "Interaction_Energy": "5.99"
+    }, 
+    "1vnsA": {
+        "Domains": 2, 
+        "Length": 574, 
+        "Interaction_Energy": "7.71"
+    }, 
+    "1qhuA": {
+        "Domains": 2, 
+        "Length": 398, 
+        "Interaction_Energy": "1.59"
+    }, 
+    "3jpqA": {
+        "Domains": 4, 
+        "Length": 326, 
+        "Interaction_Energy": "17.2"
+    }, 
+    "1c0mB": {
+        "Domains": 2, 
+        "Length": 216, 
+        "Interaction_Energy": "0.713"
+    }, 
+    "1c0mC": {
+        "Domains": 2, 
+        "Length": 222, 
+        "Interaction_Energy": "5.88"
+    }, 
+    "1j70A": {
+        "Domains": 3, 
+        "Length": 512, 
+        "Interaction_Energy": "9.79"
+    }, 
+    "2d1zA": {
+        "Domains": 2, 
+        "Length": 427, 
+        "Interaction_Energy": "4.1"
+    }, 
+    "3g4oA": {
+        "Domains": 3, 
+        "Length": 439, 
+        "Interaction_Energy": "5.07"
+    }, 
+    "1xfeA": {
+        "Domains": 2, 
+        "Length": 83, 
+        "Interaction_Energy": "12.5"
+    }, 
+    "1se1A": {
+        "Domains": 2, 
+        "Length": 239, 
+        "Interaction_Energy": "4.03"
+    }, 
+    "1c7yA": {
+        "Domains": 3, 
+        "Length": 199, 
+        "Interaction_Energy": "11.1"
+    }, 
+    "2vqeC": {
+        "Domains": 2, 
+        "Length": 206, 
+        "Interaction_Energy": "2.54"
+    }, 
+    "1cukA": {
+        "Domains": 3, 
+        "Length": 190, 
+        "Interaction_Energy": "8.72"
+    }, 
+    "3eckA": {
+        "Domains": 3, 
+        "Length": 367, 
+        "Interaction_Energy": "18.6"
+    }, 
+    "2pw9D": {
+        "Domains": 3, 
+        "Length": 238, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "2pw9C": {
+        "Domains": 3, 
+        "Length": 221, 
+        "Interaction_Energy": "15.4"
+    }, 
+    "1g9dA": {
+        "Domains": 4, 
+        "Length": 1287, 
+        "Interaction_Energy": "16.4"
+    }, 
+    "2pw9A": {
+        "Domains": 3, 
+        "Length": 232, 
+        "Interaction_Energy": "14.4"
+    }, 
+    "2a5wA": {
+        "Domains": 2, 
+        "Length": 114, 
+        "Interaction_Energy": "6.94"
+    }, 
+    "1okeA": {
+        "Domains": 4, 
+        "Length": 394, 
+        "Interaction_Energy": "17.2"
+    }, 
+    "1okeB": {
+        "Domains": 4, 
+        "Length": 394, 
+        "Interaction_Energy": "17.2"
+    }, 
+    "1eg3A": {
+        "Domains": 4, 
+        "Length": 260, 
+        "Interaction_Energy": "30.9"
+    }, 
+    "1qteA": {
+        "Domains": 3, 
+        "Length": 618, 
+        "Interaction_Energy": "9.36"
+    }, 
+    "3gyxC": {
+        "Domains": 2, 
+        "Length": 662, 
+        "Interaction_Energy": "6.42"
+    }, 
+    "1hrdB": {
+        "Domains": 3, 
+        "Length": 449, 
+        "Interaction_Energy": "13.5"
+    }, 
+    "1hrdC": {
+        "Domains": 3, 
+        "Length": 449, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "1hrdA": {
+        "Domains": 3, 
+        "Length": 449, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1tdjA": {
+        "Domains": 3, 
+        "Length": 494, 
+        "Interaction_Energy": "8.34"
+    }, 
+    "1obcA": {
+        "Domains": 4, 
+        "Length": 811, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "1mw9X": {
+        "Domains": 4, 
+        "Length": 583, 
+        "Interaction_Energy": "15.8"
+    }, 
+    "1poiC": {
+        "Domains": 2, 
+        "Length": 317, 
+        "Interaction_Energy": "7.83"
+    }, 
+    "2c0gB": {
+        "Domains": 2, 
+        "Length": 221, 
+        "Interaction_Energy": "2.54"
+    }, 
+    "1h3nA": {
+        "Domains": 4, 
+        "Length": 814, 
+        "Interaction_Energy": "11.1"
+    }, 
+    "3cwgA": {
+        "Domains": 4, 
+        "Length": 501, 
+        "Interaction_Energy": "20.3"
+    }, 
+    "3cwgB": {
+        "Domains": 4, 
+        "Length": 507, 
+        "Interaction_Energy": "20.4"
+    }, 
+    "1d6zA": {
+        "Domains": 4, 
+        "Length": 717, 
+        "Interaction_Energy": "23.9"
+    }, 
+    "2i0kA": {
+        "Domains": 4, 
+        "Length": 536, 
+        "Interaction_Energy": "36.2"
+    }, 
+    "3bh1B": {
+        "Domains": 3, 
+        "Length": 493, 
+        "Interaction_Energy": "9.84"
+    }, 
+    "3bh1D": {
+        "Domains": 3, 
+        "Length": 489, 
+        "Interaction_Energy": "9.95"
+    }, 
+    "2e5yB": {
+        "Domains": 2, 
+        "Length": 133, 
+        "Interaction_Energy": "5.18"
+    }, 
+    "3bgeA": {
+        "Domains": 2, 
+        "Length": 166, 
+        "Interaction_Energy": "5.02"
+    }, 
+    "3bgeB": {
+        "Domains": 2, 
+        "Length": 168, 
+        "Interaction_Energy": "6.77"
+    }, 
+    "3ozuA": {
+        "Domains": 3, 
+        "Length": 409, 
+        "Interaction_Energy": "9.9"
+    }, 
+    "2jkbA": {
+        "Domains": 3, 
+        "Length": 689, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1zxvB": {
+        "Domains": 4, 
+        "Length": 736, 
+        "Interaction_Energy": "11.7"
+    }, 
+    "2hcbA": {
+        "Domains": 3, 
+        "Length": 317, 
+        "Interaction_Energy": "6.0"
+    }, 
+    "3d5kA": {
+        "Domains": 2, 
+        "Length": 454, 
+        "Interaction_Energy": "3.1"
+    }, 
+    "1ogyA": {
+        "Domains": 4, 
+        "Length": 789, 
+        "Interaction_Energy": "26.3"
+    }, 
+    "1lpqA": {
+        "Domains": 4, 
+        "Length": 557, 
+        "Interaction_Energy": "14.2"
+    }, 
+    "1n8iA": {
+        "Domains": 4, 
+        "Length": 701, 
+        "Interaction_Energy": "20.4"
+    }, 
+    "2cvcA": {
+        "Domains": 4, 
+        "Length": 500, 
+        "Interaction_Energy": "11.6"
+    }, 
+    "2z6rB": {
+        "Domains": 2, 
+        "Length": 265, 
+        "Interaction_Energy": "3.84"
+    }, 
+    "3a22A": {
+        "Domains": 4, 
+        "Length": 617, 
+        "Interaction_Energy": "20.6"
+    }, 
+    "3a22B": {
+        "Domains": 4, 
+        "Length": 620, 
+        "Interaction_Energy": "19.8"
+    }, 
+    "3ar5A": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.77"
+    }, 
+    "1mtyG": {
+        "Domains": 2, 
+        "Length": 162, 
+        "Interaction_Energy": "7.3"
+    }, 
+    "3n3oB": {
+        "Domains": 4, 
+        "Length": 716, 
+        "Interaction_Energy": "17.6"
+    }, 
+    "3n3oA": {
+        "Domains": 4, 
+        "Length": 718, 
+        "Interaction_Energy": "17.1"
+    }, 
+    "3h1wA": {
+        "Domains": 3, 
+        "Length": 390, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1vq8A": {
+        "Domains": 3, 
+        "Length": 237, 
+        "Interaction_Energy": "9.98"
+    }, 
+    "2hczX": {
+        "Domains": 2, 
+        "Length": 241, 
+        "Interaction_Energy": "5.93"
+    }, 
+    "1w99A": {
+        "Domains": 3, 
+        "Length": 580, 
+        "Interaction_Energy": "9.44"
+    }, 
+    "2is6A": {
+        "Domains": 4, 
+        "Length": 654, 
+        "Interaction_Energy": "15.2"
+    }, 
+    "3c8cA": {
+        "Domains": 2, 
+        "Length": 261, 
+        "Interaction_Energy": "2.58"
+    }, 
+    "1k7yA": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "15.8"
+    }, 
+    "2ptrB": {
+        "Domains": 3, 
+        "Length": 456, 
+        "Interaction_Energy": "9.63"
+    }, 
+    "2p62B": {
+        "Domains": 2, 
+        "Length": 241, 
+        "Interaction_Energy": "6.88"
+    }, 
+    "1rt8A": {
+        "Domains": 4, 
+        "Length": 467, 
+        "Interaction_Energy": "10.0"
+    }, 
+    "1gmuB": {
+        "Domains": 2, 
+        "Length": 138, 
+        "Interaction_Energy": "3.22"
+    }, 
+    "1evlB": {
+        "Domains": 2, 
+        "Length": 401, 
+        "Interaction_Energy": "4.22"
+    }, 
+    "1tj5A": {
+        "Domains": 2, 
+        "Length": 244, 
+        "Interaction_Energy": "7.64"
+    }, 
+    "2fkfA": {
+        "Domains": 4, 
+        "Length": 457, 
+        "Interaction_Energy": "12.3"
+    }, 
+    "2j8cH": {
+        "Domains": 2, 
+        "Length": 240, 
+        "Interaction_Energy": "3.82"
+    }, 
+    "2j8cM": {
+        "Domains": 2, 
+        "Length": 302, 
+        "Interaction_Energy": "4.97"
+    }, 
+    "1fc9A": {
+        "Domains": 3, 
+        "Length": 386, 
+        "Interaction_Energy": "11.1"
+    }, 
+    "2pzxA": {
+        "Domains": 2, 
+        "Length": 188, 
+        "Interaction_Energy": "7.42"
+    }, 
+    "2rijA": {
+        "Domains": 3, 
+        "Length": 388, 
+        "Interaction_Energy": "9.35"
+    }, 
+    "7acnA": {
+        "Domains": 4, 
+        "Length": 753, 
+        "Interaction_Energy": "19.1"
+    }, 
+    "2au3A": {
+        "Domains": 4, 
+        "Length": 403, 
+        "Interaction_Energy": "15.6"
+    }, 
+    "2cjlA": {
+        "Domains": 2, 
+        "Length": 204, 
+        "Interaction_Energy": "9.57"
+    }, 
+    "2o3iB": {
+        "Domains": 2, 
+        "Length": 365, 
+        "Interaction_Energy": "6.6"
+    }, 
+    "2o3iA": {
+        "Domains": 2, 
+        "Length": 366, 
+        "Interaction_Energy": "6.5"
+    }, 
+    "1cf3A": {
+        "Domains": 3, 
+        "Length": 581, 
+        "Interaction_Energy": "18.4"
+    }, 
+    "1sqgA": {
+        "Domains": 4, 
+        "Length": 424, 
+        "Interaction_Energy": "24.6"
+    }, 
+    "2z16A": {
+        "Domains": 2, 
+        "Length": 153, 
+        "Interaction_Energy": "6.01"
+    }, 
+    "1m70B": {
+        "Domains": 2, 
+        "Length": 190, 
+        "Interaction_Energy": "7.85"
+    }, 
+    "1xi8A": {
+        "Domains": 3, 
+        "Length": 269, 
+        "Interaction_Energy": "12.6"
+    }, 
+    "1xi8B": {
+        "Domains": 3, 
+        "Length": 265, 
+        "Interaction_Energy": "11.1"
+    }, 
+    "2p9bA": {
+        "Domains": 4, 
+        "Length": 397, 
+        "Interaction_Energy": "35.7"
+    }, 
+    "3cxlA": {
+        "Domains": 3, 
+        "Length": 402, 
+        "Interaction_Energy": "9.51"
+    }, 
+    "1gk9A": {
+        "Domains": 2, 
+        "Length": 218, 
+        "Interaction_Energy": "2.3"
+    }, 
+    "1e5wA": {
+        "Domains": 4, 
+        "Length": 346, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "1gk9B": {
+        "Domains": 3, 
+        "Length": 595, 
+        "Interaction_Energy": "8.36"
+    }, 
+    "1w3aA": {
+        "Domains": 2, 
+        "Length": 312, 
+        "Interaction_Energy": "5.32"
+    }, 
+    "7odcA": {
+        "Domains": 2, 
+        "Length": 387, 
+        "Interaction_Energy": "3.87"
+    }, 
+    "1loxA": {
+        "Domains": 3, 
+        "Length": 647, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "1k87A": {
+        "Domains": 3, 
+        "Length": 514, 
+        "Interaction_Energy": "6.81"
+    }, 
+    "3bg9A": {
+        "Domains": 4, 
+        "Length": 601, 
+        "Interaction_Energy": "24.8"
+    }, 
+    "1bupA": {
+        "Domains": 4, 
+        "Length": 378, 
+        "Interaction_Energy": "23.8"
+    }, 
+    "1lvaA": {
+        "Domains": 4, 
+        "Length": 257, 
+        "Interaction_Energy": "14.7"
+    }, 
+    "1yqyA": {
+        "Domains": 3, 
+        "Length": 514, 
+        "Interaction_Energy": "8.68"
+    }, 
+    "1g1sA": {
+        "Domains": 2, 
+        "Length": 158, 
+        "Interaction_Energy": "2.48"
+    }, 
+    "1igyB": {
+        "Domains": 4, 
+        "Length": 434, 
+        "Interaction_Energy": "3.75"
+    }, 
+    "1xqpA": {
+        "Domains": 2, 
+        "Length": 252, 
+        "Interaction_Energy": "2.91"
+    }, 
+    "2i5zO": {
+        "Domains": 2, 
+        "Length": 258, 
+        "Interaction_Energy": "4.29"
+    }, 
+    "1k4sA": {
+        "Domains": 4, 
+        "Length": 489, 
+        "Interaction_Energy": "12.6"
+    }, 
+    "2vk5A": {
+        "Domains": 2, 
+        "Length": 448, 
+        "Interaction_Energy": "8.39"
+    }, 
+    "1px5B": {
+        "Domains": 2, 
+        "Length": 339, 
+        "Interaction_Energy": "5.12"
+    }, 
+    "1td6A": {
+        "Domains": 3, 
+        "Length": 286, 
+        "Interaction_Energy": "12.6"
+    }, 
+    "2ghjE": {
+        "Domains": 2, 
+        "Length": 90, 
+        "Interaction_Energy": "2.22"
+    }, 
+    "2bt2C": {
+        "Domains": 2, 
+        "Length": 143, 
+        "Interaction_Energy": "4.37"
+    }, 
+    "3po4A": {
+        "Domains": 4, 
+        "Length": 542, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "1itxA": {
+        "Domains": 2, 
+        "Length": 451, 
+        "Interaction_Energy": "5.34"
+    }, 
+    "1j7nB": {
+        "Domains": 4, 
+        "Length": 736, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "1j7nA": {
+        "Domains": 4, 
+        "Length": 725, 
+        "Interaction_Energy": "13.3"
+    }, 
+    "2c0tB": {
+        "Domains": 4, 
+        "Length": 429, 
+        "Interaction_Energy": "13.0"
+    }, 
+    "2c0tA": {
+        "Domains": 4, 
+        "Length": 428, 
+        "Interaction_Energy": "13.4"
+    }, 
+    "1jnrA": {
+        "Domains": 3, 
+        "Length": 642, 
+        "Interaction_Energy": "18.7"
+    }, 
+    "2janB": {
+        "Domains": 3, 
+        "Length": 405, 
+        "Interaction_Energy": "8.37"
+    }, 
+    "1ltdA": {
+        "Domains": 2, 
+        "Length": 481, 
+        "Interaction_Energy": "7.46"
+    }, 
+    "3ozvA": {
+        "Domains": 3, 
+        "Length": 403, 
+        "Interaction_Energy": "11.5"
+    }, 
+    "1qvjA": {
+        "Domains": 2, 
+        "Length": 293, 
+        "Interaction_Energy": "3.06"
+    }, 
+    "2hkjA": {
+        "Domains": 3, 
+        "Length": 461, 
+        "Interaction_Energy": "9.41"
+    }, 
+    "2a94A": {
+        "Domains": 2, 
+        "Length": 315, 
+        "Interaction_Energy": "7.81"
+    }, 
+    "1gpeA": {
+        "Domains": 3, 
+        "Length": 587, 
+        "Interaction_Energy": "17.3"
+    }, 
+    "1opkA": {
+        "Domains": 4, 
+        "Length": 449, 
+        "Interaction_Energy": "16.6"
+    }, 
+    "1b12A": {
+        "Domains": 2, 
+        "Length": 239, 
+        "Interaction_Energy": "9.88"
+    }, 
+    "2qmaB": {
+        "Domains": 3, 
+        "Length": 450, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1bg1A": {
+        "Domains": 4, 
+        "Length": 558, 
+        "Interaction_Energy": "18.3"
+    }, 
+    "1ijgA": {
+        "Domains": 3, 
+        "Length": 257, 
+        "Interaction_Energy": "9.44"
+    }, 
+    "1ijgB": {
+        "Domains": 3, 
+        "Length": 257, 
+        "Interaction_Energy": "8.61"
+    }, 
+    "3i6wB": {
+        "Domains": 3, 
+        "Length": 382, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1amjA": {
+        "Domains": 4, 
+        "Length": 753, 
+        "Interaction_Energy": "18.7"
+    }, 
+    "1qz5A": {
+        "Domains": 4, 
+        "Length": 359, 
+        "Interaction_Energy": "23.2"
+    }, 
+    "1nolA": {
+        "Domains": 3, 
+        "Length": 607, 
+        "Interaction_Energy": "14.1"
+    }, 
+    "1h54A": {
+        "Domains": 3, 
+        "Length": 752, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1rdrA": {
+        "Domains": 3, 
+        "Length": 316, 
+        "Interaction_Energy": "18.0"
+    }, 
+    "3py8A": {
+        "Domains": 4, 
+        "Length": 540, 
+        "Interaction_Energy": "16.2"
+    }, 
+    "1w6gA": {
+        "Domains": 3, 
+        "Length": 619, 
+        "Interaction_Energy": "18.0"
+    }, 
+    "2dkjB": {
+        "Domains": 2, 
+        "Length": 402, 
+        "Interaction_Energy": "4.64"
+    }, 
+    "1dkgB": {
+        "Domains": 2, 
+        "Length": 151, 
+        "Interaction_Energy": "2.76"
+    }, 
+    "1rzhH": {
+        "Domains": 2, 
+        "Length": 239, 
+        "Interaction_Energy": "4.55"
+    }, 
+    "1z5aB": {
+        "Domains": 3, 
+        "Length": 460, 
+        "Interaction_Energy": "11.5"
+    }, 
+    "1o70A": {
+        "Domains": 2, 
+        "Length": 296, 
+        "Interaction_Energy": "1.26"
+    }, 
+    "2bplA": {
+        "Domains": 3, 
+        "Length": 608, 
+        "Interaction_Energy": "5.45"
+    }, 
+    "2dkvA": {
+        "Domains": 3, 
+        "Length": 286, 
+        "Interaction_Energy": "6.84"
+    }, 
+    "2ov9A": {
+        "Domains": 2, 
+        "Length": 201, 
+        "Interaction_Energy": "8.27"
+    }, 
+    "2pbyB": {
+        "Domains": 2, 
+        "Length": 290, 
+        "Interaction_Energy": "9.56"
+    }, 
+    "1wpgA": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.25"
+    }, 
+    "1wpgB": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.43"
+    }, 
+    "1wpgC": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.43"
+    }, 
+    "3iv9A": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "17.4"
+    }, 
+    "2fefB": {
+        "Domains": 2, 
+        "Length": 287, 
+        "Interaction_Energy": "8.75"
+    }, 
+    "2fefC": {
+        "Domains": 2, 
+        "Length": 284, 
+        "Interaction_Energy": "7.74"
+    }, 
+    "3boaA": {
+        "Domains": 4, 
+        "Length": 490, 
+        "Interaction_Energy": "3.76"
+    }, 
+    "1sqfA": {
+        "Domains": 4, 
+        "Length": 425, 
+        "Interaction_Energy": "24.1"
+    }, 
+    "2yrxA": {
+        "Domains": 4, 
+        "Length": 420, 
+        "Interaction_Energy": "18.5"
+    }, 
+    "3covB": {
+        "Domains": 2, 
+        "Length": 281, 
+        "Interaction_Energy": "4.61"
+    }, 
+    "1l2fA": {
+        "Domains": 4, 
+        "Length": 340, 
+        "Interaction_Energy": "13.8"
+    }, 
+    "2bmrA": {
+        "Domains": 2, 
+        "Length": 458, 
+        "Interaction_Energy": "5.35"
+    }, 
+    "1gnlB": {
+        "Domains": 4, 
+        "Length": 544, 
+        "Interaction_Energy": "27.6"
+    }, 
+    "1gnlA": {
+        "Domains": 4, 
+        "Length": 544, 
+        "Interaction_Energy": "26.6"
+    }, 
+    "2hoxB": {
+        "Domains": 3, 
+        "Length": 427, 
+        "Interaction_Energy": "18.5"
+    }, 
+    "3a23B": {
+        "Domains": 4, 
+        "Length": 615, 
+        "Interaction_Energy": "21.0"
+    }, 
+    "1u1wA": {
+        "Domains": 2, 
+        "Length": 295, 
+        "Interaction_Energy": "5.08"
+    }, 
+    "1wveA": {
+        "Domains": 4, 
+        "Length": 522, 
+        "Interaction_Energy": "29.0"
+    }, 
+    "1wveB": {
+        "Domains": 4, 
+        "Length": 526, 
+        "Interaction_Energy": "28.7"
+    }, 
+    "1qmfA": {
+        "Domains": 3, 
+        "Length": 559, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "1xdpA": {
+        "Domains": 4, 
+        "Length": 687, 
+        "Interaction_Energy": "24.9"
+    }, 
+    "3cj8C": {
+        "Domains": 3, 
+        "Length": 214, 
+        "Interaction_Energy": "14.8"
+    }, 
+    "1h6tA": {
+        "Domains": 2, 
+        "Length": 291, 
+        "Interaction_Energy": "5.33"
+    }, 
+    "1zbtA": {
+        "Domains": 3, 
+        "Length": 311, 
+        "Interaction_Energy": "10.7"
+    }, 
+    "1dfaA": {
+        "Domains": 3, 
+        "Length": 405, 
+        "Interaction_Energy": "6.25"
+    }, 
+    "2efgA": {
+        "Domains": 4, 
+        "Length": 582, 
+        "Interaction_Energy": "10.6"
+    }, 
+    "2eutA": {
+        "Domains": 2, 
+        "Length": 291, 
+        "Interaction_Energy": "7.89"
+    }, 
+    "1q9iA": {
+        "Domains": 3, 
+        "Length": 568, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "1uakA": {
+        "Domains": 2, 
+        "Length": 243, 
+        "Interaction_Energy": "0.67"
+    }, 
+    "1gpzB": {
+        "Domains": 4, 
+        "Length": 367, 
+        "Interaction_Energy": "16.0"
+    }, 
+    "1gpzA": {
+        "Domains": 4, 
+        "Length": 368, 
+        "Interaction_Energy": "24.0"
+    }, 
+    "2jdiF": {
+        "Domains": 3, 
+        "Length": 468, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1feuD": {
+        "Domains": 2, 
+        "Length": 189, 
+        "Interaction_Energy": "4.29"
+    }, 
+    "1n3lA": {
+        "Domains": 2, 
+        "Length": 332, 
+        "Interaction_Energy": "7.46"
+    }, 
+    "3qxzB": {
+        "Domains": 2, 
+        "Length": 263, 
+        "Interaction_Energy": "6.89"
+    }, 
+    "1jgtB": {
+        "Domains": 2, 
+        "Length": 500, 
+        "Interaction_Energy": "4.27"
+    }, 
+    "2hruA": {
+        "Domains": 4, 
+        "Length": 581, 
+        "Interaction_Energy": "25.0"
+    }, 
+    "1el6C": {
+        "Domains": 3, 
+        "Length": 208, 
+        "Interaction_Energy": "7.71"
+    }, 
+    "1el6B": {
+        "Domains": 3, 
+        "Length": 208, 
+        "Interaction_Energy": "7.67"
+    }, 
+    "8acnA": {
+        "Domains": 4, 
+        "Length": 753, 
+        "Interaction_Energy": "19.4"
+    }, 
+    "1jj2O": {
+        "Domains": 2, 
+        "Length": 143, 
+        "Interaction_Energy": "1.58"
+    }, 
+    "1g9bA": {
+        "Domains": 4, 
+        "Length": 1287, 
+        "Interaction_Energy": "16.1"
+    }, 
+    "1n7zB": {
+        "Domains": 2, 
+        "Length": 316, 
+        "Interaction_Energy": "3.14"
+    }, 
+    "1n7zA": {
+        "Domains": 2, 
+        "Length": 316, 
+        "Interaction_Energy": "2.64"
+    }, 
+    "1jq5A": {
+        "Domains": 2, 
+        "Length": 368, 
+        "Interaction_Energy": "6.8"
+    }, 
+    "2x8hA": {
+        "Domains": 4, 
+        "Length": 588, 
+        "Interaction_Energy": "12.3"
+    }, 
+    "1d1dA": {
+        "Domains": 2, 
+        "Length": 220, 
+        "Interaction_Energy": "2.68"
+    }, 
+    "1bi2A": {
+        "Domains": 3, 
+        "Length": 214, 
+        "Interaction_Energy": "5.25"
+    }, 
+    "1hzhK": {
+        "Domains": 4, 
+        "Length": 444, 
+        "Interaction_Energy": "3.06"
+    }, 
+    "1goiB": {
+        "Domains": 3, 
+        "Length": 498, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "1k7iA": {
+        "Domains": 2, 
+        "Length": 462, 
+        "Interaction_Energy": "5.15"
+    }, 
+    "2r6zB": {
+        "Domains": 2, 
+        "Length": 239, 
+        "Interaction_Energy": "7.45"
+    }, 
+    "3d9aL": {
+        "Domains": 2, 
+        "Length": 215, 
+        "Interaction_Energy": "2.67"
+    }, 
+    "2o1wB": {
+        "Domains": 3, 
+        "Length": 469, 
+        "Interaction_Energy": "6.25"
+    }, 
+    "1accA": {
+        "Domains": 4, 
+        "Length": 665, 
+        "Interaction_Energy": "16.2"
+    }, 
+    "1n8yC": {
+        "Domains": 4, 
+        "Length": 592, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "2qdzA": {
+        "Domains": 3, 
+        "Length": 516, 
+        "Interaction_Energy": "15.7"
+    }, 
+    "1pbyA": {
+        "Domains": 4, 
+        "Length": 493, 
+        "Interaction_Energy": "22.9"
+    }, 
+    "1s3eA": {
+        "Domains": 3, 
+        "Length": 499, 
+        "Interaction_Energy": "11.9"
+    }, 
+    "2as0B": {
+        "Domains": 3, 
+        "Length": 382, 
+        "Interaction_Energy": "16.1"
+    }, 
+    "2hsiA": {
+        "Domains": 2, 
+        "Length": 231, 
+        "Interaction_Energy": "8.0"
+    }, 
+    "1s3eB": {
+        "Domains": 3, 
+        "Length": 494, 
+        "Interaction_Energy": "12.2"
+    }, 
+    "2wvyC": {
+        "Domains": 4, 
+        "Length": 740, 
+        "Interaction_Energy": "25.5"
+    }, 
+    "2wvyB": {
+        "Domains": 4, 
+        "Length": 737, 
+        "Interaction_Energy": "23.6"
+    }, 
+    "2wvyA": {
+        "Domains": 4, 
+        "Length": 741, 
+        "Interaction_Energy": "24.2"
+    }, 
+    "2eiyB": {
+        "Domains": 2, 
+        "Length": 304, 
+        "Interaction_Energy": "3.98"
+    }, 
+    "1u4qA": {
+        "Domains": 3, 
+        "Length": 323, 
+        "Interaction_Energy": "6.79"
+    }, 
+    "1yf3A": {
+        "Domains": 2, 
+        "Length": 260, 
+        "Interaction_Energy": "7.01"
+    }, 
+    "3buwB": {
+        "Domains": 3, 
+        "Length": 305, 
+        "Interaction_Energy": "12.1"
+    }, 
+    "3ozwA": {
+        "Domains": 3, 
+        "Length": 403, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "3ozwB": {
+        "Domains": 3, 
+        "Length": 405, 
+        "Interaction_Energy": "11.6"
+    }, 
+    "1zvrA": {
+        "Domains": 3, 
+        "Length": 514, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "1yy9A": {
+        "Domains": 4, 
+        "Length": 613, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "1d5fA": {
+        "Domains": 3, 
+        "Length": 350, 
+        "Interaction_Energy": "10.5"
+    }, 
+    "1qiuB": {
+        "Domains": 2, 
+        "Length": 264, 
+        "Interaction_Energy": "2.78"
+    }, 
+    "1slyA": {
+        "Domains": 3, 
+        "Length": 618, 
+        "Interaction_Energy": "9.56"
+    }, 
+    "3bg2A": {
+        "Domains": 3, 
+        "Length": 397, 
+        "Interaction_Energy": "17.5"
+    }, 
+    "3bg2B": {
+        "Domains": 3, 
+        "Length": 397, 
+        "Interaction_Energy": "17.5"
+    }, 
+    "1gkmA": {
+        "Domains": 2, 
+        "Length": 507, 
+        "Interaction_Energy": "3.18"
+    }, 
+    "2bmqA": {
+        "Domains": 2, 
+        "Length": 452, 
+        "Interaction_Energy": "5.9"
+    }, 
+    "3funA": {
+        "Domains": 4, 
+        "Length": 606, 
+        "Interaction_Energy": "19.9"
+    }, 
+    "2i7dB": {
+        "Domains": 2, 
+        "Length": 192, 
+        "Interaction_Energy": "8.68"
+    }, 
+    "1uzbA": {
+        "Domains": 2, 
+        "Length": 516, 
+        "Interaction_Energy": "7.67"
+    }, 
+    "1ok8A": {
+        "Domains": 4, 
+        "Length": 380, 
+        "Interaction_Energy": "15.0"
+    }, 
+    "1ixeA": {
+        "Domains": 2, 
+        "Length": 371, 
+        "Interaction_Energy": "6.19"
+    }, 
+    "3ar3A": {
+        "Domains": 4, 
+        "Length": 994, 
+        "Interaction_Energy": "8.8"
+    }, 
+    "2i15B": {
+        "Domains": 2, 
+        "Length": 122, 
+        "Interaction_Energy": "6.73"
+    }, 
+    "1ubdC": {
+        "Domains": 4, 
+        "Length": 114, 
+        "Interaction_Energy": "11.6"
+    }, 
+    "2aq9A": {
+        "Domains": 2, 
+        "Length": 273, 
+        "Interaction_Energy": "6.37"
+    }, 
+    "3rf3A": {
+        "Domains": 2, 
+        "Length": 258, 
+        "Interaction_Energy": "2.78"
+    }, 
+    "2z6bA": {
+        "Domains": 4, 
+        "Length": 573, 
+        "Interaction_Energy": "6.74"
+    }, 
+    "1qz6A": {
+        "Domains": 4, 
+        "Length": 359, 
+        "Interaction_Energy": "25.8"
+    }, 
+    "1tllA": {
+        "Domains": 4, 
+        "Length": 630, 
+        "Interaction_Energy": "16.3"
+    }, 
+    "2fytA": {
+        "Domains": 2, 
+        "Length": 315, 
+        "Interaction_Energy": "5.06"
+    }, 
+    "1r0mB": {
+        "Domains": 2, 
+        "Length": 360, 
+        "Interaction_Energy": "7.32"
+    }, 
+    "1d9kD": {
+        "Domains": 2, 
+        "Length": 188, 
+        "Interaction_Energy": "2.74"
+    }, 
+    "1qakB": {
+        "Domains": 4, 
+        "Length": 721, 
+        "Interaction_Energy": "24.5"
+    }, 
+    "1qakA": {
+        "Domains": 4, 
+        "Length": 718, 
+        "Interaction_Energy": "23.6"
+    }, 
+    "1rkuB": {
+        "Domains": 2, 
+        "Length": 206, 
+        "Interaction_Energy": "5.63"
+    }, 
+    "2w16B": {
+        "Domains": 3, 
+        "Length": 754, 
+        "Interaction_Energy": "19.8"
+    }, 
+    "1tjeA": {
+        "Domains": 3, 
+        "Length": 224, 
+        "Interaction_Energy": "20.7"
+    }, 
+    "1l1aA": {
+        "Domains": 3, 
+        "Length": 455, 
+        "Interaction_Energy": "9.97"
+    }, 
+    "1griA": {
+        "Domains": 3, 
+        "Length": 211, 
+        "Interaction_Energy": "3.26"
+    }, 
+    "2srcA": {
+        "Domains": 4, 
+        "Length": 449, 
+        "Interaction_Energy": "16.5"
+    }, 
+    "2c7qA": {
+        "Domains": 2, 
+        "Length": 329, 
+        "Interaction_Energy": "5.41"
+    }, 
+    "1lxmA": {
+        "Domains": 4, 
+        "Length": 794, 
+        "Interaction_Energy": "21.4"
+    }, 
+    "1iuqA": {
+        "Domains": 2, 
+        "Length": 350, 
+        "Interaction_Energy": "5.26"
+    }, 
+    "2yyaB": {
+        "Domains": 4, 
+        "Length": 423, 
+        "Interaction_Energy": "24.8"
+    }, 
+    "2yyaA": {
+        "Domains": 4, 
+        "Length": 423, 
+        "Interaction_Energy": "23.6"
+    }, 
+    "1pwuA": {
+        "Domains": 4, 
+        "Length": 747, 
+        "Interaction_Energy": "9.55"
+    }, 
+    "1vq0A": {
+        "Domains": 2, 
+        "Length": 290, 
+        "Interaction_Energy": "1.97"
+    }, 
+    "1uajA": {
+        "Domains": 2, 
+        "Length": 241, 
+        "Interaction_Energy": "0.69"
+    }, 
+    "1ikqA": {
+        "Domains": 3, 
+        "Length": 606, 
+        "Interaction_Energy": "9.69"
+    }, 
+    "3c5xA": {
+        "Domains": 4, 
+        "Length": 390, 
+        "Interaction_Energy": "14.1"
+    }, 
+    "2absA": {
+        "Domains": 2, 
+        "Length": 374, 
+        "Interaction_Energy": "6.82"
+    }, 
+    "1c7tA": {
+        "Domains": 4, 
+        "Length": 858, 
+        "Interaction_Energy": "18.1"
+    }, 
+    "3hhwL": {
+        "Domains": 2, 
+        "Length": 421, 
+        "Interaction_Energy": "2.0"
+    }, 
+    "3hhwK": {
+        "Domains": 2, 
+        "Length": 421, 
+        "Interaction_Energy": "1.57"
+    }, 
+    "1nk4A": {
+        "Domains": 4, 
+        "Length": 582, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1khdA": {
+        "Domains": 2, 
+        "Length": 324, 
+        "Interaction_Energy": "6.46"
+    }, 
+    "3dt2A": {
+        "Domains": 3, 
+        "Length": 662, 
+        "Interaction_Energy": "12.5"
+    }, 
+    "3h8gA": {
+        "Domains": 2, 
+        "Length": 497, 
+        "Interaction_Energy": "2.77"
+    }, 
+    "2idbB": {
+        "Domains": 3, 
+        "Length": 444, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "1fc5B": {
+        "Domains": 4, 
+        "Length": 396, 
+        "Interaction_Energy": "14.4"
+    }, 
+    "1fc5A": {
+        "Domains": 4, 
+        "Length": 397, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "1urzF": {
+        "Domains": 4, 
+        "Length": 388, 
+        "Interaction_Energy": "13.4"
+    }, 
+    "2uvoB": {
+        "Domains": 4, 
+        "Length": 171, 
+        "Interaction_Energy": "8.16"
+    }, 
+    "2uvoA": {
+        "Domains": 4, 
+        "Length": 172, 
+        "Interaction_Energy": "8.84"
+    }, 
+    "3dgvC": {
+        "Domains": 2, 
+        "Length": 379, 
+        "Interaction_Energy": "9.7"
+    }, 
+    "2uvoF": {
+        "Domains": 4, 
+        "Length": 175, 
+        "Interaction_Energy": "8.01"
+    }, 
+    "2uvoE": {
+        "Domains": 4, 
+        "Length": 173, 
+        "Interaction_Energy": "8.23"
+    }, 
+    "1e5qA": {
+        "Domains": 3, 
+        "Length": 449, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "1e5qB": {
+        "Domains": 3, 
+        "Length": 449, 
+        "Interaction_Energy": "13.7"
+    }, 
+    "3h4kA": {
+        "Domains": 4, 
+        "Length": 594, 
+        "Interaction_Energy": "13.1"
+    }, 
+    "1y7mB": {
+        "Domains": 2, 
+        "Length": 161, 
+        "Interaction_Energy": "8.36"
+    }, 
+    "1g9aA": {
+        "Domains": 4, 
+        "Length": 1287, 
+        "Interaction_Energy": "16.6"
+    }, 
+    "3cwvB": {
+        "Domains": 2, 
+        "Length": 314, 
+        "Interaction_Energy": "5.39"
+    }, 
+    "1amoA": {
+        "Domains": 4, 
+        "Length": 601, 
+        "Interaction_Energy": "13.7"
+    }, 
+    "1d6mA": {
+        "Domains": 4, 
+        "Length": 603, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "1m61A": {
+        "Domains": 3, 
+        "Length": 259, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "1ezaA": {
+        "Domains": 2, 
+        "Length": 259, 
+        "Interaction_Energy": "3.72"
+    }, 
+    "2cltA": {
+        "Domains": 2, 
+        "Length": 367, 
+        "Interaction_Energy": "0.787"
+    }, 
+    "3a7rA": {
+        "Domains": 2, 
+        "Length": 337, 
+        "Interaction_Energy": "4.36"
+    }, 
+    "1a36A": {
+        "Domains": 4, 
+        "Length": 544, 
+        "Interaction_Energy": "13.8"
+    }, 
+    "1d0cA": {
+        "Domains": 3, 
+        "Length": 416, 
+        "Interaction_Energy": "12.9"
+    }, 
+    "1d0cB": {
+        "Domains": 3, 
+        "Length": 414, 
+        "Interaction_Energy": "12.6"
+    }, 
+    "1tezA": {
+        "Domains": 3, 
+        "Length": 474, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "1h6wA": {
+        "Domains": 3, 
+        "Length": 151, 
+        "Interaction_Energy": "3.9"
+    }, 
+    "1ev7B": {
+        "Domains": 2, 
+        "Length": 293, 
+        "Interaction_Energy": "2.19"
+    }, 
+    "1seuA": {
+        "Domains": 4, 
+        "Length": 564, 
+        "Interaction_Energy": "15.7"
+    }, 
+    "3cddB": {
+        "Domains": 3, 
+        "Length": 325, 
+        "Interaction_Energy": "14.1"
+    }, 
+    "1ulkB": {
+        "Domains": 3, 
+        "Length": 126, 
+        "Interaction_Energy": "5.66"
+    }, 
+    "1e9yA": {
+        "Domains": 2, 
+        "Length": 238, 
+        "Interaction_Energy": "0.692"
+    }, 
+    "3ivaA": {
+        "Domains": 4, 
+        "Length": 576, 
+        "Interaction_Energy": "17.3"
+    }, 
+    "1cy9B": {
+        "Domains": 2, 
+        "Length": 243, 
+        "Interaction_Energy": "3.35"
+    }, 
+    "1cy9A": {
+        "Domains": 2, 
+        "Length": 245, 
+        "Interaction_Energy": "3.58"
+    }, 
+    "1r31A": {
+        "Domains": 2, 
+        "Length": 376, 
+        "Interaction_Energy": "4.9"
+    }, 
+    "1s22A": {
+        "Domains": 4, 
+        "Length": 356, 
+        "Interaction_Energy": "26.5"
+    }, 
+    "1iomA": {
+        "Domains": 2, 
+        "Length": 379, 
+        "Interaction_Energy": "6.71"
+    }, 
+    "1rrjA": {
+        "Domains": 4, 
+        "Length": 564, 
+        "Interaction_Energy": "15.6"
+    }, 
+    "2wvxA": {
+        "Domains": 4, 
+        "Length": 711, 
+        "Interaction_Energy": "23.2"
+    }, 
+    "2wvxB": {
+        "Domains": 4, 
+        "Length": 713, 
+        "Interaction_Energy": "22.9"
+    }, 
+    "2wvxC": {
+        "Domains": 4, 
+        "Length": 712, 
+        "Interaction_Energy": "23.5"
+    }, 
+    "2wvxD": {
+        "Domains": 4, 
+        "Length": 712, 
+        "Interaction_Energy": "22.5"
+    }, 
+    "1ug9A": {
+        "Domains": 4, 
+        "Length": 1019, 
+        "Interaction_Energy": "13.0"
+    }, 
+    "2x8gA": {
+        "Domains": 4, 
+        "Length": 588, 
+        "Interaction_Energy": "12.2"
+    }, 
+    "1ihgA": {
+        "Domains": 2, 
+        "Length": 364, 
+        "Interaction_Energy": "1.02"
+    }, 
+    "1t6bX": {
+        "Domains": 4, 
+        "Length": 676, 
+        "Interaction_Energy": "13.7"
+    }, 
+    "1k28D": {
+        "Domains": 4, 
+        "Length": 349, 
+        "Interaction_Energy": "26.5"
+    }, 
+    "2b43A": {
+        "Domains": 4, 
+        "Length": 501, 
+        "Interaction_Energy": "18.9"
+    }, 
+    "1k28A": {
+        "Domains": 4, 
+        "Length": 557, 
+        "Interaction_Energy": "4.8"
+    }, 
+    "1ej9A": {
+        "Domains": 4, 
+        "Length": 483, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "3dlkB": {
+        "Domains": 4, 
+        "Length": 409, 
+        "Interaction_Energy": "15.0"
+    }, 
+    "1cjaB": {
+        "Domains": 2, 
+        "Length": 327, 
+        "Interaction_Energy": "7.27"
+    }, 
+    "1ed5A": {
+        "Domains": 3, 
+        "Length": 416, 
+        "Interaction_Energy": "13.3"
+    }, 
+    "2jzxA": {
+        "Domains": 2, 
+        "Length": 160, 
+        "Interaction_Energy": "9.63"
+    }, 
+    "2uwgA": {
+        "Domains": 4, 
+        "Length": 169, 
+        "Interaction_Energy": "8.28"
+    }, 
+    "1lnlA": {
+        "Domains": 2, 
+        "Length": 408, 
+        "Interaction_Energy": "7.72"
+    }, 
+    "1wp9B": {
+        "Domains": 3, 
+        "Length": 477, 
+        "Interaction_Energy": "3.75"
+    }, 
+    "1wp9A": {
+        "Domains": 3, 
+        "Length": 479, 
+        "Interaction_Energy": "6.71"
+    }, 
+    "1pzxA": {
+        "Domains": 3, 
+        "Length": 277, 
+        "Interaction_Energy": "22.4"
+    }, 
+    "1zjkA": {
+        "Domains": 4, 
+        "Length": 390, 
+        "Interaction_Energy": "23.4"
+    }, 
+    "1moxB": {
+        "Domains": 3, 
+        "Length": 501, 
+        "Interaction_Energy": "5.76"
+    }, 
+    "1cjsA": {
+        "Domains": 2, 
+        "Length": 212, 
+        "Interaction_Energy": "2.34"
+    }, 
+    "1vqkA": {
+        "Domains": 3, 
+        "Length": 237, 
+        "Interaction_Energy": "9.96"
+    }, 
+    "1ppjD": {
+        "Domains": 2, 
+        "Length": 241, 
+        "Interaction_Energy": "1.37"
+    }, 
+    "2qokA": {
+        "Domains": 2, 
+        "Length": 308, 
+        "Interaction_Energy": "6.95"
+    }, 
+    "3d6zA": {
+        "Domains": 3, 
+        "Length": 277, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "3h4eE": {
+        "Domains": 2, 
+        "Length": 207, 
+        "Interaction_Energy": "3.85"
+    }, 
+    "1oisA": {
+        "Domains": 2, 
+        "Length": 220, 
+        "Interaction_Energy": "3.44"
+    }, 
+    "1c0pA": {
+        "Domains": 2, 
+        "Length": 363, 
+        "Interaction_Energy": "6.84"
+    }, 
+    "1w79A": {
+        "Domains": 3, 
+        "Length": 466, 
+        "Interaction_Energy": "9.41"
+    }, 
+    "1b9mA": {
+        "Domains": 3, 
+        "Length": 255, 
+        "Interaction_Energy": "9.78"
+    }, 
+    "1b9mB": {
+        "Domains": 3, 
+        "Length": 244, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "3dt4C": {
+        "Domains": 3, 
+        "Length": 636, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1dtoA": {
+        "Domains": 2, 
+        "Length": 200, 
+        "Interaction_Energy": "5.49"
+    }, 
+    "3h99A": {
+        "Domains": 3, 
+        "Length": 544, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "1j6zA": {
+        "Domains": 4, 
+        "Length": 368, 
+        "Interaction_Energy": "26.4"
+    }, 
+    "3n3rA": {
+        "Domains": 4, 
+        "Length": 717, 
+        "Interaction_Energy": "17.8"
+    }, 
+    "3db9A": {
+        "Domains": 2, 
+        "Length": 235, 
+        "Interaction_Energy": "5.9"
+    }, 
+    "3n3rB": {
+        "Domains": 4, 
+        "Length": 715, 
+        "Interaction_Energy": "18.3"
+    }, 
+    "3bf0B": {
+        "Domains": 3, 
+        "Length": 474, 
+        "Interaction_Energy": "8.22"
+    }, 
+    "3bf0A": {
+        "Domains": 3, 
+        "Length": 474, 
+        "Interaction_Energy": "8.34"
+    }, 
+    "2hoxA": {
+        "Domains": 3, 
+        "Length": 426, 
+        "Interaction_Energy": "18.1"
+    }, 
+    "2a79B": {
+        "Domains": 3, 
+        "Length": 259, 
+        "Interaction_Energy": "3.97"
+    }, 
+    "3k9pA": {
+        "Domains": 2, 
+        "Length": 199, 
+        "Interaction_Energy": "7.53"
+    }, 
+    "1u94A": {
+        "Domains": 2, 
+        "Length": 306, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "1f0xB": {
+        "Domains": 4, 
+        "Length": 502, 
+        "Interaction_Energy": "30.8"
+    }, 
+    "1f0xA": {
+        "Domains": 4, 
+        "Length": 502, 
+        "Interaction_Energy": "30.2"
+    }, 
+    "3gvlA": {
+        "Domains": 4, 
+        "Length": 722, 
+        "Interaction_Energy": "14.6"
+    }, 
+    "2b7rA": {
+        "Domains": 3, 
+        "Length": 568, 
+        "Interaction_Energy": "11.6"
+    }, 
+    "3bl4B": {
+        "Domains": 2, 
+        "Length": 111, 
+        "Interaction_Energy": "3.55"
+    }, 
+    "1lf6A": {
+        "Domains": 2, 
+        "Length": 674, 
+        "Interaction_Energy": "4.39"
+    }, 
+    "1mwvB": {
+        "Domains": 4, 
+        "Length": 718, 
+        "Interaction_Energy": "17.1"
+    }, 
+    "1mwvA": {
+        "Domains": 4, 
+        "Length": 720, 
+        "Interaction_Energy": "16.6"
+    }, 
+    "1diqB": {
+        "Domains": 4, 
+        "Length": 515, 
+        "Interaction_Energy": "28.5"
+    }, 
+    "1diqA": {
+        "Domains": 4, 
+        "Length": 515, 
+        "Interaction_Energy": "28.6"
+    }, 
+    "1h41A": {
+        "Domains": 3, 
+        "Length": 700, 
+        "Interaction_Energy": "13.8"
+    }, 
+    "1wruA": {
+        "Domains": 3, 
+        "Length": 325, 
+        "Interaction_Energy": "17.9"
+    }, 
+    "1gdtA": {
+        "Domains": 3, 
+        "Length": 183, 
+        "Interaction_Energy": "3.39"
+    }, 
+    "2d05A": {
+        "Domains": 2, 
+        "Length": 259, 
+        "Interaction_Energy": "4.48"
+    }, 
+    "2x1lA": {
+        "Domains": 3, 
+        "Length": 511, 
+        "Interaction_Energy": "12.1"
+    }, 
+    "1vzyB": {
+        "Domains": 2, 
+        "Length": 286, 
+        "Interaction_Energy": "1.87"
+    }, 
+    "1kjqA": {
+        "Domains": 3, 
+        "Length": 388, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1kjqB": {
+        "Domains": 3, 
+        "Length": 385, 
+        "Interaction_Energy": "12.9"
+    }, 
+    "2x99A": {
+        "Domains": 4, 
+        "Length": 589, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1qs1A": {
+        "Domains": 2, 
+        "Length": 402, 
+        "Interaction_Energy": "3.94"
+    }, 
+    "1r8mE": {
+        "Domains": 2, 
+        "Length": 195, 
+        "Interaction_Energy": "5.77"
+    }, 
+    "2arzB": {
+        "Domains": 2, 
+        "Length": 235, 
+        "Interaction_Energy": "5.5"
+    }, 
+    "2bs3D": {
+        "Domains": 4, 
+        "Length": 658, 
+        "Interaction_Energy": "28.2"
+    }, 
+    "2bs3A": {
+        "Domains": 4, 
+        "Length": 660, 
+        "Interaction_Energy": "28.9"
+    }, 
+    "2vanA": {
+        "Domains": 3, 
+        "Length": 240, 
+        "Interaction_Energy": "9.23"
+    }, 
+    "3k40B": {
+        "Domains": 3, 
+        "Length": 447, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "3edpB": {
+        "Domains": 2, 
+        "Length": 214, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "3ol2A": {
+        "Domains": 3, 
+        "Length": 614, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1bxoA": {
+        "Domains": 2, 
+        "Length": 326, 
+        "Interaction_Energy": "8.33"
+    }, 
+    "3bg3B": {
+        "Domains": 4, 
+        "Length": 603, 
+        "Interaction_Energy": "26.0"
+    }, 
+    "3bg3C": {
+        "Domains": 4, 
+        "Length": 603, 
+        "Interaction_Energy": "25.5"
+    }, 
+    "3bulA": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "16.6"
+    }, 
+    "1lfpA": {
+        "Domains": 3, 
+        "Length": 241, 
+        "Interaction_Energy": "12.2"
+    }, 
+    "1ba1A": {
+        "Domains": 4, 
+        "Length": 378, 
+        "Interaction_Energy": "23.3"
+    }, 
+    "1on2B": {
+        "Domains": 2, 
+        "Length": 135, 
+        "Interaction_Energy": "4.74"
+    }, 
+    "3a21A": {
+        "Domains": 4, 
+        "Length": 616, 
+        "Interaction_Energy": "21.4"
+    }, 
+    "3a21B": {
+        "Domains": 4, 
+        "Length": 617, 
+        "Interaction_Energy": "20.8"
+    }, 
+    "2g50C": {
+        "Domains": 3, 
+        "Length": 538, 
+        "Interaction_Energy": "11.1"
+    }, 
+    "2g50B": {
+        "Domains": 3, 
+        "Length": 538, 
+        "Interaction_Energy": "10.0"
+    }, 
+    "2b8nA": {
+        "Domains": 2, 
+        "Length": 411, 
+        "Interaction_Energy": "1.8"
+    }, 
+    "2g50F": {
+        "Domains": 3, 
+        "Length": 542, 
+        "Interaction_Energy": "10.7"
+    }, 
+    "1a35A": {
+        "Domains": 4, 
+        "Length": 474, 
+        "Interaction_Energy": "10.9"
+    }, 
+    "2fmpA": {
+        "Domains": 4, 
+        "Length": 338, 
+        "Interaction_Energy": "17.2"
+    }, 
+    "1faeA": {
+        "Domains": 3, 
+        "Length": 629, 
+        "Interaction_Energy": "15.6"
+    }, 
+    "2d1cB": {
+        "Domains": 2, 
+        "Length": 495, 
+        "Interaction_Energy": "2.68"
+    }, 
+    "2f69A": {
+        "Domains": 2, 
+        "Length": 244, 
+        "Interaction_Energy": "6.59"
+    }, 
+    "3c9sA": {
+        "Domains": 2, 
+        "Length": 304, 
+        "Interaction_Energy": "7.46"
+    }, 
+    "1xqsD": {
+        "Domains": 2, 
+        "Length": 165, 
+        "Interaction_Energy": "4.12"
+    }, 
+    "1owlA": {
+        "Domains": 3, 
+        "Length": 473, 
+        "Interaction_Energy": "16.9"
+    }, 
+    "2onlC": {
+        "Domains": 3, 
+        "Length": 317, 
+        "Interaction_Energy": "10.6"
+    }, 
+    "1ff9A": {
+        "Domains": 3, 
+        "Length": 447, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "3ca8B": {
+        "Domains": 2, 
+        "Length": 263, 
+        "Interaction_Energy": "6.17"
+    }, 
+    "1x1oA": {
+        "Domains": 2, 
+        "Length": 277, 
+        "Interaction_Energy": "5.38"
+    }, 
+    "1f00I": {
+        "Domains": 3, 
+        "Length": 282, 
+        "Interaction_Energy": "8.05"
+    }, 
+    "1kj8B": {
+        "Domains": 3, 
+        "Length": 384, 
+        "Interaction_Energy": "13.5"
+    }, 
+    "1kj8A": {
+        "Domains": 3, 
+        "Length": 386, 
+        "Interaction_Energy": "13.3"
+    }, 
+    "1hdhB": {
+        "Domains": 2, 
+        "Length": 524, 
+        "Interaction_Energy": "8.61"
+    }, 
+    "1h8pA": {
+        "Domains": 2, 
+        "Length": 88, 
+        "Interaction_Energy": "3.95"
+    }, 
+    "3m00A": {
+        "Domains": 2, 
+        "Length": 530, 
+        "Interaction_Energy": "6.02"
+    }, 
+    "1ky9B": {
+        "Domains": 4, 
+        "Length": 383, 
+        "Interaction_Energy": "12.5"
+    }, 
+    "1k98A": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "16.9"
+    }, 
+    "1b6aA": {
+        "Domains": 2, 
+        "Length": 355, 
+        "Interaction_Energy": "6.96"
+    }, 
+    "1s0bA": {
+        "Domains": 4, 
+        "Length": 1287, 
+        "Interaction_Energy": "16.0"
+    }, 
+    "1ikpA": {
+        "Domains": 3, 
+        "Length": 606, 
+        "Interaction_Energy": "9.22"
+    }, 
+    "1qcfA": {
+        "Domains": 4, 
+        "Length": 449, 
+        "Interaction_Energy": "13.8"
+    }, 
+    "1fyhA": {
+        "Domains": 2, 
+        "Length": 242, 
+        "Interaction_Energy": "6.52"
+    }, 
+    "1du3A": {
+        "Domains": 2, 
+        "Length": 90, 
+        "Interaction_Energy": "7.14"
+    }, 
+    "1du3B": {
+        "Domains": 3, 
+        "Length": 110, 
+        "Interaction_Energy": "19.9"
+    }, 
+    "2ioqA": {
+        "Domains": 4, 
+        "Length": 567, 
+        "Interaction_Energy": "13.2"
+    }, 
+    "2ioqB": {
+        "Domains": 4, 
+        "Length": 577, 
+        "Interaction_Energy": "9.83"
+    }, 
+    "1mowJ": {
+        "Domains": 2, 
+        "Length": 234, 
+        "Interaction_Energy": "7.87"
+    }, 
+    "1fbwA": {
+        "Domains": 3, 
+        "Length": 629, 
+        "Interaction_Energy": "15.3"
+    }, 
+    "2dplB": {
+        "Domains": 2, 
+        "Length": 278, 
+        "Interaction_Energy": "3.73"
+    }, 
+    "1p2zA": {
+        "Domains": 4, 
+        "Length": 887, 
+        "Interaction_Energy": "16.2"
+    }, 
+    "3d6yA": {
+        "Domains": 3, 
+        "Length": 277, 
+        "Interaction_Energy": "14.9"
+    }, 
+    "2wy6C": {
+        "Domains": 2, 
+        "Length": 358, 
+        "Interaction_Energy": "3.65"
+    }, 
+    "2wy6B": {
+        "Domains": 2, 
+        "Length": 365, 
+        "Interaction_Energy": "4.16"
+    }, 
+    "1fc6A": {
+        "Domains": 3, 
+        "Length": 382, 
+        "Interaction_Energy": "10.5"
+    }, 
+    "1jepA": {
+        "Domains": 2, 
+        "Length": 212, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "3ju4A": {
+        "Domains": 4, 
+        "Length": 716, 
+        "Interaction_Energy": "14.8"
+    }, 
+    "3ialB": {
+        "Domains": 3, 
+        "Length": 506, 
+        "Interaction_Energy": "13.4"
+    }, 
+    "1a8hA": {
+        "Domains": 3, 
+        "Length": 500, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "2i1oA": {
+        "Domains": 3, 
+        "Length": 389, 
+        "Interaction_Energy": "18.6"
+    }, 
+    "1exjA": {
+        "Domains": 3, 
+        "Length": 275, 
+        "Interaction_Energy": "13.8"
+    }, 
+    "1t8iA": {
+        "Domains": 4, 
+        "Length": 564, 
+        "Interaction_Energy": "15.6"
+    }, 
+    "2oezB": {
+        "Domains": 2, 
+        "Length": 263, 
+        "Interaction_Energy": "4.67"
+    }, 
+    "1fn9B": {
+        "Domains": 2, 
+        "Length": 365, 
+        "Interaction_Energy": "3.73"
+    }, 
+    "3c6eA": {
+        "Domains": 4, 
+        "Length": 390, 
+        "Interaction_Energy": "18.4"
+    }, 
+    "1pcmX": {
+        "Domains": 4, 
+        "Length": 454, 
+        "Interaction_Energy": "14.2"
+    }, 
+    "3qipB": {
+        "Domains": 4, 
+        "Length": 402, 
+        "Interaction_Energy": "17.0"
+    }, 
+    "1jnrB": {
+        "Domains": 2, 
+        "Length": 149, 
+        "Interaction_Energy": "2.8"
+    }, 
+    "1mwuA": {
+        "Domains": 4, 
+        "Length": 632, 
+        "Interaction_Energy": "16.5"
+    }, 
+    "2vheA": {
+        "Domains": 2, 
+        "Length": 196, 
+        "Interaction_Energy": "6.86"
+    }, 
+    "1dkzA": {
+        "Domains": 2, 
+        "Length": 215, 
+        "Interaction_Energy": "5.59"
+    }, 
+    "1jmuD": {
+        "Domains": 4, 
+        "Length": 608, 
+        "Interaction_Energy": "9.96"
+    }, 
+    "3kasA": {
+        "Domains": 3, 
+        "Length": 633, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "2gnoA": {
+        "Domains": 3, 
+        "Length": 300, 
+        "Interaction_Energy": "9.14"
+    }, 
+    "1cy8A": {
+        "Domains": 4, 
+        "Length": 563, 
+        "Interaction_Energy": "15.7"
+    }, 
+    "2aopA": {
+        "Domains": 3, 
+        "Length": 456, 
+        "Interaction_Energy": "9.66"
+    }, 
+    "3c2uB": {
+        "Domains": 2, 
+        "Length": 554, 
+        "Interaction_Energy": "5.21"
+    }, 
+    "1kehA": {
+        "Domains": 4, 
+        "Length": 683, 
+        "Interaction_Energy": "22.2"
+    }, 
+    "1qf8B": {
+        "Domains": 2, 
+        "Length": 155, 
+        "Interaction_Energy": "9.22"
+    }, 
+    "1aopA": {
+        "Domains": 3, 
+        "Length": 460, 
+        "Interaction_Energy": "9.16"
+    }, 
+    "3ckcA": {
+        "Domains": 3, 
+        "Length": 500, 
+        "Interaction_Energy": "16.9"
+    }, 
+    "3nt1B": {
+        "Domains": 2, 
+        "Length": 552, 
+        "Interaction_Energy": "6.54"
+    }, 
+    "3ckcB": {
+        "Domains": 3, 
+        "Length": 499, 
+        "Interaction_Energy": "17.1"
+    }, 
+    "1i0uA": {
+        "Domains": 2, 
+        "Length": 82, 
+        "Interaction_Energy": "3.19"
+    }, 
+    "3fwlA": {
+        "Domains": 4, 
+        "Length": 683, 
+        "Interaction_Energy": "19.4"
+    }, 
+    "3h9cA": {
+        "Domains": 3, 
+        "Length": 544, 
+        "Interaction_Energy": "11.2"
+    }, 
+    "1k3eB": {
+        "Domains": 2, 
+        "Length": 144, 
+        "Interaction_Energy": "1.55"
+    }, 
+    "1dvpA": {
+        "Domains": 2, 
+        "Length": 217, 
+        "Interaction_Energy": "2.09"
+    }, 
+    "2opsB": {
+        "Domains": 4, 
+        "Length": 409, 
+        "Interaction_Energy": "20.7"
+    }, 
+    "1wkuA": {
+        "Domains": 2, 
+        "Length": 225, 
+        "Interaction_Energy": "4.96"
+    }, 
+    "1h99A": {
+        "Domains": 2, 
+        "Length": 220, 
+        "Interaction_Energy": "0.86"
+    }, 
+    "2x5oA": {
+        "Domains": 3, 
+        "Length": 460, 
+        "Interaction_Energy": "7.01"
+    }, 
+    "1nj1A": {
+        "Domains": 3, 
+        "Length": 463, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1rqgA": {
+        "Domains": 4, 
+        "Length": 606, 
+        "Interaction_Energy": "18.1"
+    }, 
+    "1djxB": {
+        "Domains": 4, 
+        "Length": 561, 
+        "Interaction_Energy": "20.3"
+    }, 
+    "1ulvA": {
+        "Domains": 4, 
+        "Length": 1019, 
+        "Interaction_Energy": "13.4"
+    }, 
+    "3cx5B": {
+        "Domains": 2, 
+        "Length": 352, 
+        "Interaction_Energy": "3.03"
+    }, 
+    "1nh3A": {
+        "Domains": 4, 
+        "Length": 470, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "1lnqE": {
+        "Domains": 4, 
+        "Length": 301, 
+        "Interaction_Energy": "7.64"
+    }, 
+    "1lnqD": {
+        "Domains": 4, 
+        "Length": 301, 
+        "Interaction_Energy": "7.16"
+    }, 
+    "1lnqA": {
+        "Domains": 4, 
+        "Length": 301, 
+        "Interaction_Energy": "7.16"
+    }, 
+    "1lnqC": {
+        "Domains": 4, 
+        "Length": 301, 
+        "Interaction_Energy": "7.16"
+    }, 
+    "1lnqB": {
+        "Domains": 4, 
+        "Length": 301, 
+        "Interaction_Energy": "5.97"
+    }, 
+    "1c7dA": {
+        "Domains": 2, 
+        "Length": 284, 
+        "Interaction_Energy": "1.19"
+    }, 
+    "1xszA": {
+        "Domains": 3, 
+        "Length": 384, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1xszB": {
+        "Domains": 3, 
+        "Length": 382, 
+        "Interaction_Energy": "10.5"
+    }, 
+    "2fkmX": {
+        "Domains": 4, 
+        "Length": 455, 
+        "Interaction_Energy": "14.7"
+    }, 
+    "1nxuA": {
+        "Domains": 3, 
+        "Length": 317, 
+        "Interaction_Energy": "16.3"
+    }, 
+    "1rquB": {
+        "Domains": 2, 
+        "Length": 120, 
+        "Interaction_Energy": "2.1"
+    }, 
+    "1nxuB": {
+        "Domains": 3, 
+        "Length": 318, 
+        "Interaction_Energy": "15.9"
+    }, 
+    "2p5zX": {
+        "Domains": 4, 
+        "Length": 362, 
+        "Interaction_Energy": "20.3"
+    }, 
+    "1na6B": {
+        "Domains": 2, 
+        "Length": 395, 
+        "Interaction_Energy": "4.46"
+    }, 
+    "1y57A": {
+        "Domains": 4, 
+        "Length": 452, 
+        "Interaction_Energy": "12.5"
+    }, 
+    "2fbwA": {
+        "Domains": 4, 
+        "Length": 613, 
+        "Interaction_Energy": "29.9"
+    }, 
+    "2fbwN": {
+        "Domains": 4, 
+        "Length": 612, 
+        "Interaction_Energy": "29.8"
+    }, 
+    "3cvrA": {
+        "Domains": 4, 
+        "Length": 469, 
+        "Interaction_Energy": "18.0"
+    }, 
+    "1s0cA": {
+        "Domains": 4, 
+        "Length": 1287, 
+        "Interaction_Energy": "16.1"
+    }, 
+    "3mg1A": {
+        "Domains": 2, 
+        "Length": 313, 
+        "Interaction_Energy": "2.75"
+    }, 
+    "1inlD": {
+        "Domains": 2, 
+        "Length": 282, 
+        "Interaction_Energy": "7.09"
+    }, 
+    "1spuB": {
+        "Domains": 4, 
+        "Length": 719, 
+        "Interaction_Energy": "24.2"
+    }, 
+    "1spuA": {
+        "Domains": 4, 
+        "Length": 717, 
+        "Interaction_Energy": "24.3"
+    }, 
+    "1ja0B": {
+        "Domains": 3, 
+        "Length": 432, 
+        "Interaction_Energy": "9.2"
+    }, 
+    "1dl5B": {
+        "Domains": 2, 
+        "Length": 316, 
+        "Interaction_Energy": "6.84"
+    }, 
+    "1cy6A": {
+        "Domains": 4, 
+        "Length": 562, 
+        "Interaction_Energy": "13.8"
+    }, 
+    "1v34A": {
+        "Domains": 2, 
+        "Length": 346, 
+        "Interaction_Energy": "6.85"
+    }, 
+    "2pw9B": {
+        "Domains": 3, 
+        "Length": 231, 
+        "Interaction_Energy": "13.6"
+    }, 
+    "1wpbG": {
+        "Domains": 2, 
+        "Length": 168, 
+        "Interaction_Energy": "1.46"
+    }, 
+    "1hyoA": {
+        "Domains": 2, 
+        "Length": 416, 
+        "Interaction_Energy": "8.95"
+    }, 
+    "1gsoA": {
+        "Domains": 4, 
+        "Length": 427, 
+        "Interaction_Energy": "16.0"
+    }, 
+    "1nbfA": {
+        "Domains": 3, 
+        "Length": 347, 
+        "Interaction_Energy": "17.8"
+    }, 
+    "1jhnA": {
+        "Domains": 2, 
+        "Length": 380, 
+        "Interaction_Energy": "0.815"
+    }, 
+    "3dt4A": {
+        "Domains": 3, 
+        "Length": 635, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "2bs2A": {
+        "Domains": 4, 
+        "Length": 660, 
+        "Interaction_Energy": "28.2"
+    }, 
+    "2bs2D": {
+        "Domains": 4, 
+        "Length": 658, 
+        "Interaction_Energy": "28.5"
+    }, 
+    "2cchD": {
+        "Domains": 2, 
+        "Length": 259, 
+        "Interaction_Energy": "5.63"
+    }, 
+    "1ofwA": {
+        "Domains": 2, 
+        "Length": 297, 
+        "Interaction_Energy": "4.06"
+    }, 
+    "3g4nB": {
+        "Domains": 3, 
+        "Length": 428, 
+        "Interaction_Energy": "5.02"
+    }, 
+    "1fc7A": {
+        "Domains": 3, 
+        "Length": 386, 
+        "Interaction_Energy": "8.3"
+    }, 
+    "2qgmA": {
+        "Domains": 3, 
+        "Length": 381, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "1jeqB": {
+        "Domains": 3, 
+        "Length": 520, 
+        "Interaction_Energy": "4.11"
+    }, 
+    "2vd8B": {
+        "Domains": 2, 
+        "Length": 374, 
+        "Interaction_Energy": "3.79"
+    }, 
+    "1adeA": {
+        "Domains": 3, 
+        "Length": 437, 
+        "Interaction_Energy": "13.2"
+    }, 
+    "1v0eD": {
+        "Domains": 4, 
+        "Length": 666, 
+        "Interaction_Energy": "14.7"
+    }, 
+    "1nltA": {
+        "Domains": 3, 
+        "Length": 228, 
+        "Interaction_Energy": "11.9"
+    }, 
+    "1v0eA": {
+        "Domains": 4, 
+        "Length": 666, 
+        "Interaction_Energy": "15.4"
+    }, 
+    "6gepA": {
+        "Domains": 3, 
+        "Length": 457, 
+        "Interaction_Energy": "9.2"
+    }, 
+    "1zmeC": {
+        "Domains": 2, 
+        "Length": 70, 
+        "Interaction_Energy": "2.2"
+    }, 
+    "1kswA": {
+        "Domains": 4, 
+        "Length": 449, 
+        "Interaction_Energy": "16.2"
+    }, 
+    "2v2gA": {
+        "Domains": 2, 
+        "Length": 220, 
+        "Interaction_Energy": "2.2"
+    }, 
+    "1u8vA": {
+        "Domains": 3, 
+        "Length": 490, 
+        "Interaction_Energy": "12.9"
+    }, 
+    "1u8vB": {
+        "Domains": 3, 
+        "Length": 490, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "2radA": {
+        "Domains": 3, 
+        "Length": 395, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "2radB": {
+        "Domains": 3, 
+        "Length": 397, 
+        "Interaction_Energy": "11.5"
+    }, 
+    "1c1dA": {
+        "Domains": 2, 
+        "Length": 349, 
+        "Interaction_Energy": "4.38"
+    }, 
+    "1jakA": {
+        "Domains": 2, 
+        "Length": 499, 
+        "Interaction_Energy": "5.04"
+    }, 
+    "3b5mA": {
+        "Domains": 2, 
+        "Length": 209, 
+        "Interaction_Energy": "2.66"
+    }, 
+    "1hndA": {
+        "Domains": 2, 
+        "Length": 317, 
+        "Interaction_Energy": "12.2"
+    }, 
+    "1kj9B": {
+        "Domains": 3, 
+        "Length": 387, 
+        "Interaction_Energy": "12.9"
+    }, 
+    "1ee8A": {
+        "Domains": 2, 
+        "Length": 266, 
+        "Interaction_Energy": "6.25"
+    }, 
+    "3js8A": {
+        "Domains": 4, 
+        "Length": 538, 
+        "Interaction_Energy": "34.1"
+    }, 
+    "1o98A": {
+        "Domains": 2, 
+        "Length": 548, 
+        "Interaction_Energy": "1.12"
+    }, 
+    "2ys6A": {
+        "Domains": 4, 
+        "Length": 421, 
+        "Interaction_Energy": "18.6"
+    }, 
+    "2ih2A": {
+        "Domains": 2, 
+        "Length": 393, 
+        "Interaction_Energy": "1.8"
+    }, 
+    "2hzzA": {
+        "Domains": 4, 
+        "Length": 684, 
+        "Interaction_Energy": "21.9"
+    }, 
+    "1gm7B": {
+        "Domains": 3, 
+        "Length": 580, 
+        "Interaction_Energy": "8.53"
+    }, 
+    "3dplC": {
+        "Domains": 3, 
+        "Length": 378, 
+        "Interaction_Energy": "7.3"
+    }, 
+    "3binA": {
+        "Domains": 3, 
+        "Length": 286, 
+        "Interaction_Energy": "5.96"
+    }, 
+    "1qzxA": {
+        "Domains": 3, 
+        "Length": 425, 
+        "Interaction_Energy": "8.93"
+    }, 
+    "1qzxB": {
+        "Domains": 3, 
+        "Length": 425, 
+        "Interaction_Energy": "8.34"
+    }, 
+    "3a9sA": {
+        "Domains": 3, 
+        "Length": 589, 
+        "Interaction_Energy": "14.6"
+    }, 
+    "3a9sC": {
+        "Domains": 3, 
+        "Length": 589, 
+        "Interaction_Energy": "14.5"
+    }, 
+    "3a9sB": {
+        "Domains": 3, 
+        "Length": 589, 
+        "Interaction_Energy": "14.4"
+    }, 
+    "1ep3B": {
+        "Domains": 3, 
+        "Length": 261, 
+        "Interaction_Energy": "14.9"
+    }, 
+    "1tocR": {
+        "Domains": 2, 
+        "Length": 120, 
+        "Interaction_Energy": "0.932"
+    }, 
+    "1jxmA": {
+        "Domains": 3, 
+        "Length": 264, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "2evrA": {
+        "Domains": 2, 
+        "Length": 240, 
+        "Interaction_Energy": "3.88"
+    }, 
+    "1v0wA": {
+        "Domains": 2, 
+        "Length": 497, 
+        "Interaction_Energy": "6.92"
+    }, 
+    "1rplA": {
+        "Domains": 3, 
+        "Length": 241, 
+        "Interaction_Energy": "9.98"
+    }, 
+    "1lshA": {
+        "Domains": 4, 
+        "Length": 1019, 
+        "Interaction_Energy": "17.8"
+    }, 
+    "2r0yA": {
+        "Domains": 2, 
+        "Length": 281, 
+        "Interaction_Energy": "8.27"
+    }, 
+    "1nh2D": {
+        "Domains": 2, 
+        "Length": 105, 
+        "Interaction_Energy": "3.66"
+    }, 
+    "2z37B": {
+        "Domains": 2, 
+        "Length": 249, 
+        "Interaction_Energy": "6.48"
+    }, 
+    "2hwjB": {
+        "Domains": 2, 
+        "Length": 187, 
+        "Interaction_Energy": "8.23"
+    }, 
+    "2h2zA": {
+        "Domains": 3, 
+        "Length": 306, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "1sg4A": {
+        "Domains": 2, 
+        "Length": 258, 
+        "Interaction_Energy": "11.2"
+    }, 
+    "1pcjX": {
+        "Domains": 4, 
+        "Length": 458, 
+        "Interaction_Energy": "14.1"
+    }, 
+    "1mixA": {
+        "Domains": 2, 
+        "Length": 206, 
+        "Interaction_Energy": "2.68"
+    }, 
+    "3c6fA": {
+        "Domains": 2, 
+        "Length": 138, 
+        "Interaction_Energy": "1.8"
+    }, 
+    "1p5dX": {
+        "Domains": 4, 
+        "Length": 466, 
+        "Interaction_Energy": "14.1"
+    }, 
+    "3c8vA": {
+        "Domains": 4, 
+        "Length": 445, 
+        "Interaction_Energy": "30.5"
+    }, 
+    "3c8vC": {
+        "Domains": 4, 
+        "Length": 456, 
+        "Interaction_Energy": "28.9"
+    }, 
+    "3c8vB": {
+        "Domains": 4, 
+        "Length": 452, 
+        "Interaction_Energy": "28.6"
+    }, 
+    "3c8vD": {
+        "Domains": 4, 
+        "Length": 455, 
+        "Interaction_Energy": "29.0"
+    }, 
+    "1dceA": {
+        "Domains": 3, 
+        "Length": 566, 
+        "Interaction_Energy": "3.43"
+    }, 
+    "3bl7B": {
+        "Domains": 3, 
+        "Length": 289, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "3kjdA": {
+        "Domains": 2, 
+        "Length": 350, 
+        "Interaction_Energy": "5.11"
+    }, 
+    "1mwtA": {
+        "Domains": 4, 
+        "Length": 634, 
+        "Interaction_Energy": "17.5"
+    }, 
+    "1mwtB": {
+        "Domains": 4, 
+        "Length": 625, 
+        "Interaction_Energy": "19.1"
+    }, 
+    "1fbvA": {
+        "Domains": 4, 
+        "Length": 388, 
+        "Interaction_Energy": "20.0"
+    }, 
+    "1ja1A": {
+        "Domains": 4, 
+        "Length": 616, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1ja1B": {
+        "Domains": 4, 
+        "Length": 614, 
+        "Interaction_Energy": "12.9"
+    }, 
+    "1okgA": {
+        "Domains": 3, 
+        "Length": 347, 
+        "Interaction_Energy": "15.1"
+    }, 
+    "2bwvA": {
+        "Domains": 2, 
+        "Length": 448, 
+        "Interaction_Energy": "2.82"
+    }, 
+    "3mn5A": {
+        "Domains": 3, 
+        "Length": 347, 
+        "Interaction_Energy": "14.8"
+    }, 
+    "2ptkA": {
+        "Domains": 4, 
+        "Length": 425, 
+        "Interaction_Energy": "14.5"
+    }, 
+    "3moeA": {
+        "Domains": 3, 
+        "Length": 651, 
+        "Interaction_Energy": "12.0"
+    }, 
+    "2h21C": {
+        "Domains": 2, 
+        "Length": 438, 
+        "Interaction_Energy": "2.49"
+    }, 
+    "2h21A": {
+        "Domains": 2, 
+        "Length": 424, 
+        "Interaction_Energy": "1.92"
+    }, 
+    "2zhiA": {
+        "Domains": 4, 
+        "Length": 315, 
+        "Interaction_Energy": "11.9"
+    }, 
+    "2gviA": {
+        "Domains": 3, 
+        "Length": 198, 
+        "Interaction_Energy": "13.8"
+    }, 
+    "1jx4A": {
+        "Domains": 4, 
+        "Length": 335, 
+        "Interaction_Energy": "8.28"
+    }, 
+    "2bupA": {
+        "Domains": 4, 
+        "Length": 378, 
+        "Interaction_Energy": "24.1"
+    }, 
+    "1ixhA": {
+        "Domains": 2, 
+        "Length": 321, 
+        "Interaction_Energy": "4.93"
+    }, 
+    "1txgB": {
+        "Domains": 2, 
+        "Length": 335, 
+        "Interaction_Energy": "3.53"
+    }, 
+    "1iyjB": {
+        "Domains": 4, 
+        "Length": 591, 
+        "Interaction_Energy": "10.1"
+    }, 
+    "1iyjD": {
+        "Domains": 4, 
+        "Length": 591, 
+        "Interaction_Energy": "10.0"
+    }, 
+    "2ahxA": {
+        "Domains": 4, 
+        "Length": 611, 
+        "Interaction_Energy": "14.8"
+    }, 
+    "2ahxB": {
+        "Domains": 4, 
+        "Length": 615, 
+        "Interaction_Energy": "12.3"
+    }, 
+    "2o8rA": {
+        "Domains": 3, 
+        "Length": 634, 
+        "Interaction_Energy": "8.87"
+    }, 
+    "2o8rB": {
+        "Domains": 4, 
+        "Length": 589, 
+        "Interaction_Energy": "15.3"
+    }, 
+    "2j03I": {
+        "Domains": 2, 
+        "Length": 145, 
+        "Interaction_Energy": "2.05"
+    }, 
+    "1v54C": {
+        "Domains": 2, 
+        "Length": 259, 
+        "Interaction_Energy": "8.78"
+    }, 
+    "1f02I": {
+        "Domains": 3, 
+        "Length": 282, 
+        "Interaction_Energy": "7.97"
+    }, 
+    "3bt3B": {
+        "Domains": 2, 
+        "Length": 129, 
+        "Interaction_Energy": "7.71"
+    }, 
+    "1h03P": {
+        "Domains": 2, 
+        "Length": 125, 
+        "Interaction_Energy": "5.94"
+    }, 
+    "3knhM": {
+        "Domains": 2, 
+        "Length": 120, 
+        "Interaction_Energy": "2.99"
+    }, 
+    "1l1lD": {
+        "Domains": 3, 
+        "Length": 717, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1l1lC": {
+        "Domains": 3, 
+        "Length": 717, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1l1lB": {
+        "Domains": 3, 
+        "Length": 717, 
+        "Interaction_Energy": "12.9"
+    }, 
+    "2wzkA": {
+        "Domains": 3, 
+        "Length": 372, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "2o62B": {
+        "Domains": 2, 
+        "Length": 268, 
+        "Interaction_Energy": "6.9"
+    }, 
+    "1z0sB": {
+        "Domains": 2, 
+        "Length": 249, 
+        "Interaction_Energy": "2.87"
+    }, 
+    "1s0dA": {
+        "Domains": 4, 
+        "Length": 1287, 
+        "Interaction_Energy": "16.1"
+    }, 
+    "1bgvA": {
+        "Domains": 3, 
+        "Length": 449, 
+        "Interaction_Energy": "15.8"
+    }, 
+    "2cfiA": {
+        "Domains": 2, 
+        "Length": 315, 
+        "Interaction_Energy": "3.68"
+    }, 
+    "3mfhA": {
+        "Domains": 4, 
+        "Length": 521, 
+        "Interaction_Energy": "16.0"
+    }, 
+    "1nvvS": {
+        "Domains": 2, 
+        "Length": 469, 
+        "Interaction_Energy": "3.42"
+    }, 
+    "1c4kA": {
+        "Domains": 4, 
+        "Length": 728, 
+        "Interaction_Energy": "17.3"
+    }, 
+    "2ichA": {
+        "Domains": 2, 
+        "Length": 321, 
+        "Interaction_Energy": "7.65"
+    }, 
+    "1vdkB": {
+        "Domains": 3, 
+        "Length": 457, 
+        "Interaction_Energy": "9.85"
+    }, 
+    "1vdkA": {
+        "Domains": 3, 
+        "Length": 458, 
+        "Interaction_Energy": "9.7"
+    }, 
+    "2napA": {
+        "Domains": 4, 
+        "Length": 720, 
+        "Interaction_Energy": "25.0"
+    }, 
+    "3b8mA": {
+        "Domains": 2, 
+        "Length": 255, 
+        "Interaction_Energy": "3.37"
+    }, 
+    "2ei1A": {
+        "Domains": 2, 
+        "Length": 293, 
+        "Interaction_Energy": "9.36"
+    }, 
+    "2a91A": {
+        "Domains": 3, 
+        "Length": 506, 
+        "Interaction_Energy": "6.52"
+    }, 
+    "1mlaA": {
+        "Domains": 2, 
+        "Length": 305, 
+        "Interaction_Energy": "5.75"
+    }, 
+    "1wq1G": {
+        "Domains": 2, 
+        "Length": 320, 
+        "Interaction_Energy": "4.17"
+    }, 
+    "2j58E": {
+        "Domains": 4, 
+        "Length": 345, 
+        "Interaction_Energy": "8.2"
+    }, 
+    "2j58F": {
+        "Domains": 4, 
+        "Length": 345, 
+        "Interaction_Energy": "8.21"
+    }, 
+    "2j58G": {
+        "Domains": 4, 
+        "Length": 345, 
+        "Interaction_Energy": "8.18"
+    }, 
+    "2j58A": {
+        "Domains": 4, 
+        "Length": 345, 
+        "Interaction_Energy": "8.16"
+    }, 
+    "2j58B": {
+        "Domains": 4, 
+        "Length": 345, 
+        "Interaction_Energy": "7.12"
+    }, 
+    "2j58C": {
+        "Domains": 4, 
+        "Length": 345, 
+        "Interaction_Energy": "7.99"
+    }, 
+    "1m15A": {
+        "Domains": 2, 
+        "Length": 356, 
+        "Interaction_Energy": "7.3"
+    }, 
+    "2j58H": {
+        "Domains": 4, 
+        "Length": 345, 
+        "Interaction_Energy": "7.1"
+    }, 
+    "1p30A": {
+        "Domains": 4, 
+        "Length": 891, 
+        "Interaction_Energy": "18.2"
+    }, 
+    "1e9zA": {
+        "Domains": 2, 
+        "Length": 238, 
+        "Interaction_Energy": "0.69"
+    }, 
+    "1rw9A": {
+        "Domains": 3, 
+        "Length": 754, 
+        "Interaction_Energy": "15.0"
+    }, 
+    "2p1gB": {
+        "Domains": 2, 
+        "Length": 231, 
+        "Interaction_Energy": "8.52"
+    }, 
+    "1jevA": {
+        "Domains": 3, 
+        "Length": 517, 
+        "Interaction_Energy": "18.5"
+    }, 
+    "2r7fA": {
+        "Domains": 4, 
+        "Length": 450, 
+        "Interaction_Energy": "25.2"
+    }, 
+    "1e5rB": {
+        "Domains": 2, 
+        "Length": 262, 
+        "Interaction_Energy": "6.5"
+    }, 
+    "1r8sE": {
+        "Domains": 2, 
+        "Length": 187, 
+        "Interaction_Energy": "4.58"
+    }, 
+    "2phnB": {
+        "Domains": 2, 
+        "Length": 266, 
+        "Interaction_Energy": "9.12"
+    }, 
+    "2z48A": {
+        "Domains": 3, 
+        "Length": 431, 
+        "Interaction_Energy": "7.48"
+    }, 
+    "1w23A": {
+        "Domains": 2, 
+        "Length": 360, 
+        "Interaction_Energy": "5.62"
+    }, 
+    "1thzB": {
+        "Domains": 4, 
+        "Length": 590, 
+        "Interaction_Energy": "18.2"
+    }, 
+    "2xclA": {
+        "Domains": 4, 
+        "Length": 411, 
+        "Interaction_Energy": "23.0"
+    }, 
+    "1pfoA": {
+        "Domains": 4, 
+        "Length": 471, 
+        "Interaction_Energy": "22.0"
+    }, 
+    "1thzA": {
+        "Domains": 4, 
+        "Length": 590, 
+        "Interaction_Energy": "18.0"
+    }, 
+    "1lqsM": {
+        "Domains": 2, 
+        "Length": 142, 
+        "Interaction_Energy": "1.82"
+    }, 
+    "3d1gB": {
+        "Domains": 3, 
+        "Length": 366, 
+        "Interaction_Energy": "8.06"
+    }, 
+    "1vkyA": {
+        "Domains": 2, 
+        "Length": 280, 
+        "Interaction_Energy": "3.76"
+    }, 
+    "2hs0A": {
+        "Domains": 4, 
+        "Length": 580, 
+        "Interaction_Energy": "23.1"
+    }, 
+    "1re3F": {
+        "Domains": 3, 
+        "Length": 291, 
+        "Interaction_Energy": "10.5"
+    }, 
+    "1re3C": {
+        "Domains": 3, 
+        "Length": 288, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "1dkxA": {
+        "Domains": 2, 
+        "Length": 221, 
+        "Interaction_Energy": "4.43"
+    }, 
+    "1mwsA": {
+        "Domains": 4, 
+        "Length": 633, 
+        "Interaction_Energy": "16.6"
+    }, 
+    "1mwsB": {
+        "Domains": 4, 
+        "Length": 628, 
+        "Interaction_Energy": "18.0"
+    }, 
+    "1pujA": {
+        "Domains": 2, 
+        "Length": 261, 
+        "Interaction_Energy": "4.75"
+    }, 
+    "2uxwA": {
+        "Domains": 4, 
+        "Length": 567, 
+        "Interaction_Energy": "20.8"
+    }, 
+    "1p49A": {
+        "Domains": 3, 
+        "Length": 548, 
+        "Interaction_Energy": "19.7"
+    }, 
+    "1oacA": {
+        "Domains": 4, 
+        "Length": 719, 
+        "Interaction_Energy": "25.0"
+    }, 
+    "1oacB": {
+        "Domains": 4, 
+        "Length": 722, 
+        "Interaction_Energy": "24.1"
+    }, 
+    "1zxvA": {
+        "Domains": 4, 
+        "Length": 728, 
+        "Interaction_Energy": "13.3"
+    }, 
+    "2ys7A": {
+        "Domains": 4, 
+        "Length": 413, 
+        "Interaction_Energy": "18.0"
+    }, 
+    "1bvp2": {
+        "Domains": 3, 
+        "Length": 349, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "1bvp3": {
+        "Domains": 3, 
+        "Length": 349, 
+        "Interaction_Energy": "8.6"
+    }, 
+    "1dc1B": {
+        "Domains": 2, 
+        "Length": 311, 
+        "Interaction_Energy": "1.73"
+    }, 
+    "1ei5A": {
+        "Domains": 3, 
+        "Length": 518, 
+        "Interaction_Energy": "12.7"
+    }, 
+    "1e8gA": {
+        "Domains": 4, 
+        "Length": 550, 
+        "Interaction_Energy": "29.4"
+    }, 
+    "1xdoA": {
+        "Domains": 4, 
+        "Length": 687, 
+        "Interaction_Energy": "20.3"
+    }, 
+    "1vpvB": {
+        "Domains": 2, 
+        "Length": 272, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1a0hA": {
+        "Domains": 2, 
+        "Length": 159, 
+        "Interaction_Energy": "1.03"
+    }, 
+    "2zhjA": {
+        "Domains": 4, 
+        "Length": 315, 
+        "Interaction_Energy": "10.6"
+    }, 
+    "3k75D": {
+        "Domains": 3, 
+        "Length": 252, 
+        "Interaction_Energy": "8.69"
+    }, 
+    "1t77A": {
+        "Domains": 2, 
+        "Length": 414, 
+        "Interaction_Energy": "7.47"
+    }, 
+    "2yrwA": {
+        "Domains": 4, 
+        "Length": 413, 
+        "Interaction_Energy": "18.2"
+    }, 
+    "2ww1B": {
+        "Domains": 4, 
+        "Length": 741, 
+        "Interaction_Energy": "22.7"
+    }, 
+    "2ww1C": {
+        "Domains": 4, 
+        "Length": 739, 
+        "Interaction_Energy": "21.9"
+    }, 
+    "2ww1A": {
+        "Domains": 4, 
+        "Length": 744, 
+        "Interaction_Energy": "22.5"
+    }, 
+    "1h3fA": {
+        "Domains": 3, 
+        "Length": 403, 
+        "Interaction_Energy": "7.28"
+    }, 
+    "2ww1D": {
+        "Domains": 4, 
+        "Length": 741, 
+        "Interaction_Energy": "22.8"
+    }, 
+    "1h3fB": {
+        "Domains": 3, 
+        "Length": 406, 
+        "Interaction_Energy": "8.06"
+    }, 
+    "1rhsA": {
+        "Domains": 2, 
+        "Length": 292, 
+        "Interaction_Energy": "4.85"
+    }, 
+    "1sz0A": {
+        "Domains": 3, 
+        "Length": 417, 
+        "Interaction_Energy": "9.76"
+    }, 
+    "3c8yA": {
+        "Domains": 3, 
+        "Length": 574, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "3ku5A": {
+        "Domains": 2, 
+        "Length": 333, 
+        "Interaction_Energy": "1.54"
+    }, 
+    "2is6B": {
+        "Domains": 4, 
+        "Length": 652, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "1kp8A": {
+        "Domains": 3, 
+        "Length": 525, 
+        "Interaction_Energy": "7.52"
+    }, 
+    "1kp8C": {
+        "Domains": 3, 
+        "Length": 525, 
+        "Interaction_Energy": "10.3"
+    }, 
+    "1kp8B": {
+        "Domains": 3, 
+        "Length": 525, 
+        "Interaction_Energy": "9.98"
+    }, 
+    "2vw0A": {
+        "Domains": 3, 
+        "Length": 657, 
+        "Interaction_Energy": "10.0"
+    }, 
+    "1tfrA": {
+        "Domains": 2, 
+        "Length": 283, 
+        "Interaction_Energy": "4.3"
+    }, 
+    "1pwpA": {
+        "Domains": 4, 
+        "Length": 732, 
+        "Interaction_Energy": "12.4"
+    }, 
+    "1heiA": {
+        "Domains": 3, 
+        "Length": 443, 
+        "Interaction_Energy": "5.17"
+    }, 
+    "1cf5A": {
+        "Domains": 2, 
+        "Length": 249, 
+        "Interaction_Energy": "6.03"
+    }, 
+    "2r9qD": {
+        "Domains": 2, 
+        "Length": 330, 
+        "Interaction_Energy": "5.33"
+    }, 
+    "1amuA": {
+        "Domains": 4, 
+        "Length": 509, 
+        "Interaction_Energy": "21.0"
+    }, 
+    "1i4aA": {
+        "Domains": 4, 
+        "Length": 309, 
+        "Interaction_Energy": "11.5"
+    }, 
+    "1amuB": {
+        "Domains": 4, 
+        "Length": 508, 
+        "Interaction_Energy": "20.4"
+    }, 
+    "1hp1A": {
+        "Domains": 2, 
+        "Length": 516, 
+        "Interaction_Energy": "2.52"
+    }, 
+    "1m3yA": {
+        "Domains": 2, 
+        "Length": 413, 
+        "Interaction_Energy": "8.37"
+    }, 
+    "1w5rB": {
+        "Domains": 2, 
+        "Length": 273, 
+        "Interaction_Energy": "9.37"
+    }, 
+    "1s0eA": {
+        "Domains": 4, 
+        "Length": 1287, 
+        "Interaction_Energy": "16.0"
+    }, 
+    "1g8lA": {
+        "Domains": 4, 
+        "Length": 403, 
+        "Interaction_Energy": "13.7"
+    }, 
+    "1g8lB": {
+        "Domains": 4, 
+        "Length": 403, 
+        "Interaction_Energy": "14.0"
+    }, 
+    "3fspA": {
+        "Domains": 3, 
+        "Length": 356, 
+        "Interaction_Energy": "4.41"
+    }, 
+    "2pspB": {
+        "Domains": 2, 
+        "Length": 105, 
+        "Interaction_Energy": "5.11"
+    }, 
+    "3girA": {
+        "Domains": 4, 
+        "Length": 373, 
+        "Interaction_Energy": "21.3"
+    }, 
+    "3o5aA": {
+        "Domains": 4, 
+        "Length": 794, 
+        "Interaction_Energy": "26.5"
+    }, 
+    "1cy4A": {
+        "Domains": 4, 
+        "Length": 558, 
+        "Interaction_Energy": "16.7"
+    }, 
+    "2g3pA": {
+        "Domains": 2, 
+        "Length": 201, 
+        "Interaction_Energy": "2.65"
+    }, 
+    "1o0wA": {
+        "Domains": 2, 
+        "Length": 238, 
+        "Interaction_Energy": "7.11"
+    }, 
+    "2g3pB": {
+        "Domains": 2, 
+        "Length": 201, 
+        "Interaction_Energy": "2.93"
+    }, 
+    "1k3yA": {
+        "Domains": 2, 
+        "Length": 221, 
+        "Interaction_Energy": "8.82"
+    }, 
+    "2eiyA": {
+        "Domains": 2, 
+        "Length": 297, 
+        "Interaction_Energy": "4.43"
+    }, 
+    "2oasB": {
+        "Domains": 3, 
+        "Length": 420, 
+        "Interaction_Energy": "11.3"
+    }, 
+    "1f3iA": {
+        "Domains": 2, 
+        "Length": 455, 
+        "Interaction_Energy": "4.48"
+    }, 
+    "1c4zC": {
+        "Domains": 3, 
+        "Length": 350, 
+        "Interaction_Energy": "8.84"
+    }, 
+    "1c4zB": {
+        "Domains": 3, 
+        "Length": 350, 
+        "Interaction_Energy": "10.2"
+    }, 
+    "1c4zA": {
+        "Domains": 3, 
+        "Length": 350, 
+        "Interaction_Energy": "9.61"
+    }, 
+    "1ccwD": {
+        "Domains": 2, 
+        "Length": 483, 
+        "Interaction_Energy": "9.23"
+    }, 
+    "1x9tA": {
+        "Domains": 2, 
+        "Length": 440, 
+        "Interaction_Energy": "1.95"
+    }, 
+    "2hhpA": {
+        "Domains": 3, 
+        "Length": 535, 
+        "Interaction_Energy": "8.22"
+    }, 
+    "1dt9A": {
+        "Domains": 3, 
+        "Length": 398, 
+        "Interaction_Energy": "2.33"
+    }, 
+    "3ecpA": {
+        "Domains": 3, 
+        "Length": 460, 
+        "Interaction_Energy": "10.7"
+    }, 
+    "1urzC": {
+        "Domains": 4, 
+        "Length": 385, 
+        "Interaction_Energy": "15.0"
+    }, 
+    "1urzB": {
+        "Domains": 4, 
+        "Length": 387, 
+        "Interaction_Energy": "14.6"
+    }, 
+    "1urzA": {
+        "Domains": 4, 
+        "Length": 382, 
+        "Interaction_Energy": "13.9"
+    }, 
+    "1is2A": {
+        "Domains": 4, 
+        "Length": 637, 
+        "Interaction_Energy": "17.2"
+    }, 
+    "1tkyA": {
+        "Domains": 3, 
+        "Length": 224, 
+        "Interaction_Energy": "20.9"
+    }, 
+    "1urzE": {
+        "Domains": 4, 
+        "Length": 382, 
+        "Interaction_Energy": "14.7"
+    }, 
+    "1urzD": {
+        "Domains": 4, 
+        "Length": 386, 
+        "Interaction_Energy": "13.5"
+    }, 
+    "1exiA": {
+        "Domains": 3, 
+        "Length": 275, 
+        "Interaction_Energy": "14.3"
+    }, 
+    "1uunB": {
+        "Domains": 2, 
+        "Length": 184, 
+        "Interaction_Energy": "1.45"
+    }, 
+    "1qgiA": {
+        "Domains": 2, 
+        "Length": 259, 
+        "Interaction_Energy": "3.86"
+    }, 
+    "1cy0A": {
+        "Domains": 4, 
+        "Length": 534, 
+        "Interaction_Energy": "19.1"
+    }, 
+    "1ho8A": {
+        "Domains": 2, 
+        "Length": 447, 
+        "Interaction_Energy": "3.75"
+    }, 
+    "1kl7A": {
+        "Domains": 3, 
+        "Length": 503, 
+        "Interaction_Energy": "11.9"
+    }, 
+    "1kl7B": {
+        "Domains": 3, 
+        "Length": 503, 
+        "Interaction_Energy": "12.3"
+    }, 
+    "3lidA": {
+        "Domains": 3, 
+        "Length": 280, 
+        "Interaction_Energy": "19.7"
+    }, 
+    "1czaN": {
+        "Domains": 4, 
+        "Length": 898, 
+        "Interaction_Energy": "9.44"
+    }, 
+    "2x8cB": {
+        "Domains": 4, 
+        "Length": 593, 
+        "Interaction_Energy": "12.9"
+    }, 
+    "2x8cA": {
+        "Domains": 4, 
+        "Length": 588, 
+        "Interaction_Energy": "11.7"
+    }, 
+    "2wazX": {
+        "Domains": 2, 
+        "Length": 316, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "1dd9A": {
+        "Domains": 3, 
+        "Length": 310, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "1jmuB": {
+        "Domains": 4, 
+        "Length": 608, 
+        "Interaction_Energy": "9.92"
+    }, 
+    "1fmkA": {
+        "Domains": 4, 
+        "Length": 437, 
+        "Interaction_Energy": "14.4"
+    }, 
+    "2auaB": {
+        "Domains": 2, 
+        "Length": 210, 
+        "Interaction_Energy": "7.0"
+    }, 
+    "1jmuF": {
+        "Domains": 4, 
+        "Length": 608, 
+        "Interaction_Energy": "9.97"
+    }, 
+    "1jmuG": {
+        "Domains": 2, 
+        "Length": 365, 
+        "Interaction_Energy": "3.9"
+    }, 
+    "3dk9A": {
+        "Domains": 3, 
+        "Length": 480, 
+        "Interaction_Energy": "6.22"
+    }, 
+    "1vqoP": {
+        "Domains": 3, 
+        "Length": 143, 
+        "Interaction_Energy": "3.71"
+    }, 
+    "1vqoW": {
+        "Domains": 2, 
+        "Length": 154, 
+        "Interaction_Energy": "6.93"
+    }, 
+    "1su8A": {
+        "Domains": 3, 
+        "Length": 633, 
+        "Interaction_Energy": "17.6"
+    }, 
+    "1vqoL": {
+        "Domains": 2, 
+        "Length": 145, 
+        "Interaction_Energy": "1.03"
+    }, 
+    "1vqoB": {
+        "Domains": 3, 
+        "Length": 337, 
+        "Interaction_Energy": "8.35"
+    }, 
+    "1vqoA": {
+        "Domains": 3, 
+        "Length": 237, 
+        "Interaction_Energy": "9.82"
+    }, 
+    "2ouxB": {
+        "Domains": 2, 
+        "Length": 245, 
+        "Interaction_Energy": "3.31"
+    }, 
+    "1q5vB": {
+        "Domains": 2, 
+        "Length": 116, 
+        "Interaction_Energy": "2.41"
+    }, 
+    "2ohhA": {
+        "Domains": 2, 
+        "Length": 408, 
+        "Interaction_Energy": "4.45"
+    }, 
+    "2e28A": {
+        "Domains": 4, 
+        "Length": 587, 
+        "Interaction_Energy": "11.0"
+    }, 
+    "2qeeB": {
+        "Domains": 3, 
+        "Length": 417, 
+        "Interaction_Energy": "12.8"
+    }, 
+    "1nr0A": {
+        "Domains": 2, 
+        "Length": 610, 
+        "Interaction_Energy": "1.42"
+    }, 
+    "1h3iA": {
+        "Domains": 2, 
+        "Length": 293, 
+        "Interaction_Energy": "5.86"
+    }, 
+    "1n8zC": {
+        "Domains": 4, 
+        "Length": 581, 
+        "Interaction_Energy": "8.76"
+    }, 
+    "1ltlA": {
+        "Domains": 3, 
+        "Length": 239, 
+        "Interaction_Energy": "7.43"
+    }, 
+    "1ltlB": {
+        "Domains": 3, 
+        "Length": 239, 
+        "Interaction_Energy": "7.26"
+    }, 
+    "1ltlC": {
+        "Domains": 3, 
+        "Length": 239, 
+        "Interaction_Energy": "7.45"
+    }, 
+    "1b25D": {
+        "Domains": 3, 
+        "Length": 611, 
+        "Interaction_Energy": "19.7"
+    }, 
+    "1b25C": {
+        "Domains": 3, 
+        "Length": 611, 
+        "Interaction_Energy": "19.4"
+    }, 
+    "1b25B": {
+        "Domains": 3, 
+        "Length": 611, 
+        "Interaction_Energy": "19.6"
+    }, 
+    "1b25A": {
+        "Domains": 3, 
+        "Length": 611, 
+        "Interaction_Energy": "19.6"
+    }, 
+    "2fh1B": {
+        "Domains": 3, 
+        "Length": 324, 
+        "Interaction_Energy": "10.8"
+    }, 
+    "2fh1C": {
+        "Domains": 3, 
+        "Length": 322, 
+        "Interaction_Energy": "10.4"
+    }, 
+    "1x7dA": {
+        "Domains": 2, 
+        "Length": 332, 
+        "Interaction_Energy": "7.07"
+    }, 
+    "1emsA": {
+        "Domains": 2, 
+        "Length": 412, 
+        "Interaction_Energy": "0.726"
+    }, 
+    "1pt7A": {
+        "Domains": 2, 
+        "Length": 415, 
+        "Interaction_Energy": "2.8"
+    }, 
+    "1mwrA": {
+        "Domains": 4, 
+        "Length": 609, 
+        "Interaction_Energy": "19.0"
+    }, 
+    "1mmlA": {
+        "Domains": 2, 
+        "Length": 251, 
+        "Interaction_Energy": "3.76"
+    }, 
+    "3k75E": {
+        "Domains": 3, 
+        "Length": 246, 
+        "Interaction_Energy": "8.81"
+    }, 
+    "2hydA": {
+        "Domains": 2, 
+        "Length": 578, 
+        "Interaction_Energy": "2.66"
+    }, 
+    "1g8mB": {
+        "Domains": 4, 
+        "Length": 580, 
+        "Interaction_Energy": "18.7"
+    }, 
+    "3dtbA": {
+        "Domains": 3, 
+        "Length": 661, 
+        "Interaction_Energy": "11.8"
+    }, 
+    "3dtbB": {
+        "Domains": 3, 
+        "Length": 638, 
+        "Interaction_Energy": "11.7"
+    }, 
+    "1r6zA": {
+        "Domains": 3, 
+        "Length": 497, 
+        "Interaction_Energy": "4.29"
+    }, 
+    "1c7sA": {
+        "Domains": 4, 
+        "Length": 858, 
+        "Interaction_Energy": "17.4"
+    }, 
+    "1r6zP": {
+        "Domains": 3, 
+        "Length": 498, 
+        "Interaction_Energy": "4.35"
+    }, 
+    "1evuA": {
+        "Domains": 4, 
+        "Length": 710, 
+        "Interaction_Energy": "22.9"
+    }, 
+    "3d3lA": {
+        "Domains": 2, 
+        "Length": 451, 
+        "Interaction_Energy": "6.53"
+    }, 
+    "1sxjH": {
+        "Domains": 2, 
+        "Length": 260, 
+        "Interaction_Energy": "6.76"
+    }, 
+    "1bmtA": {
+        "Domains": 2, 
+        "Length": 246, 
+        "Interaction_Energy": "3.11"
+    }, 
+    "1vfgB": {
+        "Domains": 2, 
+        "Length": 358, 
+        "Interaction_Energy": "4.7"
+    }, 
+    "1f5nA": {
+        "Domains": 2, 
+        "Length": 570, 
+        "Interaction_Energy": "1.88"
+    }, 
+    "1n60C": {
+        "Domains": 3, 
+        "Length": 286, 
+        "Interaction_Energy": "18.6"
+    }, 
+    "1jzsA": {
+        "Domains": 3, 
+        "Length": 821, 
+        "Interaction_Energy": "7.51"
+    }, 
+    "3mjfA": {
+        "Domains": 4, 
+        "Length": 458, 
+        "Interaction_Energy": "17.6"
+    }, 
+    "2ck3C": {
+        "Domains": 3, 
+        "Length": 490, 
+        "Interaction_Energy": "8.59"
+    }, 
+    "2ck3F": {
+        "Domains": 3, 
+        "Length": 469, 
+        "Interaction_Energy": "11.8"
+    }, 
+    "2ck3G": {
+        "Domains": 2, 
+        "Length": 181, 
+        "Interaction_Energy": "3.29"
+    }, 
+    "2im9A": {
+        "Domains": 3, 
+        "Length": 307, 
+        "Interaction_Energy": "25.3"
+    }, 
+    "2hauA": {
+        "Domains": 4, 
+        "Length": 667, 
+        "Interaction_Energy": "5.73"
+    }, 
+    "2hauB": {
+        "Domains": 4, 
+        "Length": 667, 
+        "Interaction_Energy": "5.37"
+    }, 
+    "2ww2C": {
+        "Domains": 4, 
+        "Length": 741, 
+        "Interaction_Energy": "23.8"
+    }, 
+    "2ww2B": {
+        "Domains": 4, 
+        "Length": 745, 
+        "Interaction_Energy": "26.5"
+    }, 
+    "2ww2A": {
+        "Domains": 4, 
+        "Length": 746, 
+        "Interaction_Energy": "25.5"
+    }, 
+    "2r6iB": {
+        "Domains": 2, 
+        "Length": 263, 
+        "Interaction_Energy": "5.84"
+    }
+}

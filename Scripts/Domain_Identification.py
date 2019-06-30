@@ -26,9 +26,9 @@ def get_input_feature_name(x):
 
 def get_input_dataset_features_file(x):
 	return {
-		"Benchmark_2" : "BenchmarkTwo_Features_v2.csv",
+		"Benchmark_2" : "BenchmarkTwo_Features_vAlt.csv",
 		"Benchmark_3" : "BenchmarkThree_Features_v2.csv",
-		"ASTRAL SCOP30" : "Astral_Scop30_features_v2.csv",
+		"ASTRAL SCOP30" : "Astral_Scop30_features_v3.csv",
 		"Self-Created" : "self_created_dataset_features_v2.csv"
 	}[x]
 
@@ -65,7 +65,7 @@ while 1:
 	except KeyError:
 		print "Invalid Input!!"
 
-file_training_dataset_features = "self_created_training_dataset_features_v3.csv"
+file_training_dataset_features = "self_created_training_dataset_features_vAlt.csv"
 
 with open(file_training_dataset_features) as f:
 	SVM_train_data = f.readlines()
@@ -143,7 +143,7 @@ while 1:
 		print "Invalid Input!!"
 
 
-with open('self_created_multi_training_dataset_features_v3.json', 'r') as f:
+with open('self_created_multi_training_dataset_features_v4.json', 'r') as f:
     SVM_multi_train_data = json.load(f)
 
 classifier = "multi-domain"

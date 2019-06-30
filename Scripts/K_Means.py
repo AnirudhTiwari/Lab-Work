@@ -127,7 +127,6 @@ def internalStitch(island, patch_length):
 	return sorted(island)
 
 def sequenceStitch(k_means, island):
-	
 	for key, value in k_means.iteritems():
 		if len(value)==0:
 			k_means[key] = island[0]
@@ -169,6 +168,9 @@ def sequenceStitch(k_means, island):
 	return k_means, remaining_island
 
 def calculateCentroid(residues, coordinates, realId_list):
+	# print "Residues"
+	# print residues
+	# print
 	centroid = [0.0, 0.0, 0.0]
 
 	for residue in residues:
@@ -182,9 +184,14 @@ def calculateCentroid(residues, coordinates, realId_list):
 	return centroid
 
 def centroidStitch(k_means, island, coordinates, realId_list):
+	# print "Input to centroid stitch"
+	# print k_means
+	# print
 	cluster_centroid_dict = {};
 
 	for key, value in k_means.iteritems():
+		if len(value) == 0:
+			return k_means
 		cluster_centroid = calculateCentroid(value, coordinates, realId_list)
 		cluster_centroid_dict[key] = cluster_centroid
 
@@ -213,8 +220,50 @@ def centroidStitch(k_means, island, coordinates, realId_list):
 
 	return k_means
 
-def stitchPatches(k_means, cluster_centers, coordinates, realId_list,patch_length): 
+def stitchPatches(k_means, cluster_centers, coordinates, realId_list, patch_length): 
+	island = []
+	for key, value in k_means.iteritems():
+		x=0
+		while x!=len(value):
+			counter=0
+			for y in range(x+1,len(value)-1,1):
+				if value[y]-value[y-1]!=1:
+					if len(value[x:y])<= patch_length:
+						patch = value[x:y]
+						island.append(patch)
+					break
 
+				elif y==len(value)-2:
+					if len(value[x:y+2])<=patch_length:
+						patch = value[x:y+2]
+						island.append(patch)
+					break
+				counter+=1
+			x+=(counter+1)
+
+		island = checkLastTwoResidues(value, island)
+
+	island = internalStitch(sorted(island), patch_length)
+
+
+	for key, value in k_means.iteritems():
+		for patches in island:
+			for x in patches:
+				if x in value:
+					value.remove(x)
+
+	k_means, island = sequenceStitch(k_means, island)
+
+	if len(island)!=0:
+		k_means = centroidStitch(k_means, island, coordinates, realId_list)
+ 		
+	return k_means
+
+
+def stitchPatchesWithoutSequenceStitch(k_means, cluster_centers, coordinates, realId_list, patch_length): 
+	# print "Initial input to stitch patches"
+	# print k_means
+	# print
 	island = []
 	for key, value in k_means.iteritems():
 		x=0
@@ -240,17 +289,30 @@ def stitchPatches(k_means, cluster_centers, coordinates, realId_list,patch_lengt
 	island = internalStitch(sorted(island), patch_length)
 
 	mean_list = []
-	for key, value in k_means.iteritems():
-		for patches in island:
-			for x in patches:
-				if x in value:
-					value.remove(x)
 
-	k_means, island = sequenceStitch(k_means, island)
+	# print "island"
+	# print island
+	# print
 
-	if len(island)!=0:
-		k_means = centroidStitch(k_means, island, coordinates, realId_list)
- 		
+	island_length =  sum([len(v) for v in island])
+
+	k_means_length =  sum([len(v) for v in k_means.values()])
+
+	if island_length != k_means_length:
+		for key, value in k_means.iteritems():
+			for patches in island:
+				for x in patches:
+					if x in value:
+						value.remove(x)
+
+		try:
+			k_means, island = sequenceStitch(k_means, island)
+		except Exception as e:
+			pass
+		finally:
+			if len(island)!=0:
+				k_means = centroidStitch(k_means, island, coordinates, realId_list)
+				
 	return k_means
 
 def makeList(domain):

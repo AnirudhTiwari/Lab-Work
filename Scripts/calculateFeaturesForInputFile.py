@@ -81,7 +81,8 @@ def getCordsList(fileRead, chain):
 # path_to_pdb_files = 'Second Dataset/'
 # path_to_pdb_files = 'BenchmarkTwoDataset/'
 # path_to_pdb_files = 'BenchmarkThreeDataset/'
-path_to_pdb_files = 'TrainingDataset/'
+# path_to_pdb_files = 'TrainingDataset/'
+path_to_pdb_files = 'All PDBs/'
 # path_to_pdb_files = 'HariKrishnaDataset/'
 # path_to_pdb_files = 'ASTRAL_SCOP30_DATASET/'
 
@@ -147,6 +148,7 @@ def getInteractionEnergy(matrix, num_domains, cords_list):
 							energy+=1
 	return (1.0*energy/2)/len(matrix)
 
+
 for x in cath_data:
 	if x[0]!='#':
 		cath_dict[x[:5].lower()] = int(x[7]+x[8])
@@ -157,43 +159,49 @@ for input_chain in input_chains:
 	chain = input_chain[4].lower()
 
 	try:
-		domains = cath_dict[pdb+chain]
-	except Exception, e:
-		# print "Chain not in CATH" + pdb + chain, e
-		chains_not_in_cath.append(pdb+chain)
-		continue
 
-	open_pdb = open(path_to_pdb_files+pdb+'.pdb','r')
-	open_pdb_v2 = open(path_to_pdb_files+pdb+'.pdb','r') #Separate instances for calculating radiuss of gyration and coordinates
-
-	cords_list, realId_list = getCordsList(open_pdb,chain.upper())
-
-	x = np.asarray(cords_list)
-
-	try:
-		radius_gy = radius_of_gyration.radius_of_gyration(open_pdb_v2, chain.upper())
-	except Exception, e:
-			# print "Unable to calculte Radius of gyration", pdb+chain, e
-			chains_rg_failed_to_calculate.append(pdb+chain)
+		try:
+			domains = cath_dict[pdb+chain]
+		except Exception, e:
+			# print "Chain not in CATH" + pdb + chain, e
+			chains_not_in_cath.append(pdb+chain)
 			continue
 
-	length = len(cords_list)
+		open_pdb = open(path_to_pdb_files+pdb+'.pdb','r')
+		open_pdb_v2 = open(path_to_pdb_files+pdb+'.pdb','r') #Separate instances for calculating radiuss of gyration and coordinates
 
-	density = calculateDensity(cords_list)
+		cords_list, realId_list = getCordsList(open_pdb,chain.upper())
 
-	km = KMeans(n_clusters=2).fit(x) #Only splitting into two to find the interaction energy between two portions
-	labels_km = km.labels_
-		
-	# interaction_energy = getInteractionEnergy(labels_km, 2, cords_list)
-	interaction_energy = InteractionEnergy.calculateInteractionEnergy(labels_km, cords_list)
+		x = np.asarray(cords_list)
 
-	print pdb, ",", chain.upper(), "," ,domains, "," ,length, ", ", '{0:.3f}'.format(interaction_energy),", ", '{0:.3f}'.format(density),", ", '{0:.3f}'.format(radius_gy)
+		try:
+			radius_gy = radius_of_gyration.radius_of_gyration(open_pdb_v2, chain.upper())
+		except Exception, e:
+				# print "Unable to calculte Radius of gyration", pdb+chain, e
+				chains_rg_failed_to_calculate.append(pdb+chain)
+				continue
+
+		length = len(cords_list)
+
+		density = calculateDensity(cords_list)
+
+		km = KMeans(n_clusters=2).fit(x) #Only splitting into two to find the interaction energy between two portions
+		labels_km = km.labels_
+			
+		# interaction_energy = getInteractionEnergy(labels_km, 2, cords_list)
+		interaction_energy = InteractionEnergy.calculateInteractionEnergy(pdb, chain, 2)
+
+		print pdb, ",", chain.upper(), "," ,domains, "," ,length, ", ", '{0:.3f}'.format(interaction_energy),", ", '{0:.3f}'.format(density),", ", '{0:.3f}'.format(radius_gy)
+
+
+
+	except Exception as e:
+		print e
+		print pdb, chain
+		pass
 
 
 print "No. of chains not in CATH", len(chains_not_in_cath)
-
-for x in chains_not_in_cath:
-	print x
 
 print "No. of chains for which Rg failed to calculte", len(chains_rg_failed_to_calculate)
 

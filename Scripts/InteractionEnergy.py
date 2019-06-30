@@ -3,9 +3,11 @@ import common_functions as utils
 from collections import defaultdict
 import numpy as np
 from sklearn.cluster import KMeans
+import K_Means as kMeansInternal
 
 cutoff_distance = 7.0; #The maximum distance between two residues for them to be considered interacting
 
+path_to_pdb_files = 'All PDBs/'
 '''
 This method assumes that the number of domains is as per CATH and fetches the
 same from CATH and performs k-means based on that number of domains.
@@ -29,13 +31,53 @@ This method calculates the pairwise interactionEnergy for a given pdb, chain and
 def calculateInteractionEnergy(pdb, chain, number_of_clusters=None):
 	if number_of_clusters==None:
 		number_of_clusters = utils.findNumberOfDomains(pdb, chain)
+	if number_of_clusters==1:
+		number_of_clusters=2
 
 	coordinates_list = utils.getCoordinatesListFromPDB(pdb, chain)
 
 	numpy_array = np.asarray(coordinates_list)
 	kMeans = KMeans(n_clusters=number_of_clusters).fit(numpy_array)
 
+	# Merging/Re-arranging small fragments before calculating Interaction Energy.
+
 	labels_kMeans = kMeans.labels_
+	clusters_km =  kMeans.cluster_centers_
+
+	#unecessary step as getCordsList take pdb_file as an input!
+	pdb_file = open(path_to_pdb_files+pdb+'.pdb','r')
+	cords_list, realId_list = kMeansInternal.getCordsList(pdb_file, chain.upper())
+
+	boundaries = kMeansInternal.getDomainBoundaries(labels_kMeans, realId_list, number_of_clusters)
+
+	for key,value in boundaries.iteritems():
+		boundaries[key] = list(set(value))
+
+	if not kMeansInternal.TooManyMissingResidues(boundaries):
+		boundaries = kMeansInternal.fillVoids(boundaries)
+	else:
+		boundaries = kMeansInternal.fillVoids(boundaries)
+
+#Hard coding patch size as 20
+	new_boundaries = kMeansInternal.stitchPatchesWithoutSequenceStitch(boundaries, clusters_km, cords_list, realId_list, 20)
+
+	
+
+# Merged boundaries
+
+	# print "New Boundaries FML!!"
+	# print new_boundaries
+	# print "Size is ", len(new_boundaries[0] + new_boundaries[1])
+	# print
+
+
+
+	# print "labelsssssss FML Pt. 2!!"
+	# print labels_kMeans
+	# print "size is ", len(labels_kMeans)
+	# print
+
+	# transformNewBoundariesToLabels_kMeans(new_boundaries)
 
 	return calculateInteractionEnergyForAGivenSplit(labels_kMeans, coordinates_list)
 
@@ -53,10 +95,13 @@ def calculateInteractionEnergyForAGivenSplit(cluster_labels, coordinates_list):
 	for x in range(len(cluster_labels)):
 		clusters_dict[cluster_labels[x]].append(x)
 
+	clusters_dict = defaultdict(int, clusters_dict)
+
 	intra_cluster_interaction_energy_dict = {}
 
 	for key, value in clusters_dict.iteritems():
 		intra_cluster_interaction_energy_dict[key] = calculateIntraClusterInteractionEnergy(value, coordinates_list)
+
 
 	pairs_of_clusters = list(combinations(clusters_dict.keys(), 2))
 
@@ -98,8 +143,8 @@ def calculateIntraClusterInteractionEnergy(cluster_X, coordinates_list):
 
 
 def getPairwiseInteractionEnergy(pair, coordinates_list):
-	coordinate_A = coordinates_list[pair[0]]
-	coordinate_B = coordinates_list[pair[1]]
+	coordinate_A = coordinates_list[pair[0]-1]
+	coordinate_B = coordinates_list[pair[1]-1]
 	
 	distance = utils.dist(coordinate_A, coordinate_B)
 	
@@ -107,4 +152,8 @@ def getPairwiseInteractionEnergy(pair, coordinates_list):
 		return 1
 	
 	return 0
+
+def transformNewBoundariesToLabels_kMeans(coordinatesDict):
+	return 0
+
 
