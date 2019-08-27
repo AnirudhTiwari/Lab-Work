@@ -1,1 +1,4 @@
 *.pyc
+numpy
+scipy
+sklearn
