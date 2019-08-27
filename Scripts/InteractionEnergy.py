@@ -61,24 +61,6 @@ def calculateInteractionEnergy(pdb, chain, number_of_clusters=None):
 #Hard coding patch size as 20
 	new_boundaries = kMeansInternal.stitchPatchesWithoutSequenceStitch(boundaries, clusters_km, cords_list, realId_list, 20)
 
-	
-
-# Merged boundaries
-
-	# print "New Boundaries FML!!"
-	# print new_boundaries
-	# print "Size is ", len(new_boundaries[0] + new_boundaries[1])
-	# print
-
-
-
-	# print "labelsssssss FML Pt. 2!!"
-	# print labels_kMeans
-	# print "size is ", len(labels_kMeans)
-	# print
-
-	# transformNewBoundariesToLabels_kMeans(new_boundaries)
-
 	return calculateInteractionEnergyForAGivenSplit(labels_kMeans, coordinates_list)
 
 
