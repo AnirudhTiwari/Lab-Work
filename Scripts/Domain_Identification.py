@@ -5,14 +5,48 @@ import calculateFeatures
 import csv
 import json
 import K_Means
+import K_means_experimental as Km_experimental
+
+
+#This function takes as an input list of list where the fundamental list looks like this [{pdb: {length, IS-Sum_2, IS-Sum_3, IS-Sum_4}}, Domain] where the domain can be assigned/correct depending
+# on the case. It extracts the features [Length, IS-Sum_2, IS-Sum_3, IS-Sum_4] along with CATH annotation and prints it out in .csv for ananlysis like this:
+#Chain:  1fmtA ,  Domains (CATH):  2 ,  Domain 1 :  1 - 208 ,  Domain 2 :  209 - 313 ,  Length:  308 ,  IS-Sum_2:  3.6 ,  IS-Sum_3:  13.8 ,  IS-Sum_4:  34.0 ,  Assigned Domain:  2
+
+
+def dumpMultiDomainClassificationOutput(chains_with_assignedDomains_and_featureSet):
+
+	for entry in chains_with_assignedDomains_and_featureSet:
+		
+		chain_dict = entry[0]
+		assigned_domain = entry[1]
+
+		chain = chain_dict.keys()[0]
+		feature_vector = chain_dict.values()[0]
+		correct_domain = utils.findNumberOfDomains(chain)
+
+		Km_experimental.applyKMeans(chain)
+		counter = 0 
+		for feature in feature_vector:
+			if counter == 0:
+				print "Length: ",
+			elif counter == 1:
+				print "IS-Sum_2: ",
+			elif counter == 2:
+				print "IS-Sum_3: ",
+			elif counter == 3:
+				print "IS-Sum_4: ",	
+			print feature, ", ",
+			counter+=1
+
+		print "Assigned Domain: ", assigned_domain
+
 
 def get_input_dataset_name(x):
 	return {
 		'A' : "Benchmark_2",
 		'B' : "Benchmark_3",
 		'C' : "ASTRAL SCOP30",
-		'D' : "Self-Created",
-		'E' : "Your own Chain"
+		'D' : "Self-Created"
 	}[x]
 
 def get_input_feature_name(x):
@@ -21,7 +55,8 @@ def get_input_feature_name(x):
 		'I' : "Interaction_Energy",
 		'R' : "Radius_Of_Gyration",
 		'D' : "Density",
-		'S' : "Density_Sum"
+		'S' : "Density_Sum",
+		'IS': "IS_Sum"
 	}[x]
 
 def get_input_dataset_features_file(x):
@@ -39,7 +74,7 @@ def get_multi_domain_identification_method(x):
 
 #Taking user input for test dataset
 while 1:
-	testing_dataset_input = raw_input("Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created, E for your own Protein Chain\n")
+	testing_dataset_input = raw_input("Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created\n")
 	try:
 		testing_dataset = get_input_dataset_name(testing_dataset_input)
 		if testing_dataset_input == 'E':
@@ -130,12 +165,18 @@ print "Identifying multi-domain proteins\n"
 feature_set = []
 
 while 1:
-	featureSet_input = raw_input("Select features to be used for training and testing:\nType L for Length\nType I for Interaction_Energy\nType S for Density Sum\nFor multiple features, give space sepearated input. For ex. L S for Length & DensitySum\n").split()
+	featureSet_input = raw_input("Select features to be used for training and testing:\nType L for Length\nType I for Interaction_Energy\nType S for Density Sum\nType IS for IS-Sum\nFor multiple features, give space sepearated input. For ex. L IS for Length & IS-Sum\n").split()
 	print "You selected: ",
 
 	try:
 		for features in featureSet_input:
-			feature_set.append(get_input_feature_name(features))
+			feature = get_input_feature_name(features)
+			if feature == "IS_Sum":
+				feature_set.append("IS-Sum_2")
+				feature_set.append("IS-Sum_3")
+				feature_set.append("IS-Sum_4")
+			else:
+				feature_set.append(get_input_feature_name(features))
 			print get_input_feature_name(features),
 		print
 		break
@@ -143,14 +184,40 @@ while 1:
 		print "Invalid Input!!"
 
 
-with open('self_created_multi_training_dataset_features_v4.json', 'r') as f:
+with open('self_created_multi_training_dataset_features_v5.json', 'r') as f:
     SVM_multi_train_data = json.load(f)
 
 classifier = "multi-domain"
 
-correct_chains, incorrect_chains = SVM_v2.classifyMultiDomainProteins(SVM_multi_train_data, multi_correct_chains, feature_set, classifier)
+print "Feature set is ", feature_set
+
+correct_chains_withDomains, incorrect_chains_withAssignedDomains = SVM_v2.classifyMultiDomainProteins_v2(SVM_multi_train_data, multi_correct_chains, feature_set, classifier)
+
+print ########################################################
+print
+print "PRINTING CORRECT CHAINS DATA"
+print
+dumpMultiDomainClassificationOutput(correct_chains_withDomains)
+print
+print ########################################################
+print
+
+print
+print ########################################################
+print
+print "PRINTING INCORRECT CHAINS DATA"
+print
+dumpMultiDomainClassificationOutput(incorrect_chains_withAssignedDomains)
+print
+print ########################################################
+print
 
 print "Performance of multi-domin identification"
+
+correct_chains = []
+for chain in correct_chains_withDomains:
+	correct_chains.append(chain[0].keys()[0])
+
 
 utils.SVM_Multi_Domain_Performance_Analyser(correct_chains, multi_correct_chains)
 
@@ -168,15 +235,11 @@ print "Overall Performance"
 print
 utils.SVM_Multi_Domain_Performance_Analyser(correct_chains_post_kmeans + single_correct_chains, total_test_chains)
 
-# utils.SVM_Performance_Analyser(correct_chains_with_features, SVM_test_data, classifier)
 
 
-# multi_correct_chains_post_second_classification, multi_incorrect_chains_post_second_classification = multiDomainIdentifier.identifyNumberOfDomains(multi_training_dataset_features, multi_correct_chains, feature_set)
-'''
-We now need to calcuate the features for each k=2 to 4 for each entry in the test data set. Interaction Energy & 
-Density Sum will vary for each value of k. Then, for each set of features, test the SVM and get the confidence score.
-Pick the k with the max confidence.
-'''
+
+
+
 
 
 

@@ -30,6 +30,9 @@ def calculateDensitySum(pdb, chain, num_of_clusters):
 features = {
 	"Length" : calculateLength,
 	"Interaction_Energy" : calculateInteractionEnergy,
+	"IS-Sum_2" : calculateInteractionEnergy,
+	"IS-Sum_3" : calculateInteractionEnergy,
+	"IS-Sum_4" : calculateInteractionEnergy,
 	"Radius_Of_Gyration" : calculateRadiusOfGyration,
 	"Density" : calculateDensity,
 	"Density_Sum" : calculateDensitySum
@@ -116,8 +119,17 @@ def calculateFeatures_v2(input_chains, feature_set, num_of_clusters):
 		for feature in feature_set:
 			feature_calculator = features.get(feature, "Invalid input feature") 
 
-			if feature=="Interaction_Energy" or feature=="Density_Sum":
-				feature_value = feature_calculator(pdb, chain, num_of_clusters)
+			if feature=="Interaction_Energy" or feature=="Density_Sum" or feature=="IS-Sum_2" or feature=="IS-Sum_3" or feature=="IS-Sum_4":
+				if feature=="IS-Sum_2":
+					feature_value = feature_calculator(pdb, chain, 2)
+
+				elif feature=="IS-Sum_3":
+					feature_value = feature_calculator(pdb, chain, 3)
+					
+				elif feature=="IS-Sum_4":
+					feature_value = feature_calculator(pdb, chain, 4)
+				else:
+					feature_value = feature_calculator(pdb, chain, num_of_clusters)
 			else:
 				feature_value = feature_calculator(pdb, chain)	
 

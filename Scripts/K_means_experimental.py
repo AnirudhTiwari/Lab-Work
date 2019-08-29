@@ -354,17 +354,14 @@ def makeReadable(boundaries):
 
 def printDicts(dictionary):
 	domain_counter = 1
-	print "\"",
 	domains=len(dictionary)
 	for key in sorted(dictionary, key=dictionary.get):
 		value = dictionary[key]
 		print "Domain", domain_counter,": ",
 		makeReadable(sorted(value))
 		if domain_counter!=domains:
-			print
-			print
+			print ", ",
 		domain_counter+=1
-	print "\"",
 
 def printKMeansDict(k_means):
 	print "\"",
@@ -385,7 +382,7 @@ This is the ingress point for any program calling k-means. It takes as an input 
 # The output is in a .csv format fine tuned to be human readable when imported as an excel sheet. Also, it evaluates the
 # cluster output and deems is to be correct if more than 75% of the residues are correctly assigned to the correct cluster as per CATH. 
 '''
-def applyKMeans(chain, num_of_clusters):
+def applyKMeans(chain):
 	with open('CathDomall', 'r') as f:
 		cath_data = f.readlines()
 
@@ -409,19 +406,23 @@ def applyKMeans(chain, num_of_clusters):
 		pdb = input_chain[:4].lower()
 		chain = input_chain[4].lower()
 		
+		
 
 		cath_entry = cath_dict[pdb+chain]
 
-		# domains = int(cath_entry[7] + cath_entry[8])
-		# if domains==1:
-		# 	continue
-		domains = num_of_clusters
+		domains = int(cath_entry[7] + cath_entry[8])
+		if domains==1:
+			continue
+
+		
 
 		domain_boundary = cath_entry[14:].strip()
 
 		open_pdb = open(path_to_pdb_files+pdb+'.pdb','r') #Opening pdb file for k-means
 		
 		cords_list, realId_list = getCordsList(open_pdb, chain.upper())
+
+		print "Chain: ", pdb+chain.upper(),", ", "Domains (CATH): ", domains, ", ",
 		
 		x = np.asarray(cords_list)
 
@@ -494,25 +495,11 @@ def applyKMeans(chain, num_of_clusters):
 		# Print CATH and K-Means boundaries in a human readable format for Excel.
 		printDicts(cathBoundaries)
 		print ", ",
-		printKMeansDict(sorted_kMeansBoundaries)
-		print ", ",
+		
 		# print "{0:.2f}".format((1.0*overlap)/total_residues),
 		# print ", ",
 
 		chain = chain.upper()
-
-	# 	if (1.0*overlap)/total_residues >= 0.75:
-	# 		correct_chains.append(pdb+chain)
-	# 	else:
-	# 		incorrect_chains.append(pdb+chain)
-
-	# if (len(missingPDB) != 0):
-	# 	print "The following PDBs were not found"
-
-	# 	for x in missingPDB:
-	# 		print x
-
-	return correct_chains, incorrect_chains
 	
 
 

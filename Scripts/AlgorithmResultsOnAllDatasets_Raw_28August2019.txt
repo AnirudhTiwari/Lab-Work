@@ -1,0 +1,592 @@
+Arnavs-MacBook-Pro:Scripts Tiwari$ python Domain_Identification.py 
+Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created
+D
+You selected Self-Created for testing the SVM
+
+Identifying single-domain vs multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type R for Radius_of_Gyration
+Type D for Density
+For multiple features, give space sepearated input. For eg. L D for Length & Density
+L I D
+You selected:  Length Interaction_Energy Density
+Training data =>  2984 2984
+Testing data =>  1284 1284
+
+Contiguous
+Multi {'Total': 292, 'Correct': 235, 'Accuracy': '80.48'}
+Single {'Total': 767, 'Correct': 647, 'Accuracy': '84.35'}
+Total {'Total': 1059, 'Correct': 882, 'Accuracy': '83.29'}
+
+Non-Contiguous
+Multi {'Total': 225, 'Correct': 194, 'Accuracy': '86.22'}
+Single {'Total': 0, 'Correct': 0}
+Total {'Total': 225, 'Correct': 194, 'Accuracy': '86.22'}
+
+Total
+Multi {'Total': 517, 'Correct': 429, 'Accuracy': '82.98'}
+Single {'Total': 767, 'Correct': 647, 'Accuracy': '84.35'}
+Total {'Total': 1284, 'Correct': 1076, 'Accuracy': '83.80'}
+
+
+Saved incorrectly labelled chains to:  output_incorrect_Self-Created_single vs multi-domain.txt 
+
+Saved correctly labelled chains to:  output_correct_Self-Created_single vs multi-domain.txt 
+
+Identifying multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type S for Density Sum
+Type IS for IS-Sum
+For multiple features, give space sepearated input. For ex. L IS for Length & IS-Sum
+L IS
+You selected:  Length IS_Sum
+Feature set is  ['Length', 'IS-Sum_2', 'IS-Sum_3', 'IS-Sum_4']
+Performance of multi-domin identification
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 101, 'Contiguous': 154, 'Total': 255}, 3: {'Non-Contiguous': 63, 'Contiguous': 64, 'Total': 127}, 4: {'Non-Contiguous': 30, 'Contiguous': 17, 'Total': 47}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 92, 'Contiguous': 145, 'Total': 237}, 3: {'Non-Contiguous': 37, 'Contiguous': 39, 'Total': 76}, 4: {'Non-Contiguous': 24, 'Contiguous': 15, 'Total': 39}}
+
+
+2
+Contiguous (145/154) 94.16%
+Non-Contiguous (92/101) 91.09%
+Total (237/255) 92.94%
+
+3
+Contiguous (39/64) 60.94%
+Non-Contiguous (37/63) 58.73%
+Total (76/127) 59.84%
+
+4
+Contiguous (15/17) 88.24%
+Non-Contiguous (24/30) 80.00%
+Total (39/47) 82.98%
+
+
+Overall Results
+Non-Contiguous (153/194) 78.87%
+Contiguous (199/235) 84.68%
+Total (352/429) 82.05%
+
+K-means Performance
+
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 92, 'Contiguous': 145, 'Total': 237}, 3: {'Non-Contiguous': 37, 'Contiguous': 39, 'Total': 76}, 4: {'Non-Contiguous': 24, 'Contiguous': 15, 'Total': 39}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 85, 'Contiguous': 134, 'Total': 219}, 3: {'Non-Contiguous': 28, 'Contiguous': 35, 'Total': 63}, 4: {'Non-Contiguous': 21, 'Contiguous': 13, 'Total': 34}}
+
+
+2
+Contiguous (134/145) 92.41%
+Non-Contiguous (85/92) 92.39%
+Total (219/237) 92.41%
+
+3
+Contiguous (35/39) 89.74%
+Non-Contiguous (28/37) 75.68%
+Total (63/76) 82.89%
+
+4
+Contiguous (13/15) 86.67%
+Non-Contiguous (21/24) 87.50%
+Total (34/39) 87.18%
+
+
+Overall Results
+Non-Contiguous (134/153) 87.58%
+Contiguous (182/199) 91.46%
+Total (316/352) 89.77%
+
+Overall Performance
+
+
+
+Analyzed Test Dataset
+{1: {'Non-Contiguous': 0, 'Contiguous': 767, 'Total': 767}, 2: {'Non-Contiguous': 126, 'Contiguous': 205, 'Total': 331}, 3: {'Non-Contiguous': 69, 'Contiguous': 70, 'Total': 139}, 4: {'Non-Contiguous': 30, 'Contiguous': 17, 'Total': 47}}
+
+
+Analyzed Correctly Predicted Data
+{1: {'Non-Contiguous': 0, 'Contiguous': 647, 'Total': 647}, 2: {'Non-Contiguous': 85, 'Contiguous': 134, 'Total': 219}, 3: {'Non-Contiguous': 28, 'Contiguous': 35, 'Total': 63}, 4: {'Non-Contiguous': 21, 'Contiguous': 13, 'Total': 34}}
+
+
+1
+Contiguous (647/767) 84.35%
+Total (647/767) 84.35%
+
+2
+Contiguous (134/205) 65.37%
+Non-Contiguous (85/126) 67.46%
+Total (219/331) 66.16%
+
+3
+Contiguous (35/70) 50.00%
+Non-Contiguous (28/69) 40.58%
+Total (63/139) 45.32%
+
+4
+Contiguous (13/17) 76.47%
+Non-Contiguous (21/30) 70.00%
+Total (34/47) 72.34%
+
+
+Overall Results
+Non-Contiguous (134/225) 59.56%
+Contiguous (829/1059) 78.28%
+Total (963/1284) 75.00%
+
+Arnavs-MacBook-Pro:Scripts Tiwari$ python Domain_Identification.py 
+Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created
+C
+You selected ASTRAL SCOP30 for testing the SVM
+
+Identifying single-domain vs multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type R for Radius_of_Gyration
+Type D for Density
+For multiple features, give space sepearated input. For eg. L D for Length & Density
+L I D
+You selected:  Length Interaction_Energy Density
+Training data =>  2984 2984
+Testing data =>  6352 6352
+
+Contiguous
+Multi {'Total': 1309, 'Correct': 997, 'Accuracy': '76.17'}
+Single {'Total': 4042, 'Correct': 3410, 'Accuracy': '84.36'}
+Total {'Total': 5351, 'Correct': 4407, 'Accuracy': '82.36'}
+
+Non-Contiguous
+Multi {'Total': 1001, 'Correct': 842, 'Accuracy': '84.12'}
+Single {'Total': 0, 'Correct': 0}
+Total {'Total': 1001, 'Correct': 842, 'Accuracy': '84.12'}
+
+Total
+Multi {'Total': 2310, 'Correct': 1839, 'Accuracy': '79.61'}
+Single {'Total': 4042, 'Correct': 3410, 'Accuracy': '84.36'}
+Total {'Total': 6352, 'Correct': 5249, 'Accuracy': '82.64'}
+
+
+Saved incorrectly labelled chains to:  output_incorrect_ASTRAL SCOP30_single vs multi-domain.txt 
+
+Saved correctly labelled chains to:  output_correct_ASTRAL SCOP30_single vs multi-domain.txt 
+
+Identifying multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type S for Density Sum
+Type IS for IS-Sum
+For multiple features, give space sepearated input. For ex. L IS for Length & IS-Sum
+L IS
+You selected:  Length IS_Sum
+Feature set is  ['Length', 'IS-Sum_2', 'IS-Sum_3', 'IS-Sum_4']
+Performance of multi-domin identification
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 481, 'Contiguous': 695, 'Total': 1176}, 3: {'Non-Contiguous': 226, 'Contiguous': 214, 'Total': 440}, 4: {'Non-Contiguous': 87, 'Contiguous': 66, 'Total': 153}, 5: {'Non-Contiguous': 33, 'Contiguous': 17, 'Total': 50}, 6: {'Non-Contiguous': 8, 'Contiguous': 3, 'Total': 11}, 7: {'Non-Contiguous': 3, 'Contiguous': 2, 'Total': 5}, 8: {'Non-Contiguous': 4, 'Contiguous': 0, 'Total': 4}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 432, 'Contiguous': 646, 'Total': 1078}, 3: {'Non-Contiguous': 90, 'Contiguous': 84, 'Total': 174}, 4: {'Non-Contiguous': 57, 'Contiguous': 41, 'Total': 98}}
+
+
+2
+Contiguous (646/695) 92.95%
+Non-Contiguous (432/481) 89.81%
+Total (1078/1176) 91.67%
+
+3
+Contiguous (84/214) 39.25%
+Non-Contiguous (90/226) 39.82%
+Total (174/440) 39.55%
+
+4
+Contiguous (41/66) 62.12%
+Non-Contiguous (57/87) 65.52%
+Total (98/153) 64.05%
+
+
+Overall Results
+Non-Contiguous (579/794) 72.92%
+Contiguous (771/975) 79.08%
+Total (1350/1769) 76.31%
+
+K-means Performance
+
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 432, 'Contiguous': 646, 'Total': 1078}, 3: {'Non-Contiguous': 90, 'Contiguous': 84, 'Total': 174}, 4: {'Non-Contiguous': 57, 'Contiguous': 41, 'Total': 98}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 403, 'Contiguous': 581, 'Total': 984}, 3: {'Non-Contiguous': 70, 'Contiguous': 70, 'Total': 140}, 4: {'Non-Contiguous': 35, 'Contiguous': 31, 'Total': 66}}
+
+
+2
+Contiguous (581/646) 89.94%
+Non-Contiguous (403/432) 93.29%
+Total (984/1078) 91.28%
+
+3
+Contiguous (70/84) 83.33%
+Non-Contiguous (70/90) 77.78%
+Total (140/174) 80.46%
+
+4
+Contiguous (31/41) 75.61%
+Non-Contiguous (35/57) 61.40%
+Total (66/98) 67.35%
+
+
+Overall Results
+Non-Contiguous (508/579) 87.74%
+Contiguous (682/771) 88.46%
+Total (1190/1350) 88.15%
+
+Overall Performance
+
+
+
+Analyzed Test Dataset
+{1: {'Non-Contiguous': 6, 'Contiguous': 4036, 'Total': 4042}, 2: {'Non-Contiguous': 615, 'Contiguous': 981, 'Total': 1596}, 3: {'Non-Contiguous': 251, 'Contiguous': 238, 'Total': 489}, 4: {'Non-Contiguous': 87, 'Contiguous': 67, 'Total': 154}, 5: {'Non-Contiguous': 33, 'Contiguous': 18, 'Total': 51}, 6: {'Non-Contiguous': 8, 'Contiguous': 3, 'Total': 11}, 7: {'Non-Contiguous': 3, 'Contiguous': 2, 'Total': 5}, 8: {'Non-Contiguous': 4, 'Contiguous': 0, 'Total': 4}}
+
+
+Analyzed Correctly Predicted Data
+{1: {'Non-Contiguous': 3, 'Contiguous': 3407, 'Total': 3410}, 2: {'Non-Contiguous': 403, 'Contiguous': 581, 'Total': 984}, 3: {'Non-Contiguous': 70, 'Contiguous': 70, 'Total': 140}, 4: {'Non-Contiguous': 35, 'Contiguous': 31, 'Total': 66}}
+
+
+1
+Contiguous (3407/4036) 84.42%
+Non-Contiguous (3/6) 50.00%
+Total (3410/4042) 84.36%
+
+2
+Contiguous (581/981) 59.23%
+Non-Contiguous (403/615) 65.53%
+Total (984/1596) 61.65%
+
+3
+Contiguous (70/238) 29.41%
+Non-Contiguous (70/251) 27.89%
+Total (140/489) 28.63%
+
+4
+Contiguous (31/67) 46.27%
+Non-Contiguous (35/87) 40.23%
+Total (66/154) 42.86%
+
+
+Overall Results
+Non-Contiguous (511/959) 53.28%
+Contiguous (4089/5322) 76.83%
+Total (4600/6281) 73.24%
+Arnavs-MacBook-Pro:Scripts Tiwari$ python Domain_Identification.py 
+Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created
+A
+You selected Benchmark_2 for testing the SVM
+
+Identifying single-domain vs multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type R for Radius_of_Gyration
+Type D for Density
+For multiple features, give space sepearated input. For eg. L D for Length & Density
+L I D
+You selected:  Length Interaction_Energy Density
+Training data =>  2984 2984
+Testing data =>  156 156
+
+Contiguous
+Multi {'Total': 70, 'Correct': 56, 'Accuracy': '80.00'}
+Single {'Total': 54, 'Correct': 48, 'Accuracy': '88.89'}
+Total {'Total': 124, 'Correct': 104, 'Accuracy': '83.87'}
+
+Non-Contiguous
+Multi {'Total': 32, 'Correct': 31, 'Accuracy': '96.88'}
+Single {'Total': 0, 'Correct': 0}
+Total {'Total': 32, 'Correct': 31, 'Accuracy': '96.88'}
+
+Total
+Multi {'Total': 102, 'Correct': 87, 'Accuracy': '85.29'}
+Single {'Total': 54, 'Correct': 48, 'Accuracy': '88.89'}
+Total {'Total': 156, 'Correct': 135, 'Accuracy': '86.54'}
+
+
+Saved incorrectly labelled chains to:  output_incorrect_Benchmark_2_single vs multi-domain.txt 
+
+Saved correctly labelled chains to:  output_correct_Benchmark_2_single vs multi-domain.txt 
+
+Identifying multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type S for Density Sum
+Type IS for IS-Sum
+For multiple features, give space sepearated input. For ex. L IS for Length & IS-Sum
+L IS
+You selected:  Length IS_Sum
+Feature set is  ['Length', 'IS-Sum_2', 'IS-Sum_3', 'IS-Sum_4']
+Performance of multi-domin identification
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 19, 'Contiguous': 36, 'Total': 55}, 3: {'Non-Contiguous': 11, 'Contiguous': 14, 'Total': 25}, 4: {'Non-Contiguous': 1, 'Contiguous': 3, 'Total': 4}, 5: {'Non-Contiguous': 0, 'Contiguous': 2, 'Total': 2}, 6: {'Non-Contiguous': 0, 'Contiguous': 1, 'Total': 1}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 19, 'Contiguous': 35, 'Total': 54}, 3: {'Non-Contiguous': 6, 'Contiguous': 7, 'Total': 13}, 4: {'Non-Contiguous': 1, 'Contiguous': 1, 'Total': 2}}
+
+
+2
+Contiguous (35/36) 97.22%
+Non-Contiguous (19/19) 100.00%
+Total (54/55) 98.18%
+
+3
+Contiguous (7/14) 50.00%
+Non-Contiguous (6/11) 54.55%
+Total (13/25) 52.00%
+
+4
+Contiguous (1/3) 33.33%
+Non-Contiguous (1/1) 100.00%
+Total (2/4) 50.00%
+
+
+Overall Results
+Non-Contiguous (26/31) 83.87%
+Contiguous (43/53) 81.13%
+Total (69/84) 82.14%
+
+K-means Performance
+
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 19, 'Contiguous': 35, 'Total': 54}, 3: {'Non-Contiguous': 6, 'Contiguous': 7, 'Total': 13}, 4: {'Non-Contiguous': 1, 'Contiguous': 1, 'Total': 2}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 18, 'Contiguous': 34, 'Total': 52}, 3: {'Non-Contiguous': 5, 'Contiguous': 6, 'Total': 11}, 4: {'Non-Contiguous': 1, 'Contiguous': 0, 'Total': 1}}
+
+
+2
+Contiguous (34/35) 97.14%
+Non-Contiguous (18/19) 94.74%
+Total (52/54) 96.30%
+
+3
+Contiguous (6/7) 85.71%
+Non-Contiguous (5/6) 83.33%
+Total (11/13) 84.62%
+
+4
+Contiguous (0/1) 0.00%
+Non-Contiguous (1/1) 100.00%
+Total (1/2) 50.00%
+
+
+Overall Results
+Non-Contiguous (24/26) 92.31%
+Contiguous (40/43) 93.02%
+Total (64/69) 92.75%
+
+Overall Performance
+
+
+
+Analyzed Test Dataset
+{1: {'Non-Contiguous': 0, 'Contiguous': 54, 'Total': 54}, 2: {'Non-Contiguous': 20, 'Contiguous': 49, 'Total': 69}, 3: {'Non-Contiguous': 11, 'Contiguous': 14, 'Total': 25}, 4: {'Non-Contiguous': 1, 'Contiguous': 3, 'Total': 4}, 5: {'Non-Contiguous': 0, 'Contiguous': 3, 'Total': 3}, 6: {'Non-Contiguous': 0, 'Contiguous': 1, 'Total': 1}}
+
+
+Analyzed Correctly Predicted Data
+{1: {'Non-Contiguous': 0, 'Contiguous': 48, 'Total': 48}, 2: {'Non-Contiguous': 18, 'Contiguous': 34, 'Total': 52}, 3: {'Non-Contiguous': 5, 'Contiguous': 6, 'Total': 11}, 4: {'Non-Contiguous': 1, 'Contiguous': 0, 'Total': 1}}
+
+
+1
+Contiguous (48/54) 88.89%
+Total (48/54) 88.89%
+
+2
+Contiguous (34/49) 69.39%
+Non-Contiguous (18/20) 90.00%
+Total (52/69) 75.36%
+
+3
+Contiguous (6/14) 42.86%
+Non-Contiguous (5/11) 45.45%
+Total (11/25) 44.00%
+
+4
+Contiguous (0/3) 0.00%
+Non-Contiguous (1/1) 100.00%
+Total (1/4) 25.00%
+
+
+Overall Results
+Non-Contiguous (24/32) 75.00%
+Contiguous (88/120) 73.33%
+Total (112/152) 73.68%
+Arnavs-MacBook-Pro:Scripts Tiwari$ python Domain_Identification.py 
+Input Testing Dataset: Type A for Benchmark_2, B for Benchmark_3, C for ASTRAL SCOP 30, D for Self-Created
+B
+You selected Benchmark_3 for testing the SVM
+
+Identifying single-domain vs multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type R for Radius_of_Gyration
+Type D for Density
+For multiple features, give space sepearated input. For eg. L D for Length & Density
+L I D
+You selected:  Length Interaction_Energy Density
+Training data =>  2984 2984
+Testing data =>  132 132
+
+Contiguous
+Multi {'Total': 59, 'Correct': 49, 'Accuracy': '83.05'}
+Single {'Total': 55, 'Correct': 45, 'Accuracy': '81.82'}
+Total {'Total': 114, 'Correct': 94, 'Accuracy': '82.46'}
+
+Non-Contiguous
+Multi {'Total': 18, 'Correct': 18, 'Accuracy': '100.00'}
+Single {'Total': 0, 'Correct': 0}
+Total {'Total': 18, 'Correct': 18, 'Accuracy': '100.00'}
+
+Total
+Multi {'Total': 77, 'Correct': 67, 'Accuracy': '87.01'}
+Single {'Total': 55, 'Correct': 45, 'Accuracy': '81.82'}
+Total {'Total': 132, 'Correct': 112, 'Accuracy': '84.85'}
+
+
+Saved incorrectly labelled chains to:  output_incorrect_Benchmark_3_single vs multi-domain.txt 
+
+Saved correctly labelled chains to:  output_correct_Benchmark_3_single vs multi-domain.txt 
+
+Identifying multi-domain proteins
+
+Select features to be used for training and testing:
+Type L for Length
+Type I for Interaction_Energy
+Type S for Density Sum
+Type IS for IS-Sum
+For multiple features, give space sepearated input. For ex. L IS for Length & IS-Sum
+L IS
+You selected:  Length IS_Sum
+Feature set is  ['Length', 'IS-Sum_2', 'IS-Sum_3', 'IS-Sum_4']
+Performance of multi-domin identification
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 10, 'Contiguous': 34, 'Total': 44}, 3: {'Non-Contiguous': 8, 'Contiguous': 12, 'Total': 20}, 4: {'Non-Contiguous': 0, 'Contiguous': 3, 'Total': 3}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 10, 'Contiguous': 34, 'Total': 44}, 3: {'Non-Contiguous': 4, 'Contiguous': 4, 'Total': 8}, 4: {'Non-Contiguous': 0, 'Contiguous': 1, 'Total': 1}}
+
+
+2
+Contiguous (34/34) 100.00%
+Non-Contiguous (10/10) 100.00%
+Total (44/44) 100.00%
+
+3
+Contiguous (4/12) 33.33%
+Non-Contiguous (4/8) 50.00%
+Total (8/20) 40.00%
+
+4
+Contiguous (1/3) 33.33%
+Total (1/3) 33.33%
+
+
+Overall Results
+Non-Contiguous (14/18) 77.78%
+Contiguous (39/49) 79.59%
+Total (53/67) 79.10%
+
+K-means Performance
+
+
+
+Analyzed Test Dataset
+{2: {'Non-Contiguous': 10, 'Contiguous': 34, 'Total': 44}, 3: {'Non-Contiguous': 4, 'Contiguous': 4, 'Total': 8}, 4: {'Non-Contiguous': 0, 'Contiguous': 1, 'Total': 1}}
+
+
+Analyzed Correctly Predicted Data
+{2: {'Non-Contiguous': 10, 'Contiguous': 33, 'Total': 43}, 3: {'Non-Contiguous': 3, 'Contiguous': 3, 'Total': 6}}
+
+
+2
+Contiguous (33/34) 97.06%
+Non-Contiguous (10/10) 100.00%
+Total (43/44) 97.73%
+
+3
+Contiguous (3/4) 75.00%
+Non-Contiguous (3/4) 75.00%
+Total (6/8) 75.00%
+
+
+Overall Results
+Non-Contiguous (13/14) 92.86%
+Contiguous (36/38) 94.74%
+Total (49/52) 94.23%
+
+Overall Performance
+
+
+
+Analyzed Test Dataset
+{1: {'Non-Contiguous': 0, 'Contiguous': 55, 'Total': 55}, 2: {'Non-Contiguous': 10, 'Contiguous': 43, 'Total': 53}, 3: {'Non-Contiguous': 8, 'Contiguous': 13, 'Total': 21}, 4: {'Non-Contiguous': 0, 'Contiguous': 3, 'Total': 3}}
+
+
+Analyzed Correctly Predicted Data
+{1: {'Non-Contiguous': 0, 'Contiguous': 45, 'Total': 45}, 2: {'Non-Contiguous': 10, 'Contiguous': 33, 'Total': 43}, 3: {'Non-Contiguous': 3, 'Contiguous': 3, 'Total': 6}}
+
+
+1
+Contiguous (45/55) 81.82%
+Total (45/55) 81.82%
+
+2
+Contiguous (33/43) 76.74%
+Non-Contiguous (10/10) 100.00%
+Total (43/53) 81.13%
+
+3
+Contiguous (3/13) 23.08%
+Non-Contiguous (3/8) 37.50%
+Total (6/21) 28.57%
+
+
+Overall Results
+Non-Contiguous (13/18) 72.22%
+Contiguous (81/111) 72.97%
+Total (94/129) 72.87%
+Arnavs-MacBook-Pro:Scripts Tiwari$ 

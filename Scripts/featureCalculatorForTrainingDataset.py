@@ -11,10 +11,12 @@ import json
 
 #Defining constants here
 
-multiDomain_trainingDataset_chains_file = "multiDomainTrainingDatasetChains.txt"
+# input_chains_file = "multiDomainTrainingDatasetChains.txt"
+input_chains_file = "output_incorrect_Benchmark_2_multi-domain.txt"
+
 features_list = ["Length", "Interaction_Energy"]
 
-with open(multiDomain_trainingDataset_chains_file, 'r') as f:
+with open(input_chains_file, 'r') as f:
 	input_chains = f.readlines()
 	
 feature_dictionary = {}
@@ -31,5 +33,8 @@ for chain in input_chains:
 			feature_dictionary[chain] = feature_map[chain]
 	feature_dictionary_json = json.dumps(feature_dictionary, sort_keys=True, indent=4)
 
-json.dump(feature_dictionary, open("self_created_multi_training_dataset_features_v5.json", "wb"), sort_keys=True, indent=4)
+# output_json_file = "self_created_multi_training_dataset_features_v5.json"
+output_json_file = "benchmark_2_multi_domain_incorrect_chains_features.json"
+
+json.dump(feature_dictionary, open(output_json_file, "wb"), sort_keys=True, indent=4)
 
